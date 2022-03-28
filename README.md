@@ -190,8 +190,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 146 | [O'zgaruvchilarni ishga tushirishning(initialize) qanday afzalliklari bor](#what-are-the-benefits-of-initializing-variables)                                   |
 | 147 | [Yangi ob'ekt yaratish uchun qanday tavsiyalar mavjud](#what-are-the-recommendations-to-create-new-object)                                                     |
 | 148 | [JSON massivlarini qanday aniqlaysiz](#how-do-you-define-json-arrays)                                                                                          |
-| 149 | [Tasodifiy butun sonlarni qanday yaratasiz](#how-do-you-generate-random-integers)                                                                              |
-
+| 149 | [Tasodifiy butun sonlarni qanday yaratasiz](#how-do-you-generate-random-integers)
 |150| [Can you write a random integers function to print integers with in a range](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range)|
 |151| [What is tree shaking](#what-is-tree-shaking)|
 |152| [What is the need of tree shaking](#what-is-the-need-of-tree-shaking)|
