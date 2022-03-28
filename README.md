@@ -431,7 +431,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 388 | [Mikrovazifa(microtask) nima](#what-are-microtasks)                                                                                                                                    |
 | 389 | [What are different event loops](#what-are-different-event-loops)                                                                                                                      |
 | 390 | [What is the purpose of queueMicrotask](#what-is-the-purpose-of-queuemicrotask)                                                                                                        |
-| 391 | [Typescript faylida javascript kutubxonalaridan qanday foydalanasiz](#how-do-you-use-javascript-libraries-in-typescript-file)                                                          |
+| 391 | [How do you use javascript libraries in typescript file](#how-do-you-use-javascript-libraries-in-typescript-file)                                                                      |
 | 392 | [What are the differences between promises and observables](#what-are-the-differences-between-promises-and-observables)                                                                |
 | 393 | [What is heap](#what-is-heap)                                                                                                                                                          |
 | 394 | [What is an event table](#what-is-an-event-table)                                                                                                                                      |
