@@ -41,7 +41,7 @@ You can download the PDF and Epub version of this repository from the latest run
 ### Table of Contents
 
 | No. | Questions                                                                                                                                                                              |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------- |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | [JavaScript-da ob'ektlarni yaratishning qanday usullari mavjud](#what-are-the-possible-ways-to-create-objects-in-javascript)                                                           |
 | 2   | [Prototype chain nima ](#what-is-a-prototype-chain)                                                                                                                                    |
 | 3   | [Call, Apply and Bind o'rtasidagi farq nima](#what-is-the-difference-between-call-apply-and-bind)                                                                                      |
@@ -263,172 +263,173 @@ You can download the PDF and Epub version of this repository from the latest run
 | 219 | [Getters va Settersning afzalliklari nimada](#what-are-the-advantages-of-getters-and-setters)                                                                                          |
 | 220 | [DefineProperty usuli yordamida qabul qiluvchilar(getter) va sozlagichlarni(setter) qo'shishim mumkinmi](#can-i-add-getters-and-setters-using-defineproperty-method)                   |
 | 221 | [Switch-case ni ishlatishdan maqsad nima](#what-is-the-purpose-of-switch-case)                                                                                                         |
-| 222 | [Switch casedan foydalanishda qanday qoidalarga rioya qilish kerak](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)                                             |
-| 223 | [Primitiv ma'lumotlar turlari nima ?](#what-are-primitive-data-types)                                                                                                                  |
-| 224 | [Ob'ekt xususiyatlariga kirishning turli usullari qanday](#what-are-the-different-ways-to-access-object-properties)                                                                    |
-| 225 | [Funksiya parametrlari qoidalari qanday](#what-are-the-function-parameter-rules)                                                                                                       |
-| 226 | [Xato obyekti(error object) nima](#what-is-an-error-object)                                                                                                                            |
-| 227 | [Sintaksis xatosiga duch kelganingizda](#when-you-get-a-syntax-error)                                                                                                                  |
-| 228 | [Xato obyektidan farqli xato nomlari qanday](#what-are-the-different-error-names-from-error-object)                                                                                    |
-| 229 | [Xatolarni hal qilishda qanday turli bayonotlar mavjud](#what-are-the-various-statements-in-error-handling)                                                                            |
-| 230 | [Javascriptda ikki turdagi looplar qanday?](#what-are-the-two-types-of-loops-in-javascript)                                                                                            |
-| 231 | [nodejs nima](#what-is-nodejs)                                                                                                                                                         |
-| 232 | [Intl ob'ekti nima](#what-is-an-intl-object)                                                                                                                                           |
-| 233 | [Tilga xos sana va vaqtni formatlashni qanday amalga oshirasiz](#how-do-you-perform-language-specific-date-and-time-formatting)                                                        |
-| 234 | [Iterator nima](#what-is-an-iterator)                                                                                                                                                  |
-| 235 | [Sinxron iteratsiya qanday ishlaydi](#how-does-synchronous-iteration-works)                                                                                                            |
-| 236 | [Hodisa sikli(event loop) nima](#what-is-an-event-loop)                                                                                                                                |
-| 237 | [Call stack nima ?](#what-is-call-stack)                                                                                                                                               |
-| 238 | [Hodisa navbati (event qoeue) nima](#what-is-an-event-queue)                                                                                                                           |
-| 239 | [Dekorator nima](#what-is-a-decorator)                                                                                                                                                 |
-| 240 | [Intl obyektining xossalari(Intl object prop) qanday](#what-are-the-properties-of-intl-object)                                                                                         |
-| 241 | [Unary operator nima](#what-is-an-unary-operator)                                                                                                                                      |
-| 242 | [Massivdagi elementlarni qanday saralaysiz](#how-do-you-sort-elements-in-an-array)                                                                                                     |
-| 243 | [Massivlarni saralashda compareFunction nimadan iborat](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)                                                                  |
-| 244 | [Massivni qanday teskari aylantirasiz](#how-do-you-reversing-an-array)                                                                                                                 |
-| 245 | [Massivda minimal va maksimal qiymatlarni qanday topasiz](#how-do-you-find-min-and-max-value-in-an-array)                                                                              |
-| 246 | [Matematik funktsiyalarsiz min va maksimal qiymatlarni qanday topish mumkin](#how-do-you-find-min-and-max-values-without--math-functions)                                              |
-| 247 | [Bo'sh statment nima va uning maqsadi](#what-is-an-empty-statement-and-purpose-of-it)                                                                                                  |
-| 248 | [Modulning metama'lumotlarini qanday olish mumkin](#how-do-you-get-meta-data-of-a-module)                                                                                              |
-| 249 | [Vergul operatori nima](#what-is-a-comma-operator)                                                                                                                                     |
-| 250 | [Vergul operatorining afzalligi nimada](#what-is-the-advantage-of-a-comma-operator) ]                                                                                                  | 251 | [Typesciprt nima ?](#what-is-typescript) |
-| 252 | [Javascript va typescript o'rtasidagi farqlar qanday](#what-are-the-differences-between-javascript-and-typescript)                                                                     |
-| 253 | [Typescriptning javascriptdan qanday afzalliklari bor](#what-are-the-advantages-of-typescript-over-javascript)                                                                         |
-| 254 | [Ob'ektni ishga tushirish (obj initialize) nima](#what-is-an-object-initializer)                                                                                                       |
-| 255 | [Konstruktor usuli nima](#what-is-a-constructor-method)                                                                                                                                |
-| 256 | [Agar classda bir necha marta konstruktor yozsangiz nima bo'ladi](#what-happens-if-you-write-constructor-more-than-once-in-a-class)                                                    |
-| 257 | [Parent classning konstruktorini qanday chaqirish mumkin?](#how-do-you-call-the-constructor-of-a-parent-class)                                                                         |
-| 258 | [Ob'ektning prototipini qanday olish mumkin](#how-do-you-get-the-prototype-of-an-object)                                                                                               |
-| 259 | [Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi](#what-happens-if-i-pass-string-type-for-getprototype-method)                                                      |
-| 260 | [Bir ob'ektning prototipini boshqasiga qanday o'rnatish mumkin](#how-do-you-set-prototype-of-one-object-to-another)                                                                    |
-| 261 | [Ob'ektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin](#how-do-you-check-whether-an-object-can-be-extendable-or-not)                                      |
-| 262 | [Ob'ektni kengaytirishni qanday oldini olish mumkin](#how-do-you-prevent-an-object-to-extend)                                                                                          |
-| 263 | [Ob'ektni kengaytirilmaydigan qilishning turli usullari qanday](#what-are-the-different-ways-to-make-an-object-non-extensible)                                                         |
-| 264 | [Ob'ektda bir nechta xususiyatlarni qanday aniqlash mumkin](#how-do-you-define-multiple-properties-on-an-object)                                                                       |
-| 265 | [Javascriptda MEAN nima](#what-is-mean-in-javascript)                                                                                                                                  |
-| 266 | [Javascriptda xiralashish(Obfuscation ) nima](#what-is-obfuscation-in-javascript)                                                                                                      |
-| 267 | [Nima uchun sizga obfuscation kerak ?](#why-do-you-need-obfuscation)                                                                                                                   |
-| 268 | [Kichiklashtirish(minification) nima](#what-is-minification)                                                                                                                           |
-| 269 | [Kichiklashtirishning qanday afzalliklari bor](#what-are-the-advantages-of-minification)                                                                                               |
-| 270 | [Obfuscation va shifrlash o'rtasidagi farqlar qanday](#what-are-the-differences-between-obfuscation-and-encryption)                                                                    |
-| 271 | [Kichiklashtirish uchun qanday umumiy vositalar qo'llaniladi](#what-are-the-common-tools-used-for-minification)                                                                        |
-| 272 | [Javascript yordamida shaklni(form) tekshirishni qanday amalga oshirasiz](#how-do-you-perform-form-validation-using-javascript)                                                        |
-| 273 | [Shaklni(form) tekshirishni javascriptsiz qanday amalga oshirasiz](#how-do-you-perform-form-validation-without-javascript)                                                             |
-| 274 | [Cheklovlarni tekshirish uchun qanday DOM usullari mavjud](#what-are-the-dom-methods-available-for-constraint-validation)                                                              |
-| 275 | [Mavjud cheklovni tekshirish DOM xususiyatlari qanday](#what-are-the-available-constraint-validation-dom-properties)                                                                   |
-| 276 | [Yaroqlilik xususiyatlarining ro'yxati qanday](#what-are-the-list-of-validity-properties)                                                                                              |
-| 277 | [rangeOverflow xususiyatidan foydalanishga misol keltiring](#give-an-example-usage-of-rangeoverflow-property)                                                                          |
-| 278 | [Enums xususiyati javascriptda mavjudmi?](#is-enums-feature-available-in-javascript)                                                                                                   |
-| 279 | [Enum nima](#What-is-an-enum)                                                                                                                                                          |
-| 280 | [Ob'ektning barcha xususiyatlarini qanday ro'yxatga olasiz](#how-do-you-list-all-properties-of-an-object)                                                                              |
-| 281 | [Ob'ektning xossa tavsiflovchilarini (prop descriptors) qanday olish mumkin](#how-do-you-get-property-descriptors-of-an-object)                                                        |
-| 282 | [Xususiyat deskriptori tomonidan taqdim etilgan atributlar qanday](#what-are-the-attributes-provided-by-a-property-descriptor)                                                         |
-| 283 | [Classlarni qanday uzaytirasiz(extends)](#how-do-you-extend-classes)                                                                                                                   |
-| 284 | [Sahifani qayta yuklamasdan urlni qanday o'zgartirish mumkin](#how-do-i-modify-the-url-without-reloading-the-page)                                                                     |
-| 285 | [Massiv ma'lum bir qiymatni o'z ichiga oladi yoki yo'qligini qanday tekshirish mumkin](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)                          |
-| 286 | [Skayar massivlarni qanday solishtirasiz](#how-do-you-compare-scalar-arrays)                                                                                                           |
-| 287 | [Get parametrlaridan qiymatni qanday olish mumkin](#how-to-get-the-value-from-get-parameters)                                                                                          |
-| 288 | [Qanday qilib raqamlarni vergul bilan ming ajratuvchi sifatida chop qilasiz](#how-do-you-print-numbers-with-commas-as-thousand-separators)                                             |
-| 289 | [Java va javascript o'rtasidagi farq nima](#what-is-the-difference-between-java-and-javascript)                                                                                        |
-| 290 | [JavaScript namespace qo'llab-quvvatlaydimi?](#does-javascript-supports-namespace)                                                                                                     |
-| 291 | [Namescpace qanday e'lon qilasiz](#how-do-you-declare-namespace)                                                                                                                       |
-| 292 | [Bosh sahifadagi iframe-da javascript kodini qanday chaqirish mumkin](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)                                                |
-| 293 | [Vaqt mintaqasini sanadan qanday qilib siljitish mumkin](#how-do-get-the-timezone-offset-from-date)                                                                                    |
-| 294 | [CSS va JS fayllarini dinamik ravishda qanday yuklaysiz](#how-do-you-load-css-and-js-files-dynamically)                                                                                |
-| 295 | [DOM-da HTML elementlarini topishning turli usullari qanday?](#what-are-the-different-methods-to-find-html-elements-in-dom)                                                            |
-| 296 | [jQuery nima](#what-is-jquery)                                                                                                                                                         |
-| 297 | [V8 JavaScript dvigateli nima](#what-is-v8-javascript-engine)                                                                                                                          |
-| 298 | [Nima uchun biz javascriptni dinamik til deb ataymiz](#why-do-we-call-javascript-as-dynamic-language)                                                                                  |
-| 299 | [Void operatori nima](#what-is-a-void-operator)                                                                                                                                        |
-| 300 | [Kursorni kutish(wait) uchun qanday sozlash kerak](#how-to-set-the-cursor-to-wait)                                                                                                     |
-| 301 | [Qanday qilib cheksiz sikl (infinite loop)yaratasiz](#how-do-you-create-an-infinite-loop)                                                                                              |
-| 302 | [Nima uchun bayonot bilan avoid kerak](#why-do-you-need-to-avoid-with-statement)                                                                                                       |
-| 303 | [Quyidagi for looplarning natijalari qanday](#what-is-the-output-of-below-for-loops)                                                                                                   |
-| 304 | [ES6 ning ba'zi xususiyatlarini sanab o'ting](#list-down-some-of-the-features-of-es6)                                                                                                  |
-| 305 | [ES6 nima](#what-is-es6)                                                                                                                                                               |
-| 306 | [Let va const o'zgaruvchilarni qayta e'lon qila olamanmi?](#can-I-redeclare-let-and-const-variables)                                                                                   |
-| 307 | [Const o'zgaruvchisi qiymatni o'zgarmas qiladimi](#is-const-variable-makes-the-value-immutable)                                                                                        |
-| 308 | [Standart parametrlar nima](#what-are-default-parameters)                                                                                                                              |
-| 309 | [Shablon literallari nima](#what-are-template-literals)                                                                                                                                |
-| 310 | [Shablon literallarida ko'p qatorli satrlarni qanday yozish mumkin](#how-do-you-write-multi-line-strings-in-template-literals)                                                         |
-| 311 | [Murakkab(nested) shablonlari nima](#what-are-nesting-templates)                                                                                                                       |
-| 312 | [Belgilangan(tagged) shablonlar nima](#what-are-tagged-templates)                                                                                                                      |
-| 313 | [Raw stringlar nima](#what-are-raw-strings)                                                                                                                                            |
-| 314 | [Destructuring assignment (strukturani buzish) nima ?](#what-is-destructuring-assignment)                                                                                              |
-| 315 | [Topshiriqni buzishda standart qiymatlar qanday](#what-are-default-values-in-destructuring-assignment)                                                                                 |
-| 316 | [Topshiriqni buzishda o'zgaruvchilarni qanday almashtirasiz](#how-do-you-swap-variables-in-destructuring-assignment)                                                                   |
-| 317 | [Kengaytirilgan ob'ekt harflari nima](#what-are-enhanced-object-literals)                                                                                                              |
-| 318 | [Dinamik import nima](#what-are-dynamic-imports)                                                                                                                                       |
-| 319 | [Dinamik import uchun qanday holatlar mavjud](#what-are-the-use-cases-for-dynamic-imports)                                                                                             |
-| 320 | [Tiplangan massivlar(typed arrays) nima](#what-are-typed-arrays)                                                                                                                       |
-| 321 | [Modul yuklagichlarining(modal loader) afzalliklari nimada](#what-are-the-advantages-of-module-loaders)                                                                                |
-| 322 | [Collation (harakatlash) nima ?](#what-is-collation)                                                                                                                                   |
-| 323 | [For .. of statmentni nima uchun ishlatiladi ?]of-statement)                                                                                                                           |
-| 324 | [Quyidagi yoyilgan operator massivining natijasi nimaga teng](#what-is-the-output-of-below-spread-operator-array)                                                                      |
-| 325 | [PostMessage xavfsizmi?](#is-postmessage-secure)                                                                                                                                       |
-| 326 | [Joyker belgisi sifatida postxabar maqsadli kelib chiqishi bilan bog'liq qanday muammolar mavjud](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)                   |
-| 327 | [Qanday qilib tajovuzkorlardan postMessages olishdan qochasiz](#how-do-you-avoid-receiving-postmessages-from-attackers)                                                                |
-| 328 | [PostMessages-dan butunlay qochishim mumkinmi?](#can-i-avoid-using-postmessages-completely)                                                                                            |
-| 329 | [PostMessages sinxronlashganmi ?](#is-postmessages-synchronous)                                                                                                                        |
-| 330 | [Javascript qanday paradigma](#what-paradigm-is-javascript)                                                                                                                            |
-| 331 | [Ichki(Internal) va tashqi(external) javascript o'rtasidagi farq nima](#what-is-the-difference-between-internal-and-external-javascript)                                               |
-| 332 | [JavaScript server tomonidagi skriptga qaraganda tezroqmi](#is-javascript-faster-than-server-side-script)                                                                              |
-| 333 | [Belgilash qutisi(checkbox) holatini(status) qanday olish mumkin](#how-do-you-get-the-status-of-a-checkbox)                                                                            |
-| 334 | [Double tilde operatorining maqsadi nima](#what-is-the-purpose-of-double-tilde-operator)                                                                                               |
-| 335 | [Belgilarni ASCII kodiga qanday o'zgartirasiz](#how-do-you-convert-character-to-ascii-code)                                                                                            |
-| 336 | [ArrayBuffer nima](#what-is-arraybuffer)                                                                                                                                               |
-| 337 | [Quyidagi satr ifodasining natijasi nima](#what-is-the-output-of-below-string-expression)                                                                                              |
-| 338 | [Xato obyektining(error object) maqsadi nima](#what-is-the-purpose-of-error-object)                                                                                                    |
-| 339 | [EvalError obyektining maqsadi nima](#what-is-the-purpose-of-evalerror-object)                                                                                                         |
-| 340 | [Qattiy bo'lmagan rejimdan qat'iy rejimga o'tkazilgan xatolar ro'yxati qanday](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)                           |
-| 341 | [Barcha ob'ektlarning prototiplari bormi?](#do-all-objects-have-prototypes)                                                                                                            |
-| 342 | [Parametr va argument o'rtasidagi farq nima](#what-is-the-difference-between-a-parameter-and-an-argument)                                                                              |
-| 343 | [Massivlardagi some usulining maqsadi nima](#what-is-the-purpose-of-some-method-in-arrays)                                                                                             |
-| 344 | [Ikki yoki undan ortiq massivni qanday birlashtirasiz](#how-do-you-combine-two-or-more-arrays)                                                                                         |
-| 345 | [Sayoz(shallow) va chuqur(deep) nusxa o'rtasidagi farq nima](#what-is-the-difference-between-shallow-and-deep-copy)                                                                    |
-| 346 | [Satrning ma'lum nusxalarini qanday yaratish mumkin](#how-do-you-create-specific-number-of-copies-of-a-string)                                                                         |
-| 347 | [Qanday qilib barcha mos keladigan satrlarni muntazam ifodaga qaytarasiz](#how-do-you-return-all-matching-strings-against-a-regular-expression)                                        |
-| 348 | [Stringni boshida yoki oxirida qanday qilib kesish mumkin](#how-do-you-trim-a-string-at-the-beginning-or-ending)                                                                       |
-| 349 | [Unar operator bilan quyidagi konsol bayonotining chiqishi nima](#what-is-the-output-of-below-console-statement-with-unary-operator)                                                   |
-| 350 | [Javascript mixins foydalanadimi?](#does-javascript-uses-mixins)                                                                                                                       |
-| 351 | [Thunk funktsiyasi nima](#what-is-a-thunk-function)                                                                                                                                    |
-| 352 | [Asinxron thunks nima](#what-are-asynchronous-thunks)                                                                                                                                  |
-| 353 | [Quyidagi funksiya chaqiruvlarining natijasi nima](#what-is-the-output-of-below-function-calls)                                                                                        |
-| 354 | [Satrdagi barcha qator uzilishlarini qanday olib tashlash mumkin](#how-to-remove-all-line-breaks-from-a-string)                                                                        |
-| 355 | [Qayta ishlash(reflow) va qayta bo'yash(repaint) o'rtasidagi farq nima](#what-is-the-difference-between-reflow-and-repaint)                                                            |
-| 356 | [Massivni inkor qilish bilan nima sodir bo'ladi](#what-happens-with-negating-an-array)                                                                                                 |
-| 357 | [Agar ikkita massiv qo'shsak nima bo'ladi](#what-happens-if-we-add-two-arrays)                                                                                                         |
-| 358 | [Noto'g'ri qiymatlar bo'yicha yuqori qo'shimcha operatorning chiqishi qanday bo'ladi](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)                                |
-| 359 | [Maxsus belgilar yordamida o'z-o'zidan strigni qanday yaratasiz](#how-do-you-create-self-string-using-special-characters)                                                              |
-| 360 | [Massivdan noto'g'ri qiymatlarni qanday olib tashlash mumkin](#how-do-you-remove-falsy-values-from-an-array)                                                                           |
-| 361 | [Massivning noyob qiymatlarini qanday olish mumkin](#how-do-you-get-unique-values-of-an-array)                                                                                         |
-| 362 | [Taxalluslarni buzish nima](#what-is-destructuring-aliases)                                                                                                                            |
-| 363 | [Map usulini ishlatmasdan massiv qiymatlarini qanday Map qilish mumkin](#how-do-you-map-the-array-values-without-using-map-method)                                                     |
-| 364 | [Massivni qanday bo'shatish mumkin](#how-do-you-empty-an-array)                                                                                                                        |
-| 365 | [Qanday qilib raqamlarni ma'lum o'nli kasrlarga yaxlitlash mumkin](#how-do-you-rounding-numbers-to-certain-decimals)                                                                   |
-| 366 | [Massivni ob'ektga aylantirishning eng oson yo'li qanday?](#what-is-the-easiest-way-to-convert-an-array-to-an-object)                                                                  |
-| 367 | [Ba'zi ma'lumotlar bilan massivni qanday yaratish mumkin](#how-do-you-create-an-array-with-some-data)                                                                                  |
-| 368 | [Konsol ob'ektidagi to'ldiruvchilar nima](#what-are-the-placeholders-from-console-object)                                                                                              |
-| 369 | [Konsol xabarlariga CSS qo'shish mumkinmi?](#is-it-possible-to-add-css-to-console-messages)                                                                                            |
-| 370 | [Konsol ob'ektining dir usulidan maqsad nima](#what-is-the-purpose-of-dir-method-of-console-object)                                                                                    |
-| 371 | [Konsolda HTML elementlarini disk raskadrovka qilish mumkinmi?](#is-it-possible-to-debug-html-elements-in-console)                                                                     |
-| 372 | [Konsol ob'ekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkin](#how-do-you-display-data-in-a-tabular-format-using-console-object)                                  |
-| 373 | [Argument son yoki son emasligini qanday tekshirish mumkin](#how-do-you-verify-that-an-argument-is-a-number-or-not)                                                                    |
-| 374 | [Buferga nusxa ko'chirish tugmasi qanday yaratiladi](#how-do-you-create-copy-to-clipboard-button)                                                                                      |
-| 375 | [Timestamp uchun shortcut nima](#what-is-the-shortcut-to-get-timestamp)                                                                                                                |
-| 376 | [Ko'p o'lchovli massivlarni qanday tekislash mumkin](#how-do-you-flattening-multi-dimensional-arrays)                                                                                  |
-| 377 | [Ko'p holatni tekshirishning(multi condition checking) eng oson usuli](#what-is-the-easiest-multi-condition-checking)                                                                  |
-| 378 | [Brauzerning orqaga tugmachasini qanday suratga olasiz](#how-do-you-capture-browser-back-button)                                                                                       |
-| 379 | [Veb-sahifada sichqonchaning o'ng tugmachasini qanday o'chirib qo'yish mumkin](#how-do-you-disable-right-click-in-the-web-page)                                                        |
-| 380 | [O'rash ob'ektlari(wrapper object) nima](#what-are-wrapper-objects)                                                                                                                    |
-| 381 | [AJAX nima](#what-is-ajax)                                                                                                                                                             |
-| 382 | [Asinxron kod bilan ishlashning turli usullari qanday](#what-are-the-different-ways-to-deal-with-asynchronous-code)                                                                    |
-| 383 | [Qanday qilib qabul qilishni bekor qilish mumkin](#how-to-cancel-a-fetch-request)                                                                                                      |
-| 384 | [Veb nutq API (web speech API) nima ?](#what-is-web-speech-api)                                                                                                                        |
-| 385 | [Minimal vaqt tugashini kamaytirish(minimum timeout) nima](#what-is-minimum-timeout-throttling)                                                                                        |
-| 386 | [Zamonaviy brauzerlarda nol vaqt tugashini qanday amalga oshirasiz](#how-do-you-implement-zero-timeout-in-modern-browsers)                                                             |
-| 387 | [Event loop qanday vazifalar mavjud](#what-are-tasks-in-event-loop)                                                                                                                    |
-| 388 | [Mikrovazifa(microtask) nima](#what-are-microtasks)                                                                                                                                    |
+| 222 | [What are the conventions to be followed for the usage of swtich case](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)                                          |
+| 223 | [What are primitive data types](#what-are-primitive-data-types)                                                                                                                        |
+| 224 | [What are the different ways to access object properties](#what-are-the-different-ways-to-access-object-properties)                                                                    |
+| 225 | [What are the function parameter rules](#what-are-the-function-parameter-rules)                                                                                                        |
+| 226 | [What is an error object](#what-is-an-error-object)                                                                                                                                    |
+| 227 | [When you get a syntax error](#when-you-get-a-syntax-error)                                                                                                                            |
+| 228 | [What are the different error names from error object](#what-are-the-different-error-names-from-error-object)                                                                          |
+| 229 | [What are the various statements in error handling](#what-are-the-various-statements-in-error-handling)                                                                                |
+| 230 | [What are the two types of loops in javascript](#what-are-the-two-types-of-loops-in-javascript)                                                                                        |
+| 231 | [What is nodejs](#what-is-nodejs)                                                                                                                                                      |
+| 232 | [What is an Intl object](#what-is-an-intl-object)                                                                                                                                      |
+| 233 | [How do you perform language specific date and time formatting](#how-do-you-perform-language-specific-date-and-time-formatting)                                                        |
+| 234 | [What is an Iterator](#what-is-an-iterator)                                                                                                                                            |
+| 235 | [How does synchronous iteration works](#how-does-synchronous-iteration-works)                                                                                                          |
+| 236 | [What is an event loop](#what-is-an-event-loop)                                                                                                                                        |
+| 237 | [What is call stack](#what-is-call-stack)                                                                                                                                              |
+| 238 | [What is an event queue](#what-is-an-event-queue)                                                                                                                                      |
+| 239 | [What is a decorator](#what-is-a-decorator)                                                                                                                                            |
+| 240 | [What are the properties of Intl object](#what-are-the-properties-of-intl-object)                                                                                                      |
+| 241 | [What is an Unary operator](#what-is-an-unary-operator)                                                                                                                                |
+| 242 | [How do you sort elements in an array](#how-do-you-sort-elements-in-an-array)                                                                                                          |
+| 243 | [What is the purpose of compareFunction while sorting arrays](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)                                                            |
+| 244 | [How do you reversing an array](#how-do-you-reversing-an-array)                                                                                                                        |
+| 245 | [How do you find min and max value in an array](#how-do-you-find-min-and-max-value-in-an-array)                                                                                        |
+| 246 | [How do you find min and max values without Math functions](#how-do-you-find-min-and-max-values-without--math-functions)                                                               |
+| 247 | [What is an empty statement and purpose of it](#what-is-an-empty-statement-and-purpose-of-it)                                                                                          |
+| 248 | [How do you get meta data of a module](#how-do-you-get-meta-data-of-a-module)                                                                                                          |
+| 249 | [What is a comma operator](#what-is-a-comma-operator)                                                                                                                                  |
+| 250 | [What is the advantage of a comma operator](#what-is-the-advantage-of-a-comma-operator)                                                                                                |
+| 251 | [What is typescript](#what-is-typescript)                                                                                                                                              |
+| 252 | [What are the differences between javascript and typescript](#what-are-the-differences-between-javascript-and-typescript)                                                              |
+| 253 | [What are the advantages of typescript over javascript](#what-are-the-advantages-of-typescript-over-javascript)                                                                        |
+| 254 | [What is an object initializer](#what-is-an-object-initializer)                                                                                                                        |
+| 255 | [What is a constructor method](#what-is-a-constructor-method)                                                                                                                          |
+| 256 | [What happens if you write constructor more than once in a class](#what-happens-if-you-write-constructor-more-than-once-in-a-class)                                                    |
+| 257 | [How do you call the constructor of a parent class](#how-do-you-call-the-constructor-of-a-parent-class)                                                                                |
+| 258 | [How do you get the prototype of an object](#how-do-you-get-the-prototype-of-an-object)                                                                                                |
+| 259 | [What happens If I pass string type for getPrototype method](#what-happens-if-i-pass-string-type-for-getprototype-method)                                                              |
+| 260 | [How do you set prototype of one object to another](#how-do-you-set-prototype-of-one-object-to-another)                                                                                |
+| 261 | [How do you check whether an object can be extendable or not](#how-do-you-check-whether-an-object-can-be-extendable-or-not)                                                            |
+| 262 | [How do you prevent an object to extend](#how-do-you-prevent-an-object-to-extend)                                                                                                      |
+| 263 | [What are the different ways to make an object non-extensible](#what-are-the-different-ways-to-make-an-object-non-extensible)                                                          |
+| 264 | [How do you define multiple properties on an object](#how-do-you-define-multiple-properties-on-an-object)                                                                              |
+| 265 | [What is MEAN in javascript](#what-is-mean-in-javascript)                                                                                                                              |
+| 266 | [What Is Obfuscation in javascript](#what-is-obfuscation-in-javascript)                                                                                                                |
+| 267 | [Why do you need Obfuscation](#why-do-you-need-obfuscation)                                                                                                                            |
+| 268 | [What is Minification](#what-is-minification)                                                                                                                                          |
+| 269 | [What are the advantages of minification](#what-are-the-advantages-of-minification)                                                                                                    |
+| 270 | [What are the differences between Obfuscation and Encryption](#what-are-the-differences-between-obfuscation-and-encryption)                                                            |
+| 271 | [What are the common tools used for minification](#what-are-the-common-tools-used-for-minification)                                                                                    |
+| 272 | [How do you perform form validation using javascript](#how-do-you-perform-form-validation-using-javascript)                                                                            |
+| 273 | [How do you perform form validation without javascript](#how-do-you-perform-form-validation-without-javascript)                                                                        |
+| 274 | [What are the DOM methods available for constraint validation](#what-are-the-dom-methods-available-for-constraint-validation)                                                          |
+| 275 | [What are the available constraint validation DOM properties](#what-are-the-available-constraint-validation-dom-properties)                                                            |
+| 276 | [What are the list of validity properties](#what-are-the-list-of-validity-properties)                                                                                                  |
+| 277 | [Give an example usage of rangeOverflow property](#give-an-example-usage-of-rangeoverflow-property)                                                                                    |
+| 278 | [Is enums feature available in javascript](#is-enums-feature-available-in-javascript)                                                                                                  |
+| 279 | [What is an enum](#What-is-an-enum)                                                                                                                                                    |
+| 280 | [How do you list all properties of an object](#how-do-you-list-all-properties-of-an-object)                                                                                            |
+| 281 | [How do you get property descriptors of an object](#how-do-you-get-property-descriptors-of-an-object)                                                                                  |
+| 282 | [What are the attributes provided by a property descriptor](#what-are-the-attributes-provided-by-a-property-descriptor)                                                                |
+| 283 | [How do you extend classes](#how-do-you-extend-classes)                                                                                                                                |
+| 284 | [How do I modify the url without reloading the page](#how-do-i-modify-the-url-without-reloading-the-page)                                                                              |
+| 285 | [How do you check whether an array includes a particular value or not](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)                                          |
+| 286 | [How do you compare scalar arrays](#how-do-you-compare-scalar-arrays)                                                                                                                  |
+| 287 | [How to get the value from get parameters](#how-to-get-the-value-from-get-parameters)                                                                                                  |
+| 288 | [How do you print numbers with commas as thousand separators](#how-do-you-print-numbers-with-commas-as-thousand-separators)                                                            |
+| 289 | [What is the difference between java and javascript](#what-is-the-difference-between-java-and-javascript)                                                                              |
+| 290 | [Does javascript supports namespace](#does-javascript-supports-namespace)                                                                                                              |
+| 291 | [How do you declare namespace](#how-do-you-declare-namespace)                                                                                                                          |
+| 292 | [How do you invoke javascript code in an iframe from parent page](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)                                                    |
+| 293 | [How do get the timezone offset from date](#how-do-get-the-timezone-offset-from-date)                                                                                                  |
+| 294 | [How do you load CSS and JS files dynamically](#how-do-you-load-css-and-js-files-dynamically)                                                                                          |
+| 295 | [What are the different methods to find HTML elements in DOM](#what-are-the-different-methods-to-find-html-elements-in-dom)                                                            |
+| 296 | [What is jQuery](#what-is-jquery)                                                                                                                                                      |
+| 297 | [What is V8 JavaScript engine](#what-is-v8-javascript-engine)                                                                                                                          |
+| 298 | [Why do we call javascript as dynamic language](#why-do-we-call-javascript-as-dynamic-language)                                                                                        |
+| 299 | [What is a void operator](#what-is-a-void-operator)                                                                                                                                    |
+| 300 | [How to set the cursor to wait](#how-to-set-the-cursor-to-wait)                                                                                                                        |
+| 301 | [How do you create an infinite loop](#how-do-you-create-an-infinite-loop)                                                                                                              |
+| 302 | [Why do you need to avoid with statement](#why-do-you-need-to-avoid-with-statement)                                                                                                    |
+| 303 | [What is the output of below for loops](#what-is-the-output-of-below-for-loops)                                                                                                        |
+| 304 | [List down some of the features of ES6](#list-down-some-of-the-features-of-es6)                                                                                                        |
+| 305 | [What is ES6](#what-is-es6)                                                                                                                                                            |
+| 306 | [Can I redeclare let and const variables](#can-I-redeclare-let-and-const-variables)                                                                                                    |
+| 307 | [Is const variable makes the value immutable](#is-const-variable-makes-the-value-immutable)                                                                                            |
+| 308 | [What are default parameters](#what-are-default-parameters)                                                                                                                            |
+| 309 | [What are template literals](#what-are-template-literals)                                                                                                                              |
+| 310 | [How do you write multi-line strings in template literals](#how-do-you-write-multi-line-strings-in-template-literals)                                                                  |
+| 311 | [What are nesting templates](#what-are-nesting-templates)                                                                                                                              |
+| 312 | [What are tagged templates](#what-are-tagged-templates)                                                                                                                                |
+| 313 | [What are raw strings](#what-are-raw-strings)                                                                                                                                          |
+| 314 | [What is destructuring assignment](#what-is-destructuring-assignment)                                                                                                                  |
+| 315 | [What are default values in destructuring assignment](#what-are-default-values-in-destructuring-assignment)                                                                            |
+| 316 | [How do you swap variables in destructuring assignment](#how-do-you-swap-variables-in-destructuring-assignment)                                                                        |
+| 317 | [What are enhanced object literals](#what-are-enhanced-object-literals)                                                                                                                |
+| 318 | [What are dynamic imports](#what-are-dynamic-imports)                                                                                                                                  |
+| 319 | [What are the use cases for dynamic imports](#what-are-the-use-cases-for-dynamic-imports)                                                                                              |
+| 320 | [What are typed arrays](#what-are-typed-arrays)                                                                                                                                        |
+| 321 | [What are the advantages of module loaders](#what-are-the-advantages-of-module-loaders)                                                                                                |
+| 322 | [What is collation](#what-is-collation)                                                                                                                                                |
+| 323 | [What is for...of statement](#what-is-for...of-statement)                                                                                                                              |
+| 324 | [What is the output of below spread operator array](#what-is-the-output-of-below-spread-operator-array)                                                                                |
+| 325 | [Is PostMessage secure](#is-postmessage-secure)                                                                                                                                        |
+| 326 | [What are the problems with postmessage target origin as wildcard](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)                                                  |
+| 327 | [How do you avoid receiving postMessages from attackers](#how-do-you-avoid-receiving-postmessages-from-attackers)                                                                      |
+| 328 | [Can I avoid using postMessages completely](#can-i-avoid-using-postmessages-completely)                                                                                                |
+| 329 | [Is postMessages synchronous](#is-postmessages-synchronous)                                                                                                                            |
+| 330 | [What paradigm is Javascript](#what-paradigm-is-javascript)                                                                                                                            |
+| 331 | [What is the difference between internal and external javascript](#what-is-the-difference-between-internal-and-external-javascript)                                                    |
+| 332 | [Is JavaScript faster than server side script](#is-javascript-faster-than-server-side-script)                                                                                          |
+| 333 | [How do you get the status of a checkbox](#how-do-you-get-the-status-of-a-checkbox)                                                                                                    |
+| 334 | [What is the purpose of double tilde operator](#what-is-the-purpose-of-double-tilde-operator)                                                                                          |
+| 335 | [How do you convert character to ASCII code](#how-do-you-convert-character-to-ascii-code)                                                                                              |
+| 336 | [What is ArrayBuffer](#what-is-arraybuffer)                                                                                                                                            |
+| 337 | [What is the output of below string expression](#what-is-the-output-of-below-string-expression)                                                                                        |
+| 338 | [What is the purpose of Error object](#what-is-the-purpose-of-error-object)                                                                                                            |
+| 339 | [What is the purpose of EvalError object](#what-is-the-purpose-of-evalerror-object)                                                                                                    |
+| 340 | [What are the list of cases error thrown from non-strict mode to strict mode](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)                            |
+| 341 | [Do all objects have prototypes](#do-all-objects-have-prototypes)                                                                                                                      |
+| 342 | [What is the difference between a parameter and an argument](#what-is-the-difference-between-a-parameter-and-an-argument)                                                              |
+| 343 | [What is the purpose of some method in arrays](#what-is-the-purpose-of-some-method-in-arrays)                                                                                          |
+| 344 | [How do you combine two or more arrays](#how-do-you-combine-two-or-more-arrays)                                                                                                        |
+| 345 | [What is the difference between Shallow and Deep copy](#what-is-the-difference-between-shallow-and-deep-copy)                                                                          |
+| 346 | [How do you create specific number of copies of a string](#how-do-you-create-specific-number-of-copies-of-a-string)                                                                    |
+| 347 | [How do you return all matching strings against a regular expression](#how-do-you-return-all-matching-strings-against-a-regular-expression)                                            |
+| 348 | [How do you trim a string at the beginning or ending](#how-do-you-trim-a-string-at-the-beginning-or-ending)                                                                            |
+| 349 | [What is the output of below console statement with unary operator](#what-is-the-output-of-below-console-statement-with-unary-operator)                                                |
+| 350 | [Does javascript uses mixins](#does-javascript-uses-mixins)                                                                                                                            |
+| 351 | [What is a thunk function](#what-is-a-thunk-function)                                                                                                                                  |
+| 352 | [What are asynchronous thunks](#what-are-asynchronous-thunks)                                                                                                                          |
+| 353 | [What is the output of below function calls](#what-is-the-output-of-below-function-calls)                                                                                              |
+| 354 | [How to remove all line breaks from a string](#how-to-remove-all-line-breaks-from-a-string)                                                                                            |
+| 355 | [What is the difference between reflow and repaint](#what-is-the-difference-between-reflow-and-repaint)                                                                                |
+| 356 | [What happens with negating an array](#what-happens-with-negating-an-array)                                                                                                            |
+| 357 | [What happens if we add two arrays](#what-happens-if-we-add-two-arrays)                                                                                                                |
+| 358 | [What is the output of prepend additive operator on falsy values](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)                                                    |
+| 359 | [How do you create self string using special characters](#how-do-you-create-self-string-using-special-characters)                                                                      |
+| 360 | [How do you remove falsy values from an array](#how-do-you-remove-falsy-values-from-an-array)                                                                                          |
+| 361 | [How do you get unique values of an array](#how-do-you-get-unique-values-of-an-array)                                                                                                  |
+| 362 | [What is destructuring aliases](#what-is-destructuring-aliases)                                                                                                                        |
+| 363 | [How do you map the array values without using map method](#how-do-you-map-the-array-values-without-using-map-method)                                                                  |
+| 364 | [How do you empty an array](#how-do-you-empty-an-array)                                                                                                                                |
+| 365 | [How do you rounding numbers to certain decimals](#how-do-you-rounding-numbers-to-certain-decimals)                                                                                    |
+| 366 | [What is the easiest way to convert an array to an object](#what-is-the-easiest-way-to-convert-an-array-to-an-object)                                                                  |
+| 367 | [How do you create an array with some data](#how-do-you-create-an-array-with-some-data)                                                                                                |
+| 368 | [What are the placeholders from console object](#what-are-the-placeholders-from-console-object)                                                                                        |
+| 369 | [Is it possible to add CSS to console messages](#is-it-possible-to-add-css-to-console-messages)                                                                                        |
+| 370 | [What is the purpose of dir method of console object](#what-is-the-purpose-of-dir-method-of-console-object)                                                                            |
+| 371 | [Is it possible to debug HTML elements in console](#is-it-possible-to-debug-html-elements-in-console)                                                                                  |
+| 372 | [How do you display data in a tabular format using console object](#how-do-you-display-data-in-a-tabular-format-using-console-object)                                                  |
+| 373 | [How do you verify that an argument is a Number or not](#how-do-you-verify-that-an-argument-is-a-number-or-not)                                                                        |
+| 374 | [How do you create copy to clipboard button](#how-do-you-create-copy-to-clipboard-button)                                                                                              |
+| 375 | [What is the shortcut to get timestamp](#what-is-the-shortcut-to-get-timestamp)                                                                                                        |
+| 376 | [How do you flattening multi dimensional arrays](#how-do-you-flattening-multi-dimensional-arrays)                                                                                      |
+| 377 | [What is the easiest multi condition checking](#what-is-the-easiest-multi-condition-checking)                                                                                          |
+| 378 | [How do you capture browser back button](#how-do-you-capture-browser-back-button)                                                                                                      |
+| 379 | [How do you disable right click in the web page](#how-do-you-disable-right-click-in-the-web-page)                                                                                      |
+| 380 | [What are wrapper objects](#what-are-wrapper-objects)                                                                                                                                  |
+| 381 | [What is AJAX](#what-is-ajax)                                                                                                                                                          |
+| 382 | [What are the different ways to deal with Asynchronous Code](#what-are-the-different-ways-to-deal-with-asynchronous-code)                                                              |
+| 383 | [How to cancel a fetch request](#how-to-cancel-a-fetch-request)                                                                                                                        |
+| 384 | [What is web speech API](#what-is-web-speech-api)                                                                                                                                      |
+| 385 | [What is minimum timeout throttling](#what-is-minimum-timeout-throttling)                                                                                                              |
+| 386 | [How do you implement zero timeout in modern browsers](#how-do-you-implement-zero-timeout-in-modern-browsers)                                                                          |
+| 387 | [What are tasks in event loop](#what-are-tasks-in-event-loop)                                                                                                                          |
+| 388 | [What are microtasks](#what-are-microtasks)                                                                                                                                            |
 | 389 | [What are different event loops](#what-are-different-event-loops)                                                                                                                      |
 | 390 | [What is the purpose of queueMicrotask](#what-is-the-purpose-of-queuemicrotask)                                                                                                        |
 | 391 | [How do you use javascript libraries in typescript file](#how-do-you-use-javascript-libraries-in-typescript-file)                                                                      |
