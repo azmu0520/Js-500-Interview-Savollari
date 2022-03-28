@@ -1452,7 +1452,7 @@
 // console.log(regexp);
 // // expected output: /\w+/
 
-// 159.Patter(naqsh) uchun satrni qanday qidirasiz
+// 159.  Patter(naqsh) uchun satrni qanday qidirasiz
 // Siz naqsh uchun satrni izlash va natijaga qarab rost yoki yolgʻonni qaytarish uchun test() muntazam ifoda usulidan foydalanishingiz mumkin.
 
 // var pattern = /you/;
@@ -2461,7 +2461,7 @@
 // // ES2015
 // Object.getPrototypeOf('James'); // String.prototype
 
-// 259. Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi
+// 259.  Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi
 // ES5 da, agar obj parametri ob'ekt bo'lmasa, u TypeError istisnosini chiqaradi. Holbuki ES2015 da parametr .ga majburlanadi Object.
 
 // // ES5
@@ -3024,7 +3024,7 @@
 // console.log(output1);// Mr/Ms. John is a/an expert developer in JavaScript
 // console.log(output2);// Mr/Ms. Kane is a/an junior developer in JavaScript
 
-// 313. Raw stringlar nima
+// 313.  Raw stringlar nima
 // String.raw() ES6 shablon satrlarining xom string shaklini olish uchun ishlatiladigan usuldan foydalangan holda xom satrlar xususiyatini taqdim etadi . Bu xususiyat sizga kirish ketma-ketliklarini qayta ishlamasdan, xom satrlarga kirish imkonini beradi. Masalan, foydalanish quyidagicha bo'ladi,
 
 // var calculationString = String.raw `The sum of numbers is \n${1+2+3+4}!`;
@@ -3194,7 +3194,7 @@
 // 329.  PostMessages sinxronlashganmi ?
 // PostMessages IE8 brauzerida sinxrondir, lekin ular IE9 va boshqa barcha zamonaviy brauzerlarda (masalan, IE9+, Firefox, Chrome, Safari) asinxrondir. Ushbu asinxron xatti-harakat tufayli biz postMessage qaytarilganda qayta qo'ng'iroq qilish mexanizmidan foydalanamiz.
 
-// 330.Javascript qanday paradigma
+// 330.  Javascript qanday paradigma
 // JavaScript ko'p paradigmali til bo'lib, imperativ/protsessual dasturlashni, ob'ektga yo'naltirilgan dasturlashni va funktsional dasturlashni qo'llab-quvvatlaydi. JavaScript prototip merosga ega ob'ektga yo'naltirilgan dasturlashni qo'llab-quvvatlaydi.
 
 // 331.  Ichki(Internal) va tashqi(external) javascript o'rtasidagi farq nima
