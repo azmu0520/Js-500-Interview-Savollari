@@ -41,7 +41,7 @@ You can download the PDF and Epub version of this repository from the latest run
 ### Table of Contents
 
 | No. | Questions                                                                                                                                                        |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
 | 1   | [JavaScript-da ob'ektlarni yaratishning qanday usullari mavjud](#what-are-the-possible-ways-to-create-objects-in-javascript)                                     |
 | 2   | [Prototype chain nima ](#what-is-a-prototype-chain)                                                                                                              |
 | 3   | [Call, Apply and Bind o'rtasidagi farq nima](#what-is-the-difference-between-call-apply-and-bind)                                                                |
@@ -191,148 +191,147 @@ You can download the PDF and Epub version of this repository from the latest run
 | 147 | [Yangi ob'ekt yaratish uchun qanday tavsiyalar mavjud](#what-are-the-recommendations-to-create-new-object)                                                       |
 | 148 | [JSON massivlarini qanday aniqlaysiz](#how-do-you-define-json-arrays)                                                                                            |
 | 149 | [Tasodifiy butun sonlarni qanday yaratasiz](#how-do-you-generate-random-integers)                                                                                |
-| 150 | [ ]                                                                                                                                                              |
-| 151 | [Tree shaking nima](#what-is-tree-shaking)                                                                                                                       |
-| 152 | [](#what-is-the-need-of-tree-shaking)                                                                                                                            |
-| 153 | [](#is-it-recommended-to-use-eval)                                                                                                                               |
-| 154 | [](#what-is-a-regular-expression)                                                                                                                                |
-| 155 | [](#what-are-the-string-methods-available-in-regular-expression)                                                                                                 |
-| 156 | [](#what-are-modifiers-in-regular-expression)                                                                                                                    |
-| 157 | [](#what-are-regular-expression-patterns)                                                                                                                        |
-| 158 | [](#what-is-a-regexp-object)                                                                                                                                     |
-| 159 | [](#how-do-you-search-a-string-for-a-pattern)                                                                                                                    |
-| 160 | [](#what-is-the-purpose-of-exec-method)                                                                                                                          |
-| 161 | [](#how-do-you-change-style-of-a-html-element)                                                                                                                   |
-| 162 | []                                                                                                                                                               |
-|     |
-| 163 | [](#what-is-a-debugger-statement)                                                                                                                                |
-| 164 | [](#what-is-the-purpose-of-breakpoints-indebugging)                                                                                                              |
-| 165 | [](#can-i-use-reserved-words-as-identifiers)                                                                                                                     |
-| 166 | [](#how-do-you-detect-a-mobile-browser)                                                                                                                          |
-| 167 | [](#how-do-you-detect-a-mobile-browser-without-regexp)                                                                                                           |
-| 168 | [](#how-do-you-get-the-image-width-and-height-using-js)                                                                                                          |
-| 169 | [](#how-do-you-make-synchronous-http-request)                                                                                                                    |
-| 170 | [](#how-do-you-make-asynchronous-http-request)                                                                                                                   |
-| 171 | [](#how-do-you-convert-date-to-another-timezone-in-javascript)                                                                                                   |
-| 172 | [](#what-are-the-properties-used-to-get-size-of-window)                                                                                                          |
-| 173 | [](#what-is-a-conditional-operator-in-javascript)                                                                                                                |
-| 174 | [](#Can-you-apply-chaining-on-conditional-operator)                                                                                                              |
-| 175 | [](#what-are-the-ways-to-execute-javascript-after-page-load)                                                                                                     |
-| 176 | [](#what-is-the-difference-between-proto-and-prototype)                                                                                                          |
-| 177 | [](#give-an-example-where-do-you-really-need-semicolon)                                                                                                          |
-| 178 | [](#what-is-a-freeze-method)                                                                                                                                     |
-| 179 | [](#what-is-the-purpose-of-freeze-method)                                                                                                                        |
-| 180 | [](#why-do-i-need-to-use-freeze-method)                                                                                                                          |
-| 181 | [](#how-do-you-detect-a-browser-language-preference)                                                                                                             |
-| 182 | [](#how-to-convert-string-to-title-case-with-javascript)                                                                                                         |
-| 183 | [](#how-do-you-detect-javascript-disabled-in-the-page)                                                                                                           |
-| 184 | [](#what-are-various-operators-supported-by-javascript)                                                                                                          |
-| 185 | [](#what-is-a-rest-parameter)                                                                                                                                    |
-| 186 | [](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                                                                                            |
-| 187 | [](#what-are-the-bitwise-operators-available-in-javascript)                                                                                                      |
-| 188 | [](#what-is-a-spread-operator)                                                                                                                                   |
-| 189 | [](#how-do-you-determine-whether-object-is-frozen-or-not)                                                                                                        |
-| 190 | [](#how-do-you-determine-two-values-same-or-not-using-object)                                                                                                    |
-| 191 | [](#what-is-the-purpose-of-using-object-is-method)                                                                                                               |
-| 192 | [](#how-do-you-copy-properties-from-one-object-to-other)                                                                                                         |
-| 193 | [](#what-are-the-applications-of-assign-method)                                                                                                                  |
-| 194 | [](#what-is-a-proxy-object)                                                                                                                                      |
-| 195 | [](#what-is-the-purpose-of-seal-method)                                                                                                                          |
-| 196 | [](#what-are-the-applications-of-seal-method)                                                                                                                    |
-| 197 | [](#what-are-the-differences-between-freeze-and-seal-methods)                                                                                                    |
-| 198 | [](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                                                                          |
-| 199 | [](#how-do-you-get-enumerable-key-and-value-pairs)                                                                                                               |
-| 200 | []                                                                  |
-| 201 | [](#how-can-you-get-the-list-of-keys-of-any-object)                                                                                                              |
-| 202 | [](#how-do-you-create-an-object-with-prototype)                                                                                                                  |
-| 203 | [](#what-is-a-weakset)                                                                                                                                           |
-| 204 | [](#what-are-the-differences-between-weakset-and-set)                                                                                                            |
-| 205 | [](#list-down-the-collection-of-methods-available-on-weakset)                                                                                                    |
-| 206 | [](#what-is-a-weakmap)                                                                                                                                           |
-| 207 | [](#what-are-the-differences-between-weakmap-and-map)                                                                                                            |
-| 208 | [](#list-down-the-collection-of-methods-available-on-weakmap)                                                                                                    |
-| 209 | [](#what-is-the-purpose-of-uneval)                                                                                                                               |
-| 210 | [](#how-do-you-encode-an-url)                                                                                                                                    |
-| 211 | [](#how-do-you-decode-an-url)                                                                                                                                    |
-| 212 | [](#how-do-you-print-the-contents-of-web-page)                                                                                                                   |
-| 213 | [](#what-is-the-difference-between-uneval-and-eval)                                                                                                              |
-| 214 | [](#what-is-an-anonymous-function)                                                                                                                               |
-| 215 | [](#what-is-the-precedence-order-between-local-and-global-variables)                                                                                             |
-| 216 | [](#what-are-javascript-accessors)                                                                                                                               |
-| 217 | [](#how-do-you-define-property-on-object-constructor)                                                                                                            |
-| 218 | [](#what-is-the-difference-between-get-and-defineproperty)                                                                                                       |
-| 219 | [](#what-are-the-advantages-of-getters-and-setters)                                                                                                              |
-| 220 | [](#can-i-add-getters-and-setters-using-defineproperty-method)                                                                                                   |
-| 221 | [](#what-is-the-purpose-of-switch-case)                                                                                                                          |
-| 222 | []case](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)                                                                                   |
-| 223 | [](#what-are-primitive-data-types)                                                                                                                               |
-| 224 | [](#what-are-the-different-ways-to-access-object-properties)                                                                                                     |
-| 225 | [](#what-are-the-function-parameter-rules)                                                                                                                       |
-| 226 | [](#what-is-an-error-object)                                                                                                                                     |
-| 227 | [](#when-you-get-a-syntax-error)                                                                                                                                 |
-| 228 | [](#what-are-the-different-error-names-from-error-object)                                                                                                        |
-| 229 | [](#what-are-the-various-statements-in-error-handling)                                                                                                           |
-| 230 | [](#what-are-the-two-types-of-loops-in-javascript)                                                                                                               |
-| 231 | [](#what-is-nodejs)                                                                                                                                              |
-| 232 | [](#what-is-an-intl-object)                                                                                                                                      |
-| 233 | [](#how-do-you-perform-language-specific-date-and-time-formatting)                                                                                               |
-| 234 | [](#what-is-an-iterator)                                                                                                                                         |
-| 235 | [](#how-does-synchronous-iteration-works)                                                                                                                        |
-| 236 | [](#what-is-an-event-loop)                                                                                                                                       |
-| 237 | [](#what-is-call-stack)                                                                                                                                          |
-| 238 | [](#what-is-an-event-queue)                                                                                                                                      |
-| 239 | [](#what-is-a-decorator)                                                                                                                                         |
-| 240 | [](#what-are-the-properties-of-intl-object)                                                                                                                      |
-| 241 | [](#what-is-an-unary-operator)                                                                                                                                   |
-| 242 | [](#how-do-you-sort-elements-in-an-array)                                                                                                                        |
-| 243 | [](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)                                                                                                 |
-| 244 | [](#how-do-you-reversing-an-array)                                                                                                                               |
-| 245 | [](#how-do-you-find-min-and-max-value-in-an-array)                                                                                                               |
-| 246 | [](#how-do-you-find-min-and-max-values-without--math-functions)                                                                                                  |
-| 247 | [](#what-is-an-empty-statement-and-purpose-of-it)                                                                                                                |
-| 248 | [](#how-do-you-get-meta-data-of-a-module)                                                                                                                        |
-| 249 | [](#what-is-a-comma-operator)                                                                                                                                    |
-| 250 | [](#what-is-the-advantage-of-a-comma-operator)                                                                                                                   |
-| 251 | [](#what-is-typescript)                                                                                                                                          |
-| 252 | [](#what-are-the-differences-between-javascript-and-typescript)                                                                                                  |
-| 253 | [](#what-are-the-advantages-of-typescript-over-javascript)                                                                                                       |
-| 254 | [](#what-is-an-object-initializer)                                                                                                                               |
-| 255 | [](#what-is-a-constructor-method)                                                                                                                                |
-| 256 | [](#what-happens-if-you-write-constructor-more-than-once-in-a-class)                                                                                             |
-| 257 | [](#how-do-you-call-the-constructor-of-a-parent-class)                                                                                                           |
-| 258 | [](#how-do-you-get-the-prototype-of-an-object)                                                                                                                   |
-| 259 | [](#what-happens-if-i-pass-string-type-for-getprototype-method)                                                                                                  |
-| 260 | [](#how-do-you-set-prototype-of-one-object-to-another)                                                                                                           |
-| 261 | [](#how-do-you-check-whether-an-object-can-be-extendable-or-not)                                                                                                 |
-| 262 | [](#how-do-you-prevent-an-object-to-extend)                                                                                                                      |
-| 263 | [](#what-are-the-different-ways-to-make-an-object-non-extensible)                                                                                                |
-| 264 | [](#how-do-you-define-multiple-properties-on-an-object)                                                                                                          |
-| 265 | [](#what-is-mean-in-javascript)                                                                                                                                  |
-| 266 | [](#what-is-obfuscation-in-javascript)                                                                                                                           |
-| 267 | [](#why-do-you-need-obfuscation)                                                                                                                                 |
-| 268 | [](#what-is-minification)                                                                                                                                        |
-| 269 | [](#what-are-the-advantages-of-minification)                                                                                                                     |
-| 270 | [](#what-are-the-differences-between-obfuscation-and-encryption)                                                                                                 |
-| 271 | [](#what-are-the-common-tools-used-for-minification)                                                                                                             |
-| 272 | [](#how-do-you-perform-form-validation-using-javascript)                                                                                                         |
-| 273 | [](#how-do-you-perform-form-validation-without-javascript)                                                                                                       |
-| 274 | [](#what-are-the-dom-methods-available-for-constraint-validation)                                                                                                |
-| 275 | [](#what-are-the-available-constraint-validation-dom-properties)                                                                                                 |
-| 276 | [](#what-are-the-list-of-validity-properties)                                                                                                                    |
-| 277 | [](#give-an-example-usage-of-rangeoverflow-property)                                                                                                             |
-| 278 | [](#is-enums-feature-available-in-javascript)                                                                                                                    |
-| 279 | [](#What-is-an-enum)                                                                                                                                             |
-| 280 | [](#how-do-you-list-all-properties-of-an-object)                                                                                                                 |
-| 281 | [](#how-do-you-get-property-descriptors-of-an-object)                                                                                                            |
-| 282 | [](#what-are-the-attributes-provided-by-a-property-descriptor)                                                                                                   |
-| 283 | [](#how-do-you-extend-classes)                                                                                                                                   |
-| 284 | [](#how-do-i-modify-the-url-without-reloading-the-page)                                                                                                          |
-| 285 | []or not](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)                                                                                 |
-| 286 | [](#how-do-you-compare-scalar-arrays)                                                                                                                            |
-| 287 | [](#how-to-get-the-value-from-get-parameters)                                                                                                                    |
-| 288 | [](#how-do-you-print-numbers-with-commas-as-thousand-separators)                                                                                                 |
-| 289 | [](#what-is-the-difference-between-java-and-javascript)                                                                                                          |
-| 290 | [](#does-javascript-supports-namespace)                                                                                                                          |
+| 150 | [Can you write a random integers function to print integers with in a range](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range)        |
+| 151 | [What is tree shaking](#what-is-tree-shaking)                                                                                                                    |
+| 152 | [What is the need of tree shaking](#what-is-the-need-of-tree-shaking)                                                                                            |
+| 153 | [Is it recommended to use eval](#is-it-recommended-to-use-eval)                                                                                                  |
+| 154 | [What is a Regular Expression](#what-is-a-regular-expression)                                                                                                    |
+| 155 | [What are the string methods available in Regular expression](#what-are-the-string-methods-available-in-regular-expression)                                      |
+| 156 | [What are modifiers in regular expression](#what-are-modifiers-in-regular-expression)                                                                            |
+| 157 | [What are regular expression patterns](#what-are-regular-expression-patterns)                                                                                    |
+| 158 | [What is a RegExp object](#what-is-a-regexp-object)                                                                                                              |
+| 159 | [How do you search a string for a pattern](#how-do-you-search-a-string-for-a-pattern)                                                                            |
+| 160 | [What is the purpose of exec method](#what-is-the-purpose-of-exec-method)                                                                                        |
+| 161 | [How do you change style of a HTML element](#how-do-you-change-style-of-a-html-element)                                                                          |
+| 162 | [What would be the result of 1+2+'3'](#what-would-be-the-result-of-1+2+'3')                                                                                      |
+| 163 | [What is a debugger statement](#what-is-a-debugger-statement)                                                                                                    |
+| 164 | [What is the purpose of breakpoints in debugging](#what-is-the-purpose-of-breakpoints-indebugging)                                                               |
+| 165 | [Can I use reserved words as identifiers](#can-i-use-reserved-words-as-identifiers)                                                                              |
+| 166 | [How do you detect a mobile browser](#how-do-you-detect-a-mobile-browser)                                                                                        |
+| 167 | [How do you detect a mobile browser without regexp](#how-do-you-detect-a-mobile-browser-without-regexp)                                                          |
+| 168 | [How do you get the image width and height using JS](#how-do-you-get-the-image-width-and-height-using-js)                                                        |
+| 169 | [How do you make synchronous HTTP request](#how-do-you-make-synchronous-http-request)                                                                            |
+| 170 | [How do you make asynchronous HTTP request](#how-do-you-make-asynchronous-http-request)                                                                          |
+| 171 | [How do you convert date to another timezone in javascript](#how-do-you-convert-date-to-another-timezone-in-javascript)                                          |
+| 172 | [What are the properties used to get size of window](#what-are-the-properties-used-to-get-size-of-window)                                                        |
+| 173 | [What is a conditional operator in javascript](#what-is-a-conditional-operator-in-javascript)                                                                    |
+| 174 | [Can you apply chaining on conditional operator](#Can-you-apply-chaining-on-conditional-operator)                                                                |
+| 175 | [What are the ways to execute javascript after page load](#what-are-the-ways-to-execute-javascript-after-page-load)                                              |
+| 176 | [What is the difference between proto and prototype](#what-is-the-difference-between-proto-and-prototype)                                                        |
+| 177 | [Give an example where do you really need semicolon](#give-an-example-where-do-you-really-need-semicolon)                                                        |
+| 178 | [What is a freeze method](#what-is-a-freeze-method)                                                                                                              |
+| 179 | [What is the purpose of freeze method](#what-is-the-purpose-of-freeze-method)                                                                                    |
+| 180 | [Why do I need to use freeze method](#why-do-i-need-to-use-freeze-method)                                                                                        |
+| 181 | [How do you detect a browser language preference](#how-do-you-detect-a-browser-language-preference)                                                              |
+| 182 | [How to convert string to title case with javascript](#how-to-convert-string-to-title-case-with-javascript)                                                      |
+| 183 | [How do you detect javascript disabled in the page](#how-do-you-detect-javascript-disabled-in-the-page)                                                          |
+| 184 | [What are various operators supported by javascript](#what-are-various-operators-supported-by-javascript)                                                        |
+| 185 | [What is a rest parameter](#what-is-a-rest-parameter)                                                                                                            |
+| 186 | [What happens if you do not use rest parameter as a last argument](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                            |
+| 187 | [What are the bitwise operators available in javascript](#what-are-the-bitwise-operators-available-in-javascript)                                                |
+| 188 | [What is a spread operator](#what-is-a-spread-operator)                                                                                                          |
+| 189 | [How do you determine whether object is frozen or not](#how-do-you-determine-whether-object-is-frozen-or-not)                                                    |
+| 190 | [How do you determine two values same or not using object](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
+| 191 | [What is the purpose of using object is method](#what-is-the-purpose-of-using-object-is-method)                                                                  |
+| 192 | [How do you copy properties from one object to other](#how-do-you-copy-properties-from-one-object-to-other)                                                      |
+| 193 | [What are the applications of assign method](#what-are-the-applications-of-assign-method)                                                                        |
+| 194 | [What is a proxy object](#what-is-a-proxy-object)                                                                                                                |
+| 195 | [What is the purpose of seal method](#what-is-the-purpose-of-seal-method)                                                                                        |
+| 196 | [What are the applications of seal method](#what-are-the-applications-of-seal-method)                                                                            |
+| 197 | [What are the differences between freeze and seal methods](#what-are-the-differences-between-freeze-and-seal-methods)                                            |
+| 198 | [How do you determine if an object is sealed or not](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                        |
+| 199 | [How do you get enumerable key and value pairs](#how-do-you-get-enumerable-key-and-value-pairs)                                                                  |
+| 200 | [What is the main difference between Object.values and Object.entries method](#what-is-the-main-difference-between-object.values-and-object.entries-method)      |
+| 201 | [How can you get the list of keys of any object](#how-can-you-get-the-list-of-keys-of-any-object)                                                                |
+| 202 | [How do you create an object with prototype](#how-do-you-create-an-object-with-prototype)                                                                        |
+| 203 | [What is a WeakSet](#what-is-a-weakset)                                                                                                                          |
+| 204 | [What are the differences between WeakSet and Set](#what-are-the-differences-between-weakset-and-set)                                                            |
+| 205 | [List down the collection of methods available on WeakSet](#list-down-the-collection-of-methods-available-on-weakset)                                            |
+| 206 | [What is a WeakMap](#what-is-a-weakmap)                                                                                                                          |
+| 207 | [What are the differences between WeakMap and Map](#what-are-the-differences-between-weakmap-and-map)                                                            |
+| 208 | [List down the collection of methods available on WeakMap](#list-down-the-collection-of-methods-available-on-weakmap)                                            |
+| 209 | [What is the purpose of uneval](#what-is-the-purpose-of-uneval)                                                                                                  |
+| 210 | [How do you encode an URL](#how-do-you-encode-an-url)                                                                                                            |
+| 211 | [How do you decode an URL](#how-do-you-decode-an-url)                                                                                                            |
+| 212 | [How do you print the contents of web page](#how-do-you-print-the-contents-of-web-page)                                                                          |
+| 213 | [What is the difference between uneval and eval](#what-is-the-difference-between-uneval-and-eval)                                                                |
+| 214 | [What is an anonymous function](#what-is-an-anonymous-function)                                                                                                  |
+| 215 | [What is the precedence order between local and global variables](#what-is-the-precedence-order-between-local-and-global-variables)                              |
+| 216 | [What are javascript accessors](#what-are-javascript-accessors)                                                                                                  |
+| 217 | [How do you define property on Object constructor](#how-do-you-define-property-on-object-constructor)                                                            |
+| 218 | [What is the difference between get and defineProperty](#what-is-the-difference-between-get-and-defineproperty)                                                  |
+| 219 | [What are the advantages of Getters and Setters](#what-are-the-advantages-of-getters-and-setters)                                                                |
+| 220 | [Can I add getters and setters using defineProperty method](#can-i-add-getters-and-setters-using-defineproperty-method)                                          |
+| 221 | [What is the purpose of switch-case](#what-is-the-purpose-of-switch-case)                                                                                        |
+| 222 | [What are the conventions to be followed for the usage of swtich case](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)                    |
+| 223 | [What are primitive data types](#what-are-primitive-data-types)                                                                                                  |
+| 224 | [What are the different ways to access object properties](#what-are-the-different-ways-to-access-object-properties)                                              |
+| 225 | [What are the function parameter rules](#what-are-the-function-parameter-rules)                                                                                  |
+| 226 | [What is an error object](#what-is-an-error-object)                                                                                                              |
+| 227 | [When you get a syntax error](#when-you-get-a-syntax-error)                                                                                                      |
+| 228 | [What are the different error names from error object](#what-are-the-different-error-names-from-error-object)                                                    |
+| 229 | [What are the various statements in error handling](#what-are-the-various-statements-in-error-handling)                                                          |
+| 230 | [What are the two types of loops in javascript](#what-are-the-two-types-of-loops-in-javascript)                                                                  |
+| 231 | [What is nodejs](#what-is-nodejs)                                                                                                                                |
+| 232 | [What is an Intl object](#what-is-an-intl-object)                                                                                                                |
+| 233 | [How do you perform language specific date and time formatting](#how-do-you-perform-language-specific-date-and-time-formatting)                                  |
+| 234 | [What is an Iterator](#what-is-an-iterator)                                                                                                                      |
+| 235 | [How does synchronous iteration works](#how-does-synchronous-iteration-works)                                                                                    |
+| 236 | [What is an event loop](#what-is-an-event-loop)                                                                                                                  |
+| 237 | [What is call stack](#what-is-call-stack)                                                                                                                        |
+| 238 | [What is an event queue](#what-is-an-event-queue)                                                                                                                |
+| 239 | [What is a decorator](#what-is-a-decorator)                                                                                                                      |
+| 240 | [What are the properties of Intl object](#what-are-the-properties-of-intl-object)                                                                                |
+| 241 | [What is an Unary operator](#what-is-an-unary-operator)                                                                                                          |
+| 242 | [How do you sort elements in an array](#how-do-you-sort-elements-in-an-array)                                                                                    |
+| 243 | [What is the purpose of compareFunction while sorting arrays](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)                                      |
+| 244 | [How do you reversing an array](#how-do-you-reversing-an-array)                                                                                                  |
+| 245 | [How do you find min and max value in an array](#how-do-you-find-min-and-max-value-in-an-array)                                                                  |
+| 246 | [How do you find min and max values without Math functions](#how-do-you-find-min-and-max-values-without--math-functions)                                         |
+| 247 | [What is an empty statement and purpose of it](#what-is-an-empty-statement-and-purpose-of-it)                                                                    |
+| 248 | [How do you get meta data of a module](#how-do-you-get-meta-data-of-a-module)                                                                                    |
+| 249 | [What is a comma operator](#what-is-a-comma-operator)                                                                                                            |
+| 250 | [What is the advantage of a comma operator](#what-is-the-advantage-of-a-comma-operator)                                                                          |
+| 251 | [What is typescript](#what-is-typescript)                                                                                                                        |
+| 252 | [What are the differences between javascript and typescript](#what-are-the-differences-between-javascript-and-typescript)                                        |
+| 253 | [What are the advantages of typescript over javascript](#what-are-the-advantages-of-typescript-over-javascript)                                                  |
+| 254 | [What is an object initializer](#what-is-an-object-initializer)                                                                                                  |
+| 255 | [What is a constructor method](#what-is-a-constructor-method)                                                                                                    |
+| 256 | [What happens if you write constructor more than once in a class](#what-happens-if-you-write-constructor-more-than-once-in-a-class)                              |
+| 257 | [How do you call the constructor of a parent class](#how-do-you-call-the-constructor-of-a-parent-class)                                                          |
+| 258 | [How do you get the prototype of an object](#how-do-you-get-the-prototype-of-an-object)                                                                          |
+| 259 | [What happens If I pass string type for getPrototype method](#what-happens-if-i-pass-string-type-for-getprototype-method)                                        |
+| 260 | [How do you set prototype of one object to another](#how-do-you-set-prototype-of-one-object-to-another)                                                          |
+| 261 | [How do you check whether an object can be extendable or not](#how-do-you-check-whether-an-object-can-be-extendable-or-not)                                      |
+| 262 | [How do you prevent an object to extend](#how-do-you-prevent-an-object-to-extend)                                                                                |
+| 263 | [What are the different ways to make an object non-extensible](#what-are-the-different-ways-to-make-an-object-non-extensible)                                    |
+| 264 | [How do you define multiple properties on an object](#how-do-you-define-multiple-properties-on-an-object)                                                        |
+| 265 | [What is MEAN in javascript](#what-is-mean-in-javascript)                                                                                                        |
+| 266 | [What Is Obfuscation in javascript](#what-is-obfuscation-in-javascript)                                                                                          |
+| 267 | [Why do you need Obfuscation](#why-do-you-need-obfuscation)                                                                                                      |
+| 268 | [What is Minification](#what-is-minification)                                                                                                                    |
+| 269 | [What are the advantages of minification](#what-are-the-advantages-of-minification)                                                                              |
+| 270 | [What are the differences between Obfuscation and Encryption](#what-are-the-differences-between-obfuscation-and-encryption)                                      |
+| 271 | [What are the common tools used for minification](#what-are-the-common-tools-used-for-minification)                                                              |
+| 272 | [How do you perform form validation using javascript](#how-do-you-perform-form-validation-using-javascript)                                                      |
+| 273 | [How do you perform form validation without javascript](#how-do-you-perform-form-validation-without-javascript)                                                  |
+| 274 | [What are the DOM methods available for constraint validation](#what-are-the-dom-methods-available-for-constraint-validation)                                    |
+| 275 | [What are the available constraint validation DOM properties](#what-are-the-available-constraint-validation-dom-properties)                                      |
+| 276 | [What are the list of validity properties](#what-are-the-list-of-validity-properties)                                                                            |
+| 277 | [Give an example usage of rangeOverflow property](#give-an-example-usage-of-rangeoverflow-property)                                                              |
+| 278 | [Is enums feature available in javascript](#is-enums-feature-available-in-javascript)                                                                            |
+| 279 | [What is an enum](#What-is-an-enum)                                                                                                                              |
+| 280 | [How do you list all properties of an object](#how-do-you-list-all-properties-of-an-object)                                                                      |
+| 281 | [How do you get property descriptors of an object](#how-do-you-get-property-descriptors-of-an-object)                                                            |
+| 282 | [What are the attributes provided by a property descriptor](#what-are-the-attributes-provided-by-a-property-descriptor)                                          |
+| 283 | [How do you extend classes](#how-do-you-extend-classes)                                                                                                          |
+| 284 | [How do I modify the url without reloading the page](#how-do-i-modify-the-url-without-reloading-the-page)                                                        |
+| 285 | [How do you check whether an array includes a particular value or not](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)                    |
+| 286 | [How do you compare scalar arrays](#how-do-you-compare-scalar-arrays)                                                                                            |
+| 287 | [How to get the value from get parameters](#how-to-get-the-value-from-get-parameters)                                                                            |
+| 288 | [How do you print numbers with commas as thousand separators](#how-do-you-print-numbers-with-commas-as-thousand-separators)                                      |
+| 289 | [What is the difference between java and javascript](#what-is-the-difference-between-java-and-javascript)                                                        |
+| 290 | [Does javascript supports namespace](#does-javascript-supports-namespace)                                                                                        |
 | 291 | [How do you declare namespace](#how-do-you-declare-namespace)                                                                                                    |
 | 292 | [How do you invoke javascript code in an iframe from parent page](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)                              |
 | 293 | [How do get the timezone offset from date](#how-do-get-the-timezone-offset-from-date)                                                                            |
@@ -342,7 +341,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 297 | [What is V8 JavaScript engine](#what-is-v8-javascript-engine)                                                                                                    |
 | 298 | [Why do we call javascript as dynamic language](#why-do-we-call-javascript-as-dynamic-language)                                                                  |
 | 299 | [What is a void operator](#what-is-a-void-operator)                                                                                                              |
-| 300 | [How to set the cursor to wait](#how-to-set-the-cursor-to-wait)                                                                                                  |
+| 300 | [How to set the cursor to wait](#how-to-set-the-cursor-to-wait)                                                                                                  |     |
 | 301 | [How do you create an infinite loop](#how-do-you-create-an-infinite-loop)                                                                                        |
 | 302 | [Why do you need to avoid with statement](#why-do-you-need-to-avoid-with-statement)                                                                              |
 | 303 | [What is the output of below for loops](#what-is-the-output-of-below-for-loops)                                                                                  |
