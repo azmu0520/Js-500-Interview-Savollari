@@ -1,13 +1,9 @@
 // 500-Js-Questions
 
 // 1.  JavaScript-da ob'ektlarni yaratishning qanday usullari mavjud?
-
 // Quyidagi kabi javascriptda ob'ektlar yaratishning ko'plab usullari mavjud
-
 // Ob'ekt konstruktori:
-
 // Bo'sh ob'ektni yaratishning eng oddiy usuli Ob'ekt konstruktoridan foydalanishdir. Hozirgi vaqtda bunday yondashuv tavsiya etilmaydi.
-
 // var obyekt = new Object ();
 // Ob'ektni yaratish usuli:
 

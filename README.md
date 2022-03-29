@@ -1,6 +1,6 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@azmu0520](https://github.com/azmu0520) for technical updates.
+> Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@SudheerJonna](https://twitter.com/SudheerJonna) for technical updates.
 
 Go to [Coding Exercise](#coding-exercise) for coding specific questions
 
@@ -40,450 +40,446 @@ You can download the PDF and Epub version of this repository from the latest run
 
 ### Table of Contents
 
-| No.                                                                                                                        | Questions                                                                                                                                                                              |
-| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------- | -------------- |
-| 1                                                                                                                          | [JavaScript-da ob'ektlarni yaratishning qanday usullari mavjud](#what-are-the-possible-ways-to-create-objects-in-javascript)                                                           |
-| 2                                                                                                                          | [Prototype chain nima ](#what-is-a-prototype-chain)                                                                                                                                    |
-| 3                                                                                                                          | [Call, Apply and Bind o'rtasidagi farq nima](#what-is-the-difference-between-call-apply-and-bind)                                                                                      |
-| 4                                                                                                                          | [JSON nima va uning umumiy operatsiyalari](#what-is-json-and-its-common-operations)                                                                                                    |
-| 5                                                                                                                          | [Array slice method maqsad nima](#what-is-the-purpose-of-the-array-slice-method)                                                                                                       |
-| 6                                                                                                                          | [Array splice method maqsad nima](#what-is-the-purpose-of-the-array-splice-method)                                                                                                     |
-| 7                                                                                                                          | [Slice and splice o'rtasidagi farq nima](#what-is-the-difference-between-slice-and-splice)                                                                                             |
-| 8                                                                                                                          | [Object and Map qanday solishtirasiz](#how-do-you-compare-object-and-map)                                                                                                              |
-| 9                                                                                                                          | [== va === operatorlar o'rtasidagi farq nima](#what-is-the-difference-between--and--operators)                                                                                         |
-| 10                                                                                                                         | [Lambda yoki arrow functionlar nima ](#what-are-lambda-or-arrow-functions)                                                                                                             |
-| 11                                                                                                                         | [Birinchi class function nima](#what-is-a-first-class-function)                                                                                                                        |
-| 12                                                                                                                         | [Birinchi tartibli (first order) function nima](#what-is-a-first-order-function)                                                                                                       |
-| 13                                                                                                                         | [Higher order function nima](#what-is-a-higher-order-function)                                                                                                                         |
-| 14                                                                                                                         | [Unary function nima](#what-is-a-unary-function)                                                                                                                                       |
-| 15                                                                                                                         | [Currying function nima](#what-is-the-currying-function)                                                                                                                               |
-| 16                                                                                                                         | [Pure function nima](#what-is-a-pure-function)                                                                                                                                         |
-| 17                                                                                                                         | [Let kalit so'zining maqsadi nima](#what-is-the-purpose-of-the-let-keyword)                                                                                                            |
-| 18                                                                                                                         | [Let va var o'rtasidagi farq nima](#what-is-the-difference-between-let-and-var)                                                                                                        |
-| 19                                                                                                                         | [Nima maqsadda let kalit so'zi sifatida foydalaniladi](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)                                                                        |
-| 20                                                                                                                         | [Qanday qilib o'zgaruvchilarni almashtirish blokida xatosiz qayta e'lon qilasiz](#how-do-you-redeclare-variables-in-switch-block-without-an-error)                                     |
-| 21                                                                                                                         | [Vaqtinchalik o'lik zona nima ? (Temporal Dead Zone)](#what-is-the-temporal-dead-zone)                                                                                                 |
-| 22                                                                                                                         | [IIFE (darhol chaqiriladigan funksiya ifodasi) nima? ](#what-is-iifeimmediately-invoked-function-expression)                                                                           |
-| 23                                                                                                                         | [JavaScript-da URL-manzilni qanday dekodlash yoki enkodlash mumkin](#how-do-you-decode-or-encode-a-url-in-javascript)                                                                  |
-| 24                                                                                                                         | [Memoization nima](#what-is-memoization)                                                                                                                                               |
-| 25                                                                                                                         | [Hoisting nima](#what-is-hoisting)                                                                                                                                                     |
-| 26                                                                                                                         | [ES6 da qanday sinflar(class) mavjud](#what-are-classes-in-es6)                                                                                                                        |
-| 27                                                                                                                         | [Closures nima](#what-are-closures)                                                                                                                                                    |
-| 28                                                                                                                         | [Modules nima](#what-are-modules)                                                                                                                                                      |
-| 29                                                                                                                         | [Nima uchun sizga modullar kerak](#why-do-you-need-modules)                                                                                                                            |
-| 30                                                                                                                         | [Javasciprtda scopelar nima](#what-is-scope-in-javascript)                                                                                                                             |
-| 31                                                                                                                         | [Service worker nima](#what-is-a-service-worker)                                                                                                                                       |
-| 32                                                                                                                         | [Server worker yordamida DOMni qanday boshqarish mumkin](#how-do-you-manipulate-dom-using-a-service-worker)                                                                            |
-| 33                                                                                                                         | [Server worker qayta ishga tushirishda ma'lumotlardan qanday foydalanasiz](#how-do-you-reuse-information-across-service-worker-restarts)                                               |
-| 34                                                                                                                         | [IndexedDB nima](#what-is-indexeddb)                                                                                                                                                   |
-| 35                                                                                                                         | [Veb-xotira(web storage) nima ](#what-is-web-storage)                                                                                                                                  |
-| 36                                                                                                                         | [Post xabari(post message) nima ](#what-is-a-post-message)                                                                                                                             |
-| 37                                                                                                                         | [Cookie nima](#what-is-a-cookie)                                                                                                                                                       |
-| 38                                                                                                                         | [Cookie nima uchun kerak](#why-do-you-need-a-cookie)                                                                                                                                   |
-| 39                                                                                                                         | [Cookie-da qanday variantlar mavjud ](#what-are-the-options-in-a-cookie)                                                                                                               |
-| 40                                                                                                                         | [Cookie faylini qanday o'chirish mumkin](#how-do-you-delete-a-cookie)                                                                                                                  |
-| 41                                                                                                                         | [Cookie, mahalliy saqlash va seans saqlash o'rtasidagi farqlar qanday](#What-are-the-differences-between-cookie-local-storage-and-session-storage)                                     |
-| 42                                                                                                                         | [ localStorage va sessionStorage o'rtasidagi asosiy farq nima](#what-is-the-main-difference-between-localstorage-and-sessionstorage)                                                   |
-| 43                                                                                                                         | [Veb-xotiraga(web storage) qanday kirish mumkin](#how-do-you-access-web-storage)                                                                                                       |
-| 44                                                                                                                         | [Session storageda qanday usullar mavjud](#what-are-the-methods-available-on-session-storage)                                                                                          |
-| 45                                                                                                                         | [Saqlash hodisasi nima va uning voqea ishlovchisi (storage event and its event handler)](#what-is-a-storage-event-and-its-event-handler)                                               |
-| 46                                                                                                                         | [Nima uchun sizga veb-xotira kerak](#why-do-you-need-web-storage)                                                                                                                      |
-| 47                                                                                                                         | [Veb-xotira brauzerining yordamini qanday tekshirish mumkin](#how-do-you-check-web-storage-browser-support)                                                                            |
-| 48                                                                                                                         | [Veb-workersning brauzer qo'llab-quvvatlashini qanday tekshirish mumkin](#how-do-you-check-web-workers-browser-support)                                                                |
-| 49                                                                                                                         | [Veb-workerga misol keltiring](#give-an-example-of-web-worker)                                                                                                                         |
-| 50                                                                                                                         | [Web-ishchilarning DOM-da qanday cheklovlari bor](#what-are-the-restrictions-of-web-workers-on-dom)                                                                                    |
-| 51                                                                                                                         | [Promise nima](#what-is-a-promise)                                                                                                                                                     |
-| 52                                                                                                                         | [Nega sizga promise kerak](#why-do-you-need-a-promise)                                                                                                                                 |
-| 53                                                                                                                         | [Promisening uchta holati nima](#what-are-the-three-states-of-promise)                                                                                                                 |
-| 54                                                                                                                         | [Callback funktsiyasi nima](#what-is-a-callback-function)                                                                                                                              |
-| 55                                                                                                                         | [Nega bizga Callbacklar kerak](#why-do-we-need-callbacks)                                                                                                                              |
-| 56                                                                                                                         | [Callback hell nima](#what-is-a-callback-hell)                                                                                                                                         |
-| 57                                                                                                                         | [Server tomonidan yuborilgan voqealar(event) nima](#what-is-server-sent-events)                                                                                                        |
-| 58                                                                                                                         | [Server tomonidan yuborilgan voqea bildirishnomalarini qanday qabul qilasiz](#how-do-you-receive-server-sent-event-notifications)                                                      |
-| 59                                                                                                                         | [Server tomonidan yuborilgan voqealar uchun brauzer yordamini qanday tekshirish mumkin](#how-do-you-check-browser-support-for-server-sent-events)                                      |
-| 60                                                                                                                         | [Server yuborilgan voqealar uchun qanday hodisalar mavjud](#what-are-the-events-available-for-server-sent-events)                                                                      |
-| 61                                                                                                                         | [Promisening asosiy qoidalari qanday](#what-are-the-main-rules-of-promise)                                                                                                             |
-| 62                                                                                                                         | [Callback dagi callback nima](#what-is-callback-in-callback)                                                                                                                           |
-| 63                                                                                                                         | [promise zanjiri(chaining) nima](#what-is-promise-chaining)                                                                                                                            |
-| 64                                                                                                                         | [Promise.all nima](#what-is-promise.all)                                                                                                                                               |
-| 65                                                                                                                         | [Promise race mathoding maqsadi nima](#what-is-the-purpose-of-race-method-in-promise)                                                                                                  |
-| 66                                                                                                                         | [Javascriptda qat'iy rejim(strict mode) nima](#what-is-a-strict-mode-in-javascript)                                                                                                    |
-| 67                                                                                                                         | [Nima uchun sizga qattiq rejim kerak](#why-do-you-need-strict-mode)                                                                                                                    |
-| 68                                                                                                                         | [Qattiq rejimni qanday e'lon qilasiz](#how-do-you-declare-strict-mode)                                                                                                                 |
-| 69                                                                                                                         | [Ikkilamchi undovdan maqsad nima (! !)](#what-is-the-purpose-of-double-exclamation)                                                                                                    |
-| 70                                                                                                                         | [Delete operatorining maqsadi nima](#what-is-the-purpose-of-delete-operator)                                                                                                           |
-| 71                                                                                                                         | [typeOf operatori nima](#what-is-typeof-operator)                                                                                                                                      |
-| 72                                                                                                                         | [Belgilanmagan xususiyati (undefined prop) nima](#what-is-undefined-property)                                                                                                          |
-| 73                                                                                                                         | [Null qiymat nima](#what-is-null-value)                                                                                                                                                |
-| 74                                                                                                                         | [Null va undefined ortasida farq nima](#what-is-the-difference-between-null-and-undefined)                                                                                             |
-| 75                                                                                                                         | [Eval nima](#What-is-eval)                                                                                                                                                             |
-| 76                                                                                                                         | [Window va document o'rtasidagi farq nima](#what-is-the-difference-between-window-and-document)                                                                                        |
-| 77                                                                                                                         | [Javascriptda tarixga(Js history) qanday kirish mumkin](#how-do-you-access-history-in-javascript)                                                                                      |
-| 78                                                                                                                         | [Caps lock tugmasi yoqilgan yoki yo'qligini qanday aniqlash mumkin](#how-do-you-detect-caps-lock-key-turned-on-or-not)                                                                 |
-| 79                                                                                                                         | [NaN nima](#what-is-isnan)                                                                                                                                                             |
-| 80                                                                                                                         | [E'lon qilinmagan va aniqlanmagan o'zgaruvchilar o'rtasidagi farqlar qanday](#what-are-the-differences-between-undeclared-and-undefined-variables)                                     |
-| 81                                                                                                                         | [Global o'zgaruvchilar nima](#what-are-global-variables)                                                                                                                               |
-| 82                                                                                                                         | [Global o'zgaruvchilar bilan qanday muammolar mavjud](#what-are-the-problems-with-global-variables)                                                                                    |
-| 83                                                                                                                         | [NaN property nima](#what-is-nan-property)                                                                                                                                             |
-| 84                                                                                                                         | [isFinite funksiyasining maqsadi nima](#what-is-the-purpose-of-isfinite-function)                                                                                                      |
-| 85                                                                                                                         | [Hodisalar oqimi (event flow) nima](#what-is-an-event-flow)                                                                                                                            |
-| 86                                                                                                                         | [Event bubbling nima](#what-is-event-bubbling)                                                                                                                                         |
-| 87                                                                                                                         | [Event capturing nima](#what-is-event-capturing)                                                                                                                                       |
-| 88                                                                                                                         | [Form JavaScript yordamida qanday yuborasiz](#how-do-you-submit-a-form-using-javascript)                                                                                               |
-| 89                                                                                                                         | [Operatsion tizim tafsilotlari(operating system details) ni qanday topish mumkin](#how-do-you-find-operating-system-details)                                                           |
-| 90                                                                                                                         | [Document load va DOMContentLoaded hodisalari o'rtasidagi farq nima](#what-is-the-difference-between-document-load-and-domcontentloaded-events)                                        |
-| 91                                                                                                                         | [Mahalliy(native), host va foydalanuvchi ob'ektlari(user objects) o'rtasidagi farq nima]                                                                                               |
-| (#what-is-the-difference-between-native,-host-and-user-objects)                                                            |
-| 92                                                                                                                         | [JavaScript kodini tuzatish(debugging) uchun qanday vositalar yoki usullar qo'llaniladi](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                         |
-| 93                                                                                                                         | [Promise da callback funksiya ishlatishni qanday ijobiy va salbiy tomonlari bor](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                               |
-| 94                                                                                                                         | [Atribut va xususiyat(property) o'rtasidagi farq nima](#what-is-the-difference-between-an-attribute-and-a-property)                                                                    |
-| 95                                                                                                                         | [Bir xil kelib chiqish siyosati (same-origin policy) nima](#what-is-same-origin-policy)                                                                                                |
-| 96                                                                                                                         | [Void 0 ning maqsadi nima](#what-is-the-purpose-of-void-0)                                                                                                                             |
-| 97                                                                                                                         | [JavaScript kompilyatsiya qilingan yoki tarjima qilingan tilmi](#is-javascript-a-compiled-or-interpreted-language)                                                                     |
-| 98                                                                                                                         | [Js case-sensitive (katta va kichik hariflarni farqalydigan ) tilmi](#is-javascript-a-case-sensitive-language)                                                                         |
-| 99                                                                                                                         | [Java va JavaScript o'rtasida bog'liqlik bormi](#is-there-any-relation-between-java-and-javascript)                                                                                    |
-| 100                                                                                                                        | [Events nima](#what-are-events)                                                                                                                                                        |
-| 101                                                                                                                        | [Javascriptni kim yaratgan](#who-created-javascript)                                                                                                                                   |
-| 102                                                                                                                        | [PreventDefault usuli qanday holatda ishlatiladi](#what-is-the-use-of-preventdefault-method)                                                                                           |
-| 103                                                                                                                        | [StopPropagation usuli qanday holatda ishlatiladi](#what-is-the-use-of-stoppropagation-method)                                                                                         |
-| 104                                                                                                                        | [Noto'g'ri foydalanishni qaytarish uchun qanday qadamlar mavjud](#what-are-the-steps-involved-in-return-false)                                                                         |
-| 105                                                                                                                        | [BOM nima](#what-is-bom)                                                                                                                                                               |
-| 106                                                                                                                        | [setTimeout dan qanday foydalanish kerak](#what-is-the-use-of-settimeout)                                                                                                              |
-| 107                                                                                                                        | [setInterval nimadan foydalaniladi](#what-is-the-use-of-setinterval)                                                                                                                   |
-| 108                                                                                                                        | [Nima uchun JavaScript yagona Ipli (Single threaded) deb hisoblanadi](#why-is-javascript-treated-as-single-threaded)                                                                   |
-| 109                                                                                                                        | [Tadbir delegatsiyasi(event delegation) nima](#what-is-an-event-delegation)                                                                                                            |
-| 110                                                                                                                        | [ECMAScript nima](#what-is-ecmascript)                                                                                                                                                 |
-| 111                                                                                                                        | [JSON nima](#what-is-json)                                                                                                                                                             |
-| 112                                                                                                                        | [JSON sintaksisi qoidalari qanday](#what-are-the-syntax-rules-of-json)                                                                                                                 |
-| 113                                                                                                                        | [JSON stringify nima maqsadda foydalaniladi](#what-is-the-purpose-json-stringify)                                                                                                      |
-| 114                                                                                                                        | [JSON string ni qanday tahlil(parse) qilasiz](#how-do-you-parse-json-string)                                                                                                           |
-| 115                                                                                                                        | [Nima uchun sizga JSON kerak](#why-do-you-need-json)                                                                                                                                   |
-| 116                                                                                                                        | [PWAs nima](#what-are-pwas?)                                                                                                                                                           |
-| 117                                                                                                                        | [clearTimeout usulining ishlatish maqsadi nima](#what-is-the-purpose-of-cleartimeout-method)                                                                                           |
-| 118                                                                                                                        | [ClearInterval usulidan maqsad nima](#what-is-the-purpose-of-clearinterval-method)                                                                                                     |
-| 119                                                                                                                        | [Javascriptda yangi sahifani qanday yo’naltirish mumkin](#how-do-you-redirect-new-page-in-javascript)                                                                                  |
-| 120                                                                                                                        | [Stringda substring mavjudligini qanday tekshirish mumkin](#how-do-you-check-whether-a-string-contains-a-substring)                                                                    |
-| 121                                                                                                                        | [Javascriptda elektron pochtani qanday tekshirish mumkin](#how-do-you-validate-an-email-in-javascript)                                                                                 |
-| 122                                                                                                                        | [Joriy urlni javascript bilan qanday olish mumkin](#how-do-you-get-the-current-url-with-javascript)                                                                                    |
-| 123                                                                                                                        | [Joylashuv obyektining turli url xususiyatlari qanday](#what-are-the-various-url-properties-of-location-object)                                                                        |
-| 124                                                                                                                        | [Javascriptda so'rovlar qatori qiymatlarini qanday olish mumkin](#how-do-get-query-string-values-in-javascript)                                                                        |
-| 125                                                                                                                        | [Ob'ektda kalit(key) mavjudligini qanday tekshirish mumkin](#how-do-you-check-if-a-key-exists-in-an-object)                                                                            |
-| 126                                                                                                                        | [Javascript ob'ektini qanday aylantirasiz(loop) yoki sanab o'tasiz](#how-do-you-loop-through-or-enumerate-javascript-object)                                                           |
-| 127                                                                                                                        | [Bo'sh ob'ektni qanday sinab ko'rasiz ](#how-do-you-test-for-an-empty-object)                                                                                                          |
-| 128                                                                                                                        | [Argumentlar obyekti nima ](#what-is-an-arguments-object)                                                                                                                              |
-| 129                                                                                                                        | [Qanday qilib satrning birinchi harfini katta harf bilan yozish mumkin ](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)                                                  |
-| 130                                                                                                                        | [For loopning qanday ijobiy va salbiy tomonlari bor](#what-are-the-pros-and-cons-of-for-loop)                                                                                          |
-| 131                                                                                                                        | [Joriy sanani javascriptda qanday ko'rsatasiz](#how-do-you-display-the-current-date-in-javascript)                                                                                     |
-| 132                                                                                                                        | [Ikki sana ob'ektini qanday solishtirasiz](#how-do-you-compare-two-date-objects)                                                                                                       |
-| 133                                                                                                                        | [Satrning boshqa satr bilan boshlanishini qanday tekshirish mumkin](#how-do-you-check-if-a-string-starts-with-another-string)                                                          |
-| 134                                                                                                                        | [Javascriptda satrni(string) qanday kesish mumkin](#how-do-you-trim-a-string-in-javascript)                                                                                            |
-| 135                                                                                                                        | [Javascriptda kalit , qiymat juftligini qanday qo'shasiz](#how-do-you-add-a-key-value-pair-in-javascript)                                                                              |
-| 136                                                                                                                        | [!-- belgisi maxsus operatorni ifodalaydi](#is-the-'!--'-notation-represents-a-special-operator)                                                                                       |
-| 137                                                                                                                        | [O'zgaruvchilarga standart qiymatlarni qanday belgilash mumkin](#how-do-you-assign-default-values-to-variables)                                                                        |
-| 138                                                                                                                        | [Ko'p qatorli satrlarni qanday aniqlash mumkin](#how-do-you-define-multiline-strings)                                                                                                  |
-| 139                                                                                                                        | [Ilova qobig'i(app shell) modeli nima](#what-is-an-app-shell-model)                                                                                                                    |
-| 140                                                                                                                        | [Funktsiyalar uchun xususiyatlarni aniqlay olamizmi](#can-we-define-properties-for-functions)                                                                                          |
-| 141                                                                                                                        | [Funksiya kutayotgan parametrlar sonini qanday usul bilan topish mumkin](#what-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)                                     |
-| 142                                                                                                                        | [Polifill nima ?](#what-is-a-polyfill)                                                                                                                                                 |
-| 143                                                                                                                        | [Tanaffus(break) va davom(continue) iboralari nima](#what-are-break-and-continue-statements)                                                                                           |
-| 144                                                                                                                        | [Js yorliqlari(js label) nima ?](#what-are-js-labels)                                                                                                                                  |
-| 145                                                                                                                        | [Deklaratsiyalarni yuqorida saqlashning qanday afzalliklari bor](#what-are-the-benefits-of-keeping-declarations-at-the-top)                                                            |
-| 146                                                                                                                        | [O'zgaruvchilarni ishga tushirishning(initialize) qanday afzalliklari bor](#what-are-the-benefits-of-initializing-variables)                                                           |
-| 147                                                                                                                        | [Yangi ob'ekt yaratish uchun qanday tavsiyalar mavjud](#what-are-the-recommendations-to-create-new-object)                                                                             |
-| 148                                                                                                                        | [JSON massivlarini qanday aniqlaysiz](#how-do-you-define-json-arrays)                                                                                                                  |
-| 149                                                                                                                        | [Tasodifiy butun sonlarni qanday yaratasiz](#how-do-you-generate-random-integers)                                                                                                      |
-| 150                                                                                                                        | [Butun sonlarni malum miqdor orasida chop etish uchun tasodifiy butun sonlar funksiyasini yoza olasizmi?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range) |
-| 151                                                                                                                        | [Tree shaking nima](#what-is-tree-shaking)                                                                                                                                             |
-| 152                                                                                                                        | [Tree shaking nima keragi bor](#what-is-the-need-of-tree-shaking)                                                                                                                      |
-| 153                                                                                                                        | [Eval dan foydalanish tavsiya etiladimi](#is-it-recommended-to-use-eval)                                                                                                               |
-| 154                                                                                                                        | [Muntazam ifoda(regEx) nima ?](#what-is-a-regular-expression)                                                                                                                          |
-| 155                                                                                                                        | [Muntazam ifodada qanday string methods mavjud](#what-are-the-string-methods-available-in-regular-expression)                                                                          |
-| 156                                                                                                                        | [Muntazam ifodadagi modifikatorlar nima](#what-are-modifiers-in-regular-expression)                                                                                                    |
-| 157                                                                                                                        | [Muntazam ifoda naqshlari (patterns)nima](#what-are-regular-expression-patterns)                                                                                                       |
-| 158                                                                                                                        | [RegExp obyekti nima](#what-is-a-regexp-object)                                                                                                                                        |
-| 159                                                                                                                        | [Patter(naqsh) uchun satrni qanday qidirasiz](#how-do-you-search-a-string-for-a-pattern)                                                                                               |
-| 160                                                                                                                        | [Exec usulining maqsadi nima](#what-is-the-purpose-of-exec-method)                                                                                                                     |
-| 161                                                                                                                        | [HTML elementining stilini qanday o'zgartirish mumkin](#how-do-you-change-style-of-a-html-element)                                                                                     |
-| 162                                                                                                                        | ['1+2+'3' natijasi qanday bo'ladi]                                                                                                                                                     |
-| (#what-would-be-the-result-of-1+2+'3')                                                                                     |
-| 163                                                                                                                        | [Debbuger statment nima ?](#what-is-a-debugger-statement)                                                                                                                              |
-| 164                                                                                                                        | [Nima maqsadda Breakpoinlar debugginda qolaniladi ?](#what-is-the-purpose-of-breakpoints-indebugging)                                                                                  |
-| 165                                                                                                                        | [Identifikator sifatida ajratilgan so'zlardan foydalansam bo'ladimi?](#can-i-use-reserved-words-as-identifiers)                                                                        |
-| 166                                                                                                                        | [Mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser)                                                                                                        |
-| 167                                                                                                                        | [Regexpsiz mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser-without-regexp)                                                                               |
-| 168                                                                                                                        | [JS yordamida tasvir(image) kengligi va balandligini qanday olish mumkin](#how-do-you-get-the-image-width-and-height-using-js)                                                         |
-| 169                                                                                                                        | [Sinxron HTTP so'rovini qanday qilasiz](#how-do-you-make-synchronous-http-request)                                                                                                     |
-| 170                                                                                                                        | [Asinxron HTTP so'rovini qanday qilasiz](#how-do-you-make-asynchronous-http-request)                                                                                                   |
-| 171                                                                                                                        | [Javascriptda sanani boshqa vaqt mintaqasiga qanday o'zgartirasiz](#how-do-you-convert-date-to-another-timezone-in-javascript)                                                         |
-| 172                                                                                                                        | [Oyna(window) hajmini olish uchun qanday xususiyatlardan foydalaniladi](#what-are-the-properties-used-to-get-size-of-window)                                                           |
-| 173                                                                                                                        | [Javascriptda shartli operator nima](#what-is-a-conditional-operator-in-javascript)                                                                                                    |
-| 174                                                                                                                        | [Shartli operatorda nested ko’rinishni qo'llay olasizmi?](#Can-you-apply-chaining-on-conditional-operator)                                                                             |
-| 175                                                                                                                        | [Sahifani yuklagandan so'ng javascriptni yurgazish usullari qanday?](#what-are-the-ways-to-execute-javascript-after-page-load)                                                         |
-| 176                                                                                                                        | [Proto va prototip o'rtasidagi farq nima](#what-is-the-difference-between-proto-and-prototype)                                                                                         |
-| 177                                                                                                                        | [Sizga nuqtali vergul kerak bo'lgan misol keltiring](#give-an-example-where-do-you-really-need-semicolon)                                                                              |
-| 178                                                                                                                        | [Freeze usuli nima](#what-is-a-freeze-method)                                                                                                                                          |
-| 179                                                                                                                        | [Muzlatish usulidan maqsad nima](#what-is-the-purpose-of-freeze-method)                                                                                                                |
-| 180                                                                                                                        | [Nima uchun muzlatish usulidan foydalanishim kerak](#why-do-i-need-to-use-freeze-method)                                                                                               |
-| 181                                                                                                                        | [Brauzer tilini afzal ko'rishni qanday aniqlash mumkin](#how-do-you-detect-a-browser-language-preference)                                                                              |
-| 182                                                                                                                        | [Qanday qilib javascript yordamida stringni sarlavha(title) kattaligiga aylantirish mumkin](#how-to-convert-string-to-title-case-with-javascript)                                      |
-| 183                                                                                                                        | [Sahifada o'chirilgan(disabled) javascript sahifani qanday aniqlash mumkin](#how-do-you-detect-javascript-disabled-in-the-page)                                                        |
-| 184                                                                                                                        | [Javascript tomonidan qo'llab-quvvatlanadigan turli operatorlar nima](#what-are-various-operators-supported-by-javascript)                                                             |
-| 185                                                                                                                        | [Rest parametri nima](#what-is-a-rest-parameter)                                                                                                                                       |
-| 186                                                                                                                        | [Agar oxirgi argument sifatida Rest parametridan foydalanmasangiz nima bo'ladi](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                                     |
-| 187                                                                                                                        | [Javascriptda qanday bitli operatorlar mavjud](#what-are-the-bitwise-operators-available-in-javascript)                                                                                |
-| 188                                                                                                                        | [Spread operatori nima](#what-is-a-spread-operator)                                                                                                                                    |
-| 189                                                                                                                        | [Ob'ektning muzlatilgan yoki muzlatilmaganligini qanday aniqlash mumkin](#how-do-you-determine-whether-object-is-frozen-or-not)                                                        |
-| 190                                                                                                                        | [Bir xil yoki ob'ektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
-| 191                                                                                                                        | [Ob'ektni ishlatishdan maqsad - bu usul](#what-is-the-purpose-of-using-object-is-method)                                                                                               |
-| 192                                                                                                                        | [Xususiyatlarni bir ob'ektdan ikkinchisiga qanday nusxalash mumkin](#how-do-you-copy-properties-from-one-object-to-other)                                                              |
-| 193                                                                                                                        | [Tayinlash usuli qanday qo'llaniladi](#what-are-the-applications-of-assign-method)                                                                                                     |
-| 194                                                                                                                        | [Proksi-server nima ?](#what-is-a-proxy-object)                                                                                                                                        |
-| 195                                                                                                                        | [Seal usulining maqsadi nima](#what-is-the-purpose-of-seal-method)                                                                                                                     |
-| 196                                                                                                                        | [Seal usuli qanday qo'llaniladi](#what-are-the-applications-of-seal-method)                                                                                                            |
-| 197                                                                                                                        | [Freeze va Seal usullari o'rtasidagi farqlar qanday](#what-are-the-differences-between-freeze-and-seal-methods)                                                                        |
-| 198                                                                                                                        | [Ob'ektning muhrlangan yoki yo'qligini qanday aniqlash mumkin](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                                    |
-| 199                                                                                                                        | [Qanday qilib sanab boladigan (enumerable) kalit va qiymat juftlarini olasiz](#how-do-you-get-enumerable-key-and-value-pairs)                                                          |
-| 200                                                                                                                        | [Object.values ​​va Object.entries usuli o'rtasidagi asosiy farq nima]                                                                                                                 |
-| (#what-is-the-main-difference-between-object.values-and-object.entries-method)                                             |
-| 201                                                                                                                        | [Har qanday ob'ektning kalitlari ro'yxatini qanday olishingiz mumkin](#how-can-you-get-the-list-of-keys-of-any-object)                                                                 |
-| 202                                                                                                                        | [Prototip bilan ob'ektni qanday yaratasiz](#how-do-you-create-an-object-with-prototype)                                                                                                |
-| 203                                                                                                                        | [Weakset nima](#what-is-a-weakset)                                                                                                                                                     |
-| 204                                                                                                                        | [WeakSet va Set o'rtasidagi farqlar qanday](#what-are-the-differences-between-weakset-and-set)                                                                                         |
-| 205                                                                                                                        | [WeakSet-da mavjud usullar to'plamini sanab o'ting](#list-down-the-collection-of-methods-available-on-weakset)                                                                         |
-| 206                                                                                                                        | [WeakMap nima](#what-is-a-weakmap)                                                                                                                                                     |
-| 207                                                                                                                        | [WeakMap va Map o'rtasidagi farqlar qanday](#what-are-the-differences-between-weakmap-and-map)                                                                                         |
-| 208                                                                                                                        | [WeakMap-da mavjud usullar to'plamini sanab o'ting](#list-down-the-collection-of-methods-available-on-weakmap)                                                                         |
-| 209                                                                                                                        | [Unevaldan maqsad nima](#what-is-the-purpose-of-uneval)                                                                                                                                |
-| 210                                                                                                                        | [URL manzilini qanday kodlash(encode) mumkin](#how-do-you-encode-an-url)                                                                                                               |
-| 211                                                                                                                        | [URLni qanday dekodlash(decode) mumkin](#how-do-you-decode-an-url)                                                                                                                     |
-| 212                                                                                                                        | [Veb-sahifa matini qanday chop qilasiz](#how-do-you-print-the-contents-of-web-page)                                                                                                    |
-| 213                                                                                                                        | [Uneval va eval o'rtasidagi farq nima](#what-is-the-difference-between-uneval-and-eval)                                                                                                |
-| 214                                                                                                                        | [Anonim(anonymous) funksiya nima](#what-is-an-anonymous-function)                                                                                                                      |
-| 215                                                                                                                        | [Mahalliy va global o'zgaruvchilar o'rtasidagi ustuvorlik tartibi qanday](#what-is-the-precedence-order-between-local-and-global-variables)                                            |
-| 216                                                                                                                        | [JavaScript kirish elementlari nima ?](#what-are-javascript-accessors)                                                                                                                 |
-| 217                                                                                                                        | [Ob'ekt konstruktorida xususiyatni qanday aniqlash mumkin](#how-do-you-define-property-on-object-constructor)                                                                          |
-| 218                                                                                                                        | [Get va defineProperty o'rtasidagi farq nima ?](#what-is-the-difference-between-get-and-defineproperty)                                                                                |
-| 219                                                                                                                        | [Getters va Settersning afzalliklari nimada](#what-are-the-advantages-of-getters-and-setters)                                                                                          |
-| 220                                                                                                                        | [DefineProperty usuli yordamida qabul qiluvchilar(getter) va sozlagichlarni(setter) qo'shishim mumkinmi](#can-i-add-getters-and-setters-using-defineproperty-method)                   |
-| 221                                                                                                                        | [Switch-case ni ishlatishdan maqsad nima](#what-is-the-purpose-of-switch-case)                                                                                                         |
-| 222                                                                                                                        | [Switch casedan foydalanishda qanday qoidalarga rioya qilish kerak](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)                                             |
-| 223                                                                                                                        | [Primitiv ma'lumotlar turlari nima ?](#what-are-primitive-data-types)                                                                                                                  |
-| 224                                                                                                                        | [Ob'ekt xususiyatlariga kirishning turli usullari qanday](#what-are-the-different-ways-to-access-object-properties)                                                                    |
-| 225                                                                                                                        | [Funksiya parametrlari qoidalari qanday](#what-are-the-function-parameter-rules)                                                                                                       |
-| 226                                                                                                                        | [Xato obyekti(error object) nima](#what-is-an-error-object)                                                                                                                            |
-| 227                                                                                                                        | [Sintaksis xatosiga duch kelganingizda](#when-you-get-a-syntax-error)                                                                                                                  |
-| 228                                                                                                                        | [Xato obyektidan farqli xato nomlari qanday](#what-are-the-different-error-names-from-error-object)                                                                                    |
-| 229                                                                                                                        | [Xatolarni hal qilishda qanday turli bayonotlar mavjud](#what-are-the-various-statements-in-error-handling)                                                                            |
-| 230                                                                                                                        | [Javascriptda ikki turdagi looplar qanday?](#what-are-the-two-types-of-loops-in-javascript)                                                                                            |
-| 231                                                                                                                        | [nodejs nima](#what-is-nodejs)                                                                                                                                                         |
-| 232                                                                                                                        | [Intl ob'ekti nima](#what-is-an-intl-object)                                                                                                                                           |
-| 233                                                                                                                        | [Tilga xos sana va vaqtni formatlashni qanday amalga oshirasiz](#how-do-you-perform-language-specific-date-and-time-formatting)                                                        |
-| 234                                                                                                                        | [Iterator nima](#what-is-an-iterator)                                                                                                                                                  |
-| 235                                                                                                                        | [Sinxron iteratsiya qanday ishlaydi](#how-does-synchronous-iteration-works)                                                                                                            |
-| 236                                                                                                                        | [Hodisa sikli(event loop) nima](#what-is-an-event-loop)                                                                                                                                |
-| 237                                                                                                                        | [Call stack nima ?](#what-is-call-stack)                                                                                                                                               |
-| 238                                                                                                                        | [Hodisa navbati (event qoeue) nima](#what-is-an-event-queue)                                                                                                                           |
-| 239                                                                                                                        | [Dekorator nima](#what-is-a-decorator)                                                                                                                                                 |
-| 240                                                                                                                        | [Intl obyektining xossalari(Intl object prop) qanday](#what-are-the-properties-of-intl-object)                                                                                         |
-| 241                                                                                                                        | [Unary operator nima](#what-is-an-unary-operator)                                                                                                                                      |
-| 242                                                                                                                        | [Massivdagi elementlarni qanday saralaysiz](#how-do-you-sort-elements-in-an-array)                                                                                                     |
-| 243                                                                                                                        | [Massivlarni saralashda compareFunction nimadan iborat](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)                                                                  |
-| 244                                                                                                                        | [Massivni qanday teskari aylantirasiz](#how-do-you-reversing-an-array)                                                                                                                 |
-| 245                                                                                                                        | [Massivda minimal va maksimal qiymatlarni qanday topasiz](#how-do-you-find-min-and-max-value-in-an-array)                                                                              |
-| 246                                                                                                                        | [Matematik funktsiyalarsiz min va maksimal qiymatlarni qanday topish mumkin](#how-do-you-find-min-and-max-values-without--math-functions)                                              |
-| 247                                                                                                                        | [Bo'sh statment nima va uning maqsadi](#what-is-an-empty-statement-and-purpose-of-it)                                                                                                  |
-| 248                                                                                                                        | [Modulning metama'lumotlarini qanday olish mumkin](#how-do-you-get-meta-data-of-a-module)                                                                                              |
-| 249                                                                                                                        | [Vergul operatori nima](#what-is-a-comma-operator)                                                                                                                                     |
-| 250                                                                                                                        | [Vergul operatorining afzalligi nimada](#what-is-the-advantage-of-a-comma-operator)                                                                                                    |
-| 251                                                                                                                        | [Typesciprt nima ?](#what-is-typescript)                                                                                                                                               |
-| 252                                                                                                                        | [Javascript va typescript o'rtasidagi farqlar qanday](#what-are-the-differences-between-javascript-and-typescript)                                                                     |
-| 253                                                                                                                        | [Typescriptning javascriptdan qanday afzalliklari bor](#what-are-the-advantages-of-typescript-over-javascript)                                                                         |
-| 254                                                                                                                        | [Ob'ektni ishga tushirish (obj initialize) nima](#what-is-an-object-initializer)                                                                                                       |
-| 255                                                                                                                        | [Konstruktor usuli nima](#what-is-a-constructor-method)                                                                                                                                |
-| 256                                                                                                                        | [Agar classda bir necha marta konstruktor yozsangiz nima bo'ladi](#what-happens-if-you-write-constructor-more-than-once-in-a-class)                                                    |
-| 257                                                                                                                        | [Parent classning konstruktorini qanday chaqirish mumkin?](#how-do-you-call-the-constructor-of-a-parent-class)                                                                         |
-| 258                                                                                                                        | [Ob'ektning prototipini qanday olish mumkin](#how-do-you-get-the-prototype-of-an-object)                                                                                               |
-| 259                                                                                                                        | [Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi](#what-happens-if-i-pass-string-type-for-getprototype-method)                                                      |
-| 260                                                                                                                        | [Bir ob'ektning prototipini boshqasiga qanday o'rnatish mumkin](#how-do-you-set-prototype-of-one-object-to-another)                                                                    |
-| 261                                                                                                                        | [Ob'ektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin](#how-do-you-check-whether-an-object-can-be-extendable-or-not)                                      |
-| 262                                                                                                                        | [Ob'ektni kengaytirishni qanday oldini olish mumkin](#how-do-you-prevent-an-object-to-extend)                                                                                          |
-| 263                                                                                                                        | [Ob'ektni kengaytirilmaydigan qilishning turli usullari qanday](#what-are-the-different-ways-to-make-an-object-non-extensible)                                                         |
-| 264                                                                                                                        | [Ob'ektda bir nechta xususiyatlarni qanday aniqlash mumkin](#how-do-you-define-multiple-properties-on-an-object)                                                                       |
-| 265                                                                                                                        | [Javascriptda MEAN nima](#what-is-mean-in-javascript)                                                                                                                                  |
-| 266                                                                                                                        | [Javascriptda xiralashish(Obfuscation ) nima](#what-is-obfuscation-in-javascript)                                                                                                      |
-| 267                                                                                                                        | [Nima uchun sizga obfuscation kerak ?](#why-do-you-need-obfuscation)                                                                                                                   |
-| 268                                                                                                                        | [Kichiklashtirish(minification) nima](#what-is-minification)                                                                                                                           |
-| 269                                                                                                                        | [Kichiklashtirishning qanday afzalliklari bor](#what-are-the-advantages-of-minification)                                                                                               |
-| 270                                                                                                                        | [Obfuscation va shifrlash o'rtasidagi farqlar qanday](#what-are-the-differences-between-obfuscation-and-encryption)                                                                    |
-| 271                                                                                                                        | [Kichiklashtirish uchun qanday umumiy vositalar qo'llaniladi](#what-are-the-common-tools-used-for-minification)                                                                        |
-| 272                                                                                                                        | [Javascript yordamida shaklni(form) tekshirishni qanday amalga oshirasiz](#how-do-you-perform-form-validation-using-javascript)                                                        |
-| 273                                                                                                                        | [Shaklni(form) tekshirishni javascriptsiz qanday amalga oshirasiz](#how-do-you-perform-form-validation-without-javascript)                                                             |
-| 274                                                                                                                        | [Cheklovlarni tekshirish uchun qanday DOM usullari mavjud](#what-are-the-dom-methods-available-for-constraint-validation)                                                              |
-| 275                                                                                                                        | [Mavjud cheklovni tekshirish DOM xususiyatlari qanday](#what-are-the-available-constraint-validation-dom-properties)                                                                   |
-| 276                                                                                                                        | [Yaroqlilik xususiyatlarining ro'yxati qanday](#what-are-the-list-of-validity-properties)                                                                                              |
-| 277                                                                                                                        | [rangeOverflow xususiyatidan foydalanishga misol keltiring](#give-an-example-usage-of-rangeoverflow-property)                                                                          |
-| 278                                                                                                                        | [Enums xususiyati javascriptda mavjudmi?](#is-enums-feature-available-in-javascript)                                                                                                   |
-| 279                                                                                                                        | [Enum nima](#What-is-an-enum)                                                                                                                                                          |
-| 280                                                                                                                        | [Ob'ektning barcha xususiyatlarini qanday ro'yxatga olasiz]                                                                                                                            |
-| (#how-do-you-list-all-properties-of-an-object) Ob'ektning xossa tavsiflovchilarini (prop descriptors) qanday olish mumkin] |
-| 281                                                                                                                        | [How do you get property descriptors of an object]                                                                                                                                     |
-| (#how-do-you-get-property-descriptors-of-an-object)                                                                        |
-| 282                                                                                                                        | [Xususiyat deskriptori tomonidan taqdim etilgan atributlar qanday](#what-are-the-attributes-provided-by-a-property-descriptor)                                                         |
-| 283                                                                                                                        | [Classlarni qanday uzaytirasiz(extends)](#how-do-you-extend-classes)                                                                                                                   |
-| 284                                                                                                                        | [Sahifani qayta yuklamasdan urlni qanday o'zgartirish mumkin](#how-do-i-modify-the-url-without-reloading-the-page)                                                                     |
-| 285                                                                                                                        | [Massiv ma'lum bir qiymatni o'z ichiga oladi yoki yo'qligini qanday tekshirish mumkin](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)                          |
-| 286                                                                                                                        | [Skayar massivlarni qanday solishtirasiz](#how-do-you-compare-scalar-arrays)                                                                                                           |
-| 287                                                                                                                        | [Get parametrlaridan qiymatni qanday olish mumkin](#how-to-get-the-value-from-get-parameters)                                                                                          |
-| 288                                                                                                                        | [Qanday qilib raqamlarni vergul bilan ming ajratuvchi sifatida chop qilasiz](#how-do-you-print-numbers-with-commas-as-thousand-separators)                                             |
-| 289                                                                                                                        | [Java va javascript o'rtasidagi farq nima](#what-is-the-difference-between-java-and-javascript)                                                                                        |
-| 290                                                                                                                        | [JavaScript namespace qo'llab-quvvatlaydimi?](#does-javascript-supports-namespace)                                                                                                     |
-| 291                                                                                                                        | [Namescpace qanday e'lon qilasiz](#how-do-you-declare-namespace)                                                                                                                       |
-| 292                                                                                                                        | [Bosh sahifadagi iframe-da javascript kodini qanday chaqirish mumkin](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)                                                |
-| 293                                                                                                                        | [Vaqt mintaqasini sanadan qanday qilib siljitish mumkin](#how-do-get-the-timezone-offset-from-date)                                                                                    |
-| 294                                                                                                                        | [CSS va JS fayllarini dinamik ravishda qanday yuklaysiz](#how-do-you-load-css-and-js-files-dynamically)                                                                                |
-| 295                                                                                                                        | [DOM-da HTML elementlarini topishning turli usullari qanday?](#what-are-the-different-methods-to-find-html-elements-in-dom)                                                            |
-| 296                                                                                                                        | [jQuery nima](#what-is-jquery)                                                                                                                                                         |
-| 297                                                                                                                        | [V8 JavaScript dvigateli nima](#what-is-v8-javascript-engine)                                                                                                                          |
-| 298                                                                                                                        | [Nima uchun biz javascriptni dinamik til deb ataymiz](#why-do-we-call-javascript-as-dynamic-language)                                                                                  |
-| 299                                                                                                                        | [Void operatori nima](#what-is-a-void-operator)                                                                                                                                        |
-| 300                                                                                                                        | [Kursorni kutish(wait) uchun qanday sozlash kerak](#how-to-set-the-cursor-to-wait)                                                                                                     |
-| 301                                                                                                                        | [Qanday qilib cheksiz sikl (infinite loop)yaratasiz](#how-do-you-create-an-infinite-loop)                                                                                              |
-| 302                                                                                                                        | [Nima uchun bayonot bilan avoid kerak](#why-do-you-need-to-avoid-with-statement)                                                                                                       |
-| 303                                                                                                                        | [Quyidagi for looplarning natijalari qanday](#what-is-the-output-of-below-for-loops)                                                                                                   |
-| 304                                                                                                                        | [ES6 ning ba'zi xususiyatlarini sanab o'ting](#list-down-some-of-the-features-of-es6)                                                                                                  |
-| 305                                                                                                                        | [ES6 nima](#what-is-es6)                                                                                                                                                               |
-| 306                                                                                                                        | [Let va const o'zgaruvchilarni qayta e'lon qila olamanmi?](#can-I-redeclare-let-and-const-variables)                                                                                   |
-| 307                                                                                                                        | [Const o'zgaruvchisi qiymatni o'zgarmas qiladimi](#is-const-variable-makes-the-value-immutable)                                                                                        |
-| 308                                                                                                                        | [Standart parametrlar nima](#what-are-default-parameters)                                                                                                                              |
-| 309                                                                                                                        | [Shablon literallari nima](#what-are-template-literals)                                                                                                                                |
-| 310                                                                                                                        | [Shablon literallarida ko'p qatorli satrlarni qanday yozish mumkin](#how-do-you-write-multi-line-strings-in-template-literals)                                                         |
-| 311                                                                                                                        | [Murakkab(nested) shablonlari nima](#what-are-nesting-templates)                                                                                                                       |
-| 312                                                                                                                        | [Belgilangan(tagged) shablonlar nima](#what-are-tagged-templates)                                                                                                                      |
-| 313                                                                                                                        | [Raw stringlar nima](#what-are-raw-strings)                                                                                                                                            |
-| 314                                                                                                                        | [Destructuring assignment (strukturani buzish) nima ?](#what-is-destructuring-assignment)                                                                                              |
-| 315                                                                                                                        | [Topshiriqni buzishda standart qiymatlar qanday](#what-are-default-values-in-destructuring-assignment)                                                                                 |
-| 316                                                                                                                        | [Topshiriqni buzishda o'zgaruvchilarni qanday almashtirasiz](#how-do-you-swap-variables-in-destructuring-assignment)                                                                   |
-| 317                                                                                                                        | [Kengaytirilgan ob'ekt harflari nima](#what-are-enhanced-object-literals)                                                                                                              |
-| 318                                                                                                                        | [Dinamik import nima](#what-are-dynamic-imports)                                                                                                                                       |
-| 319                                                                                                                        | [Dinamik import uchun qanday holatlar mavjud](#what-are-the-use-cases-for-dynamic-imports)                                                                                             |
-| 320                                                                                                                        | [Tiplangan massivlar(typed arrays) nima](#what-are-typed-arrays)                                                                                                                       |
-| 321                                                                                                                        | [Modul yuklagichlarining(modal loader) afzalliklari nimada](#what-are-the-advantages-of-module-loaders)                                                                                |
-| 322                                                                                                                        | [Collation (harakatlash) nima ?](#what-is-collation)                                                                                                                                   |
-| 323                                                                                                                        | [For .. of statmentni nima uchun ishlatiladi ?]of-statement)                                                                                                                           |
-| 324                                                                                                                        | [Quyidagi yoyilgan operator massivining natijasi nimaga teng](#what-is-the-output-of-below-spread-operator-array)                                                                      |
-| 325                                                                                                                        | [PostMessage xavfsizmi?](#is-postmessage-secure)                                                                                                                                       |
-| 326                                                                                                                        | [Joyker belgisi sifatida postxabar maqsadli kelib chiqishi bilan bog'liq qanday muammolar mavjud](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)                   |
-| 327                                                                                                                        | [Qanday qilib tajovuzkorlardan postMessages olishdan qochasiz](#how-do-you-avoid-receiving-postmessages-from-attackers)                                                                |
-| 328                                                                                                                        | [PostMessages-dan butunlay qochishim mumkinmi?](#can-i-avoid-using-postmessages-completely)                                                                                            |
-| 329                                                                                                                        | [PostMessages sinxronlashganmi ?](#is-postmessages-synchronous)                                                                                                                        |
-| 330                                                                                                                        | [Javascript qanday paradigma](#what-paradigm-is-javascript)                                                                                                                            |
-| 331                                                                                                                        | [Ichki(Internal) va tashqi(external) javascript o'rtasidagi farq nima](#what-is-the-difference-between-internal-and-external-javascript)                                               |
-| 332                                                                                                                        | [JavaScript server tomonidagi skriptga qaraganda tezroqmi](#is-javascript-faster-than-server-side-script)                                                                              |
-| 333                                                                                                                        | [Belgilash qutisi(checkbox) holatini(status) qanday olish mumkin](#how-do-you-get-the-status-of-a-checkbox)                                                                            |
-| 334                                                                                                                        | [Double tilde operatorining maqsadi nima](#what-is-the-purpose-of-double-tilde-operator)                                                                                               |
-| 335                                                                                                                        | [Belgilarni ASCII kodiga qanday o'zgartirasiz](#how-do-you-convert-character-to-ascii-code)                                                                                            |
-| 336                                                                                                                        | [ArrayBuffer nima](#what-is-arraybuffer)                                                                                                                                               |
-| 337                                                                                                                        | [Quyidagi satr ifodasining natijasi nima](#what-is-the-output-of-below-string-expression)                                                                                              |
-| 338                                                                                                                        | [Xato obyektining(error object) maqsadi nima](#what-is-the-purpose-of-error-object)                                                                                                    |
-| 339                                                                                                                        | [EvalError obyektining maqsadi nima](#what-is-the-purpose-of-evalerror-object)                                                                                                         |
-| 340                                                                                                                        | [Qattiy bo'lmagan rejimdan qat'iy rejimga o'tkazilgan xatolar ro'yxati qanday](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)                           |
-| 341                                                                                                                        | [Barcha ob'ektlarning prototiplari bormi?](#do-all-objects-have-prototypes)                                                                                                            |
-| 342                                                                                                                        | [Parametr va argument o'rtasidagi farq nima](#what-is-the-difference-between-a-parameter-and-an-argument)                                                                              |
-| 343                                                                                                                        | [Massivlardagi some usulining maqsadi nima](#what-is-the-purpose-of-some-method-in-arrays)                                                                                             |
-| 344                                                                                                                        | [Ikki yoki undan ortiq massivni qanday birlashtirasiz](#how-do-you-combine-two-or-more-arrays)                                                                                         |
-| 345                                                                                                                        | [Sayoz(shallow) va chuqur(deep) nusxa o'rtasidagi farq nima](#what-is-the-difference-between-shallow-and-deep-copy)                                                                    |
-| 346                                                                                                                        | [Satrning ma'lum nusxalarini qanday yaratish mumkin](#how-do-you-create-specific-number-of-copies-of-a-string)                                                                         |
-| 347                                                                                                                        | [Qanday qilib barcha mos keladigan satrlarni muntazam ifodaga qaytarasiz](#how-do-you-return-all-matching-strings-against-a-regular-expression)                                        |
-| 348                                                                                                                        | [Stringni boshida yoki oxirida qanday qilib kesish mumkin](#how-do-you-trim-a-string-at-the-beginning-or-ending)                                                                       |
-| 349                                                                                                                        | [Unar operator bilan quyidagi konsol bayonotining chiqishi nima](#what-is-the-output-of-below-console-statement-with-unary-operator)                                                   |
-| 350                                                                                                                        | [Javascript mixins foydalanadimi?](#does-javascript-uses-mixins)                                                                                                                       |
-| 351                                                                                                                        | [Thunk funktsiyasi nima](#what-is-a-thunk-function)                                                                                                                                    |
-| 352                                                                                                                        | [Asinxron thunks nima](#what-are-asynchronous-thunks)                                                                                                                                  |
-| 353                                                                                                                        | [Quyidagi funksiya chaqiruvlarining natijasi nima](#what-is-the-output-of-below-function-calls)                                                                                        |
-| 354                                                                                                                        | [Satrdagi barcha qator uzilishlarini qanday olib tashlash mumkin](#how-to-remove-all-line-breaks-from-a-string)                                                                        |
-| 355                                                                                                                        | [Qayta ishlash(reflow) va qayta bo'yash(repaint) o'rtasidagi farq nima](#what-is-the-difference-between-reflow-and-repaint)                                                            |
-| 356                                                                                                                        | [Massivni inkor qilish bilan nima sodir bo'ladi](#what-happens-with-negating-an-array)                                                                                                 |
-| 357                                                                                                                        | [Agar ikkita massiv qo'shsak nima bo'ladi](#what-happens-if-we-add-two-arrays)                                                                                                         |
-| 358                                                                                                                        | [Noto'g'ri qiymatlar bo'yicha yuqori qo'shimcha operatorning chiqishi qanday bo'ladi](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)                                |
-| 359                                                                                                                        | [Maxsus belgilar yordamida o'z-o'zidan strigni qanday yaratasiz](#how-do-you-create-self-string-using-special-characters)                                                              |
-| 360                                                                                                                        | [Massivdan noto'g'ri qiymatlarni qanday olib tashlash mumkin](#how-do-you-remove-falsy-values-from-an-array)                                                                           |
-| 361                                                                                                                        | [Massivning noyob qiymatlarini qanday olish mumkin](#how-do-you-get-unique-values-of-an-array)                                                                                         |
-| 362                                                                                                                        | [Taxalluslarni buzish nima](#what-is-destructuring-aliases)                                                                                                                            |
-| 363                                                                                                                        | [Map usulini ishlatmasdan massiv qiymatlarini qanday Map qilish mumkin](#how-do-you-map-the-array-values-without-using-map-method)                                                     |
-| 364                                                                                                                        | [Massivni qanday bo'shatish mumkin](#how-do-you-empty-an-array)                                                                                                                        |
-| 365                                                                                                                        | [Qanday qilib raqamlarni ma'lum o'nli kasrlarga yaxlitlash mumkin](#how-do-you-rounding-numbers-to-certain-decimals)                                                                   |
-| 366                                                                                                                        | [Massivni ob'ektga aylantirishning eng oson yo'li qanday?](#what-is-the-easiest-way-to-convert-an-array-to-an-object)                                                                  |
-| 367                                                                                                                        | [Ba'zi ma'lumotlar bilan massivni qanday yaratish mumkin](#how-do-you-create-an-array-with-some-data)                                                                                  |
-| 368                                                                                                                        | [Konsol ob'ektidagi to'ldiruvchilar nima](#what-are-the-placeholders-from-console-object)                                                                                              |
-| 369                                                                                                                        | [Konsol xabarlariga CSS qo'shish mumkinmi?](#is-it-possible-to-add-css-to-console-messages)                                                                                            |
-| 370                                                                                                                        | [Konsol ob'ektining dir usulidan maqsad nima](#what-is-the-purpose-of-dir-method-of-console-object)                                                                                    |
-| 371                                                                                                                        | [Konsolda HTML elementlarini disk raskadrovka qilish mumkinmi?](#is-it-possible-to-debug-html-elements-in-console)                                                                     |
-| 372                                                                                                                        | [Konsol ob'ekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkin](#how-do-you-display-data-in-a-tabular-format-using-console-object)                                  |
-| 373                                                                                                                        | [Argument son yoki son emasligini qanday tekshirish mumkin](#how-do-you-verify-that-an-argument-is-a-number-or-not)                                                                    |
-| 374                                                                                                                        | [Buferga nusxa ko'chirish tugmasi qanday yaratiladi](#how-do-you-create-copy-to-clipboard-button)                                                                                      |
-| 375                                                                                                                        | [Timestamp uchun shortcut nima](#what-is-the-shortcut-to-get-timestamp)                                                                                                                |
-| 376                                                                                                                        | [Ko'p o'lchovli massivlarni qanday tekislash mumkin](#how-do-you-flattening-multi-dimensional-arrays)                                                                                  |
-| 377                                                                                                                        | [Ko'p holatni tekshirishning(multi condition checking) eng oson usuli](#what-is-the-easiest-multi-condition-checking)                                                                  |
-| 378                                                                                                                        | [Brauzerning orqaga tugmachasini qanday suratga olasiz](#how-do-you-capture-browser-back-button)                                                                                       |
-| 379                                                                                                                        | [Veb-sahifada sichqonchaning o'ng tugmachasini qanday o'chirib qo'yish mumkin](#how-do-you-disable-right-click-in-the-web-page)                                                        |
-| 380                                                                                                                        | [O'rash ob'ektlari(wrapper object) nima](#what-are-wrapper-objects)                                                                                                                    |
-| 381                                                                                                                        | [AJAX nima](#what-is-ajax)                                                                                                                                                             |
-| 382                                                                                                                        | [Asinxron kod bilan ishlashning turli usullari qanday](#what-are-the-different-ways-to-deal-with-asynchronous-code)                                                                    |
-| 383                                                                                                                        | [Qanday qilib qabul qilishni bekor qilish mumkin](#how-to-cancel-a-fetch-request)                                                                                                      |
-| 384                                                                                                                        | [Veb nutq API (web speech API) nima ?](#what-is-web-speech-api)                                                                                                                        |
-| 385                                                                                                                        | [Minimal vaqt tugashini kamaytirish(minimum timeout) nima](#what-is-minimum-timeout-throttling)                                                                                        |
-| 386                                                                                                                        | [Zamonaviy brauzerlarda nol vaqt tugashini qanday amalga oshirasiz](#how-do-you-implement-zero-timeout-in-modern-browsers)                                                             |
-| 387                                                                                                                        | [Event loop qanday vazifalar mavjud](#what-are-tasks-in-event-loop)                                                                                                                    |
-| 388                                                                                                                        | [Mikrovazifa(microtask) nima](#what-are-microtasks)                                                                                                                                    |
-| 389                                                                                                                        | [What are different event loops](#what-are-different-event-loops)                                                                                                                      |
-| 390                                                                                                                        | [What is the purpose of queuemicrotask](#what-is-the-purpose-of-queuemicrotask)                                                                                                        |
-| 391                                                                                                                        | [Typescript faylida javascript kutubxonalaridan qanday foydalanasiz](#how-do-you-use-javascript-libraries-in-typescript-file)                                                          |
-| 392                                                                                                                        | [Promises va kuzatilishi mumkin bo'lganlar o'rtasidagi farqlar qanday](#what-are-the-differences-between-promises-and-observables)                                                     |
-| 393                                                                                                                        | [Heap nima](#what-is-heap)                                                                                                                                                             |
-| 394                                                                                                                        | [Voqealar jadvali(event table) nima](#what-is-an-event-table)                                                                                                                          |
-| 395                                                                                                                        | [MicroTask navbati nima](#what-is-a-microtask-queue)                                                                                                                                   |
-| 396                                                                                                                        | [Shim va polifill o'rtasidagi farq nima](#what-is-the-difference-between-shim-and-polyfill)                                                                                            |
-| 397                                                                                                                        | [Primitiv yoki primitiv bo'lmagan qiymat turini qanday aniqlash mumkin](#how-do-you-detect-primitive-or-non-primitive-value-type)                                                      |
-| 398                                                                                                                        | [Babel nima](#what-is-babel)                                                                                                                                                           |
-| 399                                                                                                                        | [Node.js butunlay bitta tishlimi (single threaded)]js-completely-single-threaded)                                                                                                      |
-| 400                                                                                                                        | [Kuzatiladigan narsalardan qanday umumiy foydalanish holatlari mavjud](#what-are-the-common-use-cases-of-observables)                                                                  | RxJS nima] | 401                                                                                                              | [What is RxJS] |
-| (#what-is-rxjs)                                                                                                            |
-| 402                                                                                                                        | [Funktsiya konstruktori va funksiya deklaratsiyasi o'rtasidagi farq nima](#what-is-the-difference-between-function-constructor-and-function-declaration)                               |
-| 403                                                                                                                        | [Qisqa tutashuv holati (Short circuit condition) nima](#what-is-a-short-circuit-condition)                                                                                             |
-| 404                                                                                                                        | [Massiv hajmini o'zgartirishning eng oson yo'li qanday?](#what-is-the-easiest-way-to-resize-an-array)                                                                                  |
-| 405                                                                                                                        | [Kuzatiladigan narsa nima](#what-is-an-observable)                                                                                                                                     |
-| 406                                                                                                                        | [Funktsiya va sinf deklaratsiyasi o'rtasidagi farq nima](#what-is-the-difference-between-function-and-class-declarations)                                                              |
-| 407                                                                                                                        | [Asinx funksiya nima](#what-is-an-async-function)                                                                                                                                      |
-| 408                                                                                                                        | [Qanday qilib va'dalarni yutish(promise swallowing) xatolarining oldini olish mumkin](#how-do-you-prevent-promises-swallowing-errors)                                                  |
-| 409                                                                                                                        | [Deno nima](#what-is-deno)                                                                                                                                                             |
-| 410                                                                                                                        | [Qanday qilib ob'ektni javascriptda takrorlanadigan qilish mumkin](#how-do-you-make-an-object-iterable-in-javascript)                                                                  |
-| 411                                                                                                                        | [To'g'ri quyruq chaqiruvi ( Proper Tail Call ) nima](#what-is-a-proper-tail-call)                                                                                                      |
-| 412                                                                                                                        | [Ob'ektni Promise(va’da) ekani yoki yoq ekanini qanday tekshirish mumkin](#how-do-you-check-an-object-is-a-promise-or-not)                                                             |
-| 413                                                                                                                        | [Funktsiya konstruktor sifatida chaqirilganligini qanday aniqlash mumkin](#how-to-detect-if-a-function-is-called-as-constructor)                                                       |
-| 414                                                                                                                        | [Argumentlar ob'ekti va Rest parametri o'rtasidagi farqlar qanday](#what-are-the-differences-between-arguments-object-and-rest-parameter)                                              |
-| 415                                                                                                                        | [Spred operatori va Rest parametri o'rtasidagi farqlar qanday](#what-are-the-differences-between-spread-operator-and-rest-parameter)                                                   |
-| 416                                                                                                                        | [Har xil turdagi generatorlar qanday](#what-are-the-different-kinds-of-generators)                                                                                                     |
-| 417                                                                                                                        | [O'rnatilgan iterativlar(built-in) nima](#what-are-the-built-in-iterables)                                                                                                             |
-| 418                                                                                                                        | [for...of va for... o'rtasida qanday farq bor](#what-are-the-differences-between-for...of-and-for...in-statements)                                                                     |
-| 419                                                                                                                        | [How do you define instance and non-instance properties](#how-do-you-define-instance-and-non-instance-properties)                                                                      | 420        | [What is the difference between isNaN and Number.isNaN?](#what-is-the-difference-between-isnan-and-number.isnan) |
-| 421                                                                                                                        | [IIFE-ni qo'shimcha qavslarsiz qanday chaqirish mumkin?](#how-to-invoke-an-iife-without-any-extra-brackets)                                                                            |
-| 422                                                                                                                        | [Buni almashtirish holatlarida(switch case) ifodalardan(expression) foydalanish mumkinmi?](#is-that-possible-to-use-expressions-in-switch-cases)                                       |
-| 423                                                                                                                        | [Va'da qilingan xatolarga(Promise errors) etibor (ignore) bermaslikning eng oson yo'li qanday?](#what-is-the-easiest-way-to-ignore-promise-errors)                                     |
-| 424                                                                                                                        | [CSS yordamida konsol dagi natijani qanday qilib stil berish mumkin?](#how-do-style-the-console-output-using-css)                                                                      |
-| 425                                                                                                                        | [What is nullish coalescing operator(??)?](<#what-is-nullish-coalescing-operator-(??)>)                                                                                                |
-| 426                                                                                                                        | [Konsol chiqishini qanday guruhlash va joylashtirish mumkin?](#how-do-you-group-and-nest-console-output)                                                                               |
-| 427                                                                                                                        | [Zich(dense) va siyrak(sparse) massivlar o'rtasidagi farq nima?](#what-is-the-difference-between-dense-and-sparse-arrays)                                                              |
-| 428                                                                                                                        | [Siyrak(dense) massivlarni yaratishning turli usullari qanday?](#what-are-the-different-ways-to-create-sparse-arrays)                                                                  |
-| 429                                                                                                                        | [What is the difference between setTimeout, setImmediate and process.nextTick?](#what-is-the-difference-between-set-timeout-,-set-immediate-and-processnext-tick)                      |
-| 430                                                                                                                        | [Asl massivni(original array) o'zgartirmasdan massivni qanday o'zgartirish mumkin?](#how-do-you-reverse-an-array-without-modifying-original-array)                                     |
+| No. | Questions                                                                                                                                                                              |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [JavaScript-da ob'ektlarni yaratishning qanday usullari mavjud ](#what-are-the-possible-ways-to-create-objects-in-javascript)                                                          |
+| 2   | [Prototype chain nima ](#what-is-a-prototype-chain)                                                                                                                                    |
+| 3   | [Call, Apply and Bind o'rtasidagi farq nima ](#what-is-the-difference-between-call-apply-and-bind)                                                                                     |
+| 4   | [JSON nima va uning umumiy operatsiyalari ](#what-is-json-and-its-common-operations)                                                                                                   |
+| 5   | [Array slice method maqsad nima ](#what-is-the-purpose-of-the-array-slice-method)                                                                                                      |
+| 6   | [Array splice method maqsad nima ](#what-is-the-purpose-of-the-array-splice-method)                                                                                                    |
+| 7   | [Slice and splice o'rtasidagi farq nima ](#what-is-the-difference-between-slice-and-splice)                                                                                            |
+| 8   | [Object and Map qanday solishtirasiz ](#how-do-you-compare-object-and-map)                                                                                                             |
+| 9   | [[== va === operatorlar o'rtasidagi farq nima ](#what-is-the-difference-between--and--operators)                                                                                       |
+| 10  | [Lambda yoki arrow functionlar nima ](#what-are-lambda-or-arrow-functions)                                                                                                             |
+| 11  | [Birinchi class function nima ](#what-is-a-first-class-function)                                                                                                                       |
+| 12  | [Birinchi tartibli (first order) function nima ](#what-is-a-first-order-function)                                                                                                      |
+| 13  | [Higher order function nima ](#what-is-a-higher-order-function)                                                                                                                        |
+| 14  | [Unary function nima ](#what-is-a-unary-function)                                                                                                                                      |
+| 15  | [Currying function nima ](#what-is-the-currying-function)                                                                                                                              |
+| 16  | [Pure function nima ](#what-is-a-pure-function)                                                                                                                                        |
+| 17  | [Let kalit so'zining maqsadi nima ](#what-is-the-purpose-of-the-let-keyword)                                                                                                           |
+| 18  | [Let va var o'rtasidagi farq nima ](#what-is-the-difference-between-let-and-var)                                                                                                       |
+| 19  | [Nima maqsadda let kalit so'zi sifatida foydalaniladi ](#what-is-the-reason-to-choose-the-name-let-as-a-keyword)                                                                       |
+| 20  | [Qanday qilib o'zgaruvchilarni almashtirish blokida xatosiz qayta e'lon qilasiz ](#how-do-you-redeclare-variables-in-switch-block-without-an-error)                                    |
+| 21  | [Vaqtinchalik o'lik zona nima ? (Temporal Dead Zone) ](#what-is-the-temporal-dead-zone)                                                                                                |
+| 22  | [IIFE (darhol chaqiriladigan funksiya ifodasi) nima? ](#what-is-iifeimmediately-invoked-function-expression)                                                                           |
+| 23  | [JavaScript-da URL-manzilni qanday dekodlash yoki enkodlash mumkin ](#how-do-you-decode-or-encode-a-url-in-javascript)                                                                 |
+| 24  | [Memoization nima ](#what-is-memoization)                                                                                                                                              |
+| 25  | [Hoisting nima ](#what-is-hoisting)                                                                                                                                                    |
+| 26  | [ES6 da qanday sinflar(class) mavjud ](#what-are-classes-in-es6)                                                                                                                       |
+| 27  | [Closures nima ](#what-are-closures)                                                                                                                                                   |
+| 28  | [Modules nima ](#what-are-modules)                                                                                                                                                     |
+| 29  | [Nima uchun sizga modullar kerak ](#why-do-you-need-modules)                                                                                                                           |
+| 30  | [Javasciprtda scopelar nima ](#what-is-scope-in-javascript)                                                                                                                            |
+| 31  | [Service worker nima ](#what-is-a-service-worker)                                                                                                                                      |
+| 32  | [Server worker yordamida DOMni qanday boshqarish mumkin ](#how-do-you-manipulate-dom-using-a-service-worker)                                                                           |
+| 33  | [Server worker qayta ishga tushirishda ma'lumotlardan qanday foydalanasiz ](#how-do-you-reuse-information-across-service-worker-restarts)                                              |
+| 34  | [IndexedDB nima ](#what-is-indexeddb)                                                                                                                                                  |
+| 35  | [Veb-xotira(web storage) nima ](#what-is-web-storage)                                                                                                                                  |
+| 36  | [Post xabari(post message) nima ](#what-is-a-post-message)                                                                                                                             |
+| 37  | [Cookie nima ](#what-is-a-cookie)                                                                                                                                                      |
+| 38  | [Cookie nima uchun kerak ](#why-do-you-need-a-cookie)                                                                                                                                  |
+| 39  | [Cookie-da qanday variantlar mavjud ](#what-are-the-options-in-a-cookie)                                                                                                               |
+| 40  | [Cookie faylini qanday o'chirish mumkin ](#how-do-you-delete-a-cookie)                                                                                                                 |
+| 41  | [Cookie, mahalliy saqlash va seans saqlash o'rtasidagi farqlar qanday ](#What-are-the-differences-between-cookie-local-storage-and-session-storage)                                    |
+| 42  | [[ localStorage va sessionStorage o'rtasidagi asosiy farq nima ](#what-is-the-main-difference-between-localstorage-and-sessionstorage)                                                 |
+| 43  | [Veb-xotiraga(web storage) qanday kirish mumkin ](#how-do-you-access-web-storage)                                                                                                      |
+| 44  | [Session storageda qanday usullar mavjud ](#what-are-the-methods-available-on-session-storage)                                                                                         |
+| 45  | [Saqlash hodisasi nima va uning voqea ishlovchisi (storage event and its event handler) ](#what-is-a-storage-event-and-its-event-handler)                                              |
+| 46  | [Nima uchun sizga veb-xotira kerak ](#why-do-you-need-web-storage)                                                                                                                     |
+| 47  | [Veb-xotira brauzerining yordamini qanday tekshirish mumkin ](#how-do-you-check-web-storage-browser-support)                                                                           |
+| 48  | [Veb-workersning brauzer qo'llab-quvvatlashini qanday tekshirish mumkin ](#how-do-you-check-web-workers-browser-support)                                                               |
+| 49  | [Veb-workerga misol keltiring ](#give-an-example-of-web-worker)                                                                                                                        |
+| 50  | [Web-ishchilarning DOM-da qanday cheklovlari bor ](#what-are-the-restrictions-of-web-workers-on-dom)                                                                                   |
+| 51  | [Promise nima ](#what-is-a-promise)                                                                                                                                                    |
+| 52  | [Nega sizga promise kerak ](#why-do-you-need-a-promise)                                                                                                                                |
+| 53  | [Promisening uchta holati nima ](#what-are-the-three-states-of-promise)                                                                                                                |
+| 54  | [Callback funktsiyasi nima ](#what-is-a-callback-function)                                                                                                                             |
+| 55  | [Nega bizga Callbacklar kerak ](#why-do-we-need-callbacks)                                                                                                                             |
+| 56  | [Callback hell nima ](#what-is-a-callback-hell)                                                                                                                                        |
+| 57  | [Server tomonidan yuborilgan voqealar(event) nima ](#what-is-server-sent-events)                                                                                                       |
+| 58  | [Server tomonidan yuborilgan voqea bildirishnomalarini qanday qabul qilasiz ](#how-do-you-receive-server-sent-event-notifications)                                                     |
+| 59  | [Server tomonidan yuborilgan voqealar uchun brauzer yordamini qanday tekshirish mumkin ](#how-do-you-check-browser-support-for-server-sent-events)                                     |
+| 60  | [Server yuborilgan voqealar uchun qanday hodisalar mavjud ](#what-are-the-events-available-for-server-sent-events)                                                                     |
+| 61  | [Promisening asosiy qoidalari qanday ](#what-are-the-main-rules-of-promise)                                                                                                            |
+| 62  | [Callback dagi callback nima ](#what-is-callback-in-callback)                                                                                                                          |
+| 63  | [promise zanjiri(chaining) nima ](#what-is-promise-chaining)                                                                                                                           |
+| 64  | [Promise.all nima](#what-is-promise.all)                                                                                                                                               |
+| 65  | [Promise race mathoding maqsadi nima ](#what-is-the-purpose-of-race-method-in-promise)                                                                                                 |
+| 66  | [Javascriptda qat'iy rejim(strict mode) nima ](#what-is-a-strict-mode-in-javascript)                                                                                                   |
+| 67  | [Nima uchun sizga qattiq rejim kerak ](#why-do-you-need-strict-mode)                                                                                                                   |
+| 68  | [Qattiq rejimni qanday e'lon qilasiz ](#how-do-you-declare-strict-mode)                                                                                                                |
+| 69  | [Ikkilamchi undovdan maqsad nima (! !) ](#what-is-the-purpose-of-double-exclamation)                                                                                                   |
+| 70  | [Delete operatorining maqsadi nima ](#what-is-the-purpose-of-delete-operator)                                                                                                          |
+| 71  | [typeOf operatori nima ](#what-is-typeof-operator)                                                                                                                                     |
+| 72  | [Belgilanmagan xususiyati (undefined prop) nima ](#what-is-undefined-property)                                                                                                         |
+| 73  | [Null qiymat nima ](#what-is-null-value)                                                                                                                                               |
+| 74  | [Null va undefined ortasida farq nima ](#what-is-the-difference-between-null-and-undefined)                                                                                            |
+| 75  | [Eval nima ](#What-is-eval)                                                                                                                                                            |
+| 76  | [Window va document o'rtasidagi farq nima ](#what-is-the-difference-between-window-and-document)                                                                                       |
+| 77  | [Javascriptda tarixga(Js history) qanday kirish mumkin ](#how-do-you-access-history-in-javascript)                                                                                     |
+| 78  | [Caps lock tugmasi yoqilgan yoki yo'qligini qanday aniqlash mumkin ](#how-do-you-detect-caps-lock-key-turned-on-or-not)                                                                |
+| 79  | [NaN nima ](#what-is-isnan)                                                                                                                                                            |
+| 80  | [E'lon qilinmagan va aniqlanmagan o'zgaruvchilar o'rtasidagi farqlar qanday ](#what-are-the-differences-between-undeclared-and-undefined-variables)                                    |
+| 81  | [Global o'zgaruvchilar nima ](#what-are-global-variables)                                                                                                                              |
+| 82  | [Global o'zgaruvchilar bilan qanday muammolar mavjud ](#what-are-the-problems-with-global-variables)                                                                                   |
+| 83  | [NaN property nima ](#what-is-nan-property)                                                                                                                                            |
+| 84  | [isFinite funksiyasining maqsadi nima ](#what-is-the-purpose-of-isfinite-function)                                                                                                     |
+| 85  | [Hodisalar oqimi (event flow) nima ](#what-is-an-event-flow)                                                                                                                           |
+| 86  | [Event bubbling nima ](#what-is-event-bubbling)                                                                                                                                        |
+| 87  | [Event capturing nima ](#what-is-event-capturing)                                                                                                                                      |
+| 88  | [Form JavaScript yordamida qanday yuborasiz ](#how-do-you-submit-a-form-using-javascript)                                                                                              |
+| 89  | [Operatsion tizim tafsilotlari(operating system details) ni qanday topish mumkin ](#how-do-you-find-operating-system-details)                                                          |
+| 90  | [Document load va DOMContentLoaded hodisalari o'rtasidagi farq nima ](#what-is-the-difference-between-document-load-and-domcontentloaded-events)                                       |
+| 91  | [What is the difference between native, host and user objects](#what-is-the-difference-between-native,-host-and-user-objects)                                                          |
+| 92  | [JavaScript kodini tuzatish(debugging) uchun qanday vositalar yoki usullar qo'llaniladi](#what-are-the-tools-or-techniques-used-for-debugging-javascript-code)                         |
+| 93  | [Promise da callback funksiya ishlatishni qanday ijobiy va salbiy tomonlari bor](#what-are-the-pros-and-cons-of-promises-over-callbacks)                                               |
+| 94  | [Atribut va xususiyat(property) o'rtasidagi farq nima](#what-is-the-difference-between-an-attribute-and-a-property)                                                                    |
+| 95  | [Bir xil kelib chiqish siyosati (same-origin policy) nima](#what-is-same-origin-policy)                                                                                                |
+| 96  | [Void 0 ning maqsadi nima](#what-is-the-purpose-of-void-0)                                                                                                                             |
+| 97  | [JavaScript kompilyatsiya qilingan yoki tarjima qilingan tilmi](#is-javascript-a-compiled-or-interpreted-language)                                                                     |
+| 98  | [Js case-sensitive (katta va kichik hariflarni farqalydigan ) tilmi](#is-javascript-a-case-sensitive-language)                                                                         |
+| 99  | [Java va JavaScript o'rtasida bog'liqlik bormi](#is-there-any-relation-between-java-and-javascript)                                                                                    |
+| 100 | [Events nima](#what-are-events)                                                                                                                                                        |
+| 101 | [Javascriptni kim yaratgan](#who-created-javascript)                                                                                                                                   |
+| 102 | [PreventDefault usuli qanday holatda ishlatiladi](#what-is-the-use-of-preventdefault-method)                                                                                           |
+| 103 | [StopPropagation usuli qanday holatda ishlatiladi](#what-is-the-use-of-stoppropagation-method)                                                                                         |
+| 104 | [Noto'g'ri foydalanishni qaytarish uchun qanday qadamlar mavjud](#what-are-the-steps-involved-in-return-false)                                                                         |
+| 105 | [BOM nima](#what-is-bom)                                                                                                                                                               |
+| 106 | [setTimeout dan qanday foydalanish kerak](#what-is-the-use-of-settimeout)                                                                                                              |
+| 107 | [setInterval nimadan foydalaniladi](#what-is-the-use-of-setinterval)                                                                                                                   |
+| 108 | [Nima uchun JavaScript yagona Ipli (Single threaded) deb hisoblanadi](#why-is-javascript-treated-as-single-threaded)                                                                   |
+| 109 | [Tadbir delegatsiyasi(event delegation) nima](#what-is-an-event-delegation)                                                                                                            |
+| 110 | [ECMAScript nima](#what-is-ecmascript)                                                                                                                                                 |
+| 111 | [JSON nima](#what-is-json)                                                                                                                                                             |
+| 112 | [JSON sintaksisi qoidalari qanday](#what-are-the-syntax-rules-of-json)                                                                                                                 |
+| 113 | [JSON stringify nima maqsadda foydalaniladi](#what-is-the-purpose-json-stringify)                                                                                                      |
+| 114 | [JSON string ni qanday tahlil(parse) qilasiz](#how-do-you-parse-json-string)                                                                                                           |
+| 115 | [Nima uchun sizga JSON kerak](#why-do-you-need-json)                                                                                                                                   |
+| 116 | [PWAs nima](#what-are-pwas?)                                                                                                                                                           |
+| 117 | [clearTimeout usulining ishlatish maqsadi nima](#what-is-the-purpose-of-cleartimeout-method)                                                                                           |
+| 118 | [ClearInterval usulidan maqsad nima](#what-is-the-purpose-of-clearinterval-method)                                                                                                     |
+| 119 | [Javascriptda yangi sahifani qanday yo’naltirish mumkin](#how-do-you-redirect-new-page-in-javascript)                                                                                  |
+| 120 | [Stringda substring mavjudligini qanday tekshirish mumkin](#how-do-you-check-whether-a-string-contains-a-substring)                                                                    |
+| 121 | [Javascriptda elektron pochtani qanday tekshirish mumkin](#how-do-you-validate-an-email-in-javascript)                                                                                 |
+| 122 | [Joriy urlni javascript bilan qanday olish mumkin](#how-do-you-get-the-current-url-with-javascript)                                                                                    |
+| 123 | [Joylashuv obyektining turli url xususiyatlari qanday](#what-are-the-various-url-properties-of-location-object)                                                                        |
+| 124 | [Javascriptda so'rovlar qatori qiymatlarini qanday olish mumkin](#how-do-get-query-string-values-in-javascript)                                                                        |
+| 125 | [Ob'ektda kalit(key) mavjudligini qanday tekshirish mumkin](#how-do-you-check-if-a-key-exists-in-an-object)                                                                            |
+| 126 | [Javascript ob'ektini qanday aylantirasiz(loop) yoki sanab o'tasiz](#how-do-you-loop-through-or-enumerate-javascript-object)                                                           |
+| 127 | [Bo'sh ob'ektni qanday sinab ko'rasiz ](#how-do-you-test-for-an-empty-object)                                                                                                          |
+| 128 | [Argumentlar obyekti nima ](#what-is-an-arguments-object)                                                                                                                              |
+| 129 | [Qanday qilib satrning birinchi harfini katta harf bilan yozish mumkin ](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)                                                  |
+| 130 | [For loopning qanday ijobiy va salbiy tomonlari bor](#what-are-the-pros-and-cons-of-for-loop)                                                                                          |
+| 131 | [Joriy sanani javascriptda qanday ko'rsatasiz](#how-do-you-display-the-current-date-in-javascript)                                                                                     |
+| 132 | [Ikki sana ob'ektini qanday solishtirasiz](#how-do-you-compare-two-date-objects)                                                                                                       |
+| 133 | [Satrning boshqa satr bilan boshlanishini qanday tekshirish mumkin](#how-do-you-check-if-a-string-starts-with-another-string)                                                          |
+| 134 | [Javascriptda satrni(string) qanday kesish mumkin](#how-do-you-trim-a-string-in-javascript)                                                                                            |
+| 135 | [Javascriptda kalit , qiymat juftligini qanday qo'shasiz](#how-do-you-add-a-key-value-pair-in-javascript)                                                                              |
+| 136 | [[!-- belgisi maxsus operatorni ifodalaydi](#is-the-'!--'-notation-represents-a-special-operator)                                                                                      |
+| 137 | [O'zgaruvchilarga standart qiymatlarni qanday belgilash mumkin](#how-do-you-assign-default-values-to-variables)                                                                        |
+| 138 | [Ko'p qatorli satrlarni qanday aniqlash mumkin](#how-do-you-define-multiline-strings)                                                                                                  |
+| 139 | [Ilova qobig'i(app shell) modeli nima](#what-is-an-app-shell-model)                                                                                                                    |
+| 140 | [Funktsiyalar uchun xususiyatlarni aniqlay olamizmi](#can-we-define-properties-for-functions)                                                                                          |
+| 141 | [Funksiya kutayotgan parametrlar sonini qanday usul bilan topish mumkin](#what-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)                                     |
+| 142 | [Polifill nima ?](#what-is-a-polyfill)                                                                                                                                                 |
+| 143 | [Tanaffus(break) va davom(continue) iboralari nima](#what-are-break-and-continue-statements)                                                                                           |
+| 144 | [Js yorliqlari(js label) nima ?](#what-are-js-labels)                                                                                                                                  |
+| 145 | [Deklaratsiyalarni yuqorida saqlashning qanday afzalliklari bor](#what-are-the-benefits-of-keeping-declarations-at-the-top)                                                            |
+| 146 | [O'zgaruvchilarni ishga tushirishning(initialize) qanday afzalliklari bor](#what-are-the-benefits-of-initializing-variables)                                                           |
+| 147 | [Yangi ob'ekt yaratish uchun qanday tavsiyalar mavjud](#what-are-the-recommendations-to-create-new-object)                                                                             |
+| 148 | [JSON massivlarini qanday aniqlaysiz](#how-do-you-define-json-arrays)                                                                                                                  |
+| 149 | [Tasodifiy butun sonlarni qanday yaratasiz](#how-do-you-generate-random-integers)                                                                                                      |
+| 150 | [Butun sonlarni malum miqdor orasida chop etish uchun tasodifiy butun sonlar funksiyasini yoza olasizmi?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range) |
+| 151 | [Tree shaking nima](#what-is-tree-shaking)                                                                                                                                             |
+| 152 | [Tree shaking nima keragi bor](#what-is-the-need-of-tree-shaking)                                                                                                                      |
+| 153 | [Eval dan foydalanish tavsiya etiladimi](#is-it-recommended-to-use-eval)                                                                                                               |
+| 154 | [Muntazam ifoda(regEx) nima ?](#what-is-a-regular-expression)                                                                                                                          |
+| 155 | [Muntazam ifodada qanday string methods mavjud](#what-are-the-string-methods-available-in-regular-expression)                                                                          |
+| 156 | [Muntazam ifodadagi modifikatorlar nima](#what-are-modifiers-in-regular-expression)                                                                                                    |
+| 157 | [Muntazam ifoda naqshlari (patterns)nima](#what-are-regular-expression-patterns)                                                                                                       |
+| 158 | [RegExp obyekti nima](#what-is-a-regexp-object)                                                                                                                                        |
+| 159 | [Patter(naqsh) uchun satrni qanday qidirasiz](#how-do-you-search-a-string-for-a-pattern)                                                                                               |
+| 160 | [Exec usulining maqsadi nima](#what-is-the-purpose-of-exec-method)                                                                                                                     |
+| 161 | [HTML elementining stilini qanday o'zgartirish mumkin](#how-do-you-change-style-of-a-html-element)                                                                                     |
+| 162 | ['1+2+'3' natijasi qanday bo'ladi](#what-would-be-the-result-of-1+2+'3')                                                                                                               |
+| 163 | [Debbuger statment nima ?](#what-is-a-debugger-statement)                                                                                                                              |
+| 164 | [Nima maqsadda Breakpoinlar debugginda qolaniladi ?](#what-is-the-purpose-of-breakpoints-indebugging)                                                                                  |
+| 165 | [Identifikator sifatida ajratilgan so'zlardan foydalansam bo'ladimi?](#can-i-use-reserved-words-as-identifiers)                                                                        |
+| 166 | [Mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser)                                                                                                        |
+| 167 | [Regexpsiz mobil brauzerni qanday aniqlash mumkin ?](#how-do-you-detect-a-mobile-browser-without-regexp)                                                                               |
+| 168 | [JS yordamida tasvir(image) kengligi va balandligini qanday olish mumkin](#how-do-you-get-the-image-width-and-height-using-js)                                                         |
+| 169 | [Sinxron HTTP so'rovini qanday qilasiz](#how-do-you-make-synchronous-http-request)                                                                                                     |
+| 170 | [Asinxron HTTP so'rovini qanday qilasiz](#how-do-you-make-asynchronous-http-request)                                                                                                   |
+| 171 | [Javascriptda sanani boshqa vaqt mintaqasiga qanday o'zgartirasiz](#how-do-you-convert-date-to-another-timezone-in-javascript)                                                         |
+| 172 | [Oyna(window) hajmini olish uchun qanday xususiyatlardan foydalaniladi](#what-are-the-properties-used-to-get-size-of-window)                                                           |
+| 173 | [Javascriptda shartli operator nima](#what-is-a-conditional-operator-in-javascript)                                                                                                    |
+| 174 | [Shartli operatorda nested ko’rinishni qo'llay olasizmi?](#Can-you-apply-chaining-on-conditional-operator)                                                                             |
+| 175 | [Sahifani yuklagandan so'ng javascriptni yurgazish usullari qanday?](#what-are-the-ways-to-execute-javascript-after-page-load)                                                         |
+| 176 | [Proto va prototip o'rtasidagi farq nima](#what-is-the-difference-between-proto-and-prototype)                                                                                         |
+| 177 | [Sizga nuqtali vergul kerak bo'lgan misol keltiring](#give-an-example-where-do-you-really-need-semicolon)                                                                              |
+| 178 | [Freeze usuli nima](#what-is-a-freeze-method)                                                                                                                                          |
+| 179 | [Muzlatish usulidan maqsad nima](#what-is-the-purpose-of-freeze-method)                                                                                                                |
+| 180 | [Nima uchun muzlatish usulidan foydalanishim kerak](#why-do-i-need-to-use-freeze-method)                                                                                               |
+| 181 | [Brauzer tilini afzal ko'rishni qanday aniqlash mumkin](#how-do-you-detect-a-browser-language-preference)                                                                              |
+| 182 | [Qanday qilib javascript yordamida stringni sarlavha(title) kattaligiga aylantirish mumkin](#how-to-convert-string-to-title-case-with-javascript)                                      |
+| 183 | [Sahifada o'chirilgan(disabled) javascript sahifani qanday aniqlash mumkin](#how-do-you-detect-javascript-disabled-in-the-page)                                                        |
+| 184 | [Javascript tomonidan qo'llab-quvvatlanadigan turli operatorlar nima](#what-are-various-operators-supported-by-javascript)                                                             |
+| 185 | [Rest parametri nima](#what-is-a-rest-parameter)                                                                                                                                       |
+| 186 | [Agar oxirgi argument sifatida Rest parametridan foydalanmasangiz nima bo'ladi](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                                     |
+| 187 | [Javascriptda qanday bitli operatorlar mavjud](#what-are-the-bitwise-operators-available-in-javascript)                                                                                |
+| 188 | [Spread operatori nima](#what-is-a-spread-operator)                                                                                                                                    |
+| 189 | [Ob'ektning muzlatilgan yoki muzlatilmaganligini qanday aniqlash mumkin](#how-do-you-determine-whether-object-is-frozen-or-not)                                                        |
+| 190 | [Bir xil yoki ob'ektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
+| 191 | [Ob'ektni ishlatishdan maqsad - bu usul](#what-is-the-purpose-of-using-object-is-method)                                                                                               |
+| 192 | [Xususiyatlarni bir ob'ektdan ikkinchisiga qanday nusxalash mumkin](#how-do-you-copy-properties-from-one-object-to-other)                                                              |
+| 193 | [Tayinlash usuli qanday qo'llaniladi](#what-are-the-applications-of-assign-method)                                                                                                     |
+| 194 | [Proksi-server nima ?](#what-is-a-proxy-object)                                                                                                                                        |
+| 195 | [Seal usulining maqsadi nima](#what-is-the-purpose-of-seal-method)                                                                                                                     |
+| 196 | [Seal usuli qanday qo'llaniladi](#what-are-the-applications-of-seal-method)                                                                                                            |
+| 197 | [Freeze va Seal usullari o'rtasidagi farqlar qanday](#what-are-the-differences-between-freeze-and-seal-methods)                                                                        |
+| 198 | [Ob'ektning muhrlangan yoki yo'qligini qanday aniqlash mumkin](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                                    |
+| 199 | [Qanday qilib sanab boladigan (enumerable) kalit va qiymat juftlarini olasiz](#how-do-you-get-enumerable-key-and-value-pairs)                                                          |
+| 200 | [Object.values ​​va Object.entries usuli o'rtasidagi asosiy farq nima](#what-is-the-main-difference-between-object.values-and-object.entries-method)                                   |
+| 201 | [Har qanday ob'ektning kalitlari ro'yxatini qanday olishingiz mumkin](#how-can-you-get-the-list-of-keys-of-any-object)                                                                 |
+| 202 | [Prototip bilan ob'ektni qanday yaratasiz](#how-do-you-create-an-object-with-prototype)                                                                                                |
+| 203 | [Weakset nima](#what-is-a-weakset)                                                                                                                                                     |
+| 204 | [WeakSet va Set o'rtasidagi farqlar qanday](#what-are-the-differences-between-weakset-and-set)                                                                                         |
+| 205 | [WeakSet-da mavjud usullar to'plamini sanab o'ting](#list-down-the-collection-of-methods-available-on-weakset)                                                                         |
+| 206 | [WeakMap nima](#what-is-a-weakmap)                                                                                                                                                     |
+| 207 | [WeakMap va Map o'rtasidagi farqlar qanday](#what-are-the-differences-between-weakmap-and-map)                                                                                         |
+| 208 | [WeakMap-da mavjud usullar to'plamini sanab o'ting](#list-down-the-collection-of-methods-available-on-weakmap)                                                                         |
+| 209 | [Unevaldan maqsad nima](#what-is-the-purpose-of-uneval)                                                                                                                                |
+| 210 | [URL manzilini qanday kodlash(encode) mumkin](#how-do-you-encode-an-url)                                                                                                               |
+| 211 | [URLni qanday dekodlash(decode) mumkin](#how-do-you-decode-an-url)                                                                                                                     |
+| 212 | [Veb-sahifa matini qanday chop qilasiz](#how-do-you-print-the-contents-of-web-page)                                                                                                    |
+| 213 | [Uneval va eval o'rtasidagi farq nima](#what-is-the-difference-between-uneval-and-eval)                                                                                                |
+| 214 | [Anonim(anonymous) funksiya nima](#what-is-an-anonymous-function)                                                                                                                      |
+| 215 | [Mahalliy va global o'zgaruvchilar o'rtasidagi ustuvorlik tartibi qanday](#what-is-the-precedence-order-between-local-and-global-variables)                                            |
+| 216 | [JavaScript kirish elementlari nima ?](#what-are-javascript-accessors)                                                                                                                 |
+| 217 | [Ob'ekt konstruktorida xususiyatni qanday aniqlash mumkin](#how-do-you-define-property-on-object-constructor)                                                                          |
+| 218 | [Get va defineProperty o'rtasidagi farq nima ?](#what-is-the-difference-between-get-and-defineproperty)                                                                                |
+| 219 | [Getters va Settersning afzalliklari nimada](#what-are-the-advantages-of-getters-and-setters)                                                                                          |
+| 220 | [DefineProperty usuli yordamida qabul qiluvchilar(getter) va sozlagichlarni(setter) qo'shishim mumkinmi](#can-i-add-getters-and-setters-using-defineproperty-method)                   |
+| 221 | [Switch-case ni ishlatishdan maqsad nima](#what-is-the-purpose-of-switch-case)                                                                                                         |
+| 222 | [Switch casedan foydalanishda qanday qoidalarga rioya qilish kerak](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)                                             |
+| 223 | [Primitiv ma'lumotlar turlari nima ?](#what-are-primitive-data-types)                                                                                                                  |
+| 224 | [Ob'ekt xususiyatlariga kirishning turli usullari qanday](#what-are-the-different-ways-to-access-object-properties)                                                                    |
+| 225 | [Funksiya parametrlari qoidalari qanday](#what-are-the-function-parameter-rules)                                                                                                       |
+| 226 | [Xato obyekti(error object) nima](#what-is-an-error-object)                                                                                                                            |
+| 227 | [Sintaksis xatosiga duch kelganingizda](#when-you-get-a-syntax-error)                                                                                                                  |
+| 228 | [Xato obyektidan farqli xato nomlari qanday](#what-are-the-different-error-names-from-error-object)                                                                                    |
+| 229 | [Xatolarni hal qilishda qanday turli bayonotlar mavjud](#what-are-the-various-statements-in-error-handling)                                                                            |
+| 230 | [Javascriptda ikki turdagi looplar qanday?](#what-are-the-two-types-of-loops-in-javascript)                                                                                            |
+| 231 | [nodejs nima](#what-is-nodejs)                                                                                                                                                         |
+| 232 | [Intl ob'ekti nima](#what-is-an-intl-object)                                                                                                                                           |
+| 233 | [Tilga xos sana va vaqtni formatlashni qanday amalga oshirasiz](#how-do-you-perform-language-specific-date-and-time-formatting)                                                        |
+| 234 | [Iterator nima](#what-is-an-iterator)                                                                                                                                                  |
+| 235 | [Sinxron iteratsiya qanday ishlaydi](#how-does-synchronous-iteration-works)                                                                                                            |
+| 236 | [Hodisa sikli(event loop) nima](#what-is-an-event-loop)                                                                                                                                |
+| 237 | [Call stack nima ?](#what-is-call-stack)                                                                                                                                               |
+| 238 | [Hodisa navbati (event qoeue) nima](#what-is-an-event-queue)                                                                                                                           |
+| 239 | [Dekorator nima](#what-is-a-decorator)                                                                                                                                                 |
+| 240 | [Intl obyektining xossalari(Intl object prop) qanday](#what-are-the-properties-of-intl-object)                                                                                         |
+| 241 | [Unary operator nima](#what-is-an-unary-operator)                                                                                                                                      |
+| 242 | [Massivdagi elementlarni qanday saralaysiz](#how-do-you-sort-elements-in-an-array)                                                                                                     |
+| 243 | [Massivlarni saralashda compareFunction nimadan iborat](#what-is-the-purpose-of-comparefunction-while-sorting-arrays)                                                                  |
+| 244 | [Massivni qanday teskari aylantirasiz](#how-do-you-reversing-an-array)                                                                                                                 |
+| 245 | [Massivda minimal va maksimal qiymatlarni qanday topasiz](#how-do-you-find-min-and-max-value-in-an-array)                                                                              |
+| 246 | [Matematik funktsiyalarsiz min va maksimal qiymatlarni qanday topish mumkin](#how-do-you-find-min-and-max-values-without--math-functions)                                              |
+| 247 | [Bo'sh statment nima va uning maqsadi](#what-is-an-empty-statement-and-purpose-of-it)                                                                                                  |
+| 248 | [Modulning metama'lumotlarini qanday olish mumkin](#how-do-you-get-meta-data-of-a-module)                                                                                              |
+| 249 | [Vergul operatori nima](#what-is-a-comma-operator)                                                                                                                                     |
+| 250 | [Vergul operatorining afzalligi nimada](#what-is-the-advantage-of-a-comma-operator)                                                                                                    |
+| 251 | [Typesciprt nima ?](#what-is-typescript)                                                                                                                                               |
+| 252 | [Javascript va typescript o'rtasidagi farqlar qanday](#what-are-the-differences-between-javascript-and-typescript)                                                                     |
+| 253 | [Typescriptning javascriptdan qanday afzalliklari bor](#what-are-the-advantages-of-typescript-over-javascript)                                                                         |
+| 254 | [Ob'ektni ishga tushirish (obj initialize) nima](#what-is-an-object-initializer)                                                                                                       |
+| 255 | [Konstruktor usuli nima](#what-is-a-constructor-method)                                                                                                                                |
+| 256 | [Agar classda bir necha marta konstruktor yozsangiz nima bo'ladi](#what-happens-if-you-write-constructor-more-than-once-in-a-class)                                                    |
+| 257 | [Parent classning konstruktorini qanday chaqirish mumkin?](#how-do-you-call-the-constructor-of-a-parent-class)                                                                         |
+| 258 | [Ob'ektning prototipini qanday olish mumkin](#how-do-you-get-the-prototype-of-an-object)                                                                                               |
+| 259 | [Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi](#what-happens-if-i-pass-string-type-for-getprototype-method)                                                      |
+| 260 | [Bir ob'ektning prototipini boshqasiga qanday o'rnatish mumkin](#how-do-you-set-prototype-of-one-object-to-another)                                                                    |
+| 261 | [Ob'ektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin](#how-do-you-check-whether-an-object-can-be-extendable-or-not)                                      |
+| 262 | [Ob'ektni kengaytirishni qanday oldini olish mumkin](#how-do-you-prevent-an-object-to-extend)                                                                                          |
+| 263 | [Ob'ektni kengaytirilmaydigan qilishning turli usullari qanday](#what-are-the-different-ways-to-make-an-object-non-extensible)                                                         |
+| 264 | [Ob'ektda bir nechta xususiyatlarni qanday aniqlash mumkin](#how-do-you-define-multiple-properties-on-an-object)                                                                       |
+| 265 | [Javascriptda MEAN nima](#what-is-mean-in-javascript)                                                                                                                                  |
+| 266 | [Javascriptda xiralashish(Obfuscation ) nima](#what-is-obfuscation-in-javascript)                                                                                                      |
+| 267 | [Nima uchun sizga obfuscation kerak ?](#why-do-you-need-obfuscation)                                                                                                                   |
+| 268 | [Kichiklashtirish(minification) nima](#what-is-minification)                                                                                                                           |
+| 269 | [Kichiklashtirishning qanday afzalliklari bor](#what-are-the-advantages-of-minification)                                                                                               |
+| 270 | [Obfuscation va shifrlash o'rtasidagi farqlar qanday](#what-are-the-differences-between-obfuscation-and-encryption)                                                                    |
+| 271 | [Kichiklashtirish uchun qanday umumiy vositalar qo'llaniladi](#what-are-the-common-tools-used-for-minification)                                                                        |
+| 272 | [Javascript yordamida shaklni(form) tekshirishni qanday amalga oshirasiz](#how-do-you-perform-form-validation-using-javascript)                                                        |
+| 273 | [Shaklni(form) tekshirishni javascriptsiz qanday amalga oshirasiz](#how-do-you-perform-form-validation-without-javascript)                                                             |
+| 274 | [Cheklovlarni tekshirish uchun qanday DOM usullari mavjud](#what-are-the-dom-methods-available-for-constraint-validation)                                                              |
+| 275 | [Mavjud cheklovni tekshirish DOM xususiyatlari qanday](#what-are-the-available-constraint-validation-dom-properties)                                                                   |
+| 276 | [Yaroqlilik xususiyatlarining ro'yxati qanday](#what-are-the-list-of-validity-properties)                                                                                              |
+| 277 | [rangeOverflow xususiyatidan foydalanishga misol keltiring](#give-an-example-usage-of-rangeoverflow-property)                                                                          |
+| 278 | [Enums xususiyati javascriptda mavjudmi?](#is-enums-feature-available-in-javascript)                                                                                                   |
+| 279 | [Enum nima](#What-is-an-enum)                                                                                                                                                          |
+| 280 | [Ob'ektning barcha xususiyatlarini qanday ro'yxatga olasiz](#how-do-you-list-all-properties-of-an-object)                                                                              |
+| 281 | [How do you get property descriptors of an object](#how-do-you-get-property-descriptors-of-an-object)                                                                                  |
+| 282 | [Xususiyat deskriptori tomonidan taqdim etilgan atributlar qanday](#what-are-the-attributes-provided-by-a-property-descriptor)                                                         |
+| 283 | [Classlarni qanday uzaytirasiz(extends)](#how-do-you-extend-classes)                                                                                                                   |
+| 284 | [Sahifani qayta yuklamasdan urlni qanday o'zgartirish mumkin](#how-do-i-modify-the-url-without-reloading-the-page)                                                                     |
+| 285 | [Massiv ma'lum bir qiymatni o'z ichiga oladi yoki yo'qligini qanday tekshirish mumkin](#how-do-you-check-whether-an-array-includes-a-particular-value-or-not)                          |
+| 286 | [Skayar massivlarni qanday solishtirasiz](#how-do-you-compare-scalar-arrays)                                                                                                           |
+| 287 | [Get parametrlaridan qiymatni qanday olish mumkin](#how-to-get-the-value-from-get-parameters)                                                                                          |
+| 288 | [Qanday qilib raqamlarni vergul bilan ming ajratuvchi sifatida chop qilasiz](#how-do-you-print-numbers-with-commas-as-thousand-separators)                                             |
+| 289 | [Java va javascript o'rtasidagi farq nima](#what-is-the-difference-between-java-and-javascript)                                                                                        |
+| 290 | [JavaScript namespace qo'llab-quvvatlaydimi?](#does-javascript-supports-namespace)                                                                                                     |
+| 291 | [Namescpace qanday e'lon qilasiz](#how-do-you-declare-namespace)                                                                                                                       |
+| 292 | [Bosh sahifadagi iframe-da javascript kodini qanday chaqirish mumkin](#how-do-you-invoke-javascript-code-in-an-iframe-from-parent-page)                                                |
+| 293 | [Vaqt mintaqasini sanadan qanday qilib siljitish mumkin](#how-do-get-the-timezone-offset-from-date)                                                                                    |
+| 294 | [CSS va JS fayllarini dinamik ravishda qanday yuklaysiz](#how-do-you-load-css-and-js-files-dynamically)                                                                                |
+| 295 | [DOM-da HTML elementlarini topishning turli usullari qanday?](#what-are-the-different-methods-to-find-html-elements-in-dom)                                                            |
+| 296 | [jQuery nima](#what-is-jquery)                                                                                                                                                         |
+| 297 | [V8 JavaScript dvigateli nima](#what-is-v8-javascript-engine)                                                                                                                          |
+| 298 | [Nima uchun biz javascriptni dinamik til deb ataymiz](#why-do-we-call-javascript-as-dynamic-language)                                                                                  |
+| 299 | [Void operatori nima](#what-is-a-void-operator)                                                                                                                                        |
+| 300 | [Kursorni kutish(wait) uchun qanday sozlash kerak](#how-to-set-the-cursor-to-wait)                                                                                                     |
+| 301 | [Qanday qilib cheksiz sikl (infinite loop)yaratasiz](#how-do-you-create-an-infinite-loop)                                                                                              |
+| 302 | [Nima uchun bayonot bilan avoid kerak](#why-do-you-need-to-avoid-with-statement)                                                                                                       |
+| 303 | [Quyidagi for looplarning natijalari qanday](#what-is-the-output-of-below-for-loops)                                                                                                   |
+| 304 | [ES6 ning ba'zi xususiyatlarini sanab o'ting](#list-down-some-of-the-features-of-es6)                                                                                                  |
+| 305 | [ES6 nima](#what-is-es6)                                                                                                                                                               |
+| 306 | [Let va const o'zgaruvchilarni qayta e'lon qila olamanmi?](#can-I-redeclare-let-and-const-variables)                                                                                   |
+| 307 | [Const o'zgaruvchisi qiymatni o'zgarmas qiladimi](#is-const-variable-makes-the-value-immutable)                                                                                        |
+| 308 | [Standart parametrlar nima](#what-are-default-parameters)                                                                                                                              |
+| 309 | [Shablon literallari nima](#what-are-template-literals)                                                                                                                                |
+| 310 | [Shablon literallarida ko'p qatorli satrlarni qanday yozish mumkin](#how-do-you-write-multi-line-strings-in-template-literals)                                                         |
+| 311 | [Murakkab(nested) shablonlari nima](#what-are-nesting-templates)                                                                                                                       |
+| 312 | [Belgilangan(tagged) shablonlar nima](#what-are-tagged-templates)                                                                                                                      |
+| 313 | [Raw stringlar nima](#what-are-raw-strings)                                                                                                                                            |
+| 314 | [Destructuring assignment (strukturani buzish) nima ?](#what-is-destructuring-assignment)                                                                                              |
+| 315 | [Topshiriqni buzishda standart qiymatlar qanday](#what-are-default-values-in-destructuring-assignment)                                                                                 |
+| 316 | [Topshiriqni buzishda o'zgaruvchilarni qanday almashtirasiz](#how-do-you-swap-variables-in-destructuring-assignment)                                                                   |
+| 317 | [Kengaytirilgan ob'ekt harflari nima](#what-are-enhanced-object-literals)                                                                                                              |
+| 318 | [Dinamik import nima](#what-are-dynamic-imports)                                                                                                                                       |
+| 319 | [Dinamik import uchun qanday holatlar mavjud](#what-are-the-use-cases-for-dynamic-imports)                                                                                             |
+| 320 | [Tiplangan massivlar(typed arrays) nima](#what-are-typed-arrays)                                                                                                                       |
+| 321 | [Modul yuklagichlarining(modal loader) afzalliklari nimada](#what-are-the-advantages-of-module-loaders)                                                                                |
+| 322 | [Collation (harakatlash) nima ](#what-is-collation)                                                                                                                                    |
+| 323 | [For .. of statmentni nima uchun ishlatiladi](#what-is-for...of-statement)                                                                                                             |
+| 324 | [Quyidagi yoyilgan operator massivining natijasi nimaga teng](#what-is-the-output-of-below-spread-operator-array)                                                                      |
+| 325 | [PostMessage xavfsizmi?](#is-postmessage-secure)                                                                                                                                       |
+| 326 | [Joyker belgisi sifatida postxabar maqsadli kelib chiqishi bilan bog'liq qanday muammolar mavjud](#what-are-the-problems-with-postmessage-target-origin-as-wildcard)                   |
+| 327 | [Qanday qilib tajovuzkorlardan postMessages olishdan qochasiz](#how-do-you-avoid-receiving-postmessages-from-attackers)                                                                |
+| 328 | [PostMessages-dan butunlay qochishim mumkinmi?](#can-i-avoid-using-postmessages-completely)                                                                                            |
+| 329 | [PostMessages sinxronlashganmi ?](#is-postmessages-synchronous)                                                                                                                        |
+| 330 | [Javascript qanday paradigma](#what-paradigm-is-javascript)                                                                                                                            |
+| 331 | [Ichki(Internal) va tashqi(external) javascript o'rtasidagi farq nima](#what-is-the-difference-between-internal-and-external-javascript)                                               |
+| 332 | [JavaScript server tomonidagi skriptga qaraganda tezroqmi](#is-javascript-faster-than-server-side-script)                                                                              |
+| 333 | [Belgilash qutisi(checkbox) holatini(status) qanday olish mumkin](#how-do-you-get-the-status-of-a-checkbox)                                                                            |
+| 334 | [Double tilde operatorining maqsadi nima](#what-is-the-purpose-of-double-tilde-operator)                                                                                               |
+| 335 | [Belgilarni ASCII kodiga qanday o'zgartirasiz](#how-do-you-convert-character-to-ascii-code)                                                                                            |
+| 336 | [ArrayBuffer nima](#what-is-arraybuffer)                                                                                                                                               |
+| 337 | [Quyidagi satr ifodasining natijasi nima](#what-is-the-output-of-below-string-expression)                                                                                              |
+| 338 | [Xato obyektining(error object) maqsadi nima](#what-is-the-purpose-of-error-object)                                                                                                    |
+| 339 | [EvalError obyektining maqsadi nima](#what-is-the-purpose-of-evalerror-object)                                                                                                         |
+| 340 | [Qattiy bo'lmagan rejimdan qat'iy rejimga o'tkazilgan xatolar ro'yxati qanday](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)                           |
+| 341 | [Barcha ob'ektlarning prototiplari bormi?](#do-all-objects-have-prototypes)                                                                                                            |
+| 342 | [Parametr va argument o'rtasidagi farq nima](#what-is-the-difference-between-a-parameter-and-an-argument)                                                                              |
+| 343 | [Massivlardagi some usulining maqsadi nima](#what-is-the-purpose-of-some-method-in-arrays)                                                                                             |
+| 344 | [Ikki yoki undan ortiq massivni qanday birlashtirasiz](#how-do-you-combine-two-or-more-arrays)                                                                                         |
+| 345 | [Sayoz(shallow) va chuqur(deep) nusxa o'rtasidagi farq nima](#what-is-the-difference-between-shallow-and-deep-copy)                                                                    |
+| 346 | [Satrning ma'lum nusxalarini qanday yaratish mumkin](#how-do-you-create-specific-number-of-copies-of-a-string)                                                                         |
+| 347 | [Qanday qilib barcha mos keladigan satrlarni muntazam ifodaga qaytarasiz](#how-do-you-return-all-matching-strings-against-a-regular-expression)                                        |
+| 348 | [Stringni boshida yoki oxirida qanday qilib kesish mumkin](#how-do-you-trim-a-string-at-the-beginning-or-ending)                                                                       |
+| 349 | [Unar operator bilan quyidagi konsol bayonotining chiqishi nima](#what-is-the-output-of-below-console-statement-with-unary-operator)                                                   |
+| 350 | [Javascript mixins foydalanadimi?](#does-javascript-uses-mixins)                                                                                                                       |
+| 351 | [Thunk funktsiyasi nima](#what-is-a-thunk-function)                                                                                                                                    |
+| 352 | [Asinxron thunks nima](#what-are-asynchronous-thunks)                                                                                                                                  |
+| 353 | [Quyidagi funksiya chaqiruvlarining natijasi nima](#what-is-the-output-of-below-function-calls)                                                                                        |
+| 354 | [Satrdagi barcha qator uzilishlarini qanday olib tashlash mumkin](#how-to-remove-all-line-breaks-from-a-string)                                                                        |
+| 355 | [Qayta ishlash(reflow) va qayta bo'yash(repaint) o'rtasidagi farq nima](#what-is-the-difference-between-reflow-and-repaint)                                                            |
+| 356 | [Massivni inkor qilish bilan nima sodir bo'ladi](#what-happens-with-negating-an-array)                                                                                                 |
+| 357 | [Agar ikkita massiv qo'shsak nima bo'ladi](#what-happens-if-we-add-two-arrays)                                                                                                         |
+| 358 | [Noto'g'ri qiymatlar bo'yicha yuqori qo'shimcha operatorning chiqishi qanday bo'ladi](#what-is-the-output-of-prepend-additive-operator-on-falsy-values)                                |
+| 359 | [Maxsus belgilar yordamida o'z-o'zidan strigni qanday yaratasiz](#how-do-you-create-self-string-using-special-characters)                                                              |
+| 360 | [Massivdan noto'g'ri qiymatlarni qanday olib tashlash mumkin](#how-do-you-remove-falsy-values-from-an-array)                                                                           |
+| 361 | [Massivning noyob qiymatlarini qanday olish mumkin](#how-do-you-get-unique-values-of-an-array)                                                                                         |
+| 362 | [Taxalluslarni buzish nima](#what-is-destructuring-aliases)                                                                                                                            |
+| 363 | [Map usulini ishlatmasdan massiv qiymatlarini qanday Map qilish mumkin](#how-do-you-map-the-array-values-without-using-map-method)                                                     |
+| 364 | [Massivni qanday bo'shatish mumkin](#how-do-you-empty-an-array)                                                                                                                        |
+| 365 | [Qanday qilib raqamlarni ma'lum o'nli kasrlarga yaxlitlash mumkin](#how-do-you-rounding-numbers-to-certain-decimals)                                                                   |
+| 366 | [Massivni ob'ektga aylantirishning eng oson yo'li qanday?](#what-is-the-easiest-way-to-convert-an-array-to-an-object)                                                                  |
+| 367 | [Ba'zi ma'lumotlar bilan massivni qanday yaratish mumkin](#how-do-you-create-an-array-with-some-data)                                                                                  |
+| 368 | [Konsol ob'ektidagi to'ldiruvchilar nima](#what-are-the-placeholders-from-console-object)                                                                                              |
+| 369 | [Konsol xabarlariga CSS qo'shish mumkinmi?](#is-it-possible-to-add-css-to-console-messages)                                                                                            |
+| 370 | [Konsol ob'ektining dir usulidan maqsad nima](#what-is-the-purpose-of-dir-method-of-console-object)                                                                                    |
+| 371 | [Konsolda HTML elementlarini disk raskadrovka qilish mumkinmi?](#is-it-possible-to-debug-html-elements-in-console)                                                                     |
+| 372 | [Konsol ob'ekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkin](#how-do-you-display-data-in-a-tabular-format-using-console-object)                                  |
+| 373 | [Argument son yoki son emasligini qanday tekshirish mumkin](#how-do-you-verify-that-an-argument-is-a-number-or-not)                                                                    |
+| 374 | [Buferga nusxa ko'chirish tugmasi qanday yaratiladi](#how-do-you-create-copy-to-clipboard-button)                                                                                      |
+| 375 | [Timestamp uchun shortcut nima](#what-is-the-shortcut-to-get-timestamp)                                                                                                                |
+| 376 | [Ko'p o'lchovli massivlarni qanday tekislash mumkin](#how-do-you-flattening-multi-dimensional-arrays)                                                                                  |
+| 377 | [Ko'p holatni tekshirishning(multi condition checking) eng oson usuli](#what-is-the-easiest-multi-condition-checking)                                                                  |
+| 378 | [Brauzerning orqaga tugmachasini qanday suratga olasiz](#how-do-you-capture-browser-back-button)                                                                                       |
+| 379 | [Veb-sahifada sichqonchaning o'ng tugmachasini qanday o'chirib qo'yish mumkin](#how-do-you-disable-right-click-in-the-web-page)                                                        |
+| 380 | [O'rash ob'ektlari(wrapper object) nima](#what-are-wrapper-objects)                                                                                                                    |
+| 381 | [AJAX nima](#what-is-ajax)                                                                                                                                                             |
+| 382 | [Asinxron kod bilan ishlashning turli usullari qanday](#what-are-the-different-ways-to-deal-with-asynchronous-code)                                                                    |
+| 383 | [Qanday qilib qabul qilishni bekor qilish mumkin](#how-to-cancel-a-fetch-request)                                                                                                      |
+| 384 | [Veb nutq API (web speech API) nima ?](#what-is-web-speech-api)                                                                                                                        |
+| 385 | [Minimal vaqt tugashini kamaytirish(minimum timeout) nima](#what-is-minimum-timeout-throttling)                                                                                        |
+| 386 | [Zamonaviy brauzerlarda nol vaqt tugashini qanday amalga oshirasiz](#how-do-you-implement-zero-timeout-in-modern-browsers)                                                             |
+| 387 | [Event loop qanday vazifalar mavjud](#what-are-tasks-in-event-loop)                                                                                                                    |
+| 388 | [Mikrovazifa(microtask) nima](#what-are-microtasks)                                                                                                                                    |
+| 389 | [What are different event loops](#what-are-different-event-loops)                                                                                                                      |
+| 390 | [What is the purpose of queuemicrotask](#what-is-the-purpose-of-queuemicrotask)                                                                                                        |
+| 391 | [Typescript faylida javascript kutubxonalaridan qanday foydalanasiz](#how-do-you-use-javascript-libraries-in-typescript-file)                                                          |
+| 392 | [Promises va kuzatilishi mumkin bo'lganlar o'rtasidagi farqlar qanday](#what-are-the-differences-between-promises-and-observables)                                                     |
+| 393 | [Heap nima](#what-is-heap)                                                                                                                                                             |
+| 394 | [Voqealar jadvali(event table) nima](#what-is-an-event-table)                                                                                                                          |
+| 395 | [MicroTask navbati nima](#what-is-a-microtask-queue)                                                                                                                                   |
+| 396 | [Shim va polifill o'rtasidagi farq nima](#what-is-the-difference-between-shim-and-polyfill)                                                                                            |
+| 397 | [Primitiv yoki primitiv bo'lmagan qiymat turini qanday aniqlash mumkin](#how-do-you-detect-primitive-or-non-primitive-value-type)                                                      |
+| 398 | [Babel nima](#what-is-babel)                                                                                                                                                           |
+| 399 | [Node.js butunlay bitta tishlimi (single threaded)](#is-node.js-completely-single-threaded)                                                                                            |
+| 400 | [Kuzatiladigan narsalardan qanday umumiy foydalanish holatlari mavjud](#what-are-the-common-use-cases-of-observables)                                                                  |
+| 401 | [RxJS nima](#what-is-rxjs)                                                                                                                                                             |
+| 402 | [Funktsiya konstruktori va funksiya deklaratsiyasi o'rtasidagi farq nima](#what-is-the-difference-between-function-constructor-and-function-declaration)                               |
+| 403 | [Qisqa tutashuv holati (Short circuit condition) nima](#what-is-a-short-circuit-condition)                                                                                             |
+| 404 | [Massiv hajmini o'zgartirishning eng oson yo'li qanday?](#what-is-the-easiest-way-to-resize-an-array)                                                                                  |
+| 405 | [Kuzatiladigan narsa nima](#what-is-an-observable)                                                                                                                                     |
+| 406 | [Funktsiya va sinf deklaratsiyasi o'rtasidagi farq nima](#what-is-the-difference-between-function-and-class-declarations)                                                              |
+| 407 | [Asinx funksiya nima](#what-is-an-async-function)                                                                                                                                      |
+| 408 | [Qanday qilib va'dalarni yutish(promise swallowing) xatolarining oldini olish mumkin](#how-do-you-prevent-promises-swallowing-errors)                                                  |
+| 409 | [Deno nima](#what-is-deno)                                                                                                                                                             |
+| 410 | [Qanday qilib ob'ektni javascriptda takrorlanadigan qilish mumkin](#how-do-you-make-an-object-iterable-in-javascript)                                                                  |
+| 411 | [To'g'ri quyruq chaqiruvi ( Proper Tail Call ) nima](#what-is-a-proper-tail-call)                                                                                                      |
+| 412 | [Ob'ektni Promise(va’da) ekani yoki yoq ekanini qanday tekshirish mumkin](#how-do-you-check-an-object-is-a-promise-or-not)                                                             |
+| 413 | [Funktsiya konstruktor sifatida chaqirilganligini qanday aniqlash mumkin](#how-to-detect-if-a-function-is-called-as-constructor)                                                       |
+| 414 | [Argumentlar ob'ekti va Rest parametri o'rtasidagi farqlar qanday](#what-are-the-differences-between-arguments-object-and-rest-parameter)                                              |
+| 415 | [Spred operatori va Rest parametri o'rtasidagi farqlar qanday](#what-are-the-differences-between-spread-operator-and-rest-parameter)                                                   |
+| 416 | [Har xil turdagi generatorlar qanday](#what-are-the-different-kinds-of-generators)                                                                                                     |
+| 417 | [O'rnatilgan iterativlar(built-in) nima](#what-are-the-built-in-iterables)                                                                                                             |
+| 418 | [for...of va for... o'rtasida qanday farq bor](#what-are-the-differences-between-for...of-and-for...in-statements)                                                                     |
+| 419 | [Namuna(instance) va namuna bo'lmagan(non-instance) xususiyatlarni qanday aniqlaysiz](#how-do-you-define-instance-and-non-instance-properties)                                         |
+| 420 | [isNaN va Number.isNaN o'rtasidagi farq nima](#what-is-the-difference-between-isnan-and-number.isnan)                                                                                  |
+| 421 | [IIFE-ni qo'shimcha qavslarsiz qanday chaqirish mumkin](#how-to-invoke-an-iife-without-any-extra-brackets)                                                                             |
+| 422 | [Buni almashtirish holatlarida(switch case) ifodalardan(expression) foydalanish mumkinmi?](#is-that-possible-to-use-expressions-in-switch-cases)                                       |
+| 423 | [Va'da qilingan xatolarga(Promise errors) etibor (ignore) bermaslikning eng oson yo'li qanday?](#what-is-the-easiest-way-to-ignore-promise-errors)                                     |
+| 424 | [CSS yordamida konsol dagi natijani qanday qilib stil berish mumkin?](#how-do-style-the-console-output-using-css)                                                                      |
+| 425 | [Nullish coalescing operator(??) nima](<#what-is-nullish-coalescing-operator-(??)>)                                                                                                    |
+| 426 | [Konsol chiqishini qanday guruhlash va joylashtirish mumkin?](#how-do-you-group-and-nest-console-output)                                                                               |
+| 427 | [Zich(dense) va siyrak(sparse) massivlar o'rtasidagi farq nima?](#what-is-the-difference-between-dense-and-sparse-arrays)                                                              |
+| 428 | [Siyrak(dense) massivlarni yaratishning turli usullari qanday?](#what-are-the-different-ways-to-create-sparse-arrays)                                                                  |
+| 429 | [setTimeout, setImmediate va process.nextTick o'rtasidagi farq nima](#what-is-the-difference-between-set-timeout-,-set-immediate-and-processnext-tick)                                 |
+| 430 | [Asl massivni(original array) o'zgartirmasdan massivni qanday o'zgartirish mumkin?](#how-do-you-reverse-an-array-without-modifying-original-array)                                     |
 
-1. ### What are the possible ways to create objects in JavaScript
+1. ### JavaScript-da ob'ektlarni yaratishning qanday usullari mavjud
 
-   There are many ways to create objects in javascript as below
+   Quyidagi kabi javascriptda ob'ektlar yaratishning ko'plab usullari mavjud
 
    1. **Object constructor:**
 
-      The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
+      Bo'sh ob'ektni yaratishning eng oddiy usuli Ob'ekt konstruktoridan foydalanishdir. Hozirgi vaqtda bunday yondashuv tavsiya etilmaydi.
 
       ```javascript
       var object = new Object();
@@ -491,7 +487,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    2. **Object's create method:**
 
-      The create method of Object creates a new object by passing the prototype object as a parameter
+      Object ning yaratish usuli prototip ob'ektini parametr sifatida o'tkazish orqali yangi ob'ektni yaratadi
 
       ```javascript
       var object = Object.create(null);
@@ -499,7 +495,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    3. **Object literal syntax:**
 
-      The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
+      Ob'ektning so'zma-so'z sintaksisi (yoki ob'ektni ishga tushiruvchisi) jingalak qavslarga o'ralgan nom-qiymat juftlarining vergul bilan ajratilgan to'plamidir.
 
       ```javascript
       var object = {
@@ -507,14 +503,15 @@ You can download the PDF and Epub version of this repository from the latest run
            age: 34
       };
 
-      Object literal property values can be of any data type, including array, function, and nested object.
+      Ob'ektning so'zma-so'z xossasi qiymatlari har qanday ma'lumot turiga, jumladan massiv, funksiya va ichki o'rnatilgan ob'ekt bo'lishi mumkin.
+
       ```
 
-      **Note:** This is an easiest way to create an object
+      **Note:** Bu ob'ektni yaratishning eng oson usuli
 
    4. **Function constructor:**
 
-      Create any function and apply the new operator to create object instances,
+      Har qanday funktsiyani yarating va ob'ekt misollarini yaratish uchun yangi operatorni qo'llang
 
       ```javascript
       function Person(name) {
@@ -526,7 +523,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    5. **Function constructor with prototype:**
 
-      This is similar to function constructor but it uses prototype for their properties and methods,
+      Bu funktsiya konstruktoriga o'xshaydi, lekin u xususiyatlari va usullari uchun prototipdan foydalanadi,
 
       ```javascript
       function Person() {}
@@ -534,7 +531,7 @@ You can download the PDF and Epub version of this repository from the latest run
       var object = new Person();
       ```
 
-      This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
+      Bu funksiya prototipi bilan ob'ekt yaratish usuli bilan yaratilgan misolga teng va keyin ushbu funktsiyani misol va parametrlar bilan argument sifatida chaqirish.
 
       ```javascript
       function func {};
@@ -557,7 +554,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    6. **ES6 Class syntax:**
 
-      ES6 introduces class feature to create the objects
+      ES6 ob'ektlarni yaratish uchun sinf xususiyatini taqdim etadi
 
       ```javascript
       class Person {
@@ -571,7 +568,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    7. **Singleton pattern:**
 
-      A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance and this way one can ensure that they don't accidentally create multiple instances.
+      Singleton - bu faqat bir marta yaratilishi mumkin bo'lgan ob'ekt. Uning konstruktoriga takroriy qo'ng'iroqlar bir xil misolni qaytaradi va shu bilan ular tasodifan bir nechta misollarni yaratmasligiga ishonch hosil qilish mumkin.
 
       ```javascript
       var object = new (function () {
@@ -581,21 +578,21 @@ You can download the PDF and Epub version of this repository from the latest run
 
       **[⬆ Back to Top](#table-of-contents)**
 
-2. ### What is a prototype chain
+2. ### Prototip zanjiri nima
 
-   **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
+   **Prototype chaining** mavjud ob'ektlar asosida yangi turdagi ob'ektlarni qurish uchun ishlatiladi. Bu sinfga asoslangan tilda merosga o'xshaydi.
 
-   The prototype on object instance is available through **Object.getPrototypeOf(object)** or \***\*proto\*\*** property whereas prototype on constructors function is available through **Object.prototype**.
+Ob'ekt namunasidagi prototip **Object.getPrototypeOf(object)** yoki \***\*proto\*\*** xususiyati orqali, konstruktorlar funksiyasidagi prototip esa **Object.prototype**. orqali mavjud .
 
-   ![Screenshot](images/prototype_chain.png)
+![Screenshot](images/prototype_chain.png)
 
-   **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
 
-3. ### What is the difference between Call, Apply and Bind
+3. ### Call, Apply and Bind o'rtasidagi farq nima
 
-   The difference between Call, Apply and Bind can be explained with below examples,
+   Call, Apply and Bind farqlarini quyidagi misollar bilan tushuntirish mumkin,,
 
-   **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
+   **Call:** `this` call() usuli berilgan qiymat va birma-bir taqdim etilgan argumentlarga ega funktsiyani chaqiradi
 
    ```javascript
    var employee1 = { firstName: 'John', lastName: 'Rodson' };
@@ -611,7 +608,7 @@ You can download the PDF and Epub version of this repository from the latest run
    invite.call(employee2, 'Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
    ```
 
-   **Apply:** Invokes the function with a given `this` value and allows you to pass in arguments as an array
+   **Apply:** Berilgan qiymatga ega funktsiyani chaqiradi `this` va argumentlarni massiv sifatida o'tkazishga imkon beradi.
 
    ```javascript
    var employee1 = { firstName: 'John', lastName: 'Rodson' };
@@ -627,7 +624,7 @@ You can download the PDF and Epub version of this repository from the latest run
    invite.apply(employee2, ['Hello', 'How are you?']); // Hello Jimmy Baily, How are you?
    ```
 
-   **bind:** returns a new function, allowing you to pass any number of arguments
+   **bind:** har qanday miqdordagi argumentlarni o'tkazish imkonini beruvchi yangi funktsiyani qaytaradi
 
    ```javascript
    var employee1 = { firstName: 'John', lastName: 'Rodson' };
@@ -645,23 +642,23 @@ You can download the PDF and Epub version of this repository from the latest run
    inviteEmployee2('Hello', 'How are you?'); // Hello Jimmy Baily, How are you?
    ```
 
-   Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for **comma** (separated list) and Apply is for **Array**.
+   Call va apply bir birini orginga ishlatilishi mumkin bolgan metodlar . Ikkalasi ham joriy funktsiyani darhol bajaradi. Argumentlarni massiv yoki vergul bilan ajratilgan roʻyxatida yuborish osonroqmi, qaror qabul qilishingiz kerak. You can remember by treating Call **comma** (ajratilgan list) uchun Apply esa **Array** uchun.
 
-   Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
+`this` Bind esa bind() ga o'tkazilgan birinchi parametrga o'rnatiladigan yangi funktsiyani yaratadi .
 
-   **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
 
-4. ### What is JSON and its common operations
+4. ### JSON nima va uning umumiy operatsiyalari
 
-   **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network and it is basically just a text file with an extension of .json, and a MIME type of application/json
+   **JSON** bu JavaScript ob'yekt sintaksisiga asoslangan matnga asoslangan ma'lumotlar formati bo'lib, u tomonidan ommalashgan `Douglas Crockford`. Bu tarmoq boʻylab maʼlumotlarni uzatmoqchi boʻlganingizda foydali boʻladi va u asosan .json kengaytmali matn fayli va MIME turi ilova/json boʻlsa.
 
-   **Parsing:** Converting a string to a native object
+   **Parsing:** satrni mahalliy ob'ektga aylantirish
 
    ```javascript
    JSON.parse(text);
    ```
 
-   **Stringification:** converting a native object to a string so it can be transmitted across the network
+   **Stringification:** mahalliy ob'ektni tarmoq bo'ylab uzatilishi uchun stringa aylantirish
 
    ```javascript
    JSON.stringify(object);
@@ -669,83 +666,82 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
 
-5. ### What is the purpose of the array slice method
+5. ### Array slice usulidan maqsad nima
 
-   The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
+   slice() usuli massivdagi tanlangan elementlarni yangi massiv obyekti sifatida qaytaradi . U berilgan boshlang'ich argumentdan boshlanadigan elementlarni tanlaydi va oxirgi elementni qo'shmasdan berilgan ixtiyoriy yakuniy argumentda tugaydi. Agar siz ikkinchi argumentni o'tkazib yuborsangiz, u oxirigacha tanlaydi.
 
-   Some of the examples of this method are,
+Ushbu usulning ba'zi misollari:
 
-   ```javascript
-   let arrayIntegers = [1, 2, 3, 4, 5];
-   let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
-   let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
-   let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
-   ```
+```javascript
+let arrayIntegers = [1, 2, 3, 4, 5];
+let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
+let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
+let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
+```
 
-   **Note:** Slice method won't mutate the original array but it returns the subset as a new array.
+**Note:** Eslatma: Slice usuli asl massivni o'zgartirmaydi, lekin u kichik to'plamni yangi massiv sifatida qaytaradi.
 
-   **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
 
-6. ### What is the purpose of the array splice method
+6. ### Massivni birlashtirish(splice) usulining maqsadi nima
 
-   The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array.
+   Splice () usuli qatorga elementlarni qo'shish/o'chirish uchun ishlatiladi va keyin olib tashlangan elementni qaytaradi. Birinchi argument qo'shish yoki o'chirish uchun massiv o'rnini belgilaydi, ixtiyoriy ikkinchi argument esa o'chirilishi kerak bo'lgan elementlar sonini ko'rsatadi. Har bir qo'shimcha argument massivga qo'shiladi.
 
-   Some of the examples of this method are,
+Ushbu usulning ba'zi misollari:
 
-   ```javascript
-   let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
-   let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
-   let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
+```javascript
+let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
+let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
+let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
 
-   let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
-   let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
-   let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, 'a', 'b', 'c'); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
-   ```
+let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
+let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
+let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, 'a', 'b', 'c'); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
+```
 
-   **Note:** Splice method modifies the original array and returns the deleted array.
+**Note:** Splice usuli asl massivni o'zgartiradi va o'chirilgan massivni qaytaradi.
 
-   **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
 
 7. ### What is the difference between slice and splice
 
-   Some of the major difference in a tabular form
+Slice va splice o'rtasidagi farq nima
 
-   | Slice                                        | Splice                                          |
-   | -------------------------------------------- | ----------------------------------------------- |
-   | Doesn't modify the original array(immutable) | Modifies the original array(mutable)            |
-   | Returns the subset of original array         | Returns the deleted elements as array           |
-   | Used to pick the elements from array         | Used to insert or delete elements to/from array |
+| Slice                                              | Splice                                                                       |
+| -------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Asl massivni o'zgartirmaydi (o'zgarmas)            | Asl massivni o'zgartiradi (o'zgaruvchan)                                     |
+| Asl massivning pastki to'plamini qaytaradi         | O'chirilgan elementlarni massiv sifatida qaytaradi                           |
+| Massivdan elementlarni tanlash uchun foydalaniladi | Massivga/massivdan elementlarni kiritish yoki oʻchirish uchun foydalaniladi+ |
+
+**[⬆ Back to Top](#table-of-contents)**
+
+8. ### Ob'ekt va mapni qanday solishtirasiz
+
+   Ob'ektlar Maplarga o'xshaydi , chunki ikkalasi ham kalitlarni qiymatlarga o'rnatish, ushbu qiymatlarni olish, kalitlarni o'chirish va kalitda biror narsa saqlanganligini aniqlash imkonini beradi. Shu sababli, ob'ektlar tarixan Maplar sifatida ishlatilgan. Lekin muhim farqlar borki, ular ma'lum holatlarda Mapdan foydalanishni afzal ko'radi.
+
+   1. Ob'ektning kalitlari qatorlar va belgilar bo'lib, ular Map uchun har qanday qiymat, jumladan funktsiyalar, ob'ektlar va har qanday ibtidoiy bo'lishi mumkin.
+   2. Mapdagi kalitlar tartiblangan, Ob'ektga qo'shilgan kalitlar esa yo'q. Shunday qilib, uni takrorlashda Map ob'ekti kalitlarni kiritish tartibida qaytaradi.
+   3. Siz Map hajmini siz o'lcham xususiyati bilan osongina olishingiz mumkin, shu bilan birga Ob'ektdagi xususiyatlar soni qo'lda aniqlanishi kerak.
+   4. Map takrorlanadigan va shuning uchun to'g'ridan-to'g'ri takrorlanishi mumkin, holbuki Ob'ektni takrorlash uchun uning kalitlarini qandaydir tarzda olish va ularni takrorlash kerak.
+   5. Ob'ektning prototipi bor, shuning uchun Mapda ehtiyot bo'lmasangiz, kalitlaringiz bilan to'qnashishi mumkin bo'lgan standart kalitlar mavjud. ES5 dan boshlab map = Object.create(null) yordamida buni chetlab o'tish mumkin, lekin bu kamdan-kam hollarda amalga oshiriladi.
+   6. Map kalit juftlarini tez-tez qo'shish va olib tashlashni o'z ichiga olgan stsenariylarda yaxshiroq ishlashi mumkin.
 
    **[⬆ Back to Top](#table-of-contents)**
 
-8. ### How do you compare Object and Map
-
-   **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases.
-
-   1. The keys of an Object are Strings and Symbols, whereas they can be any value for a Map, including functions, objects, and any primitive.
-   2. The keys in Map are ordered while keys added to Object are not. Thus, when iterating over it, a Map object returns keys in order of insertion.
-   3. You can get the size of a Map easily with the size property, while the number of properties in an Object must be determined manually.
-   4. A Map is an iterable and can thus be directly iterated, whereas iterating over an Object requires obtaining its keys in some fashion and iterating over them.
-   5. An Object has a prototype, so there are default keys in the map that could collide with your keys if you're not careful. As of ES5 this can be bypassed by using map = Object.create(null), but this is seldom done.
-   6. A Map may perform better in scenarios involving frequent addition and removal of key pairs.
-
-   **[⬆ Back to Top](#table-of-contents)**
-
-9. ### What is the difference between == and === operators
+9. ### == va === operatorlarining farqi nimada
 
    JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
 
-   1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
-   2. Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value.
-      There are two special cases in this,
-      1. NaN is not equal to anything, including NaN.
-      2. Positive and negative zeros are equal to one another.
-   3. Two Boolean operands are strictly equal if both are true or both are false.
-   4. Two objects are strictly equal if they refer to the same Object.
-   5. Null and Undefined types are not equal with ===, but equal with ==. i.e,
-      null===undefined --> false but null==undefined --> true
+   1. Ikki satr bir xil belgilar ketma-ketligi, bir xil uzunlik va tegishli pozitsiyalarda bir xil belgilarga ega bo'lsa, qat'iy tengdir.
+   2. Ikki raqam son jihatdan teng bo'lsa, ular qat'iy tengdir. ya'ni, bir xil raqam qiymatiga ega.
+      Bunda ikkita alohida holat mavjud,
+      1. NaN hech narsaga teng emas, shu jumladan NaN.
+      2. Ijobiy va manfiy nollar bir-biriga teng.
+   3. Ikki mantiqiy operand, agar ikkalasi ham to'g'ri yoki ikkalasi ham yolg'on bo'lsa, qat'iy teng bo'ladi.
+   4. Ikki ob'ekt bir xil ob'ektga tegishli bo'lsa, ular mutlaqo tengdir.
+   5. Null va Undefined turlari === ga teng emas, lekin == ga teng. ya'ni, null===aniqlanmagan --> noto'g'ri, lekin null==aniqlanmagan --> rost
 
-   Some of the example which covers the above cases,
+   Yuqoridagi holatlarni qamrab oluvchi ba'zi misollar,
 
    ```javascript
    0 == false   // true
@@ -762,17 +758,17 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
 
-10. ### What are lambda or arrow functions
+10. ### Lambda yoki Arrow funktsiyalari nima
 
-    An arrow function is a shorter syntax for a function expression and does not have its own **this, arguments, super, or new.target**. These functions are best suited for non-method functions, and they cannot be used as constructors.
+Arrow funksiyasi funksiya ifodasi uchun qisqaroq sintaksis bo‘lib, o‘ziga xos this, arguments, super yoki new.target ga ega emas . Bu funksiyalar usul bo'lmagan funksiyalar uchun eng mos keladi va ularni konstruktor sifatida ishlatib bo'lmaydi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-11. ### What is a first class function
+11. ### Birinchi sinf funktsiyasi(first class) nima
 
-    In Javascript, functions are first class objects. First-class functions means when functions in that language are treated like any other variable.
+    Javascriptda funksiyalar birinchi darajali ob'ektlardir. Birinchi darajali funktsiyalar bu tildagi funktsiyalar boshqa o'zgaruvchilar kabi ko'rib chiqilishini anglatadi.
 
-    For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable. For example, in the below example, handler functions assigned to a listener
+    Masalan, bunday tilda funksiya boshqa funksiyalarga argument sifatida uzatilishi, boshqa funksiya tomonidan qaytarilishi va o‘zgaruvchiga qiymat sifatida berilishi mumkin. Misol uchun, quyidagi misolda tinglovchiga tayinlangan ishlov beruvchi funktsiyalari
 
     ```javascript
     const handler = () => console.log('This is a click handler function');
@@ -781,9 +777,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-12. ### What is a first order function
+12. ### Birinchi tartibli(first ordered) funksiya nima
 
-    First-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
+    Birinchi darajali funktsiya boshqa funktsiyani argument sifatida qabul qilmaydigan va funktsiyani qaytarish qiymati sifatida qaytarmaydigan funktsiyadir.
 
     ```javascript
     const firstOrder = () => console.log('I am a first order function!');
@@ -791,9 +787,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-13. ### What is a higher order function
+13. ### Yuqori tartibli (higher order) funktsiya nima
 
-    Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
+    Yuqori tartibli funktsiya boshqa funktsiyani argument sifatida qabul qiladigan yoki funktsiyani qaytarish qiymati yoki ikkalasini qaytaradigan funktsiyadir.
 
     ```javascript
     const firstOrderFunc = () =>
@@ -804,9 +800,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-14. ### What is a unary function
+14. ### Unar funksiya nima
 
-    Unary function (i.e. monadic) is a function that accepts exactly one argument. It stands for a single argument accepted by a function.
+Unar funktsiya (ya'ni monad) - aynan bitta argumentni qabul qiladigan funksiya. Bu funktsiya tomonidan qabul qilingan bitta argumentni anglatadi.
 
     Let us take an example of unary function,
 
@@ -816,11 +812,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-15. ### What is the currying function
+15. ### Currying funksiyasi nima
 
-    Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician **Haskell Curry**. By applying currying, a n-ary function turns it into a unary function.
+Currying - bu bir nechta argumentli funktsiyani olish va uni har birida faqat bitta argumentga ega bo'lgan funktsiyalar ketma-ketligiga aylantirish jarayoni. Currying matematik Xaskell Karri sharafiga nomlangan . Korriingni qo'llash orqali n-ary funksiya uni birlik funktsiyaga aylantiradi.
 
-    Let's take an example of n-ary function and how it turns into a currying function,
+    Keling, n-ary funksiyasini va uning qanday qilib karriy funksiyaga aylanishini misol qilib olaylik.
 
     ```javascript
     const multiArgFunction = (a, b, c) => a + b + c;
@@ -832,15 +828,15 @@ You can download the PDF and Epub version of this repository from the latest run
     curryUnaryFunction(1)(2)(3); // returns the number 6
     ```
 
-    Curried functions are great to improve **code reusability** and **functional composition**.
+Curried funktsiyalari kodning qayta ishlatilishini va funktsional tarkibini yaxshilash uchun ajoyib .
 
     **[⬆ Back to Top](#table-of-contents)**
 
-16. ### What is a pure function
+16. ### Pure(sof) funktsiya nima
 
-    A **Pure function** is a function where the return value is only determined by its arguments without any side effects. i.e, If you call a function with the same arguments 'n' number of times and 'n' number of places in the application then it will always return the same value.
+Sof funktsiya - bu qaytariladigan qiymat faqat uning argumentlari bilan hech qanday nojo'ya ta'sirlarsiz aniqlanadigan funktsiyadir. ya'ni, agar siz bir xil argumentlarga ega funktsiyani "n" soni va ilovadagi joylar soni "n" bilan chaqirsangiz, u har doim bir xil qiymatni qaytaradi
 
-    Let's take an example to see the difference between pure and impure functions,
+    Keling, sof va nopok funktsiyalar o'rtasidagi farqni ko'rish uchun misol keltiraylik,
 
     ```javascript
     //Impure
@@ -857,17 +853,17 @@ You can download the PDF and Epub version of this repository from the latest run
     console.log(numberArray); // returns [6]
     ```
 
-    As per above code snippets, **Push** function is impure itself by altering the array and returning an push number index which is independent of parameter value. Whereas **Concat** on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of the previous array.
+Yuqoridagi kod parchalariga ko'ra, Push funktsiyasi massivni o'zgartirish va parametr qiymatidan mustaqil bo'lgan surish raqami indeksini qaytarish orqali o'zini nopok qiladi. Boshqa tomondan, Concat massivni oladi va uni boshqa massiv bilan birlashtiradi va nojo'ya ta'sirlarsiz butunlay yangi massiv hosil qiladi. Bundan tashqari, qaytarish qiymati oldingi massivning birlashmasi hisoblanadi.
 
-    Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and make it harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
+    Esda tutingki, Pure funktsiyalari muhim ahamiyatga ega, chunki ular birlik sinovini hech qanday nojo'ya ta'sirlarsiz va qaramlik in'ektsiyasiga ehtiyoj sezmasdan soddalashtiradi. Ular, shuningdek, qattiq bog'lanishdan qochishadi va hech qanday nojo'ya ta'sirlarga ega bo'lmasdan, ilovangizni buzishni qiyinlashtiradi. Ushbu tamoyillar ES6 ning o'zgarmaslik kontseptsiyasi bilan birlashtirilib, ruxsat berishdan ko'ra const ga ustunlik beradi .
 
     **[⬆ Back to Top](#table-of-contents)**
 
-17. ### What is the purpose of the let keyword
+17. ### Let kalit so'zining maqsadi nima
 
-    The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the `var` keyword used to define a variable globally, or locally to an entire function regardless of block scope.
+Bayonot blok doirasi mahalliy o'zgaruvchinilet e'lon qiladi . Shunday qilib, let kalit so'zi bilan aniqlangan o'zgaruvchilar u ishlatiladigan blok, bayonot yoki ifoda bilan cheklangan. Holbuki, kalit so'z bilan e'lon qilingan o'zgaruvchilar o'zgaruvchini global miqyosda yoki lokal ravishda blok doirasidan qat'i nazar, butun funktsiyani aniqlash uchun ishlatiladi.var
 
-    Let's take an example to demonstrate the usage,
+Foydalanishni ko'rsatish uchun misol keltiraylik,
 
     ```javascript
     let counter = 30;
@@ -880,17 +876,17 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-18. ### What is the difference between let and var
+18. ### Let va var o'rtasidagi farq nima
 
-    You can list out the differences in a tabular format
+    Siz farqlarni jadval shaklida ko'rsatishingiz mumkin
 
-    | var                                                   | let                         |
-    | ----------------------------------------------------- | --------------------------- |
-    | It is been available from the beginning of JavaScript | Introduced as part of ES6   |
-    | It has function scope                                 | It has block scope          |
-    | Variables will be hoisted                             | Hoisted but not initialized |
+    | var                               | let                                        |
+    | --------------------------------- | ------------------------------------------ |
+    | U JavaScript boshidan beri mavjud | ES6 ning bir qismi sifatida taqdim etilgan |
+    | Funktsiya doirasiga ega           | U blok doirasiga ega                       |
+    | O'zgaruvchilar ko'tariladi        | Ko'tarilgan, lekin ishga tushirilmagan     |
 
-    Let's take an example to see the difference,
+    Farqni ko'rish uchun misol keltiramiz,
 
     ```javascript
     function userDetails(username) {
@@ -908,15 +904,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-19. ### What is the reason to choose the name let as a keyword
+19. ### Kalit so'z sifatida let nomini tanlashning sababi nimada?
 
-    `let` is a mathematical statement that was adopted by early programming languages like **Scheme** and **Basic**. It has been borrowed from dozens of other languages that use `let` already as a traditional keyword as close to `var` as possible.
+    letScheme va Basic kabi dastlabki dasturlash tillari tomonidan qabul qilingan matematik bayonotdir . U imkon qadar letyaqin an'anaviy kalit so'z sifatida ishlatadigan o'nlab boshqa tillardan olingan .var
 
     **[⬆ Back to Top](#table-of-contents)**
 
-20. ### How do you redeclare variables in switch block without an error
+20. ### Qanday qilib o'zgaruvchilarni switch blokida xatosiz qayta e'lon qilasiz
 
-    If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
+    Agar siz a dagi o'zgaruvchilarni qayta e'lon qilishga harakat qilsangiz, switch blocku xatolarga olib keladi, chunki faqat bitta blok mavjud. Misol uchun, quyidagi kod bloki quyidagi kabi sintaksis xatosini keltirib chiqaradi,
 
     ```javascript
     let counter = 1;
@@ -931,7 +927,7 @@ You can download the PDF and Epub version of this repository from the latest run
     }
     ```
 
-    To avoid this error, you can create a nested block inside a case clause and create a new block scoped lexical environment.
+    Ushbu xatolikka yo'l qo'ymaslik uchun siz case bandi ichida ichki blok yaratishingiz va yangi blokli leksik muhitni yaratishingiz mumkin.
 
     ```javascript
     let counter = 1;
@@ -949,11 +945,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-21. ### What is the Temporal Dead Zone
+21. ### Temporal Dead Zone (Vaqtinchalik o'lik zona) nima
 
-    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone.
+    Vaqtinchalik o'lik zona - bu JavaScript-da o'zgaruvchini let va const kalit so'zlari bilan e'lon qilishda yuzaga keladigan xatti-harakatlar, lekin var bilan emas. ECMAScript 6 da letyoki consto'zgaruvchiga uning e'lon qilinishidan oldin (uning doirasi doirasida) kirish ReferenceErrorga olib keladi. Bu sodir bo'ladigan vaqt oralig'i, o'zgaruvchining bog'lanishi yaratilishi va uning e'lon qilinishi o'rtasidagi vaqt oralig'i vaqtinchalik o'lik zona deb ataladi.
 
-    Let's see this behavior with an example,
+    Keling, bu xatti-harakatni misol bilan ko'rib chiqaylik,
 
     ```javascript
     function somemethod() {
@@ -966,9 +962,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-22. ### What is IIFE(Immediately Invoked Function Expression)
+22. ### IIFE (darhol chaqiriladigan funksiya ifodasi) nima?
 
-    IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
+    IIFE (Immediately Invoked Function Expression) bu JavaScript funksiyasi boʻlib, u aniqlangan zahoti ishga tushadi. Uning imzosi quyidagicha bo'ladi,
 
     ```javascript
     (function () {
@@ -976,7 +972,7 @@ You can download the PDF and Epub version of this repository from the latest run
     })();
     ```
 
-    The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with IIFE then it throws an error as below,
+    IIFE-dan foydalanishning asosiy sababi ma'lumotlar maxfiyligini olishdir, chunki IIFE ichida e'lon qilingan har qanday o'zgaruvchilarga tashqi dunyo kirishi mumkin emas. ya'ni, agar siz IIFE bilan o'zgaruvchilarga kirishga harakat qilsangiz, u quyidagi kabi xatoga yo'l qo'yadi,
 
     ```javascript
     (function () {
@@ -988,12 +984,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-23. ### How do you decode or encode a URL in JavaScript?
+23. ### JavaScript-da URL-manzilni qanday dekodlash yoki enkodlash mumkin?
 
-    `encodeURI()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
-    `decodeURI()` function is used to deocde an URL. This function requires an encoded URL string as parameter and return that decoded string.
+    encodeURI()funksiyasi URL manzilini kodlash uchun ishlatiladi. Bu funksiya parametr sifatida URL satrini talab qiladi va kodlangan qatorni qaytaradi. decodeURI()funksiya URL manzilini ochish uchun ishlatiladi. Bu funksiya parametr sifatida kodlangan URL satrini talab qiladi va bu dekodlangan qatorni qaytaradi.
 
-    **Note:** If you want to encode characters such as `/ ? : @ & = + $ #` then you need to use `encodeURIComponent()`.
+    **Note:** encodeURI()funksiyasi URL manzilini kodlash uchun ishlatiladi. Bu funksiya parametr sifatida URL satrini talab qiladi va kodlangan qatorni qaytaradi. decodeURI()funksiya URL manzilini ochish uchun ishlatiladi. Bu funksiya parametr sifatida kodlangan URL satrini talab qiladi va bu dekodlangan qatorni qaytaradi.
 
     ```javascript
     let uri = 'employeeDetails?name=john&occupation=manager';
@@ -1003,10 +998,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-24. ### What is memoization
+24. ### Memoization nima
 
-    Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
-    Let's take an example of adding function with memoization,
+    Memoizatsiya - bu avvaldan hisoblangan natijalarni keshlash orqali funktsiyaning ishlashini oshirishga harakat qiladigan dasturlash usuli. Har safar xotirada saqlangan funksiya chaqirilganda, uning parametrlari keshni indekslash uchun ishlatiladi. Agar ma'lumotlar mavjud bo'lsa, uni butun funktsiyani bajarmasdan qaytarish mumkin. Aks holda funktsiya bajariladi va natija keshga qo'shiladi. Keling, xotira bilan funksiya qo'shishga misol keltiraylik,
 
     ```javascript
     const memoizAddition = () => {
@@ -1031,17 +1025,16 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-25. ### What is Hoisting
+25. ### Hoisting nima
 
-    Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
-    Let's take a simple example of variable hoisting,
+    Yuk ko'tarish JavaScript mexanizmi bo'lib, unda kod bajarilishidan oldin o'zgaruvchilar va funksiya deklaratsiyasi o'z doirasining yuqori qismiga ko'chiriladi. Esda tutingki, JavaScript faqat deklaratsiyalarni ko'taradi, ishga tushirishni emas. Keling, o'zgaruvchan yuk ko'tarishning oddiy misolini olaylik,
 
     ```javascript
     console.log(message); //output : undefined
     var message = 'The variable Has been hoisted';
     ```
 
-    The above code looks like as below to the interpreter,
+    Yuqoridagi kod tarjimon uchun quyidagi kabi ko'rinadi,
 
     ```javascript
     var message;
@@ -1051,10 +1044,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-26. ### What are classes in ES6
+26. ### ES6 da qanday class(siniflar) mavjud
 
-    In ES6, Javascript classes are primarily syntactic sugar over JavaScript’s existing prototype-based inheritance.
-    For example, the prototype based inheritance written in function expression as below,
+    ES6 da Javascript sinflari JavaScript-ning mavjud prototipiga asoslangan merosiga nisbatan asosan sintaktik shakar hisoblanadi. Masalan, prototipga asoslangan meros quyidagi funksiya ifodasida yozilgan,
 
     ```javascript
     function Bike(model, color) {
@@ -1067,7 +1059,7 @@ You can download the PDF and Epub version of this repository from the latest run
     };
     ```
 
-    Whereas ES6 classes can be defined as an alternative
+    ES6 sinflari esa muqobil sifatida belgilanishi mumkin
 
     ```javascript
     class Bike {
@@ -1084,15 +1076,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-27. ### What are closures
+27. ### Closures nima
 
-    A closure is the combination of a function and the lexical environment within which that function was declared. i.e, It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains
+    Yopish - bu funktsiya va ushbu funktsiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funktsiyadir. Yopish uchta ko'lamli zanjirga ega
 
-    1. Own scope where variables defined between its curly brackets
-    2. Outer function’s variables
-    3. Global variables
+    1. O'zgaruvchilar uning jingalak qavslar orasida aniqlangan o'z doirasi
+    2. Tashqi funktsiya o'zgaruvchilari
+    3. Global o'zgaruvchilar
 
-    Let's take an example of closure concept,
+    Keling, yopish kontseptsiyasiga misol keltiraylik,
 
     ```javascript
     function Welcome(name) {
@@ -1106,75 +1098,74 @@ You can download the PDF and Epub version of this repository from the latest run
     myFunction('Hello Mr.'); //output: Hello Mr.John
     ```
 
-    As per the above code, the inner function(i.e, greetingInfo) has access to the variables in the outer function scope(i.e, Welcome) even after the outer function has returned.
+    Yuqoridagi kodga ko'ra, ichki funksiya (ya'ni, greetingInfo) tashqi funksiya qaytganidan keyin ham tashqi funksiya doirasidagi (ya'ni Welcome) o'zgaruvchilarga kirish huquqiga ega.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-28. ### What are modules
+28. ### Modullar nima
 
-    Modules refer to small units of independent, reusable code and also act as the foundation of many JavaScript design patterns. Most of the JavaScript modules export an object literal, a function, or a constructor
+    Modullar mustaqil, qayta foydalanish mumkin bo'lgan kodning kichik birliklariga ishora qiladi va ko'plab JavaScript dizayn naqshlarining asosi bo'lib xizmat qiladi. Ko'pgina JavaScript modullari ob'ektni, funktsiyani yoki konstruktorni eksport qiladi
 
     **[⬆ Back to Top](#table-of-contents)**
 
-29. ### Why do you need modules
+29. ### Nima uchun sizga modullar kerak
 
-    Below are the list of benefits using modules in javascript ecosystem
+    Quyida JavaScript ekotizimidagi modullardan foydalanishning afzalliklari ro'yxati keltirilgan
 
-    1. Maintainability
-    2. Reusability
+    1. Saqlash imkoniyati
+    2. Qayta foydalanish imkoniyati
     3. Namespacing
 
     **[⬆ Back to Top](#table-of-contents)**
 
-30. ### What is scope in javascript
+30. ### Javascriptda qamrov(scope) nima
 
-    Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-31. ### What is a service worker
-
-    A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
+Amal qilish doirasi - bu ish vaqtida kodingizning ma'lum bir qismidagi o'zgaruvchilar, funktsiyalar va ob'ektlarga kirish imkoniyati. Boshqacha qilib aytganda, qamrov sizning kodingiz sohalarida o'zgaruvchilar va boshqa resurslarning ko'rinishini aniqlaydi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-32. ### How do you manipulate DOM using a service worker
+31. ### Service worker(Xizmat xodimi) nima
 
-    Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-33. ### How do you reuse information across service worker restarts
-
-    The problem with service worker is that it gets terminated when not in use, and restarted when it's next needed, so you cannot rely on global state within a service worker's `onfetch` and `onmessage` handlers. In this case, service workers will have access to IndexedDB API in order to persist and reuse across restarts.
+    Xizmat xodimi asosan fonda ishlaydigan, veb-sahifadan ajratilgan va veb-sahifa yoki foydalanuvchi o'zaro ta'sirini talab qilmaydigan xususiyatlarni taqdim etadigan skript (JavaScript fayli). Xizmat xodimlarining asosiy xususiyatlaridan ba'zilari - bu boy oflayn tajribalar (oflayn birinchi veb-ilovalarni ishlab chiqish), davriy fon sinxronlash, push-bildirishnomalar, tarmoq so'rovlarini ushlab turish va boshqarish va javoblar keshini dasturiy ravishda boshqarish.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-34. ### What is IndexedDB
+32. ### Server worker yordamida DOMni qanday boshqarish mumkin
 
-    IndexedDB is a low-level API for client-side storage of larger amounts of structured data, including files/blobs. This API uses indexes to enable high-performance searches of this data.
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-35. ### What is web storage
-
-    Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
-
-    1. **Local storage:** It stores data for current origin with no expiration date.
-    2. **Session storage:** It stores data for one session and the data is lost when the browser tab is closed.
+    Xizmat xodimi DOMga to'g'ridan-to'g'ri kira olmaydi. Ammo u interfeys orqali yuborilgan xabarlarga javob berish orqali o'zi boshqaradigan sahifalar bilan postMessagebog'lanishi mumkin va bu sahifalar DOMni boshqarishi mumkin.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-36. ### What is a post message
+33. ### Server worker qayta ishga tushirishda ma'lumotlardan qanday
 
-    Post message is a method that enables cross-origin communication between Window objects.(i.e, between a page and a pop-up that it spawned, or between a page and an iframe embedded within it). Generally, scripts on different pages are allowed to access each other if and only if the pages follow same-origin policy(i.e, pages share the same protocol, port number, and host).
+    onfetchXizmat ishchisi bilan bog'liq muammo shundaki, u foydalanilmayotganda tugatiladi va keyingi kerak bo'lganda qayta ishga tushadi, shuning uchun siz xizmat ko'rsatuvchi ishchi va onmessageishlovchilar ichidagi global holatga tayanolmaysiz . Bunday holda, xizmat ko'rsatuvchi ishchilar qayta ishga tushirishda davom etish va qayta foydalanish uchun IndexedDB API ga kirish huquqiga ega bo'ladi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-37. ### What is a Cookie
+34. ### IndexedDB nima
 
-    A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
-    For example, you can create a cookie named username as below,
+    IndexedDB - bu katta hajmdagi tuzilgan ma'lumotlarni, shu jumladan fayllar/bloblarni mijoz tomonidan saqlash uchun past darajadagi API. Ushbu API ushbu ma'lumotlarning yuqori samarali qidiruvlarini yoqish uchun indekslardan foydalanadi.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+35. ### Veb-xotira(web storage) nima
+
+Veb-xotira - bu brauzerlar kalit/qiymat juftlarini foydalanuvchi brauzerida mahalliy sifatida cookie-fayllardan foydalanishdan ko'ra ancha intuitiv tarzda saqlashi mumkin bo'lgan mexanizmni ta'minlovchi API. Veb-xotira mijozga ma'lumotlarni saqlash uchun ikkita mexanizmni taqdim etadi.
+
+    1. **Local storage:** U amaldagi ma'lumotlarni amal qilish muddatisiz saqlaydi.
+    2. **Session storage:** U bir seans uchun ma'lumotlarni saqlaydi va brauzer yorlig'i yopilganda ma'lumotlar yo'qoladi.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+36. ### Post xabari(post message) nima
+
+    Xabarni yuborish - bu Oyna ob'ektlari (ya'ni, sahifa va u ochilgan qalqib chiquvchi oyna o'rtasida yoki sahifa va uning ichiga o'rnatilgan iframe o'rtasida) o'zaro bog'lanishni ta'minlaydigan usul. Odatda, turli sahifalardagi skriptlarga bir-biriga kirishga ruxsat beriladi, agar sahifalar bir xil manba siyosatiga (yaʼni, sahifalar bir xil protokol, port raqami va xostga ega boʻlsa) amal qilgan taqdirdagina.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+37. ### Cookie nima
+
+    Cookie - bu brauzeringiz kirishi uchun kompyuteringizda saqlanadigan ma'lumotlarning bir qismi. Cookie-fayllar kalit/qiymat juftligi sifatida saqlanadi. Masalan, foydalanuvchi nomi bilan quyidagi cookie faylini yaratishingiz mumkin:
 
     ```javascript
     document.cookie = 'username=John';
@@ -1184,26 +1175,26 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-38. ### Why do you need a Cookie
+38. ### Cookie nima uchun kerak
 
-    Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
+Cookie-fayllar foydalanuvchi profili (masalan, foydalanuvchi nomi) haqidagi ma'lumotlarni eslab qolish uchun ishlatiladi. Bu asosan ikki bosqichni o'z ichiga oladi,
 
-    1. When a user visits a web page, the user profile can be stored in a cookie.
-    2. Next time the user visits the page, the cookie remembers the user profile.
+    1. Foydalanuvchi veb-sahifaga tashrif buyurganida, foydalanuvchi profili cookie faylida saqlanishi mumkin.
+    2. Keyingi safar foydalanuvchi sahifaga tashrif buyurganida, cookie foydalanuvchi profilini eslab qoladi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-39. ### What are the options in a cookie
+39. ### Cookie-da qanday variantlar mavjud
 
-    There are few below options available for a cookie,
+    TCookie uchun quyida bir nechta variant mavjud,
 
-    1. By default, the cookie is deleted when the browser is closed but you can change this behavior by setting expiry date (in UTC time).
+    1. Sukut bo'yicha, brauzer yopilganda cookie o'chiriladi, ammo amal qilish muddatini belgilash orqali bu xatti-harakatni o'zgartirishingiz mumkin (UTC vaqti bilan).
 
     ```javascript
     document.cookie = 'username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC';
     ```
 
-    1. By default, the cookie belongs to a current page. But you can tell the browser what path the cookie belongs to using a path parameter.
+    2. Odatiy bo'lib, cookie joriy sahifaga tegishli. Lekin siz brauzerga cookie fayli qaysi yoʻlga tegishli ekanligini yoʻl parametri yordamida ayta olasiz.
 
     ```javascript
     document.cookie = 'username=John; path=/services';
@@ -1211,43 +1202,41 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-40. ### How do you delete a cookie
+40. ### Cookie faylini qanday o'chirish mumkin
 
-    You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
-    For example, you can delete a username cookie in the current page as below.
+    Yaroqlilik muddatini o‘tgan sana sifatida belgilash orqali cookie faylini o‘chirishingiz mumkin. Bu holda cookie qiymatini belgilashingiz shart emas. Masalan, joriy sahifadagi foydalanuvchi nomi cookie-faylini quyidagi tarzda o'chirishingiz mumkin.
 
     ```javascript
     document.cookie =
       'username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;';
     ```
 
-    **Note:** You should define the cookie path option to ensure that you delete the right cookie. Some browsers doesn't allow to delete a cookie unless you specify a path parameter.
+    **Note:** To'g'ri cookie-faylni o'chirib tashlashingizga ishonch hosil qilish uchun cookie-fayl yo'li opsiyasini belgilashingiz kerak. Ba'zi brauzerlar, agar siz yo'l parametrini ko'rsatmasangiz, cookie-fayllarni o'chirishga ruxsat bermaydi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-41. ### What are the differences between cookie, local storage and session storage
+41. ### Cookie, mahalliy saqlash va seans saqlash o'rtasidagi farqlar qanday
 
-    Below are some of the differences between cookie, local storage and session storage,
+    Quyida cookie, mahalliy saqlash va seans xotirasi oʻrtasidagi farqlar keltirilgan.
 
-    | Feature                           | Cookie                             | Local storage    | Session storage     |
-    | --------------------------------- | ---------------------------------- | ---------------- | ------------------- |
-    | Accessed on client or server side | Both server-side & client-side     | client-side only | client-side only    |
-    | Lifetime                          | As configured using Expires option | until deleted    | until tab is closed |
-    | SSL support                       | Supported                          | Not supported    | Not supported       |
-    | Maximum data size                 | 4KB                                | 5 MB             | 5MB                 |
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-42. ### What is the main difference between localStorage and sessionStorage
-
-    LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
+    | Feature                                   | Cookie                                           | Local storage          | Session storage        |
+    | ----------------------------------------- | ------------------------------------------------ | ---------------------- | ---------------------- |
+    | Mijoz yoki server tomonidan kirish mumkin | Ham server tomoni, ham mijoz tomoni              | faqat mijoz tomoni     | faqat mijoz tomoni     |
+    | Lifetime                                  | Muddati tugaydi opsiyasi yordamida sozlanganidek | o'chirilgunga qadar    | yorliq yopilguncha     |
+    | SSL qo'llab-quvvatlaydi                   | Qo'llab-quvvatlanadi                             | Qo'llab-quvvatlanmaydi | Qo'llab-quvvatlanmaydi |
+    | Maksimal ma'lumotlar hajmi                | 4KB                                              | 5 MB                   | 5MB                    |
 
     **[⬆ Back to Top](#table-of-contents)**
 
-43. ### How do you access web storage
+42. ### [[ localStorage va sessionStorage o'rtasidagi asosiy farq nima
 
-    The Window object implements the `WindowLocalStorage` and `WindowSessionStorage` objects which has `localStorage`(window.localStorage) and `sessionStorage`(window.sessionStorage) properties respectively. These properties create an instance of the Storage object, through which data items can be set, retrieved and removed for a specific domain and storage type (session or local).
-    For example, you can read and write on local storage objects as below
+    LocalStorage SessionStorage bilan bir xil, lekin u brauzer yopilgan va qayta ochilganda ham maʼlumotlarni saqlab qoladi (yaʼni uning amal qilish muddati yoʻq), seansStorageʼda esa sahifa seansi tugashi bilan maʼlumotlar tozalanadi.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+43. ### Veb-xotiraga(web storage) qanday kirish mumkin
+
+    Window obyekti mos ravishda (window.localStorage) va (window.sessionStorage) xossalariga ega bo'lgan WindowLocalStorageva WindowSessionStorageob'ektlarini amalga oshiradi. Ushbu xususiyatlar Saqlash ob'ektining namunasini yaratadi, bu orqali ma'lum domen va saqlash turi (sessiya yoki mahalliy) uchun ma'lumotlar elementlarini o'rnatish, olish va o'chirish mumkin. Masalan, siz mahalliy saqlash ob'ektlarida quyida ko'rsatilganidek o'qishingiz va yozishingiz mumkinlocalStoragesessionStorage
 
     ```javascript
     localStorage.setItem('logo', document.getElementById('logo').value);
@@ -1256,9 +1245,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-44. ### What are the methods available on session storage
+44. ### Session storageda qanday usullar mavjud
 
-    The session storage provided methods for reading, writing and clearing the session data
+    Window obyekti mos ravishda (window.localStorage) va (window.sessionStorage) xossalariga ega bo'lgan WindowLocalStorageva WindowSessionStorageob'ektlarini amalga oshiradi. Ushbu xususiyatlar Saqlash ob'ektining namunasini yaratadi, bu orqali ma'lum domen va saqlash turi (sessiya yoki mahalliy) uchun ma'lumotlar elementlarini o'rnatish, olish va o'chirish mumkin. Masalan, siz mahalliy saqlash ob'ektlarida quyida ko'rsatilganidek o'qishingiz va yozishingiz mumkinlocalStoragesessionStorage
 
     ```javascript
     // Save data to sessionStorage
@@ -1276,16 +1265,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-45. ### What is a storage event and its event handler
+45. ### Saqlash hodisasi nima va uning voqea ishlovchisi (storage event and
 
-    The StorageEvent is an event that fires when a storage area has been changed in the context of another document. Whereas onstorage property is an EventHandler for processing storage events.
-    The syntax would be as below
+    StorageEvent - bu boshqa hujjat kontekstida saqlash joyi o'zgartirilganda paydo bo'ladigan hodisa. Holbuki, saqlash xususiyati saqlash hodisalarini qayta ishlash uchun EventHandler hisoblanadi. Sintaksis quyidagi kabi bo'ladi
 
     ```javascript
     window.onstorage = functionRef;
     ```
 
-    Let's take the example usage of onstorage event handler which logs the storage key and it's values
+    Keling, saqlash kaliti va uning qiymatlarini qayd qiluvchi xotira hodisasi ishlovchisidan foydalanish misolini olaylik
 
     ```javascript
     window.onstorage = function (e) {
@@ -1303,15 +1291,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-46. ### Why do you need web storage
+46. ### Nima uchun sizga veb-xotira kerak
 
-    Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. Also, the information is never transferred to the server. Hence this is a more recommended approach than Cookies.
+    Veb-saqlash yanada xavfsizroq va katta hajmdagi ma'lumotlar veb-sayt ishlashiga ta'sir qilmasdan mahalliy sifatida saqlanishi mumkin. Bundan tashqari, ma'lumotlar hech qachon serverga o'tkazilmaydi. Shuning uchun bu Cookie-fayllarga qaraganda ko'proq tavsiya etilgan yondashuv.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-47. ### How do you check web storage browser support
+47. ### Veb-xotira brauzerining yordamini qanday tekshirish mumkin
 
-    You need to check browser support for localStorage and sessionStorage before using web storage,
+Veb-xotiradan foydalanishdan oldin brauzerning localStorage va sessionStorage uchun qo'llab-quvvatlanishini tekshirishingiz kerak,
 
     ```javascript
     if (typeof Storage !== 'undefined') {
@@ -1323,9 +1311,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-48. ### How do you check web workers browser support
+48. ### Veb-workersning brauzer qo'llab-quvvatlashini qanday tekshirish
 
-    You need to check browser support for web workers before using it
+    Uni ishlatishdan oldin veb-xodimlar uchun brauzer yordamini tekshirishingiz kerak
 
     ```javascript
     if (typeof Worker !== 'undefined') {
@@ -1337,11 +1325,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-49. ### Give an example of a web worker
+49. ### Veb-workerga misol keltiring
 
-    You need to follow below steps to start using web workers for counting example
+    Hisoblash misolida veb ishchilaridan foydalanishni boshlash uchun quyidagi bosqichlarni bajarishingiz kerak
 
-    1. Create a Web Worker File: You need to write a script to increment the count value. Let's name it as counter.js
+    1. Veb ishchi faylini yarating: Hisoblash qiymatini oshirish uchun skript yozishingiz kerak. Keling, uni counter.js deb nomlaymiz
 
     ```javascript
     let i = 0;
@@ -1355,9 +1343,9 @@ You can download the PDF and Epub version of this repository from the latest run
     timedCount();
     ```
 
-    Here postMessage() method is used to post a message back to the HTML page
+    Bu yerda postMessage() usuli xabarni HTML sahifasiga qaytarish uchun ishlatiladi
 
-    1. Create a Web Worker Object: You can create a web worker object by checking for browser support. Let's name this file as web_worker_example.js
+    1. Veb ishchi ob'ektini yaratish: Brauzer qo'llab-quvvatlashini tekshirish orqali veb-ishchi ob'ektini yaratishingiz mumkin. Keling, bu faylni web_worker_example.js deb nomlaymiz
 
     ```javascript
     if (typeof w == 'undefined') {
@@ -1365,7 +1353,7 @@ You can download the PDF and Epub version of this repository from the latest run
     }
     ```
 
-    and we can receive messages from web worker
+    va biz veb-ishchidan xabarlar olishimiz mumkin
 
     ```javascript
     w.onmessage = function (event) {
@@ -1373,14 +1361,13 @@ You can download the PDF and Epub version of this repository from the latest run
     };
     ```
 
-    1. Terminate a Web Worker:
-       Web workers will continue to listen for messages (even after the external script is finished) until it is terminated. You can use the terminate() method to terminate listening to the messages.
+    1. Veb ishchini tugatish: Veb ishchilari xabarlarni tinglashda davom etadilar (hatto tashqi skript tugagandan keyin ham) u tugatilmaguncha. Siz xabarlarni tinglashni tugatish uchun terminate() usulidan foydalanishingiz mumkin.
 
     ```javascript
     w.terminate();
     ```
 
-    1. Reuse the Web Worker: If you set the worker variable to undefined you can reuse the code
+    1. Veb ishchisini qayta ishlatish: Agar ishchi o'zgaruvchini aniqlanmagan qilib qo'ysangiz, kodni qayta ishlatishingiz mumkin
 
     ```javascript
     w = undefined;
@@ -1388,9 +1375,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-50. ### What are the restrictions of web workers on DOM
+50. ### Web-ishchilarning DOM-da qanday cheklovlari bor
 
-    WebWorkers don't have access to below javascript objects since they are defined in an external files
+WebWorkers quyida joylashgan JavaScript obyektlariga kirish huquqiga ega emas, chunki ular tashqi fayllarda aniqlangan
 
     1. Window object
     2. Document object
@@ -1398,11 +1385,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-51. ### What is a promise
+51. ### Promise(vada) nima
 
-    A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+    Va'da - bu hal qilingan qiymat yoki hal qilinmagan sabab (masalan, tarmoq xatosi) bilan kelajakda bir muncha vaqt bitta qiymat ishlab chiqarishi mumkin bo'lgan ob'ekt. U 3 ta mumkin bo'lgan holatdan birida bo'ladi: bajarilgan, rad etilgan yoki kutilayotgan.
 
-    The syntax of Promise creation looks like below,
+Promise yaratish sintaksisi quyidagi kabi ko'rinadi:
 
     ```javascript
     const promise = new Promise(function (resolve, reject) {
@@ -1410,7 +1397,7 @@ You can download the PDF and Epub version of this repository from the latest run
     });
     ```
 
-    The usage of a promise would be as below,
+    Va'dadan foydalanish quyidagicha bo'ladi,
 
     ```javascript
     const promise = new Promise(
@@ -1425,32 +1412,31 @@ You can download the PDF and Epub version of this repository from the latest run
     promise.then((value) => console.log(value));
     ```
 
-    The action flow of a promise will be as below,
+    Va'daning harakat oqimi quyidagicha bo'ladi:
 
     ![Screenshot](images/promises.png)
 
     **[⬆ Back to Top](#table-of-contents)**
 
-52. ### Why do you need a promise
+52. ### Nega sizga promise kerak
 
-    Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-53. ### What are the three states of promise
-
-    Promises have three states:
-
-    1. **Pending:** This is an initial state of the Promise before an operation begins
-    2. **Fulfilled:** This state indicates that the specified operation was completed.
-    3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
+    Va'dalar asinxron operatsiyalarni bajarish uchun ishlatiladi. Ular callbacklar uchun muqobil yondashuvni taqdim etadilar, bu esa callbackni kamaytirish va toza kodni yozish orqali amalga oshiriladi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-54. ### What is a callback function
+53. ### Promisening uchta holati nima
 
-    A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.
-    Let's take a simple example of how to use callback function
+    Va'dalar uchta holatga ega:
+
+    1. **Pending:** Bu operatsiya boshlanishidan oldingi va'daning dastlabki holati
+    2. **Fulfilled:** Bu holat belgilangan operatsiya tugaganligini bildiradi.
+    3. **Rejected:** Bu holat operatsiya tugallanmaganligini bildiradi. Bunday holda xato qiymati chiqariladi.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+54. ### Callback funktsiyasi nima
+
+    Callback funktsiyasi boshqa funktsiyaga argument sifatida o'tkaziladigan funktsiyadir. Bu funksiya amalni bajarish uchun tashqi funksiya ichida chaqiriladi. Callback funksiyasidan qanday foydalanishni oddiy misol qilib olaylik
 
     ```javascript
     function callbackFunction(name) {
@@ -1467,10 +1453,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-55. ### Why do we need callbacks
+55. ### Nega bizga Callbacklar kerak
 
-    The callbacks are needed because javascript is an event driven language. That means instead of waiting for a response javascript will keep executing while listening for other events.
-    Let's take an example with the first function invoking an API call(simulated by setTimeout) and the next function which logs the message.
+    callbacklar kerak, chunki JavaScript voqealarga asoslangan tildir. Bu degani, javobni kutish o'rniga JavaScript boshqa hodisalarni tinglashda ishlashda davom etadi. API chaqiruvini chaqiruvchi birinchi funksiya (setTimeout tomonidan simulyatsiya qilingan) va xabarni qayd qiluvchi keyingi funksiyaga misol keltiraylik.
 
     ```javascript
     function firstFunction() {
@@ -1490,13 +1475,13 @@ You can download the PDF and Epub version of this repository from the latest run
     // First function called
     ```
 
-    As observed from the output, javascript didn't wait for the response of the first function and the remaining code block got executed. So callbacks are used in a way to make sure that certain code doesn’t execute until the other code finishes execution.
+    Natijadan ko'rinib turibdiki, JavaScript birinchi funktsiyaning javobini kutmagan va qolgan kod bloki bajarilgan. Shunday qilib, callback ma'lum kod boshqa kod bajarilishini tugatmaguncha bajarilmasligiga ishonch hosil qilish uchun ishlatiladi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-56. ### What is a callback hell
+56. ### Callback hell nima
 
-    Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with asynchronous logic. The callback hell looks like below,
+Chaqiruv jahannami asinxron mantiq bilan ishlashda kodni o‘qish va disk raskadrovka qilishni qiyinlashtiradigan bir nechta ichki qo‘ng‘iroqlarga ega anti-naqshdir. callback qilish jahannami quyida ko'rinadi,
 
     ```javascript
     async1(function(){
@@ -1512,15 +1497,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-57. ### What are server-sent events
+57. ### Server tomonidan yuborilgan voqealar(event) nima
 
-    Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
+Server tomonidan yuborilgan voqealar (SSE) - bu serverni surish texnologiyasi bo'lib, brauzer so'rovga murojaat qilmasdan HTTP ulanishi orqali serverdan avtomatik yangilanishlarni olish imkonini beradi. Bular bir tomonlama aloqa kanali - hodisalar faqat serverdan mijozga o'tadi. Bu Facebook/Twitter yangilanishlarida, aksiyalar narxlari yangilanishlarida, yangiliklar tasmalarida va hokazolarda ishlatilgan.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-58. ### How do you receive server-sent event notifications
+58. ### Server tomonidan yuborilgan voqea bildirishnomalarini qanday qabul
 
-    The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
+    EventSource obyekti server tomonidan yuborilgan voqea bildirishnomalarini olish uchun ishlatiladi. Masalan, siz serverdan quyidagi tarzda xabarlar olishingiz mumkin:
 
     ```javascript
     if (typeof EventSource !== 'undefined') {
@@ -1533,9 +1518,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-59. ### How do you check browser support for server-sent events
+59. ### Server tomonidan yuborilgan voqealar uchun brauzer yordamini qanday
 
-    You can perform browser support for server-sent events before using it as below,
+    Server tomonidan yuborilgan voqealar uchun brauzerni qo'llab-quvvatlashni quyidagi tarzda ishlatishdan oldin amalga oshirishingiz mumkin,
 
     ```javascript
     if (typeof EventSource !== 'undefined') {
@@ -1547,31 +1532,31 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-60. ### What are the events available for server sent events
+60. ### Server yuborilgan voqealar uchun qanday hodisalar mavjud
 
-    Below are the list of events available for server sent events
+    Quyida server tomonidan yuborilgan voqealar uchun mavjud voqealar roʻyxati keltirilgan
     | Event | Description |
     |---- | ---------
-    | onopen | It is used when a connection to the server is opened |
-    | onmessage | This event is used when a message is received |
-    | onerror | It happens when an error occurs|
+    | onopen | U serverga ulanish ochilganda ishlatiladi |
+    | onmessage | Ushbu hodisa xabar qabul qilinganda ishlatiladi |
+    | onerror | Xatolik yuzaga kelganda sodir bo'ladi |
 
     **[⬆ Back to Top](#table-of-contents)**
 
-61. ### What are the main rules of promise
+61. ### Promisening asosiy qoidalari qanday
 
-    A promise must follow a specific set of rules,
+Va'da muayyan qoidalar to'plamiga amal qilishi kerak,
 
-    1. A promise is an object that supplies a standard-compliant `.then()` method
-    2. A pending promise may transition into either fulfilled or rejected state
-    3. A fulfilled or rejected promise is settled and it must not transition into any other state.
-    4. Once a promise is settled, the value must not change.
+    1. `.then()` Va'da - bu standartga mos keladigan usulni ta'minlovchi ob'ekt
+    2. Kutilayotgan va'da bajarilgan yoki rad etilgan holatga o'tishi mumkin
+    3. Bajarilgan yoki rad etilgan va'da hal qilinadi va u boshqa hech qanday holatga o'tmasligi kerak.
+    4. Va'da bajarilgandan so'ng, qiymat o'zgarmasligi kerak.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-62. ### What is callback in callback
+62. ### Callback dagi callback nima
 
-    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
+    Harakatlarni birma-bir bajarish uchun siz bitta callbackni boshqa callbackqa joylashtirishingiz mumkin. Bu callbacklarda callbacklar sifatida tanilgan.
 
     ```javascript
     loadScript('/script1.js', function (script) {
@@ -1590,9 +1575,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-63. ### What is promise chaining
+63. ### Promise zanjiri(chaining) nima
 
-    The process of executing a sequence of asynchronous tasks one after another using promises is known as Promise chaining. Let's take an example of promise chaining for calculating the final result,
+    Va'dalar yordamida birin-ketin asinxron vazifalarni bajarish jarayoni va'da zanjiri deb nomlanadi. Yakuniy natijani hisoblash uchun va'da zanjiriga misol keltiraylik,
 
     ```javascript
     new Promise(function (resolve, reject) {
@@ -1612,30 +1597,30 @@ You can download the PDF and Epub version of this repository from the latest run
       });
     ```
 
-    In the above handlers, the result is passed to the chain of .then() handlers with the below work flow,
+    Yuqoridagi ishlov beruvchilarda natija quyidagi ish oqimi bilan .then() ishlov beruvchilari zanjiriga uzatiladi,
 
-    1. The initial promise resolves in 1 second,
-    2. After that `.then` handler is called by logging the result(1) and then return a promise with the value of result \* 2.
-    3. After that the value passed to the next `.then` handler by logging the result(2) and return a promise with result \* 3.
-    4. Finally the value passed to the last `.then` handler by logging the result(6) and return a promise with result \* 4.
+    1. Dastlabki va'da 1 soniyada hal qilinadi,
+    2. Shundan so'ng .thenishlov beruvchi natijani (1) jurnalga kiritish orqali chaqiriladi va natijada \* 2 qiymati bilan va'da qaytariladi..
+    3. Shundan so'ng, qiymat .thennatijani (2) qayd qilish orqali keyingi ishlov beruvchiga o'tdi va natija \* 3 bilan va'dani qaytaring.
+    4. Nihoyat, natijani (6) qayd qilish orqali qiymat oxirgi .thenishlov beruvchiga o'tdi va natija \* 4 bilan va'dani qaytaring.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-64. ### What is promise.all
+64. ### Promise.all nima](#what-is-promise
 
-    Promise.all is a promise that takes an array of promises as an input (an iterable), and it gets resolved when all the promises get resolved or any one of them gets rejected. For example, the syntax of promise.all method is below,
+    Promise.all - bu bir qator va'dalarni kiritish (takrorlash) sifatida qabul qiladigan va'da va u barcha va'dalar hal qilinganda yoki ulardan biri rad etilganda hal qilinadi. Masalan, prod.all usulining sintaksisi quyida keltirilgan,
 
     ```javascript
     Promise.all([Promise1, Promise2, Promise3]) .then(result) => {   console.log(result) }) .catch(error => console.log(`Error in promises ${error}`))
     ```
 
-    **Note:** Remember that the order of the promises(output the result) is maintained as per input order.
+    **Note:** Va'dalar tartibi (natijani chiqarish) kiritish tartibiga muvofiq saqlanadi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-65. ### What is the purpose of the race method in promise
+65. ### Promise race mathoding maqsadi nima
 
-    Promise.race() method will return the promise instance which is firstly resolved or rejected. Let's take an example of race() method where promise2 is resolved first
+    Promise.race() usuli birinchi navbatda hal qilingan yoki rad etilgan va'da namunasini qaytaradi. Keling, race() usulini misol qilib olaylik, bunda birinchi navbatda vad2 hal qilinadi
 
     ```javascript
     var promise1 = new Promise(function (resolve, reject) {
@@ -1652,29 +1637,27 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-66. ### What is a strict mode in javascript
+66. ### Javascriptda qat'iy rejim(strict mode) nima
 
-    Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a “strict” operating context. This way it prevents certain actions from being taken and throws more exceptions. The literal expression `"use strict";` instructs the browser to use the javascript code in the Strict mode.
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-67. ### Why do you need strict mode
-
-    Strict mode is useful to write "secure" JavaScript by notifying "bad syntax" into real errors. For example, it eliminates accidentally creating a global variable by throwing an error and also throws an error for assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object.
+    Qattiq rejim - bu ECMAScript 5-dagi yangi xususiyat bo'lib, u sizga dastur yoki funksiyani "qat'iy" operatsion kontekstda joylashtirish imkonini beradi. Shunday qilib, u muayyan harakatlarning bajarilishini oldini oladi va ko'proq istisnolarni keltirib chiqaradi. To'g'ridan-to'g'ri ifoda "use strict";brauzerga javascript kodini qattiq rejimda ishlatishni buyuradi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-68. ### How do you declare strict mode
+67. ### Nima uchun sizga qattiq rejim kerak
 
-    The strict mode is declared by adding "use strict"; to the beginning of a script or a function.
-    If declared at the beginning of a script, it has global scope.
+    Qattiq rejim haqiqiy xatolarga "yomon sintaksis" haqida xabar berib, "xavfsiz" JavaScript yozish uchun foydalidir. Masalan, xatolik yo'li bilan tasodifan global o'zgaruvchini yaratishni bartaraf qiladi va yozilmaydigan xususiyatga, faqat qabul qiluvchi xususiyatga, mavjud bo'lmagan xususiyatga, mavjud bo'lmagan o'zgaruvchiga yoki bo'lmagan xususiyatga tayinlash uchun xatolik chiqaradi. mavjud ob'ekt.
+    **[⬆ Back to Top](#table-of-contents)**
+
+68. ### Qattiq rejimni qanday e'lon qilasiz
+
+    Qat'iy rejim "qat'iy foydalanish" qo'shilishi bilan e'lon qilinadi; skript yoki funksiya boshiga. Agar skript boshida e'lon qilingan bo'lsa, u global miqyosga ega.
 
     ```javascript
     'use strict';
     x = 3.14; // This will cause an error because x is not declared
     ```
 
-    and if you declare inside a function, it has local scope
+    va agar siz funktsiya ichida e'lon qilsangiz, u mahalliy doiraga ega
 
     ```javascript
     x = 3.14; // This will not cause an error.
@@ -1688,10 +1671,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-69. ### What is the purpose of double exclamation
+69. ### Ikkilamchi undovdan maqsad nima (! !)
 
-    The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
-    For example, you can test IE version using this expression as below,
+    Qo'sh undov yoki inkor (!!) natijada turning mantiqiy ekanligini ta'minlaydi. Agar u noto'g'ri bo'lsa (masalan, 0, null, aniqlanmagan va hokazo), u noto'g'ri, aks holda rost bo'ladi. Misol uchun, siz quyidagi ibora yordamida IE versiyasini sinab ko'rishingiz mumkin,
 
     ```javascript
     let isIE8 = false;
@@ -1699,19 +1681,19 @@ You can download the PDF and Epub version of this repository from the latest run
     console.log(isIE8); // returns true or false
     ```
 
-    If you don't use this expression then it returns the original value.
+    Agar siz ushbu ifodani ishlatmasangiz, u asl qiymatni qaytaradi.
 
     ```javascript
     console.log(navigator.userAgent.match(/MSIE 8.0/)); // returns either an Array or null
     ```
 
-    **Note:** The expression !! is not an operator, but it is just twice of ! operator.
+    **Note:** ifoda !! operator emas, lekin u faqat ikki marta! operator.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-70. ### What is the purpose of the delete operator
+70. ### Delete operatorining maqsadi nima
 
-    The delete keyword is used to delete the property as well as its value.
+    Delete kalit so'zi mulkni va uning qiymatini o'chirish uchun ishlatiladi.
 
     ```javascript
     var user = { name: 'John', age: 20 };
@@ -1722,9 +1704,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-71. ### What is the typeof operator
+71. ### typeOf operatori nima
 
-    You can use the JavaScript typeof operator to find the type of a JavaScript variable. It returns the type of a variable or an expression.
+    JavaScript o'zgaruvchisining turini topish uchun JavaScript typeof operatoridan foydalanishingiz mumkin. U o'zgaruvchi yoki ifoda turini qaytaradi.
 
     ```javascript
     typeof 'John Abraham'; // Returns "string"
@@ -1733,16 +1715,16 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-72. ### What is undefined property
+72. ### Belgilanmagan xususiyati (undefined prop) nima
 
-    The undefined property indicates that a variable has not been assigned a value, or not declared at all. The type of undefined value is undefined too.
+    Qiymatni aniqlanmagan qilib belgilash orqali har qanday o'zgaruvchini bo'shatish mumkin.
 
     ```javascript
     var user; // Value is undefined, type is undefined
     console.log(typeof user); //undefined
     ```
 
-    Any variable can be emptied by setting the value to undefined.
+    Qiymatni aniqlanmagan qilib belgilash orqali har qanday o'zgaruvchini bo'shatish mumkin.
 
     ```javascript
     user = undefined;
@@ -1750,10 +1732,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-73. ### What is null value
+73. ### Null qiymat nima
 
-    The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object.
-    You can empty the variable by setting the value to null.
+    Null qiymati har qanday ob'ekt qiymatining ataylab yo'qligini ifodalaydi. Bu JavaScript-ning ibtidoiy qiymatlaridan biridir. Null qiymat turi ob'ekt hisoblanadi. Qiymatni null ga o'rnatish orqali o'zgaruvchini bo'shatish mumkin.
 
     ```javascript
     var user = null;
@@ -1762,23 +1743,23 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-74. ### What is the difference between null and undefined
+74. ### Null va undefined ortasida farq nima
 
-    Below are the main differences between null and undefined,
+    Quyida null va undefined o'rtasidagi asosiy farqlar keltirilgan,
 
-    | Null                                                                                            | Undefined                                                                                               |
-    | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-    | It is an assignment value which indicates that variable points to no object.                    | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
-    | Type of null is object                                                                          | Type of undefined is undefined                                                                          |
-    | The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.            |
-    | Indicates the absence of a value for a variable                                                 | Indicates absence of variable itself                                                                    |
-    | Converted to zero (0) while performing primitive operations                                     | Converted to NaN while performing primitive operations                                                  |
+    | Null                                                                                         | Undefined                                                                                |
+    | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+    | Bu o'zgaruvchining hech qanday ob'ektga ishora qilmasligini ko'rsatadigan tayinlash qiymati. | Bu o'zgaruvchi e'lon qilingan, lekin hali qiymat tayinlanmagan tayinlash qiymati emas.   |
+    | Type of null is object                                                                       | Type of undefined is undefined                                                           |
+    | Null qiymat nol, bo'sh yoki mavjud bo'lmagan havolani ifodalovchi ibtidoiy qiymatdir.        | Aniqlanmagan qiymat o'zgaruvchiga qiymat berilmaganda ishlatiladigan ibtidoiy qiymatdir. |
+    | O'zgaruvchi uchun qiymat yo'qligini ko'rsatadi                                               | O'zgaruvchining o'zi yo'qligini ko'rsatadiitself                                         |
+    | Primitiv amallarni bajarishda nolga (0) aylantiriladi                                        | Primitiv operatsiyalarni bajarishda NaN ga aylantiriladi                                 |
 
     **[⬆ Back to Top](#table-of-contents)**
 
-75. ### What is eval
+75. ### Eval nima
 
-    The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+    eval() funktsiyasi satr sifatida taqdim etilgan JavaScript kodini baholaydi. Satr JavaScript ifodasi, o'zgaruvchi, bayonot yoki bayonotlar ketma-ketligi bo'lishi mumkin.
 
     ```javascript
     console.log(eval('1 + 2')); //  3
@@ -1786,21 +1767,21 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-76. ### What is the difference between window and document
+76. ### Window va document o'rtasidagi farq nima
 
-    Below are the main differences between window and document,
+    Quyida oyna va hujjat o'rtasidagi asosiy farqlar keltirilgan,
 
-    | Window                                                                        | Document                                                                                      |
-    | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-    | It is the root level element in any web page                                  | It is the direct child of the window object. This is also known as Document Object Model(DOM) |
-    | By default window object is available implicitly in the page                  | You can access it via window.document or document.                                            |
-    | It has methods like alert(), confirm() and properties like document, location | It provides methods like getElementById, getElementsByTagName, createElement etc              |
+    | Window                                                                             | Document                                                                                       |
+    | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+    | Bu har qanday veb-sahifadagi ildiz darajasining elementidir                        | Bu oyna ob'ektining bevosita bolasi. Bu Document Object Model (DOM) sifatida ham tanilgan.     |
+    | Odatiy bo'lib oyna ob'ekti bevosita sahifada mavjud                                | Siz unga window.document yoki hujjat orqali kirishingiz mumkin.                                |
+    | Unda alert(), confirm() kabi usullar va hujjat, joylashuv kabi xususiyatlar mavjud | U getElementById, getElementsByTagName, createElement va boshqalar kabi usullarni taqdim etadi |
 
     **[⬆ Back to Top](#table-of-contents)**
 
-77. ### How do you access history in javascript
+77. ### Javascriptda tarixga(Js history) qanday kirish mumkin
 
-    The window.history object contains the browser's history. You can load previous and next URLs in the history using back() and next() methods.
+    window.history obyekti brauzer tarixini o'z ichiga oladi. Tarixdagi oldingi va keyingi URL-larni back() va next() usullaridan foydalanib yuklashingiz mumkin.
 
     ```javascript
     function goBack() {
@@ -1811,15 +1792,15 @@ You can download the PDF and Epub version of this repository from the latest run
     }
     ```
 
-    **Note:** You can also access history without window prefix.
+    **Note:** Siz window.history prefiksisiz ham kirishingiz mumkin.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-78. ### How do you detect caps lock key turned on or not
+78. ### Caps lock tugmasi yoqilgan yoki yo'qligini qanday aniqlash mumkin
 
-    The `mouseEvent getModifierState()` is used to return a boolean value that indicates whether the specified modifier key is activated or not. The modifiers such as CapsLock, ScrollLock and NumLock are activated when they are clicked, and deactivated when they are clicked again.
+    Belgilangan mouseEvent getModifierState()modifikator kaliti faollashtirilgan yoki yoqilmaganligini ko'rsatadigan mantiqiy qiymatni qaytarish uchun ishlatiladi. CapsLock, ScrollLock va NumLock kabi modifikatorlar bosilganda faollashadi va yana bosilganda o'chiriladi.
 
-    Let's take an input element to detect the CapsLock on/off behavior with an example,
+    Misol bilan CapsLock-ni yoqish/o'chirish harakatini aniqlash uchun kirish elementini olaylik,
 
     ```html
     <input type="password" onmousedown="enterInput(event)" />
@@ -1841,9 +1822,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-79. ### What is isNaN
+79. ### NaN nima
 
-    The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
+    isNaN() funksiyasi qiymat noqonuniy son (Not-a-Number) yoki yoʻqligini aniqlash uchun ishlatiladi. ya'ni, agar qiymat NaN ga teng bo'lsa, bu funktsiya true ni qaytaradi. Aks holda u false qaytaradi.
 
     ```javascript
     isNaN('Hello'); //true
@@ -1852,20 +1833,20 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-80. ### What are the differences between undeclared and undefined variables
+80. ### E'lon qilinmagan va aniqlanmagan o'zgaruvchilar o'rtasidagi farqlar qanday undefined variables
 
-    Below are the major differences between undeclared and undefined variables,
+    Quyida e'lon qilinmagan va aniqlanmagan o'zgaruvchilar o'rtasidagi asosiy farqlar keltirilgan,
 
-    | undeclared                                                                                  | undefined                                                                              |
-    | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-    | These variables do not exist in a program and are not declared                              | These variables declared in the program but have not assigned any value                |
-    | If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned. |
+    | undeclared                                                                                                      | undefined                                                                                                    |
+    | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+    | Bu o'zgaruvchilar dasturda mavjud emas va e'lon qilinmaydi                                                      | Ushbu o'zgaruvchilar dasturda e'lon qilingan, ammo hech qanday qiymat bermagan                               |
+    | Agar siz e'lon qilinmagan o'zgaruvchining qiymatini o'qishga harakat qilsangiz, ish vaqti xatosi paydo bo'ladi. | Agar siz aniqlanmagan o'zgaruvchining qiymatini o'qishga harakat qilsangiz, aniqlanmagan qiymat qaytariladi. |
 
     **[⬆ Back to Top](#table-of-contents)**
 
-81. ### What are global variables
+81. ### Global o'zgaruvchilar nima
 
-    Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
+    Global o'zgaruvchilar kodning butun uzunligi bo'ylab hech qanday qamrovsiz mavjud bo'lganlardir. Var kalit so'zi mahalliy o'zgaruvchini e'lon qilish uchun ishlatiladi, lekin agar uni o'tkazib yuborsangiz, u global o'zgaruvchiga aylanadi.
 
     ```javascript
     msg = 'Hello'; // var is missing, it becomes global variable
@@ -1873,15 +1854,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-82. ### What are the problems with global variables
+82. ### Global o'zgaruvchilar bilan qanday muammolar mavjud
 
-    The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
+Global o'zgaruvchilar bilan bog'liq muammo mahalliy va global miqyosdagi o'zgaruvchilar nomlarining ziddiyatidir. Global o'zgaruvchilarga tayanadigan kodni disk raskadrovka qilish va sinab ko'rish ham qiyin.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-83. ### What is NaN property
+83. ### NaN property nima
 
-    The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
+    NaN xususiyati global xususiyat bo'lib, u "Raqam emas" qiymatini ifodalaydi. ya'ni, bu qiymat qonuniy raqam emasligini bildiradi. Dasturda NaN dan foydalanish juda kam uchraydi, lekin uni bir necha hollarda qaytarish qiymati sifatida ishlatish mumkin
 
     ```javascript
     Math.sqrt(-1);
@@ -1890,9 +1871,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-84. ### What is the purpose of isFinite function
+84. ### isFinite funksiyasining maqsadi nima
 
-    The isFinite() function is used to determine whether a number is a finite, legal number. It returns false if the value is +infinity, -infinity, or NaN (Not-a-Number), otherwise it returns true.
+isFinite() funksiyasi sonning cheklangan, qonuniy son ekanligini aniqlash uchun ishlatiladi. Qiymat +infinity, -infinity yoki NaN (Not-a-Number) bo'lsa, u noto'g'ri, aks holda u haqiqatni qaytaradi.
 
     ```javascript
     isFinite(Infinity); // false
@@ -1904,31 +1885,30 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-85. ### What is an event flow
+85. ### Hodisalar oqimi (event flow) nima
 
-    Event flow is the order in which event is received on the web page. When you click an element that is nested in various other elements, before your click actually reaches its destination, or target element, it must trigger the click event for each of its parent elements first, starting at the top with the global window object.
-    There are two ways of event flow
+    Voqealar oqimi - veb-sahifada voqea qabul qilish tartibi. Turli xil boshqa elementlarga joylashtirilgan elementni bosganingizda, bosishingiz oʻz manziliga yoki maqsad elementiga yetib borgunga qadar, u global oyna obyekti bilan yuqoridan boshlab, birinchi navbatda, har bir asosiy element uchun bosish hodisasini ishga tushirishi kerak. Voqealar oqimining ikki yo'li mavjud
 
-    1. Top to Bottom(Event Capturing)
-    2. Bottom to Top (Event Bubbling)
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-86. ### What is event bubbling
-
-    Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
+    1. Yuqoridan pastga (hodisani suratga olish)
+    2. Pastdan tepaga (voqea ko‘pirish)
 
     **[⬆ Back to Top](#table-of-contents)**
 
-87. ### What is event capturing
+86. ### Event bubbling nima
 
-    Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
+    Voqealar ko'piklanishi - bu hodisa tarqalishining bir turi bo'lib, unda hodisa birinchi navbatda eng ichki maqsad elementida ishga tushadi, so'ngra eng tashqi DOM elementiga yetguncha bir xil joylashtirish ierarxiyasidagi maqsad elementning ajdodlarida (ota-onalarida) ketma-ket ishga tushadi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-88. ### How do you submit a form using JavaScript
+87. ### Event capturing nima
 
-    You can submit a form using `document.forms[0].submit()`. All the form input's information is submitted using onsubmit event handler
+    Voqealarni suratga olish - hodisani tarqatishning bir turi bo'lib, unda hodisa birinchi navbatda eng tashqi element tomonidan ushlanib, so'ngra eng ichki DOM elementiga yetguncha bir xil joylashtirish ierarxiyasidagi maqsadli elementning avlodlarida (bolalarida) ketma-ket ishga tushadi.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+88. ### Form JavaScript yordamida qanday yuborasiz
+
+    document.forms[0].submit() dan foydalanib ariza yuborishingiz mumkin. Shaklga kiritilgan barcha ma'lumotlar onsubmit voqea ishlov beruvchisi yordamida yuboriladi
 
     ```javascript
     function submit() {
@@ -1938,9 +1918,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-89. ### How do you find operating system details
+89. ### Operatsion tizim tafsilotlari(operating system details) ni qanday topish mumkin
 
-    The window.navigator object contains information about the visitor's browser OS details. Some of the OS properties are available under platform property,
+    window.navigator ob'ekti tashrif buyuruvchining brauzeri OS tafsilotlari haqidagi ma'lumotlarni o'z ichiga oladi. Ba'zi OS xususiyatlari platforma mulki ostida mavjud,
 
     ```javascript
     console.log(navigator.platform);
@@ -1948,23 +1928,21 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-90. ### What is the difference between document load and DOMContentLoaded events
+90. ### Document load va DOMContentLoaded hodisalari o'rtasidagi farq nima DOMContentLoaded events
 
-    The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for assets(stylesheets, images, and subframes) to finish loading. Whereas The load event is fired when the whole page has loaded, including all dependent resources(stylesheets, images).
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-91. ### What is the difference between native, host and user objects
-
-    `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
-    `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
-    `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
+    Hodisa DOMContentLoadedboshlang'ich HTML hujjati to'liq yuklangan va tahlil qilinganda, aktivlar (uslublar jadvallari, tasvirlar va pastki ramkalar) yuklashni tugatilishini kutmasdan ishga tushiriladi. Holbuki, load hodisasi butun sahifa, shu jumladan barcha bog'liq manbalar (uslublar jadvallari, tasvirlar) yuklanganda ishga tushiriladi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-92. ### What are the tools or techniques used for debugging JavaScript code
+91. ### What is the difference between native, host and user objectsobjects
 
-    You can use below tools or techniques for debugging javascript
+    Native objectsECMAScript spetsifikatsiyasi bilan belgilangan JavaScript tilining bir qismi bo'lgan ob'ektlardir. Masalan, ECMAScript spetsifikatsiyasida belgilangan String, Math, RegExp, Object, Function va hokazo asosiy ob'ektlar. Host objectsbrauzer yoki ish vaqti muhiti (tugun) tomonidan taqdim etilgan ob'ektlardir. Masalan, window, XmlHttpRequest, DOM tugunlari va boshqalar xost ob'ektlari sifatida qabul qilinadi. User objectsjavascript kodida belgilangan ob'ektlardir. Masalan, profil ma'lumotlari uchun yaratilgan Foydalanuvchi ob'ektlari.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+92. ### JavaScript kodini tuzatish(debugging) uchun qanday vositalar yoki usullar qo'llaniladiJavaScript code
+
+    Javascriptni nosozliklarni tuzatish uchun quyidagi vositalar yoki usullardan foydalanishingiz mumkin
 
     1. Chrome Devtools
     2. debugger statement
@@ -1972,33 +1950,33 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-93. ### What are the pros and cons of promises over callbacks
+93. ### Promise da callback funksiya ishlatishni qanday ijobiy va salbiy tomonlari bor
 
-    Below are the list of pros and cons of promises over callbacks,
+    Quyida callbacklar bo'yicha va'dalarning ijobiy va salbiy tomonlari ro'yxati keltirilgan,
 
     **Pros:**
 
-    1. It avoids callback hell which is unreadable
-    2. Easy to write sequential asynchronous code with .then()
-    3. Easy to write parallel asynchronous code with Promise.all()
-    4. Solves some of the common problems of callbacks(call the callback too late, too early, many times and swallow errors/exceptions)
+    1. Bu o'qib bo'lmaydigan callback qilishning oldini oladi
+    2. then() bilan ketma-ket asinxron kodni yozish oson.
+    3. Promise.all() bilan parallel asinxron kodni yozish oson.
+    4. Callbacklarning ba'zi umumiy muammolarini hal qiladi (callback ni juda kech, juda erta, ko'p marta qo'ng'iroq qiling va xatolar/istisnolarni yutib yuboring)
 
     **Cons:**
 
-    1. It makes little complex code
-    2. You need to load a polyfill if ES6 is not supported
+    1. U ozgina murakkab kod yaratadi
+    2. U ozgina murakkab kod yaratadi
 
     **[⬆ Back to Top](#table-of-contents)**
 
-94. ### What is the difference between an attribute and a property
+94. ### Atribut va xususiyat(property) o'rtasidagi farq nima
 
-    Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
+    Atributlar HTML belgilashda, xususiyatlar esa DOMda aniqlanadi. Masalan, quyidagi HTML elementi 2 ta atribut turi va qiymatiga ega,
 
     ```javascript
     <input type="text" value="Name:">
     ```
 
-    You can retrieve the attribute value as below,
+    Quyidagi kabi atribut qiymatini olishingiz mumkin,
 
     ```javascript
     const input = document.querySelector('input');
@@ -2006,7 +1984,7 @@ You can download the PDF and Epub version of this repository from the latest run
     console.log(input.value); // Good morning
     ```
 
-    And after you change the value of the text field to "Good evening", it becomes like
+Va matn maydonining qiymatini "Xayrli oqshom" ga o'zgartirganingizdan so'ng, u shunday bo'ladi
 
     ```javascript
     console.log(input.getAttribute('value')); // Good morning
@@ -2015,16 +1993,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-95. ### What is same-origin policy
+95. ### Bir xil kelib chiqish siyosati (same-origin policy) nima
 
-    The same-origin policy is a policy that prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. If you enable this policy then it prevents a malicious script on one page from obtaining access to sensitive data on another web page using Document Object Model(DOM).
+    Bir xil kelib chiqish siyosati JavaScript-ni domen chegaralari bo'ylab so'rovlar qilishiga to'sqinlik qiluvchi siyosatdir. Boshlanish URI sxemasi, xost nomi va port raqamining kombinatsiyasi sifatida aniqlanadi. Agar siz ushbu siyosatni yoqsangiz, u Document Object Model (DOM) yordamida bir sahifadagi zararli skript boshqa veb-sahifadagi maxfiy maʼlumotlarga kirishini oldini oladi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-96. ### What is the purpose of void 0
+96. ### Void 0 ning maqsadi nima
 
-    Void(0) is used to prevent the page from refreshing. This will be helpful to eliminate the unwanted side-effect, because it will return the undefined primitive value. It is commonly used for HTML documents that use href="JavaScript:Void(0);" within an `<a>` element. i.e, when you click a link, the browser loads a new page or refreshes the same page. But this behavior will be prevented using this expression.
-    For example, the below link notify the message without reloading the page
+Void(0) sahifani yangilanishini oldini olish uchun ishlatiladi. Bu kiruvchi nojo'ya ta'sirni bartaraf etishda foydali bo'ladi, chunki u aniqlanmagan ibtidoiy qiymatni qaytaradi. U odatda href="JavaScript:Void(0);" ishlatadigan HTML hujjatlari uchun ishlatiladi. <a>element ichida . ya'ni havolani bosganingizda brauzer yangi sahifani yuklaydi yoki xuddi shu sahifani yangilaydi. Ammo bu ibora yordamida bu xatti-harakatning oldini oladi. Masalan, quyidagi havola sahifani qayta yuklamasdan xabarni bildiradi
 
     ```javascript
     <a href='JavaScript:void(0);' onclick="alert('Well done!')">
@@ -2034,5666 +2011,5661 @@ You can download the PDF and Epub version of this repository from the latest run
 
     **[⬆ Back to Top](#table-of-contents)**
 
-97. ### Is JavaScript a compiled or interpreted language
+97. ### JavaScript kompilyatsiya qilingan yoki tarjima qilingan tilmi
 
-    JavaScript is an interpreted language, not a compiled language. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Nowadays modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-98. ### Is JavaScript a case-sensitive language
-
-    Yes, JavaScript is a case sensitive language. The language keywords, variables, function & object names, and any other identifiers must always be typed with a consistent capitalization of letters.
+    JavaScript kompilyatsiya qilingan til emas, balki talqin qilinadigan tildir. Brauzerdagi tarjimon JavaScript kodini o'qiydi, har bir satrni sharhlaydi va uni ishga tushiradi. Hozirgi vaqtda zamonaviy brauzerlar JavaScript-ni ishga tushirish arafasida bajariladigan bayt-kodga kompilyatsiya qiladigan Just-In-Time (JIT) kompilyatsiyasi deb nomlanuvchi texnologiyadan foydalanadilar.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-99. ### Is there any relation between Java and JavaScript
+98. ### Js case-sensitive (katta va kichik hariflarni farqalydigan ) tilmi
 
-    No, they are entirely two different programming languages and have nothing to do with each other. But both of them are Object Oriented Programming languages and like many other languages, they follow similar syntax for basic features(if, else, for, switch, break, continue etc).
+    Ha, JavaScript katta-kichik harflarga sezgir tildir. Til kalit so'zlari, o'zgaruvchilar, funksiya va ob'ekt nomlari va boshqa identifikatorlar har doim harflarning izchil bosh harflari bilan kiritilishi kerak.
+    **[⬆ Back to Top](#table-of-contents)**
+
+99. ### Java va JavaScript o'rtasida bog'liqlik bormi
+
+    Yo'q, ular butunlay ikki xil dasturlash tillari va bir-biriga hech qanday aloqasi yo'q. Ammo ularning ikkalasi ham ob'ektga yo'naltirilgan dasturlash tillari va boshqa ko'plab tillar singari, ular asosiy funktsiyalar uchun o'xshash sintaksisga amal qiladilar (agar, boshqacha, uchun, o'tish, buzish, davom ettirish va hokazo).
 
     **[⬆ Back to Top](#table-of-contents)**
 
-100. ### What are events
+100.  ### Events nima
 
-     Events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can `react` on these events. Some of the examples of HTML events are,
+      Hodisalar HTML elementlari bilan sodir bo'ladigan "narsalar"dir. HTML sahifalarida JavaScript ishlatilsa, JavaScript reactbu hodisalarda ham bo'lishi mumkin. HTML hodisalariga ba'zi misollar:
 
-     1. Web page has finished loading
-     2. Input field was changed
-     3. Button was clicked
+      1.  Veb-sahifa yuklash tugallandi
+      2.  Kirish maydoni o'zgartirildi
+      3.  Tugma bosildi
 
-     Let's describe the behavior of click event for button element,
+      Keling, tugma elementi uchun bosish hodisasining harakatini tasvirlaylik,
 
-     ```javascript
-     <!doctype html>
-     <html>
-      <head>
-        <script>
-          function greeting() {
-            alert('Hello! Good morning');
-          }
-        </script>
-      </head>
-      <body>
-        <button type="button" onclick="greeting()">Click me</button>
-      </body>
-     </html>
-     ```
+      ```javascript
+      <!doctype html>
+      <html>
+       <head>
+         <script>
+           function greeting() {
+             alert('Hello! Good morning');
+           }
+         </script>
+       </head>
+       <body>
+         <button type="button" onclick="greeting()">Click me</button>
+       </body>
+      </html>
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-101. ### Who created javascript
+101.  ### Javascriptni kim yaratgan
 
-     JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
+      JavaScript Brendan Eich tomonidan 1995 yilda Netscape Communications kompaniyasida ishlagan vaqtida yaratilgan. Dastlab u nomi ostida ishlab chiqilgan , ammo keyinchalik Netscape-ning beta-versiyalarida birinchi marta yuborilganida, Mochatil rasmiy ravishda nomlangan .LiveScript
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-102. ### What is the use of preventDefault method
+102.  ### PreventDefault usuli qanday holatda ishlatiladi
 
-     The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behaviour that belongs to the event will not occur. For example, prevent form submission when clicking on submit button and prevent opening the page URL when clicking on hyperlink are some common use cases.
+      preventDefault() usuli, agar u bekor qilinadigan bo'lsa, hodisani bekor qiladi, ya'ni hodisaga tegishli bo'lgan standart harakat yoki xatti-harakatlar sodir bo'lmaydi. Masalan, “Yuborish” tugmasini bosganingizda shaklni yuborishni oldini olish va giperhavolani bosganda sahifaning URL manzilini ochishning oldini olish keng tarqalgan foydalanish holatlaridir.
 
-     ```javascript
-     document
-       .getElementById('link')
-       .addEventListener('click', function (event) {
-         event.preventDefault();
-       });
-     ```
+      ```javascript
+      document
+        .getElementById('link')
+        .addEventListener('click', function (event) {
+          event.preventDefault();
+        });
+      ```
 
-     **Note:** Remember that not all events are cancelable.
+      **Note:** Esda tutingki, barcha tadbirlarni bekor qilish mumkin emas.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-103. ### What is the use of stopPropagation method
+103.  ### StopPropagation usuli qanday holatda ishlatiladi
 
-     The stopPropagation method is used to stop the event from bubbling up the event chain. For example, the below nested divs with stopPropagation method prevents default event propagation when clicking on nested div(Div1)
+      StopPropagation usuli hodisaning hodisalar zanjirida ko'payishini to'xtatish uchun ishlatiladi. Misol uchun, stopPropagation usuli bilan quyida joylashgan ichki divlar ichki o'rnatilgan div(Div1) ni bosganda standart hodisa tarqalishini oldini oladi.
 
-     ```javascript
-     <p>Click DIV1 Element</p>
-     <div onclick="secondFunc()">DIV 2
-       <div onclick="firstFunc(event)">DIV 1</div>
-     </div>
+      ```javascript
+      <p>Click DIV1 Element</p>
+      <div onclick="secondFunc()">DIV 2
+        <div onclick="firstFunc(event)">DIV 1</div>
+      </div>
 
-     <script>
-     function firstFunc(event) {
-       alert("DIV 1");
-       event.stopPropagation();
-     }
+      <script>
+      function firstFunc(event) {
+        alert("DIV 1");
+        event.stopPropagation();
+      }
 
-     function secondFunc() {
-       alert("DIV 2");
-     }
-     </script>
-     ```
+      function secondFunc() {
+        alert("DIV 2");
+      }
+      </script>
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-104. ### What are the steps involved in return false usage
+104.  ### Noto'g'ri foydalanishni qaytarish uchun qanday qadamlar mavjud
 
-     The return false statement in event handlers performs the below steps,
+      Hodisa ishlov beruvchilarida noto'g'ri xabarni qaytarish quyidagi amallarni bajaradi:
 
-     1. First it stops the browser's default action or behaviour.
-     2. It prevents the event from propagating the DOM
-     3. Stops callback execution and returns immediately when called.
+      1.  Avval u brauzerning standart harakatini yoki harakatini to'xtatadi.
+      2.  Bu hodisaning DOMni targ'ib qilishiga to'sqinlik qiladi
+      3.  Callbackni bajarishni to'xtatadi va chaqirilganda darhol qaytadi..
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-105. ### What is BOM
+105.  ### BOM nima
 
-     The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of the window. The Browser Object Model is not standardized and can change based on different browsers.
+      Brauzer obyekti modeli (BOM) JavaScript-ga brauzer bilan “suhbatlashish” imkonini beradi. U navigator, tarix, ekran, joylashuv va oynaning bolalari bo'lgan hujjatdan iborat. Brauzer ob'ekt modeli standartlashtirilmagan va turli brauzerlar asosida o'zgarishi mumkin.
 
-     ![Screenshot](images/bom.png)
+      ![Screenshot](images/bom.png)
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-106. ### What is the use of setTimeout
+106.  ### setTimeout dan qanday foydalanish kerak
 
-     The setTimeout() method is used to call a function or evaluate an expression after a specified number of milliseconds. For example, let's log a message after 2 seconds using setTimeout method,
+      setTimeout() usuli funktsiyani chaqirish yoki belgilangan millisekundlardan keyin ifodani baholash uchun ishlatiladi. Masalan, setTimeout usuli yordamida 2 soniyadan so'ng xabarni tizimga kiritamiz,
 
-     ```javascript
-     setTimeout(function () {
-       console.log('Good morning');
-     }, 2000);
-     ```
+      ```javascript
+      setTimeout(function () {
+        console.log('Good morning');
+      }, 2000);
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-107. ### What is the use of setInterval
+107.  ### setInterval nimadan foydalaniladi
 
-     The setInterval() method is used to call a function or evaluate an expression at specified intervals (in milliseconds). For example, let's log a message after 2 seconds using setInterval method,
+      setInterval() usuli funksiyani chaqirish yoki ifodani belgilangan oraliqlarda (millisekundlarda) baholash uchun ishlatiladi. Masalan, setInterval usuli yordamida 2 soniyadan so'ng xabarni tizimga kiritamiz,
 
-     ```javascript
-     setInterval(function () {
-       console.log('Good morning');
-     }, 2000);
-     ```
+      ```javascript
+      setInterval(function () {
+        console.log('Good morning');
+      }, 2000);
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-108. ### Why is JavaScript treated as Single threaded
+108.  ### Nima uchun JavaScript yagona Ipli (Single threaded) deb hisoblanadi
 
-     JavaScript is a single-threaded language. Because the language specification does not allow the programmer to write code so that the interpreter can run parts of it in parallel in multiple threads or processes. Whereas languages like java, go, C++ can make multi-threaded and multi-process programs.
+      JavaScript - bu bitta oqimli til. Chunki til spetsifikatsiyasi dasturchiga kod yozishga imkon bermaydi, shunda tarjimon uning qismlarini bir nechta ip yoki jarayonlarda parallel ravishda ishga tushirishi mumkin. Java, go, C++ kabi tillar ko'p bosqichli va ko'p jarayonli dasturlarni yaratishi mumkin.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-109. ### What is an event delegation
+109.  ### Tadbir delegatsiyasi(event delegation) nima
 
-     Event delegation is a technique for listening to events where you delegate a parent element as the listener for all of the events that happen inside it.
+      Voqealar delegatsiyasi - bu voqealarni tinglash usuli bo'lib, unda siz asosiy elementni uning ichida sodir bo'ladigan barcha voqealar uchun tinglovchi sifatida topshirasiz.
 
-     For example, if you wanted to detect field changes in inside a specific form, you can use event delegation technique,
+      Misol uchun, agar siz ma'lum bir shakl ichidagi maydon o'zgarishlarini aniqlamoqchi bo'lsangiz, voqea delegatsiyasi texnikasidan foydalanishingiz mumkin,
 
-     ```javascript
-     var form = document.querySelector('#registration-form');
+      ```javascript
+      var form = document.querySelector('#registration-form');
 
-     // Listen for changes to fields inside the form
-     form.addEventListener(
-       'input',
-       function (event) {
-         // Log the field that was changed
-         console.log(event.target);
-       },
-       false
-     );
-     ```
+      // Listen for changes to fields inside the form
+      form.addEventListener(
+        'input',
+        function (event) {
+          // Log the field that was changed
+          console.log(event.target);
+        },
+        false
+      );
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-110. ### What is ECMAScript
+110.  ### ECMAScript nima
 
-     ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications. The first edition of ECMAScript was released in 1997.
+      ECMAScript JavaScript asosini tashkil etuvchi skript tilidir. ECMAScript ECMA xalqaro standartlar tashkiloti tomonidan ECMA-262 va ECMA-402 spetsifikatsiyalarida standartlashtirilgan. ECMAScript ning birinchi nashri 1997 yilda chiqarilgan.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-111. ### What is JSON
+111.  ### JSON nima
 
-     JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
+      JSON (JavaScript Object Notation) - bu ma'lumotlarni almashish uchun ishlatiladigan engil format. U JavaScript-da ob'ektlarni qurish usulida JavaScript tilining kichik to'plamiga asoslangan.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-112. ### What are the syntax rules of JSON
+112.  ### JSON sintaksisi qoidalari qanday
 
-     Below are the list of syntax rules of JSON
+      Quyida JSON sintaksisi qoidalari ro'yxati keltirilgan
 
-     1. The data is in name/value pairs
-     2. The data is separated by commas
-     3. Curly braces hold objects
-     4. Square brackets hold arrays
+      1.  Ma'lumotlar nom/qiymat juftliklarida
+      2.  Ma'lumotlar vergul bilan ajratiladi
+      3.  Jingalak qavslar narsalarni ushlab turadi
+      4.  Kvadrat qavslar massivlarni ushlab turad
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-113. ### What is the purpose JSON stringify
+113.  ### JSON stringify nima maqsadda foydalaniladi
 
-     When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
+      Veb-serverga ma'lumotlarni yuborishda ma'lumotlar string formatida bo'lishi kerak. Bunga JSON obyektini stringify() usuli yordamida satrga aylantirish orqali erishishingiz mumkin.
 
-     ```javascript
-     var userJSON = { name: 'John', age: 31 };
-     var userString = JSON.stringify(user);
-     console.log(userString); //"{"name":"John","age":31}"
-     ```
+      ```javascript
+      var userJSON = { name: 'John', age: 31 };
+      var userString = JSON.stringify(user);
+      console.log(userString); //"{"name":"John","age":31}"
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-114. ### How do you parse JSON string
+114.  ### JSON string ni qanday tahlil(parse) qilasiz
 
-     When receiving the data from a web server, the data is always in a string format. But you can convert this string value to a javascript object using parse() method.
+      Veb-serverdan ma'lumotlarni qabul qilishda ma'lumotlar har doim string formatida bo'ladi. Lekin bu satr qiymatini parse() usuli yordamida JavaScript obyektiga aylantirishingiz mumkin.
 
-     ```javascript
-     var userString = '{"name":"John","age":31}';
-     var userJSON = JSON.parse(userString);
-     console.log(userJSON); // {name: "John", age: 31}
-     ```
+      ```javascript
+      var userString = '{"name":"John","age":31}';
+      var userJSON = JSON.parse(userString);
+      console.log(userJSON); // {name: "John", age: 31}
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-115. ### Why do you need JSON
+115.  ### Nima uchun sizga JSON kerak
 
-     When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+      Brauzer va server o'rtasida ma'lumot almashishda ma'lumotlar faqat matn bo'lishi mumkin. JSON faqat matn bo'lgani uchun uni serverga va serverdan osongina yuborish va istalgan dasturlash tili tomonidan ma'lumotlar formati sifatida foydalanish mumkin.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-116. ### What are PWAs
+116.  ### PWAs nima
 
-     Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript. These PWAs are deployed to servers, accessible through URLs, and indexed by search engines.
+      Progressiv veb-ilovalar (PWA) HTML, CSS va JavaScript-ni o'z ichiga olgan umumiy veb-texnologiyalar yordamida yaratilgan veb-sayt orqali etkazib beriladigan mobil ilovaning bir turi. Ushbu PWA'lar serverlarga joylashtiriladi, URL manzillari orqali kirish mumkin va qidiruv tizimlari tomonidan indekslanadi.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-117. ### What is the purpose of clearTimeout method
+117.  ### clearTimeout usulining ishlatish maqsadi nima
 
-     The clearTimeout() function is used in javascript to clear the timeout which has been set by setTimeout()function before that. i.e, The return value of setTimeout() function is stored in a variable and it’s passed into the clearTimeout() function to clear the timer.
+      ClearTimeout() funksiyasi javascriptda setTimeout() funktsiyasi tomonidan o'rnatilgan vaqt tugashini o'chirish uchun ishlatiladi. ya'ni, setTimeout() funksiyasining qaytish qiymati o'zgaruvchida saqlanadi va taymerni tozalash uchun clearTimeout() funksiyasiga o'tkaziladi.
 
-     For example, the below setTimeout method is used to display the message after 3 seconds. This timeout can be cleared by the clearTimeout() method.
+Masalan, quyidagi setTimeout usuli xabarni 3 soniyadan keyin ko'rsatish uchun ishlatiladi. Bu vaqt tugashi clearTimeout() usuli bilan tozalanishi mumkin.
 
-     ```javascript
-     <script>
-     var msg;
-     function greeting() {
-        alert('Good morning');
-     }
-     function start() {
-       msg =setTimeout(greeting, 3000);
+      ```javascript
+      <script>
+      var msg;
+      function greeting() {
+         alert('Good morning');
+      }
+      function start() {
+        msg =setTimeout(greeting, 3000);
 
-     }
+      }
 
-     function stop() {
-         clearTimeout(msg);
-     }
-     </script>
-     ```
+      function stop() {
+          clearTimeout(msg);
+      }
+      </script>
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-118. ### What is the purpose of clearInterval method
+118.  ### ClearInterval usulidan maqsad nima
 
-     The clearInterval() function is used in javascript to clear the interval which has been set by setInterval() function. i.e, The return value returned by setInterval() function is stored in a variable and it’s passed into the clearInterval() function to clear the interval.
+      ClearInterval() funksiyasi javascriptda setInterval() funktsiyasi tomonidan o'rnatilgan intervalni tozalash uchun ishlatiladi. ya'ni, setInterval() funktsiyasi tomonidan qaytarilgan qiymat o'zgaruvchida saqlanadi va intervalni tozalash uchun clearInterval() funksiyasiga o'tkaziladi.
 
-     For example, the below setInterval method is used to display the message for every 3 seconds. This interval can be cleared by the clearInterval() method.
+Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'llaniladi. Ushbu intervalni clearInterval() usuli bilan tozalash mumkin.
 
-     ```javascript
-     <script>
-     var msg;
-     function greeting() {
-        alert('Good morning');
-     }
-     function start() {
-       msg = setInterval(greeting, 3000);
+      ```javascript
+      <script>
+      var msg;
+      function greeting() {
+         alert('Good morning');
+      }
+      function start() {
+        msg = setInterval(greeting, 3000);
 
-     }
+      }
 
-     function stop() {
-         clearInterval(msg);
-     }
-     </script>
-     ```
+      function stop() {
+          clearInterval(msg);
+      }
+      </script>
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-119. ### How do you redirect new page in javascript
+119.  ### Javascriptda yangi sahifani qanday yo’naltirish mumkin
 
-     In vanilla javascript, you can redirect to a new page using the `location` property of window object. The syntax would be as follows,
+      locationVanilla JavaScript-da siz oyna ob'ektining xususiyatidan foydalanib, yangi sahifaga yo'naltirishingiz mumkin . Sintaksis quyidagicha bo'ladi:
 
-     ```javascript
-     function redirect() {
-       window.location.href = 'newPage.html';
-     }
-     ```
+      ```javascript
+      function redirect() {
+        window.location.href = 'newPage.html';
+      }
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-120. ### How do you check whether a string contains a substring
+120.  ### Stringda substring mavjudligini qanday tekshirish mumkin
 
-     There are 3 possible ways to check whether a string contains a substring or not,
+      Satrda pastki satr bor yoki yo'qligini tekshirishning 3 ta mumkin bo'lgan usuli mavjud,
 
-     1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
+      1.  **Using includes:** ES6 tomonidan taqdim etilgan String.prototype.includesqatorni sinash uchun pastki qator mavjud
 
-     ```javascript
-     var mainString = 'hello',
-       subString = 'hell';
-     mainString.includes(subString);
-     ```
+      ```javascript
+      var mainString = 'hello',
+        subString = 'hell';
+      mainString.includes(subString);
+      ```
 
-     1. **Using indexOf:** In an ES5 or older environment, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exists in the main string.
+      1.  **Using indexOf:** ES5 yoki undan yuqoriroq muhitda siz String.prototype.indexOfpastki qator indeksini qaytaradiganidan foydalanishingiz mumkin. Agar indeks qiymati -1 ga teng bo'lmasa, bu pastki satr asosiy satrda mavjudligini anglatadi.
 
-     ```javascript
-     var mainString = 'hello',
-       subString = 'hell';
-     mainString.indexOf(subString) !== -1;
-     ```
+      ```javascript
+      var mainString = 'hello',
+        subString = 'hell';
+      mainString.indexOf(subString) !== -1;
+      ```
 
-     1. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
+      1.  **Using RegEx:** Kengaytirilgan yechim muntazam ifodalarni sinovdan o'tkazish usulidan ( RegExp.test) foydalanadi.
 
-     ```javascript
-     var mainString = 'hello',
-       regex = /hell/;
-     regex.test(mainString);
-     ```
+      ```javascript
+      var mainString = 'hello',
+        regex = /hell/;
+      regex.test(mainString);
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-121. ### How do you validate an email in javascript
+121.  ### Javascriptda elektron pochtani qanday tekshirish mumkin
 
-     You can validate an email in javascript using regular expressions. It is recommended to do validations on the server side instead of the client side. Because the javascript can be disabled on the client side.
+      Oddiy iboralar yordamida JavaScript-da elektron pochta xabarini tasdiqlashingiz mumkin. Tasdiqlashlarni mijoz tomoni o'rniga server tomonida qilish tavsiya etiladi. Chunki javascript mijoz tomonida o'chirib qo'yilishi mumkin.
 
-     ```javascript
-     function validateEmail(email) {
-       var re =
-         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-       return re.test(String(email).toLowerCase());
-     }
-     ```
+      ```javascript
+      function validateEmail(email) {
+        var re =
+          /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+      }
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-     The above regular expression accepts unicode characters.
+      The above regular expression accepts unicode characters.
 
-122. ### How do you get the current url with javascript
+122.  ### Joriy urlni javascript bilan qanday olish mumkin
 
-     You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purposes but this solution has issues in FF.
+      window.location.hrefJoriy url yo'lini olish uchun ifodadan foydalanishingiz mumkin va URLni yangilash uchun ham xuddi shu ifodadan foydalanishingiz mumkin . Siz document.URLfaqat o'qish uchun ham foydalanishingiz mumkin, ammo bu yechim FFda muammolarga ega.
 
-     ```javascript
-     console.log('location.href', window.location.href); // Returns full URL
-     ```
+      ```javascript
+      console.log('location.href', window.location.href); // Returns full URL
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-123. ### What are the various url properties of location object
+123.  ### Joylashuv obyektining turli url xususiyatlari qanday
 
-     The below `Location` object properties can be used to access URL components of the page,
+      Quyidagi Locationobyekt xususiyatlari sahifaning URL komponentlariga kirish uchun ishlatilishi mumkin,
 
-     1. href - The entire URL
-     2. protocol - The protocol of the URL
-     3. host - The hostname and port of the URL
-     4. hostname - The hostname of the URL
-     5. port - The port number in the URL
-     6. pathname - The path name of the URL
-     7. search - The query portion of the URL
-     8. hash - The anchor portion of the URL
+      1.               href - butun URL
+      2.  protokol - URL manzilining protokoli
+      3.  xost - URL manzilining xost nomi va porti
+      4.  hostname - URL manzilining xost nomi
+      5.  port - URL manzilidagi port raqami
+      6.  pathname - URL manzilining yo'l nomi
+      7.  qidiruv - URLning so'rov qismi
+      8.  xesh - URLning langar qismi
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-124. ### How do get query string values in javascript
+124.  ### Javascriptda so'rovlar qatori qiymatlarini qanday olish mumkin
 
-     You can use URLSearchParams to get query string values in javascript. Let's see an example to get the client code value from URL query string,
+      Javascriptda so'rovlar qatori qiymatlarini olish uchun URLSearchParams dan foydalanishingiz mumkin. URL so'rovlar qatoridan mijoz kodi qiymatini olish uchun misolni ko'rib chiqaylik,
 
-     ```javascript
-     const urlParams = new URLSearchParams(window.location.search);
-     const clientCode = urlParams.get('clientCode');
-     ```
+      ```javascript
+      const urlParams = new URLSearchParams(window.location.search);
+      const clientCode = urlParams.get('clientCode');
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-125. ### How do you check if a key exists in an object
+125.  ### Ob'ektda kalit(key) mavjudligini qanday tekshirish mumkin
 
-     You can check whether a key exists in an object or not using three approaches,
+      Ob'ektda kalit mavjudligi yoki yo'qligini uchta yondashuv yordamida tekshirishingiz mumkin,
 
-     1. **Using in operator:** You can use the in operator whether a key exists in an object or not
+      1.  **Using in operator:** ob'ektda kalit mavjudmi yoki yo'qmi, in operatoridan foydalanishingiz mumkin
 
-     ```javascript
-     'key' in obj;
-     ```
+      ```javascript
+      'key' in obj;
+      ```
 
-     and If you want to check if a key doesn't exist, remember to use parenthesis,
+      Agar kalit mavjud emasligini tekshirishni istasangiz, qavsdan foydalanishni unutmang,
 
-     ```javascript
-     !('key' in obj);
-     ```
+      ```javascript
+      !('key' in obj);
+      ```
 
-     1. **Using hasOwnProperty method:** You can use `hasOwnProperty` to particularly test for properties of the object instance (and not inherited properties)
+      1.  **Using hasOwnProperty method:** Siz hasOwnPropertyob'ekt namunasining xususiyatlarini (va meros qilib olingan xususiyatlarni emas) ayniqsa sinab ko'rish uchun foydalanishingiz mumkin.
 
-     ```javascript
-     obj.hasOwnProperty('key'); // true
-     ```
+      ```javascript
+      obj.hasOwnProperty('key'); // true
+      ```
 
-     1. **Using undefined comparison:** If you access a non-existing property from an object, the result is undefined. Let’s compare the properties against undefined to determine the existence of the property.
+      1.  **Using undefined comparison:** Agar ob'ektdan mavjud bo'lmagan xususiyatga kirsangiz, natija aniqlanmagan. Mulkning mavjudligini aniqlash uchun xususiyatlarni undefined bilan solishtiramiz.
 
-     ```javascript
-     const user = {
-       name: 'John',
-     };
+      ```javascript
+      const user = {
+        name: 'John',
+      };
 
-     console.log(user.name !== undefined); // true
-     console.log(user.nickName !== undefined); // false
-     ```
+      console.log(user.name !== undefined); // true
+      console.log(user.nickName !== undefined); // false
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-126. ### How do you loop through or enumerate javascript object
+126.  ### Javascript ob'ektini qanday aylantirasiz(loop) yoki sanab o'tasiz
 
-     You can use the `for-in` loop to loop through javascript object. You can also make sure that the key you get is an actual property of an object, and doesn't come from the prototype using `hasOwnProperty` method.
+      for-inJavascript ob'ekti bo'ylab aylanish uchun tsikldan foydalanishingiz mumkin . Shuningdek, siz olgan kalit ob'ektning haqiqiy mulki ekanligiga va prototipdan foydalanish hasOwnPropertyusulidan kelib chiqmasligiga ishonch hosil qilishingiz mumkin.
 
-     ```javascript
-     var object = {
-       k1: 'value1',
-       k2: 'value2',
-       k3: 'value3',
-     };
+      ```javascript
+      var object = {
+        k1: 'value1',
+        k2: 'value2',
+        k3: 'value3',
+      };
 
-     for (var key in object) {
-       if (object.hasOwnProperty(key)) {
-         console.log(key + ' -> ' + object[key]); // k1 -> value1 ...
-       }
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-127. ### How do you test for an empty object
-
-     There are different solutions based on ECMAScript versions
-
-     1. **Using Object entries(ECMA 7+):** You can use object entries length along with constructor type.
-
-     ```javascript
-     Object.entries(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
-     ```
-
-     1. **Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
-
-     ```javascript
-     Object.keys(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
-     ```
-
-     1. **Using for-in with hasOwnProperty(Pre-ECMA 5):** You can use a for-in loop along with hasOwnProperty.
-
-     ```javascript
-     function isEmpty(obj) {
-       for (var prop in obj) {
-         if (obj.hasOwnProperty(prop)) {
-           return false;
-         }
-       }
-
-       return JSON.stringify(obj) === JSON.stringify({});
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-128. ### What is an arguments object
-
-     The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function. For example, let's see how to use arguments object inside sum function,
-
-     ```javascript
-     function sum() {
-       var total = 0;
-       for (var i = 0, len = arguments.length; i < len; ++i) {
-         total += arguments[i];
-       }
-       return total;
-     }
-
-     sum(1, 2, 3); // returns 6
-     ```
-
-     **Note:** You can't apply array methods on arguments object. But you can convert into a regular array as below.
-
-     ```javascript
-     var argsArray = Array.prototype.slice.call(arguments);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-129. ### How do you make first letter of the string in an uppercase
-
-     You can create a function which uses a chain of string methods such as charAt, toUpperCase and slice methods to generate a string with the first letter in uppercase.
-
-     ```javascript
-     function capitalizeFirstLetter(string) {
-       return string.charAt(0).toUpperCase() + string.slice(1);
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-130. ### What are the pros and cons of for loop
-
-     The for-loop is a commonly used iteration syntax in javascript. It has both pros and cons
-
-     #### Pros
-
-     1. Works on every environment
-     2. You can use break and continue flow control statements
-
-     #### Cons
-
-     1. Too verbose
-     2. Imperative
-     3. You might face one-by-off errors
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-131. ### How do you display the current date in javascript
-
-     You can use `new Date()` to generate a new Date object containing the current date and time. For example, let's display the current date in mm/dd/yyyy
-
-     ```javascript
-     var today = new Date();
-     var dd = String(today.getDate()).padStart(2, '0');
-     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-     var yyyy = today.getFullYear();
-
-     today = mm + '/' + dd + '/' + yyyy;
-     document.write(today);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-132. ### How do you compare two date objects
-
-     You need to use date.getTime() method to compare date values instead of comparison operators (==, !=, ===, and !== operators)
-
-     ```javascript
-     var d1 = new Date();
-     var d2 = new Date(d1);
-     console.log(d1.getTime() === d2.getTime()); //True
-     console.log(d1 === d2); // False
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-133. ### How do you check if a string starts with another string
-
-     You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
-
-     ```javascript
-     'Good morning'.startsWith('Good'); // true
-     'Good morning'.startsWith('morning'); // false
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-134. ### How do you trim a string in javascript
-
-     JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
-
-     ```javascript
-     '  Hello World   '.trim(); //Hello World
-     ```
-
-     If your browser(<IE9) doesn't support this method then you can use below polyfill.
-
-     ```javascript
-     if (!String.prototype.trim) {
-       (function () {
-         // Make sure we trim BOM and NBSP
-         var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-         String.prototype.trim = function () {
-           return this.replace(rtrim, '');
-         };
-       })();
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-135. ### How do you add a key value pair in javascript
-
-     There are two possible solutions to add new properties to an object. Let's take a simple object to explain these solutions.
-
-     ```javascript
-     var object = {
-       key1: value1,
-       key2: value2,
-     };
-     ```
-
-     1. **Using dot notation:** This solution is useful when you know the name of the property
-
-     ```javascript
-     object.key3 = 'value3';
-     ```
-
-     1. **Using square bracket notation:** This solution is useful when the name of the property is dynamically determined.
-
-     ```javascript
-     obj['key3'] = 'value3';
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-136. ### Is the !-- notation represents a special operator
-
-     No,that's not a special operator. But it is a combination of 2 standard operators one after the other,
-
-     1. A logical not (!)
-     2. A prefix decrement (--)
-
-     At first, the value decremented by one and then tested to see if it is equal to zero or not for determining the truthy/falsy value.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-137. ### How do you assign default values to variables
-
-     You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
-
-     ```javascript
-     var a = b || c;
-     ```
-
-     As per the above expression, variable 'a 'will get the value of 'c' only if 'b' is falsy (if is null, false, undefined, 0, empty string, or NaN), otherwise 'a' will get the value of 'b'.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-138. ### How do you define multiline strings
-
-     You can define multiline string literals using the '\\' character followed by line terminator.
-
-     ```javascript
-     var str =
-       'This is a \
-     very lengthy \
-     sentence!';
-     ```
-
-     But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-139. ### What is an app shell model
-
-     An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications. It is useful for getting some initial HTML to the screen fast without a network.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-140. ### Can we define properties for functions
-
-     Yes, We can define properties for functions because functions are also objects.
-
-     ```javascript
-     fn = function (x) {
-       //Function code goes here
-     };
-
-     fn.name = 'John';
-
-     fn.profile = function (y) {
-       //Profile code goes here
-     };
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-141. ### What is the way to find the number of parameters expected by a function
-
-     You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
-
-     ```javascript
-     function sum(num1, num2, num3, num4) {
-       return num1 + num2 + num3 + num4;
-     }
-     sum.length; // 4 is the number of parameters expected.
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-142. ### What is a polyfill
-
-     A polyfill is a piece of JS code used to provide modern functionality on older browsers that do not natively support it. For example, Silverlight plugin polyfill can be used to mimic the functionality of an HTML Canvas element on Microsoft Internet Explorer 7.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-143. ### What are break and continue statements
-
-     The break statement is used to "jump out" of a loop. i.e, It breaks the loop and continues executing the code after the loop.
-
-     ```javascript
-     for (i = 0; i < 10; i++) {
-       if (i === 5) {
-         break;
-       }
-       text += 'Number: ' + i + '<br>';
-     }
-     ```
-
-     The continue statement is used to "jump over" one iteration in the loop. i.e, It breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
-
-     ```javascript
-     for (i = 0; i < 10; i++) {
-       if (i === 5) {
-         continue;
-       }
-       text += 'Number: ' + i + '<br>';
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-144. ### What are js labels
-
-     The label statement allows us to name loops and blocks in JavaScript. We can then use these labels to refer back to the code later. For example, the below code with labels avoids printing the numbers when they are same,
-
-     ```javascript
-     var i, j;
-
-     loop1: for (i = 0; i < 3; i++) {
-       loop2: for (j = 0; j < 3; j++) {
-         if (i === j) {
-           continue loop1;
-         }
-         console.log('i = ' + i + ', j = ' + j);
-       }
-     }
-
-     // Output is:
-     //   "i = 1, j = 0"
-     //   "i = 2, j = 0"
-     //   "i = 2, j = 1"
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-145. ### What are the benefits of keeping declarations at the top
-
-     It is recommended to keep all declarations at the top of each script or function. The benefits of doing this are,
-
-     1. Gives cleaner code
-     2. It provides a single place to look for local variables
-     3. Easy to avoid unwanted global variables
-     4. It reduces the possibility of unwanted re-declarations
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-146. ### What are the benefits of initializing variables
-
-     It is recommended to initialize variables because of the below benefits,
-
-     1. It gives cleaner code
-     2. It provides a single place to initialize variables
-     3. Avoid undefined values in the code
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-147. ### What are the recommendations to create new object
-
-     It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
-
-     1. Assign {} instead of new Object()
-     2. Assign "" instead of new String()
-     3. Assign 0 instead of new Number()
-     4. Assign false instead of new Boolean()
-     5. Assign [] instead of new Array()
-     6. Assign /()/ instead of new RegExp()
-     7. Assign function (){} instead of new Function()
-
-     You can define them as an example,
-
-     ```javascript
-     var v1 = {};
-     var v2 = '';
-     var v3 = 0;
-     var v4 = false;
-     var v5 = [];
-     var v6 = /()/;
-     var v7 = function () {};
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-148. ### How do you define JSON arrays
-
-     JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
-
-     ```javascript
-     "users":[
-       {"firstName":"John", "lastName":"Abrahm"},
-       {"firstName":"Anna", "lastName":"Smith"},
-       {"firstName":"Shane", "lastName":"Warn"}
-     ]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-149. ### How do you generate random integers
-
-     You can use Math.random() with Math.floor() to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
-
-     ```javascript
-     Math.floor(Math.random() * 10) + 1; // returns a random integer from 1 to 10
-     Math.floor(Math.random() * 100) + 1; // returns a random integer from 1 to 100
-     ```
-
-     **Note:** Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-150. ### Can you write a random integers function to print integers with in a range
-
-     Yes, you can create a proper random function to return a random number between min and max (both included)
-
-     ```javascript
-     function randomInteger(min, max) {
-       return Math.floor(Math.random() * (max - min + 1)) + min;
-     }
-     randomInteger(1, 100); // returns a random integer from 1 to 100
-     randomInteger(1, 1000); // returns a random integer from 1 to 1000
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-151. ### What is tree shaking
-
-     Tree shaking is a form of dead code elimination. It means that unused modules will not be included in the bundle during the build process and for that it relies on the static structure of ES2015 module syntax,( i.e. import and export). Initially this has been popularized by the ES2015 module bundler `rollup`.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-152. ### What is the need of tree shaking
-
-     Tree Shaking can significantly reduce the code size in any application. i.e, The less code we send over the wire the more performant the application will be. For example, if we just want to create a “Hello World” Application using SPA frameworks then it will take around a few MBs, but by tree shaking it can bring down the size to just a few hundred KBs. Tree shaking is implemented in Rollup and Webpack bundlers.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-153. ### Is it recommended to use eval
-
-     No, it allows arbitrary code to be run which causes a security problem. As we know that the eval() function is used to run text as code. In most of the cases, it should not be necessary to use it.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-154. ### What is a Regular Expression
-
-     A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
-
-     ```javascript
-     /pattern/modifiers;
-     ```
-
-     For example, the regular expression or search pattern with case-insensitive username would be,
-
-     ```javascript
-     /John/i;
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-155. ### What are the string methods available in Regular expression
-
-     Regular Expressions has two string methods: search() and replace().
-     The search() method uses an expression to search for a match, and returns the position of the match.
-
-     ```javascript
-     var msg = 'Hello John';
-     var n = msg.search(/John/i); // 6
-     ```
-
-     The replace() method is used to return a modified string where the pattern is replaced.
-
-     ```javascript
-     var msg = 'Hello John';
-     var n = msg.replace(/John/i, 'Buttler'); // Hello Buttler
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-156. ### What are modifiers in regular expression
-
-     Modifiers can be used to perform case-insensitive and global searches. Let's list down some of the modifiers,
-
-     | Modifier | Description                                             |
-     | -------- | ------------------------------------------------------- |
-     | i        | Perform case-insensitive matching                       |
-     | g        | Perform a global match rather than stops at first match |
-     | m        | Perform multiline matching                              |
-
-     Let's take an example of global modifier,
-
-     ```javascript
-     var text = 'Learn JS one by one';
-     var pattern = /one/g;
-     var result = text.match(pattern); // one,one
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-157. ### What are regular expression patterns
-
-     Regular Expressions provide a group of patterns in order to match characters. Basically they are categorized into 3 types,
-
-     1. **Brackets:** These are used to find a range of characters.
-        For example, below are some use cases,
-        1. [abc]: Used to find any of the characters between the brackets(a,b,c)
-        2. [0-9]: Used to find any of the digits between the brackets
-        3. (a|b): Used to find any of the alternatives separated with |
-     2. **Metacharacters:** These are characters with a special meaning
-        For example, below are some use cases,
-        1. \\d: Used to find a digit
-        2. \\s: Used to find a whitespace character
-        3. \\b: Used to find a match at the beginning or ending of a word
-     3. **Quantifiers:** These are useful to define quantities
-        For example, below are some use cases,
-        1. n+: Used to find matches for any string that contains at least one n
-        2. n\*: Used to find matches for any string that contains zero or more occurrences of n
-        3. n?: Used to find matches for any string that contains zero or one occurrences of n
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-158. ### What is a RegExp object
-
-     RegExp object is a regular expression object with predefined properties and methods. Let's see the simple usage of RegExp object,
-
-     ```javascript
-     var regexp = new RegExp('\\w+');
-     console.log(regexp);
-     // expected output: /\w+/
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-159. ### How do you search a string for a pattern
-
-     You can use the test() method of regular expression in order to search a string for a pattern, and return true or false depending on the result.
-
-     ```javascript
-     var pattern = /you/;
-     console.log(pattern.test('How are you?')); //true
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-160. ### What is the purpose of exec method
-
-     The purpose of exec method is similar to test method but it executes a search for a match in a specified string and returns a result array, or null instead of returning true/false.
-
-     ```javascript
-     var pattern = /you/;
-     console.log(pattern.exec('How are you?')); //["you", index: 8, input: "How are you?", groups: undefined]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-161. ### How do you change the style of a HTML element
-
-     You can change inline style or classname of a HTML element using javascript
-
-     1. **Using style property:** You can modify inline style using style property
-
-     ```javascript
-     document.getElementById('title').style.fontSize = '30px';
-     ```
-
-     1. **Using ClassName property:** It is easy to modify element class using className property
-
-     ```javascript
-     document.getElementById('title').className = 'custom-title';
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-162. ### What would be the result of 1+2+'3'
-
-     The output is going to be `33`. Since `1` and `2` are numeric values, the result of the first two digits is going to be a numeric value `3`. The next digit is a string type value because of that the addition of numeric value `3` and string type value `3` is just going to be a concatenation value `33`.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-163. ### What is a debugger statement
-
-     The debugger statement invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect.
-     For example, in the below function a debugger statement has been inserted. So
-     execution is paused at the debugger statement just like a breakpoint in the script source.
-
-     ```javascript
-     function getProfile() {
-       // code goes here
-       debugger;
-       // code goes here
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-164. ### What is the purpose of breakpoints in debugging
-
-     You can set breakpoints in the javascript code once the debugger statement is executed and the debugger window pops up. At each breakpoint, javascript will stop executing, and let you examine the JavaScript values. After examining values, you can resume the execution of code using the play button.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-165. ### Can I use reserved words as identifiers
-
-     No, you cannot use the reserved words as variables, labels, object or function names. Let's see one simple example,
-
-     ```javascript
-     var else = "hello"; // Uncaught SyntaxError: Unexpected token else
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-166. ### How do you detect a mobile browser
-
-     You can use regex which returns a true or false value depending on whether or not the user is browsing with a mobile.
-
-     ```javascript
-     window.mobilecheck = function () {
-       var mobileCheck = false;
-       (function (a) {
-         if (
-           /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
-             a
-           ) ||
-           /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(
-             a.substr(0, 4)
-           )
-         )
-           mobileCheck = true;
-       })(navigator.userAgent || navigator.vendor || window.opera);
-       return mobileCheck;
-     };
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-167. ### How do you detect a mobile browser without regexp
-
-     You can detect mobile browsers by simply running through a list of devices and checking if the useragent matches anything. This is an alternative solution for RegExp usage,
-
-     ```javascript
-     function detectmob() {
-       if (
-         navigator.userAgent.match(/Android/i) ||
-         navigator.userAgent.match(/webOS/i) ||
-         navigator.userAgent.match(/iPhone/i) ||
-         navigator.userAgent.match(/iPad/i) ||
-         navigator.userAgent.match(/iPod/i) ||
-         navigator.userAgent.match(/BlackBerry/i) ||
-         navigator.userAgent.match(/Windows Phone/i)
-       ) {
-         return true;
-       } else {
-         return false;
-       }
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-168. ### How do you get the image width and height using JS
-
-     You can programmatically get the image and check the dimensions(width and height) using Javascript.
-
-     ```javascript
-     var img = new Image();
-     img.onload = function () {
-       console.log(this.width + 'x' + this.height);
-     };
-     img.src = 'http://www.google.com/intl/en_ALL/images/logo.gif';
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-169. ### How do you make synchronous HTTP request
-
-     Browsers provide an XMLHttpRequest object which can be used to make synchronous HTTP requests from JavaScript
-
-     ```javascript
-     function httpGet(theUrl) {
-       var xmlHttpReq = new XMLHttpRequest();
-       xmlHttpReq.open('GET', theUrl, false); // false for synchronous request
-       xmlHttpReq.send(null);
-       return xmlHttpReq.responseText;
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-170. ### How do you make asynchronous HTTP request
-
-     Browsers provide an XMLHttpRequest object which can be used to make asynchronous HTTP requests from JavaScript by passing the 3rd parameter as true.
-
-     ```javascript
-     function httpGetAsync(theUrl, callback) {
-       var xmlHttpReq = new XMLHttpRequest();
-       xmlHttpReq.onreadystatechange = function () {
-         if (xmlHttpReq.readyState == 4 && xmlHttpReq.status == 200)
-           callback(xmlHttpReq.responseText);
-       };
-       xmlHttp.open('GET', theUrl, true); // true for asynchronous
-       xmlHttp.send(null);
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-171. ### How do you convert date to another timezone in javascript
-
-     You can use the toLocaleString() method to convert dates in one timezone to another. For example, let's convert current date to British English timezone as below,
-
-     ```javascript
-     console.log(event.toLocaleString('en-GB', { timeZone: 'UTC' })); //29/06/2019, 09:56:00
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-172. ### What are the properties used to get size of window
-
-     You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let's use them combination of these properties to calculate the size of a window or document,
-
-     ```javascript
-     var width =
-       window.innerWidth ||
-       document.documentElement.clientWidth ||
-       document.body.clientWidth;
-
-     var height =
-       window.innerHeight ||
-       document.documentElement.clientHeight ||
-       document.body.clientHeight;
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-173. ### What is a conditional operator in javascript
-
-     The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statements.
-
-     ```javascript
-     var isAuthenticated = false;
-     console.log(
-       isAuthenticated ? 'Hello, welcome' : 'Sorry, you are not authenticated'
-     ); //Sorry, you are not authenticated
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-174. ### Can you apply chaining on conditional operator
-
-     Yes, you can apply chaining on conditional operators similar to if … else if … else if … else chain. The syntax is going to be as below,
-
-     ```javascript
-     function traceValue(someParam) {
-       return condition1
-         ? value1
-         : condition2
-         ? value2
-         : condition3
-         ? value3
-         : value4;
-     }
-
-     // The above conditional operator is equivalent to:
-
-     function traceValue(someParam) {
-       if (condition1) {
-         return value1;
-       } else if (condition2) {
-         return value2;
-       } else if (condition3) {
-         return value3;
-       } else {
-         return value4;
-       }
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-175. ### What are the ways to execute javascript after page load
-
-     You can execute javascript after page load in many different ways,
-
-     1. **window.onload:**
-
-     ```javascript
-     window.onload = function ...
-     ```
-
-     1. **document.onload:**
-
-     ```javascript
-     document.onload = function ...
-     ```
-
-     1. **body onload:**
-
-     ```javascript
-     <body onload="script();">
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-176. ### What is the difference between proto and prototype
-
-     The `__proto__` object is the actual object that is used in the lookup chain to resolve methods, etc. Whereas `prototype` is the object that is used to build `__proto__` when you create an object with new
-
-     ```javascript
-     new Employee().__proto__ === Employee.prototype;
-     new Employee().prototype === undefined;
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-177. ### Give an example where do you really need semicolon
-
-     It is recommended to use semicolons after every statement in JavaScript. For example, in the below case it throws an error ".. is not a function" at runtime due to missing semicolon.
-
-     ```javascript
-     // define a function
-     var fn = (function () {
-       //...
-     })(
-       // semicolon missing at this line
-
-       // then execute some code inside a closure
-       function () {
-         //...
-       }
-     )();
-     ```
-
-     and it will be interpreted as
-
-     ```javascript
-     var fn = (function () {
-       //...
-     })(function () {
-       //...
-     })();
-     ```
-
-     In this case, we are passing the second function as an argument to the first function and then trying to call the result of the first function call as a function. Hence, the second function will fail with a "... is not a function" error at runtime.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-178. ### What is a freeze method
-
-     The **freeze()** method is used to freeze an object. Freezing an object does not allow adding new properties to an object,prevents from removing and prevents changing the enumerability, configurability, or writability of existing properties. i.e, It returns the passed object and does not create a frozen copy.
-
-     ```javascript
-     const obj = {
-       prop: 100,
-     };
-
-     Object.freeze(obj);
-     obj.prop = 200; // Throws an error in strict mode
-
-     console.log(obj.prop); //100
-     ```
-
-     **Note:** It causes a TypeError if the argument passed is not an object.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-179. ### What is the purpose of freeze method
-
-     Below are the main benefits of using freeze method,
-
-     1. It is used for freezing objects and arrays.
-     2. It is used to make an object immutable.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-180. ### Why do I need to use freeze method
-
-     In the Object-oriented paradigm, an existing API contains certain elements that are not intended to be extended, modified, or re-used outside of their current context. Hence it works as the `final` keyword which is used in various languages.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-181. ### How do you detect a browser language preference
-
-     You can use navigator object to detect a browser language preference as below,
-
-     ```javascript
-     var language =
-       (navigator.languages && navigator.languages[0]) || // Chrome / Firefox
-       navigator.language || // All browsers
-       navigator.userLanguage; // IE <= 10
-
-     console.log(language);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-182. ### How to convert string to title case with javascript
-
-     Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
-
-     ```javascript
-     function toTitleCase(str) {
-       return str.replace(/\w\S*/g, function (txt) {
-         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-       });
-     }
-     toTitleCase('good morning john'); // Good Morning John
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-183. ### How do you detect javascript disabled in the page
-
-     You can use the `<noscript>` tag to detect javascript disabled or not. The code block inside `<noscript>` gets executed when JavaScript is disabled, and is typically used to display alternative content when the page generated in JavaScript.
-
-     ```javascript
-     <script type="javascript">
-         // JS related code goes here
-     </script>
-     <noscript>
-         <a href="next_page.html?noJS=true">JavaScript is disabled in the page. Please click Next Page</a>
-     </noscript>
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-184. ### What are various operators supported by javascript
-
-     An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
-
-     1. **Arithmetic Operators:** Includes + (Addition),– (Subtraction), \* (Multiplication), / (Division), % (Modulus), + + (Increment) and – – (Decrement)
-     2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to)
-     3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT)
-     4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), – = (Subtract and Assignment Operator), \*= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment)
-     5. **Ternary Operators:** It includes conditional(: ?) Operator
-     6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable`
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-185. ### What is a rest parameter
-
-     Rest parameter is an improved way to handle function parameters which allows us to represent an indefinite number of arguments as an array. The syntax would be as below,
-
-     ```javascript
-     function f(a, b, ...theArgs) {
-       // ...
-     }
-     ```
-
-     For example, let's take a sum example to calculate on dynamic number of parameters,
-
-     ```javascript
-     function total(…args){
-     let sum = 0;
-     for(let i of args){
-     sum+=i;
-     }
-     return sum;
-     }
-     console.log(fun(1,2)); //3
-     console.log(fun(1,2,3)); //6
-     console.log(fun(1,2,3,4)); //13
-     console.log(fun(1,2,3,4,5)); //15
-     ```
-
-     **Note:** Rest parameter is added in ES2015 or ES6
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-186. ### What happens if you do not use rest parameter as a last argument
-
-     The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
-
-     ```javascript
-     function someFunc(a,…b,c){
-     //You code goes here
-     return;
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-187. ### What are the bitwise operators available in javascript
-
-     Below are the list of bitwise logical operators used in JavaScript
-
-     1. Bitwise AND ( & )
-     2. Bitwise OR ( | )
-     3. Bitwise XOR ( ^ )
-     4. Bitwise NOT ( ~ )
-     5. Left Shift ( << )
-     6. Sign Propagating Right Shift ( >> )
-     7. Zero fill Right Shift ( >>> )
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-188. ### What is a spread operator
-
-     Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. Let's take an example to see this behavior,
-
-     ```javascript
-     function calculateSum(x, y, z) {
-       return x + y + z;
-     }
-
-     const numbers = [1, 2, 3];
-
-     console.log(calculateSum(...numbers)); // 6
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-189. ### How do you determine whether object is frozen or not
-
-     Object.isFrozen() method is used to determine if an object is frozen or not.An object is frozen if all of the below conditions hold true,
-
-     1. If it is not extensible.
-     2. If all of its properties are non-configurable.
-     3. If all its data properties are non-writable.
-        The usage is going to be as follows,
-
-     ```javascript
-     const object = {
-       property: 'Welcome JS world',
-     };
-     Object.freeze(object);
-     console.log(Object.isFrozen(object));
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-190. ### How do you determine two values same or not using object
-
-     The Object.is() method determines whether two values are the same value. For example, the usage with different types of values would be,
-
-     ```javascript
-     Object.is('hello', 'hello'); // true
-     Object.is(window, window); // true
-     Object.is([], []); // false
-     ```
-
-     Two values are the same if one of the following holds:
-
-     1. both undefined
-     2. both null
-     3. both true or both false
-     4. both strings of the same length with the same characters in the same order
-     5. both the same object (means both object have same reference)
-     6. both numbers and
-        both +0
-        both -0
-        both NaN
-        both non-zero and both not NaN and both have the same value.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-191. ### What is the purpose of using object is method
-
-     Some of the applications of Object's `is` method are follows,
-
-     1. It is used for comparison of two strings.
-     2. It is used for comparison of two numbers.
-     3. It is used for comparing the polarity of two numbers.
-     4. It is used for comparison of two objects.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-192. ### How do you copy properties from one object to other
-
-     You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object. It returns the target object which has properties and values copied from the target object. The syntax would be as below,
-
-     ```javascript
-     Object.assign(target, ...sources);
-     ```
-
-     Let's take example with one source and one target object,
-
-     ```javascript
-     const target = { a: 1, b: 2 };
-     const source = { b: 3, c: 4 };
-
-     const returnedTarget = Object.assign(target, source);
-
-     console.log(target); // { a: 1, b: 3, c: 4 }
-
-     console.log(returnedTarget); // { a: 1, b: 3, c: 4 }
-     ```
-
-     As observed in the above code, there is a common property(`b`) from source to target so it's value has been overwritten.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-193. ### What are the applications of assign method
-
-     Below are the some of main applications of Object.assign() method,
-
-     1. It is used for cloning an object.
-     2. It is used to merge objects with the same properties.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-194. ### What is a proxy object
-
-     The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
-
-     ```javascript
-     var p = new Proxy(target, handler);
-     ```
-
-     Let's take an example of proxy object,
-
-     ```javascript
-     var handler = {
-       get: function (obj, prop) {
-         return prop in obj ? obj[prop] : 100;
-       },
-     };
-
-     var p = new Proxy({}, handler);
-     p.a = 10;
-     p.b = null;
-
-     console.log(p.a, p.b); // 10, null
-     console.log('c' in p, p.c); // false, 100
-     ```
-
-     In the above code, it uses `get` handler which define the behavior of the proxy when an operation is performed on it
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-195. ### What is the purpose of seal method
-
-     The **Object.seal()** method is used to seal an object, by preventing new properties from being added to it and marking all existing properties as non-configurable. But values of present properties can still be changed as long as they are writable. Let's see the below example to understand more about seal() method
-
-     ```javascript
-     const object = {
-       property: 'Welcome JS world',
-     };
-     Object.seal(object);
-     object.property = 'Welcome to object world';
-     console.log(Object.isSealed(object)); // true
-     delete object.property; // You cannot delete when sealed
-     console.log(object.property); //Welcome to object world
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-196. ### What are the applications of seal method
-
-     Below are the main applications of Object.seal() method,
-
-     1. It is used for sealing objects and arrays.
-     2. It is used to make an object immutable.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-197. ### What are the differences between freeze and seal methods
-
-     If an object is frozen using the Object.freeze() method then its properties become immutable and no changes can be made in them whereas if an object is sealed using the Object.seal() method then the changes can be made in the existing properties of the object.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-198. ### How do you determine if an object is sealed or not
-
-     The Object.isSealed() method is used to determine if an object is sealed or not. An object is sealed if all of the below conditions hold true
-
-     1. If it is not extensible.
-     2. If all of its properties are non-configurable.
-     3. If it is not removable (but not necessarily non-writable).
-        Let's see it in the action
-
-     ```javascript
-     const object = {
-       property: 'Hello, Good morning',
-     };
-
-     Object.seal(object); // Using seal() method to seal the object
-
-     console.log(Object.isSealed(object)); // checking whether the object is sealed or not
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-199. ### How do you get enumerable key and value pairs
-
-     The Object.entries() method is used to return an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop. Let's see the functionality of object.entries() method in an example,
-
-     ```javascript
-     const object = {
-       a: 'Good morning',
-       b: 100,
-     };
-
-     for (let [key, value] of Object.entries(object)) {
-       console.log(`${key}: ${value}`); // a: 'Good morning'
-       // b: 100
-     }
-     ```
-
-     **Note:** The order is not guaranteed as object defined.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-200. ### What is the main difference between Object.values and Object.entries method
-
-     The Object.values() method's behavior is similar to Object.entries() method but it returns an array of values instead [key,value] pairs.
-
-     ```javascript
-     const object = {
-       a: 'Good morning',
-       b: 100,
-     };
-
-     for (let value of Object.values(object)) {
-       console.log(`${value}`); // 'Good morning'
-       100;
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-201. ### How can you get the list of keys of any object
-
-     You can use the `Object.keys()` method which is used to return an array of a given object's own property names, in the same order as we get with a normal loop. For example, you can get the keys of a user object,
-
-     ```javascript
-     const user = {
-       name: 'John',
-       gender: 'male',
-       age: 40,
-     };
-
-     console.log(Object.keys(user)); //['name', 'gender', 'age']
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-202. ### How do you create an object with prototype
-
-     The Object.create() method is used to create a new object with the specified prototype object and properties. i.e, It uses an existing object as the prototype of the newly created object. It returns a new object with the specified prototype object and properties.
-
-     ```javascript
-     const user = {
-       name: 'John',
-       printInfo: function () {
-         console.log(`My name is ${this.name}.`);
-       },
-     };
-
-     const admin = Object.create(user);
-
-     admin.name = 'Nick'; // Remember that "name" is a property set on "admin" but not on "user" object
-
-     admin.printInfo(); // My name is Nick
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-203. ### What is a WeakSet
-
-     WeakSet is used to store a collection of weakly(weak references) held objects. The syntax would be as follows,
-
-     ```javascript
-     new WeakSet([iterable]);
-     ```
-
-     Let's see the below example to explain it's behavior,
-
-     ```javascript
-     var ws = new WeakSet();
-     var user = {};
-     ws.add(user);
-     ws.has(user); // true
-     ws.delete(user); // removes user from the set
-     ws.has(user); // false, user has been removed
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-204. ### What are the differences between WeakSet and Set
-
-     The main difference is that references to objects in Set are strong while references to objects in WeakSet are weak. i.e, An object in WeakSet can be garbage collected if there is no other reference to it.
-     Other differences are,
-
-     1. Sets can store any value Whereas WeakSets can store only collections of objects
-     2. WeakSet does not have size property unlike Set
-     3. WeakSet does not have methods such as clear, keys, values, entries, forEach.
-     4. WeakSet is not iterable.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-205. ### List down the collection of methods available on WeakSet
-
-     Below are the list of methods available on WeakSet,
-
-     1. add(value): A new object is appended with the given value to the weakset
-     2. delete(value): Deletes the value from the WeakSet collection.
-     3. has(value): It returns true if the value is present in the WeakSet Collection, otherwise it returns false.
-
-     Let's see the functionality of all the above methods in an example,
-
-     ```javascript
-     var weakSetObject = new WeakSet();
-     var firstObject = {};
-     var secondObject = {};
-     // add(value)
-     weakSetObject.add(firstObject);
-     weakSetObject.add(secondObject);
-     console.log(weakSetObject.has(firstObject)); //true
-     weakSetObject.delete(secondObject);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-206. ### What is a WeakMap
-
-     The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. In this case, keys must be objects and the values can be arbitrary values. The syntax is looking like as below,
-
-     ```javascript
-     new WeakMap([iterable]);
-     ```
-
-     Let's see the below example to explain it's behavior,
-
-     ```javascript
-     var ws = new WeakMap();
-     var user = {};
-     ws.set(user);
-     ws.has(user); // true
-     ws.delete(user); // removes user from the map
-     ws.has(user); // false, user has been removed
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-207. ### What are the differences between WeakMap and Map
-
-     The main difference is that references to key objects in Map are strong while references to key objects in WeakMap are weak. i.e, A key object in WeakMap can be garbage collected if there is no other reference to it.
-     Other differences are,
-
-     1. Maps can store any key type Whereas WeakMaps can store only collections of key objects
-     2. WeakMap does not have size property unlike Map
-     3. WeakMap does not have methods such as clear, keys, values, entries, forEach.
-     4. WeakMap is not iterable.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-208. ### List down the collection of methods available on WeakMap
-
-     Below are the list of methods available on WeakMap,
-
-     1. set(key, value): Sets the value for the key in the WeakMap object. Returns the WeakMap object.
-     2. delete(key): Removes any value associated to the key.
-     3. has(key): Returns a Boolean asserting whether a value has been associated to the key in the WeakMap object or not.
-     4. get(key): Returns the value associated to the key, or undefined if there is none.
-        Let's see the functionality of all the above methods in an example,
-
-     ```javascript
-     var weakMapObject = new WeakMap();
-     var firstObject = {};
-     var secondObject = {};
-     // set(key, value)
-     weakMapObject.set(firstObject, 'John');
-     weakMapObject.set(secondObject, 100);
-     console.log(weakMapObject.has(firstObject)); //true
-     console.log(weakMapObject.get(firstObject)); // John
-     weakMapObject.delete(secondObject);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-209. ### What is the purpose of uneval
-
-     The uneval() is an inbuilt function which is used to create a string representation of the source code of an Object. It is a top-level function and is not associated with any object. Let's see the below example to know more about it's functionality,
-
-     ```javascript
-     var a = 1;
-     uneval(a); // returns a String containing 1
-     uneval(function user() {}); // returns "(function user(){})"
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-210. ### How do you encode an URL
-
-     The encodeURI() function is used to encode complete URI which has special characters except (, / ? : @ & = + $ #) characters.
-
-     ```javascript
-     var uri = 'https://mozilla.org/?x=шеллы';
-     var encoded = encodeURI(uri);
-     console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-211. ### How do you decode an URL
-
-     The decodeURI() function is used to decode a Uniform Resource Identifier (URI) previously created by encodeURI().
-
-     ```javascript
-     var uri = 'https://mozilla.org/?x=шеллы';
-     var encoded = encodeURI(uri);
-     console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
-     try {
-       console.log(decodeURI(encoded)); // "https://mozilla.org/?x=шеллы"
-     } catch (e) {
-       // catches a malformed URI
-       console.error(e);
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-212. ### How do you print the contents of web page
-
-     The window object provided a print() method which is used to print the contents of the current window. It opens a Print dialog box which lets you choose between various printing options. Let's see the usage of print method in an example,
-
-     ```html
-     <input type="button" value="Print" onclick="window.print()" />
-     ```
-
-     **Note:** In most browsers, it will block while the print dialog is open.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-213. ### What is the difference between uneval and eval
-
-     The `uneval` function returns the source of a given object; whereas the `eval` function does the opposite, by evaluating that source code in a different memory area. Let's see an example to clarify the difference,
-
-     ```javascript
-     var msg = uneval(function greeting() {
-       return 'Hello, Good morning';
-     });
-     var greeting = eval(msg);
-     greeting(); // returns "Hello, Good morning"
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-214. ### What is an anonymous function
-
-     An anonymous function is a function without a name! Anonymous functions are commonly assigned to a variable name or used as a callback function. The syntax would be as below,
-
-     ```javascript
-     function (optionalParameters) {
-       //do something
-     }
-
-     const myFunction = function(){ //Anonymous function assigned to a variable
-       //do something
-     };
-
-     [1, 2, 3].map(function(element){ //Anonymous function used as a callback function
-       //do something
-     });
-     ```
-
-     Let's see the above anonymous function in an example,
-
-     ```javascript
-     var x = function (a, b) {
-       return a * b;
-     };
-     var z = x(5, 10);
-     console.log(z); // 50
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-215. ### What is the precedence order between local and global variables
-
-     A local variable takes precedence over a global variable with the same name. Let's see this behavior in an example.
-
-     ```javascript
-     var msg = 'Good morning';
-     function greeting() {
-       msg = 'Good Evening';
-       console.log(msg);
-     }
-     greeting();
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-216. ### What are javascript accessors
-
-     ECMAScript 5 introduced javascript object accessors or computed properties through getters and setters. Getters uses the `get` keyword whereas Setters uses the `set` keyword.
-
-     ```javascript
-     var user = {
-       firstName: "John",
-       lastName : "Abraham",
-       language : "en",
-       get lang() {
-         return this.language;
-       }
-       set lang(lang) {
-       this.language = lang;
-       }
-     };
-     console.log(user.lang); // getter access lang as en
-     user.lang = 'fr';
-     console.log(user.lang); // setter used to set lang as fr
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-217. ### How do you define property on Object constructor
-
-     The Object.defineProperty() static method is used to define a new property directly on an object, or modify an existing property on an object, and returns the object. Let's see an example to know how to define property,
-
-     ```javascript
-     const newObject = {};
-
-     Object.defineProperty(newObject, 'newProperty', {
-       value: 100,
-       writable: false,
-     });
-
-     console.log(newObject.newProperty); // 100
-
-     newObject.newProperty = 200; // It throws an error in strict mode due to writable setting
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-218. ### What is the difference between get and defineProperty
-
-     Both have similar results until unless you use classes. If you use `get` the property will be defined on the prototype of the object whereas using `Object.defineProperty()` the property will be defined on the instance it is applied to.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-219. ### What are the advantages of Getters and Setters
-
-     Below are the list of benefits of Getters and Setters,
-
-     1. They provide simpler syntax
-     2. They are used for defining computed properties, or accessors in JS.
-     3. Useful to provide equivalence relation between properties and methods
-     4. They can provide better data quality
-     5. Useful for doing things behind the scenes with the encapsulated logic.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-220. ### Can I add getters and setters using defineProperty method
-
-     Yes, You can use the `Object.defineProperty()` method to add Getters and Setters. For example, the below counter object uses increment, decrement, add and subtract properties,
-
-     ```javascript
-     var obj = { counter: 0 };
-
-     // Define getters
-     Object.defineProperty(obj, 'increment', {
-       get: function () {
-         this.counter++;
-       },
-     });
-     Object.defineProperty(obj, 'decrement', {
-       get: function () {
-         this.counter--;
-       },
-     });
-
-     // Define setters
-     Object.defineProperty(obj, 'add', {
-       set: function (value) {
-         this.counter += value;
-       },
-     });
-     Object.defineProperty(obj, 'subtract', {
-       set: function (value) {
-         this.counter -= value;
-       },
-     });
-
-     obj.add = 10;
-     obj.subtract = 5;
-     console.log(obj.increment); //6
-     console.log(obj.decrement); //5
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-221. ### What is the purpose of switch-case
-
-     The switch case statement in JavaScript is used for decision making purposes. In a few cases, using the switch case statement is going to be more convenient than if-else statements. The syntax would be as below,
-
-     ```javascript
-     switch (expression)
-     {
-         case value1:
-             statement1;
-             break;
-         case value2:
-             statement2;
-             break;
-         .
-         .
-         case valueN:
-             statementN;
-             break;
-         default:
-             statementDefault;
-     }
-     ```
-
-     The above multi-way branch statement provides an easy way to dispatch execution to different parts of code based on the value of the expression.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-222. ### What are the conventions to be followed for the usage of switch case
-
-     Below are the list of conventions should be taken care,
-
-     1. The expression can be of type either number or string.
-     2. Duplicate values are not allowed for the expression.
-     3. The default statement is optional. If the expression passed to switch does not match with any case value then the statement within default case will be executed.
-     4. The break statement is used inside the switch to terminate a statement sequence.
-     5. The break statement is optional. But if it is omitted, the execution will continue on into the next case.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-223. ### What are primitive data types
-
-     A primitive data type is data that has a primitive value (which has no properties or methods). There are 7 types of primitive data types.
-
-     1. string
-     2. number
-     3. boolean
-     4. null
-     5. undefined
-     6. bigint
-     7. symbol
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-224. ### What are the different ways to access object properties
-
-     There are 3 possible ways for accessing the property of an object.
-
-     1. **Dot notation:** It uses dot for accessing the properties
-
-     ```javascript
-     objectName.property;
-     ```
-
-     1. **Square brackets notation:** It uses square brackets for property access
-
-     ```javascript
-     objectName['property'];
-     ```
-
-     1. **Expression notation:** It uses expression in the square brackets
-
-     ```javascript
-     objectName[expression];
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-225. ### What are the function parameter rules
-
-     JavaScript functions follow below rules for parameters,
-
-     1. The function definitions do not specify data types for parameters.
-     2. Do not perform type checking on the passed arguments.
-     3. Do not check the number of arguments received.
-        i.e, The below function follows the above rules,
-
-     ```javascript
-     function functionName(parameter1, parameter2, parameter3) {
-       console.log(parameter1); // 1
-     }
-     functionName(1);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-226. ### What is an error object
-
-     An error object is a built in error object that provides error information when an error occurs. It has two properties: name and message. For example, the below function logs error details,
-
-     ```javascript
-     try {
-       greeting('Welcome');
-     } catch (err) {
-       console.log(err.name + '<br>' + err.message);
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-227. ### When you get a syntax error
-
-     A SyntaxError is thrown if you try to evaluate code with a syntax error. For example, the below missing quote for the function parameter throws a syntax error
-
-     ```javascript
-     try {
-       eval("greeting('welcome)"); // Missing ' will produce an error
-     } catch (err) {
-       console.log(err.name);
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-228. ### What are the different error names from error object
-
-     There are 6 different types of error names returned from error object,
-     | Error Name | Description |
-     |---- | ---------
-     | EvalError | An error has occurred in the eval() function |
-     | RangeError | An error has occurred with a number "out of range" |
-     | ReferenceError | An error due to an illegal reference|
-     | SyntaxError | An error due to a syntax error|
-     | TypeError | An error due to a type error |
-     | URIError | An error due to encodeURI() |
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-229. ### What are the various statements in error handling
-
-     Below are the list of statements used in an error handling,
-
-     1. **try:** This statement is used to test a block of code for errors
-     2. **catch:** This statement is used to handle the error
-     3. **throw:** This statement is used to create custom errors.
-     4. **finally:** This statement is used to execute code after try and catch regardless of the result.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-230. ### What are the two types of loops in javascript
-
-     1. **Entry Controlled loops:** In this kind of loop type, the test condition is tested before entering the loop body. For example, For Loop and While Loop comes under this category.
-     2. **Exit Controlled Loops:** In this kind of loop type, the test condition is tested or evaluated at the end of the loop body. i.e, the loop body will execute at least once irrespective of test condition true or false. For example, do-while loop comes under this category.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-231. ### What is nodejs
-
-     Node.js is a server-side platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. It is an event-based, non-blocking, asynchronous I/O runtime that uses Google's V8 JavaScript engine and libuv library.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-232. ### What is an Intl object
-
-     The Intl object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. It provides access to several constructors and language sensitive functions.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-233. ### How do you perform language specific date and time formatting
-
-     You can use the `Intl.DateTimeFormat` object which is a constructor for objects that enable language-sensitive date and time formatting. Let's see this behavior with an example,
-
-     ```javascript
-     var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
-     console.log(new Intl.DateTimeFormat('en-GB').format(date)); // 07/08/2019
-     console.log(new Intl.DateTimeFormat('en-AU').format(date)); // 07/08/2019
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-234. ### What is an Iterator
-
-     An iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a `next()` method which returns an object with two properties: `value` (the next value in the sequence) and `done` (which is true if the last value in the sequence has been consumed).
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-235. ### How does synchronous iteration works
-
-     Synchronous iteration was introduced in ES6 and it works with below set of components,
-
-     **Iterable:** It is an object which can be iterated over via a method whose key is Symbol.iterator.
-     **Iterator:** It is an object returned by invoking `[Symbol.iterator]()` on an iterable. This iterator object wraps each iterated element in an object and returns it via `next()` method one by one.
-     **IteratorResult:** It is an object returned by `next()` method. The object contains two properties; the `value` property contains an iterated element and the `done` property determines whether the element is the last element or not.
-
-     Let's demonstrate synchronous iteration with an array as below,
-
-     ```javascript
-     const iterable = ['one', 'two', 'three'];
-     const iterator = iterable[Symbol.iterator]();
-     console.log(iterator.next()); // { value: 'one', done: false }
-     console.log(iterator.next()); // { value: 'two', done: false }
-     console.log(iterator.next()); // { value: 'three', done: false }
-     console.log(iterator.next()); // { value: 'undefined, done: true }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-236. ### What is an event loop
-
-     The Event Loop is a queue of callback functions. When an async function executes, the callback function is pushed into the queue. The JavaScript engine doesn't start processing the event loop until the async function has finished executing the code.
-     **Note:** It allows Node.js to perform non-blocking I/O operations even though JavaScript is single-threaded.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-237. ### What is call stack
-
-     Call Stack is a data structure for javascript interpreters to keep track of function calls in the program. It has two major actions,
-
-     1. Whenever you call a function for its execution, you are pushing it to the stack.
-     2. Whenever the execution is completed, the function is popped out of the stack.
-
-     Let's take an example and it's state representation in a diagram format
-
-     ```javascript
-     function hungry() {
-       eatFruits();
-     }
-     function eatFruits() {
-       return "I'm eating fruits";
-     }
-
-     // Invoke the `hungry` function
-     hungry();
-     ```
-
-     The above code processed in a call stack as below,
-
-     1. Add the `hungry()` function to the call stack list and execute the code.
-     2. Add the `eatFruits()` function to the call stack list and execute the code.
-     3. Delete the `eatFruits()` function from our call stack list.
-     4. Delete the `hungry()` function from the call stack list since there are no items anymore.
-
-     ![Screenshot](images/call-stack.png)
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-238. ### What is an event queue
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-239. ### What is a decorator
-
-     A decorator is an expression that evaluates to a function and that takes the target, name, and decorator descriptor as arguments. Also, it optionally returns a decorator descriptor to install on the target object. Let's define admin decorator for user class at design time,
-
-     ```javascript
-     function admin(isAdmin) {
-        return function(target) {
-            target.isAdmin = isAdmin;
+      for (var key in object) {
+        if (object.hasOwnProperty(key)) {
+          console.log(key + ' -> ' + object[key]); // k1 -> value1 ...
         }
-     }
+      }
+      ```
 
-     @admin(true)
-     class User() {
-     }
-     console.log(User.isAdmin); //true
+      **[⬆ Back to Top](#table-of-contents)**
 
-      @admin(false)
+127.  ### Bo'sh ob'ektni qanday sinab ko'rasiz
+
+      ECMAScript versiyalariga asoslangan turli xil echimlar mavjud
+
+      1.  **Using Object entries(ECMA 7+):** Siz konstruktor turi bilan birga ob'ekt yozuvlari uzunligidan foydalanishingiz mumkin.
+
+      ```javascript
+      Object.entries(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
+      ```
+
+      1.  **Using Object keys(ECMA 5+):** Konstruktor turi bilan birga ob'ekt tugmachalari uzunligidan ham foydalanishingiz mumkin.
+
+      ```javascript
+      Object.keys(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
+      ```
+
+      1.  **Using for-in with hasOwnProperty(Pre-ECMA 5):** bilan for-in dan foydalanish: hasOwnProperty bilan birga for-in tsiklidan foydalanishingiz mumkin
+
+      ```javascript
+      function isEmpty(obj) {
+        for (var prop in obj) {
+          if (obj.hasOwnProperty(prop)) {
+            return false;
+          }
+        }
+
+        return JSON.stringify(obj) === JSON.stringify({});
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+128.  ### Argumentlar obyekti nima
+
+      Argumentlar obyekti funksiyalar ichida foydalanish mumkin boʻlgan massivga oʻxshash obyekt boʻlib, u funksiyaga uzatilgan argumentlar qiymatlarini oʻz ichiga oladi. Masalan, sum funktsiyasi ichida argumentlar ob'ektidan qanday foydalanishni ko'rib chiqamiz,
+
+      ```javascript
+      function sum() {
+        var total = 0;
+        for (var i = 0, len = arguments.length; i < len; ++i) {
+          total += arguments[i];
+        }
+        return total;
+      }
+
+      sum(1, 2, 3); // returns 6
+      ```
+
+      **Note:** Argumentlar obyektida massiv usullarini qo‘llay olmaysiz. Lekin siz quyidagi kabi oddiy massivga aylantira olasiz.
+
+      ```javascript
+      var argsArray = Array.prototype.slice.call(arguments);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+129.  ### Qanday qilib satrning birinchi harfini katta harf bilan yozish mumkin
+
+      Siz bosh harfdagi birinchi harf bilan satr yaratish uchun charAt, toUpperCase va slice usullari kabi qator usullardan foydalanadigan funksiya yaratishingiz mumkin.
+
+      ```javascript
+      function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+130.  ### For loopning qanday ijobiy va salbiy tomonlari bor
+
+      For-loop javascriptda tez-tez ishlatiladigan iteratsiya sintaksisidir. Buning ham ijobiy, ham salbiy tomonlari bor
+
+      #### Pros
+
+      1.  Har qanday muhitda ishlaydi
+      2.  Siz tanaffus va davom etish oqimini boshqarish bayonotlaridan foydalanishingiz mumkin
+
+      #### Cons
+
+      1.  Too verbose
+      2.  Imperative
+      3.  You might face one-by-off errors
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+131.  ### Joriy sanani javascriptda qanday ko'rsatasiz
+
+      new Date()Joriy sana va vaqtni o'z ichiga olgan yangi Sana ob'ektini yaratish uchun foydalanishingiz mumkin . Masalan, joriy sanani mm/dd/yyyy da ko'rsatamiz
+
+      ```javascript
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+
+      today = mm + '/' + dd + '/' + yyyy;
+      document.write(today);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+132.  ### Ikki sana ob'ektini qanday solishtirasiz
+
+      Taqqoslash operatorlari (==, !=, === va !== operatorlari) oʻrniga sana qiymatlarini solishtirish uchun date.getTime() usulidan foydalanishingiz kerak.
+
+      ```javascript
+      var d1 = new Date();
+      var d2 = new Date(d1);
+      console.log(d1.getTime() === d2.getTime()); //True
+      console.log(d1 === d2); // False
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+133.  ### Satrning boshqa satr bilan boshlanishini qanday tekshirish mumkin
+
+      String.prototype.startsWith()Satrning boshqa satr bilan boshlanishi yoki boshlanmasligini tekshirish uchun ECMAScript 6 usulidan foydalanishingiz mumkin . Ammo u hali barcha brauzerlarda qo'llab-quvvatlanmaydi. Keling, ushbu foydalanishni ko'rish uchun misolni ko'rib chiqaylik,
+
+      ```javascript
+      'Good morning'.startsWith('Good'); // true
+      'Good morning'.startsWith('morning'); // false
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+134.  ### Javascriptda satrni(string) qanday kesish mumkin
+
+      JavaScript satrning boshida yoki oxirida mavjud bo'lgan bo'shliqlarni kesish uchun satr turlari bo'yicha kesish usulini taqdim etdi.
+
+      ```javascript
+      '  Hello World   '.trim(); //Hello World
+      ```
+
+      Agar brauzeringiz(<IE9) bu usulni qo'llab-quvvatlamasa, quyida polyfilldan foydalanishingiz mumkin.
+
+      ```javascript
+      if (!String.prototype.trim) {
+        (function () {
+          // Make sure we trim BOM and NBSP
+          var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+          String.prototype.trim = function () {
+            return this.replace(rtrim, '');
+          };
+        })();
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+135.  ### Javascriptda kalit , qiymat juftligini qanday qo'shasiz
+
+      Ob'ektga yangi xususiyatlar qo'shishning ikkita mumkin bo'lgan echimi mavjud. Ushbu yechimlarni tushuntirish uchun oddiy ob'ektni olaylik.
+
+      ```javascript
+      var object = {
+        key1: value1,
+        key2: value2,
+      };
+      ```
+
+      1.  **Using dot notation:** Bu yechim xususiyat nomini bilganingizda foydalidir
+
+      ```javascript
+      object.key3 = 'value3';
+      ```
+
+      1.  **Using square bracket notation:** Bu yechim xususiyat nomi dinamik ravishda aniqlanganda foydalidir.
+
+      ```javascript
+      obj['key3'] = 'value3';
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+136.  ### [[!-- belgisi maxsus operatorni ifodalaydi
+
+      Yo'q, bu maxsus operator emas. Ammo bu birin-ketin ikkita standart operatorning kombinatsiyasi,
+
+      1.  Mantiqiy emas (!)
+      2.  Prefiksning kamayishi (--)
+
+      Avvaliga qiymat bittaga kamaydi, so'ngra haqiqat/noto'g'ri qiymatni aniqlash uchun nolga teng yoki yo'qligini tekshirish uchun sinovdan o'tkazildi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+137.  ### O'zgaruvchilarga standart qiymatlarni qanday belgilash mumkin
+
+      ||Standart qiymatni berish uchun tayinlash ifodasida mantiqiy yoki operatordan foydalanishingiz mumkin . Sintaksis quyidagi kabi ko'rinadi,
+
+      ```javascript
+      var a = b || c;
+      ```
+
+      Yuqoridagi ifodaga ko'ra, "a" o'zgaruvchisi "b" noto'g'ri bo'lsa (agar null, noto'g'ri, aniqlanmagan, 0, bo'sh satr yoki NaN bo'lsa), aks holda "a" o'zgaruvchisi "c" qiymatini oladi. "b" qiymati.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+138.  ### Ko'p qatorli satrlarni qanday aniqlash mumkin
+
+      Siz “\” belgisidan keyin qator terminatori yordamida koʻp qatorli satr harflarini belgilashingiz mumkin.
+
+      ```javascript
+      var str =
+        'This is a \
+      very lengthy \
+      sentence!';
+      ```
+
+      Ammo "\" belgisidan keyin bo'sh joy bo'lsa, kod aynan bir xil ko'rinadi, lekin u SyntaxErrorni keltirib chiqaradi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+139.  ### Ilova qobig'i(app shell) modeli nima
+
+      Ilova qobig'i (yoki ilovalar qobig'i) arxitekturasi mahalliy ilovalarda ko'rganingiz kabi foydalanuvchilaringiz ekraniga ishonchli va bir zumda yuklanadigan Progressive Web ilovasini yaratish usullaridan biridir. Bu tarmoqsiz ekranga dastlabki HTML-ni tezda olish uchun foydalidir.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+140.  ### Funktsiyalar uchun xususiyatlarni aniqlay olamizmi
+
+      Ha, biz funktsiyalar uchun xususiyatlarni belgilashimiz mumkin, chunki funktsiyalar ham ob'ektlardir.
+
+      ```javascript
+      fn = function (x) {
+        //Function code goes here
+      };
+
+      fn.name = 'John';
+
+      fn.profile = function (y) {
+        //Profile code goes here
+      };
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+141.  ### Funksiya kutayotgan parametrlar sonini qanday usul bilan topish mumkina function
+
+      function.lengthFunktsiya kutayotgan parametrlar sonini topish uchun sintaksisdan foydalanishingiz mumkin . sumKeling , raqamlar yig'indisini hisoblash uchun funktsiyaga misol keltiraylik ,
+
+      ```javascript
+      function sum(num1, num2, num3, num4) {
+        return num1 + num2 + num3 + num4;
+      }
+      sum.length; // 4 is the number of parameters expected.
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+142.  ### Polifill nima ?
+
+      Polyfill - bu uni qo'llab-quvvatlamaydigan eski brauzerlarda zamonaviy funksiyalarni ta'minlash uchun ishlatiladigan JS kodining bir qismi. Masalan, Silverlight plaginining polyfill dasturidan Microsoft Internet Explorer 7 da HTML Canvas elementining funksionalligini taqlid qilish uchun foydalanish mumkin.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+143.  ### Tanaffus(break) va davom(continue) iboralari nima
+
+      Break iborasi tsikldan “sakrab chiqish” uchun ishlatiladi. ya'ni, tsiklni buzadi va tsikldan keyin kodni bajarishda davom etadi.
+
+      ```javascript
+      for (i = 0; i < 10; i++) {
+        if (i === 5) {
+          break;
+        }
+        text += 'Number: ' + i + '<br>';
+      }
+      ```
+
+      Davom etish iborasi tsikldagi bir iteratsiyadan "sakrab o'tish" uchun ishlatiladi. ya'ni, agar belgilangan shart yuzaga kelsa, u bir iteratsiyani (siklda) buzadi va tsikldagi keyingi iteratsiya bilan davom etadi.
+
+      ```javascript
+      for (i = 0; i < 10; i++) {
+        if (i === 5) {
+          continue;
+        }
+        text += 'Number: ' + i + '<br>';
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+144.  ### Js yorliqlari(js label) nima ?
+
+      Yorliq bayonoti bizga JavaScript-da tsikllar va bloklarni nomlash imkonini beradi. Keyin biz ushbu teglardan kodga keyinroq murojaat qilish uchun foydalanishimiz mumkin. Masalan, yorliqli quyidagi kod raqamlar bir xil bo'lganda chop etishdan saqlaydi,
+
+      ```javascript
+      var i, j;
+
+      loop1: for (i = 0; i < 3; i++) {
+        loop2: for (j = 0; j < 3; j++) {
+          if (i === j) {
+            continue loop1;
+          }
+          console.log('i = ' + i + ', j = ' + j);
+        }
+      }
+
+      // Output is:
+      //   "i = 1, j = 0"
+      //   "i = 2, j = 0"
+      //   "i = 2, j = 1"
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+145.  ### Deklaratsiyalarni yuqorida saqlashning qanday afzalliklari bor
+
+      Barcha deklaratsiyalarni har bir skript yoki funksiyaning yuqori qismida saqlash tavsiya etiladi. Buni amalga oshirishning afzalliklari,
+
+      1.  Tozaroq kod beradi
+      2.  Bu mahalliy o'zgaruvchilarni qidirish uchun yagona joyni ta'minlaydi
+      3.  Keraksiz global o'zgaruvchilardan qochish oson
+      4.  Bu istalmagan qayta deklaratsiyalar ehtimolini kamaytiradi
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+146.  ### O'zgaruvchilarni ishga tushirishning(initialize) qanday afzalliklari bor
+
+      Quyidagi imtiyozlar tufayli o'zgaruvchilarni ishga tushirish tavsiya etiladi,
+
+      1.  Bu toza kodni beradi
+      2.  U o'zgaruvchilarni ishga tushirish uchun yagona joyni taqdim etadi
+      3.  Kodda aniqlanmagan qiymatlardan saqlaning
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+147.  ### Yangi ob'ekt yaratish uchun qanday tavsiyalar mavjud
+
+      dan foydalangan holda yangi ob'ektlar yaratishdan qochish tavsiya etiladi new Object(). Buning o'rniga ob'ektlarni yaratish uchun uning turiga qarab qiymatlarni ishga tushirishingiz mumkin.
+
+      1.  Yangi Object() oʻrniga {} ni belgilang
+      2.  new String() o'rniga "" belgilang
+      3.  Yangi raqam o'rniga 0 belgilang()
+      4.  new Boolean() o'rniga yolg'onni belgilang
+      5.  Yangi Array() oʻrniga [] ni belgilang
+      6.  Yangi RegExp() oʻrniga /()/ ni belgilang
+      7.  Yangi Function() oʻrniga (){} funksiyasini tayinlang
+
+      Siz ularni misol sifatida belgilashingiz mumkin,
+
+      ```javascript
+      var v1 = {};
+      var v2 = '';
+      var v3 = 0;
+      var v4 = false;
+      var v5 = [];
+      var v6 = /()/;
+      var v7 = function () {};
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+148.  ### JSON massivlarini qanday aniqlaysiz
+
+      JSON massivlari kvadrat qavslar ichida yoziladi va massivlar javascript ob'ektlarini o'z ichiga oladi. Masalan, foydalanuvchilarning JSON massivi quyidagi kabi bo'ladi
+
+      ```javascript
+      "users":[
+        {"firstName":"John", "lastName":"Abrahm"},
+        {"firstName":"Anna", "lastName":"Smith"},
+        {"firstName":"Shane", "lastName":"Warn"}
+      ]
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+149.  ### Tasodifiy butun sonlarni qanday yaratasiz
+
+      Tasodifiy butun sonlarni qaytarish uchun Math.random() funksiyasini Math.floor() bilan ishlatishingiz mumkin. Misol uchun, agar siz 1 dan 10 gacha bo'lgan tasodifiy butun sonlarni yaratmoqchi bo'lsangiz, ko'paytirish koeffitsienti 10 bo'lishi kerak,
+
+      ```javascript
+      Math.floor(Math.random() * 10) + 1; // returns a random integer from 1 to 10
+      Math.floor(Math.random() * 100) + 1; // returns a random integer from 1 to 100
+      ```
+
+      **Note:** Math.random() 0 (shu jumladan) va 1 (eksklyuziv) orasidagi tasodifiy sonni qaytaradi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+150.  ### Butun sonlarni malum miqdor orasida chop etish uchun tasodifiy butun sonlar funksiyasini yoza olasizmi?with in a range
+
+      Ha, siz min va maksimal o'rtasidagi tasodifiy sonni qaytarish uchun tegishli tasodifiy funktsiyani yaratishingiz mumkin (ikkalasi ham kiritilgan)
+
+      ```javascript
+      function randomInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      randomInteger(1, 100); // returns a random integer from 1 to 100
+      randomInteger(1, 1000); // returns a random integer from 1 to 1000
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+151.  ### Tree shaking nima
+
+      Daraxtning silkinishi o'lik kodni yo'q qilishning bir shaklidir. Bu shuni anglatadiki, foydalanilmagan modullar qurish jarayonida to'plamga kiritilmaydi va buning uchun u ES2015 modul sintaksisining statik tuzilishiga (ya'ni import va eksport) tayanadi. Dastlab bu ES2015 modul to'plami tomonidan ommalashgan rollup.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+152.  ### Tree shaking nima keragi bor
+
+      Tree Shaking har qanday dasturda kod hajmini sezilarli darajada kamaytirishi mumkin. Ya'ni, biz sim orqali qancha kamroq kod yuborsak, dastur shunchalik samarali bo'ladi. Misol uchun, agar biz shunchaki SPA ramkalaridan foydalangan holda "Salom dunyo" ilovasini yaratmoqchi bo'lsak, u bir necha MB vaqtni oladi, lekin daraxtni silkitib, uning hajmini atigi bir necha yuz KBgacha kamaytirishi mumkin. Daraxtlarni silkitish Rollup va Webpack bundlerlarida amalga oshiriladi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+153.  ### Eval dan foydalanish tavsiya etiladimi
+
+      Yo'q, bu xavfsizlik muammosini keltirib chiqaradigan o'zboshimchalik kodini ishga tushirishga imkon beradi. Bizga ma'lumki, eval() funksiyasi matnni kod sifatida ishlatish uchun ishlatiladi. Ko'pgina hollarda, uni ishlatish shart emas.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+154.  ### Muntazam ifoda(regEx) nima ?
+
+      Muntazam ibora qidiruv sxemasini tashkil etuvchi belgilar ketma-ketligidir. Matndagi ma'lumotlarni qidirish uchun ushbu qidiruv namunasidan foydalanishingiz mumkin. Bulardan matn qidirish va matnni almashtirish operatsiyalarining barcha turlarini bajarish uchun foydalanish mumkin. Keling, sintaksis formatini ko'rib chiqaylik,
+
+      ```javascript
+      /pattern/modifiers;
+      ```
+
+      Masalan, katta-kichik harflarga sezgir bo'lmagan foydalanuvchi nomi bilan muntazam ifoda yoki qidiruv namunasi:
+
+      ```javascript
+      /John/i;
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+155.  ### Muntazam ifodada qanday string methods mavjud
+
+      Muntazam ifodalarda ikkita string usuli mavjud: search() va replace(). Search() usuli moslikni qidirish uchun ifodadan foydalanadi va mos keladigan joyni qaytaradi.
+
+      ```javascript
+      var msg = 'Hello John';
+      var n = msg.search(/John/i); // 6
+      ```
+
+      Replace() usuli naqsh almashtirilgan o'zgartirilgan satrni qaytarish uchun ishlatiladi.
+
+      ```javascript
+      var msg = 'Hello John';
+      var n = msg.replace(/John/i, 'Buttler'); // Hello Buttler
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+156.  ### Muntazam ifodadagi modifikatorlar nima
+
+      Modifikatorlar katta-kichik va global qidiruvlarni amalga oshirish uchun ishlatilishi mumkin. Keling, ba'zi modifikatorlarni sanab o'tamiz,
+
+      | Modifier | Description                                            |
+      | -------- | ------------------------------------------------------ |
+      | i        | Katta-kichik harflarni sezmaydigan moslikni bajaring   |
+      | g        | Birinchi o'yinda to'xtamasdan, global o'yinni bajaring |
+      | m        | Ko'p qatorli moslikni bajaring                         |
+
+      Keling, global modifikatorga misol keltiraylik,
+
+      ```javascript
+      var text = 'Learn JS one by one';
+      var pattern = /one/g;
+      var result = text.match(pattern); // one,one
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+157.  ### Muntazam ifoda naqshlari (patterns)nima
+
+      Muntazam ifodalar belgilarni moslashtirish uchun naqshlar guruhini taqdim etadi. Asosan, ular 3 turga bo'linadi,
+
+      1.  **Brackets:** Bu belgilar qatorini topish uchun ishlatiladi. Masalan, quyida ba'zi foydalanish holatlari keltirilgan,
+          1. [abc]: Qavslar (a,b,c) orasidagi har qanday belgilarni topish uchun ishlatiladi.
+          2. [0-9]: Qavslar orasidagi istalgan raqamlarni topish uchun ishlatiladi
+          3. (a|b): | bilan ajratilgan har qanday muqobillarni topish uchun ishlatiladi
+      2.  **Metacharacters:** Bular alohida ma'noga ega bo'lgan belgilar, Masalan, quyida ba'zi foydalanish holatlari,
+          1. \\d: raqamni topish uchun ishlatiladi
+          2. \\s: bo'shliq belgisini topish uchun ishlatiladi
+          3. \\b: so'z boshida yoki oxirida moslikni topish uchun ishlatiladi
+      3.  **Quantifiers:** Bu miqdorlarni aniqlash uchun foydalidir Masalan, quyida ba'zi foydalanish holatlari keltirilgan,
+          1. n+: kamida bitta n ni o'z ichiga olgan har qanday satr uchun mosliklarni topish uchun ishlatiladi
+          2. n\*: n ning nol yoki undan ortiq takrorlanishini o‘z ichiga olgan har qanday satr uchun mosliklarni topish uchun foydalaniladi.
+          3. n?: n ning nol yoki bitta takrorlanishini o'z ichiga olgan har qanday satr uchun mosliklarni topish uchun ishlatiladi
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+158.  ### RegExp obyekti nima
+
+      RegExp ob'ekti oldindan belgilangan xususiyatlar va usullarga ega muntazam ifoda ob'ektidir. Keling, RegExp ob'ektidan oddiy foydalanishni ko'rib chiqaylik,
+
+      ```javascript
+      var regexp = new RegExp('\\w+');
+      console.log(regexp);
+      // expected output: /\w+/
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+159.  ### Patter(naqsh) uchun satrni qanday qidirasiz
+
+      Siz naqsh uchun satrni izlash va natijaga qarab rost yoki yolgʻonni qaytarish uchun test() muntazam ifoda usulidan foydalanishingiz mumkin.
+
+      ```javascript
+      var pattern = /you/;
+      console.log(pattern.test('How are you?')); //true
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+160.  ### Exec usulining maqsadi nima
+
+      Exec usulining maqsadi test usuliga o'xshaydi, lekin u ko'rsatilgan satrda moslikni qidirishni amalga oshiradi va rost/noto'g'ri qaytarish o'rniga natija massivini yoki nullni qaytaradi.
+
+      ```javascript
+      var pattern = /you/;
+      console.log(pattern.exec('How are you?')); //["you", index: 8, input: "How are you?", groups: undefined]
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+161.  ### HTML elementining stilini qanday o'zgartirish mumkin
+
+      HTML elementining ichki uslubi yoki sinf nomini JavaScript yordamida o'zgartirishingiz mumkin
+
+      1.  **Using style property:** Inline uslubini uslub xususiyatidan foydalanib o'zgartirishingiz mumkin
+
+      ```javascript
+      document.getElementById('title').style.fontSize = '30px';
+      ```
+
+      1.  **Using ClassName property:**className xususiyatidan foydalanib, element sinfini o'zgartirish oson
+
+      ```javascript
+      document.getElementById('title').className = 'custom-title';
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+162.  ### '1+2+'3' natijasi qanday bo'ladi
+
+      Chiqish bo'ladi 33. Raqamli qiymatlar bo'lganligi sababli 1, 2birinchi ikki raqamning natijasi raqamli qiymat bo'ladi 3. Keyingi raqam qator tipidagi qiymatdir, chunki raqamli qiymat 3va satr turi qiymatining qo'shilishi 3faqat birlashtiruvchi qiymat bo'ladi 33.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+163.  ### Debbuger statment nima ?
+
+      Nosozliklarni tuzatuvchi bayonot to'xtash nuqtasini o'rnatish kabi har qanday mavjud disk raskadrovka funksiyasini chaqiradi. Agar nosozliklarni tuzatish funksiyasi mavjud bo'lmasa, bu bayonot hech qanday ta'sir qilmaydi. Masalan, quyidagi funksiyada tuzatuvchi bayonoti kiritilgan. Shunday qilib, skript manbasidagi to'xtash nuqtasi kabi tuzatuvchi bayonotida bajarish to'xtatiladi.
+
+      ```javascript
+      function getProfile() {
+        // code goes here
+        debugger;
+        // code goes here
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+164.  ### Nima maqsadda Breakpoinlar debugginda qolaniladi ?
+
+      Nosozliklarni tuzatuvchi bayonot bajarilgandan so'ng va disk raskadrovka oynasi ochilgandan so'ng JavaScript kodida to'xtash nuqtalarini o'rnatishingiz mumkin. Har bir to'xtash nuqtasida JavaScript ishlashni to'xtatadi va sizga JavaScript qiymatlarini tekshirish imkonini beradi. Qiymatlarni tekshirgandan so'ng, o'ynash tugmasi yordamida kodning bajarilishini davom ettirishingiz mumkin.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+165.  ### Identifikator sifatida ajratilgan so'zlardan foydalansam bo'ladimi?
+
+      Yo'q, siz ajratilgan so'zlarni o'zgaruvchilar, teglar, ob'ektlar yoki funktsiyalar nomi sifatida ishlata olmaysiz. Keling, bitta oddiy misolni ko'rib chiqaylik,
+
+      ```javascript
+      var else = "hello"; // Uncaught SyntaxError: Unexpected token else
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+166.  ### Mobil brauzerni qanday aniqlash mumkin ?
+
+      Siz foydalanuvchining mobil qurilmani ko'rish yoki ko'rmasligiga qarab haqiqiy yoki noto'g'ri qiymatni qaytaradigan regexdan foydalanishingiz mumkin.
+
+      ```javascript
+      window.mobilecheck = function () {
+        var mobileCheck = false;
+        (function (a) {
+          if (
+            /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
+              a
+            ) ||
+            /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(
+              a.substr(0, 4)
+            )
+          )
+            mobileCheck = true;
+        })(navigator.userAgent || navigator.vendor || window.opera);
+        return mobileCheck;
+      };
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+167.  ### Regexpsiz mobil brauzerni qanday aniqlash mumkin ?
+
+      Siz shunchaki qurilmalar ro'yxatini ko'rib chiqish va foydalanuvchi agenti biror narsaga mos kelishini tekshirish orqali mobil brauzerlarni aniqlashingiz mumkin. Bu RegExp-dan foydalanish uchun muqobil yechim,
+
+      ```javascript
+      function detectmob() {
+        if (
+          navigator.userAgent.match(/Android/i) ||
+          navigator.userAgent.match(/webOS/i) ||
+          navigator.userAgent.match(/iPhone/i) ||
+          navigator.userAgent.match(/iPad/i) ||
+          navigator.userAgent.match(/iPod/i) ||
+          navigator.userAgent.match(/BlackBerry/i) ||
+          navigator.userAgent.match(/Windows Phone/i)
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+168.  ### JS yordamida tasvir(image) kengligi va balandligini qanday olish mumkin
+
+      Javascript yordamida tasvirni dasturiy ravishda olishingiz va o'lchamlarni (kenglik va balandlik) tekshirishingiz mumkin.
+
+      ```javascript
+      var img = new Image();
+      img.onload = function () {
+        console.log(this.width + 'x' + this.height);
+      };
+      img.src = 'http://www.google.com/intl/en_ALL/images/logo.gif';
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+169.  ### Sinxron HTTP so'rovini qanday qilasiz
+
+      Brauzerlar JavaScript-dan sinxron HTTP so'rovlarini amalga oshirish uchun ishlatilishi mumkin bo'lgan XMLHttpRequest obyektini taqdim etadi.
+
+      ```javascript
+      function httpGet(theUrl) {
+        var xmlHttpReq = new XMLHttpRequest();
+        xmlHttpReq.open('GET', theUrl, false); // false for synchronous request
+        xmlHttpReq.send(null);
+        return xmlHttpReq.responseText;
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+170.  ### Asinxron HTTP so'rovini qanday qilasiz
+
+      Brauzerlar XMLHttpRequest ob'ektini taqdim etadi, undan JavaScript-dan 3-parametrni rost deb o'tkazish orqali asinxron HTTP so'rovlarini amalga oshirish uchun foydalanish mumkin.
+
+      ```javascript
+      function httpGetAsync(theUrl, callback) {
+        var xmlHttpReq = new XMLHttpRequest();
+        xmlHttpReq.onreadystatechange = function () {
+          if (xmlHttpReq.readyState == 4 && xmlHttpReq.status == 200)
+            callback(xmlHttpReq.responseText);
+        };
+        xmlHttp.open('GET', theUrl, true); // true for asynchronous
+        xmlHttp.send(null);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+171.  ### Javascriptda sanani boshqa vaqt mintaqasiga qanday o'zgartirasiz
+
+      Bir vaqt mintaqasidagi sanalarni boshqasiga aylantirish uchun toLocaleString() usulidan foydalanishingiz mumkin. Misol uchun, hozirgi sanani quyida keltirilgan Britaniya ingliz vaqt mintaqasiga aylantiramiz,
+
+      ```javascript
+      console.log(event.toLocaleString('en-GB', { timeZone: 'UTC' })); //29/06/2019, 09:56:00
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+172.  ### Oyna(window) hajmini olish uchun qanday xususiyatlardan foydalaniladi
+
+      Oyna hajmini topish uchun siz innerWidth, innerHeight, clientWidth, clientHeight xususiyatlaridan, hujjat elementidan va hujjat tanasi obyektlaridan foydalanishingiz mumkin. Keling, oyna yoki hujjat hajmini hisoblash uchun ushbu xususiyatlarning kombinatsiyasidan foydalanamiz,
+
+      ```javascript
+      var width =
+        window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth;
+
+      var height =
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+173.  ### Javascriptda shartli operator nima
+
+      Shartli (uchlik) operator uchta operandni qabul qiladigan yagona JavaScript operatori bo'lib, if operatorlari uchun yorliq vazifasini bajaradi.
+
+      ```javascript
+      var isAuthenticated = false;
+      console.log(
+        isAuthenticated ? 'Hello, welcome' : 'Sorry, you are not authenticated'
+      ); //Sorry, you are not authenticated
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+174.  ### Shartli operatorda nested ko’rinishni qo'llay olasizmi?
+
+      Ha, zanjirni if ​​… else if … else if … else zanjiriga oʻxshash shartli operatorlarda qoʻllashingiz mumkin. Sintaksis quyidagi kabi bo'ladi,
+
+      ```javascript
+      function traceValue(someParam) {
+        return condition1
+          ? value1
+          : condition2
+          ? value2
+          : condition3
+          ? value3
+          : value4;
+      }
+
+      // The above conditional operator is equivalent to:
+
+      function traceValue(someParam) {
+        if (condition1) {
+          return value1;
+        } else if (condition2) {
+          return value2;
+        } else if (condition3) {
+          return value3;
+        } else {
+          return value4;
+        }
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+175.  ### Sahifani yuklagandan so'ng javascriptni yurgazish usullari qanday?
+
+      Sahifani yuklagandan so'ng JavaScript-ni turli yo'llar bilan bajarishingiz mumkin,
+
+      1.  **window.onload:**
+
+      ```javascript
+      window.onload = function ...
+      ```
+
+      1.  **document.onload:**
+
+      ```javascript
+      document.onload = function ...
+      ```
+
+      1.  **body onload:**
+
+      ```javascript
+      <body onload="script();">
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+176.  ### Proto va prototip o'rtasidagi farq nima
+
+      Ob'ekt - bu `__proto__` qidirish zanjirida usullarni va hokazolarni hal qilish uchun ishlatiladigan haqiqiy ob'ekt. Holbuki , yangi ob'ekt bilan ob'ekt yaratishda prototypequrish uchun foydalaniladigan ob'ekt. `__proto__`
+
+      ```javascript
+      new Employee().__proto__ === Employee.prototype;
+      new Employee().prototype === undefined;
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+177.  ### Sizga nuqtali vergul kerak bo'lgan misol keltiring
+
+      JavaScript-dagi har bir bayonotdan keyin nuqta-vergul qo'yish tavsiya etiladi. Misol uchun, quyidagi holatda nuqtali vergul yo'qligi sababli ish vaqtida ".. bu funktsiya emas" xatosini chiqaradi.
+
+      ```javascript
+      // define a function
+      var fn = (function () {
+        //...
+      })(
+        // semicolon missing at this line
+
+        // then execute some code inside a closure
+        function () {
+          //...
+        }
+      )();
+      ```
+
+      and it will be interpreted as
+
+      ```javascript
+      var fn = (function () {
+        //...
+      })(function () {
+        //...
+      })();
+      ```
+
+      Bunday holda, biz ikkinchi funktsiyani birinchi funktsiyaga argument sifatida o'tkazamiz va keyin birinchi funktsiya chaqiruvining natijasini funktsiya sifatida chaqirishga harakat qilamiz. Demak, ikkinchi funksiya ish vaqtida "... funksiya emas" xatosi bilan ishlamay qoladi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+178.  ### Freeze usuli nima
+
+      Ob'ektni muzlatish uchun freeze() usuli qo'llaniladi. Ob'ektni muzlatish ob'ektga yangi xususiyatlar qo'shishga imkon bermaydi, mavjud xususiyatlarning sanab o'tishini, sozlanishini yoki yozilishini o'chirishni va o'zgartirishni oldini oladi. ya'ni, u o'tgan ob'ektni qaytaradi va muzlatilgan nusxani yaratmaydi.
+
+      ```javascript
+      const obj = {
+        prop: 100,
+      };
+
+      Object.freeze(obj);
+      obj.prop = 200; // Throws an error in strict mode
+
+      console.log(obj.prop); //100
+      ```
+
+      **Note:** Agar o'tkazilgan argument ob'ekt bo'lmasa, u TypeErrorni keltirib chiqaradi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+179.  ### Muzlatish usulidan maqsad nima
+
+      Quyida muzlatish usulidan foydalanishning asosiy afzalliklari keltirilgan,
+
+      1.  U ob'ektlar va massivlarni muzlatish uchun ishlatiladi.
+      2.  U ob'ektni o'zgarmas qilish uchun ishlatiladi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+180.  ### Nima uchun muzlatish usulidan foydalanishim kerak
+
+      Ob'ektga yo'naltirilgan paradigmada mavjud API mavjud kontekstdan tashqari kengaytirilishi, o'zgartirilishi yoki qayta ishlatilishi mo'ljallanmagan ayrim elementlarni o'z ichiga oladi. Shuning uchun u finalturli tillarda ishlatiladigan kalit so'z sifatida ishlaydi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+181.  ### Brauzer tilini afzal ko'rishni qanday aniqlash mumkin
+
+      Quyidagi kabi brauzer tilini afzal ko'rish uchun navigator ob'ektidan foydalanishingiz mumkin,
+
+      ```javascript
+      var language =
+        (navigator.languages && navigator.languages[0]) || // Chrome / Firefox
+        navigator.language || // All browsers
+        navigator.userLanguage; // IE <= 10
+
+      console.log(language);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+182.  ### Qanday qilib javascript yordamida stringni sarlavha(title) kattaligiga aylantirish mumkin
+
+      Sarlavha har bir so'zning birinchi harfi bosh harf bilan yozilishini anglatadi. Quyidagi funksiyadan foydalanib, satrni sarlavha holatiga aylantirishingiz mumkin,
+
+      ```javascript
+      function toTitleCase(str) {
+        return str.replace(/\w\S*/g, function (txt) {
+          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+      }
+      toTitleCase('good morning john'); // Good Morning John
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+183.  ### Sahifada o'chirilgan(disabled) javascript sahifani qanday aniqlash mumkin
+
+      <noscript> JavaScript o'chirilgan yoki o'chirilganligini aniqlash uchun tegdan foydalanishingiz mumkin . Ichki kod bloki <noscript> JavaScript o'chirilganida bajariladi va odatda sahifa JavaScript-da yaratilganda muqobil tarkibni ko'rsatish uchun ishlatiladi.
+
+      ```javascript
+      <script type="javascript">
+          // JS related code goes here
+      </script>
+      <noscript>
+          <a href="next_page.html?noJS=true">JavaScript is disabled in the page. Please click Next Page</a>
+      </noscript>
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+184.  ### Javascript tomonidan qo'llab-quvvatlanadigan turli operatorlar nima
+
+      Operator ma'lum bir qiymat yoki operandni (matematik va mantiqiy hisob-kitoblar) boshqarishga qodir. Quyidagi kabi JavaScript tomonidan qo'llab-quvvatlanadigan turli operatorlar mavjud,
+
+      1.  **Arithmetic Operators:** + (Qo‘shish),– (ayirish), \* (ko‘paytirish), / (bo‘lish), % (modul), + + (ko‘paytirish) va – – (kamaytirish) ni o‘z ichiga oladi.
+      2.  **Comparison Operators:** &&(Mantiqiy VA),||(Mantiqiy OR),!(Mantiqiy EMAS) ni oʻz ichiga oladi.
+      3.  **Logical Operators:** &&(Mantiqiy VA),||(Mantiqiy OR),!(Mantiqiy EMAS) ni oʻz ichiga oladi.
+      4.  **Assignment Operators:** o'z ichiga oladi: = (topshiriq operatori), += (qo'shish va tayinlash operatori), – = (ayirish va belgilash operatori), \*= (ko'paytirish va belgilash), /= (bo'lish va belgilash), %= (modullar va tayinlash )
+      5.  **Ternary Operators:** U shartli(: ?) operatorni o'z ichiga oladi
+      6.  **typeof Operator:** o'zgaruvchining turini topish uchun foydalaniladi. Sintaksis o'xshayditypeof variable
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+185.  ### Rest parametri nima
+
+      Rest parametri funksiya parametrlarini boshqarishning takomillashtirilgan usuli bo‘lib, u bizga cheksiz miqdordagi argumentlarni massiv sifatida ko‘rsatishga imkon beradi. Sintaksis quyidagi kabi bo'ladi,
+
+      ```javascript
+      function f(a, b, ...theArgs) {
+        // ...
+      }
+      ```
+
+      Masalan, parametrlarning dinamik soni bo'yicha hisoblash uchun yig'indi misolini olaylik,
+
+      ```javascript
+      function total(…args){
+      let sum = 0;
+      for(let i of args){
+      sum+=i;
+      }
+      return sum;
+      }
+      console.log(fun(1,2)); //3
+      console.log(fun(1,2,3)); //6
+      console.log(fun(1,2,3,4)); //13
+      console.log(fun(1,2,3,4,5)); //15
+      ```
+
+      **Note:** Rest parametri ES2015 yoki ES6 da qo'shilgan
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+186.  ### Agar oxirgi argument sifatida Rest parametridan foydalanmasangiz nima bo'ladiargument
+
+      Quyida JavaScript-da ishlatiladigan bitli mantiqiy operatorlar ro'yxati keltirilgan
+
+      ```javascript
+      function someFunc(a,…b,c){
+      //You code goes here
+      return;
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+187.  ### Javascriptda qanday bitli operatorlar mavjud
+
+      Below are the list of bitwise logical operators used in JavaScript
+
+      1. Bit boʻyicha VA ( & )
+      2. Bit bo'yicha YOKI ( | )
+      3. Bitwise XOR ( ^ )
+      4. Bit yo'nalishi bo'yicha EMAS ( ~ )
+      5. Chapga siljitish ( << )
+      6. O'ngga siljish ( >> )
+      7. Nol toʻldirish Oʻngga siljish ( >>> )
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+188.  ### Spread operatori nima
+
+      Spread operatori takrorlanuvchilarni (massivlar / ob'ektlar / satrlar) bitta argumentlar / elementlarga kengaytirilishiga imkon beradi. Keling, bu xatti-harakatni ko'rish uchun misol keltiraylik,
+
+      ```javascript
+      function calculateSum(x, y, z) {
+        return x + y + z;
+      }
+
+      const numbers = [1, 2, 3];
+
+      console.log(calculateSum(...numbers)); // 6
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+189.  ### Ob'ektning muzlatilgan yoki muzlatilmaganligini qanday aniqlash mumkin
+
+      Object.isFrozen() usuli ob'ektning muzlatilgan yoki muzlatilmaganligini aniqlash uchun ishlatiladi. Agar quyidagi shartlarning barchasi to'g'ri bo'lsa, ob'ekt muzlatilgan hisoblanadi,
+
+      1.  Agar u kengaytirilmaydigan bolsa (not extandable).
+      2.  Agar uning barcha xususiyatlari konfiguratsiya qilinmasa.
+      3.  Agar uning barcha ma'lumotlar xususiyatlari yozilmaydigan bo'lsa. Foydalanish quyidagicha bo'ladi,
+
+      ```javascript
+      const object = {
+        property: 'Welcome JS world',
+      };
+      Object.freeze(object);
+      console.log(Object.isFrozen(object));
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+190.  ### Bir xil yoki ob'ektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin
+
+      Object.is() usuli ikkita qiymat bir xil qiymat ekanligini aniqlaydi. Misol uchun, har xil turdagi qiymatlar bilan foydalanish,
+
+      ```javascript
+      Object.is('hello', 'hello'); // true
+      Object.is(window, window); // true
+      Object.is([], []); // false
+      ```
+
+      Quyidagilardan biri bajarilsa, ikkita qiymat bir xil bo'ladi:
+
+      1.  both undefined
+      2.  both null
+      3.  both true or both false
+      4.  both strings of the same length with the same characters in the same order
+      5.  both the same object (means both object have same reference)
+      6.  both numbers and
+          both +0
+          both -0
+          both NaN
+          both non-zero and both not NaN and both have the same value.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+191.  ### Ob'ektni ishlatishdan maqsad - bu usul
+
+      Ob'ekt isusulining ba'zi ilovalari quyidagilardir:
+
+      1.  It is used for comparison of two strings.
+      2.  It is used for comparison of two numbers.
+      3.  It is used for comparing the polarity of two numbers.
+      4.  It is used for comparison of two objects.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+192.  ### Xususiyatlarni bir ob'ektdan ikkinchisiga qanday nusxalash mumkin
+
+      Bir yoki bir nechta manba ob'ektlaridan maqsadli ob'ektga qiymatlar va xususiyatlarni nusxalash uchun ishlatiladigan Object.assign() usulidan foydalanishingiz mumkin. U maqsadli ob'ektdan ko'chirilgan xususiyatlar va qiymatlarga ega bo'lgan maqsadli ob'ektni qaytaradi. Sintaksis quyidagi kabi bo'ladi,
+
+      ```javascript
+      Object.assign(target, ...sources);
+      ```
+
+      Keling, bitta manba va bitta maqsadli ob'ekt bilan misol qilaylik,
+
+      ```javascript
+      const target = { a: 1, b: 2 };
+      const source = { b: 3, c: 4 };
+
+      const returnedTarget = Object.assign(target, source);
+
+      console.log(target); // { a: 1, b: 3, c: 4 }
+
+      console.log(returnedTarget); // { a: 1, b: 3, c: 4 }
+      ```
+
+      Yuqoridagi kodda kuzatilganidek, bmanbadan maqsadgacha umumiy xususiyat( ) mavjud, shuning uchun uning qiymati qayta yozildi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+193.  ### Tayinlash usuli qanday qo'llaniladi
+
+      Quyida Object.assign() usulining asosiy ilovalari keltirilgan.
+
+      1.  U ob'ektni klonlash uchun ishlatiladi.
+      2.  U bir xil xususiyatlarga ega ob'ektlarni birlashtirish uchun ishlatiladi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+194.  ### Proksi-server nima ?
+
+      Proksi-server ob'ekti mulkni qidirish, tayinlash, ro'yxatga olish, funktsiyani chaqirish va hokazo kabi asosiy operatsiyalar uchun maxsus xatti-harakatni aniqlash uchun ishlatiladi. Sintaksis quyidagicha bo'ladi:
+
+      ```javascript
+      var p = new Proxy(target, handler);
+      ```
+
+      Keling, proksi obyektiga misol keltiraylik,
+
+      ```javascript
+      var handler = {
+        get: function (obj, prop) {
+          return prop in obj ? obj[prop] : 100;
+        },
+      };
+
+      var p = new Proxy({}, handler);
+      p.a = 10;
+      p.b = null;
+
+      console.log(p.a, p.b); // 10, null
+      console.log('c' in p, p.c); // false, 100
+      ```
+
+      Yuqoridagi kodda getproksi-serverda operatsiya bajarilganda uning xatti-harakatlarini belgilaydigan ishlov beruvchidan foydalanadi
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+195.  ### Seal usulining maqsadi nima
+
+      Object.seal () usuli ob'ektga yangi xususiyatlar qo'shilishining oldini olish va barcha mavjud xususiyatlarni sozlanmaydigan qilib belgilash orqali uni muhrlash uchun ishlatiladi. Ammo mavjud xususiyatlarning qiymatlari yozilishi mumkin ekan, o'zgartirilishi mumkin. Seal() usuli haqida ko'proq tushunish uchun quyidagi misolni ko'rib chiqaylik
+
+      ```javascript
+      const object = {
+        property: 'Welcome JS world',
+      };
+      Object.seal(object);
+      object.property = 'Welcome to object world';
+      console.log(Object.isSealed(object)); // true
+      delete object.property; // You cannot delete when sealed
+      console.log(object.property); //Welcome to object world
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+196.  ### Seal usuli qanday qo'llaniladi
+
+      Quyida Object.seal() usulining asosiy ilovalari keltirilgan,
+
+      1.  U ob'ektlar va massivlarni muhrlash uchun ishlatiladi.
+      2.  U ob'ektni o'zgarmas qilish uchun ishlatiladi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+197.  ### Freeze va Seal usullari o'rtasidagi farqlar qanday
+
+      Agar ob'ekt Object.freeze() usuli yordamida muzlatilgan bo'lsa, uning xususiyatlari o'zgarmas bo'lib qoladi va ularda hech qanday o'zgartirishlar kiritilmaydi, ob'ekt Object.seal() usuli yordamida muhrlangan bo'lsa, o'zgarishlar mavjud xususiyatlarda amalga oshirilishi mumkin. ob'ektning.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+198.  ### Ob'ektning muhrlangan yoki yo'qligini qanday aniqlash mumkin
+
+      Ob'ekt muhrlangan yoki muhrlanmaganligini aniqlash uchun Object.isSealed() usuli qo'llaniladi. Agar quyidagi shartlarning barchasi to'g'ri bo'lsa, ob'ekt muhrlangan hisoblanadi
+
+      1.  If it is not extensible.
+      2.  If all of its properties are non-configurable.
+      3.  If it is not removable (but not necessarily non-writable).
+          Let's see it in the action
+
+      ```javascript
+      const object = {
+        property: 'Hello, Good morning',
+      };
+
+      Object.seal(object); // Using seal() method to seal the object
+
+      console.log(Object.isSealed(object)); // checking whether the object is sealed or not
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+199.  ### Qanday qilib sanab boladigan (enumerable) kalit va qiymat juftlarini olasiz
+
+      Object.entries() usuli ma'lum bir ob'ektning o'z sanab bo'ladigan qatorli kalitli [kalit, qiymat] juftliklari massivini for...in siklida taqdim etilgan tartibda qaytarish uchun ishlatiladi. Misolda object.entries() usulining funksionalligini ko'rib chiqamiz,
+
+      ```javascript
+      const object = {
+        a: 'Good morning',
+        b: 100,
+      };
+
+      for (let [key, value] of Object.entries(object)) {
+        console.log(`${key}: ${value}`); // a: 'Good morning'
+        // b: 100
+      }
+      ```
+
+      **Note:** The order is not guaranteed as object defined.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+200.  ### Object.values ​​va Object.entries usuli o'rtasidagi asosiy farq nimaentries method
+
+      Object.values() usulining xatti-harakati Object.entries() usuliga o'xshaydi, lekin u [kalit, qiymat] juftlari o'rniga qiymatlar qatorini qaytaradi.
+
+      ```javascript
+      const object = {
+        a: 'Good morning',
+        b: 100,
+      };
+
+      for (let value of Object.values(object)) {
+        console.log(`${value}`); // 'Good morning'
+        100;
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+201.  ### Har qanday ob'ektning kalitlari ro'yxatini qanday olishingiz mumkin
+
+      Siz Object.keys()ma'lum bir ob'ektning o'z mulk nomlari massivini qaytarish uchun ishlatiladigan usuldan, biz odatdagi tsikl bilan bir xil tartibda foydalanishingiz mumkin. Masalan, siz foydalanuvchi ob'ektining kalitlarini olishingiz mumkin,
+
+      ```javascript
+      const user = {
+        name: 'John',
+        gender: 'male',
+        age: 40,
+      };
+
+      console.log(Object.keys(user)); //['name', 'gender', 'age']
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+202.  ### Prototip bilan ob'ektni qanday yaratasiz
+
+      Object.create() usuli ko'rsatilgan prototip ob'ekti va xususiyatlariga ega yangi ob'ektni yaratish uchun ishlatiladi. Ya'ni, yangi yaratilgan ob'ektning prototipi sifatida mavjud ob'ektdan foydalanadi. Belgilangan prototip ob'ekti va xususiyatlari bilan yangi ob'ektni qaytaradi.
+
+      ```javascript
+      const user = {
+        name: 'John',
+        printInfo: function () {
+          console.log(`My name is ${this.name}.`);
+        },
+      };
+
+      const admin = Object.create(user);
+
+      admin.name = 'Nick'; // Remember that "name" is a property set on "admin" but not on "user" object
+
+      admin.printInfo(); // My name is Nick
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+203.  ### Weakset nima
+
+      WeakSet zaif (zaif havolalar) saqlanadigan ob'ektlar to'plamini saqlash uchun ishlatiladi. Sintaksis quyidagicha bo'ladi:
+
+      ```javascript
+      new WeakSet([iterable]);
+      ```
+
+      Uning xatti-harakatini tushuntirish uchun quyidagi misolni ko'rib chiqaylik,
+
+      ```javascript
+      var ws = new WeakSet();
+      var user = {};
+      ws.add(user);
+      ws.has(user); // true
+      ws.delete(user); // removes user from the set
+      ws.has(user); // false, user has been removed
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+204.  ### WeakSet va Set o'rtasidagi farqlar qanday
+
+      Asosiy farq shundaki, Set-dagi ob'ektlarga havolalar kuchli, WeakSet-dagi ob'ektlarga havolalar zaif. Ya'ni, WeakSet-dagi ob'ektga boshqa havola bo'lmasa, axlat yig'ilishi mumkin. Boshqa farqlar,
+
+      1.  To'plamlar har qanday qiymatni saqlashi mumkin, WeakSets esa faqat ob'ektlar to'plamini saqlashi mumkin
+      2.  WeakSet Setdan farqli o'laroq o'lcham xususiyatiga ega emas
+      3.  WeakSet-da aniq, kalitlar, qiymatlar, yozuvlar, forEach kabi usullar mavjud emas.
+      4.  WeakSet takrorlanmaydi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+205.  ### WeakSet-da mavjud usullar to'plamini sanab o'ting
+
+      Quyida WeakSet-da mavjud usullar ro'yxati keltirilgan,
+
+      1.  Quyida WeakSet-da mavjud usullar ro'yxati keltirilgan,
+      2.  Delete(value): Qiymatni WeakSet to'plamidan o'chiradi.
+      3.  has(value): Agar qiymat WeakSet to'plamida mavjud bo'lsa, u haqiqatni qaytaradi, aks holda u noto'g'ri qaytaradi.
+
+      Keling, yuqoridagi barcha usullarning funksionalligini misolda ko'rib chiqaylik,
+
+      ```javascript
+      var weakSetObject = new WeakSet();
+      var firstObject = {};
+      var secondObject = {};
+      // add(value)
+      weakSetObject.add(firstObject);
+      weakSetObject.add(secondObject);
+      console.log(weakSetObject.has(firstObject)); //true
+      weakSetObject.delete(secondObject);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+206.  ### WeakMap nima
+
+      WeakMap ob'ekti - bu kalitlarga zaif havola qilingan kalit/qiymat juftliklari to'plami. Bunday holda, kalitlar ob'ektlar bo'lishi kerak va qiymatlar ixtiyoriy qiymatlar bo'lishi mumkin. Sintaksis quyidagi kabi ko'rinadi,
+
+      ```javascript
+      new WeakMap([iterable]);
+      ```
+
+      Uning xatti-harakatini tushuntirish uchun quyidagi misolni ko'rib chiqaylik,
+
+      ```javascript
+      var ws = new WeakMap();
+      var user = {};
+      ws.set(user);
+      ws.has(user); // true
+      ws.delete(user); // removes user from the map
+      ws.has(user); // false, user has been removed
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+207.  ### WeakMap va Map o'rtasidagi farqlar qanday
+
+      Asosiy farq shundaki, Map-dagi asosiy ob'ektlarga havolalar kuchli, WeakMap-dagi asosiy ob'ektlarga havolalar zaif. Ya'ni, WeakMap'dagi asosiy ob'ekt, agar unga boshqa havola bo'lmasa, axlat yig'ilishi mumkin. Boshqa farqlar,
+
+      1.  Xaritalar har qanday kalit turini saqlashi mumkin, WeakMaps esa faqat asosiy ob'ektlar to'plamini saqlashi mumkin
+      2.  WeakMap xaritadan farqli o'laroq o'lcham xususiyatiga ega emas
+      3.  WeakMap-da aniq, kalitlar, qiymatlar, yozuvlar, forEach kabi usullar mavjud emas.
+      4.  WWeakMap takrorlanmaydi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+208.  ### WeakMap-da mavjud usullar to'plamini sanab o'ting
+
+      Quyida WeakMap-da mavjud usullar ro'yxati keltirilgan,
+
+      1.  set(kalit, qiymat): WeakMap obyektidagi kalit uchun qiymatni o'rnatadi. WeakMap obyektini qaytaradi.
+      2.  o'chirish (kalit): Kalit bilan bog'liq har qanday qiymatni o'chiradi.
+      3.  has(key): Qiymat WeakMap obyektidagi kalit bilan bog‘langan yoki bog‘lanmaganligini tasdiqlovchi mantiqiy qiymatni qaytaradi.
+      4.  get(key): Kalit bilan bog'langan qiymatni qaytaradi yoki agar mavjud bo'lmasa, aniqlanmagan.
+          Keling, yuqoridagi barcha usullarning funksionalligini misolda ko'rib chiqaylik,
+
+      ```javascript
+      var weakMapObject = new WeakMap();
+      var firstObject = {};
+      var secondObject = {};
+      // set(key, value)
+      weakMapObject.set(firstObject, 'John');
+      weakMapObject.set(secondObject, 100);
+      console.log(weakMapObject.has(firstObject)); //true
+      console.log(weakMapObject.get(firstObject)); // John
+      weakMapObject.delete(secondObject);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+209.  ### Unevaldan maqsad nima
+
+      uneval() o'rnatilgan funksiya bo'lib, u ob'ekt manba kodining satrli tasvirini yaratish uchun ishlatiladi. Bu yuqori darajadagi funksiya va hech qanday ob'ekt bilan bog'lanmagan. Uning funksionalligi haqida ko'proq bilish uchun quyidagi misolni ko'rib chiqaylik,
+
+      ```javascript
+      var a = 1;
+      uneval(a); // returns a String containing 1
+      uneval(function user() {}); // returns "(function user(){})"
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+210.  ### URL manzilini qanday kodlash(encode) mumkin
+
+      EncodeURI() funksiyasi (, / ? : @ & = + $ #) belgilardan tashqari maxsus belgilarga ega boʻlgan toʻliq URI kodini kodlash uchun ishlatiladi.
+
+      ```javascript
+      var uri = 'https://mozilla.org/?x=шеллы';
+      var encoded = encodeURI(uri);
+      console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+211.  ### URLni qanday dekodlash(decode) mumkin
+
+      DecodeURI() funksiyasi avval encodeURI() tomonidan yaratilgan Yagona Resurs Identifikatorini (URI) dekodlash uchun ishlatiladi.
+
+      ```javascript
+      var uri = 'https://mozilla.org/?x=шеллы';
+      var encoded = encodeURI(uri);
+      console.log(encoded); // https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
+      try {
+        console.log(decodeURI(encoded)); // "https://mozilla.org/?x=шеллы"
+      } catch (e) {
+        // catches a malformed URI
+        console.error(e);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+212.  ### Veb-sahifa matini qanday chop qilasiz
+
+      Oyna obyekti joriy oynaning mazmunini chop etish uchun ishlatiladigan print() usulini taqdim etdi. U turli xil chop etish opsiyalaridan birini tanlash imkonini beruvchi Chop etish dialog oynasini ochadi. Misolda chop etish usulidan foydalanishni ko'rib chiqaylik,
+
+      ```html
+      <input type="button" value="Print" onclick="window.print()" />
+      ```
+
+      **Note:** Ko'pgina brauzerlarda chop etish dialog oynasi ochiq bo'lsa, u bloklanadi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+213.  ### Uneval va eval o'rtasidagi farq nima
+
+      Funktsiya unevalberilgan ob'ektning manbasini qaytaradi; Holbuki, evalfunktsiya bu manba kodini boshqa xotira sohasida baholash orqali aksincha qiladi. Farqni aniqlashtirish uchun misolni ko'rib chiqaylik,
+
+      ```javascript
+      var msg = uneval(function greeting() {
+        return 'Hello, Good morning';
+      });
+      var greeting = eval(msg);
+      greeting(); // returns "Hello, Good morning"
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+214.  ### Anonim(anonymous) funksiya nima
+
+      Anonim funksiya - bu nomsiz funksiya! Anonim funktsiyalar odatda o'zgaruvchi nomiga tayinlanadi yoki qayta qo'ng'iroq qilish funktsiyasi sifatida ishlatiladi. Sintaksis quyidagi kabi bo'ladi,
+
+      ```javascript
+      function (optionalParameters) {
+        //do something
+      }
+
+      const myFunction = function(){ //Anonymous function assigned to a variable
+        //do something
+      };
+
+      [1, 2, 3].map(function(element){ //Anonymous function used as a callback function
+        //do something
+      });
+      ```
+
+      Keling, yuqoridagi anonim funktsiyani misolda ko'rib chiqaylik,
+
+      ```javascript
+      var x = function (a, b) {
+        return a * b;
+      };
+      var z = x(5, 10);
+      console.log(z); // 50
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+215.  ### Mahalliy va global o'zgaruvchilar o'rtasidagi ustuvorlik tartibi qandayvariables
+
+      Mahalliy o'zgaruvchi bir xil nomdagi global o'zgaruvchidan ustun turadi. Keling, bu xatti-harakatni misolda ko'rib chiqaylik.
+
+      ```javascript
+      var msg = 'Good morning';
+      function greeting() {
+        msg = 'Good Evening';
+        console.log(msg);
+      }
+      greeting();
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+216.  ### JavaScript kirish elementlari nima ?
+
+      ECMAScript 5 getter va setterlar orqali javascript ob'ektiga kirish yoki hisoblangan xususiyatlarni taqdim etdi. Getters getkalit so'zdan foydalanadi, Setters esa kalit so'zdan foydalanadi set.
+
+      ```javascript
+      var user = {
+        firstName: "John",
+        lastName : "Abraham",
+        language : "en",
+        get lang() {
+          return this.language;
+        }
+        set lang(lang) {
+        this.language = lang;
+        }
+      };
+      console.log(user.lang); // getter access lang as en
+      user.lang = 'fr';
+      console.log(user.lang); // setter used to set lang as fr
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+217.  ### Ob'ekt konstruktorida xususiyatni qanday aniqlash mumkin
+
+      Object.defineProperty() statik usuli to'g'ridan-to'g'ri ob'ektda yangi xususiyatni aniqlash yoki ob'ektdagi mavjud xususiyatni o'zgartirish uchun ishlatiladi va ob'ektni qaytaradi. Mulkni qanday aniqlashni bilish uchun misolni ko'rib chiqaylik,
+
+      ```javascript
+      const newObject = {};
+
+      Object.defineProperty(newObject, 'newProperty', {
+        value: 100,
+        writable: false,
+      });
+
+      console.log(newObject.newProperty); // 100
+
+      newObject.newProperty = 200; // It throws an error in strict mode due to writable setting
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+218.  ### Get va defineProperty o'rtasidagi farq nima ?
+
+      Classlardan foydalanmaguningizcha ikkalasi ham xuddi shunday natijalarga ega. Agar siz foydalansangiz get, xususiyat ob'ektning prototipida aniqlanadi, Object.defineProperty()xususiyatdan foydalanish esa u qo'llaniladigan misolda aniqlanadi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+219.  ### Getters va Settersning afzalliklari nimada
+
+      Quyida Getters va Setters afzalliklari ro'yxati keltirilgan,
+
+      1. Ular oddiyroq sintaksisni ta'minlaydi
+      2. Ular JSda hisoblangan xususiyatlarni yoki yordamchilarni aniqlash uchun ishlatiladi.
+      3. Xususiyatlar va usullar o'rtasidagi ekvivalentlik munosabatini ta'minlash uchun foydalidir
+      4. Ular yaxshiroq ma'lumot sifatini ta'minlashi mumkin
+      5. Kapsüllangan mantiq bilan sahna ortida narsalarni qilish uchun foydalidir.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+220.  ### DefineProperty usuli yordamida qabul qiluvchilar(getter) va sozlagichlarni(setter) qo'shishim mumkinmi
+
+      Ha, siz Object.defineProperty()Getters va Setters qo'shish uchun usuldan foydalanishingiz mumkin. Masalan, quyidagi hisoblagich ob'ekti oshirish, kamaytirish, qo'shish va ayirish xususiyatlaridan foydalanadi,
+
+      ```javascript
+      var obj = { counter: 0 };
+
+      // Define getters
+      Object.defineProperty(obj, 'increment', {
+        get: function () {
+          this.counter++;
+        },
+      });
+      Object.defineProperty(obj, 'decrement', {
+        get: function () {
+          this.counter--;
+        },
+      });
+
+      // Define setters
+      Object.defineProperty(obj, 'add', {
+        set: function (value) {
+          this.counter += value;
+        },
+      });
+      Object.defineProperty(obj, 'subtract', {
+        set: function (value) {
+          this.counter -= value;
+        },
+      });
+
+      obj.add = 10;
+      obj.subtract = 5;
+      console.log(obj.increment); //6
+      console.log(obj.decrement); //5
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+221.  ### Switch-case ni ishlatishdan maqsad nima
+
+      JavaScript-dagi switch case bayonoti qaror qabul qilish uchun ishlatiladi. Ba'zi hollarda switch case bayonotidan foydalanish if-else iboralariga qaraganda qulayroq bo'ladi. Sintaksis quyidagi kabi bo'ladi,
+
+      ```javascript
+      switch (expression)
+      {
+          case value1:
+              statement1;
+              break;
+          case value2:
+              statement2;
+              break;
+          .
+          .
+          case valueN:
+              statementN;
+              break;
+          default:
+              statementDefault;
+      }
+      ```
+
+      Yuqoridagi ko'p tomonlama filial bayonoti ifoda qiymatiga asoslangan kodning turli qismlariga bajarilishini jo'natishning oson yo'lini taqdim etadi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+222.  ### Switch casedan foydalanishda qanday qoidalarga rioya qilish kerakswitch case
+
+      Quyida e'tiborga olinishi kerak bo'lgan konventsiyalar ro'yxati keltirilgan.
+
+      1.  Ifoda raqam yoki satr turi bo'lishi mumkin.
+      2.  Ifoda uchun takroriy qiymatlarga ruxsat berilmaydi.
+      3.  Standart bayonot ixtiyoriy. Agar kommutatorga uzatilgan ifoda hech qanday registr qiymatiga mos kelmasa, u holda birlamchi holat ichidagi bayonot bajariladi.
+      4.  Break iborasi kommutator ichida gaplar ketma-ketligini tugatish uchun ishlatiladi.
+      5.  Break bayonoti ixtiyoriy. Ammo agar u o'tkazib yuborilsa, ijro keyingi ishda davom etadi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+223.  ### Primitiv ma'lumotlar turlari nima ?
+
+
+    Ibtidoiy ma'lumotlar turi - bu ibtidoiy qiymatga ega bo'lgan ma'lumotlar (uning xususiyatlari yoki usullari yo'q). 7 turdagi ibtidoiy ma'lumotlar turlari mavjud.
+
+      1.  string
+      2.  number
+      3.  boolean
+      4.  null
+      5.  undefined
+      6.  bigint
+      7.  symbol
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+224.  ### Ob'ekt xususiyatlariga kirishning turli usullari qanday
+
+      Ob'ekt xususiyatiga kirishning 3 ta mumkin bo'lgan usuli mavjud.
+
+      1.  **Dot notation:** Xususiyatlarga kirish uchun nuqtadan foydalanadi
+
+      ```javascript
+      objectName.property;
+      ```
+
+      1.  **Square brackets notation:** mulkka kirish uchun kvadrat qavslardan foydalanadi
+
+      ```javascript
+      objectName['property'];
+      ```
+
+      1.  **Expression notation:** U kvadrat qavs ichidagi ifodadan foydalanadi
+
+      ```javascript
+      objectName[expression];
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+225.  ### Funksiya parametrlari qoidalari qanday
+
+      JavaScript funksiyalari parametrlar uchun quyidagi qoidalarga amal qiladi,
+
+      1.  Funktsiya ta'riflari parametrlar uchun ma'lumotlar turlarini aniqlamaydi.
+      2.  O'tkazilgan argumentlar turini tekshirishni amalga oshirmang.
+      3.  Qabul qilingan argumentlar sonini tekshirmang. ya'ni, quyidagi funktsiya yuqoridagi qoidalarga amal qiladi,
+
+      ```javascript
+      function functionName(parameter1, parameter2, parameter3) {
+        console.log(parameter1); // 1
+      }
+      functionName(1);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+226.  ### Xato obyekti(error object) nima
+
+      Xato ob'ekti xatolik yuzaga kelganda xato haqida ma'lumot beruvchi o'rnatilgan xato ob'ektidir. U ikkita xususiyatga ega: ism va xabar. Masalan, quyidagi funksiya xato tafsilotlarini qayd qiladi,
+
+      ```javascript
+      try {
+        greeting('Welcome');
+      } catch (err) {
+        console.log(err.name + '<br>' + err.message);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+227.  ### Sintaksis xatosiga duch kelganingizda
+
+      Sintaksis xatosi bilan kodni baholashga harakat qilsangiz, SyntaxError chiqariladi. Misol uchun, funktsiya parametri uchun quyida etishmayotgan tirnoq sintaksis xatosini keltirib chiqaradi
+
+      ```javascript
+      try {
+        eval("greeting('welcome)"); // Missing ' will produce an error
+      } catch (err) {
+        console.log(err.name);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+228.  ### Xato obyektidan farqli xato nomlari qanday
+
+      Xato obyektidan qaytarilgan 6 xil turdagi xato nomlari mavjud,
+      | Error Name | Description |
+      |---- | ---------
+      | EvalError | Eval() funksiyasida xatolik yuz berdi |
+      | RangeError | Raqam “diapazondan tashqarida” xatolik yuz berdi |
+      | ReferenceError | Noqonuniy havola tufayli xato|
+      | SyntaxError | Sintaksis xatosi tufayli yuzaga kelgan xato|
+      | TypeError | Tur xatosi tufayli yuzaga kelgan xato |
+      | URIError | EncodeURI() tufayli xatolik |
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+229.  ### Xatolarni hal qilishda qanday turli bayonotlar mavjud
+
+      Quyida xatolarni qayta ishlashda ishlatiladigan bayonotlar ro'yxati keltirilgan,
+
+      1.  **try:** Ushbu bayonot kod blokini xatolarni tekshirish uchun ishlatiladi
+      2.  **catch:** Ushbu bayonot xatoni boshqarish uchun ishlatiladi
+      3.  **throw:** Ushbu bayonot maxsus xatolar yaratish uchun ishlatiladi.
+      4.  **finally:** Ushbu ibora natijadan qat'iy nazar try and catchdan keyin kodni bajarish uchun ishlatiladi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+230.  ### Javascriptda ikki turdagi looplar qanday?
+
+      1.  **Entry Controlled loops:** Ushbu turdagi halqa turida sinov holati halqa tanasiga kirishdan oldin tekshiriladi. Masalan, For Loop va While Loop ushbu turkumga kiradi.
+      2.  **Exit Controlled Loops:** bu turdagi halqa turida sinov holati halqa tanasining oxirida tekshiriladi yoki baholanadi. ya'ni, test sharti rost yoki noto'g'ri bo'lishidan qat'i nazar, pastadir tanasi kamida bir marta bajariladi. Masalan, do-while sikli ushbu turkumga kiradi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+231.  ### nodejs nima
+
+      Node.js tezkor va kengaytiriladigan tarmoq ilovalarini osongina yaratish uchun Chrome JavaScript ish vaqti asosida yaratilgan server tomoni platformasidir. Bu Google'ning V8 JavaScript dvigateli va libuv kutubxonasidan foydalanadigan voqealarga asoslangan, bloklanmagan, asinxron kiritish-chiqarish ish vaqti.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+232.  ### Intl ob'ekti nima
+
+      Intl ob'ekti ECMAScript Internationalization API uchun nom maydoni bo'lib, u tilga sezgir qatorlarni taqqoslashni, raqamlarni formatlashni va sana va vaqtni formatlashni ta'minlaydi. U bir nechta konstruktorlar va tilga sezgir funktsiyalarga kirishni ta'minlaydi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+233.  ### Tilga xos sana va vaqtni formatlashni qanday amalga oshirasiz
+
+      Intl.DateTimeFormatTilga sezgir sana va vaqtni formatlashni ta'minlaydigan ob'ektlar uchun konstruktor bo'lgan ob'ektdan foydalanishingiz mumkin . Keling, bu xatti-harakatni misol bilan ko'rib chiqaylik,
+
+      ```javascript
+      var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
+      console.log(new Intl.DateTimeFormat('en-GB').format(date)); // 07/08/2019
+      console.log(new Intl.DateTimeFormat('en-AU').format(date)); // 07/08/2019
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+234.  ### Iterator nima
+
+      Iterator - bu ketma-ketlikni va uning tugashi bilan qaytariladigan qiymatni belgilaydigan ob'ekt. U Iterator protokolini next()ikkita xususiyatga ega ob'ektni qaytaradigan usul bilan amalga oshiradi: value(ketma-ketlikdagi keyingi qiymat) va done(agar ketma-ketlikdagi oxirgi qiymat iste'mol qilingan bo'lsa, bu to'g'ri bo'ladi).
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+235.  ### Sinxron iteratsiya qanday ishlaydi
+
+      Sinxron iteratsiya ES6 da joriy qilingan va u quyidagi komponentlar to'plami bilan ishlaydi,
+
+      **Iterable:** Bu kaliti Symbol.iterator bo'lgan usul orqali takrorlanishi mumkin bo'lgan ob'ekt.
+      **Iterator:** Bu takrorlanadigan chaqiruv orqali qaytariladigan ob'ekt [Symbol.iterator](). Ushbu iterator ob'ekti har bir takrorlangan elementni ob'ektga o'rab oladi va uni next()usul orqali birma-bir qaytaradi.
+      **IteratorResult:** Bu usul bilan qaytarilgan ob'ekt next(). Ob'ekt ikkita xususiyatni o'z ichiga oladi; valuexususiyat takrorlangan elementni o'z ichiga oladi va xususiyat doneelement oxirgi element yoki yo'qligini aniqlaydi.
+
+      Keling, quyidagi kabi massiv bilan sinxron iteratsiyani namoyish qilaylik,
+
+      ```javascript
+      const iterable = ['one', 'two', 'three'];
+      const iterator = iterable[Symbol.iterator]();
+      console.log(iterator.next()); // { value: 'one', done: false }
+      console.log(iterator.next()); // { value: 'two', done: false }
+      console.log(iterator.next()); // { value: 'three', done: false }
+      console.log(iterator.next()); // { value: 'undefined, done: true }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+236.  ### Hodisa sikli(event loop) nima
+
+Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiyasi bajarilganda, qayta qo'ng'iroq qilish funktsiyasi navbatga suriladi. JavaScript mexanizmi asinxronizatsiya funksiyasi kodni bajarishni tugatmaguncha voqea siklini qayta ishlashni boshlamaydi. Eslatma: Bu Node.js-ga JavaScript-ning bir torli bo'lishiga qaramay, bloklanmagan kiritish-chiqarish operatsiyalarini bajarishga imkon beradi.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+237.  ### Call stack nima ?
+
+      Call Stack - bu JavaScript tarjimonlari uchun dasturdagi funktsiya chaqiruvlarini kuzatib borish uchun ma'lumotlar tuzilmasi. Uning ikkita asosiy harakati bor,
+
+      1.  Har safar funktsiyani bajarish uchun chaqirsangiz, uni stekga surasiz.
+      2.  Bajarish tugallanganda, funktsiya stekdan chiqariladi.
+
+      Keling, misol qilib olaylik va bu holatni diagramma formatida tasvirlash
+
+      ```javascript
+      function hungry() {
+        eatFruits();
+      }
+      function eatFruits() {
+        return "I'm eating fruits";
+      }
+
+      // Invoke the `hungry` function
+      hungry();
+      ```
+
+      Yuqoridagi kod quyidagi kabi qo'ng'iroqlar to'plamida qayta ishlanadi,
+
+      1.  `hungry()`ni call stack listga funksiyasiga qo'shing va kodni yurgazing.
+      2.  `eatFruits()`ni call stack listga funksiyasiga qo'shing va kodni yurgazing.
+      3.  `eatFruits()` funksiayni call stack listdan o'chirib tashlang.
+      4.  `hungry()` funksiayni call stack listdan o'chirib tashlang chunki endi listda hech qanday malumot qolmadi.
+
+      ![Screenshot](images/call-stack.png)
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+238.  ### Hodisa navbati (event qoeue) nima
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+239.  ### Dekorator nima
+
+      Dekorator - bu funktsiyani baholovchi va maqsad, nom va dekorator deskriptorini argument sifatida qabul qiluvchi ifoda. Bundan tashqari, u ixtiyoriy ravishda maqsadli ob'ektga o'rnatish uchun dekorativ identifikatorni qaytaradi. Dizayn vaqtida foydalanuvchi sinfi uchun administrator dekoratorini aniqlaymiz,
+
+      ```javascript
+      function admin(isAdmin) {
+         return function(target) {
+             target.isAdmin = isAdmin;
+         }
+      }
+
+      @admin(true)
       class User() {
       }
-      console.log(User.isAdmin); //false
-     ```
+      console.log(User.isAdmin); //true
 
-     **[⬆ Back to Top](#table-of-contents)**
-
-240. ### What are the properties of Intl object
-
-     Below are the list of properties available on Intl object,
-
-     1. **Collator:** These are the objects that enable language-sensitive string comparison.
-     2. **DateTimeFormat:** These are the objects that enable language-sensitive date and time formatting.
-     3. **ListFormat:** These are the objects that enable language-sensitive list formatting.
-     4. **NumberFormat:** Objects that enable language-sensitive number formatting.
-     5. **PluralRules:** Objects that enable plural-sensitive formatting and language-specific rules for plurals.
-     6. **RelativeTimeFormat:** Objects that enable language-sensitive relative time formatting.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-241. ### What is an Unary operator
-
-     The unary(+) operator is used to convert a variable to a number.If the variable cannot be converted, it will still become a number but with the value NaN. Let's see this behavior in an action.
-
-     ```javascript
-     var x = '100';
-     var y = +x;
-     console.log(typeof x, typeof y); // string, number
-
-     var a = 'Hello';
-     var b = +a;
-     console.log(typeof a, typeof b, b); // string, number, NaN
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-242. ### How do you sort elements in an array
-
-     The sort() method is used to sort the elements of an array in place and returns the sorted array. The example usage would be as below,
-
-     ```javascript
-     var months = ['Aug', 'Sep', 'Jan', 'June'];
-     months.sort();
-     console.log(months); //  ["Aug", "Jan", "June", "Sep"]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-243. ### What is the purpose of compareFunction while sorting arrays
-
-     The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value. Let's take an example to see the usage of compareFunction,
-
-     ```javascript
-     let numbers = [1, 2, 5, 3, 4];
-     numbers.sort((a, b) => b - a);
-     console.log(numbers); // [5, 4, 3, 2, 1]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-244. ### How do you reversing an array
-
-     You can use the reverse() method to reverse the elements in an array. This method is useful to sort an array in descending order. Let's see the usage of reverse() method in an example,
-
-     ```javascript
-     let numbers = [1, 2, 5, 3, 4];
-     numbers.sort((a, b) => b - a);
-     numbers.reverse();
-     console.log(numbers); // [1, 2, 3, 4 ,5]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-245. ### How do you find min and max value in an array
-
-     You can use `Math.min` and `Math.max` methods on array variables to find the minimum and maximum elements within an array. Let's create two functions to find the min and max value with in an array,
-
-     ```javascript
-     var marks = [50, 20, 70, 60, 45, 30];
-     function findMin(arr) {
-       return Math.min.apply(null, arr);
-     }
-     function findMax(arr) {
-       return Math.max.apply(null, arr);
-     }
-
-     console.log(findMin(marks));
-     console.log(findMax(marks));
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-246. ### How do you find min and max values without Math functions
-
-     You can write functions which loop through an array comparing each value with the lowest value or highest value to find the min and max values. Let's create those functions to find min and max values,
-
-     ```javascript
-     var marks = [50, 20, 70, 60, 45, 30];
-     function findMin(arr) {
-       var length = arr.length;
-       var min = Infinity;
-       while (length--) {
-         if (arr[length] < min) {
-           min = arr[len];
-         }
+       @admin(false)
+       class User() {
        }
-       return min;
-     }
+       console.log(User.isAdmin); //false
+      ```
 
-     function findMax(arr) {
-       var length = arr.length;
-       var max = -Infinity;
-       while (len--) {
-         if (arr[length] > max) {
-           max = arr[length];
-         }
-       }
-       return max;
-     }
+      **[⬆ Back to Top](#table-of-contents)**
 
-     console.log(findMin(marks));
-     console.log(findMax(marks));
-     ```
+240.  ### Intl obyektining xossalari(Intl object prop) qanday
 
-     **[⬆ Back to Top](#table-of-contents)**
+      Quyida Intl ob'ektida mavjud xususiyatlar ro'yxati keltirilgan,
 
-247. ### What is an empty statement and purpose of it
+      1.  **Collator:** Bular tilga sezgir satrlarni taqqoslash imkonini beruvchi ob'ektlardir.
+      2.  **DateTimeFormat:** Bular tilga sezgir sana va vaqtni formatlashni ta'minlaydigan ob'ektlardir.
+      3.  **ListFormat:** Bular tilga sezgir roʻyxat formatlash imkonini beruvchi obʼyektlardir.
+      4.  **NumberFormat:** tilga sezgir raqamlarni formatlashni ta'minlaydigan ob'ektlar.
+      5.  **PluralRules:** ko'plikka sezgir formatlash va ko'plik uchun tilga xos qoidalarni faollashtiradigan ob'ektlar.
+      6.  **RelativeTimeFormat:** Tilga sezgir nisbiy vaqt formatlash imkonini beruvchi ob'ektlar.
 
-     The empty statement is a semicolon (;) indicating that no statement will be executed, even if JavaScript syntax requires one. Since there is no action with an empty statement you might think that it's usage is quite less, but the empty statement is occasionally useful when you want to create a loop that has an empty body. For example, you can initialize an array with zero values as below,
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     // Initialize an array a
-     for(int i=0; i < a.length; a[i++] = 0) ;
-     ```
+241.  ### Unary operator nima
 
-     **[⬆ Back to Top](#table-of-contents)**
+      Birlik(+) operator oʻzgaruvchini raqamga aylantirish uchun ishlatiladi.Agar oʻzgaruvchini oʻzgartirib boʻlmasa, u baribir raqamga aylanadi, lekin qiymati NaN. Keling, bu xatti-harakatni harakatda ko'rib chiqaylik.
 
-248. ### How do you get metadata of a module
+      ```javascript
+      var x = '100';
+      var y = +x;
+      console.log(typeof x, typeof y); // string, number
 
-     You can use the `import.meta` object which is a meta-property exposing context-specific meta data to a JavaScript module. It contains information about the current module, such as the module's URL. In browsers, you might get different meta data than NodeJS.
+      var a = 'Hello';
+      var b = +a;
+      console.log(typeof a, typeof b, b); // string, number, NaN
+      ```
 
-     ```javascript
-     <script type='module' src='welcome-module.js'></script>;
-     console.log(import.meta); // { url: "file:///home/user/welcome-module.js" }
-     ```
+      **[⬆ Back to Top](#table-of-contents)**
 
-     **[⬆ Back to Top](#table-of-contents)**
+242.  ### Massivdagi elementlarni qanday saralaysiz
 
-249. ### What is a comma operator
+      Sort() usuli massiv elementlarini joyida tartiblash uchun ishlatiladi va tartiblangan massivni qaytaradi. Foydalanish misoli quyidagi kabi bo'ladi,
 
-     The comma operator is used to evaluate each of its operands from left to right and returns the value of the last operand. This is totally different from comma usage within arrays, objects, and function arguments and parameters. For example, the usage for numeric expressions would be as below,
+      ```javascript
+      var months = ['Aug', 'Sep', 'Jan', 'June'];
+      months.sort();
+      console.log(months); //  ["Aug", "Jan", "June", "Sep"]
+      ```
 
-     ```javascript
-     var x = 1;
-     x = (x++, x);
+      **[⬆ Back to Top](#table-of-contents)**
 
-     console.log(x); // 2
-     ```
+243.  ### Massivlarni saralashda compareFunction nimadan iborat
 
-     **[⬆ Back to Top](#table-of-contents)**
+      Tartiblash tartibini aniqlash uchun compareFunction funksiyasidan foydalaniladi. Agar o'tkazib yuborilsa, massiv elementlari satrlarga aylantiriladi, so'ngra har bir belgining Unicode kod nuqtasi qiymatiga ko'ra tartiblanadi. Keling, compareFunction dan foydalanishni ko'rish uchun misol keltiramiz,
 
-250. ### What is the advantage of a comma operator
+      ```javascript
+      let numbers = [1, 2, 5, 3, 4];
+      numbers.sort((a, b) => b - a);
+      console.log(numbers); // [5, 4, 3, 2, 1]
+      ```
 
-     It is normally used to include multiple expressions in a location that requires a single expression. One of the common usages of this comma operator is to supply multiple parameters in a `for` loop. For example, the below for loop uses multiple expressions in a single location using comma operator,
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     for (var a = 0, b =10; a <= 10; a++, b--)
-     ```
+244.  ### Massivni qanday teskari aylantirasiz
 
-     You can also use the comma operator in a return statement where it processes before returning.
+      Massivdagi minimal va maksimal elementlarni topish uchun massiv oʻzgaruvchilari Math.minva usullaridan foydalanishingiz mumkin . Math.maxMassivdagi min va maksimal qiymatlarni topish uchun ikkita funktsiya yarataylik,
 
-     ```javascript
-     function myFunction() {
-       var a = 1;
-       return (a += 10), a; // 11
-     }
-     ```
+      ```javascript
+      let numbers = [1, 2, 5, 3, 4];
+      numbers.sort((a, b) => b - a);
+      numbers.reverse();
+      console.log(numbers); // [1, 2, 3, 4 ,5]
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-251. ### What is typescript
+245.  ### Massivda minimal va maksimal qiymatlarni qanday topasiz
 
-     TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
+      Minimal va maksimal qiymatlarni topish uchun har bir qiymatni eng past yoki eng yuqori qiymat bilan solishtirgan holda massivda aylanib yuradigan funksiyalarni yozishingiz mumkin. Keling, minimal va maksimal qiymatlarni topish uchun ushbu funktsiyalarni yarataylik,
 
-     ```bash
-     npm install -g typescript
-     ```
+      ```javascript
+      var marks = [50, 20, 70, 60, 45, 30];
+      function findMin(arr) {
+        return Math.min.apply(null, arr);
+      }
+      function findMax(arr) {
+        return Math.max.apply(null, arr);
+      }
 
-     Let's see a simple example of TypeScript usage,
+      console.log(findMin(marks));
+      console.log(findMax(marks));
+      ```
 
-     ```typescript
-     function greeting(name: string): string {
-       return 'Hello, ' + name;
-     }
+      **[⬆ Back to Top](#table-of-contents)**
 
-     let user = 'Sudheer';
+246.  ### Matematik funktsiyalarsiz min va maksimal qiymatlarni qanday topish mumkin
 
-     console.log(greeting(user));
-     ```
+      Bo'sh bayonot nuqta-vergul (;) bo'lib, JavaScript sintaksisi talab qilsa ham, hech qanday bayonot bajarilmasligini bildiradi. Bo'sh bayonot bilan hech qanday harakat yo'qligi sababli siz undan kamroq foydalanish deb o'ylashingiz mumkin, ammo bo'sh ibora vaqti-vaqti bilan bo'sh tanaga ega bo'lgan tsikl yaratmoqchi bo'lganingizda foydali bo'ladi. Masalan, siz nol qiymatga ega massivni quyidagi tarzda ishga tushirishingiz mumkin,
 
-     The greeting method allows only string type as argument.
+      ```javascript
+      var marks = [50, 20, 70, 60, 45, 30];
+      function findMin(arr) {
+        var length = arr.length;
+        var min = Infinity;
+        while (length--) {
+          if (arr[length] < min) {
+            min = arr[len];
+          }
+        }
+        return min;
+      }
 
-     **[⬆ Back to Top](#table-of-contents)**
+      function findMax(arr) {
+        var length = arr.length;
+        var max = -Infinity;
+        while (len--) {
+          if (arr[length] > max) {
+            max = arr[length];
+          }
+        }
+        return max;
+      }
 
-252. ### What are the differences between javascript and typescript
+      console.log(findMin(marks));
+      console.log(findMax(marks));
+      ```
 
-     Below are the list of differences between javascript and typescript,
+      **[⬆ Back to Top](#table-of-contents)**
 
-     | feature             | typescript                            | javascript                                      |
-     | ------------------- | ------------------------------------- | ----------------------------------------------- |
-     | Language paradigm   | Object oriented programming language  | Scripting language                              |
-     | Typing support      | Supports static typing                | It has dynamic typing                           |
-     | Modules             | Supported                             | Not supported                                   |
-     | Interface           | It has interfaces concept             | Doesn't support interfaces                      |
-     | Optional parameters | Functions support optional parameters | No support of optional parameters for functions |
+247.  ### Bo'sh statment nima va uning maqsadi
 
-     **[⬆ Back to Top](#table-of-contents)**
+      The empty statement is a semicolon (;) indicating that no statement will be executed, even if JavaScript syntax requires one. Since there is no action with an empty statement you might think that it's usage is quite less, but the empty statement is occasionally useful when you want to create a loop that has an empty body. For example, you can initialize an array with zero values as below,
 
-253. ### What are the advantages of typescript over javascript
+      ```javascript
+      // Initialize an array a
+      for(int i=0; i < a.length; a[i++] = 0) ;
+      ```
 
-     Below are some of the advantages of typescript over javascript,
+      **[⬆ Back to Top](#table-of-contents)**
 
-     1. TypeScript is able to find compile time errors at the development time only and it makes sures less runtime errors. Whereas javascript is an interpreted language.
-     2. TypeScript is strongly-typed or supports static typing which allows for checking type correctness at compile time. This is not available in javascript.
-     3. TypeScript compiler can compile the .ts files into ES3,ES4 and ES5 unlike ES6 features of javascript which may not be supported in some browsers.
+248.  ### Modulning metama'lumotlarini qanday olish mumkin
 
-     **[⬆ Back to Top](#table-of-contents)**
+      You can use the `import.meta` object which is a meta-property exposing context-specific meta data to a JavaScript module. It contains information about the current module, such as the module's URL. In browsers, you might get different meta data than NodeJS.
 
-254. ### What is an object initializer
+      ```javascript
+      <script type='module' src='welcome-module.js'></script>;
+      console.log(import.meta); // { url: "file:///home/user/welcome-module.js" }
+      ```
 
-     An object initializer is an expression that describes the initialization of an Object. The syntax for this expression is represented as a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}). This is also known as literal notation. It is one of the ways to create an object.
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     var initObject = { a: 'John', b: 50, c: {} };
+249.  ### Vergul operatori nima
 
-     console.log(initObject.a); // John
-     ```
+      The comma operator is used to evaluate each of its operands from left to right and returns the value of the last operand. This is totally different from comma usage within arrays, objects, and function arguments and parameters. For example, the usage for numeric expressions would be as below,
 
-     **[⬆ Back to Top](#table-of-contents)**
+      ```javascript
+      var x = 1;
+      x = (x++, x);
 
-255. ### What is a constructor method
+      console.log(x); // 2
+      ```
 
-     The constructor method is a special method for creating and initializing an object created within a class. If you do not specify a constructor method, a default constructor is used. The example usage of constructor would be as below,
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     class Employee {
-       constructor() {
-         this.name = 'John';
-       }
-     }
+250.  ### Vergul operatorining afzalligi nimada
 
-     var employeeObject = new Employee();
+      It is normally used to include multiple expressions in a location that requires a single expression. One of the common usages of this comma operator is to supply multiple parameters in a `for` loop. For example, the below for loop uses multiple expressions in a single location using comma operator,
 
-     console.log(employeeObject.name); // John
-     ```
+      ```javascript
+      for (var a = 0, b =10; a <= 10; a++, b--)
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      You can also use the comma operator in a return statement where it processes before returning.
 
-256. ### What happens if you write constructor more than once in a class
+      ```javascript
+      function myFunction() {
+        var a = 1;
+        return (a += 10), a; // 11
+      }
+      ```
 
-     The "constructor" in a class is a special method and it should be defined only once in a class. i.e, If you write a constructor method more than once in a class it will throw a `SyntaxError` error.
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
+251.  ### Typesciprt nima ?
+
+      TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
+
+      ```bash
+      npm install -g typescript
+      ```
+
+      Let's see a simple example of TypeScript usage,
+
+      ```typescript
+      function greeting(name: string): string {
+        return 'Hello, ' + name;
+      }
+
+      let user = 'Sudheer';
+
+      console.log(greeting(user));
+      ```
+
+      The greeting method allows only string type as argument.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+252.  ### Javascript va typescript o'rtasidagi farqlar qanday
+
+      Below are the list of differences between javascript and typescript,
+
+      | feature             | typescript                            | javascript                                      |
+      | ------------------- | ------------------------------------- | ----------------------------------------------- |
+      | Language paradigm   | Object oriented programming language  | Scripting language                              |
+      | Typing support      | Supports static typing                | It has dynamic typing                           |
+      | Modules             | Supported                             | Not supported                                   |
+      | Interface           | It has interfaces concept             | Doesn't support interfaces                      |
+      | Optional parameters | Functions support optional parameters | No support of optional parameters for functions |
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+253.  ### Typescriptning javascriptdan qanday afzalliklari bor
+
+      Below are some of the advantages of typescript over javascript,
+
+      1.  TypeScript is able to find compile time errors at the development time only and it makes sures less runtime errors. Whereas javascript is an interpreted language.
+      2.  TypeScript is strongly-typed or supports static typing which allows for checking type correctness at compile time. This is not available in javascript.
+      3.  TypeScript compiler can compile the .ts files into ES3,ES4 and ES5 unlike ES6 features of javascript which may not be supported in some browsers.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+254.  ### Ob'ektni ishga tushirish (obj initialize) nima
+
+      An object initializer is an expression that describes the initialization of an Object. The syntax for this expression is represented as a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}). This is also known as literal notation. It is one of the ways to create an object.
+
+      ```javascript
+      var initObject = { a: 'John', b: 50, c: {} };
+
+      console.log(initObject.a); // John
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+255.  ### Konstruktor usuli nima
+
+      The constructor method is a special method for creating and initializing an object created within a class. If you do not specify a constructor method, a default constructor is used. The example usage of constructor would be as below,
+
+      ```javascript
       class Employee {
         constructor() {
-          this.name = "John";
-        }
-        constructor() {   //  Uncaught SyntaxError: A class may only have one constructor
-          this.age = 30;
+          this.name = 'John';
         }
       }
 
       var employeeObject = new Employee();
 
-      console.log(employeeObject.name);
-     ```
+      console.log(employeeObject.name); // John
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-257. ### How do you call the constructor of a parent class
+256.  ### Agar classda bir necha marta konstruktor yozsangiz nima bo'ladiclass
 
-     You can use the `super` keyword to call the constructor of a parent class. Remember that `super()` must be called before using 'this' reference. Otherwise it will cause a reference error. Let's the usage of it,
+      The "constructor" in a class is a special method and it should be defined only once in a class. i.e, If you write a constructor method more than once in a class it will throw a `SyntaxError` error.
 
-     ```javascript
-     class Square extends Rectangle {
-       constructor(length) {
-         super(length, length);
-         this.name = 'Square';
-       }
-
-       get area() {
-         return this.width * this.height;
-       }
-
-       set area(value) {
-         this.area = value;
-       }
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-258. ### How do you get the prototype of an object
-
-     You can use the `Object.getPrototypeOf(obj)` method to return the prototype of the specified object. i.e. The value of the internal `prototype` property. If there are no inherited properties then `null` value is returned.
-
-     ```javascript
-     const newPrototype = {};
-     const newObject = Object.create(newPrototype);
-
-     console.log(Object.getPrototypeOf(newObject) === newPrototype); // true
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-259. ### What happens If I pass string type for getPrototype method
-
-     In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
-
-     ```javascript
-     // ES5
-     Object.getPrototypeOf('James'); // TypeError: "James" is not an object
-     // ES2015
-     Object.getPrototypeOf('James'); // String.prototype
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-260. ### How do you set prototype of one object to another
-
-     You can use the `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal `Prototype` property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
-
-     ```javascript
-     Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
-     Object.setPrototypeOf({}, null);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-261. ### How do you check whether an object can be extendable or not
-
-     The `Object.isExtensible()` method is used to determine if an object is extendable or not. i.e, Whether it can have new properties added to it or not.
-
-     ```javascript
-     const newObject = {};
-     console.log(Object.isExtensible(newObject)); //true
-     ```
-
-     **Note:** By default, all the objects are extendable. i.e, The new properties can be added or modified.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-262. ### How do you prevent an object to extend
-
-     The `Object.preventExtensions()` method is used to prevent new properties from ever being added to an object. In other words, it prevents future extensions to the object. Let's see the usage of this property,
-
-     ```javascript
-     const newObject = {};
-     Object.preventExtensions(newObject); // NOT extendable
-
-     try {
-       Object.defineProperty(newObject, 'newProperty', {
-         // Adding new property
-         value: 100,
-       });
-     } catch (e) {
-       console.log(e); // TypeError: Cannot define property newProperty, object is not extensible
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-263. ### What are the different ways to make an object non-extensible
-
-     You can mark an object non-extensible in 3 ways,
-
-     1. Object.preventExtensions
-     2. Object.seal
-     3. Object.freeze
-
-     ```javascript
-     var newObject = {};
-
-     Object.preventExtensions(newObject); // Prevent objects are non-extensible
-     Object.isExtensible(newObject); // false
-
-     var sealedObject = Object.seal({}); // Sealed objects are non-extensible
-     Object.isExtensible(sealedObject); // false
-
-     var frozenObject = Object.freeze({}); // Frozen objects are non-extensible
-     Object.isExtensible(frozenObject); // false
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-264. ### How do you define multiple properties on an object
-
-     The `Object.defineProperties()` method is used to define new or modify existing properties directly on an object and returning the object. Let's define multiple properties on an empty object,
-
-     ```javascript
-     const newObject = {};
-
-     Object.defineProperties(newObject, {
-       newProperty1: {
-         value: 'John',
-         writable: true,
-       },
-       newProperty2: {},
-     });
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-265. ### What is MEAN in javascript
-
-     The MEAN (MongoDB, Express, AngularJS, and Node.js) stack is the most popular open-source JavaScript software tech stack available for building dynamic web apps where you can write both the server-side and client-side halves of the web project entirely in JavaScript.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-266. ### What Is Obfuscation in javascript
-
-     Obfuscation is the deliberate act of creating obfuscated javascript code(i.e, source or machine code) that is difficult for humans to understand. It is something similar to encryption, but a machine can understand the code and execute it.
-     Let's see the below function before Obfuscation,
-
-     ```javascript
-     function greeting() {
-       console.log('Hello, welcome to JS world');
-     }
-     ```
-
-     And after the code Obfuscation, it would be appeared as below,
-
-     ```javascript
-     eval(
-       (function (p, a, c, k, e, d) {
-         e = function (c) {
-           return c;
-         };
-         if (!''.replace(/^/, String)) {
-           while (c--) {
-             d[c] = k[c] || c;
-           }
-           k = [
-             function (e) {
-               return d[e];
-             },
-           ];
-           e = function () {
-             return '\\w+';
-           };
-           c = 1;
+      ```javascript
+       class Employee {
+         constructor() {
+           this.name = "John";
          }
-         while (c--) {
-           if (k[c]) {
-             p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
-           }
+         constructor() {   //  Uncaught SyntaxError: A class may only have one constructor
+           this.age = 30;
          }
-         return p;
-       })(
-         "2 1(){0.3('4, 7 6 5 8')}",
-         9,
-         9,
-         'console|greeting|function|log|Hello|JS|to|welcome|world'.split('|'),
-         0,
-         {}
-       )
-     );
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-267. ### Why do you need Obfuscation
-
-     Below are the few reasons for Obfuscation,
-
-     1. The Code size will be reduced. So data transfers between server and client will be fast.
-     2. It hides the business logic from outside world and protects the code from others
-     3. Reverse engineering is highly difficult
-     4. The download time will be reduced
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-268. ### What is Minification
-
-     Minification is the process of removing all unnecessary characters(empty spaces are removed) and variables will be renamed without changing it's functionality. It is also a type of obfuscation .
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-269. ### What are the advantages of minification
-
-     Normally it is recommended to use minification for heavy traffic and intensive requirements of resources. It reduces file sizes with below benefits,
-
-     1. Decreases loading times of a web page
-     2. Saves bandwidth usages
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-270. ### What are the differences between Obfuscation and Encryption
-
-     Below are the main differences between Obfuscation and Encryption,
-
-     | Feature            | Obfuscation                                     | Encryption                                                              |
-     | ------------------ | ----------------------------------------------- | ----------------------------------------------------------------------- |
-     | Definition         | Changing the form of any data in any other form | Changing the form of information to an unreadable format by using a key |
-     | A key to decode    | It can be decoded without any key               | It is required                                                          |
-     | Target data format | It will be converted to a complex form          | Converted into an unreadable format                                     |
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-271. ### What are the common tools used for minification
-
-     There are many online/offline tools to minify the javascript files,
-
-     1. Google's Closure Compiler
-     2. UglifyJS2
-     3. jsmin
-     4. javascript-minifier.com/
-     5. prettydiff.com
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-272. ### How do you perform form validation using javascript
-
-     JavaScript can be used to perform HTML form validation. For example, if the form field is empty, the function needs to notify, and return false, to prevent the form being submitted.
-     Lets' perform user login in an html form,
-
-     ```html
-     <form name="myForm" onsubmit="return validateForm()" method="post">
-       User name: <input type="text" name="uname" />
-       <input type="submit" value="Submit" />
-     </form>
-     ```
-
-     And the validation on user login is below,
-
-     ```javascript
-     function validateForm() {
-       var x = document.forms['myForm']['uname'].value;
-       if (x == '') {
-         alert("The username shouldn't be empty");
-         return false;
-       }
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-273. ### How do you perform form validation without javascript
-
-     You can perform HTML form validation automatically without using javascript. The validation enabled by applying the `required` attribute to prevent form submission when the input is empty.
-
-     ```html
-     <form method="post">
-       <input type="text" name="uname" required />
-       <input type="submit" value="Submit" />
-     </form>
-     ```
-
-     **Note:** Automatic form validation does not work in Internet Explorer 9 or earlier.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-274. ### What are the DOM methods available for constraint validation
-
-     The below DOM methods are available for constraint validation on an invalid input,
-
-     1. checkValidity(): It returns true if an input element contains valid data.
-     2. setCustomValidity(): It is used to set the validationMessage property of an input element.
-        Let's take an user login form with DOM validations
-
-     ```javascript
-     function myFunction() {
-       var userName = document.getElementById('uname');
-       if (!userName.checkValidity()) {
-         document.getElementById('message').innerHTML =
-           userName.validationMessage;
-       } else {
-         document.getElementById('message').innerHTML =
-           'Entered a valid username';
-       }
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-275. ### What are the available constraint validation DOM properties
-
-     Below are the list of some of the constraint validation DOM properties available,
-
-     1. validity: It provides a list of boolean properties related to the validity of an input element.
-     2. validationMessage: It displays the message when the validity is false.
-     3. willValidate: It indicates if an input element will be validated or not.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-276. ### What are the list of validity properties
-
-     The validity property of an input element provides a set of properties related to the validity of data.
-
-     1. customError: It returns true, if a custom validity message is set.
-     2. patternMismatch: It returns true, if an element's value does not match its pattern attribute.
-     3. rangeOverflow: It returns true, if an element's value is greater than its max attribute.
-     4. rangeUnderflow: It returns true, if an element's value is less than its min attribute.
-     5. stepMismatch: It returns true, if an element's value is invalid according to step attribute.
-     6. tooLong: It returns true, if an element's value exceeds its maxLength attribute.
-     7. typeMismatch: It returns true, if an element's value is invalid according to type attribute.
-     8. valueMissing: It returns true, if an element with a required attribute has no value.
-     9. valid: It returns true, if an element's value is valid.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-277. ### Give an example usage of rangeOverflow property
-
-     If an element's value is greater than its max attribute then rangeOverflow property returns true. For example, the below form submission throws an error if the value is more than 100,
-
-     ```html
-     <input id="age" type="number" max="100" />
-     <button onclick="myOverflowFunction()">OK</button>
-     ```
-
-     ```javascript
-     function myOverflowFunction() {
-       if (document.getElementById('age').validity.rangeOverflow) {
-         alert('The mentioned age is not allowed');
-       }
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-278. ### Is enums feature available in javascript
-
-     No, javascript does not natively support enums. But there are different kinds of solutions to simulate them even though they may not provide exact equivalents. For example, you can use freeze or seal on object,
-
-     ```javascript
-     var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-279. ### What is an enum
-
-     An enum is a type restricting variables to one value from a predefined set of constants. JavaScript has no enums but typescript provides built-in enum support.
-
-     ```javascript
-     enum Color {
-      RED, GREEN, BLUE
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-280. ### How do you list all properties of an object
-
-     You can use the `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's the usage of it in an example,
-
-     ```javascript
-     const newObject = {
-       a: 1,
-       b: 2,
-       c: 3,
-     };
-
-     console.log(Object.getOwnPropertyNames(newObject));
-     ['a', 'b', 'c'];
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-281. ### How do you get property descriptors of an object
-
-     You can use the `Object.getOwnPropertyDescriptors()` method which returns all own property descriptors of a given object. The example usage of this method is below,
-
-     ```javascript
-     const newObject = {
-       a: 1,
-       b: 2,
-       c: 3,
-     };
-     const descriptorsObject = Object.getOwnPropertyDescriptors(newObject);
-     console.log(descriptorsObject.a.writable); //true
-     console.log(descriptorsObject.a.configurable); //true
-     console.log(descriptorsObject.a.enumerable); //true
-     console.log(descriptorsObject.a.value); // 1
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-282. ### What are the attributes provided by a property descriptor
-
-     A property descriptor is a record which has the following attributes
-
-     1. value: The value associated with the property
-     2. writable: Determines whether the value associated with the property can be changed or not
-     3. configurable: Returns true if the type of this property descriptor can be changed and if the property can be deleted from the corresponding object.
-     4. enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not.
-     5. set: A function which serves as a setter for the property
-     6. get: A function which serves as a getter for the property
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-283. ### How do you extend classes
-
-     The `extends` keyword is used in class declarations/expressions to create a class which is a child of another class. It can be used to subclass custom classes as well as built-in objects. The syntax would be as below,
-
-     ```javascript
-     class ChildClass extends ParentClass { ... }
-     ```
-
-     Let's take an example of Square subclass from Polygon parent class,
-
-     ```javascript
-     class Square extends Rectangle {
-       constructor(length) {
-         super(length, length);
-         this.name = 'Square';
        }
 
-       get area() {
-         return this.width * this.height;
-       }
+       var employeeObject = new Employee();
 
-       set area(value) {
-         this.area = value;
-       }
-     }
-     ```
+       console.log(employeeObject.name);
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-284. ### How do I modify the url without reloading the page
+257.  ### Parent classning konstruktorini qanday chaqirish mumkin?
 
-     The `window.location.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
+      You can use the `super` keyword to call the constructor of a parent class. Remember that `super()` must be called before using 'this' reference. Otherwise it will cause a reference error. Let's the usage of it,
 
-     ```javascript
-     window.history.pushState('page2', 'Title', '/page2.html');
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-285. ### How do you check whether an array includes a particular value or not
-
-     The `Array#includes()` method is used to determine whether an array includes a particular value among its entries by returning either true or false. Let's see an example to find an element(numeric and string) within an array.
-
-     ```javascript
-     var numericArray = [1, 2, 3, 4];
-     console.log(numericArray.includes(3)); // true
-
-     var stringArray = ['green', 'yellow', 'blue'];
-     console.log(stringArray.includes('blue')); //true
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-286. ### How do you compare scalar arrays
-
-     You can use length and every method of arrays to compare two scalar(compared directly using ===) arrays. The combination of these expressions can give the expected result,
-
-     ```javascript
-     const arrayFirst = [1, 2, 3, 4, 5];
-     const arraySecond = [1, 2, 3, 4, 5];
-     console.log(
-       arrayFirst.length === arraySecond.length &&
-         arrayFirst.every((value, index) => value === arraySecond[index])
-     ); // true
-     ```
-
-     If you would like to compare arrays irrespective of order then you should sort them before,
-
-     ```javascript
-     const arrayFirst = [2, 3, 1, 4, 5];
-     const arraySecond = [1, 2, 3, 4, 5];
-     console.log(
-       arrayFirst.length === arraySecond.length &&
-         arrayFirst.sort().every((value, index) => value === arraySecond[index])
-     ); //true
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-287. ### How to get the value from get parameters
-
-     The `new URL()` object accepts the url string and `searchParams` property of this object can be used to access the get parameters. Remember that you may need to use polyfill or `window.location` to access the URL in older browsers(including IE).
-
-     ```javascript
-     let urlString = 'http://www.some-domain.com/about.html?x=1&y=2&z=3'; //window.location.href
-     let url = new URL(urlString);
-     let parameterZ = url.searchParams.get('z');
-     console.log(parameterZ); // 3
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-288. ### How do you print numbers with commas as thousand separators
-
-     You can use the `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator,currency etc of this number.
-
-     ```javascript
-     function convertToThousandFormat(x) {
-       return x.toLocaleString(); // 12,345.679
-     }
-
-     console.log(convertToThousandFormat(12345.6789));
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-289. ### What is the difference between java and javascript
-
-     Both are totally unrelated programming languages and no relation between them. Java is statically typed, compiled, runs on its own VM. Whereas Javascript is dynamically typed, interpreted, and runs in a browser and nodejs environments. Let's see the major differences in a tabular format,
-     | Feature | Java | JavaScript |
-     |---- | ---- | -----
-     | Typed | It's a strongly typed language | It's a dynamic typed language |
-     | Paradigm | Object oriented programming | Prototype based programming |
-     | Scoping | Block scoped | Function-scoped |
-     | Concurrency | Thread based | event based |
-     | Memory | Uses more memory | Uses less memory. Hence it will be used for web pages |
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-290. ### Does JavaScript supports namespace
-
-     JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
-
-     ```javascript
-     function func1() {
-       console.log('This is a first definition');
-     }
-     function func1() {
-       console.log('This is a second definition');
-     }
-     func1(); // This is a second definition
-     ```
-
-     It always calls the second function definition. In this case, namespace will solve the name collision problem.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-291. ### How do you declare namespace
-
-     Even though JavaScript lacks namespaces, we can use Objects , IIFE to create namespaces.
-
-     1. **Using Object Literal Notation:** Let's wrap variables and functions inside an Object literal which acts as a namespace. After that you can access them using object notation
-
-     ```javascript
-     var namespaceOne = {
-        function func1() {
-            console.log("This is a first definition");
+      ```javascript
+      class Square extends Rectangle {
+        constructor(length) {
+          super(length, length);
+          this.name = 'Square';
         }
-     }
-     var namespaceTwo = {
-          function func1() {
-              console.log("This is a second definition");
-          }
+
+        get area() {
+          return this.width * this.height;
+        }
+
+        set area(value) {
+          this.area = value;
+        }
       }
-     namespaceOne.func1(); // This is a first definition
-     namespaceTwo.func1(); // This is a second definition
-     ```
-
-     1. **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
-
-     ```javascript
-     (function () {
-       function fun1() {
-         console.log('This is a first definition');
-       }
-       fun1();
-     })();
-
-     (function () {
-       function fun1() {
-         console.log('This is a second definition');
-       }
-       fun1();
-     })();
-     ```
+      ```
 
-     1. **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     {
-       let myFunction = function fun1() {
-         console.log('This is a first definition');
-       };
-       myFunction();
-     }
-     //myFunction(): ReferenceError: myFunction is not defined.
+258.  ### Ob'ektning prototipini qanday olish mumkin
 
-     {
-       let myFunction = function fun1() {
-         console.log('This is a second definition');
-       };
-       myFunction();
-     }
-     //myFunction(): ReferenceError: myFunction is not defined.
-     ```
+      You can use the `Object.getPrototypeOf(obj)` method to return the prototype of the specified object. i.e. The value of the internal `prototype` property. If there are no inherited properties then `null` value is returned.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      ```javascript
+      const newPrototype = {};
+      const newObject = Object.create(newPrototype);
 
-292. ### How do you invoke javascript code in an iframe from parent page
+      console.log(Object.getPrototypeOf(newObject) === newPrototype); // true
+      ```
 
-     Initially iFrame needs to be accessed using either `document.getElementBy` or `window.frames`. After that `contentWindow` property of iFrame gives the access for targetFunction
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     document.getElementById('targetFrame').contentWindow.targetFunction();
-     window.frames[0].frameElement.contentWindow.targetFunction(); // Accessing iframe this way may not work in latest versions chrome and firefox
-     ```
+259.  ### Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi
 
-     **[⬆ Back to Top](#table-of-contents)**
+      In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
 
-293. ### How do get the timezone offset from date
+      ```javascript
+      // ES5
+      Object.getPrototypeOf('James'); // TypeError: "James" is not an object
+      // ES2015
+      Object.getPrototypeOf('James'); // String.prototype
+      ```
 
-     You can use the `getTimezoneOffset` method of the date object. This method returns the time zone difference, in minutes, from current locale (host system settings) to UTC
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     var offset = new Date().getTimezoneOffset();
-     console.log(offset); // -480
-     ```
+260.  ### Bir ob'ektning prototipini boshqasiga qanday o'rnatish mumkin
 
-     **[⬆ Back to Top](#table-of-contents)**
+      You can use the `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal `Prototype` property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
 
-294. ### How do you load CSS and JS files dynamically
+      ```javascript
+      Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
+      Object.setPrototypeOf({}, null);
+      ```
 
-     You can create both link and script elements in the DOM and append them as child to head tag. Let's create a function to add script and style resources as below,
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     function loadAssets(filename, filetype) {
-       if (filetype == 'css') {
-         // External CSS file
-         var fileReference = document.createElement('link');
-         fileReference.setAttribute('rel', 'stylesheet');
-         fileReference.setAttribute('type', 'text/css');
-         fileReference.setAttribute('href', filename);
-       } else if (filetype == 'js') {
-         // External JavaScript file
-         var fileReference = document.createElement('script');
-         fileReference.setAttribute('type', 'text/javascript');
-         fileReference.setAttribute('src', filename);
-       }
-       if (typeof fileReference != 'undefined')
-         document.getElementsByTagName('head')[0].appendChild(fileReference);
-     }
-     ```
+261.  ### Ob'ektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin
 
-     **[⬆ Back to Top](#table-of-contents)**
+      The `Object.isExtensible()` method is used to determine if an object is extendable or not. i.e, Whether it can have new properties added to it or not.
 
-295. ### What are the different methods to find HTML elements in DOM
+      ```javascript
+      const newObject = {};
+      console.log(Object.isExtensible(newObject)); //true
+      ```
 
-     If you want to access any element in an HTML page, you need to start with accessing the document object. Later you can use any of the below methods to find the HTML element,
+      **Note:** By default, all the objects are extendable. i.e, The new properties can be added or modified.
 
-     1. document.getElementById(id): It finds an element by Id
-     2. document.getElementsByTagName(name): It finds an element by tag name
-     3. document.getElementsByClassName(name): It finds an element by class name
+      **[⬆ Back to Top](#table-of-contents)**
 
-     **[⬆ Back to Top](#table-of-contents)**
+262.  ### Ob'ektni kengaytirishni qanday oldini olish mumkin
 
-296. ### What is jQuery
+      The `Object.preventExtensions()` method is used to prevent new properties from ever being added to an object. In other words, it prevents future extensions to the object. Let's see the usage of this property,
 
-     jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of “Write less, do more”. For example, you can display welcome message on the page load using jQuery as below,
+      ```javascript
+      const newObject = {};
+      Object.preventExtensions(newObject); // NOT extendable
 
-     ```javascript
-     $(document).ready(function () {
-       // It selects the document and apply the function on page load
-       alert('Welcome to jQuery world');
-     });
-     ```
+      try {
+        Object.defineProperty(newObject, 'newProperty', {
+          // Adding new property
+          value: 100,
+        });
+      } catch (e) {
+        console.log(e); // TypeError: Cannot define property newProperty, object is not extensible
+      }
+      ```
 
-     **Note:** You can download it from jquery's official site or install it from CDNs, like google.
+      **[⬆ Back to Top](#table-of-contents)**
 
-     **[⬆ Back to Top](#table-of-contents)**
+263.  ### Ob'ektni kengaytirilmaydigan qilishning turli usullari qanday
 
-297. ### What is V8 JavaScript engine
+      You can mark an object non-extensible in 3 ways,
 
-     V8 is an open source high-performance JavaScript engine used by the Google Chrome browser, written in C++. It is also being used in the node.js project. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors.
-     **Note:** It can run standalone, or can be embedded into any C++ application.
+      1.  Object.preventExtensions
+      2.  Object.seal
+      3.  Object.freeze
 
-     **[⬆ Back to Top](#table-of-contents)**
+      ```javascript
+      var newObject = {};
 
-298. ### Why do we call javascript as dynamic language
+      Object.preventExtensions(newObject); // Prevent objects are non-extensible
+      Object.isExtensible(newObject); // false
 
-     JavaScript is a loosely typed or a dynamic language because variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned/reassigned with values of all types.
+      var sealedObject = Object.seal({}); // Sealed objects are non-extensible
+      Object.isExtensible(sealedObject); // false
 
-     ```javascript
-     let age = 50; // age is a number now
-     age = 'old'; // age is a string now
-     age = true; // age is a boolean
-     ```
+      var frozenObject = Object.freeze({}); // Frozen objects are non-extensible
+      Object.isExtensible(frozenObject); // false
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-299. ### What is a void operator
+264.  ### Ob'ektda bir nechta xususiyatlarni qanday aniqlash mumkin
 
-     The `void` operator evaluates the given expression and then returns undefined(i.e, without returning value). The syntax would be as below,
+      The `Object.defineProperties()` method is used to define new or modify existing properties directly on an object and returning the object. Let's define multiple properties on an empty object,
 
-     ```javascript
-     void expression;
-     void expression;
-     ```
+      ```javascript
+      const newObject = {};
 
-     Let's display a message without any redirection or reload
+      Object.defineProperties(newObject, {
+        newProperty1: {
+          value: 'John',
+          writable: true,
+        },
+        newProperty2: {},
+      });
+      ```
 
-     ```javascript
-     <a href="javascript:void(alert('Welcome to JS world'))">
-       Click here to see a message
-     </a>
-     ```
+      **[⬆ Back to Top](#table-of-contents)**
 
-     **Note:** This operator is often used to obtain the undefined primitive value, using "void(0)".
+265.  ### Javascriptda MEAN nima
 
-     **[⬆ Back to Top](#table-of-contents)**
+      The MEAN (MongoDB, Express, AngularJS, and Node.js) stack is the most popular open-source JavaScript software tech stack available for building dynamic web apps where you can write both the server-side and client-side halves of the web project entirely in JavaScript.
 
-300. ### How to set the cursor to wait
+      **[⬆ Back to Top](#table-of-contents)**
 
-     The cursor can be set to wait in JavaScript by using the property "cursor". Let's perform this behavior on page load using the below function.
+266.  ### Javascriptda xiralashish(Obfuscation ) nima
 
-     ```javascript
-     function myFunction() {
-       window.document.body.style.cursor = 'wait';
-     }
-     ```
+      Obfuscation is the deliberate act of creating obfuscated javascript code(i.e, source or machine code) that is difficult for humans to understand. It is something similar to encryption, but a machine can understand the code and execute it.
+      Let's see the below function before Obfuscation,
 
-     and this function invoked on page load
+      ```javascript
+      function greeting() {
+        console.log('Hello, welcome to JS world');
+      }
+      ```
 
-     ```html
-     <body onload="myFunction()"></body>
-     ```
+      And after the code Obfuscation, it would be appeared as below,
 
-     **[⬆ Back to Top](#table-of-contents)**
+      ```javascript
+      eval(
+        (function (p, a, c, k, e, d) {
+          e = function (c) {
+            return c;
+          };
+          if (!''.replace(/^/, String)) {
+            while (c--) {
+              d[c] = k[c] || c;
+            }
+            k = [
+              function (e) {
+                return d[e];
+              },
+            ];
+            e = function () {
+              return '\\w+';
+            };
+            c = 1;
+          }
+          while (c--) {
+            if (k[c]) {
+              p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+            }
+          }
+          return p;
+        })(
+          "2 1(){0.3('4, 7 6 5 8')}",
+          9,
+          9,
+          'console|greeting|function|log|Hello|JS|to|welcome|world'.split('|'),
+          0,
+          {}
+        )
+      );
+      ```
 
-301. ### How do you create an infinite loop
+      **[⬆ Back to Top](#table-of-contents)**
 
-     You can create infinite loops using for and while loops without using any expressions. The for loop construct or syntax is better approach in terms of ESLint and code optimizer tools,
+267.  ### Nima uchun sizga obfuscation kerak ?
 
-     ```javascript
-     for (;;) {}
-     while (true) {}
-     ```
+      Below are the few reasons for Obfuscation,
 
-     **[⬆ Back to Top](#table-of-contents)**
+      1.  The Code size will be reduced. So data transfers between server and client will be fast.
+      2.  It hides the business logic from outside world and protects the code from others
+      3.  Reverse engineering is highly difficult
+      4.  The download time will be reduced
 
-302. ### Why do you need to avoid with statement
+      **[⬆ Back to Top](#table-of-contents)**
 
-     JavaScript's with statement was intended to provide a shorthand for writing recurring accesses to objects. So it can help reduce file size by reducing the need to repeat a lengthy object reference without performance penalty. Let's take an example where it is used to avoid redundancy when accessing an object several times.
+268.  ### Kichiklashtirish(minification) nima
 
-     ```javascript
-     a.b.c.greeting = 'welcome';
-     a.b.c.age = 32;
-     ```
+      Minification is the process of removing all unnecessary characters(empty spaces are removed) and variables will be renamed without changing it's functionality. It is also a type of obfuscation .
 
-     Using `with` it turns this into:
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     with (a.b.c) {
-       greeting = 'welcome';
-       age = 32;
-     }
-     ```
+269.  ### Kichiklashtirishning qanday afzalliklari bor
 
-     But this `with` statement creates performance problems since one cannot predict whether an argument will refer to a real variable or to a property inside the with argument.
+      Normally it is recommended to use minification for heavy traffic and intensive requirements of resources. It reduces file sizes with below benefits,
 
-     **[⬆ Back to Top](#table-of-contents)**
+      1.  Decreases loading times of a web page
+      2.  Saves bandwidth usages
 
-303. ### What is the output of below for loops
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```javascript
-     for (var i = 0; i < 4; i++) {
-       // global scope
-       setTimeout(() => console.log(i));
-     }
+270.  ### Obfuscation va shifrlash o'rtasidagi farqlar qanday
 
-     for (let i = 0; i < 4; i++) {
-       // block scope
-       setTimeout(() => console.log(i));
-     }
-     ```
+      Below are the main differences between Obfuscation and Encryption,
 
-     The output of the above for loops is 4 4 4 4 and 0 1 2 3
+      | Feature            | Obfuscation                                     | Encryption                                                              |
+      | ------------------ | ----------------------------------------------- | ----------------------------------------------------------------------- |
+      | Definition         | Changing the form of any data in any other form | Changing the form of information to an unreadable format by using a key |
+      | A key to decode    | It can be decoded without any key               | It is required                                                          |
+      | Target data format | It will be converted to a complex form          | Converted into an unreadable format                                     |
 
-     **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time `setTimeout` function is invoked. Hence, the output of the first loop is `4 4 4 4`.
+      **[⬆ Back to Top](#table-of-contents)**
 
-     Whereas in the second loop, the variable i is declared as the `let` keyword it becomes a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
+271.  ### Kichiklashtirish uchun qanday umumiy vositalar qo'llaniladi
 
-     **[⬆ Back to Top](#table-of-contents)**
+      There are many online/offline tools to minify the javascript files,
 
-304. ### List down some of the features of ES6
+      1.  Google's Closure Compiler
+      2.  UglifyJS2
+      3.  jsmin
+      4.  javascript-minifier.com/
+      5.  prettydiff.com
 
-     Below are the list of some new features of ES6,
+      **[⬆ Back to Top](#table-of-contents)**
 
-     1. Support for constants or immutable variables
-     2. Block-scope support for variables, constants and functions
-     3. Arrow functions
-     4. Default parameters
-     5. Rest and Spread Parameters
-     6. Template Literals
-     7. Multi-line Strings
-     8. Destructuring Assignment
-     9. Enhanced Object Literals
-     10. Promises
-     11. Classes
-     12. Modules
+272.  ### Javascript yordamida shaklni(form) tekshirishni qanday amalga oshirasiz
 
-     **[⬆ Back to Top](#table-of-contents)**
+      JavaScript can be used to perform HTML form validation. For example, if the form field is empty, the function needs to notify, and return false, to prevent the form being submitted.
+      Lets' perform user login in an html form,
 
-305. ### What is ES6
+      ```html
+      <form name="myForm" onsubmit="return validateForm()" method="post">
+        User name: <input type="text" name="uname" />
+        <input type="submit" value="Submit" />
+      </form>
+      ```
 
-     ES6 is the sixth edition of the javascript language and it was released in June 2015. It was initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015. Almost all the modern browsers support ES6 but for the old browsers there are many transpilers, like Babel.js etc.
+      And the validation on user login is below,
 
-     **[⬆ Back to Top](#table-of-contents)**
-
-306. ### Can I redeclare let and const variables
-
-     No, you cannot redeclare let and const variables. If you do, it throws below error
-
-     ```bash
-     Uncaught SyntaxError: Identifier 'someVariable' has already been declared
-     ```
-
-     **Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
-
-     ```javascript
-     var name = 'John';
-     function myFunc() {
-       var name = 'Nick';
-       var name = 'Abraham'; // Re-assigned in the same function block
-       alert(name); // Abraham
-     }
-     myFunc();
-     alert(name); // John
-     ```
-
-     The block-scoped multi-declaration throws syntax error,
-
-     ```javascript
-     let name = 'John';
-     function myFunc() {
-       let name = 'Nick';
-       let name = 'Abraham'; // Uncaught SyntaxError: Identifier 'name' has already been declared
-       alert(name);
-     }
-
-     myFunc();
-     alert(name);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-307. ### Is const variable makes the value immutable
-
-     No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
-
-     ```javascript
-     const userList = [];
-     userList.push('John'); // Can mutate even though it can't re-assign
-     console.log(userList); // ['John']
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-308. ### What are default parameters
-
-     In E5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
-
-     ```javascript
-     //ES5
-     var calculateArea = function (height, width) {
-       height = height || 50;
-       width = width || 60;
-
-       return width * height;
-     };
-     console.log(calculateArea()); //300
-     ```
-
-     The default parameters makes the initialization more simpler,
-
-     ```javascript
-     //ES6
-     var calculateArea = function (height = 50, width = 60) {
-       return width * height;
-     };
-
-     console.log(calculateArea()); //300
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-309. ### What are template literals
-
-     Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
-     In E6, this feature enables using dynamic expressions as below,
-
-     ```javascript
-     var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
-     ```
-
-     In ES5, you need break string like below,
-
-     ```javascript
-     var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
-     ```
-
-     **Note:** You can use multi-line strings and string interpolation features with template literals.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-310. ### How do you write multi-line strings in template literals
-
-     In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
-
-     ```javascript
-     console.log('This is string sentence 1\n' + 'This is string sentence 2');
-     ```
-
-     Whereas in ES6, You don't need to mention any newline sequence character,
-
-     ```javascript
-     console.log(`This is string sentence
-     'This is string sentence 2`);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-311. ### What are nesting templates
-
-     The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
-
-     ```javascript
-     const iconStyles = `icon ${
-       isMobilePlatform()
-         ? ''
-         : `icon-${user.isAuthorized ? 'submit' : 'disabled'}`
-     }`;
-     ```
-
-     You can write the above use case without nesting template features as well. However, the nesting template feature is more compact and readable.
-
-     ```javascript
-     //Without nesting templates
-      const iconStyles = `icon ${ isMobilePlatform() ? '' :
-       (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-312. ### What are tagged templates
-
-     Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
-
-     ```javascript
-     var user1 = 'John';
-     var skill1 = 'JavaScript';
-     var experience1 = 15;
-
-     var user2 = 'Kane';
-     var skill2 = 'JavaScript';
-     var experience2 = 5;
-
-     function myInfoTag(strings, userExp, experienceExp, skillExp) {
-       var str0 = strings[0]; // "Mr/Ms. "
-       var str1 = strings[1]; // " is a/an "
-       var str2 = strings[2]; // "in"
-
-       var expertiseStr;
-       if (experienceExp > 10) {
-         expertiseStr = 'expert developer';
-       } else if (skillExp > 5 && skillExp <= 10) {
-         expertiseStr = 'senior developer';
-       } else {
-         expertiseStr = 'junior developer';
-       }
-
-       return `${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp}`;
-     }
-
-     var output1 = myInfoTag`Mr/Ms. ${user1} is a/an ${experience1} in ${skill1}`;
-     var output2 = myInfoTag`Mr/Ms. ${user2} is a/an ${experience2} in ${skill2}`;
-
-     console.log(output1); // Mr/Ms. John is a/an expert developer in JavaScript
-     console.log(output2); // Mr/Ms. Kane is a/an junior developer in JavaScript
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-313. ### What are raw strings
-
-     ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
-
-     ```javascript
-     var calculationString = String.raw`The sum of numbers is \n${
-       1 + 2 + 3 + 4
-     }!`;
-     console.log(calculationString); // The sum of numbers is 10
-     ```
-
-     If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
-
-     ```javascript
-     var calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
-     console.log(calculationString);
-     // The sum of numbers is
-     // 10
-     ```
-
-     Also, the raw property is available on the first argument to the tag function
-
-     ```javascript
-     function tag(strings) {
-       console.log(strings.raw[0]);
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-314. ### What is destructuring assignment
-
-     The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
-     Let's get the month values from an array using destructuring assignment
-
-     ```javascript
-     var [one, two, three] = ['JAN', 'FEB', 'MARCH'];
-
-     console.log(one); // "JAN"
-     console.log(two); // "FEB"
-     console.log(three); // "MARCH"
-     ```
-
-     and you can get user properties of an object using destructuring assignment,
-
-     ```javascript
-     var { name, age } = { name: 'John', age: 32 };
-
-     console.log(name); // John
-     console.log(age); // 32
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-315. ### What are default values in destructuring assignment
-
-     A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object use cases,
-
-     **Arrays destructuring:**
-
-     ```javascript
-     var x, y, z;
-
-     [x = 2, y = 4, z = 6] = [10];
-     console.log(x); // 10
-     console.log(y); // 4
-     console.log(z); // 6
-     ```
-
-     **Objects destructuring:**
-
-     ```javascript
-     var { x = 2, y = 4, z = 6 } = { x: 10 };
-
-     console.log(x); // 10
-     console.log(y); // 4
-     console.log(z); // 6
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-316. ### How do you swap variables in destructuring assignment
-
-     If you don't use destructuring assignment, swapping two values requires a temporary variable. Whereas using a destructuring feature, two variable values can be swapped in one destructuring expression. Let's swap two number variables in array destructuring assignment,
-
-     ```javascript
-     var x = 10,
-       y = 20;
-
-     [x, y] = [y, x];
-     console.log(x); // 20
-     console.log(y); // 10
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-317. ### What are enhanced object literals
-
-     Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
-
-     ```javascript
-     //ES6
-     var x = 10,
-       y = 20;
-     obj = { x, y };
-     console.log(obj); // {x: 10, y:20}
-     //ES5
-     var x = 10,
-       y = 20;
-     obj = { x: x, y: y };
-     console.log(obj); // {x: 10, y:20}
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-318. ### What are dynamic imports
-
-     The dynamic imports using `import()` function syntax allows us to load modules on demand by using promises or the async/await syntax. Currently this feature is in [stage4 proposal](https://github.com/tc39/proposal-dynamic-import). The main advantage of dynamic imports is reduction of our bundle's sizes, the size/payload response of our requests and overall improvements in the user experience.
-     The syntax of dynamic imports would be as below,
-
-     ```javascript
-     import('./Module').then((Module) => Module.method());
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-319. ### What are the use cases for dynamic imports
-
-     Below are some of the use cases of using dynamic imports over static imports,
-
-     1. Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
-
-     ```javascript
-     if (isLegacyBrowser()) {
-         import(···)
-         .then(···);
-     }
-     ```
-
-     1. Compute the module specifier at runtime. For example, you can use it for internationalization.
-
-     ```javascript
-     import(`messages_${getLocale()}.js`).then(···);
-     ```
-
-     1. Import a module from within a regular script instead a module.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-320. ### What are typed arrays
-
-     Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 8 Typed array types,
-
-     1. Int8Array: An array of 8-bit signed integers
-     2. Int16Array: An array of 16-bit signed integers
-     3. Int32Array: An array of 32-bit signed integers
-     4. Uint8Array: An array of 8-bit unsigned integers
-     5. Uint16Array: An array of 16-bit unsigned integers
-     6. Uint32Array: An array of 32-bit unsigned integers
-     7. Float32Array: An array of 32-bit floating point numbers
-     8. Float64Array: An array of 64-bit floating point numbers
-
-     For example, you can create an array of 8-bit signed integers as below
-
-     ```javascript
-     const a = new Int8Array();
-     // You can pre-allocate n bytes
-     const bytes = 1024;
-     const a = new Int8Array(bytes);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-321. ### What are the advantages of module loaders
-
-     The module loaders provides the below features,
-
-     1. Dynamic loading
-     2. State isolation
-     3. Global namespace isolation
-     4. Compilation hooks
-     5. Nested virtualization
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-322. ### What is collation
-
-     Collation is used for sorting a set of strings and searching within a set of strings. It is parameterized by locale and aware of Unicode. Let's take comparison and sorting features,
-
-     1. **Comparison:**
-
-     ```javascript
-     var list = ['ä', 'a', 'z']; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
-     var l10nDE = new Intl.Collator('de');
-     var l10nSV = new Intl.Collator('sv');
-     console.log(l10nDE.compare('ä', 'z') === -1); // true
-     console.log(l10nSV.compare('ä', 'z') === +1); // true
-     ```
-
-     1. **Sorting:**
-
-     ```javascript
-     var list = ['ä', 'a', 'z']; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
-     var l10nDE = new Intl.Collator('de');
-     var l10nSV = new Intl.Collator('sv');
-     console.log(list.sort(l10nDE.compare)); // [ "a", "ä", "z" ]
-     console.log(list.sort(l10nSV.compare)); // [ "a", "z", "ä" ]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-323. ### What is for...of statement
-
-     The for...of statement creates a loop iterating over iterable objects or elements such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
-
-     ```javascript
-     let arrayIterable = [10, 20, 30, 40, 50];
-
-     for (let value of arrayIterable) {
-       value++;
-       console.log(value); // 11 21 31 41 51
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-324. ### What is the output of below spread operator array
-
-     ```javascript
-     [...'John Resig'];
-     ```
-
-     The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
-     **Explanation:** The string is an iterable type and the spread operator within an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-325. ### Is PostMessage secure
-
-     Yes, postMessages can be considered very secure as long as the programmer/developer is careful about checking the origin and source of an arriving message. But if you try to send/receive a message without verifying its source will create cross-site scripting attacks.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-326. ### What are the problems with postmessage target origin as wildcard
-
-     The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard “\*” as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
-
-     ```javascript
-     targetWindow.postMessage(message, '*');
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-327. ### How do you avoid receiving postMessages from attackers
-
-     Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin, which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
-
-     ```javascript
-     //Listener on http://www.some-receiver.com/
-     window.addEventListener("message", function(message){
-         if(/^http://www\.some-sender\.com$/.test(message.origin)){
-              console.log('You received the data from valid sender', message.data);
+      ```javascript
+      function validateForm() {
+        var x = document.forms['myForm']['uname'].value;
+        if (x == '') {
+          alert("The username shouldn't be empty");
+          return false;
         }
-     });
-     ```
+      }
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-328. ### Can I avoid using postMessages completely
+273.  ### Shaklni(form) tekshirishni javascriptsiz qanday amalga oshirasiz
 
-     You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
+      You can perform HTML form validation automatically without using javascript. The validation enabled by applying the `required` attribute to prevent form submission when the input is empty.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      ```html
+      <form method="post">
+        <input type="text" name="uname" required />
+        <input type="submit" value="Submit" />
+      </form>
+      ```
 
-329. ### Is postMessages synchronous
+      **Note:** Automatic form validation does not work in Internet Explorer 9 or earlier.
 
-     The postMessages are synchronous in IE8 browser but they are asynchronous in IE9 and all other modern browsers (i.e, IE9+, Firefox, Chrome, Safari).Due to this asynchronous behaviour, we use a callback mechanism when the postMessage is returned.
+      **[⬆ Back to Top](#table-of-contents)**
 
-     **[⬆ Back to Top](#table-of-contents)**
+274.  ### Cheklovlarni tekshirish uchun qanday DOM usullari mavjud
 
-330. ### What paradigm is Javascript
+      The below DOM methods are available for constraint validation on an invalid input,
 
-     JavaScript is a multi-paradigm language, supporting imperative/procedural programming, Object-Oriented Programming and functional programming. JavaScript supports Object-Oriented Programming with prototypical inheritance.
+      1.  checkValidity(): It returns true if an input element contains valid data.
+      2.  setCustomValidity(): It is used to set the validationMessage property of an input element.
+          Let's take an user login form with DOM validations
 
-     **[⬆ Back to Top](#table-of-contents)**
-
-331. ### What is the difference between internal and external javascript
-
-     **Internal JavaScript:** It is the source code within the script tag.
-     **External JavaScript:** The source code is stored in an external file(stored with .js extension) and referred with in the tag.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-332. ### Is JavaScript faster than server side script
-
-     Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-333. ### How do you get the status of a checkbox
-
-     You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
-
-     ```html
-     <input type="checkbox" name="checkboxname" value="Agree" /> Agree the
-     conditions<br />
-     ```
-
-     ```javascript
-     console.log(document.getElementById(‘checkboxname’).checked); // true or false
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-334. ### What is the purpose of double tilde operator
-
-     The double tilde operator(~~) is known as double NOT bitwise operator. This operator is going to be a quicker substitute for Math.floor().
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-335. ### How do you convert character to ASCII code
-
-     You can use the `String.prototype.charCodeAt()` method to convert string characters to ASCII numbers. For example, let's find ASCII code for the first letter of 'ABC' string,
-
-     ```javascript
-     'ABC'.charCodeAt(0); // returns 65
-     ```
-
-     Whereas `String.fromCharCode()` method converts numbers to equal ASCII characters.
-
-     ```javascript
-     String.fromCharCode(65, 66, 67); // returns 'ABC'
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-336. ### What is ArrayBuffer
-
-     An ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer. You can create it as below,
-
-     ```javascript
-     let buffer = new ArrayBuffer(16); // create a buffer of length 16
-     alert(buffer.byteLength); // 16
-     ```
-
-     To manipulate an ArrayBuffer, we need to use a “view” object.
-
-     ```javascript
-     //Create a DataView referring to the buffer
-     let view = new DataView(buffer);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-337. ### What is the output of below string expression
-
-     ```javascript
-     console.log('Welcome to JS world'[0]);
-     ```
-
-     The output of the above expression is "W".
-     **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-338. ### What is the purpose of Error object
-
-     The Error constructor creates an error object and the instances of error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. The syntax of error object would be as below,
-
-     ```javascript
-     new Error([message[, fileName[, lineNumber]]])
-     ```
-
-     You can throw user defined exceptions or errors using Error object in try...catch block as below,
-
-     ```javascript
-     try {
-       if (withdraw > balance)
-         throw new Error("Oops! You don't have enough balance");
-     } catch (e) {
-       console.log(e.name + ': ' + e.message);
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-339. ### What is the purpose of EvalError object
-
-     The EvalError object indicates an error regarding the global `eval()` function. Even though this exception is not thrown by JavaScript anymore, the EvalError object remains for compatibility. The syntax of this expression would be as below,
-
-     ```javascript
-     new EvalError([message[, fileName[, lineNumber]]])
-     ```
-
-     You can throw EvalError with in try...catch block as below,
-
-     ```javascript
-     try {
-       throw new EvalError('Eval function error', 'someFile.js', 100);
-     } catch (e) {
-       console.log(e.message, e.name, e.fileName);              // "Eval function error", "EvalError", "someFile.js"
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-340. ### What are the list of cases error thrown from non-strict mode to strict mode
-
-     When you apply 'use strict'; syntax, some of the below cases will throw a SyntaxError before executing the script
-
-     1. When you use Octal syntax
-
-     ```javascript
-     var n = 022;
-     ```
-
-     1. Using `with` statement
-     2. When you use delete operator on a variable name
-     3. Using eval or arguments as variable or function argument name
-     4. When you use newly reserved keywords
-     5. When you declare a function in a block
-
-     ```javascript
-     if (someCondition) {
-       function f() {}
-     }
-     ```
-
-     Hence, the errors from above cases are helpful to avoid errors in development/production environments.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-341. ### Do all objects have prototypes
-
-     No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-342. ### What is the difference between a parameter and an argument
-
-     Parameter is the variable name of a function definition whereas an argument represents the value given to a function when it is invoked. Let's explain this with a simple function
-
-     ```javascript
-     function myFunction(parameter1, parameter2, parameter3) {
-       console.log(arguments[0]); // "argument1"
-       console.log(arguments[1]); // "argument2"
-       console.log(arguments[2]); // "argument3"
-     }
-     myFunction('argument1', 'argument2', 'argument3');
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-343. ### What is the purpose of some method in arrays
-
-     The some() method is used to test whether at least one element in the array passes the test implemented by the provided function. The method returns a boolean value. Let's take an example to test for any odd elements,
-
-     ```javascript
-     var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-     var odd = (element) => element % 2 !== 0;
-
-     console.log(array.some(odd)); // true (the odd element exists)
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-344. ### How do you combine two or more arrays
-
-     The concat() method is used to join two or more arrays by returning a new array containing all the elements. The syntax would be as below,
-
-     ```javascript
-     array1.concat(array2, array3, ..., arrayX)
-     ```
-
-     Let's take an example of array's concatenation with veggies and fruits arrays,
-
-     ```javascript
-     var veggies = ['Tomato', 'Carrot', 'Cabbage'];
-     var fruits = ['Apple', 'Orange', 'Pears'];
-     var veggiesAndFruits = veggies.concat(fruits);
-     console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-345. ### What is the difference between Shallow and Deep copy
-
-     There are two ways to copy an object,
-
-     **Shallow Copy:**
-     Shallow copy is a bitwise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
-
-     **Example**
-
-     ```javascript
-     var empDetails = {
-       name: 'John',
-       age: 25,
-       expertise: 'Software Developer',
-     };
-     ```
-
-     to create a duplicate
-
-     ```javascript
-     var empDetailsShallowCopy = empDetails; //Shallow copying!
-     ```
-
-     if we change some property value in the duplicate one like this:
-
-     ```javascript
-     empDetailsShallowCopy.name = 'Johnson';
-     ```
-
-     The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're losing the original data as well.
-
-     **Deep copy:**
-     A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.
-
-     **Example**
-
-     ```javascript
-     var empDetails = {
-       name: 'John',
-       age: 25,
-       expertise: 'Software Developer',
-     };
-     ```
-
-     Create a deep copy by using the properties from the original object into new variable
-
-     ```javascript
-     var empDetailsDeepCopy = {
-       name: empDetails.name,
-       age: empDetails.age,
-       expertise: empDetails.expertise,
-     };
-     ```
-
-     Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-346. ### How do you create specific number of copies of a string
-
-     The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
-     Let's take an example of Hello string to repeat it 4 times,
-
-     ```javascript
-     'Hello'.repeat(4); // 'HelloHelloHelloHello'
-     ```
-
-347. ### How do you return all matching strings against a regular expression
-
-     The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
-
-     ```javascript
-     let regexp = /Hello(\d?))/g;
-     let greeting = 'Hello1Hello2Hello3';
-
-     let greetingList = [...greeting.matchAll(regexp)];
-
-     console.log(greetingList[0]); //Hello1
-     console.log(greetingList[1]); //Hello2
-     console.log(greetingList[2]); //Hello3
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-348. ### How do you trim a string at the beginning or ending
-
-     The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
-
-     ```javascript
-     var greeting = '   Hello, Goodmorning!   ';
-
-     console.log(greeting); // "   Hello, Goodmorning!   "
-     console.log(greeting.trimStart()); // "Hello, Goodmorning!   "
-     console.log(greeting.trimLeft()); // "Hello, Goodmorning!   "
-
-     console.log(greeting.trimEnd()); // "   Hello, Goodmorning!"
-     console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-349. ### What is the output of below console statement with unary operator
-
-     Let's take console statement with unary operator as given below,
-
-     ```javascript
-     console.log(+'Hello');
-     ```
-
-     The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-350. ### Does javascript uses mixins
-
-     Mixin is a generic object-oriented programming term - is a class containing methods that can be used by other classes without a need to inherit from it. In JavaScript we can only inherit from a single object. ie. There can be only one `[[prototype]]` for an object.
-
-     But sometimes we require to extend more than one, to overcome this we can use Mixin which helps to copy methods to the prototype of another class.
-
-     Say for instance, we've two classes `User` and `CleanRoom`. Suppose we need to add `CleanRoom` functionality to `User`, so that user can clean the room at demand. Here's where concept called mixins comes into picture.
-
-     ```javascript
-     // mixin
-     let cleanRoomMixin = {
-       cleanRoom() {
-         alert(`Hello ${this.name}, your room is clean now`);
-       },
-       sayBye() {
-         alert(`Bye ${this.name}`);
-       },
-     };
-
-     // usage:
-     class User {
-       constructor(name) {
-         this.name = name;
-       }
-     }
-
-     // copy the methods
-     Object.assign(User.prototype, cleanRoomMixin);
-
-     // now User can clean the room
-     new User('Dude').cleanRoom(); // Hello Dude, your room is clean now!
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-351. ### What is a thunk function
-
-     A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
-
-     ```javascript
-     const add = (x, y) => x + y;
-
-     const thunk = () => add(2, 3);
-
-     thunk(); // 5
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-352. ### What are asynchronous thunks
-
-     The asynchronous thunks are useful to make network requests. Let's see an example of network requests,
-
-     ```javascript
-     function fetchData(fn) {
-       fetch('https://jsonplaceholder.typicode.com/todos/1')
-         .then((response) => response.json())
-         .then((json) => fn(json));
-     }
-
-     const asyncThunk = function () {
-       return fetchData(function getData(data) {
-         console.log(data);
-       });
-     };
-
-     asyncThunk();
-     ```
-
-     The `getData` function won't be called immediately but it will be invoked only when the data is available from API endpoint. The setTimeout function is also used to make our code asynchronous. The best real time example is redux state management library which uses the asynchronous thunks to delay the actions to dispatch.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-353. ### What is the output of below function calls
-
-     **Code snippet:**
-
-     ```javascript
-     const circle = {
-       radius: 20,
-       diameter() {
-         return this.radius * 2;
-       },
-       perimeter: () => 2 * Math.PI * this.radius,
-     };
-     ```
-
-     console.log(circle.diameter());
-     console.log(circle.perimeter());
-
-     **Output:**
-
-     The output is 40 and NaN. Remember that diameter is a regular function, whereas the value of perimeter is an arrow function. The `this` keyword of a regular function(i.e, diameter) refers to the surrounding scope which is a class(i.e, Shape object). Whereas this keyword of perimeter function refers to the surrounding scope which is a window object. Since there is no radius property on window objects it returns an undefined value and the multiple of number value returns NaN value.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-354. ### How to remove all line breaks from a string
-
-     The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
-
-     ```javascript
-     function remove_linebreaks( var message ) {
-         return message.replace( /[\r\n]+/gm, "" );
-     }
-     ```
-
-     In the above expression, g and m are for global and multiline flags.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-355. ### What is the difference between reflow and repaint
-
-     A _repaint_ occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include outline, visibility, or background color. A _reflow_ involves changes that affect the layout of a portion of the page (or the whole page). Resizing the browser window, changing the font, content changing (such as user typing text), using JavaScript methods involving computed styles, adding or removing elements from the DOM, and changing an element's classes are a few of the things that can trigger reflow. Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-356. ### What happens with negating an array
-
-     Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
-
-     ```javascript
-     console.log(![]); // false
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-357. ### What happens if we add two arrays
-
-     If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
-
-     ```javascript
-     console.log(['a'] + ['b']); // "ab"
-     console.log([] + []); // ""
-     console.log(![] + []); // "false", because ![] returns false.
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-358. ### What is the output of prepend additive operator on falsy values
-
-     If you prepend the additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
-
-     ```javascript
-     console.log(+null); // 0
-     console.log(+undefined); // NaN
-     console.log(+false); // 0
-     console.log(+NaN); // NaN
-     console.log(+''); // 0
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-359. ### How do you create self string using special characters
-
-     The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
-
-     1. Since Arrays are truthful values, negating the arrays will produce false: ![] === false
-     2. As per JavaScript coercion rules, the addition of arrays together will toString them: [] + [] === ""
-     3. Prepend an array with + operator will convert an array to false, the negation will make it true and finally converting the result will produce value '1': +(!(+[])) === 1
-
-     By applying the above rules, we can derive below conditions
-
-     ```javascript
-     (![] + [] === 'false' + !+[]) === 1;
-     ```
-
-     Now the character pattern would be created as below,
-
-     ```javascript
-           s               e               l               f
-      ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
-
-      (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
-      ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
-     (![] + [])[+!+[]+!+[]+!+[]] +
-     (![] + [])[+!+[]+!+[]+!+[]+!+[]] +
-     (![] + [])[+!+[]+!+[]] +
-     (![] + [])[+[]]
-     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-     (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-360. ### How do you remove falsy values from an array
-
-     You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
-
-     ```javascript
-     const myArray = [false, null, 1, 5, undefined];
-     myArray.filter(Boolean); // [1, 5] // is same as myArray.filter(x => x);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-361. ### How do you get unique values of an array
-
-     You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
-
-     ```javascript
-     console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-362. ### What is destructuring aliases
-
-     Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
-
-     ```javascript
-     const obj = { x: 1 };
-     // Grabs obj.x as as { otherName }
-     const { x: otherName } = obj;
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-363. ### How do you map the array values without using map method
-
-     You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
-
-     ```javascript
-     const countries = [
-       { name: 'India', capital: 'Delhi' },
-       { name: 'US', capital: 'Washington' },
-       { name: 'Russia', capital: 'Moscow' },
-       { name: 'Singapore', capital: 'Singapore' },
-       { name: 'China', capital: 'Beijing' },
-       { name: 'France', capital: 'Paris' },
-     ];
-
-     const cityNames = Array.from(countries, ({ capital }) => capital);
-     console.log(cityNames); // ['Delhi, 'Washington', 'Moscow', 'Singapore', 'Beijing', 'Paris']
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-364. ### How do you empty an array
-
-     You can empty an array quickly by setting the array length to zero.
-
-     ```javascript
-     let cities = ['Singapore', 'Delhi', 'London'];
-     cities.length = 0; // cities becomes []
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-365. ### How do you rounding numbers to certain decimals
-
-     You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
-
-     ```javascript
-     let pie = 3.141592653;
-     pie = pie.toFixed(3); // 3.142
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-366. ### What is the easiest way to convert an array to an object
-
-     You can convert an array to an object with the same data using spread(...) operator.
-
-     ```javascript
-     var fruits = ['banana', 'apple', 'orange', 'watermelon'];
-     var fruitsObject = { ...fruits };
-     console.log(fruitsObject); // {0: "banana", 1: "apple", 2: "orange", 3: "watermelon"}
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-367. ### How do you create an array with some data
-
-     You can create an array with some data or an array with the same values using `fill` method.
-
-     ```javascript
-     var newArray = new Array(5).fill('0');
-     console.log(newArray); // ["0", "0", "0", "0", "0"]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-368. ### What are the placeholders from console object
-
-     Below are the list of placeholders available from console object,
-
-     1. %o — It takes an object,
-     2. %s — It takes a string,
-     3. %d — It is used for a decimal or integer
-        These placeholders can be represented in the console.log as below
-
-     ```javascript
-     const user = { name: 'John', id: 1, city: 'Delhi' };
-     console.log(
-       'Hello %s, your details %o are available in the object form',
-       'John',
-       user
-     ); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-369. ### Is it possible to add CSS to console messages
-
-     Yes, you can apply CSS styles to console messages similar to html text on the web page.
-
-     ```javascript
-     console.log(
-       '%c The text has blue color, with large font and red background',
-       'color: blue; font-size: x-large; background: red'
-     );
-     ```
-
-     The text will be displayed as below,
-     ![Screenshot](images/console-css.png)
-
-     **Note:** All CSS styles can be applied to console messages.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-370. ### What is the purpose of dir method of console object
-
-     The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
-
-     ```javascript
-     const user = { name: 'John', id: 1, city: 'Delhi' };
-     console.dir(user);
-     ```
-
-     The user object displayed in JSON representation
-     ![Screenshot](images/console-dir.png)
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-371. ### Is it possible to debug HTML elements in console
-
-     Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
-
-     ```javascript
-     const element = document.getElementsByTagName('body')[0];
-     console.log(element);
-     ```
-
-     It prints the HTML element in the console,
-
-     ![Screenshot](images/console-html.png)
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-372. ### How do you display data in a tabular format using console object
-
-     The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
-
-     ```js
-     const users = [
-       { name: 'John', id: 1, city: 'Delhi' },
-       { name: 'Max', id: 2, city: 'London' },
-       { name: 'Rod', id: 3, city: 'Paris' },
-     ];
-     console.table(users);
-     ```
-
-     The data visualized in a table format,
-
-     ![Screenshot](images/console-table.png)
-     **Not:** Remember that `console.table()` is not supported in IE.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-373. ### How do you verify that an argument is a Number or not
-
-     The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
-
-     ```javascript
-     function isNumber(n) {
-       return !isNaN(parseFloat(n)) && isFinite(n);
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-374. ### How do you create copy to clipboard button
-
-     You need to select the content(using .select() method) of the input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute other system commands like cut and paste.
-
-     ```javascript
-     document.querySelector('#copy-button').onclick = function () {
-       // Select the content
-       document.querySelector('#copy-input').select();
-       // Copy to the clipboard
-       document.execCommand('copy');
-     };
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-375. ### What is the shortcut to get timestamp
-
-     You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
-
-     ```javascript
-     console.log(+new Date());
-     console.log(Date.now());
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-376. ### How do you flattening multi dimensional arrays
-
-     Flattening bi-dimensional arrays is trivial with Spread operator.
-
-     ```javascript
-     const biDimensionalArr = [11, [22, 33], [44, 55], [66, 77], 88, 99];
-     const flattenArr = [].concat(...biDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
-     ```
-
-     But you can make it work with multi-dimensional arrays by recursive calls,
-
-     ```javascript
-     function flattenMultiArray(arr) {
-       const flattened = [].concat(...arr);
-       return flattened.some((item) => Array.isArray(item))
-         ? flattenMultiArray(flattened)
-         : flattened;
-     }
-     const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
-     const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-377. ### What is the easiest multi condition checking
-
-     You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
-
-     ```javascript
-     // Verbose approach
-     if (
-       input === 'first' ||
-       input === 1 ||
-       input === 'second' ||
-       input === 2
-     ) {
-       someFunction();
-     }
-     // Shortcut
-     if (['first', 1, 'second', 2].indexOf(input) !== -1) {
-       someFunction();
-     }
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-378. ### How do you capture browser back button
-
-     The `window.onbeforeunload` method is used to capture browser back button events. This is helpful to warn users about losing the current data.
-
-     ```javascript
-     window.onbeforeunload = function () {
-       alert('You work will be lost');
-     };
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-379. ### How do you disable right click in the web page
-
-     The right click on the page can be disabled by returning false from the `oncontextmenu` attribute on the body element.
-
-     ```html
-     <body oncontextmenu="return false;"></body>
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-380. ### What are wrapper objects
-
-     Primitive Values like string,number and boolean don't have properties and methods but they are temporarily converted or coerced to an object(Wrapper object) when you try to perform actions on them. For example, if you apply toUpperCase() method on a primitive string value, it does not throw an error but returns uppercase of the string.
-
-     ```javascript
-     let name = 'john';
-
-     console.log(name.toUpperCase()); // Behind the scenes treated as console.log(new String(name).toUpperCase());
-     ```
-
-     i.e, Every primitive except null and undefined have Wrapper Objects and the list of wrapper objects are String,Number,Boolean,Symbol and BigInt.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-381. ### What is AJAX
-
-     AJAX stands for Asynchronous JavaScript and XML and it is a group of related technologies(HTML, CSS, JavaScript, XMLHttpRequest API etc) used to display data asynchronously. i.e. We can send data to the server and get data from the server without reloading the web page.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-382. ### What are the different ways to deal with Asynchronous Code
-
-     Below are the list of different ways to deal with Asynchronous code.
-
-     1. Callbacks
-     2. Promises
-     3. Async/await
-     4. Third-party libraries such as async.js,bluebird etc
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-383. ### How to cancel a fetch request
-
-     Until a few days back, One shortcoming of native promises is no direct way to cancel a fetch request. But the new `AbortController` from js specification allows you to use a signal to abort one or multiple fetch calls.
-     The basic flow of cancelling a fetch request would be as below,
-
-     1. Create an `AbortController` instance
-     2. Get the signal property of an instance and pass the signal as a fetch option for signal
-     3. Call the AbortController's abort property to cancel all fetches that use that signal
-        For example, let's pass the same signal to multiple fetch calls will cancel all requests with that signal,
-
-     ```javascript
-     const controller = new AbortController();
-     const { signal } = controller;
-
-     fetch('http://localhost:8000', { signal })
-       .then((response) => {
-         console.log(`Request 1 is complete!`);
-       })
-       .catch((e) => {
-         if (e.name === 'AbortError') {
-           // We know it's been canceled!
-         }
-       });
-
-     fetch('http://localhost:8000', { signal })
-       .then((response) => {
-         console.log(`Request 2 is complete!`);
-       })
-       .catch((e) => {
-         if (e.name === 'AbortError') {
-           // We know it's been canceled!
-         }
-       });
-
-     // Wait 2 seconds to abort both requests
-     setTimeout(() => controller.abort(), 2000);
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-384. ### What is web speech API
-
-     Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API has been introduced by W3C Community in the year 2012. It has two main parts,
-
-     1. **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by the `SpeechRecognition` interface.
-        The below example shows on how to use this API to get text from speech,
-
-     ```javascript
-     window.SpeechRecognition =
-       window.webkitSpeechRecognition || window.SpeechRecognition; // webkitSpeechRecognition for Chrome and SpeechRecognition for FF
-     const recognition = new window.SpeechRecognition();
-     recognition.onresult = (event) => {
-       // SpeechRecognitionEvent type
-       const speechToText = event.results[0][0].transcript;
-       console.log(speechToText);
-     };
-     recognition.start();
-     ```
-
-     In this API, browser is going to ask you for permission to use your microphone
-
-     1. **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
-        For example, the below code is used to get voice/speech from text,
-
-     ```javascript
-     if ('speechSynthesis' in window) {
-       var speech = new SpeechSynthesisUtterance('Hello World!');
-       speech.lang = 'en-US';
-       window.speechSynthesis.speak(speech);
-     }
-     ```
-
-     The above examples can be tested on chrome(33+) browser's developer console.
-     **Note:** This API is still a working draft and only available in Chrome and Firefox browsers(ofcourse Chrome only implemented the specification)
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-385. ### What is minimum timeout throttling
-
-     Both browser and NodeJS javascript environments throttles with a minimum delay that is greater than 0ms. That means even though setting a delay of 0ms will not happen instantaneously.
-     **Browsers:** They have a minimum delay of 4ms. This throttle occurs when successive calls are triggered due to callback nesting(certain depth) or after a certain number of successive intervals.
-     Note: The older browsers have a minimum delay of 10ms.
-     **Nodejs:** They have a minimum delay of 1ms. This throttle happens when the delay is larger than 2147483647 or less than 1.
-     The best example to explain this timeout throttling behavior is the order of below code snippet.
-
-     ```javascript
-     function runMeFirst() {
-       console.log('My script is initialized');
-     }
-     setTimeout(runMeFirst, 0);
-     console.log('Script loaded');
-     ```
-
-     and the output would be in
-
-     ```cmd
-     Script loaded
-     My script is initialized
-     ```
-
-     If you don't use `setTimeout`, the order of logs will be sequential.
-
-     ```javascript
-     function runMeFirst() {
-       console.log('My script is initialized');
-     }
-     runMeFirst();
-     console.log('Script loaded');
-     ```
-
-     and the output is,
-
-     ```cmd
-     My script is initialized
-     Script loaded
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-386. ### How do you implement zero timeout in modern browsers
-
-     You can't use setTimeout(fn, 0) to execute the code immediately due to minimum delay of greater than 0ms. But you can use window.postMessage() to achieve this behavior.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-387. ### What are tasks in event loop
-
-     A task is any javascript code/program which is scheduled to be run by the standard mechanisms such as initially starting to run a program, run an event callback, or an interval or timeout being fired. All these tasks are scheduled on a task queue.
-     Below are the list of use cases to add tasks to the task queue,
-
-     1. When a new javascript program is executed directly from console or running by the `<script>` element, the task will be added to the task queue.
-     2. When an event fires, the event callback added to task queue
-     3. When a setTimeout or setInterval is reached, the corresponding callback added to task queue
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-388. ### What is microtask
-
-     Microtask is the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. They are kind of blocking in nature. i.e, The main thread will be blocked until the microtask queue is empty.
-     The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
-
-     **Note:** All of these microtasks are processed in the same turn of the event loop.
-     **[⬆ Back to Top](#table-of-contents)**
-
-389. ### What are different event loops
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-390. ### What is the purpose of queueMicrotask
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-391. ### How do you use javascript libraries in typescript file
-
-     It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in our TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn’t have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
-
-     ```javascript
-     declare var customLibrary;
-     ```
-
-     In the runtime, typescript will provide the type to the `customLibrary` variable as `any` type. The another alternative without using declare keyword is below
-
-     ```javascript
-     var customLibrary: any;
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-392. ### What are the differences between promises and observables
-
-     Some of the major difference in a tabular form
-
-     | Promises                                                           | Observables                                                                              |
-     | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-     | Emits only a single value at a time                                | Emits multiple values over a period of time(stream of values ranging from 0 to multiple) |
-     | Eager in nature; they are going to be called immediately           | Lazy in nature; they require subscription to be invoked                                  |
-     | Promise is always asynchronous even though it resolved immediately | Observable can be either synchronous or asynchronous                                     |
-     | Doesn't provide any operators                                      | Provides operators such as map, forEach, filter, reduce, retry, and retryWhen etc        |
-     | Cannot be canceled                                                 | Canceled by using unsubscribe() method                                                   |
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-393. ### What is heap
-
-     Heap(Or memory heap) is the memory location where objects are stored when we define variables. i.e, This is the place where all the memory allocations and de-allocation take place. Both heap and call-stack are two containers of JS runtime.
-     Whenever runtime comes across variables and function declarations in the code it stores them in the Heap.
-
-     ![Screenshot](images/heap.png)
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-394. ### What is an event table
-
-     Event Table is a data structure that stores and keeps track of all the events which will be executed asynchronously like after some time interval or after the resolution of some API requests. i.e Whenever you call a setTimeout function or invoke async operation, it is added to the Event Table.
-     It doesn't not execute functions on it’s own. The main purpose of the event table is to keep track of events and send them to the Event Queue as shown in the below diagram.
-
-     ![Screenshot](images/event-table.png)
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-395. ### What is a microTask queue
-
-     Microtask Queue is the new queue where all the tasks initiated by promise objects get processed before the callback queue.
-     The microtasks queue are processed before the next rendering and painting jobs. But if these microtasks are running for a long time then it leads to visual degradation.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-396. ### What is the difference between shim and polyfill
-
-     A shim is a library that brings a new API to an older environment, using only the means of that environment. It isn't necessarily restricted to a web application. For example, es5-shim.js is used to emulate ES5 features on older browsers (mainly pre IE9).
-     Whereas polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively.
-     In a simple sentence, A polyfill is a shim for a browser API.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-397. ### How do you detect primitive or non primitive value type
-
-     In JavaScript, primitive types include boolean, string, number, BigInt, null, Symbol and undefined. Whereas non-primitive types include the Objects. But you can easily identify them with the below function,
-
-     ```javascript
-     var myPrimitive = 30;
-     var myNonPrimitive = {};
-     function isPrimitive(val) {
-       return Object(val) !== val;
-     }
-
-     isPrimitive(myPrimitive);
-     isPrimitive(myNonPrimitive);
-     ```
-
-     If the value is a primitive data type, the Object constructor creates a new wrapper object for the value. But If the value is a non-primitive data type (an object), the Object constructor will give the same object.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-398. ### What is babel
-
-     Babel is a JavaScript transpiler to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Some of the main features are listed below,
-
-     1. Transform syntax
-     2. Polyfill features that are missing in your target environment (using @babel/polyfill)
-     3. Source code transformations (or codemods)
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-399. ### Is Node.js completely single threaded
-
-     Node is a single thread, but some of the functions included in the Node.js standard library(e.g, fs module functions) are not single threaded. i.e, Their logic runs outside of the Node.js single thread to improve the speed and performance of a program.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-400. ### What are the common use cases of observables
-
-     Some of the most common use cases of observables are web sockets with push notifications, user input changes, repeating intervals, etc
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-401. ### What is RxJS
-
-     RxJS (Reactive Extensions for JavaScript) is a library for implementing reactive programming using observables that makes it easier to compose asynchronous or callback-based code. It also provides utility functions for creating and working with observables.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-402. ### What is the difference between Function constructor and function declaration
-
-     The functions which are created with `Function constructor` do not create closures to their creation contexts but they are always created in the global scope. i.e, the function can access its own local variables and global scope variables only. Whereas function declarations can access outer function variables(closures) too.
-
-     Let's see this difference with an example,
-
-     **Function Constructor:**
-
-     ```javascript
-     var a = 100;
-     function createFunction() {
-       var a = 200;
-       return new Function('return a;');
-     }
-     console.log(createFunction()()); // 100
-     ```
-
-     **Function declaration:**
-
-     ```javascript
-     var a = 100;
-     function createFunction() {
-       var a = 200;
-       return function func() {
-         return a;
-       };
-     }
-     console.log(createFunction()()); // 200
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-403. ### What is a Short circuit condition
-
-     Short circuit conditions are meant for condensed way of writing simple if statements. Let's demonstrate the scenario using an example. If you would like to login to a portal with an authentication condition, the expression would be as below,
-
-     ```javascript
-     if (authenticate) {
-       loginToPorta();
-     }
-     ```
-
-     Since the javascript logical operators evaluated from left to right, the above expression can be simplified using && logical operator
-
-     ```javascript
-     authenticate && loginToPorta();
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-404. ### What is the easiest way to resize an array
-
-     The length property of an array is useful to resize or empty an array quickly. Let's apply length property on number array to resize the number of elements from 5 to 2,
-
-     ```javascript
-     var array = [1, 2, 3, 4, 5];
-     console.log(array.length); // 5
-
-     array.length = 2;
-     console.log(array.length); // 2
-     console.log(array); // [1,2]
-     ```
-
-     and the array can be emptied too
-
-     ```javascript
-     var array = [1, 2, 3, 4, 5];
-     array.length = 0;
-     console.log(array.length); // 0
-     console.log(array); // []
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-405. ### What is an observable
-
-     An Observable is basically a function that can return a stream of values either synchronously or asynchronously to an observer over time. The consumer can get the value by calling `subscribe()` method.
-     Let's look at a simple example of an Observable
-
-     ```javascript
-     import { Observable } from 'rxjs';
-
-     const observable = new Observable((observer) => {
-       setTimeout(() => {
-         observer.next('Message from a Observable!');
-       }, 3000);
-     });
-
-     observable.subscribe((value) => console.log(value));
-     ```
-
-     ![Screenshot](images/observables.png)
-
-     **Note:** Observables are not part of the JavaScript language yet but they are being proposed to be added to the language
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-406. ### What is the difference between function and class declarations
-
-     The main difference between function declarations and class declarations is `hoisting`. The function declarations are hoisted but not class declarations.
-
-     **Classes:**
-
-     ```javascript
-     const user = new User(); // ReferenceError
-
-     class User {}
-     ```
-
-     **Constructor Function:**
-
-     ```javascript
-     const user = new User(); // No error
-
-     function User() {}
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-407. ### What is an async function
-
-     An async function is a function declared with the `async` keyword which enables asynchronous, promise-based behavior to be written in a cleaner style by avoiding promise chains. These functions can contain zero or more `await` expressions.
-
-     Let's take a below async function example,
-
-     ```javascript
-     async function logger() {
-       let data = await fetch('http://someapi.com/users'); // pause until fetch returns
-       console.log(data);
-     }
-     logger();
-     ```
-
-     It is basically syntax sugar over ES2015 promises and generators.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-408. ### How do you prevent promises swallowing errors
-
-     While using asynchronous code, JavaScript’s ES6 promises can make your life a lot easier without having callback pyramids and error handling on every second line. But Promises have some pitfalls and the biggest one is swallowing errors by default.
-
-     Let's say you expect to print an error to the console for all the below cases,
-
-     ```javascript
-     Promise.resolve('promised value').then(function () {
-       throw new Error('error');
-     });
-
-     Promise.reject('error value').catch(function () {
-       throw new Error('error');
-     });
-
-     new Promise(function (resolve, reject) {
-       throw new Error('error');
-     });
-     ```
-
-     But there are many modern JavaScript environments that won't print any errors. You can fix this problem in different ways,
-
-     1. **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
-
-        ```javascript
-        Promise.resolve('promised value')
-          .then(function () {
-            throw new Error('error');
-          })
-          .catch(function (error) {
-            console.error(error.stack);
-          });
-        ```
-
-        But it is quite difficult to type for each promise chain and verbose too.
-
-     2. **Add done method:** You can replace first solution's then and catch blocks with done method
-
-        ```javascript
-        Promise.resolve('promised value').done(function () {
-          throw new Error('error');
-        });
-        ```
-
-        Let's say you want to fetch data using HTTP and later perform processing on the resulting data asynchronously. You can write `done` block as below,
-
-        ```javascript
-        getDataFromHttp()
-          .then(function (result) {
-            return processDataAsync(result);
-          })
-          .done(function (processed) {
-            displayData(processed);
-          });
-        ```
-
-        In future, if the processing library API changed to synchronous then you can remove `done` block as below,
-
-        ```javascript
-        getDataFromHttp().then(function (result) {
-          return displayData(processDataAsync(result));
-        });
-        ```
-
-        and then you forgot to add `done` block to `then` block leads to silent errors.
-
-     3. **Extend ES6 Promises by Bluebird:**
-        Bluebird extends the ES6 Promises API to avoid the issue in the second solution. This library has a “default” onRejection handler which will print all errors from rejected Promises to stderr. After installation, you can process unhandled rejections
-
-        ```javascript
-        Promise.onPossiblyUnhandledRejection(function (error) {
-          throw error;
-        });
-        ```
-
-        and discard a rejection, just handle it with an empty catch
-
-        ```javascript
-        Promise.reject('error value').catch(function () {});
-        ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-409. ### What is deno
-
-     Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 JavaScript engine and the Rust programming language.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-410. ### How do you make an object iterable in javascript
-
-     By default, plain objects are not iterable. But you can make the object iterable by defining a `Symbol.iterator` property on it.
-
-     Let's demonstrate this with an example,
-
-     ```javascript
-     const collection = {
-       one: 1,
-       two: 2,
-       three: 3,
-       [Symbol.iterator]() {
-         const values = Object.keys(this);
-         let i = 0;
-         return {
-           next: () => {
-             return {
-               value: this[values[i++]],
-               done: i > values.length,
-             };
-           },
-         };
-       },
-     };
-
-     const iterator = collection[Symbol.iterator]();
-
-     console.log(iterator.next()); // → {value: 1, done: false}
-     console.log(iterator.next()); // → {value: 2, done: false}
-     console.log(iterator.next()); // → {value: 3, done: false}
-     console.log(iterator.next()); // → {value: undefined, done: true}
-     ```
-
-     The above process can be simplified using a generator function,
-
-     ```javascript
-     const collection = {
-       one: 1,
-       two: 2,
-       three: 3,
-       [Symbol.iterator]: function* () {
-         for (let key in this) {
-           yield this[key];
-         }
-       },
-     };
-     const iterator = collection[Symbol.iterator]();
-     console.log(iterator.next()); // {value: 1, done: false}
-     console.log(iterator.next()); // {value: 2, done: false}
-     console.log(iterator.next()); // {value: 3, done: false}
-     console.log(iterator.next()); // {value: undefined, done: true}
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-411. ### What is a Proper Tail Call
-
-     First, we should know about tail call before talking about "Proper Tail Call". A tail call is a subroutine or function call performed as the final action of a calling function. Whereas **Proper tail call(PTC)** is a technique where the program or code will not create additional stack frames for a recursion when the function call is a tail call.
-
-     For example, the below classic or head recursion of factorial function relies on stack for each step. Each step need to be processed upto `n * factorial(n - 1)`
-
-     ```javascript
-     function factorial(n) {
-       if (n === 0) {
-         return 1;
-       }
-       return n * factorial(n - 1);
-     }
-     console.log(factorial(5)); //120
-     ```
-
-     But if you use Tail recursion functions, they keep passing all the necessary data it needs down the recursion without relying on the stack.
-
-     ```javascript
-     function factorial(n, acc = 1) {
-       if (n === 0) {
-         return acc;
-       }
-       return factorial(n - 1, n * acc);
-     }
-     console.log(factorial(5)); //120
-     ```
-
-     The above pattern returns the same output as the first one. But the accumulator keeps track of total as an argument without using stack memory on recursive calls.
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-412. ### How do you check an object is a promise or not
-
-     If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
-
-     ```javascript
-     function isPromise(object) {
-       if (Promise && Promise.resolve) {
-         return Promise.resolve(object) == object;
-       } else {
-         throw 'Promise not supported in your environment';
-       }
-     }
-
-     var i = 1;
-     var promise = new Promise(function (resolve, reject) {
-       resolve();
-     });
-
-     console.log(isPromise(i)); // false
-     console.log(isPromise(promise)); // true
-     ```
-
-     Another way is to check for `.then()` handler type
-
-     ```javascript
-     function isPromise(value) {
-       return Boolean(value && typeof value.then === 'function');
-     }
-     var i = 1;
-     var promise = new Promise(function (resolve, reject) {
-       resolve();
-     });
-
-     console.log(isPromise(i)); // false
-     console.log(isPromise(promise)); // true
-     ```
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-413. ### How to detect if a function is called as constructor
-
-     You can use `new.target` pseudo-property to detect whether a function was called as a constructor(using the new operator) or as a regular function call.
-
-     1. If a constructor or function invoked using the new operator, new.target returns a reference to the constructor or function.
-     2. For function calls, new.target is undefined.
-
-     ```javascript
-     function Myfunc() {
-        if (new.target) {
-           console.log('called with new');
+      ```javascript
+      function myFunction() {
+        var userName = document.getElementById('uname');
+        if (!userName.checkValidity()) {
+          document.getElementById('message').innerHTML =
+            userName.validationMessage;
         } else {
-           console.log('not called with new');
+          document.getElementById('message').innerHTML =
+            'Entered a valid username';
         }
-     }
+      }
+      ```
 
-     new Myfunc(); // called with new
-     Myfunc(); // not called with new
-     Myfunc.call({}); not called with new
-     ```
+      **[⬆ Back to Top](#table-of-contents)**
 
-     **[⬆ Back to Top](#table-of-contents)**
+275.  ### Mavjud cheklovni tekshirish DOM xususiyatlari qanday
 
-414. ### What are the differences between arguments object and rest parameter
+      Below are the list of some of the constraint validation DOM properties available,
 
-     There are three main differences between arguments object and rest parameters
+      1.  validity: It provides a list of boolean properties related to the validity of an input element.
+      2.  validationMessage: It displays the message when the validity is false.
+      3.  willValidate: It indicates if an input element will be validated or not.
 
-     1. The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
-     2. The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
-     3. The rest parameters are only the ones that haven’t been given a separate name, while the arguments object contains all arguments passed to the function
+      **[⬆ Back to Top](#table-of-contents)**
 
-     **[⬆ Back to Top](#table-of-contents)**
+276.  ### Yaroqlilik xususiyatlarining ro'yxati qanday
 
-415. ### What are the differences between spread operator and rest parameter
+      The validity property of an input element provides a set of properties related to the validity of data.
 
-     Rest parameter collects all remaining elements into an array. Whereas Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. i.e, Rest parameter is opposite to the spread operator.
+      1.  customError: It returns true, if a custom validity message is set.
+      2.  patternMismatch: It returns true, if an element's value does not match its pattern attribute.
+      3.  rangeOverflow: It returns true, if an element's value is greater than its max attribute.
+      4.  rangeUnderflow: It returns true, if an element's value is less than its min attribute.
+      5.  stepMismatch: It returns true, if an element's value is invalid according to step attribute.
+      6.  tooLong: It returns true, if an element's value exceeds its maxLength attribute.
+      7.  typeMismatch: It returns true, if an element's value is invalid according to type attribute.
+      8.  valueMissing: It returns true, if an element with a required attribute has no value.
+      9.  valid: It returns true, if an element's value is valid.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-416. ### What are the different kinds of generators
+277.  ### rangeOverflow xususiyatidan foydalanishga misol keltiring
 
-     There are five kinds of generators,
+      If an element's value is greater than its max attribute then rangeOverflow property returns true. For example, the below form submission throws an error if the value is more than 100,
 
-     1. **Generator function declaration:**
+      ```html
+      <input id="age" type="number" max="100" />
+      <button onclick="myOverflowFunction()">OK</button>
+      ```
 
-        ```javascript
-        function* myGenFunc() {
-          yield 1;
-          yield 2;
-          yield 3;
+      ```javascript
+      function myOverflowFunction() {
+        if (document.getElementById('age').validity.rangeOverflow) {
+          alert('The mentioned age is not allowed');
         }
-        const genObj = myGenFunc();
-        ```
+      }
+      ```
 
-     2. **Generator function expressions:**
+      **[⬆ Back to Top](#table-of-contents)**
 
-        ```javascript
-        const myGenFunc = function* () {
-          yield 1;
-          yield 2;
-          yield 3;
+278.  ### Enums xususiyati javascriptda mavjudmi?
+
+      No, javascript does not natively support enums. But there are different kinds of solutions to simulate them even though they may not provide exact equivalents. For example, you can use freeze or seal on object,
+
+      ```javascript
+      var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+279.  ### Enum nima
+
+      An enum is a type restricting variables to one value from a predefined set of constants. JavaScript has no enums but typescript provides built-in enum support.
+
+      ```javascript
+      enum Color {
+       RED, GREEN, BLUE
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+280.  ### Ob'ektning barcha xususiyatlarini qanday ro'yxatga olasiz
+
+      You can use the `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's the usage of it in an example,
+
+      ```javascript
+      const newObject = {
+        a: 1,
+        b: 2,
+        c: 3,
+      };
+
+      console.log(Object.getOwnPropertyNames(newObject));
+      ['a', 'b', 'c'];
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+281.  ### How do you get property descriptors of an object
+
+      You can use the `Object.getOwnPropertyDescriptors()` method which returns all own property descriptors of a given object. The example usage of this method is below,
+
+      ```javascript
+      const newObject = {
+        a: 1,
+        b: 2,
+        c: 3,
+      };
+      const descriptorsObject = Object.getOwnPropertyDescriptors(newObject);
+      console.log(descriptorsObject.a.writable); //true
+      console.log(descriptorsObject.a.configurable); //true
+      console.log(descriptorsObject.a.enumerable); //true
+      console.log(descriptorsObject.a.value); // 1
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+282.  ### Xususiyat deskriptori tomonidan taqdim etilgan atributlar qanday
+
+      A property descriptor is a record which has the following attributes
+
+      1.  value: The value associated with the property
+      2.  writable: Determines whether the value associated with the property can be changed or not
+      3.  configurable: Returns true if the type of this property descriptor can be changed and if the property can be deleted from the corresponding object.
+      4.  enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not.
+      5.  set: A function which serves as a setter for the property
+      6.  get: A function which serves as a getter for the property
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+283.  ### Classlarni qanday uzaytirasiz(extends)
+
+      The `extends` keyword is used in class declarations/expressions to create a class which is a child of another class. It can be used to subclass custom classes as well as built-in objects. The syntax would be as below,
+
+      ```javascript
+      class ChildClass extends ParentClass { ... }
+      ```
+
+      Let's take an example of Square subclass from Polygon parent class,
+
+      ```javascript
+      class Square extends Rectangle {
+        constructor(length) {
+          super(length, length);
+          this.name = 'Square';
+        }
+
+        get area() {
+          return this.width * this.height;
+        }
+
+        set area(value) {
+          this.area = value;
+        }
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+284.  ### Sahifani qayta yuklamasdan urlni qanday o'zgartirish mumkin
+
+      The `window.location.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
+
+      ```javascript
+      window.history.pushState('page2', 'Title', '/page2.html');
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+285.  ### Massiv ma'lum bir qiymatni o'z ichiga oladi yoki yo'qligini qanday tekshirish mumkinvalue or not
+
+      The `Array#includes()` method is used to determine whether an array includes a particular value among its entries by returning either true or false. Let's see an example to find an element(numeric and string) within an array.
+
+      ```javascript
+      var numericArray = [1, 2, 3, 4];
+      console.log(numericArray.includes(3)); // true
+
+      var stringArray = ['green', 'yellow', 'blue'];
+      console.log(stringArray.includes('blue')); //true
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+286.  ### Skayar massivlarni qanday solishtirasiz
+
+      You can use length and every method of arrays to compare two scalar(compared directly using ===) arrays. The combination of these expressions can give the expected result,
+
+      ```javascript
+      const arrayFirst = [1, 2, 3, 4, 5];
+      const arraySecond = [1, 2, 3, 4, 5];
+      console.log(
+        arrayFirst.length === arraySecond.length &&
+          arrayFirst.every((value, index) => value === arraySecond[index])
+      ); // true
+      ```
+
+      If you would like to compare arrays irrespective of order then you should sort them before,
+
+      ```javascript
+      const arrayFirst = [2, 3, 1, 4, 5];
+      const arraySecond = [1, 2, 3, 4, 5];
+      console.log(
+        arrayFirst.length === arraySecond.length &&
+          arrayFirst
+            .sort()
+            .every((value, index) => value === arraySecond[index])
+      ); //true
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+287.  ### Get parametrlaridan qiymatni qanday olish mumkin
+
+      The `new URL()` object accepts the url string and `searchParams` property of this object can be used to access the get parameters. Remember that you may need to use polyfill or `window.location` to access the URL in older browsers(including IE).
+
+      ```javascript
+      let urlString = 'http://www.some-domain.com/about.html?x=1&y=2&z=3'; //window.location.href
+      let url = new URL(urlString);
+      let parameterZ = url.searchParams.get('z');
+      console.log(parameterZ); // 3
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+288.  ### Qanday qilib raqamlarni vergul bilan ming ajratuvchi sifatida chop qilasiz
+
+      You can use the `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator,currency etc of this number.
+
+      ```javascript
+      function convertToThousandFormat(x) {
+        return x.toLocaleString(); // 12,345.679
+      }
+
+      console.log(convertToThousandFormat(12345.6789));
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+289.  ### Java va javascript o'rtasidagi farq nima
+
+      Both are totally unrelated programming languages and no relation between them. Java is statically typed, compiled, runs on its own VM. Whereas Javascript is dynamically typed, interpreted, and runs in a browser and nodejs environments. Let's see the major differences in a tabular format,
+      | Feature | Java | JavaScript |
+      |---- | ---- | -----
+      | Typed | It's a strongly typed language | It's a dynamic typed language |
+      | Paradigm | Object oriented programming | Prototype based programming |
+      | Scoping | Block scoped | Function-scoped |
+      | Concurrency | Thread based | event based |
+      | Memory | Uses more memory | Uses less memory. Hence it will be used for web pages |
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+290.  ### JavaScript namespace qo'llab-quvvatlaydimi?
+
+      JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
+
+      ```javascript
+      function func1() {
+        console.log('This is a first definition');
+      }
+      function func1() {
+        console.log('This is a second definition');
+      }
+      func1(); // This is a second definition
+      ```
+
+      It always calls the second function definition. In this case, namespace will solve the name collision problem.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+291.  ### Namescpace qanday e'lon qilasiz
+
+      Even though JavaScript lacks namespaces, we can use Objects , IIFE to create namespaces.
+
+      1.  **Using Object Literal Notation:** Let's wrap variables and functions inside an Object literal which acts as a namespace. After that you can access them using object notation
+
+      ```javascript
+      var namespaceOne = {
+         function func1() {
+             console.log("This is a first definition");
+         }
+      }
+      var namespaceTwo = {
+           function func1() {
+               console.log("This is a second definition");
+           }
+       }
+      namespaceOne.func1(); // This is a first definition
+      namespaceTwo.func1(); // This is a second definition
+      ```
+
+      1.  **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
+
+      ```javascript
+      (function () {
+        function fun1() {
+          console.log('This is a first definition');
+        }
+        fun1();
+      })();
+
+      (function () {
+        function fun1() {
+          console.log('This is a second definition');
+        }
+        fun1();
+      })();
+      ```
+
+      1.  **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
+
+      ```javascript
+      {
+        let myFunction = function fun1() {
+          console.log('This is a first definition');
         };
-        const genObj = myGenFunc();
-        ```
+        myFunction();
+      }
+      //myFunction(): ReferenceError: myFunction is not defined.
 
-     3. **Generator method definitions in object literals:**
-
-        ```javascript
-        const myObj = {
-          *myGeneratorMethod() {
-            yield 1;
-            yield 2;
-            yield 3;
-          },
+      {
+        let myFunction = function fun1() {
+          console.log('This is a second definition');
         };
-        const genObj = myObj.myGeneratorMethod();
-        ```
+        myFunction();
+      }
+      //myFunction(): ReferenceError: myFunction is not defined.
+      ```
 
-     4. **Generator method definitions in class:**
+      **[⬆ Back to Top](#table-of-contents)**
 
-        ```javascript
-        class MyClass {
-          *myGeneratorMethod() {
+292.  ### Bosh sahifadagi iframe-da javascript kodini qanday chaqirish mumkin
+
+      Initially iFrame needs to be accessed using either `document.getElementBy` or `window.frames`. After that `contentWindow` property of iFrame gives the access for targetFunction
+
+      ```javascript
+      document.getElementById('targetFrame').contentWindow.targetFunction();
+      window.frames[0].frameElement.contentWindow.targetFunction(); // Accessing iframe this way may not work in latest versions chrome and firefox
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+293.  ### Vaqt mintaqasini sanadan qanday qilib siljitish mumkin
+
+      You can use the `getTimezoneOffset` method of the date object. This method returns the time zone difference, in minutes, from current locale (host system settings) to UTC
+
+      ```javascript
+      var offset = new Date().getTimezoneOffset();
+      console.log(offset); // -480
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+294.  ### CSS va JS fayllarini dinamik ravishda qanday yuklaysiz
+
+      You can create both link and script elements in the DOM and append them as child to head tag. Let's create a function to add script and style resources as below,
+
+      ```javascript
+      function loadAssets(filename, filetype) {
+        if (filetype == 'css') {
+          // External CSS file
+          var fileReference = document.createElement('link');
+          fileReference.setAttribute('rel', 'stylesheet');
+          fileReference.setAttribute('type', 'text/css');
+          fileReference.setAttribute('href', filename);
+        } else if (filetype == 'js') {
+          // External JavaScript file
+          var fileReference = document.createElement('script');
+          fileReference.setAttribute('type', 'text/javascript');
+          fileReference.setAttribute('src', filename);
+        }
+        if (typeof fileReference != 'undefined')
+          document.getElementsByTagName('head')[0].appendChild(fileReference);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+295.  ### DOM-da HTML elementlarini topishning turli usullari qanday?
+
+      If you want to access any element in an HTML page, you need to start with accessing the document object. Later you can use any of the below methods to find the HTML element,
+
+      1.  document.getElementById(id): It finds an element by Id
+      2.  document.getElementsByTagName(name): It finds an element by tag name
+      3.  document.getElementsByClassName(name): It finds an element by class name
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+296.  ### jQuery nima
+
+      jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of “Write less, do more”. For example, you can display welcome message on the page load using jQuery as below,
+
+      ```javascript
+      $(document).ready(function () {
+        // It selects the document and apply the function on page load
+        alert('Welcome to jQuery world');
+      });
+      ```
+
+      **Note:** You can download it from jquery's official site or install it from CDNs, like google.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+297.  ### V8 JavaScript dvigateli nima
+
+      V8 is an open source high-performance JavaScript engine used by the Google Chrome browser, written in C++. It is also being used in the node.js project. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors.
+      **Note:** It can run standalone, or can be embedded into any C++ application.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+298.  ### Nima uchun biz javascriptni dinamik til deb ataymiz
+
+      JavaScript is a loosely typed or a dynamic language because variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned/reassigned with values of all types.
+
+      ```javascript
+      let age = 50; // age is a number now
+      age = 'old'; // age is a string now
+      age = true; // age is a boolean
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+299.  ### Void operatori nima
+
+      The `void` operator evaluates the given expression and then returns undefined(i.e, without returning value). The syntax would be as below,
+
+      ```javascript
+      void expression;
+      void expression;
+      ```
+
+      Let's display a message without any redirection or reload
+
+      ```javascript
+      <a href="javascript:void(alert('Welcome to JS world'))">
+        Click here to see a message
+      </a>
+      ```
+
+      **Note:** This operator is often used to obtain the undefined primitive value, using "void(0)".
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+300.  ### Kursorni kutish(wait) uchun qanday sozlash kerak
+
+      The cursor can be set to wait in JavaScript by using the property "cursor". Let's perform this behavior on page load using the below function.
+
+      ```javascript
+      function myFunction() {
+        window.document.body.style.cursor = 'wait';
+      }
+      ```
+
+      and this function invoked on page load
+
+      ```html
+      <body onload="myFunction()"></body>
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+301.  ### Qanday qilib cheksiz sikl (infinite loop)yaratasiz
+
+      You can create infinite loops using for and while loops without using any expressions. The for loop construct or syntax is better approach in terms of ESLint and code optimizer tools,
+
+      ```javascript
+      for (;;) {}
+      while (true) {}
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+302.  ### Nima uchun bayonot bilan avoid kerak
+
+      JavaScript's with statement was intended to provide a shorthand for writing recurring accesses to objects. So it can help reduce file size by reducing the need to repeat a lengthy object reference without performance penalty. Let's take an example where it is used to avoid redundancy when accessing an object several times.
+
+      ```javascript
+      a.b.c.greeting = 'welcome';
+      a.b.c.age = 32;
+      ```
+
+      Using `with` it turns this into:
+
+      ```javascript
+      with (a.b.c) {
+        greeting = 'welcome';
+        age = 32;
+      }
+      ```
+
+      But this `with` statement creates performance problems since one cannot predict whether an argument will refer to a real variable or to a property inside the with argument.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+303.  ### Quyidagi for looplarning natijalari qanday
+
+      ```javascript
+      for (var i = 0; i < 4; i++) {
+        // global scope
+        setTimeout(() => console.log(i));
+      }
+
+      for (let i = 0; i < 4; i++) {
+        // block scope
+        setTimeout(() => console.log(i));
+      }
+      ```
+
+      The output of the above for loops is 4 4 4 4 and 0 1 2 3
+
+      **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time `setTimeout` function is invoked. Hence, the output of the first loop is `4 4 4 4`.
+
+      Whereas in the second loop, the variable i is declared as the `let` keyword it becomes a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+304.  ### ES6 ning ba'zi xususiyatlarini sanab o'ting
+
+      Below are the list of some new features of ES6,
+
+      1.  Support for constants or immutable variables
+      2.  Block-scope support for variables, constants and functions
+      3.  Arrow functions
+      4.  Default parameters
+      5.  Rest and Spread Parameters
+      6.  Template Literals
+      7.  Multi-line Strings
+      8.  Destructuring Assignment
+      9.  Enhanced Object Literals
+      10. Promises
+      11. Classes
+      12. Modules
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+305.  ### ES6 nima
+
+      ES6 is the sixth edition of the javascript language and it was released in June 2015. It was initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015. Almost all the modern browsers support ES6 but for the old browsers there are many transpilers, like Babel.js etc.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+306.  ### Let va const o'zgaruvchilarni qayta e'lon qila olamanmi?
+
+      No, you cannot redeclare let and const variables. If you do, it throws below error
+
+      ```bash
+      Uncaught SyntaxError: Identifier 'someVariable' has already been declared
+      ```
+
+      **Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
+
+      ```javascript
+      var name = 'John';
+      function myFunc() {
+        var name = 'Nick';
+        var name = 'Abraham'; // Re-assigned in the same function block
+        alert(name); // Abraham
+      }
+      myFunc();
+      alert(name); // John
+      ```
+
+      The block-scoped multi-declaration throws syntax error,
+
+      ```javascript
+      let name = 'John';
+      function myFunc() {
+        let name = 'Nick';
+        let name = 'Abraham'; // Uncaught SyntaxError: Identifier 'name' has already been declared
+        alert(name);
+      }
+
+      myFunc();
+      alert(name);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+307.  ### Const o'zgaruvchisi qiymatni o'zgarmas qiladimi
+
+      No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+
+      ```javascript
+      const userList = [];
+      userList.push('John'); // Can mutate even though it can't re-assign
+      console.log(userList); // ['John']
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+308.  ### Standart parametrlar nima
+
+      In E5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+
+      ```javascript
+      //ES5
+      var calculateArea = function (height, width) {
+        height = height || 50;
+        width = width || 60;
+
+        return width * height;
+      };
+      console.log(calculateArea()); //300
+      ```
+
+      The default parameters makes the initialization more simpler,
+
+      ```javascript
+      //ES6
+      var calculateArea = function (height = 50, width = 60) {
+        return width * height;
+      };
+
+      console.log(calculateArea()); //300
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+309.  ### Shablon literallari nima
+
+      Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
+      In E6, this feature enables using dynamic expressions as below,
+
+      ```javascript
+      var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
+      ```
+
+      In ES5, you need break string like below,
+
+      ```javascript
+      var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
+      ```
+
+      **Note:** You can use multi-line strings and string interpolation features with template literals.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+310.  ### Shablon literallarida ko'p qatorli satrlarni qanday yozish mumkin
+
+      In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
+
+      ```javascript
+      console.log('This is string sentence 1\n' + 'This is string sentence 2');
+      ```
+
+      Whereas in ES6, You don't need to mention any newline sequence character,
+
+      ```javascript
+      console.log(`This is string sentence
+      'This is string sentence 2`);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+311.  ### Murakkab(nested) shablonlari nima
+
+      The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
+
+      ```javascript
+      const iconStyles = `icon ${
+        isMobilePlatform()
+          ? ''
+          : `icon-${user.isAuthorized ? 'submit' : 'disabled'}`
+      }`;
+      ```
+
+      You can write the above use case without nesting template features as well. However, the nesting template feature is more compact and readable.
+
+      ```javascript
+      //Without nesting templates
+       const iconStyles = `icon ${ isMobilePlatform() ? '' :
+        (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+312.  ### Belgilangan(tagged) shablonlar nima
+
+      Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
+
+      ```javascript
+      var user1 = 'John';
+      var skill1 = 'JavaScript';
+      var experience1 = 15;
+
+      var user2 = 'Kane';
+      var skill2 = 'JavaScript';
+      var experience2 = 5;
+
+      function myInfoTag(strings, userExp, experienceExp, skillExp) {
+        var str0 = strings[0]; // "Mr/Ms. "
+        var str1 = strings[1]; // " is a/an "
+        var str2 = strings[2]; // "in"
+
+        var expertiseStr;
+        if (experienceExp > 10) {
+          expertiseStr = 'expert developer';
+        } else if (skillExp > 5 && skillExp <= 10) {
+          expertiseStr = 'senior developer';
+        } else {
+          expertiseStr = 'junior developer';
+        }
+
+        return `${str0}${userExp}${str1}${expertiseStr}${str2}${skillExp}`;
+      }
+
+      var output1 = myInfoTag`Mr/Ms. ${user1} is a/an ${experience1} in ${skill1}`;
+      var output2 = myInfoTag`Mr/Ms. ${user2} is a/an ${experience2} in ${skill2}`;
+
+      console.log(output1); // Mr/Ms. John is a/an expert developer in JavaScript
+      console.log(output2); // Mr/Ms. Kane is a/an junior developer in JavaScript
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+313.  ### Raw stringlar nima
+
+      ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+
+      ```javascript
+      var calculationString = String.raw`The sum of numbers is \n${
+        1 + 2 + 3 + 4
+      }!`;
+      console.log(calculationString); // The sum of numbers is 10
+      ```
+
+      If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
+
+      ```javascript
+      var calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
+      console.log(calculationString);
+      // The sum of numbers is
+      // 10
+      ```
+
+      Also, the raw property is available on the first argument to the tag function
+
+      ```javascript
+      function tag(strings) {
+        console.log(strings.raw[0]);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+314.  ### Destructuring assignment (strukturani buzish) nima ?
+
+      The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
+      Let's get the month values from an array using destructuring assignment
+
+      ```javascript
+      var [one, two, three] = ['JAN', 'FEB', 'MARCH'];
+
+      console.log(one); // "JAN"
+      console.log(two); // "FEB"
+      console.log(three); // "MARCH"
+      ```
+
+      and you can get user properties of an object using destructuring assignment,
+
+      ```javascript
+      var { name, age } = { name: 'John', age: 32 };
+
+      console.log(name); // John
+      console.log(age); // 32
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+315.  ### Topshiriqni buzishda standart qiymatlar qanday
+
+      A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object use cases,
+
+      **Arrays destructuring:**
+
+      ```javascript
+      var x, y, z;
+
+      [x = 2, y = 4, z = 6] = [10];
+      console.log(x); // 10
+      console.log(y); // 4
+      console.log(z); // 6
+      ```
+
+      **Objects destructuring:**
+
+      ```javascript
+      var { x = 2, y = 4, z = 6 } = { x: 10 };
+
+      console.log(x); // 10
+      console.log(y); // 4
+      console.log(z); // 6
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+316.  ### Topshiriqni buzishda o'zgaruvchilarni qanday almashtirasiz
+
+      If you don't use destructuring assignment, swapping two values requires a temporary variable. Whereas using a destructuring feature, two variable values can be swapped in one destructuring expression. Let's swap two number variables in array destructuring assignment,
+
+      ```javascript
+      var x = 10,
+        y = 20;
+
+      [x, y] = [y, x];
+      console.log(x); // 20
+      console.log(y); // 10
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+317.  ### Kengaytirilgan ob'ekt harflari nima
+
+      Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
+
+      ```javascript
+      //ES6
+      var x = 10,
+        y = 20;
+      obj = { x, y };
+      console.log(obj); // {x: 10, y:20}
+      //ES5
+      var x = 10,
+        y = 20;
+      obj = { x: x, y: y };
+      console.log(obj); // {x: 10, y:20}
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+318.  ### Dinamik import nima
+
+      The dynamic imports using `import()` function syntax allows us to load modules on demand by using promises or the async/await syntax. Currently this feature is in [stage4 proposal](https://github.com/tc39/proposal-dynamic-import). The main advantage of dynamic imports is reduction of our bundle's sizes, the size/payload response of our requests and overall improvements in the user experience.
+      The syntax of dynamic imports would be as below,
+
+      ```javascript
+      import('./Module').then((Module) => Module.method());
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+319.  ### Dinamik import uchun qanday holatlar mavjud
+
+      Below are some of the use cases of using dynamic imports over static imports,
+
+      1.  Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
+
+      ```javascript
+      if (isLegacyBrowser()) {
+          import(···)
+          .then(···);
+      }
+      ```
+
+      1.  Compute the module specifier at runtime. For example, you can use it for internationalization.
+
+      ```javascript
+      import(`messages_${getLocale()}.js`).then(···);
+      ```
+
+      1.  Import a module from within a regular script instead a module.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+320.  ### Tiplangan massivlar(typed arrays) nima
+
+      Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 8 Typed array types,
+
+      1.  Int8Array: An array of 8-bit signed integers
+      2.  Int16Array: An array of 16-bit signed integers
+      3.  Int32Array: An array of 32-bit signed integers
+      4.  Uint8Array: An array of 8-bit unsigned integers
+      5.  Uint16Array: An array of 16-bit unsigned integers
+      6.  Uint32Array: An array of 32-bit unsigned integers
+      7.  Float32Array: An array of 32-bit floating point numbers
+      8.  Float64Array: An array of 64-bit floating point numbers
+
+      For example, you can create an array of 8-bit signed integers as below
+
+      ```javascript
+      const a = new Int8Array();
+      // You can pre-allocate n bytes
+      const bytes = 1024;
+      const a = new Int8Array(bytes);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+321.  ### Modul yuklagichlarining(modal loader) afzalliklari nimada
+
+      The module loaders provides the below features,
+
+      1.  Dynamic loading
+      2.  State isolation
+      3.  Global namespace isolation
+      4.  Compilation hooks
+      5.  Nested virtualization
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+322.  ### Collation (harakatlash) nima
+
+      Collation is used for sorting a set of strings and searching within a set of strings. It is parameterized by locale and aware of Unicode. Let's take comparison and sorting features,
+
+      1.  **Comparison:**
+
+      ```javascript
+      var list = ['ä', 'a', 'z']; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
+      var l10nDE = new Intl.Collator('de');
+      var l10nSV = new Intl.Collator('sv');
+      console.log(l10nDE.compare('ä', 'z') === -1); // true
+      console.log(l10nSV.compare('ä', 'z') === +1); // true
+      ```
+
+      1.  **Sorting:**
+
+      ```javascript
+      var list = ['ä', 'a', 'z']; // In German,  "ä" sorts with "a" Whereas in Swedish, "ä" sorts after "z"
+      var l10nDE = new Intl.Collator('de');
+      var l10nSV = new Intl.Collator('sv');
+      console.log(list.sort(l10nDE.compare)); // [ "a", "ä", "z" ]
+      console.log(list.sort(l10nSV.compare)); // [ "a", "z", "ä" ]
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+323.  ### For .. of statmentni nima uchun ishlatiladi
+
+      The for...of statement creates a loop iterating over iterable objects or elements such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
+
+      ```javascript
+      let arrayIterable = [10, 20, 30, 40, 50];
+
+      for (let value of arrayIterable) {
+        value++;
+        console.log(value); // 11 21 31 41 51
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+324.  ### Quyidagi yoyilgan operator massivining natijasi nimaga teng]
+
+      ```javascript
+      [...'John Resig'];
+      ```
+
+      The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
+      **Explanation:** The string is an iterable type and the spread operator within an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+325.  ### PostMessage xavfsizmi?]
+
+      Yes, postMessages can be considered very secure as long as the programmer/developer is careful about checking the origin and source of an arriving message. But if you try to send/receive a message without verifying its source will create cross-site scripting attacks.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+326.  ### Joyker belgisi sifatida postxabar maqsadli kelib chiqishi bilan bog'liq qanday muammolar mavjud]origin as wildcard
+
+      The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard “\*” as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
+
+      ```javascript
+      targetWindow.postMessage(message, '*');
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+327.  ### Qanday qilib tajovuzkorlardan postMessages olishdan qochasiz]attackers
+
+      Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin, which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
+
+      ```javascript
+      //Listener on http://www.some-receiver.com/
+      window.addEventListener("message", function(message){
+          if(/^http://www\.some-sender\.com$/.test(message.origin)){
+               console.log('You received the data from valid sender', message.data);
+         }
+      });
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+328.  ### PostMessages-dan butunlay qochishim mumkinmi?]
+
+      You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+329.  ### PostMessages sinxronlashganmi ?]
+
+      The postMessages are synchronous in IE8 browser but they are asynchronous in IE9 and all other modern browsers (i.e, IE9+, Firefox, Chrome, Safari).Due to this asynchronous behaviour, we use a callback mechanism when the postMessage is returned.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+330.  ### Javascript qanday paradigma]
+
+      JavaScript is a multi-paradigm language, supporting imperative/procedural programming, Object-Oriented Programming and functional programming. JavaScript supports Object-Oriented Programming with prototypical inheritance.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+331.  ### Ichki(Internal) va tashqi(external) javascript o'rtasidagi farq nima]external javascript
+
+      **Internal JavaScript:** It is the source code within the script tag.
+      **External JavaScript:** The source code is stored in an external file(stored with .js extension) and referred with in the tag.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+332.  ### JavaScript server tomonidagi skriptga qaraganda tezroqmi]
+
+      Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+333.  ### Belgilash qutisi(checkbox) holatini(status) qanday olish mumkin]
+
+      You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
+
+      ```html
+      <input type="checkbox" name="checkboxname" value="Agree" /> Agree the
+      conditions<br />
+      ```
+
+      ```javascript
+      console.log(document.getElementById(‘checkboxname’).checked); // true or false
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+334.  ### Double tilde operatorining maqsadi nima]
+
+      The double tilde operator(~~) is known as double NOT bitwise operator. This operator is going to be a quicker substitute for Math.floor().
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+335.  ### Belgilarni ASCII kodiga qanday o'zgartirasiz]
+
+      You can use the `String.prototype.charCodeAt()` method to convert string characters to ASCII numbers. For example, let's find ASCII code for the first letter of 'ABC' string,
+
+      ```javascript
+      'ABC'.charCodeAt(0); // returns 65
+      ```
+
+      Whereas `String.fromCharCode()` method converts numbers to equal ASCII characters.
+
+      ```javascript
+      String.fromCharCode(65, 66, 67); // returns 'ABC'
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+336.  ### ArrayBuffer nima]
+
+      An ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer. You can create it as below,
+
+      ```javascript
+      let buffer = new ArrayBuffer(16); // create a buffer of length 16
+      alert(buffer.byteLength); // 16
+      ```
+
+      To manipulate an ArrayBuffer, we need to use a “view” object.
+
+      ```javascript
+      //Create a DataView referring to the buffer
+      let view = new DataView(buffer);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+337.  ### Quyidagi satr ifodasining natijasi nima]
+
+      ```javascript
+      console.log('Welcome to JS world'[0]);
+      ```
+
+      The output of the above expression is "W".
+      **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+338.  ### Xato obyektining(error object) maqsadi nima]
+
+      The Error constructor creates an error object and the instances of error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. The syntax of error object would be as below,
+
+      ```javascript
+      new Error([message[, fileName[, lineNumber]]])
+      ```
+
+      You can throw user defined exceptions or errors using Error object in try...catch block as below,
+
+      ```javascript
+      try {
+        if (withdraw > balance)
+          throw new Error("Oops! You don't have enough balance");
+      } catch (e) {
+        console.log(e.name + ': ' + e.message);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+339.  ### EvalError obyektining maqsadi nima]
+
+      The EvalError object indicates an error regarding the global `eval()` function. Even though this exception is not thrown by JavaScript anymore, the EvalError object remains for compatibility. The syntax of this expression would be as below,
+
+      ```javascript
+      new EvalError([message[, fileName[, lineNumber]]])
+      ```
+
+      You can throw EvalError with in try...catch block as below,
+
+      ```javascript
+      try {
+        throw new EvalError('Eval function error', 'someFile.js', 100);
+      } catch (e) {
+        console.log(e.message, e.name, e.fileName);              // "Eval function error", "EvalError", "someFile.js"
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+340.  ### Qattiy bo'lmagan rejimdan qat'iy rejimga o'tkazilgan xatolar ro'yxati qanday]non-strict mode to strict mode
+
+      When you apply 'use strict'; syntax, some of the below cases will throw a SyntaxError before executing the script
+
+      1.  When you use Octal syntax
+
+      ```javascript
+      var n = 022;
+      ```
+
+      1.  Using `with` statement
+      2.  When you use delete operator on a variable name
+      3.  Using eval or arguments as variable or function argument name
+      4.  When you use newly reserved keywords
+      5.  When you declare a function in a block
+
+      ```javascript
+      if (someCondition) {
+        function f() {}
+      }
+      ```
+
+      Hence, the errors from above cases are helpful to avoid errors in development/production environments.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+341.  ### Barcha ob'ektlarning prototiplari bormi?]
+
+      No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+342.  ### Parametr va argument o'rtasidagi farq nima]argument
+
+      Parameter is the variable name of a function definition whereas an argument represents the value given to a function when it is invoked. Let's explain this with a simple function
+
+      ```javascript
+      function myFunction(parameter1, parameter2, parameter3) {
+        console.log(arguments[0]); // "argument1"
+        console.log(arguments[1]); // "argument2"
+        console.log(arguments[2]); // "argument3"
+      }
+      myFunction('argument1', 'argument2', 'argument3');
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+343.  ### Massivlardagi some usulining maqsadi nima]
+
+      The some() method is used to test whether at least one element in the array passes the test implemented by the provided function. The method returns a boolean value. Let's take an example to test for any odd elements,
+
+      ```javascript
+      var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      var odd = (element) => element % 2 !== 0;
+
+      console.log(array.some(odd)); // true (the odd element exists)
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+344.  ### Ikki yoki undan ortiq massivni qanday birlashtirasiz]
+
+      The concat() method is used to join two or more arrays by returning a new array containing all the elements. The syntax would be as below,
+
+      ```javascript
+      array1.concat(array2, array3, ..., arrayX)
+      ```
+
+      Let's take an example of array's concatenation with veggies and fruits arrays,
+
+      ```javascript
+      var veggies = ['Tomato', 'Carrot', 'Cabbage'];
+      var fruits = ['Apple', 'Orange', 'Pears'];
+      var veggiesAndFruits = veggies.concat(fruits);
+      console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+345.  ### Sayoz(shallow) va chuqur(deep) nusxa o'rtasidagi farq nima]copy
+
+      There are two ways to copy an object,
+
+      **Shallow Copy:**
+      Shallow copy is a bitwise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
+
+      **Example**
+
+      ```javascript
+      var empDetails = {
+        name: 'John',
+        age: 25,
+        expertise: 'Software Developer',
+      };
+      ```
+
+      to create a duplicate
+
+      ```javascript
+      var empDetailsShallowCopy = empDetails; //Shallow copying!
+      ```
+
+      if we change some property value in the duplicate one like this:
+
+      ```javascript
+      empDetailsShallowCopy.name = 'Johnson';
+      ```
+
+      The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're losing the original data as well.
+
+      **Deep copy:**
+      A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.
+
+      **Example**
+
+      ```javascript
+      var empDetails = {
+        name: 'John',
+        age: 25,
+        expertise: 'Software Developer',
+      };
+      ```
+
+      Create a deep copy by using the properties from the original object into new variable
+
+      ```javascript
+      var empDetailsDeepCopy = {
+        name: empDetails.name,
+        age: empDetails.age,
+        expertise: empDetails.expertise,
+      };
+      ```
+
+      Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+346.  ### Satrning ma'lum nusxalarini qanday yaratish mumkin]string
+
+      The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
+      Let's take an example of Hello string to repeat it 4 times,
+
+      ```javascript
+      'Hello'.repeat(4); // 'HelloHelloHelloHello'
+      ```
+
+347.  ### Qanday qilib barcha mos keladigan satrlarni muntazam ifodaga qaytarasiz]regular expression
+
+      The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
+
+      ```javascript
+      let regexp = /Hello(\d?))/g;
+      let greeting = 'Hello1Hello2Hello3';
+
+      let greetingList = [...greeting.matchAll(regexp)];
+
+      console.log(greetingList[0]); //Hello1
+      console.log(greetingList[1]); //Hello2
+      console.log(greetingList[2]); //Hello3
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+348.  ### Stringni boshida yoki oxirida qanday qilib kesish mumkin]ending
+
+      The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
+
+      ```javascript
+      var greeting = '   Hello, Goodmorning!   ';
+
+      console.log(greeting); // "   Hello, Goodmorning!   "
+      console.log(greeting.trimStart()); // "Hello, Goodmorning!   "
+      console.log(greeting.trimLeft()); // "Hello, Goodmorning!   "
+
+      console.log(greeting.trimEnd()); // "   Hello, Goodmorning!"
+      console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+349.  ### Unar operator bilan quyidagi konsol bayonotining chiqishi nima]with unary operator
+
+      Let's take console statement with unary operator as given below,
+
+      ```javascript
+      console.log(+'Hello');
+      ```
+
+      The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+350.  ### Javascript mixins foydalanadimi?]
+
+      Mixin is a generic object-oriented programming term - is a class containing methods that can be used by other classes without a need to inherit from it. In JavaScript we can only inherit from a single object. ie. There can be only one `[[prototype]]` for an object.
+
+      But sometimes we require to extend more than one, to overcome this we can use Mixin which helps to copy methods to the prototype of another class.
+
+      Say for instance, we've two classes `User` and `CleanRoom`. Suppose we need to add `CleanRoom` functionality to `User`, so that user can clean the room at demand. Here's where concept called mixins comes into picture.
+
+      ```javascript
+      // mixin
+      let cleanRoomMixin = {
+        cleanRoom() {
+          alert(`Hello ${this.name}, your room is clean now`);
+        },
+        sayBye() {
+          alert(`Bye ${this.name}`);
+        },
+      };
+
+      // usage:
+      class User {
+        constructor(name) {
+          this.name = name;
+        }
+      }
+
+      // copy the methods
+      Object.assign(User.prototype, cleanRoomMixin);
+
+      // now User can clean the room
+      new User('Dude').cleanRoom(); // Hello Dude, your room is clean now!
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+351.  ### Thunk funktsiyasi nima]
+
+      A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
+
+      ```javascript
+      const add = (x, y) => x + y;
+
+      const thunk = () => add(2, 3);
+
+      thunk(); // 5
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+352.  ### Asinxron thunks nima]
+
+      The asynchronous thunks are useful to make network requests. Let's see an example of network requests,
+
+      ```javascript
+      function fetchData(fn) {
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+          .then((response) => response.json())
+          .then((json) => fn(json));
+      }
+
+      const asyncThunk = function () {
+        return fetchData(function getData(data) {
+          console.log(data);
+        });
+      };
+
+      asyncThunk();
+      ```
+
+      The `getData` function won't be called immediately but it will be invoked only when the data is available from API endpoint. The setTimeout function is also used to make our code asynchronous. The best real time example is redux state management library which uses the asynchronous thunks to delay the actions to dispatch.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+353.  ### Quyidagi funksiya chaqiruvlarining natijasi nima]
+
+      **Code snippet:**
+
+      ```javascript
+      const circle = {
+        radius: 20,
+        diameter() {
+          return this.radius * 2;
+        },
+        perimeter: () => 2 * Math.PI * this.radius,
+      };
+      ```
+
+      console.log(circle.diameter());
+      console.log(circle.perimeter());
+
+      **Output:**
+
+      The output is 40 and NaN. Remember that diameter is a regular function, whereas the value of perimeter is an arrow function. The `this` keyword of a regular function(i.e, diameter) refers to the surrounding scope which is a class(i.e, Shape object). Whereas this keyword of perimeter function refers to the surrounding scope which is a window object. Since there is no radius property on window objects it returns an undefined value and the multiple of number value returns NaN value.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+354.  ### Satrdagi barcha qator uzilishlarini qanday olib tashlash mumkin]
+
+      The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
+
+      ```javascript
+      function remove_linebreaks( var message ) {
+          return message.replace( /[\r\n]+/gm, "" );
+      }
+      ```
+
+      In the above expression, g and m are for global and multiline flags.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+355.  ### Qayta ishlash(reflow) va qayta bo'yash(repaint) o'rtasidagi farq nima]
+
+      A _repaint_ occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include outline, visibility, or background color. A _reflow_ involves changes that affect the layout of a portion of the page (or the whole page). Resizing the browser window, changing the font, content changing (such as user typing text), using JavaScript methods involving computed styles, adding or removing elements from the DOM, and changing an element's classes are a few of the things that can trigger reflow. Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+356.  ### Massivni inkor qilish bilan nima sodir bo'ladi]
+
+      Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
+
+      ```javascript
+      console.log(![]); // false
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+357.  ### Agar ikkita massiv qo'shsak nima bo'ladi]
+
+      If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
+
+      ```javascript
+      console.log(['a'] + ['b']); // "ab"
+      console.log([] + []); // ""
+      console.log(![] + []); // "false", because ![] returns false.
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+358.  ### Noto'g'ri qiymatlar bo'yicha yuqori qo'shimcha operatorning chiqishi qanday bo'ladi]on falsy values
+
+      If you prepend the additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
+
+      ```javascript
+      console.log(+null); // 0
+      console.log(+undefined); // NaN
+      console.log(+false); // 0
+      console.log(+NaN); // NaN
+      console.log(+''); // 0
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+359.  ### Maxsus belgilar yordamida o'z-o'zidan strigni qanday yaratasiz]characters
+
+      The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
+
+      1.  Since Arrays are truthful values, negating the arrays will produce false: ![] === false
+      2.  As per JavaScript coercion rules, the addition of arrays together will toString them: [] + [] === ""
+      3.  Prepend an array with + operator will convert an array to false, the negation will make it true and finally converting the result will produce value '1': +(!(+[])) === 1
+
+      By applying the above rules, we can derive below conditions
+
+      ```javascript
+      (![] + [] === 'false' + !+[]) === 1;
+      ```
+
+      Now the character pattern would be created as below,
+
+      ```javascript
+            s               e               l               f
+       ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
+
+       (![] + [])[3] + (![] + [])[4] + (![] + [])[2] + (![] + [])[0]
+       ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^   ^^^^^^^^^^^^^
+      (![] + [])[+!+[]+!+[]+!+[]] +
+      (![] + [])[+!+[]+!+[]+!+[]+!+[]] +
+      (![] + [])[+!+[]+!+[]] +
+      (![] + [])[+[]]
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      (![]+[])[+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]+!+[]+!+[]]+(![]+[])[+!+[]+!+[]]+(![]+[])[+[]]
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+360.  ### Massivdan noto'g'ri qiymatlarni qanday olib tashlash mumkin]
+
+      You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
+
+      ```javascript
+      const myArray = [false, null, 1, 5, undefined];
+      myArray.filter(Boolean); // [1, 5] // is same as myArray.filter(x => x);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+361.  ### Massivning noyob qiymatlarini qanday olish mumkin
+
+      You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
+
+      ```javascript
+      console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+362.  ### Taxalluslarni buzish nima
+
+      Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
+
+      ```javascript
+      const obj = { x: 1 };
+      // Grabs obj.x as as { otherName }
+      const { x: otherName } = obj;
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+363.  ### Map usulini ishlatmasdan massiv qiymatlarini qanday Map qilish mumkinmethod
+
+      You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
+
+      ```javascript
+      const countries = [
+        { name: 'India', capital: 'Delhi' },
+        { name: 'US', capital: 'Washington' },
+        { name: 'Russia', capital: 'Moscow' },
+        { name: 'Singapore', capital: 'Singapore' },
+        { name: 'China', capital: 'Beijing' },
+        { name: 'France', capital: 'Paris' },
+      ];
+
+      const cityNames = Array.from(countries, ({ capital }) => capital);
+      console.log(cityNames); // ['Delhi, 'Washington', 'Moscow', 'Singapore', 'Beijing', 'Paris']
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+364.  ### Massivni qanday bo'shatish mumkin
+
+      You can empty an array quickly by setting the array length to zero.
+
+      ```javascript
+      let cities = ['Singapore', 'Delhi', 'London'];
+      cities.length = 0; // cities becomes []
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+365.  ### Qanday qilib raqamlarni ma'lum o'nli kasrlarga yaxlitlash mumkin
+
+      You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
+
+      ```javascript
+      let pie = 3.141592653;
+      pie = pie.toFixed(3); // 3.142
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+366.  ### Massivni ob'ektga aylantirishning eng oson yo'li qanday?object
+
+      You can convert an array to an object with the same data using spread(...) operator.
+
+      ```javascript
+      var fruits = ['banana', 'apple', 'orange', 'watermelon'];
+      var fruitsObject = { ...fruits };
+      console.log(fruitsObject); // {0: "banana", 1: "apple", 2: "orange", 3: "watermelon"}
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+367.  ### Ba'zi ma'lumotlar bilan massivni qanday yaratish mumkin
+
+      You can create an array with some data or an array with the same values using `fill` method.
+
+      ```javascript
+      var newArray = new Array(5).fill('0');
+      console.log(newArray); // ["0", "0", "0", "0", "0"]
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+368.  ### Konsol ob'ektidagi to'ldiruvchilar nima
+
+      Below are the list of placeholders available from console object,
+
+      1.  %o — It takes an object,
+      2.  %s — It takes a string,
+      3.  %d — It is used for a decimal or integer
+          These placeholders can be represented in the console.log as below
+
+      ```javascript
+      const user = { name: 'John', id: 1, city: 'Delhi' };
+      console.log(
+        'Hello %s, your details %o are available in the object form',
+        'John',
+        user
+      ); // Hello John, your details {name: "John", id: 1, city: "Delhi"} are available in object
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+369.  ### Konsol xabarlariga CSS qo'shish mumkinmi?
+
+      Yes, you can apply CSS styles to console messages similar to html text on the web page.
+
+      ```javascript
+      console.log(
+        '%c The text has blue color, with large font and red background',
+        'color: blue; font-size: x-large; background: red'
+      );
+      ```
+
+      The text will be displayed as below,
+      ![Screenshot](images/console-css.png)
+
+      **Note:** All CSS styles can be applied to console messages.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+370.  ### Konsol ob'ektining dir usulidan maqsad nimaobject
+
+      The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
+
+      ```javascript
+      const user = { name: 'John', id: 1, city: 'Delhi' };
+      console.dir(user);
+      ```
+
+      The user object displayed in JSON representation
+      ![Screenshot](images/console-dir.png)
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+371.  ### Konsolda HTML elementlarini disk raskadrovka qilish mumkinmi?
+
+      Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
+
+      ```javascript
+      const element = document.getElementsByTagName('body')[0];
+      console.log(element);
+      ```
+
+      It prints the HTML element in the console,
+
+      ![Screenshot](images/console-html.png)
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+372.  ### Konsol ob'ekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkinconsole object
+
+      The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
+
+      ```js
+      const users = [
+        { name: 'John', id: 1, city: 'Delhi' },
+        { name: 'Max', id: 2, city: 'London' },
+        { name: 'Rod', id: 3, city: 'Paris' },
+      ];
+      console.table(users);
+      ```
+
+      The data visualized in a table format,
+
+      ![Screenshot](images/console-table.png)
+      **Not:** Remember that `console.table()` is not supported in IE.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+373.  ### Argument son yoki son emasligini qanday tekshirish mumkinnot
+
+      The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
+
+      ```javascript
+      function isNumber(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+374.  ### Buferga nusxa ko'chirish tugmasi qanday yaratiladi
+
+      You need to select the content(using .select() method) of the input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute other system commands like cut and paste.
+
+      ```javascript
+      document.querySelector('#copy-button').onclick = function () {
+        // Select the content
+        document.querySelector('#copy-input').select();
+        // Copy to the clipboard
+        document.execCommand('copy');
+      };
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+375.  ### Timestamp uchun shortcut nima
+
+      You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
+
+      ```javascript
+      console.log(+new Date());
+      console.log(Date.now());
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+376.  ### Ko'p o'lchovli massivlarni qanday tekislash mumkin
+
+      Flattening bi-dimensional arrays is trivial with Spread operator.
+
+      ```javascript
+      const biDimensionalArr = [11, [22, 33], [44, 55], [66, 77], 88, 99];
+      const flattenArr = [].concat(...biDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
+      ```
+
+      But you can make it work with multi-dimensional arrays by recursive calls,
+
+      ```javascript
+      function flattenMultiArray(arr) {
+        const flattened = [].concat(...arr);
+        return flattened.some((item) => Array.isArray(item))
+          ? flattenMultiArray(flattened)
+          : flattened;
+      }
+      const multiDimensionalArr = [
+        11,
+        [22, 33],
+        [44, [55, 66, [77, [88]], 99]],
+      ];
+      const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+377.  ### Ko'p holatni tekshirishning(multi condition checking) eng oson usuli
+
+      You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
+
+      ```javascript
+      // Verbose approach
+      if (
+        input === 'first' ||
+        input === 1 ||
+        input === 'second' ||
+        input === 2
+      ) {
+        someFunction();
+      }
+      // Shortcut
+      if (['first', 1, 'second', 2].indexOf(input) !== -1) {
+        someFunction();
+      }
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+378.  ### Brauzerning orqaga tugmachasini qanday suratga olasiz
+
+      The `window.onbeforeunload` method is used to capture browser back button events. This is helpful to warn users about losing the current data.
+
+      ```javascript
+      window.onbeforeunload = function () {
+        alert('You work will be lost');
+      };
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+379.  ### Veb-sahifada sichqonchaning o'ng tugmachasini qanday o'chirib qo'yish mumkin
+
+      The right click on the page can be disabled by returning false from the `oncontextmenu` attribute on the body element.
+
+      ```html
+      <body oncontextmenu="return false;"></body>
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+380.  ### O'rash ob'ektlari(wrapper object) nima
+
+      Primitive Values like string,number and boolean don't have properties and methods but they are temporarily converted or coerced to an object(Wrapper object) when you try to perform actions on them. For example, if you apply toUpperCase() method on a primitive string value, it does not throw an error but returns uppercase of the string.
+
+      ```javascript
+      let name = 'john';
+
+      console.log(name.toUpperCase()); // Behind the scenes treated as console.log(new String(name).toUpperCase());
+      ```
+
+      i.e, Every primitive except null and undefined have Wrapper Objects and the list of wrapper objects are String,Number,Boolean,Symbol and BigInt.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+381.  ### AJAX nima
+
+      AJAX stands for Asynchronous JavaScript and XML and it is a group of related technologies(HTML, CSS, JavaScript, XMLHttpRequest API etc) used to display data asynchronously. i.e. We can send data to the server and get data from the server without reloading the web page.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+382.  ### Asinxron kod bilan ishlashning turli usullari qandayAsynchronous Code
+
+      Below are the list of different ways to deal with Asynchronous code.
+
+      1.  Callbacks
+      2.  Promises
+      3.  Async/await
+      4.  Third-party libraries such as async.js,bluebird etc
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+383.  ### Qanday qilib qabul qilishni bekor qilish mumkin
+
+      Until a few days back, One shortcoming of native promises is no direct way to cancel a fetch request. But the new `AbortController` from js specification allows you to use a signal to abort one or multiple fetch calls.
+      The basic flow of cancelling a fetch request would be as below,
+
+      1.  Create an `AbortController` instance
+      2.  Get the signal property of an instance and pass the signal as a fetch option for signal
+      3.  Call the AbortController's abort property to cancel all fetches that use that signal
+          For example, let's pass the same signal to multiple fetch calls will cancel all requests with that signal,
+
+      ```javascript
+      const controller = new AbortController();
+      const { signal } = controller;
+
+      fetch('http://localhost:8000', { signal })
+        .then((response) => {
+          console.log(`Request 1 is complete!`);
+        })
+        .catch((e) => {
+          if (e.name === 'AbortError') {
+            // We know it's been canceled!
+          }
+        });
+
+      fetch('http://localhost:8000', { signal })
+        .then((response) => {
+          console.log(`Request 2 is complete!`);
+        })
+        .catch((e) => {
+          if (e.name === 'AbortError') {
+            // We know it's been canceled!
+          }
+        });
+
+      // Wait 2 seconds to abort both requests
+      setTimeout(() => controller.abort(), 2000);
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+384.  ### Veb nutq API (web speech API) nima ?
+
+      Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API has been introduced by W3C Community in the year 2012. It has two main parts,
+
+      1.  **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by the `SpeechRecognition` interface.
+          The below example shows on how to use this API to get text from speech,
+
+      ```javascript
+      window.SpeechRecognition =
+        window.webkitSpeechRecognition || window.SpeechRecognition; // webkitSpeechRecognition for Chrome and SpeechRecognition for FF
+      const recognition = new window.SpeechRecognition();
+      recognition.onresult = (event) => {
+        // SpeechRecognitionEvent type
+        const speechToText = event.results[0][0].transcript;
+        console.log(speechToText);
+      };
+      recognition.start();
+      ```
+
+      In this API, browser is going to ask you for permission to use your microphone
+
+      1.  **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
+          For example, the below code is used to get voice/speech from text,
+
+      ```javascript
+      if ('speechSynthesis' in window) {
+        var speech = new SpeechSynthesisUtterance('Hello World!');
+        speech.lang = 'en-US';
+        window.speechSynthesis.speak(speech);
+      }
+      ```
+
+      The above examples can be tested on chrome(33+) browser's developer console.
+      **Note:** This API is still a working draft and only available in Chrome and Firefox browsers(ofcourse Chrome only implemented the specification)
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+385.  ### Minimal vaqt tugashini kamaytirish(minimum timeout) nima
+
+      Both browser and NodeJS javascript environments throttles with a minimum delay that is greater than 0ms. That means even though setting a delay of 0ms will not happen instantaneously.
+      **Browsers:** They have a minimum delay of 4ms. This throttle occurs when successive calls are triggered due to callback nesting(certain depth) or after a certain number of successive intervals.
+      Note: The older browsers have a minimum delay of 10ms.
+      **Nodejs:** They have a minimum delay of 1ms. This throttle happens when the delay is larger than 2147483647 or less than 1.
+      The best example to explain this timeout throttling behavior is the order of below code snippet.
+
+      ```javascript
+      function runMeFirst() {
+        console.log('My script is initialized');
+      }
+      setTimeout(runMeFirst, 0);
+      console.log('Script loaded');
+      ```
+
+      and the output would be in
+
+      ```cmd
+      Script loaded
+      My script is initialized
+      ```
+
+      If you don't use `setTimeout`, the order of logs will be sequential.
+
+      ```javascript
+      function runMeFirst() {
+        console.log('My script is initialized');
+      }
+      runMeFirst();
+      console.log('Script loaded');
+      ```
+
+      and the output is,
+
+      ```cmd
+      My script is initialized
+      Script loaded
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+386.  ### Zamonaviy brauzerlarda nol vaqt tugashini qanday amalga oshirasizbrowsers
+
+      You can't use setTimeout(fn, 0) to execute the code immediately due to minimum delay of greater than 0ms. But you can use window.postMessage() to achieve this behavior.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+387.  ### Event loop qanday vazifalar mavjud
+
+      A task is any javascript code/program which is scheduled to be run by the standard mechanisms such as initially starting to run a program, run an event callback, or an interval or timeout being fired. All these tasks are scheduled on a task queue.
+      Below are the list of use cases to add tasks to the task queue,
+
+      1.  When a new javascript program is executed directly from console or running by the `<script>` element, the task will be added to the task queue.
+      2.  When an event fires, the event callback added to task queue
+      3.  When a setTimeout or setInterval is reached, the corresponding callback added to task queue
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+388.  ### Mikrovazifa(microtask) nima
+
+      Microtask is the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. They are kind of blocking in nature. i.e, The main thread will be blocked until the microtask queue is empty.
+      The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
+
+      **Note:** All of these microtasks are processed in the same turn of the event loop.
+      **[⬆ Back to Top](#table-of-contents)**
+
+389.  ### What are different event loops
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+390.  ### What is the purpose of queuemicrotask
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+391.  ### Typescript faylida javascript kutubxonalaridan qanday foydalanasizfile
+
+      It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in our TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn’t have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
+
+      ```javascript
+      declare var customLibrary;
+      ```
+
+      In the runtime, typescript will provide the type to the `customLibrary` variable as `any` type. The another alternative without using declare keyword is below
+
+      ```javascript
+      var customLibrary: any;
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+392.  ### Promises va kuzatilishi mumkin bo'lganlar o'rtasidagi farqlar qandayobservables
+
+      Some of the major difference in a tabular form
+
+      | Promises                                                           | Observables                                                                              |
+      | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+      | Emits only a single value at a time                                | Emits multiple values over a period of time(stream of values ranging from 0 to multiple) |
+      | Eager in nature; they are going to be called immediately           | Lazy in nature; they require subscription to be invoked                                  |
+      | Promise is always asynchronous even though it resolved immediately | Observable can be either synchronous or asynchronous                                     |
+      | Doesn't provide any operators                                      | Provides operators such as map, forEach, filter, reduce, retry, and retryWhen etc        |
+      | Cannot be canceled                                                 | Canceled by using unsubscribe() method                                                   |
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+393.  ### Heap nima
+
+      Heap(Or memory heap) is the memory location where objects are stored when we define variables. i.e, This is the place where all the memory allocations and de-allocation take place. Both heap and call-stack are two containers of JS runtime.
+      Whenever runtime comes across variables and function declarations in the code it stores them in the Heap.
+
+      ![Screenshot](images/heap.png)
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+394.  ### Voqealar jadvali(event table) nima
+
+      Event Table is a data structure that stores and keeps track of all the events which will be executed asynchronously like after some time interval or after the resolution of some API requests. i.e Whenever you call a setTimeout function or invoke async operation, it is added to the Event Table.
+      It doesn't not execute functions on it’s own. The main purpose of the event table is to keep track of events and send them to the Event Queue as shown in the below diagram.
+
+      ![Screenshot](images/event-table.png)
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+395.  ### MicroTask navbati nima
+
+      Microtask Queue is the new queue where all the tasks initiated by promise objects get processed before the callback queue.
+      The microtasks queue are processed before the next rendering and painting jobs. But if these microtasks are running for a long time then it leads to visual degradation.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+396.  ### Shim va polifill o'rtasidagi farq nima
+
+      A shim is a library that brings a new API to an older environment, using only the means of that environment. It isn't necessarily restricted to a web application. For example, es5-shim.js is used to emulate ES5 features on older browsers (mainly pre IE9).
+      Whereas polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively.
+      In a simple sentence, A polyfill is a shim for a browser API.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+397.  ### Primitiv yoki primitiv bo'lmagan qiymat turini qanday aniqlash mumkinvalue type
+
+      In JavaScript, primitive types include boolean, string, number, BigInt, null, Symbol and undefined. Whereas non-primitive types include the Objects. But you can easily identify them with the below function,
+
+      ```javascript
+      var myPrimitive = 30;
+      var myNonPrimitive = {};
+      function isPrimitive(val) {
+        return Object(val) !== val;
+      }
+
+      isPrimitive(myPrimitive);
+      isPrimitive(myNonPrimitive);
+      ```
+
+      If the value is a primitive data type, the Object constructor creates a new wrapper object for the value. But If the value is a non-primitive data type (an object), the Object constructor will give the same object.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+398.  ### Babel nima
+
+      Babel is a JavaScript transpiler to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Some of the main features are listed below,
+
+      1.  Transform syntax
+      2.  Polyfill features that are missing in your target environment (using @babel/polyfill)
+      3.  Source code transformations (or codemods)
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+399.  ### Node.js butunlay bitta tishlimi (single threaded)
+
+      Node is a single thread, but some of the functions included in the Node.js standard library(e.g, fs module functions) are not single threaded. i.e, Their logic runs outside of the Node.js single thread to improve the speed and performance of a program.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+400.  ### Kuzatiladigan narsalardan qanday umumiy foydalanish holatlari mavjud
+
+      Some of the most common use cases of observables are web sockets with push notifications, user input changes, repeating intervals, etc
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+401.  ### RxJS nima
+
+      RxJS (Reactive Extensions for JavaScript) is a library for implementing reactive programming using observables that makes it easier to compose asynchronous or callback-based code. It also provides utility functions for creating and working with observables.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+402.  ### Funktsiya konstruktori va funksiya deklaratsiyasi o'rtasidagi farq nimaconstructor and function declaration
+
+      The functions which are created with `Function constructor` do not create closures to their creation contexts but they are always created in the global scope. i.e, the function can access its own local variables and global scope variables only. Whereas function declarations can access outer function variables(closures) too.
+
+      Let's see this difference with an example,
+
+      **Function Constructor:**
+
+      ```javascript
+      var a = 100;
+      function createFunction() {
+        var a = 200;
+        return new Function('return a;');
+      }
+      console.log(createFunction()()); // 100
+      ```
+
+      **Function declaration:**
+
+      ```javascript
+      var a = 100;
+      function createFunction() {
+        var a = 200;
+        return function func() {
+          return a;
+        };
+      }
+      console.log(createFunction()()); // 200
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+403.  ### Qisqa tutashuv holati (Short circuit condition) nima
+
+      Short circuit conditions are meant for condensed way of writing simple if statements. Let's demonstrate the scenario using an example. If you would like to login to a portal with an authentication condition, the expression would be as below,
+
+      ```javascript
+      if (authenticate) {
+        loginToPorta();
+      }
+      ```
+
+      Since the javascript logical operators evaluated from left to right, the above expression can be simplified using && logical operator
+
+      ```javascript
+      authenticate && loginToPorta();
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+404.  ### Massiv hajmini o'zgartirishning eng oson yo'li qanday?
+
+      The length property of an array is useful to resize or empty an array quickly. Let's apply length property on number array to resize the number of elements from 5 to 2,
+
+      ```javascript
+      var array = [1, 2, 3, 4, 5];
+      console.log(array.length); // 5
+
+      array.length = 2;
+      console.log(array.length); // 2
+      console.log(array); // [1,2]
+      ```
+
+      and the array can be emptied too
+
+      ```javascript
+      var array = [1, 2, 3, 4, 5];
+      array.length = 0;
+      console.log(array.length); // 0
+      console.log(array); // []
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+405.  ### Kuzatiladigan narsa nima
+
+      An Observable is basically a function that can return a stream of values either synchronously or asynchronously to an observer over time. The consumer can get the value by calling `subscribe()` method.
+      Let's look at a simple example of an Observable
+
+      ```javascript
+      import { Observable } from 'rxjs';
+
+      const observable = new Observable((observer) => {
+        setTimeout(() => {
+          observer.next('Message from a Observable!');
+        }, 3000);
+      });
+
+      observable.subscribe((value) => console.log(value));
+      ```
+
+      ![Screenshot](images/observables.png)
+
+      **Note:** Observables are not part of the JavaScript language yet but they are being proposed to be added to the language
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+406.  ### Funktsiya va sinf deklaratsiyasi o'rtasidagi farq nimadeclarations
+
+      The main difference between function declarations and class declarations is `hoisting`. The function declarations are hoisted but not class declarations.
+
+      **Classes:**
+
+      ```javascript
+      const user = new User(); // ReferenceError
+
+      class User {}
+      ```
+
+      **Constructor Function:**
+
+      ```javascript
+      const user = new User(); // No error
+
+      function User() {}
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+407.  ### Asinx funksiya nima
+
+      An async function is a function declared with the `async` keyword which enables asynchronous, promise-based behavior to be written in a cleaner style by avoiding promise chains. These functions can contain zero or more `await` expressions.
+
+      Let's take a below async function example,
+
+      ```javascript
+      async function logger() {
+        let data = await fetch('http://someapi.com/users'); // pause until fetch returns
+        console.log(data);
+      }
+      logger();
+      ```
+
+      It is basically syntax sugar over ES2015 promises and generators.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+408.  ### Qanday qilib va'dalarni yutish(promise swallowing) xatolarining oldini olish mumkin
+
+      While using asynchronous code, JavaScript’s ES6 promises can make your life a lot easier without having callback pyramids and error handling on every second line. But Promises have some pitfalls and the biggest one is swallowing errors by default.
+
+      Let's say you expect to print an error to the console for all the below cases,
+
+      ```javascript
+      Promise.resolve('promised value').then(function () {
+        throw new Error('error');
+      });
+
+      Promise.reject('error value').catch(function () {
+        throw new Error('error');
+      });
+
+      new Promise(function (resolve, reject) {
+        throw new Error('error');
+      });
+      ```
+
+      But there are many modern JavaScript environments that won't print any errors. You can fix this problem in different ways,
+
+      1.  **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
+
+          ```javascript
+          Promise.resolve('promised value')
+            .then(function () {
+              throw new Error('error');
+            })
+            .catch(function (error) {
+              console.error(error.stack);
+            });
+          ```
+
+          But it is quite difficult to type for each promise chain and verbose too.
+
+      2.  **Add done method:** You can replace first solution's then and catch blocks with done method
+
+          ```javascript
+          Promise.resolve('promised value').done(function () {
+            throw new Error('error');
+          });
+          ```
+
+          Let's say you want to fetch data using HTTP and later perform processing on the resulting data asynchronously. You can write `done` block as below,
+
+          ```javascript
+          getDataFromHttp()
+            .then(function (result) {
+              return processDataAsync(result);
+            })
+            .done(function (processed) {
+              displayData(processed);
+            });
+          ```
+
+          In future, if the processing library API changed to synchronous then you can remove `done` block as below,
+
+          ```javascript
+          getDataFromHttp().then(function (result) {
+            return displayData(processDataAsync(result));
+          });
+          ```
+
+          and then you forgot to add `done` block to `then` block leads to silent errors.
+
+      3.  **Extend ES6 Promises by Bluebird:**
+          Bluebird extends the ES6 Promises API to avoid the issue in the second solution. This library has a “default” onRejection handler which will print all errors from rejected Promises to stderr. After installation, you can process unhandled rejections
+
+          ```javascript
+          Promise.onPossiblyUnhandledRejection(function (error) {
+            throw error;
+          });
+          ```
+
+          and discard a rejection, just handle it with an empty catch
+
+          ```javascript
+          Promise.reject('error value').catch(function () {});
+          ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+409.  ### Deno nima
+
+      Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 JavaScript engine and the Rust programming language.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+410.  ### Qanday qilib ob'ektni javascriptda takrorlanadigan qilish mumkin
+
+      By default, plain objects are not iterable. But you can make the object iterable by defining a `Symbol.iterator` property on it.
+
+      Let's demonstrate this with an example,
+
+      ```javascript
+      const collection = {
+        one: 1,
+        two: 2,
+        three: 3,
+        [Symbol.iterator]() {
+          const values = Object.keys(this);
+          let i = 0;
+          return {
+            next: () => {
+              return {
+                value: this[values[i++]],
+                done: i > values.length,
+              };
+            },
+          };
+        },
+      };
+
+      const iterator = collection[Symbol.iterator]();
+
+      console.log(iterator.next()); // → {value: 1, done: false}
+      console.log(iterator.next()); // → {value: 2, done: false}
+      console.log(iterator.next()); // → {value: 3, done: false}
+      console.log(iterator.next()); // → {value: undefined, done: true}
+      ```
+
+      The above process can be simplified using a generator function,
+
+      ```javascript
+      const collection = {
+        one: 1,
+        two: 2,
+        three: 3,
+        [Symbol.iterator]: function* () {
+          for (let key in this) {
+            yield this[key];
+          }
+        },
+      };
+      const iterator = collection[Symbol.iterator]();
+      console.log(iterator.next()); // {value: 1, done: false}
+      console.log(iterator.next()); // {value: 2, done: false}
+      console.log(iterator.next()); // {value: 3, done: false}
+      console.log(iterator.next()); // {value: undefined, done: true}
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+411.  ### To'g'ri quyruq chaqiruvi ( Proper Tail Call ) nima
+
+      First, we should know about tail call before talking about "Proper Tail Call". A tail call is a subroutine or function call performed as the final action of a calling function. Whereas **Proper tail call(PTC)** is a technique where the program or code will not create additional stack frames for a recursion when the function call is a tail call.
+
+      For example, the below classic or head recursion of factorial function relies on stack for each step. Each step need to be processed upto `n * factorial(n - 1)`
+
+      ```javascript
+      function factorial(n) {
+        if (n === 0) {
+          return 1;
+        }
+        return n * factorial(n - 1);
+      }
+      console.log(factorial(5)); //120
+      ```
+
+      But if you use Tail recursion functions, they keep passing all the necessary data it needs down the recursion without relying on the stack.
+
+      ```javascript
+      function factorial(n, acc = 1) {
+        if (n === 0) {
+          return acc;
+        }
+        return factorial(n - 1, n * acc);
+      }
+      console.log(factorial(5)); //120
+      ```
+
+      The above pattern returns the same output as the first one. But the accumulator keeps track of total as an argument without using stack memory on recursive calls.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+412.  ### Ob'ektni Promise(va’da) ekani yoki yoq ekanini qanday tekshirish mumkin
+
+      If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
+
+      ```javascript
+      function isPromise(object) {
+        if (Promise && Promise.resolve) {
+          return Promise.resolve(object) == object;
+        } else {
+          throw 'Promise not supported in your environment';
+        }
+      }
+
+      var i = 1;
+      var promise = new Promise(function (resolve, reject) {
+        resolve();
+      });
+
+      console.log(isPromise(i)); // false
+      console.log(isPromise(promise)); // true
+      ```
+
+      Another way is to check for `.then()` handler type
+
+      ```javascript
+      function isPromise(value) {
+        return Boolean(value && typeof value.then === 'function');
+      }
+      var i = 1;
+      var promise = new Promise(function (resolve, reject) {
+        resolve();
+      });
+
+      console.log(isPromise(i)); // false
+      console.log(isPromise(promise)); // true
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+413.  ### Funktsiya konstruktor sifatida chaqirilganligini qanday aniqlash mumkinconstructor
+
+      You can use `new.target` pseudo-property to detect whether a function was called as a constructor(using the new operator) or as a regular function call.
+
+      1.  If a constructor or function invoked using the new operator, new.target returns a reference to the constructor or function.
+      2.  For function calls, new.target is undefined.
+
+      ```javascript
+      function Myfunc() {
+         if (new.target) {
+            console.log('called with new');
+         } else {
+            console.log('not called with new');
+         }
+      }
+
+      new Myfunc(); // called with new
+      Myfunc(); // not called with new
+      Myfunc.call({}); not called with new
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+414.  ### Argumentlar ob'ekti va Rest parametri o'rtasidagi farqlar qandayand rest parameter
+
+      There are three main differences between arguments object and rest parameters
+
+      1.  The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
+      2.  The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
+      3.  The rest parameters are only the ones that haven’t been given a separate name, while the arguments object contains all arguments passed to the function
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+415.  ### Spred operatori va Rest parametri o'rtasidagi farqlar qandayand rest parameter
+
+      Rest parameter collects all remaining elements into an array. Whereas Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. i.e, Rest parameter is opposite to the spread operator.
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+416.  ### Har xil turdagi generatorlar qanday
+
+      There are five kinds of generators,
+
+      1.  **Generator function declaration:**
+
+          ```javascript
+          function* myGenFunc() {
             yield 1;
             yield 2;
             yield 3;
           }
-        }
-        const myObject = new MyClass();
-        const genObj = myObject.myGeneratorMethod();
-        ```
+          const genObj = myGenFunc();
+          ```
 
-     5. **Generator as a computed property:**
+      2.  **Generator function expressions:**
 
-        ```javascript
-        const SomeObj = {
-          *[Symbol.iterator]() {
+          ```javascript
+          const myGenFunc = function* () {
             yield 1;
             yield 2;
             yield 3;
-          },
-        };
+          };
+          const genObj = myGenFunc();
+          ```
 
-        console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
-        ```
+      3.  **Generator method definitions in object literals:**
 
-     **[⬆ Back to Top](#table-of-contents)**
+          ```javascript
+          const myObj = {
+            *myGeneratorMethod() {
+              yield 1;
+              yield 2;
+              yield 3;
+            },
+          };
+          const genObj = myObj.myGeneratorMethod();
+          ```
 
-417. ### What are the built-in iterables
+      4.  **Generator method definitions in class:**
 
-     Below are the list of built-in iterables in javascript,
+          ```javascript
+          class MyClass {
+            *myGeneratorMethod() {
+              yield 1;
+              yield 2;
+              yield 3;
+            }
+          }
+          const myObject = new MyClass();
+          const genObj = myObject.myGeneratorMethod();
+          ```
 
-     1. Arrays and TypedArrays
-     2. Strings: Iterate over each character or Unicode code-points
-     3. Maps: iterate over its key-value pairs
-     4. Sets: iterates over their elements
-     5. arguments: An array-like special variable in functions
-     6. DOM collection such as NodeList
+      5.  **Generator as a computed property:**
 
-     **[⬆ Back to Top](#table-of-contents)**
+          ```javascript
+          const SomeObj = {
+            *[Symbol.iterator]() {
+              yield 1;
+              yield 2;
+              yield 3;
+            },
+          };
 
-418. ### What are the differences between for...of and for...in statements
+          console.log(Array.from(SomeObj)); // [ 1, 2, 3 ]
+          ```
 
-     Both for...in and for...of statements iterate over js data structures. The only difference is over what they iterate:
+      **[⬆ Back to Top](#table-of-contents)**
 
-     1. for..in iterates over all enumerable property keys of an object
-     2. for..of iterates over the values of an iterable object.
+417.  ### O'rnatilgan iterativlar(built-in) nima
 
-     Let's explain this difference with an example,
+      Below are the list of built-in iterables in javascript,
 
-     ```javascript
-     let arr = ['a', 'b', 'c'];
+      1.  Arrays and TypedArrays
+      2.  Strings: Iterate over each character or Unicode code-points
+      3.  Maps: iterate over its key-value pairs
+      4.  Sets: iterates over their elements
+      5.  arguments: An array-like special variable in functions
+      6.  DOM collection such as NodeList
 
-     arr.newProp = 'newVlue';
+      **[⬆ Back to Top](#table-of-contents)**
 
-     // key are the property keys
-     for (let key in arr) {
-       console.log(key);
-     }
+418.  ### for...of va for... o'rtasida qanday farq bor
 
-     // value are the property values
-     for (let value of arr) {
-       console.log(value);
-     }
-     ```
+      Both for...in and for...of statements iterate over js data structures. The only difference is over what they iterate:
 
-     Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over the array object. The for..of loop iterates over the values of a arr data structure and logs a, b, c in the console.
+      1.  for..in iterates over all enumerable property keys of an object
+      2.  for..of iterates over the values of an iterable object.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      Let's explain this difference with an example,
 
-419. ### How do you define instance and non-instance properties
+      ```javascript
+      let arr = ['a', 'b', 'c'];
 
-     The Instance properties must be defined inside of class methods. For example, name and age properties defined insider constructor as below,
+      arr.newProp = 'newVlue';
 
-     ```javascript
-     class Person {
-       constructor(name, age) {
-         this.name = name;
-         this.age = age;
-       }
-     }
-     ```
+      // key are the property keys
+      for (let key in arr) {
+        console.log(key);
+      }
 
-     But Static(class) and prototype data properties must be defined outside of the ClassBody declaration. Let's assign the age value for Person class as below,
+      // value are the property values
+      for (let value of arr) {
+        console.log(value);
+      }
+      ```
 
-     ```javascript
-     Person.staticAge = 30;
-     Person.prototype.prototypeAge = 40;
-     ```
+      Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over the array object. The for..of loop iterates over the values of a arr data structure and logs a, b, c in the console.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-420. ### What is the difference between isNaN and Number.isNaN?
+419.  ### Namuna(instance) va namuna bo'lmagan(non-instance) xususiyatlarni qanday aniqlaysiz
 
-     1. **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
-     2. **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
+      The Instance properties must be defined inside of class methods. For example, name and age properties defined insider constructor as below,
 
-     Let's see the difference with an example,
+      ```javascript
+      class Person {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+      }
+      ```
 
-     ```javascript
-     isNaN(‘hello’);   // true
-     Number.isNaN('hello'); // false
-     ```
+      But Static(class) and prototype data properties must be defined outside of the ClassBody declaration. Let's assign the age value for Person class as below,
 
-     **[⬆ Back to Top](#table-of-contents)**
+      ```javascript
+      Person.staticAge = 30;
+      Person.prototype.prototypeAge = 40;
+      ```
 
-421. ### How to invoke an IIFE without any extra brackets?
+      **[⬆ Back to Top](#table-of-contents)**
 
-     Immediately Invoked Function Expressions(IIFE) requires a pair of parenthesis to wrap the function which contains set of statements.
+420.  ### isNaN va Number.isNaN o'rtasidagi farq nima
 
-     ```js
-     (function (dt) {
-       console.log(dt.toLocaleTimeString());
-     })(new Date());
-     ```
+      1.  **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
+      2.  **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
 
-     Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
+      Let's see the difference with an example,
 
-     ```js
-     void (function (dt) {
-       console.log(dt.toLocaleTimeString());
-     })(new Date());
-     ```
+      ```javascript
+      isNaN(‘hello’);   // true
+      Number.isNaN('hello'); // false
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-422. ### Is that possible to use expressions in switch cases?
+421.  ### IIFE-ni qo'shimcha qavslarsiz qanday chaqirish mumkin
 
-     You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
+      Immediately Invoked Function Expressions(IIFE) requires a pair of parenthesis to wrap the function which contains set of statements.
 
-     ```js
-     const weather = (function getWeather(temp) {
-       switch (true) {
-         case temp < 0:
-           return 'freezing';
-         case temp < 10:
-           return 'cold';
-         case temp < 24:
-           return 'cool';
-         default:
-           return 'unknown';
-       }
-     })(10);
-     ```
+      ```js
+      (function (dt) {
+        console.log(dt.toLocaleTimeString());
+      })(new Date());
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
 
-423. ### What is the easiest way to ignore promise errors?
+      ```js
+      void (function (dt) {
+        console.log(dt.toLocaleTimeString());
+      })(new Date());
+      ```
 
-     The easiest and safest way to ignore promise errors is void that error. This approach is ESLint friendly too.
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```js
-     await promise.catch((e) => void e);
-     ```
+422.  ### Buni almashtirish holatlarida(switch case) ifodalardan(expression) foydalanish mumkinmi?cases?
 
-     **[⬆ Back to Top](#table-of-contents)**
+      You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
 
-424. ### How do style the console output using CSS?
+      ```js
+      const weather = (function getWeather(temp) {
+        switch (true) {
+          case temp < 0:
+            return 'freezing';
+          case temp < 10:
+            return 'cold';
+          case temp < 24:
+            return 'cool';
+          default:
+            return 'unknown';
+        }
+      })(10);
+      ```
 
-     You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red the color text using console.log and CSS specifier as below,
+      **[⬆ Back to Top](#table-of-contents)**
 
-     ```js
-     console.log('%cThis is a red text', 'color:red');
-     ```
+423.  ### Promise errorlariga etibor (ignore) bermaslikning eng oson yo'li qanday?
 
-     It is also possible to add more styles for the content. For example, the font-size can be modified for the above text
+      The easiest and safest way to ignore promise errors is void that error. This approach is ESLint friendly too.
 
-     ```js
-     console.log(
-       '%cThis is a red text with bigger font',
-       'color:red; font-size:20px'
-     );
-     ```
+      ```js
+      await promise.catch((e) => void e);
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-425. ### What is nullish coalescing operator (??)?
+424.  ### CSS yordamida konsol dagi natijani qanday qilib stil berish mumkin?
 
-     It is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand. This can be contrasted with the logical OR (||) operator, which returns the right-hand side operand if the left operand is any falsy value, not only null or undefined.
+      You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red the color text using console.log and CSS specifier as below,
 
-     ```js
-     console.log(null ?? true); // true
-     console.log(false ?? true); // false
-     console.log(undefined ?? true); // true
-     ```
+      ```js
+      console.log('%cThis is a red text', 'color:red');
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      It is also possible to add more styles for the content. For example, the font-size can be modified for the above text
 
-426. ### How do you group and nest console output?
+      ```js
+      console.log(
+        '%cThis is a red text with bigger font',
+        'color:red; font-size:20px'
+      );
+      ```
 
-     The `console.group()` can be used to group related log messages to be able to easily read the logs and use console.groupEnd()to close the group. Along with this, you can also nest groups which allows to output message in hierarchical manner.
+      **[⬆ Back to Top](#table-of-contents)**
 
-     For example, if you’re logging a user’s details:
+425.  ### Nullish coalescing operator(??) nima
 
-     ```js
-     console.group('User Details');
-     console.log('name: Sudheer Jonna');
-     console.log('job: Software Developer');
+      It is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand. This can be contrasted with the logical OR (||) operator, which returns the right-hand side operand if the left operand is any falsy value, not only null or undefined.
 
-     // Nested Group
-     console.group('Address');
-     console.log('Street: Commonwealth');
-     console.log('City: Los Angeles');
-     console.log('State: California');
+      ```js
+      console.log(null ?? true); // true
+      console.log(false ?? true); // false
+      console.log(undefined ?? true); // true
+      ```
 
-     console.groupEnd();
-     ```
+      **[⬆ Back to Top](#table-of-contents)**
 
-     You can also use `console.groupCollapsed()` instead of `console.group()` if you want the groups to be collapsed by default.
+426.  ### Konsol chiqishini qanday guruhlash va joylashtirish mumkin?]
 
-     **[⬆ Back to Top](#table-of-contents)**
+      The `console.group()` can be used to group related log messages to be able to easily read the logs and use console.groupEnd()to close the group. Along with this, you can also nest groups which allows to output message in hierarchical manner.
 
-427. ### What is the difference between dense and sparse arrays?
+      For example, if you’re logging a user’s details:
 
-     An array contians items at each index starting from first(0) to last(array.length - 1) is called as Dense array. Whereas if at least one item is missing at any index, the array is called as sparse.
+      ```js
+      console.group('User Details');
+      console.log('name: Sudheer Jonna');
+      console.log('job: Software Developer');
 
-     Let's see the below two kind of arrays,
+      // Nested Group
+      console.group('Address');
+      console.log('Street: Commonwealth');
+      console.log('City: Los Angeles');
+      console.log('State: California');
 
-     ```js
-     const avengers = ['Ironman', 'Hulk', 'CaptainAmerica'];
-     console.log(avengers[0]); // 'Ironman'
-     console.log(avengers[1]); // 'Hulk'
-     console.log(avengers[2]); // 'CaptainAmerica'
-     console.log(avengers.length); // 3
+      console.groupEnd();
+      ```
 
-     const justiceLeague = ['Superman', 'Aquaman', , 'Batman'];
-     console.log(justiceLeague[0]); // 'Superman'
-     console.log(justiceLeague[1]); // 'Aquaman'
-     console.log(justiceLeague[2]); // undefined
-     console.log(justiceLeague[3]); // 'Batman'
-     console.log(justiceLeague.length); // 4
-     ```
+      You can also use `console.groupCollapsed()` instead of `console.group()` if you want the groups to be collapsed by default.
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-428. ### What are the different ways to create sparse arrays?
+427.  ### Zich(dense) va siyrak(sparse) massivlar o'rtasidagi farq nima?]arrays?
 
-     There are 4 different ways to create sparse arrays in JavaScript
+      An array contians items at each index starting from first(0) to last(array.length - 1) is called as Dense array. Whereas if at least one item is missing at any index, the array is called as sparse.
 
-     1. **Array literal:** Omit a value when using the array literal
-        ```js
-        const justiceLeague = ['Superman', 'Aquaman', , 'Batman'];
-        console.log(justiceLeague); // ['Superman', 'Aquaman', empty ,'Batman']
-        ```
-     2. **Array() constructor:** Invoking Array(length) or new Array(length)
-        ```js
-        const array = Array(3);
-        console.log(array); // [empty, empty ,empty]
-        ```
-     3. **Delete operator:** Using delete array[index] operator on the array
-        ```js
-        const justiceLeague = ['Superman', 'Aquaman', 'Batman'];
-        delete justiceLeague[1];
-        console.log(justiceLeague); // ['Superman', empty, ,'Batman']
-        ```
-     4. **Increase length property:** Increasing length property of an array
-        `js const justiceLeague = ['Superman', 'Aquaman', 'Batman']; justiceLeague.length = 5; console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty] `
-        **[⬆ Back to Top](#table-of-contents)**
+      Let's see the below two kind of arrays,
 
-429. ### What is the difference between setTimeout, setImmediate and process.nextTick?
+      ```js
+      const avengers = ['Ironman', 'Hulk', 'CaptainAmerica'];
+      console.log(avengers[0]); // 'Ironman'
+      console.log(avengers[1]); // 'Hulk'
+      console.log(avengers[2]); // 'CaptainAmerica'
+      console.log(avengers.length); // 3
 
-     1. **Set Timeout:** setTimeout() is to schedule execution of a one-time callback after delay milliseconds.
-     2. **Set Immediate:** The setImmediate function is used to execute a function right after the current event loop finishes.
-     3. **Process NextTick:** If process.nextTick() is called in a given phase, all the callbacks passed to process.nextTick() will be resolved before the event loop continues. This will block the event loop and create I/O Starvation if process.nextTick() is called recursively.
+      const justiceLeague = ['Superman', 'Aquaman', , 'Batman'];
+      console.log(justiceLeague[0]); // 'Superman'
+      console.log(justiceLeague[1]); // 'Aquaman'
+      console.log(justiceLeague[2]); // undefined
+      console.log(justiceLeague[3]); // 'Batman'
+      console.log(justiceLeague.length); // 4
+      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      **[⬆ Back to Top](#table-of-contents)**
 
-430. ### How do you reverse an array without modifying original array?
+428.  ### Siyrak(dense) massivlarni yaratishning turli usullari qanday?]arrays?
 
-     The `reverse()` method reverses the order of the elements in an array but it mutates the original array. Let's take a simple example to demonistrate this case,
+      There are 4 different ways to create sparse arrays in JavaScript
 
-     ```javascript
-     const originalArray = [1, 2, 3, 4, 5];
-     const newArray = originalArray.reverse();
+      1.  **Array literal:** Omit a value when using the array literal
+          ```js
+          const justiceLeague = ['Superman', 'Aquaman', , 'Batman'];
+          console.log(justiceLeague); // ['Superman', 'Aquaman', empty ,'Batman']
+          ```
+      2.  **Array() constructor:** Invoking Array(length) or new Array(length)
+          ```js
+          const array = Array(3);
+          console.log(array); // [empty, empty ,empty]
+          ```
+      3.  **Delete operator:** Using delete array[index] operator on the array
+          ```js
+          const justiceLeague = ['Superman', 'Aquaman', 'Batman'];
+          delete justiceLeague[1];
+          console.log(justiceLeague); // ['Superman', empty, ,'Batman']
+          ```
+      4.  **Increase length property:** Increasing length property of an array
+          `js const justiceLeague = ['Superman', 'Aquaman', 'Batman']; justiceLeague.length = 5; console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty] `
+          **[⬆ Back to Top](#table-of-contents)**
 
-     console.log(newArray); // [ 5, 4, 3, 2, 1]
-     console.log(originalArray); // [ 5, 4, 3, 2, 1]
-     ```
+429.  ### setTimeout, setImmediate va process.nextTick o'rtasidagi farq nima]setImmediate and process.nextTick?
 
-     There are few solutions that won't mutate the original array. Let's take a look.
+      1.  **Set Timeout:** setTimeout() is to schedule execution of a one-time callback after delay milliseconds.
+      2.  **Set Immediate:** The setImmediate function is used to execute a function right after the current event loop finishes.
+      3.  **Process NextTick:** If process.nextTick() is called in a given phase, all the callbacks passed to process.nextTick() will be resolved before the event loop continues. This will block the event loop and create I/O Starvation if process.nextTick() is called recursively.
 
-     1. **Using slice and reverse methods:**
-        In this case, just invoke the `slice()` method on the array to create a shallow copy followed by `reverse()` method call on the copy.
+      **[⬆ Back to Top](#table-of-contents)**
 
-        ```javascript
-        const originalArray = [1, 2, 3, 4, 5];
-        const newArray = originalArray.slice().reverse(); //Slice an array gives a new copy
+430.  ### Asl massivni(original array) o'zgartirmasdan massivni qanday o'zgartirish mumkin?]original array?
 
-        console.log(originalArray); // [1, 2, 3, 4, 5]
-        console.log(newArray); // [ 5, 4, 3, 2, 1]
-        ```
+      The `reverse()` method reverses the order of the elements in an array but it mutates the original array. Let's take a simple example to demonistrate this case,
 
-     2. **Using spread and reverse methods:**
-        In this case, let's use the spread syntax (...) to create a copy of the array followed by `reverse()` method call on the copy.
+      ```javascript
+      const originalArray = [1, 2, 3, 4, 5];
+      const newArray = originalArray.reverse();
 
-        ```javascript
-        const originalArray = [1, 2, 3, 4, 5];
-        const newArray = [...originalArray].reverse();
+      console.log(newArray); // [ 5, 4, 3, 2, 1]
+      console.log(originalArray); // [ 5, 4, 3, 2, 1]
+      ```
 
-        console.log(originalArray); // [1, 2, 3, 4, 5]
-        console.log(newArray); // [ 5, 4, 3, 2, 1]
-        ```
+      There are few solutions that won't mutate the original array. Let's take a look.
 
-     3. **Using reduce and spread methods:**
-        Here execute a reducer function on an array elements and append the accumulated array on right side using spread syntax
+      1.  **Using slice and reverse methods:**
+          In this case, just invoke the `slice()` method on the array to create a shallow copy followed by `reverse()` method call on the copy.
 
-        ```javascript
-        const originalArray = [1, 2, 3, 4, 5];
-        const newArray = originalArray.reduce((accumulator, value) => {
-          return [value, ...accumulator];
-        }, []);
+          ```javascript
+          const originalArray = [1, 2, 3, 4, 5];
+          const newArray = originalArray.slice().reverse(); //Slice an array gives a new copy
 
-        console.log(originalArray); // [1, 2, 3, 4, 5]
-        console.log(newArray); // [ 5, 4, 3, 2, 1]
-        ```
+          console.log(originalArray); // [1, 2, 3, 4, 5]
+          console.log(newArray); // [ 5, 4, 3, 2, 1]
+          ```
 
-     4. **Using reduceRight and spread methods:**
-        Here execute a right reducer function(i.e. opposite direction of reduce method) on an array elements and append the accumulated array on left side using spread syntax
+      2.  **Using spread and reverse methods:**
+          In this case, let's use the spread syntax (...) to create a copy of the array followed by `reverse()` method call on the copy.
 
-        ```javascript
-        const originalArray = [1, 2, 3, 4, 5];
-        const newArray = originalArray.reduceRight((accumulator, value) => {
-          return [...accumulator, value];
-        }, []);
+          ```javascript
+          const originalArray = [1, 2, 3, 4, 5];
+          const newArray = [...originalArray].reverse();
 
-        console.log(originalArray); // [1, 2, 3, 4, 5]
-        console.log(newArray); // [ 5, 4, 3, 2, 1]
-        ```
+          console.log(originalArray); // [1, 2, 3, 4, 5]
+          console.log(newArray); // [ 5, 4, 3, 2, 1]
+          ```
 
-     5. **Using reduceRight and push methods:**
-        Here execute a right reducer function(i.e. opposite direction of reduce method) on an array elements and push the iterated value to the accumulator
+      3.  **Using reduce and spread methods:**
+          Here execute a reducer function on an array elements and append the accumulated array on right side using spread syntax
 
-        ```javascript
-        const originalArray = [1, 2, 3, 4, 5];
-        const newArray = originalArray.reduceRight((accumulator, value) => {
-          accumulator.push(value);
-          return accumulator;
-        }, []);
+          ```javascript
+          const originalArray = [1, 2, 3, 4, 5];
+          const newArray = originalArray.reduce((accumulator, value) => {
+            return [value, ...accumulator];
+          }, []);
 
-        console.log(originalArray); // [1, 2, 3, 4, 5]
-        console.log(newArray); // [ 5, 4, 3, 2, 1]
-        ```
+          console.log(originalArray); // [1, 2, 3, 4, 5]
+          console.log(newArray); // [ 5, 4, 3, 2, 1]
+          ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+      4.  **Using reduceRight and spread methods:**
+          Here execute a right reducer function(i.e. opposite direction of reduce method) on an array elements and append the accumulated array on left side using spread syntax
+
+          ```javascript
+          const originalArray = [1, 2, 3, 4, 5];
+          const newArray = originalArray.reduceRight((accumulator, value) => {
+            return [...accumulator, value];
+          }, []);
+
+          console.log(originalArray); // [1, 2, 3, 4, 5]
+          console.log(newArray); // [ 5, 4, 3, 2, 1]
+          ```
+
+      5.  **Using reduceRight and push methods:**
+          Here execute a right reducer function(i.e. opposite direction of reduce method) on an array elements and push the iterated value to the accumulator
+
+          ```javascript
+          const originalArray = [1, 2, 3, 4, 5];
+          const newArray = originalArray.reduceRight((accumulator, value) => {
+            accumulator.push(value);
+            return accumulator;
+          }, []);
+
+          console.log(originalArray); // [1, 2, 3, 4, 5]
+          console.log(newArray); // [ 5, 4, 3, 2, 1]
+          ```
+
+      **[⬆ Back to Top](#table-of-contents)**
 
 ### Coding Exercise
 
