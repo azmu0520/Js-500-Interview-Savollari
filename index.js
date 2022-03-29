@@ -3777,7 +3777,7 @@
 // }
 // console.log(createFunction()()); // 200
 
-// 403. Qisqa tutashuv holati (Short circuit condition) nima
+// 403.  Qisqa tutashuv holati (Short circuit condition) nima
 // Qisqa tutashuv shartlari oddiy if iboralarini siqilgan tarzda yozish uchun mo'ljallangan. Keling, misol yordamida stsenariyni namoyish qilaylik. Agar siz autentifikatsiya sharti bilan portalga kirmoqchi boʻlsangiz, quyidagi ifoda boʻladi:
 
 // if (authenticate) {
