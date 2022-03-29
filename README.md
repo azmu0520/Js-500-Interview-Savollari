@@ -203,7 +203,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 159 | [Patter(naqsh) uchun satrni qanday qidirasiz](#how-do-you-search-a-string-for-a-pattern)                                                                                               |
 | 160 | [Exec usulining maqsadi nima](#what-is-the-purpose-of-exec-method)                                                                                                                     |
 | 161 | [HTML elementining stilini qanday o'zgartirish mumkin](#how-do-you-change-style-of-a-html-element)                                                                                     |
-| 162 | [1+2+'3' natijasi qanday bo'ladi](#what-would-be-the-result-of-1+2+'3')                                                                                                                |
+| 162 | ['1+2+'3' natijasi qanday bo'ladi](#what-would-be-the-result-of-1+2+'3')                                                                                                               |
 | 163 | [Debbuger statment nima ?](#what-is-a-debugger-statement)                                                                                                                              |
 | 164 | [Nima maqsadda Breakpoinlar debugginda qolaniladi ?](#what-is-the-purpose-of-breakpoints-indebugging)                                                                                  |
 | 165 | [Identifikator sifatida ajratilgan so'zlardan foydalansam bo'ladimi?](#can-i-use-reserved-words-as-identifiers)                                                                        |
