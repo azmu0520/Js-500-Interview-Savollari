@@ -1,6 +1,6 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@SudheerJonna](https://twitter.com/SudheerJonna) for technical updates.
+> Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@azmu0520](https://github.com/azmu0520) for technical updates.
 
 Go to [Coding Exercise](#coding-exercise) for coding specific questions
 
@@ -2353,7 +2353,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       Quyidagi Locationobyekt xususiyatlari sahifaning URL komponentlariga kirish uchun ishlatilishi mumkin,
 
-      1.                   href - butun URL
+      1.                    href - butun URL
       2.  protokol - URL manzilining protokoli
       3.  xost - URL manzilining xost nomi va porti
       4.  hostname - URL manzilining xost nomi
@@ -7560,9 +7560,11 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
           const justiceLeague = ['Superman', 'Aquaman', 'Batman'];
           delete justiceLeague[1];
           console.log(justiceLeague); // ['Superman', empty, ,'Batman']
+
           ```
 
           ```
+
       4.  **Increase length property:** massivning uzunlik xususiyatini oshirish
           `js const justiceLeague = ['Superman', 'Aquaman', 'Batman']; justiceLeague.length = 5; console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty] `
           **[⬆ Back to Top](#table-of-contents)**
