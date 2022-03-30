@@ -50,7 +50,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 6   | [Array splice method maqsad nima ](#what-is-the-purpose-of-the-array-splice-method)                                                                                                    |
 | 7   | [Slice and splice o'rtasidagi farq nima ](#what-is-the-difference-between-slice-and-splice)                                                                                            |
 | 8   | [Object and Map qanday solishtirasiz ](#how-do-you-compare-object-and-map)                                                                                                             |
-| 9   | [[== va === operatorlar o'rtasidagi farq nima ](#what-is-the-difference-between--and--operators)                                                                                       |
+| 9   | [== va === operatorlar o'rtasidagi farq nima ](#what-is-the-difference-between--and--operators)                                                                                        |
 | 10  | [Lambda yoki arrow functionlar nima ](#what-are-lambda-or-arrow-functions)                                                                                                             |
 | 11  | [Birinchi class function nima ](#what-is-a-first-class-function)                                                                                                                       |
 | 12  | [Birinchi tartibli (first order) function nima ](#what-is-a-first-order-function)                                                                                                      |
@@ -83,7 +83,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 39  | [Cookie-da qanday variantlar mavjud ](#what-are-the-options-in-a-cookie)                                                                                                               |
 | 40  | [Cookie faylini qanday o'chirish mumkin ](#how-do-you-delete-a-cookie)                                                                                                                 |
 | 41  | [Cookie, mahalliy saqlash va seans saqlash o'rtasidagi farqlar qanday ](#What-are-the-differences-between-cookie-local-storage-and-session-storage)                                    |
-| 42  | [[ localStorage va sessionStorage o'rtasidagi asosiy farq nima ](#what-is-the-main-difference-between-localstorage-and-sessionstorage)                                                 |
+| 42  | [ localStorage va sessionStorage o'rtasidagi asosiy farq nima ](#what-is-the-main-difference-between-localstorage-and-sessionstorage)                                                  |
 | 43  | [Veb-xotiraga(web storage) qanday kirish mumkin ](#how-do-you-access-web-storage)                                                                                                      |
 | 44  | [Session storageda qanday usullar mavjud ](#what-are-the-methods-available-on-session-storage)                                                                                         |
 | 45  | [Saqlash hodisasi nima va uning voqea ishlovchisi (storage event and its event handler) ](#what-is-a-storage-event-and-its-event-handler)                                              |
@@ -177,7 +177,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 133 | [Satrning boshqa satr bilan boshlanishini qanday tekshirish mumkin](#how-do-you-check-if-a-string-starts-with-another-string)                                                          |
 | 134 | [Javascriptda satrni(string) qanday kesish mumkin](#how-do-you-trim-a-string-in-javascript)                                                                                            |
 | 135 | [Javascriptda kalit , qiymat juftligini qanday qo'shasiz](#how-do-you-add-a-key-value-pair-in-javascript)                                                                              |
-| 136 | [[!-- belgisi maxsus operatorni ifodalaydi](#is-the-'!--'-notation-represents-a-special-operator)                                                                                      |
+| 136 | [!-- belgisi maxsus operatorni ifodalaydi](#is-the-'!--'-notation-represents-a-special-operator)                                                                                       |
 | 137 | [O'zgaruvchilarga standart qiymatlarni qanday belgilash mumkin](#how-do-you-assign-default-values-to-variables)                                                                        |
 | 138 | [Ko'p qatorli satrlarni qanday aniqlash mumkin](#how-do-you-define-multiline-strings)                                                                                                  |
 | 139 | [Ilova qobig'i(app shell) modeli nima](#what-is-an-app-shell-model)                                                                                                                    |
@@ -2353,7 +2353,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       Quyidagi Locationobyekt xususiyatlari sahifaning URL komponentlariga kirish uchun ishlatilishi mumkin,
 
-      1.               href - butun URL
+      1.                   href - butun URL
       2.  protokol - URL manzilining protokoli
       3.  xost - URL manzilining xost nomi va porti
       4.  hostname - URL manzilining xost nomi
@@ -3828,7 +3828,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 214.  ### Anonim(anonymous) funksiya nima
 
-      Anonim funksiya - bu nomsiz funksiya! Anonim funktsiyalar odatda o'zgaruvchi nomiga tayinlanadi yoki qayta qo'ng'iroq qilish funktsiyasi sifatida ishlatiladi. Sintaksis quyidagi kabi bo'ladi,
+      Anonim funksiya - bu nomsiz funksiya! Anonim funktsiyalar odatda o'zgaruvchi nomiga tayinlanadi yoki callback funktsiyasi sifatida ishlatiladi. Sintaksis quyidagi kabi bo'ladi,
 
       ```javascript
       function (optionalParameters) {
@@ -4178,7 +4178,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 236.  ### Hodisa sikli(event loop) nima
 
-Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiyasi bajarilganda, qayta qo'ng'iroq qilish funktsiyasi navbatga suriladi. JavaScript mexanizmi asinxronizatsiya funksiyasi kodni bajarishni tugatmaguncha voqea siklini qayta ishlashni boshlamaydi. Eslatma: Bu Node.js-ga JavaScript-ning bir torli bo'lishiga qaramay, bloklanmagan kiritish-chiqarish operatsiyalarini bajarishga imkon beradi.
+Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilganda, callback funktsiyasi navbatga suriladi. JavaScript mexanizmi asinxronizatsiya funksiyasi kodni bajarishni tugatmaguncha voqea siklini qayta ishlashni boshlamaydi. Eslatma: Bu Node.js-ga JavaScript-ning bir torli bo'lishiga qaramay, bloklanmagan kiritish-chiqarish operatsiyalarini bajarishga imkon beradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -4363,7 +4363,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 247.  ### Bo'sh statment nima va uning maqsadi
 
-      The empty statement is a semicolon (;) indicating that no statement will be executed, even if JavaScript syntax requires one. Since there is no action with an empty statement you might think that it's usage is quite less, but the empty statement is occasionally useful when you want to create a loop that has an empty body. For example, you can initialize an array with zero values as below,
+      Bo'sh bayonot nuqta-vergul (;) bo'lib, JavaScript sintaksisi talab qilsa ham, hech qanday bayonot bajarilmasligini bildiradi. Bo'sh bayonot bilan hech qanday harakat yo'qligi sababli siz undan kamroq foydalanish deb o'ylashingiz mumkin, ammo bo'sh ibora vaqti-vaqti bilan bo'sh tanaga ega bo'lgan tsikl yaratmoqchi bo'lganingizda foydali bo'ladi. Masalan, siz nol qiymatga ega massivni quyidagi tarzda ishga tushirishingiz mumkin,
 
       ```javascript
       // Initialize an array a
@@ -4374,7 +4374,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 248.  ### Modulning metama'lumotlarini qanday olish mumkin
 
-      You can use the `import.meta` object which is a meta-property exposing context-specific meta data to a JavaScript module. It contains information about the current module, such as the module's URL. In browsers, you might get different meta data than NodeJS.
+      Siz import.metaJavaScript moduliga kontekstga xos meta-ma'lumotlarni ochib beruvchi meta-xususiyat bo'lgan ob'ektdan foydalanishingiz mumkin. U modulning URL manzili kabi joriy modul haqidagi ma'lumotlarni o'z ichiga oladi. Brauzerlarda siz NodeJS-dan farqli meta-ma'lumotlarni olishingiz mumkin.
 
       ```javascript
       <script type='module' src='welcome-module.js'></script>;
@@ -4385,7 +4385,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 249.  ### Vergul operatori nima
 
-      The comma operator is used to evaluate each of its operands from left to right and returns the value of the last operand. This is totally different from comma usage within arrays, objects, and function arguments and parameters. For example, the usage for numeric expressions would be as below,
+      Vergul operatori uning har bir operandini chapdan o'ngga baholash uchun ishlatiladi va oxirgi operandning qiymatini qaytaradi. Bu massivlar, ob'ektlar va funksiya argumentlari va parametrlarida verguldan foydalanishdan butunlay farq qiladi. Masalan, raqamli iboralar uchun foydalanish quyidagicha bo'ladi:
 
       ```javascript
       var x = 1;
@@ -4398,13 +4398,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 250.  ### Vergul operatorining afzalligi nimada
 
-      It is normally used to include multiple expressions in a location that requires a single expression. One of the common usages of this comma operator is to supply multiple parameters in a `for` loop. For example, the below for loop uses multiple expressions in a single location using comma operator,
+      Odatda bitta ifodani talab qiladigan joyga bir nechta iboralarni kiritish uchun ishlatiladi. Ushbu vergul operatorining keng tarqalgan qo'llanilishidan biri tsiklda bir nechta parametrlarni taqdim foretishdir. Misol uchun, quyida keltirilgan for tsikli vergul operatori yordamida bitta joyda bir nechta ifodalardan foydalanadi,
 
       ```javascript
       for (var a = 0, b =10; a <= 10; a++, b--)
       ```
 
-      You can also use the comma operator in a return statement where it processes before returning.
+      Vergul operatoridan qaytishdan oldin qayta ishlanadigan qaytarish bayonotida ham foydalanishingiz mumkin.
 
       ```javascript
       function myFunction() {
@@ -4417,13 +4417,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 251.  ### Typesciprt nima ?
 
-      TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language. You can install it globally as
+      TypeScript - bu Microsoft tomonidan yaratilgan JavaScript-ning terilgan to'plami bo'lib, u ixtiyoriy turlar, sinflar, asinxron/kutish va boshqa ko'plab xususiyatlarni qo'shadi va oddiy JavaScript-ga kompilyatsiya qiladi. Angular butunlay TypeScript-da qurilgan va asosiy til sifatida ishlatiladi. Siz uni global miqyosda o'rnatishingiz mumkin
 
       ```bash
       npm install -g typescript
       ```
 
-      Let's see a simple example of TypeScript usage,
+      Keling, TypeScript-dan foydalanishning oddiy misolini ko'rib chiqaylik,
 
       ```typescript
       function greeting(name: string): string {
@@ -4435,37 +4435,37 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(greeting(user));
       ```
 
-      The greeting method allows only string type as argument.
+      Salomlashish usuli argument sifatida faqat string turiga ruxsat beradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 252.  ### Javascript va typescript o'rtasidagi farqlar qanday
 
-      Below are the list of differences between javascript and typescript,
+      Quyida javascript va typescript o'rtasidagi farqlar ro'yxati keltirilgan,
 
-      | feature             | typescript                            | javascript                                      |
-      | ------------------- | ------------------------------------- | ----------------------------------------------- |
-      | Language paradigm   | Object oriented programming language  | Scripting language                              |
-      | Typing support      | Supports static typing                | It has dynamic typing                           |
-      | Modules             | Supported                             | Not supported                                   |
-      | Interface           | It has interfaces concept             | Doesn't support interfaces                      |
-      | Optional parameters | Functions support optional parameters | No support of optional parameters for functions |
+      | feature             | typescript                                               | javascript                                                       |
+      | ------------------- | -------------------------------------------------------- | ---------------------------------------------------------------- |
+      | Language paradigm   | Ob'ektga yo'naltirilgan dasturlash tili                  | Scripting language                                               |
+      | Typing support      | Statik yozishni qo'llab-quvvatlaydi                      | U dinamik yozishga ega                                           |
+      | Modules             | Qo'llab-quvvatlanadi                                     | Qo'llab-quvvatlanmaydi                                           |
+      | Interface           | U interfeys tushunchasiga ega                            | nterfeyslarni qo'llab-quvvatlamaydi                              |
+      | Optional parameters | Funktsiyalar ixtiyoriy parametrlarni qo'llab-quvvatlaydi | Funktsiyalar uchun ixtiyoriy parametrlarni qo'llab-quvvatlamaydi |
 
       **[⬆ Back to Top](#table-of-contents)**
 
 253.  ### Typescriptning javascriptdan qanday afzalliklari bor
 
-      Below are some of the advantages of typescript over javascript,
+      Quyida matn terishning javascriptdan ba'zi afzalliklari keltirilgan,
 
-      1.  TypeScript is able to find compile time errors at the development time only and it makes sures less runtime errors. Whereas javascript is an interpreted language.
-      2.  TypeScript is strongly-typed or supports static typing which allows for checking type correctness at compile time. This is not available in javascript.
-      3.  TypeScript compiler can compile the .ts files into ES3,ES4 and ES5 unlike ES6 features of javascript which may not be supported in some browsers.
+      1.  TypeScript kompilyatsiya vaqtidagi xatolarni faqat ishlab chiqish vaqtida topishi mumkin va bu ish vaqtidagi xatolarni kamroq qiladi. Holbuki, javascript talqin qilinadigan tildir.
+      2.  TypeScript qattiq terilgan yoki statik yozishni qo'llab-quvvatlaydi, bu kompilyatsiya vaqtida turdagi to'g'riligini tekshirish imkonini beradi. Bu javascriptda mavjud emas.
+      3.  TypeScript kompilyatori .ts fayllarini ES3, ES4 va ES5 ga kompilyatsiya qilishi mumkin, ba'zi brauzerlarda qo'llab-quvvatlanmaydigan javascriptning ES6 xususiyatlaridan farqli o'laroq.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 254.  ### Ob'ektni ishga tushirish (obj initialize) nima
 
-      An object initializer is an expression that describes the initialization of an Object. The syntax for this expression is represented as a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({}). This is also known as literal notation. It is one of the ways to create an object.
+      Ob'ektni ishga tushirish - bu ob'ektni ishga tushirishni tavsiflovchi ifoda. Ushbu iboraning sintaksisi jingalak qavslar ({}) ichiga olingan nol yoki undan koʻp xususiyat nomlari va obʼyektning bogʻlangan qiymatlarining vergul bilan ajratilgan roʻyxati sifatida ifodalanadi. Bu literal notation sifatida ham tanilgan. Bu ob'ektni yaratish usullaridan biridir.
 
       ```javascript
       var initObject = { a: 'John', b: 50, c: {} };
@@ -4477,7 +4477,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 255.  ### Konstruktor usuli nima
 
-      The constructor method is a special method for creating and initializing an object created within a class. If you do not specify a constructor method, a default constructor is used. The example usage of constructor would be as below,
+      Konstruktor usuli - bu sinf ichida yaratilgan ob'ektni yaratish va ishga tushirish uchun maxsus usul. Agar siz konstruktor usulini ko'rsatmasangiz, standart konstruktor ishlatiladi. Konstruktordan foydalanish misoli quyidagicha bo'ladi,
 
       ```javascript
       class Employee {
@@ -4495,7 +4495,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 256.  ### Agar classda bir necha marta konstruktor yozsangiz nima bo'ladiclass
 
-      The "constructor" in a class is a special method and it should be defined only once in a class. i.e, If you write a constructor method more than once in a class it will throw a `SyntaxError` error.
+      Classda "konstruktor" maxsus usul bo'lib, u sinfda faqat bir marta aniqlanishi kerak. ya'ni, agar siz konstruktor usulini sinfda bir necha marta yozsangiz, u SyntaxErrorxatoga yo'l qo'yadi.
 
       ```javascript
        class Employee {
@@ -4516,7 +4516,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 257.  ### Parent classning konstruktorini qanday chaqirish mumkin?
 
-      You can use the `super` keyword to call the constructor of a parent class. Remember that `super()` must be called before using 'this' reference. Otherwise it will cause a reference error. Let's the usage of it,
+      Siz superkalit so'zni ota-sinf konstruktoriga qo'ng'iroq qilish uchun ishlatishingiz mumkin. Esda tutingki, super()"bu" havolasidan foydalanishdan oldin uni chaqirish kerak. Aks holda, bu havola xatosiga olib keladi. Keling, undan foydalanish,
 
       ```javascript
       class Square extends Rectangle {
@@ -4539,7 +4539,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 258.  ### Ob'ektning prototipini qanday olish mumkin
 
-      You can use the `Object.getPrototypeOf(obj)` method to return the prototype of the specified object. i.e. The value of the internal `prototype` property. If there are no inherited properties then `null` value is returned.
+      Object.getPrototypeOf(obj)Belgilangan ob'ektning prototipini qaytarish uchun usuldan foydalanishingiz mumkin . ya'ni ichki prototypemulkning qiymati. Agar meros qilib olingan xususiyatlar bo'lmasa null, qiymat qaytariladi.
 
       ```javascript
       const newPrototype = {};
@@ -4552,7 +4552,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 259.  ### Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi
 
-      In ES5, it will throw a TypeError exception if the obj parameter isn't an object. Whereas in ES2015, the parameter will be coerced to an `Object`.
+      ES5 da, agar obj parametri ob'ekt bo'lmasa, u TypeError istisnosini chiqaradi. Holbuki ES2015 da parametr .ga majburlanadi Object.
 
       ```javascript
       // ES5
@@ -4565,7 +4565,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 260.  ### Bir ob'ektning prototipini boshqasiga qanday o'rnatish mumkin
 
-      You can use the `Object.setPrototypeOf()` method that sets the prototype (i.e., the internal `Prototype` property) of a specified object to another object or null. For example, if you want to set prototype of a square object to rectangle object would be as follows,
+      Object.setPrototypeOf()Belgilangan ob'ektning prototipini (ya'ni, ichki Prototypexususiyatni) boshqa ob'ektga yoki nullga o'rnatadigan usuldan foydalanishingiz mumkin . Misol uchun, agar siz kvadrat ob'ektning prototipini to'rtburchak ob'ektga o'rnatmoqchi bo'lsangiz, quyidagicha bo'ladi:
 
       ```javascript
       Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
@@ -4576,20 +4576,20 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 261.  ### Ob'ektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin
 
-      The `Object.isExtensible()` method is used to determine if an object is extendable or not. i.e, Whether it can have new properties added to it or not.
+      Usul Object.isExtensible()ob'ektning kengaytirilishi mumkin yoki yo'qligini aniqlash uchun ishlatiladi. ya'ni, unga yangi xususiyatlar qo'shilishi mumkinmi yoki yo'qmi.
 
       ```javascript
       const newObject = {};
       console.log(Object.isExtensible(newObject)); //true
       ```
 
-      **Note:** By default, all the objects are extendable. i.e, The new properties can be added or modified.
+      **Note:** Odatiy bo'lib, barcha ob'ektlar kengaytirilishi mumkin. ya'ni, yangi xususiyatlar qo'shilishi yoki o'zgartirilishi mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 262.  ### Ob'ektni kengaytirishni qanday oldini olish mumkin
 
-      The `Object.preventExtensions()` method is used to prevent new properties from ever being added to an object. In other words, it prevents future extensions to the object. Let's see the usage of this property,
+      Usul Object.preventExtensions()ob'ektga yangi xususiyatlar qo'shilishining oldini olish uchun ishlatiladi. Boshqacha qilib aytganda, u ob'ektga kelajakdagi kengaytmalarni oldini oladi. Keling, ushbu mulkdan foydalanishni ko'rib chiqaylik,
 
       ```javascript
       const newObject = {};
@@ -4609,7 +4609,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 263.  ### Ob'ektni kengaytirilmaydigan qilishning turli usullari qanday
 
-      You can mark an object non-extensible in 3 ways,
+      Siz kengaytirilmaydigan ob'ektni 3 usulda belgilashingiz mumkin,
 
       1.  Object.preventExtensions
       2.  Object.seal
@@ -4632,7 +4632,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 264.  ### Ob'ektda bir nechta xususiyatlarni qanday aniqlash mumkin
 
-      The `Object.defineProperties()` method is used to define new or modify existing properties directly on an object and returning the object. Let's define multiple properties on an empty object,
+      Usul Object.defineProperties()to'g'ridan-to'g'ri ob'ektda yangi xususiyatlarni aniqlash yoki mavjud xususiyatlarni o'zgartirish va ob'ektni qaytarish uchun ishlatiladi. Bo'sh ob'ektda bir nechta xususiyatni aniqlaymiz,
 
       ```javascript
       const newObject = {};
@@ -4650,14 +4650,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 265.  ### Javascriptda MEAN nima
 
-      The MEAN (MongoDB, Express, AngularJS, and Node.js) stack is the most popular open-source JavaScript software tech stack available for building dynamic web apps where you can write both the server-side and client-side halves of the web project entirely in JavaScript.
+      MEAN (MongoDB, Express, AngularJS va Node.js) stek - bu dinamik veb-ilovalarni yaratish uchun mavjud bo'lgan eng mashhur ochiq manbali JavaScript dasturiy ta'minot stekidir, bunda siz veb-loyihaning server tomoni va mijoz tomonini yozishingiz mumkin. butunlay JavaScript-da.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 266.  ### Javascriptda xiralashish(Obfuscation ) nima
 
-      Obfuscation is the deliberate act of creating obfuscated javascript code(i.e, source or machine code) that is difficult for humans to understand. It is something similar to encryption, but a machine can understand the code and execute it.
-      Let's see the below function before Obfuscation,
+      Obfuscation - bu odamlar tushunishi qiyin bo'lgan tushunarsiz JavaScript kodini (ya'ni, manba yoki mashina kodi) yaratishning ataylab harakati. Bu shifrlashga o'xshash narsa, lekin mashina kodni tushunishi va uni bajarishi mumkin. Obfuscationdan oldin quyidagi funktsiyani ko'rib chiqaylik,
 
       ```javascript
       function greeting() {
@@ -4665,7 +4664,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      And after the code Obfuscation, it would be appeared as below,
+      Va Obfuscation kodidan keyin u quyidagi ko'rinishda bo'ladi,
 
       ```javascript
       eval(
@@ -4708,45 +4707,45 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 267.  ### Nima uchun sizga obfuscation kerak ?
 
-      Below are the few reasons for Obfuscation,
+      Quyida chalkashlikning bir necha sabablari keltirilgan,
 
-      1.  The Code size will be reduced. So data transfers between server and client will be fast.
-      2.  It hides the business logic from outside world and protects the code from others
-      3.  Reverse engineering is highly difficult
-      4.  The download time will be reduced
+      1.  Kod hajmi kamayadi. Shunday qilib, server va mijoz o'rtasida ma'lumotlarni uzatish tez bo'ladi.
+      2.  U biznes mantiqini tashqi dunyodan yashiradi va kodni boshqalardan himoya qiladi
+      3.  Teskari muhandislik juda qiyin
+      4.  Teskari muhandislik juda qiyin
 
       **[⬆ Back to Top](#table-of-contents)**
 
 268.  ### Kichiklashtirish(minification) nima
 
-      Minification is the process of removing all unnecessary characters(empty spaces are removed) and variables will be renamed without changing it's functionality. It is also a type of obfuscation .
+      Kichkinalashtirish - bu barcha keraksiz belgilarni olib tashlash jarayoni (bo'sh joylar olib tashlanadi) va o'zgaruvchilar uning funksionalligini o'zgartirmasdan qayta nomlanadi. Bu, shuningdek, chalkashlikning bir turi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 269.  ### Kichiklashtirishning qanday afzalliklari bor
 
-      Normally it is recommended to use minification for heavy traffic and intensive requirements of resources. It reduces file sizes with below benefits,
+      Odatda og'ir trafik va resurslarning intensiv talablari uchun minimallashtirishdan foydalanish tavsiya etiladi. Bu quyidagi afzalliklarga ega bo'lgan fayl o'lchamlarini kamaytiradi,
 
-      1.  Decreases loading times of a web page
-      2.  Saves bandwidth usages
+      1.  Veb-sahifani yuklash vaqtini qisqartiradi
+      2.  Tarmoqli kengligidan foydalanishni tejaydi
 
       **[⬆ Back to Top](#table-of-contents)**
 
 270.  ### Obfuscation va shifrlash o'rtasidagi farqlar qanday
 
-      Below are the main differences between Obfuscation and Encryption,
+      Quyida obfuscation va shifrlash o'rtasidagi asosiy farqlar keltirilgan,
 
-      | Feature            | Obfuscation                                     | Encryption                                                              |
-      | ------------------ | ----------------------------------------------- | ----------------------------------------------------------------------- |
-      | Definition         | Changing the form of any data in any other form | Changing the form of information to an unreadable format by using a key |
-      | A key to decode    | It can be decoded without any key               | It is required                                                          |
-      | Target data format | It will be converted to a complex form          | Converted into an unreadable format                                     |
+      | Feature            | Obfuscation                                                              | Encryption                                                                 |
+      | ------------------ | ------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+      | Definition         | Har qanday boshqa shakldagi har qanday ma'lumotlar shaklini o'zgartirish | Kalit yordamida ma'lumot shaklini o'qib bo'lmaydigan formatga o'zgartirish |
+      | A key to decode    | Uni hech qanday kalitsiz dekodlash mumkin                                | Bu talab qilinadi                                                          |
+      | Target data format | U murakkab shaklga aylanadi                                              | O'qib bo'lmaydigan formatga aylantirildi                                   |
 
       **[⬆ Back to Top](#table-of-contents)**
 
 271.  ### Kichiklashtirish uchun qanday umumiy vositalar qo'llaniladi
 
-      There are many online/offline tools to minify the javascript files,
+      Javascript fayllarini kichiklashtirish uchun ko'plab onlayn/oflayn vositalar mavjud,
 
       1.  Google's Closure Compiler
       2.  UglifyJS2
@@ -4758,8 +4757,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 272.  ### Javascript yordamida shaklni(form) tekshirishni qanday amalga oshirasiz
 
-      JavaScript can be used to perform HTML form validation. For example, if the form field is empty, the function needs to notify, and return false, to prevent the form being submitted.
-      Lets' perform user login in an html form,
+      JavaScript HTML formasini tekshirish uchun ishlatilishi mumkin. Misol uchun, agar forma maydoni bo'sh bo'lsa, shakl yuborilishiga yo'l qo'ymaslik uchun funktsiya xabar berishi va "false" ni qaytarishi kerak. Keling, html shaklida foydalanuvchi loginini amalga oshiramiz,
 
       ```html
       <form name="myForm" onsubmit="return validateForm()" method="post">
@@ -4768,7 +4766,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       </form>
       ```
 
-      And the validation on user login is below,
+      Va foydalanuvchi loginni tekshirish quyida keltirilgan,
 
       ```javascript
       function validateForm() {
@@ -4784,7 +4782,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 273.  ### Shaklni(form) tekshirishni javascriptsiz qanday amalga oshirasiz
 
-      You can perform HTML form validation automatically without using javascript. The validation enabled by applying the `required` attribute to prevent form submission when the input is empty.
+      HTML formasini tekshirishni JavaScript-dan foydalanmasdan avtomatik ravishda amalga oshirishingiz mumkin. requiredKirish boʻsh boʻlganida shaklni yuborishni oldini olish uchun atributni qoʻllash orqali tekshirish yoqilgan .
 
       ```html
       <form method="post">
@@ -4793,17 +4791,16 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       </form>
       ```
 
-      **Note:** Automatic form validation does not work in Internet Explorer 9 or earlier.
+      **Note:** Shaklni avtomatik tekshirish Internet Explorer 9 yoki undan oldingi versiyalarida ishlamaydi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 274.  ### Cheklovlarni tekshirish uchun qanday DOM usullari mavjud
 
-      The below DOM methods are available for constraint validation on an invalid input,
+      Quyidagi DOM usullari noto'g'ri kiritishda cheklovlarni tekshirish uchun mavjud,
 
-      1.  checkValidity(): It returns true if an input element contains valid data.
-      2.  setCustomValidity(): It is used to set the validationMessage property of an input element.
-          Let's take an user login form with DOM validations
+      1.  checkValidity(): Agar kirish elementida to'g'ri ma'lumotlar mavjud bo'lsa, u rostni qaytaradi.
+      2.  setCustomValidity(): U kiritish elementining validationMessage xususiyatini o'rnatish uchun ishlatiladi. Keling, DOM tekshiruvlari bilan foydalanuvchi login formasini olaylik
 
       ```javascript
       function myFunction() {
@@ -4822,33 +4819,33 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 275.  ### Mavjud cheklovni tekshirish DOM xususiyatlari qanday
 
-      Below are the list of some of the constraint validation DOM properties available,
+      Quyida mavjud bo'lgan cheklashlarni tekshirishning ba'zi DOM xususiyatlarining ro'yxati keltirilgan,
 
-      1.  validity: It provides a list of boolean properties related to the validity of an input element.
-      2.  validationMessage: It displays the message when the validity is false.
-      3.  willValidate: It indicates if an input element will be validated or not.
+      1.  validity: u kirish elementining haqiqiyligi bilan bog'liq boolean xususiyatlar ro'yxatini taqdim etadi.
+      2.  validationMessage: Yaroqlilik noto'g'ri bo'lsa, u xabarni ko'rsatadi.
+      3.  willValidate: Bu kirish elementi tekshiriladimi yoki yo'qligini bildiradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 276.  ### Yaroqlilik xususiyatlarining ro'yxati qanday
 
-      The validity property of an input element provides a set of properties related to the validity of data.
+      Kirish elementining haqiqiylik xususiyati ma'lumotlarning haqiqiyligi bilan bog'liq xususiyatlar to'plamini ta'minlaydi.
 
-      1.  customError: It returns true, if a custom validity message is set.
-      2.  patternMismatch: It returns true, if an element's value does not match its pattern attribute.
-      3.  rangeOverflow: It returns true, if an element's value is greater than its max attribute.
-      4.  rangeUnderflow: It returns true, if an element's value is less than its min attribute.
-      5.  stepMismatch: It returns true, if an element's value is invalid according to step attribute.
-      6.  tooLong: It returns true, if an element's value exceeds its maxLength attribute.
-      7.  typeMismatch: It returns true, if an element's value is invalid according to type attribute.
-      8.  valueMissing: It returns true, if an element with a required attribute has no value.
-      9.  valid: It returns true, if an element's value is valid.
+      1.  customError: Agar moslashtirilgan toʻgʻrilik xabari oʻrnatilgan boʻlsa, u haqiqatni qaytaradi.
+      2.  patternMismatch: Agar elementning qiymati uning naqsh atributiga mos kelmasa, u haqiqatni qaytaradi.
+      3.  rangeOverflow: Agar element qiymati uning maksimal atributidan katta bo'lsa, u haqiqatni qaytaradi.
+      4.  rangeUnderflow: Agar element qiymati uning min atributidan kichik bo'lsa, u haqiqatni qaytaradi.
+      5.  stepMismatch: Agar elementning qiymati step atributiga ko'ra noto'g'ri bo'lsa, u haqiqatni qaytaradi.
+      6.  tooLong: Agar element qiymati uning maxLength atributidan oshsa, u rostni qaytaradi.
+      7.  typeMismatch: Agar elementning qiymati type atributiga ko'ra noto'g'ri bo'lsa, u rostni qaytaradi.
+      8.  valueMissing: Agar talab qilinadigan atributga ega element hech qanday qiymatga ega bo'lmasa, u haqiqatni qaytaradi.
+      9.  valid: Agar elementning qiymati to'g'ri bo'lsa, u haqiqatni qaytaradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 277.  ### rangeOverflow xususiyatidan foydalanishga misol keltiring
 
-      If an element's value is greater than its max attribute then rangeOverflow property returns true. For example, the below form submission throws an error if the value is more than 100,
+      Agar element qiymati uning maksimal atributidan katta bo'lsa, rangeOverflow xususiyati haqiqatni qaytaradi. Misol uchun, agar qiymat 100 dan ortiq bo'lsa, quyidagi shaklni yuborish xato qiladi,
 
       ```html
       <input id="age" type="number" max="100" />
@@ -4867,7 +4864,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 278.  ### Enums xususiyati javascriptda mavjudmi?
 
-      No, javascript does not natively support enums. But there are different kinds of solutions to simulate them even though they may not provide exact equivalents. For example, you can use freeze or seal on object,
+      Yo'q, JavaScript enumlarni qo'llab-quvvatlamaydi. Ammo ularni simulyatsiya qilish uchun turli xil echimlar mavjud, garchi ular aniq ekvivalentlarni taqdim etmasa ham. Masalan, siz ob'ektda muzlatish yoki muhrni ishlatishingiz mumkin,
 
       ```javascript
       var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
@@ -4877,7 +4874,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 279.  ### Enum nima
 
-      An enum is a type restricting variables to one value from a predefined set of constants. JavaScript has no enums but typescript provides built-in enum support.
+      Enum - bu o'zgaruvchilarni oldindan belgilangan doimiylar to'plamidan bitta qiymat bilan cheklovchi tur. JavaScript-da raqamlar yo'q, lekin typescript o'rnatilgan enum yordamini ta'minlaydi.
 
       ```javascript
       enum Color {
@@ -4889,7 +4886,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 280.  ### Ob'ektning barcha xususiyatlarini qanday ro'yxatga olasiz
 
-      You can use the `Object.getOwnPropertyNames()` method which returns an array of all properties found directly in a given object. Let's the usage of it in an example,
+      Object.getOwnPropertyNames()To'g'ridan-to'g'ri berilgan ob'ektda topilgan barcha xususiyatlar qatorini qaytaradigan usuldan foydalanishingiz mumkin . Keling, uni misolda ishlatishni ko'rib chiqaylik,
 
       ```javascript
       const newObject = {
@@ -4906,7 +4903,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 281.  ### How do you get property descriptors of an object
 
-      You can use the `Object.getOwnPropertyDescriptors()` method which returns all own property descriptors of a given object. The example usage of this method is below,
+      Siz Object.getOwnPropertyDescriptors()berilgan ob'ektning barcha o'ziga xos xususiyat identifikatorlarini qaytaradigan usuldan foydalanishingiz mumkin. Ushbu usuldan foydalanish misoli quyida keltirilgan,
 
       ```javascript
       const newObject = {
@@ -4925,26 +4922,26 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 282.  ### Xususiyat deskriptori tomonidan taqdim etilgan atributlar qanday
 
-      A property descriptor is a record which has the following attributes
+      Xususiyat deskriptori - bu quyidagi atributlarga ega bo'lgan yozuv
 
-      1.  value: The value associated with the property
-      2.  writable: Determines whether the value associated with the property can be changed or not
-      3.  configurable: Returns true if the type of this property descriptor can be changed and if the property can be deleted from the corresponding object.
-      4.  enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not.
-      5.  set: A function which serves as a setter for the property
-      6.  get: A function which serves as a getter for the property
+      1.  value: mulk bilan bog'liq qiymat
+      2.  writable: Mulk bilan bog'liq qiymatni o'zgartirish mumkinmi yoki yo'qligini aniqlaydi
+      3.  configurable: Agar ushbu xususiyat identifikatorining turini o'zgartirish mumkin bo'lsa va xususiyat mos keladigan ob'ektdan o'chirilishi mumkin bo'lsa, true qiymatini qaytaradi.
+      4.  enumerable: Xususiyat tegishli ob'ektdagi xususiyatlarni sanab o'tishda paydo bo'ladimi yoki yo'qligini aniqlaydi.
+      5.  set: Xususiyat uchun o'rnatuvchi sifatida xizmat qiluvchi funktsiya
+      6.  get: Mulk uchun oluvchi sifatida xizmat qiluvchi funktsiya
 
       **[⬆ Back to Top](#table-of-contents)**
 
 283.  ### Classlarni qanday uzaytirasiz(extends)
 
-      The `extends` keyword is used in class declarations/expressions to create a class which is a child of another class. It can be used to subclass custom classes as well as built-in objects. The syntax would be as below,
+      extendsKalit so'z sinf deklaratsiyasida/iboralarida boshqa sinfning farzandi bo'lgan sinf yaratish uchun ishlatiladi . Undan maxsus sinflarni, shuningdek, o'rnatilgan ob'ektlarni pastki sinflarga ajratish uchun foydalanish mumkin. Sintaksis quyidagi kabi bo'ladi,
 
       ```javascript
       class ChildClass extends ParentClass { ... }
       ```
 
-      Let's take an example of Square subclass from Polygon parent class,
+      Polygon ota-klassidan Square kichik sinfiga misol keltiraylik,
 
       ```javascript
       class Square extends Rectangle {
@@ -4967,7 +4964,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 284.  ### Sahifani qayta yuklamasdan urlni qanday o'zgartirish mumkin
 
-      The `window.location.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
+      Mulk window.location.urlurlni o'zgartirish uchun foydali bo'ladi, lekin u sahifani qayta yuklaydi. HTML5 tegishli ravishda tarix yozuvlarini qo'shish va o'zgartirish imkonini beruvchi history.pushState()va usullarini taqdim etdi. history.replaceState()Masalan, pushState-dan quyidagi kabi foydalanishingiz mumkin,
 
       ```javascript
       window.history.pushState('page2', 'Title', '/page2.html');
@@ -4977,7 +4974,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 285.  ### Massiv ma'lum bir qiymatni o'z ichiga oladi yoki yo'qligini qanday tekshirish mumkinvalue or not
 
-      The `Array#includes()` method is used to determine whether an array includes a particular value among its entries by returning either true or false. Let's see an example to find an element(numeric and string) within an array.
+      Usul Array#includes()massiv o'z yozuvlari orasida ma'lum bir qiymatni o'z ichiga oladi yoki yo'qligini aniqlash uchun ishlatiladi yoki rost yoki yolg'on. Massiv ichidagi elementni (raqamli va satr) topish misolini ko'rib chiqaylik.
 
       ```javascript
       var numericArray = [1, 2, 3, 4];
@@ -4991,7 +4988,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 286.  ### Skayar massivlarni qanday solishtirasiz
 
-      You can use length and every method of arrays to compare two scalar(compared directly using ===) arrays. The combination of these expressions can give the expected result,
+      Ikki skaler (to'g'ridan-to'g'ri === yordamida solishtirilgan) massivlarni solishtirish uchun uzunlik va massivlarning har bir usulidan foydalanishingiz mumkin. Ushbu iboralarning kombinatsiyasi kutilgan natijani berishi mumkin,
 
       ```javascript
       const arrayFirst = [1, 2, 3, 4, 5];
@@ -5002,7 +4999,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       ); // true
       ```
 
-      If you would like to compare arrays irrespective of order then you should sort them before,
+      Agar siz tartibdan qat'i nazar massivlarni solishtirmoqchi bo'lsangiz, ularni avval tartiblashingiz kerak,
 
       ```javascript
       const arrayFirst = [2, 3, 1, 4, 5];
@@ -5019,7 +5016,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 287.  ### Get parametrlaridan qiymatni qanday olish mumkin
 
-      The `new URL()` object accepts the url string and `searchParams` property of this object can be used to access the get parameters. Remember that you may need to use polyfill or `window.location` to access the URL in older browsers(including IE).
+      new URL()Ob'ekt url qatorini qabul qiladi va bu searchParamsobyektning xususiyati get parametrlariga kirish uchun ishlatilishi mumkin. window.locationEsda tutingki , eski brauzerlarda (jumladan, IE) URL-manzilga kirish uchun polyfill-dan foydalanish kerak bo'lishi mumkin .
 
       ```javascript
       let urlString = 'http://www.some-domain.com/about.html?x=1&y=2&z=3'; //window.location.href
@@ -5032,7 +5029,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 288.  ### Qanday qilib raqamlarni vergul bilan ming ajratuvchi sifatida chop qilasiz
 
-      You can use the `Number.prototype.toLocaleString()` method which returns a string with a language-sensitive representation such as thousand separator,currency etc of this number.
+      Siz Number.prototype.toLocaleString()ushbu raqamning ming ajratuvchisi, valyutasi va boshqalar kabi tilga sezgir ko'rinishga ega satrni qaytaradigan usuldan foydalanishingiz mumkin.
 
       ```javascript
       function convertToThousandFormat(x) {
@@ -5046,20 +5043,21 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 289.  ### Java va javascript o'rtasidagi farq nima
 
-      Both are totally unrelated programming languages and no relation between them. Java is statically typed, compiled, runs on its own VM. Whereas Javascript is dynamically typed, interpreted, and runs in a browser and nodejs environments. Let's see the major differences in a tabular format,
-      | Feature | Java | JavaScript |
-      |---- | ---- | -----
-      | Typed | It's a strongly typed language | It's a dynamic typed language |
-      | Paradigm | Object oriented programming | Prototype based programming |
-      | Scoping | Block scoped | Function-scoped |
-      | Concurrency | Thread based | event based |
-      | Memory | Uses more memory | Uses less memory. Hence it will be used for web pages |
+      Ikkalasi ham mutlaqo bog'liq bo'lmagan dasturlash tillari va ular o'rtasida aloqa yo'q. Java statik tarzda teriladi, kompilyatsiya qilinadi, o'z VM da ishlaydi. Holbuki, Javascript dinamik ravishda yoziladi, talqin qilinadi va brauzer va nodejs muhitida ishlaydi. Keling, jadval formatidagi asosiy farqlarni ko'rib chiqaylik,
+
+      | Feature     | Java                               | JavaScript                                                                    |
+      | ----------- | ---------------------------------- | ----------------------------------------------------------------------------- |
+      | Typed       | Bu kuchli terilgan til             | Bu dinamik terilgan til                                                       |
+      | Paradigm    | Ob'ektga yo'naltirilgan dasturlash | Prototipga asoslangan dasturlash                                              |
+      | Scoping     | Block scoped                       | Function-scoped                                                               |
+      | Concurrency | Mavzuga asoslangan                 | voqeaga asoslangan                                                            |
+      | Memory      | Ko'proq xotiradan foydalanadi      | Kamroq xotiradan foydalanadi. Shuning uchun u veb-sahifalar uchun ishlatiladi |
 
       **[⬆ Back to Top](#table-of-contents)**
 
 290.  ### JavaScript namespace qo'llab-quvvatlaydimi?
 
-      JavaScript doesn’t support namespace by default. So if you create any element(function, method, object, variable) then it becomes global and pollutes the global namespace. Let's take an example of defining two functions without any namespace,
+      JavaScript sukut bo'yicha nom maydonini qo'llab-quvvatlamaydi. Shunday qilib, agar siz biron bir element (funktsiya, usul, ob'ekt, o'zgaruvchi) yaratsangiz, u global bo'lib, global nomlar maydonini ifloslantiradi. Hech qanday nom maydonisiz ikkita funktsiyani aniqlashga misol keltiraylik,
 
       ```javascript
       function func1() {
@@ -5071,15 +5069,15 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       func1(); // This is a second definition
       ```
 
-      It always calls the second function definition. In this case, namespace will solve the name collision problem.
+      U har doim ikkinchi funktsiya ta'rifini chaqiradi. Bunday holda, nom maydoni nomlarning to'qnashuvi muammosini hal qiladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 291.  ### Namescpace qanday e'lon qilasiz
 
-      Even though JavaScript lacks namespaces, we can use Objects , IIFE to create namespaces.
+      JavaScript-da nom bo'shliqlari bo'lmasa ham, nomlar bo'shliqlarini yaratish uchun Objects, IIFE dan foydalanishimiz mumkin.
 
-      1.  **Using Object Literal Notation:** Let's wrap variables and functions inside an Object literal which acts as a namespace. After that you can access them using object notation
+      1.  **Using Object Literal Notation:** O'zgaruvchilar va funktsiyalarni nom maydoni vazifasini bajaradigan Ob'ekt literaliga o'tkazamiz. Shundan so'ng siz ularga ob'ekt belgilaridan foydalanib kirishingiz mumkin
 
       ```javascript
       var namespaceOne = {
@@ -5096,7 +5094,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       namespaceTwo.func1(); // This is a second definition
       ```
 
-      1.  **Using IIFE (Immediately invoked function expression):** The outer pair of parentheses of IIFE creates a local scope for all the code inside of it and makes the anonymous function a function expression. Due to that, you can create the same function in two different function expressions to act as a namespace.
+      1.  **Using IIFE (Immediately invoked function expression):** IIFE ning tashqi qavslar juftligi uning ichidagi barcha kodlar uchun mahalliy qamrovni yaratadi va anonim funksiyani funksiya ifodasiga aylantiradi. Shu sababli, nom maydoni sifatida ishlash uchun ikkita turli funktsiya ifodalarida bir xil funktsiyani yaratishingiz mumkin.
 
       ```javascript
       (function () {
@@ -5114,7 +5112,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       })();
       ```
 
-      1.  **Using a block and a let/const declaration:** In ECMAScript 6, you can simply use a block and a let declaration to restrict the scope of a variable to a block.
+      1.  **Using a block and a let/const declaration:** ECMAScript 6 da o'zgaruvchi doirasini blok bilan cheklash uchun siz shunchaki blok va let deklaratsiyasidan foydalanishingiz mumkin.
 
       ```javascript
       {
@@ -5138,7 +5136,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 292.  ### Bosh sahifadagi iframe-da javascript kodini qanday chaqirish mumkin
 
-      Initially iFrame needs to be accessed using either `document.getElementBy` or `window.frames`. After that `contentWindow` property of iFrame gives the access for targetFunction
+      document.getElementByDastlab iFrame-ga yoki yordamida kirish kerak window.frames. Shundan so'ng contentWindowiFrame xususiyati targetFunction uchun ruxsat beradi
 
       ```javascript
       document.getElementById('targetFrame').contentWindow.targetFunction();
@@ -5149,7 +5147,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 293.  ### Vaqt mintaqasini sanadan qanday qilib siljitish mumkin
 
-      You can use the `getTimezoneOffset` method of the date object. This method returns the time zone difference, in minutes, from current locale (host system settings) to UTC
+      getTimezoneOffsetSana obyektining usulidan foydalanishingiz mumkin . Bu usul vaqt mintaqasi farqini, daqiqalarda, joriy tildan (xost tizimi sozlamalari) UTCgacha qaytaradi
 
       ```javascript
       var offset = new Date().getTimezoneOffset();
@@ -5160,7 +5158,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 294.  ### CSS va JS fayllarini dinamik ravishda qanday yuklaysiz
 
-      You can create both link and script elements in the DOM and append them as child to head tag. Let's create a function to add script and style resources as below,
+      Siz DOM da havola va skript elementlarini yaratishingiz va ularni bosh tegga bola sifatida qo'shishingiz mumkin. Quyidagi kabi skript va uslub resurslarini qo'shish funksiyasini yarataylik,
 
       ```javascript
       function loadAssets(filename, filetype) {
@@ -5185,17 +5183,17 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 295.  ### DOM-da HTML elementlarini topishning turli usullari qanday?
 
-      If you want to access any element in an HTML page, you need to start with accessing the document object. Later you can use any of the below methods to find the HTML element,
+      Agar siz HTML sahifasining istalgan elementiga kirishni istasangiz, hujjat ob'ektiga kirishdan boshlashingiz kerak. Keyinchalik HTML elementini topish uchun quyidagi usullardan birini qo'llashingiz mumkin,
 
-      1.  document.getElementById(id): It finds an element by Id
-      2.  document.getElementsByTagName(name): It finds an element by tag name
-      3.  document.getElementsByClassName(name): It finds an element by class name
+      1.  document.getElementById(id): Id boʻyicha elementni topadi
+      2.  document.getElementsByTagName(name): Teg nomi boʻyicha elementni topadi
+      3.  document.getElementsByClassName(name): U elementni sinf nomi bilan topadi
 
       **[⬆ Back to Top](#table-of-contents)**
 
 296.  ### jQuery nima
 
-      jQuery is a popular cross-browser JavaScript library that provides Document Object Model (DOM) traversal, event handling, animations and AJAX interactions by minimizing the discrepancies across browsers. It is widely famous with its philosophy of “Write less, do more”. For example, you can display welcome message on the page load using jQuery as below,
+      jQuery mashhur JavaScript-brauzerlar kutubxonasi boʻlib, u Hujjat Obyekt Modeli (DOM) oʻtishini, hodisalarni boshqarishni, animatsiyalarni va brauzerlar orasidagi tafovutlarni minimallashtirish orqali AJAX oʻzaro taʼsirini taʼminlaydi. U "Kamroq yoz, ko'proq ish qil" falsafasi bilan mashhur. Masalan, jQuery-dan foydalanib, sahifa yuklanishida salomlash xabarini quyidagi tarzda ko'rsatishingiz mumkin,
 
       ```javascript
       $(document).ready(function () {
@@ -5204,20 +5202,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       });
       ```
 
-      **Note:** You can download it from jquery's official site or install it from CDNs, like google.
+      **Note:** Siz uni jQuery rasmiy saytidan yuklab olishingiz yoki google kabi CDN-lardan o'rnatishingiz mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 297.  ### V8 JavaScript dvigateli nima
 
-      V8 is an open source high-performance JavaScript engine used by the Google Chrome browser, written in C++. It is also being used in the node.js project. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors.
-      **Note:** It can run standalone, or can be embedded into any C++ application.
+      V8 - bu C++ tilida yozilgan Google Chrome brauzeri tomonidan qo'llaniladigan ochiq manbali yuqori samarali JavaScript dvigatelidir. U node.js loyihasida ham foydalanilmoqda. U ECMAScript va WebAssembly’ni amalga oshiradi va Windows 7 yoki undan keyingi versiyalarida, macOS 10.12+ va x64, IA-32, ARM yoki MIPS protsessorlaridan foydalanadigan Linux tizimlarida ishlaydi. Eslatma: U mustaqil ishlashi mumkin yoki istalgan C++ dasturiga kiritilishi mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 298.  ### Nima uchun biz javascriptni dinamik til deb ataymiz
 
-      JavaScript is a loosely typed or a dynamic language because variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned/reassigned with values of all types.
+      JavaScript erkin terilgan yoki dinamik tildir, chunki JavaScript-dagi o'zgaruvchilar biron bir qiymat turi bilan bevosita bog'lanmagan va har qanday o'zgaruvchi barcha turdagi qiymatlar bilan tayinlanishi/qayta tayinlanishi mumkin.
 
       ```javascript
       let age = 50; // age is a number now
@@ -5229,14 +5226,14 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 299.  ### Void operatori nima
 
-      The `void` operator evaluates the given expression and then returns undefined(i.e, without returning value). The syntax would be as below,
+      Operator voidberilgan ifodani baholaydi va keyin aniqlanmagan (ya'ni, qiymatni qaytarmasdan) qaytaradi. Sintaksis quyidagi kabi bo'ladi,
 
       ```javascript
       void expression;
       void expression;
       ```
 
-      Let's display a message without any redirection or reload
+      Xabarni hech qanday yo'naltirish yoki qayta yuklamasdan ko'rsataylik
 
       ```javascript
       <a href="javascript:void(alert('Welcome to JS world'))">
@@ -5244,13 +5241,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       </a>
       ```
 
-      **Note:** This operator is often used to obtain the undefined primitive value, using "void(0)".
+      **Note:** Bu operator ko'pincha "void (0)" yordamida aniqlanmagan ibtidoiy qiymatni olish uchun ishlatiladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 300.  ### Kursorni kutish(wait) uchun qanday sozlash kerak
 
-      The cursor can be set to wait in JavaScript by using the property "cursor". Let's perform this behavior on page load using the below function.
+      Kursor "kursor" xususiyatidan foydalanib, JavaScript-da kutishga o'rnatilishi mumkin. Quyidagi funksiyadan foydalanib, sahifa yuklashda ushbu xatti-harakatni bajaramiz.
 
       ```javascript
       function myFunction() {
@@ -5268,7 +5265,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 301.  ### Qanday qilib cheksiz sikl (infinite loop)yaratasiz
 
-      You can create infinite loops using for and while loops without using any expressions. The for loop construct or syntax is better approach in terms of ESLint and code optimizer tools,
+      Hech qanday ifoda ishlatmasdan for va while sikllaridan foydalanib cheksiz tsikllar yaratishingiz mumkin. For loop tuzilishi yoki sintaksisi ESLint va kod optimallashtiruvchi vositalari nuqtai nazaridan yaxshiroq yondashuv,
 
       ```javascript
       for (;;) {}
@@ -5279,14 +5276,14 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 302.  ### Nima uchun bayonot bilan avoid kerak
 
-      JavaScript's with statement was intended to provide a shorthand for writing recurring accesses to objects. So it can help reduce file size by reducing the need to repeat a lengthy object reference without performance penalty. Let's take an example where it is used to avoid redundancy when accessing an object several times.
+      JavaScript-ning with bayonoti ob'ektlarga takroriy kirishlarni yozish uchun stenografiyani ta'minlash uchun mo'ljallangan. Shunday qilib, u uzoq ob'ekt havolasini ishlash jazosisiz takrorlash zaruratini kamaytirish orqali fayl hajmini kamaytirishga yordam beradi. Ob'ektga bir necha marta kirishda ortiqchalikni oldini olish uchun ishlatiladigan misolni olaylik.
 
       ```javascript
       a.b.c.greeting = 'welcome';
       a.b.c.age = 32;
       ```
 
-      Using `with` it turns this into:
+      Undan foydalanish with buni quyidagilarga aylantiradi:
 
       ```javascript
       with (a.b.c) {
@@ -5295,7 +5292,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      But this `with` statement creates performance problems since one cannot predict whether an argument will refer to a real variable or to a property inside the with argument.
+      Ammo bu with bayonot ishlash muammolarini keltirib chiqaradi, chunki argument haqiqiy o'zgaruvchiga yoki with argumenti ichidagi xususiyatga murojaat qilishini oldindan aytib bo'lmaydi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -5313,48 +5310,48 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      The output of the above for loops is 4 4 4 4 and 0 1 2 3
+      Yuqoridagi for looplarning chiqishi 4 4 4 4 va 0 1 2 3 ga teng
 
-      **Explanation:** Due to the event queue/loop of javascript, the `setTimeout` callback function is called after the loop has been executed. Since the variable i is declared with the `var` keyword it became a global variable and the value was equal to 4 using iteration when the time `setTimeout` function is invoked. Hence, the output of the first loop is `4 4 4 4`.
+      **Explanation:** Javascriptning voqea navbati/siklasi tufayli setTimeoutcallback funksiyasi sikl bajarilgandan so'ng chaqiriladi. i o'zgaruvchisi kalit so'z bilan e'lon qilinganligi varsababli u global o'zgaruvchiga aylandi va vaqt setTimeoutfunksiyasi chaqirilganda iteratsiya yordamida qiymat 4 ga teng bo'ldi. Demak, birinchi tsiklning chiqishi 4 4 4 4.
 
-      Whereas in the second loop, the variable i is declared as the `let` keyword it becomes a block scoped variable and it holds a new value(0, 1 ,2 3) for each iteration. Hence, the output of the first loop is `0 1 2 3`.
+      Ikkinchi siklda esa i oʻzgaruvchisi letkalit soʻz sifatida eʼlon qilingan boʻlsa, u bloklangan oʻzgaruvchiga aylanadi va u har bir iteratsiya uchun yangi qiymatga ega boʻladi (0, 1, 2 3). Demak, birinchi tsiklning chiqishi 0 1 2 3.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 304.  ### ES6 ning ba'zi xususiyatlarini sanab o'ting
 
-      Below are the list of some new features of ES6,
+      Quyida ES6 ning ba'zi yangi xususiyatlari ro'yxati keltirilgan.
 
-      1.  Support for constants or immutable variables
-      2.  Block-scope support for variables, constants and functions
-      3.  Arrow functions
-      4.  Default parameters
-      5.  Rest and Spread Parameters
-      6.  Template Literals
-      7.  Multi-line Strings
-      8.  Destructuring Assignment
-      9.  Enhanced Object Literals
-      10. Promises
-      11. Classes
-      12. Modules
+      1.  Konstantalar yoki o'zgarmas o'zgaruvchilarni qo'llab-quvvatlash
+      2.  O'zgaruvchilar, konstantalar va funktsiyalar uchun blok-ko'lamli yordam
+      3.  Ok funksiyalari
+      4.  Standart parametrlar
+      5.  Dam olish va tarqalish parametrlari
+      6.  Shablon harflari
+      7.  Ko'p qatorli satrlar
+      8.  Topshiriqni buzish
+      9.  Kengaytirilgan ob'ekt harflari
+      10. Va'dalar
+      11. Sinflar
+      12. Modullar
 
       **[⬆ Back to Top](#table-of-contents)**
 
 305.  ### ES6 nima
 
-      ES6 is the sixth edition of the javascript language and it was released in June 2015. It was initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015. Almost all the modern browsers support ES6 but for the old browsers there are many transpilers, like Babel.js etc.
+      ES6 javascript tilining oltinchi nashri boʻlib, 2015-yil iyun oyida chiqarilgan. U dastlab ECMAScript 6 (ES6) nomi bilan tanilgan va keyinchalik ECMAScript 2015 deb oʻzgartirilgan. Deyarli barcha zamonaviy brauzerlar ES6ʼni qoʻllab-quvvatlaydi, lekin eski brauzerlar uchun koʻplab transpilerlar mavjud. , Babel.js va boshqalar kabi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 306.  ### Let va const o'zgaruvchilarni qayta e'lon qila olamanmi?
 
-      No, you cannot redeclare let and const variables. If you do, it throws below error
+      Yo'q, siz let va const o'zgaruvchilarini qayta e'lon qila olmaysiz. Agar shunday qilsangiz, u quyidagi xatoni chiqaradi
 
       ```bash
       Uncaught SyntaxError: Identifier 'someVariable' has already been declared
       ```
 
-      **Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
+      **Explanation:** Kalit so'z bilan o'zgaruvchini e'lon qilish varfunksiya doirasiga ishora qiladi va o'zgaruvchiga ko'tarish xususiyati tufayli u qo'shimcha doiraning yuqori qismida e'lon qilingandek ishlanadi. Shunday qilib, bir xil ko'tarilgan o'zgaruvchiga hech qanday xatosiz hissa qo'shadigan barcha bir nechta deklaratsiyalar. Keling, var va let/const o'zgaruvchilari uchun bir xil doiradagi o'zgaruvchilarni qayta e'lon qilish misolini olaylik.
 
       ```javascript
       var name = 'John';
@@ -5367,7 +5364,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       alert(name); // John
       ```
 
-      The block-scoped multi-declaration throws syntax error,
+      Blok ko'lamli ko'p deklaratsiya sintaksis xatosini keltirib chiqaradi,
 
       ```javascript
       let name = 'John';
@@ -5385,7 +5382,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 307.  ### Const o'zgaruvchisi qiymatni o'zgarmas qiladimi
 
-      No, the const variable doesn't make the value immutable. But it disallows subsequent assignments(i.e, You can declare with assignment but can't assign another value later)
+      Yo'q, const o'zgaruvchisi qiymatni o'zgarmas qilib qo'ymaydi. Ammo u keyingi topshiriqlarga ruxsat bermaydi (ya'ni, siz topshiriq bilan e'lon qilishingiz mumkin, lekin keyinroq boshqa qiymat tayinlay olmaysiz)
 
       ```javascript
       const userList = [];
@@ -5397,7 +5394,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 308.  ### Standart parametrlar nima
 
-      In E5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+      E5 da biz funktsiya parametrlarining standart qiymatlarini boshqarish uchun mantiqiy OR operatorlariga bog'lanishimiz kerak. ES6 da standart funksiya parametrlari xususiyati hech qanday qiymat yoki aniqlanmagan holda parametrlarni standart qiymatlar bilan ishga tushirishga imkon beradi. Keling, xatti-harakatlarni misollar bilan taqqoslaylik,
 
       ```javascript
       //ES5
@@ -5410,7 +5407,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(calculateArea()); //300
       ```
 
-      The default parameters makes the initialization more simpler,
+      Standart parametrlar ishga tushirishni soddalashtiradi,
 
       ```javascript
       //ES6
@@ -5425,32 +5422,31 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 309.  ### Shablon literallari nima
 
-      Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
-      In E6, this feature enables using dynamic expressions as below,
+      Shablon literallari yoki shablon satrlari o'rnatilgan ifodalarga ruxsat beruvchi satr harflaridir. Ular ikkita yoki bitta tirnoq o'rniga orqaga belgi (`) bilan o'ralgan. E6 da bu xususiyat quyidagi kabi dinamik ifodalardan foydalanish imkonini beradi,
 
       ```javascript
       var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
       ```
 
-      In ES5, you need break string like below,
+      ES5 da sizga quyidagi kabi uzilish qatori kerak bo'ladi,
 
       ```javascript
       var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
       ```
 
-      **Note:** You can use multi-line strings and string interpolation features with template literals.
+      **Note:** Shablon harflari bilan ko'p qatorli satrlar va satr interpolyatsiyasi xususiyatlaridan foydalanishingiz mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 310.  ### Shablon literallarida ko'p qatorli satrlarni qanday yozish mumkin
 
-      In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
+      ES5 da ko'p qatorli satrlarni olish uchun yangi satrdan qochish belgilaridan ('\\n') va birlashtiruvchi belgilardan (+) foydalanishingiz kerak bo'ladi.
 
       ```javascript
       console.log('This is string sentence 1\n' + 'This is string sentence 2');
       ```
 
-      Whereas in ES6, You don't need to mention any newline sequence character,
+      Holbuki ES6 da yangi qator belgilarini eslatib o'tish shart emas,
 
       ```javascript
       console.log(`This is string sentence
@@ -5461,7 +5457,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 311.  ### Murakkab(nested) shablonlari nima
 
-      The nesting template is a feature supported within template literals syntax to allow inner backticks inside a placeholder ${ } within the template. For example, the below nesting template is used to display the icons based on user permissions whereas outer template checks for platform type,
+      Joylashtiruvchi shablon shablondagi ${ } toʻldiruvchisi ichida ichki orqa belgilarga ruxsat berish uchun shablon harflari sintaksisida qoʻllab-quvvatlanadigan xususiyatdir. Misol uchun, quyida joylashgan shablon foydalanuvchi ruxsatiga asoslangan piktogrammalarni ko'rsatish uchun ishlatiladi, tashqi shablon esa platforma turini tekshiradi,
 
       ```javascript
       const iconStyles = `icon ${
@@ -5471,7 +5467,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }`;
       ```
 
-      You can write the above use case without nesting template features as well. However, the nesting template feature is more compact and readable.
+      Yuqoridagi foydalanish holatini shablon xususiyatlarini joylashtirmasdan ham yozishingiz mumkin. Biroq, joylashtirish shablonlari xususiyati yanada ixcham va o'qilishi mumkin.
 
       ```javascript
       //Without nesting templates
@@ -5483,7 +5479,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 312.  ### Belgilangan(tagged) shablonlar nima
 
-      Tagged templates are the advanced form of templates in which tags allow you to parse template literals with a function. The tag function accepts the first parameter as an array of strings and remaining parameters as expressions. This function can also return manipulated strings based on parameters. Let's see the usage of this tagged template behavior of an IT professional skill set in an organization,
+      Teglangan andozalar shablonlarning ilg'or shakli bo'lib, unda teglar funksiya yordamida shablon harflarini tahlil qilish imkonini beradi. Teg funksiyasi birinchi parametrni satrlar massivi, qolgan parametrlarni esa ifoda sifatida qabul qiladi. Ushbu funktsiya parametrlar asosida manipulyatsiya qilingan satrlarni ham qaytarishi mumkin. Keling, tashkilotda IT-professional mahorat to'plamining ushbu tegli shablon xatti-harakatlaridan foydalanishni ko'rib chiqaylik,
 
       ```javascript
       var user1 = 'John';
@@ -5522,7 +5518,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 313.  ### Raw stringlar nima
 
-      ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+      String.raw()ES6 shablon satrlarining xom string shaklini olish uchun ishlatiladigan usuldan foydalangan holda xom satrlar xususiyatini taqdim etadi . Bu xususiyat sizga kirish ketma-ketligini qayta ishlamasdan, xom satrlarga kirish imkonini beradi. Masalan, foydalanish quyidagicha bo'ladi,
 
       ```javascript
       var calculationString = String.raw`The sum of numbers is \n${
@@ -5531,7 +5527,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(calculationString); // The sum of numbers is 10
       ```
 
-      If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
+      Agar siz xom satrlardan foydalanmasangiz, yangi qator belgilar ketma-ketligi chiqishni bir nechta satrlarda ko'rsatish orqali qayta ishlanadi.
 
       ```javascript
       var calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
@@ -5540,7 +5536,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       // 10
       ```
 
-      Also, the raw property is available on the first argument to the tag function
+      Shuningdek, raw xususiyati teg funksiyasining birinchi argumentida mavjud
 
       ```javascript
       function tag(strings) {
@@ -5552,8 +5548,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 314.  ### Destructuring assignment (strukturani buzish) nima ?
 
-      The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
-      Let's get the month values from an array using destructuring assignment
+      Strukturani buzish topshirig'i - bu massivlardagi qiymatlarni yoki ob'ektlardan xususiyatlarni alohida o'zgaruvchilarga ochish imkonini beruvchi JavaScript ifodasi. Keling, massivdan oy qiymatlarini tuzilmani buzish topshirig'idan foydalanib olamiz
 
       ```javascript
       var [one, two, three] = ['JAN', 'FEB', 'MARCH'];
@@ -5563,7 +5558,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(three); // "MARCH"
       ```
 
-      and you can get user properties of an object using destructuring assignment,
+      va siz tuzilmani buzish topshirig'i yordamida ob'ektning foydalanuvchi xususiyatlarini olishingiz mumkin,
 
       ```javascript
       var { name, age } = { name: 'John', age: 32 };
@@ -5576,7 +5571,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 315.  ### Topshiriqni buzishda standart qiymatlar qanday
 
-      A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object use cases,
+      O'zgaruvchiga massiv yoki ob'ektdan ajratilgan qiymat tuzilmani buzish paytida aniqlanmagan bo'lsa, standart qiymat tayinlanishi mumkin. Bu har bir topshiriq uchun standart qiymatlarni alohida o'rnatishdan qochishga yordam beradi. Keling, massivlar va ob'ektlardan foydalanish holatlariga misol keltiraylik,
 
       **Arrays destructuring:**
 
@@ -5603,7 +5598,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 316.  ### Topshiriqni buzishda o'zgaruvchilarni qanday almashtirasiz
 
-      If you don't use destructuring assignment, swapping two values requires a temporary variable. Whereas using a destructuring feature, two variable values can be swapped in one destructuring expression. Let's swap two number variables in array destructuring assignment,
+      Agar siz tuzilmani buzish topshirig'idan foydalanmasangiz, ikkita qiymatni almashtirish uchun vaqtinchalik o'zgaruvchi kerak bo'ladi. Vayron qiluvchi xususiyatdan foydalangan holda, ikkita o'zgaruvchan qiymatni bitta destruktiv ifodada almashtirish mumkin. Keling, massiv tuzilmasini buzishda ikkita raqamli o'zgaruvchini almashtiramiz,
 
       ```javascript
       var x = 10,
@@ -5618,7 +5613,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 317.  ### Kengaytirilgan ob'ekt harflari nima
 
-      Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
+      Ob'ekt harflari jingalak qavslar ichida xossalarga ega ob'ektlarni tezda yaratishni osonlashtiradi. Misol uchun, u quyidagi kabi umumiy ob'ekt xususiyatini aniqlash uchun qisqaroq sintaksisni taqdim etadi.
 
       ```javascript
       //ES6
@@ -5637,8 +5632,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 318.  ### Dinamik import nima
 
-      The dynamic imports using `import()` function syntax allows us to load modules on demand by using promises or the async/await syntax. Currently this feature is in [stage4 proposal](https://github.com/tc39/proposal-dynamic-import). The main advantage of dynamic imports is reduction of our bundle's sizes, the size/payload response of our requests and overall improvements in the user experience.
-      The syntax of dynamic imports would be as below,
+      Funktsiya sintaksisidan foydalangan holda dinamik importlar import()bizga va'dalar yoki asinxron/kutish sintaksisi yordamida talab bo'yicha modullarni yuklash imkonini beradi. Hozirda bu xususiyat 4- bosqich taklifida . Dinamik importning asosiy afzalligi - bu to'plam o'lchamlarini qisqartirish, so'rovlarimizning hajmi/to'lovli javobi va foydalanuvchi tajribasining umumiy yaxshilanishi. Dinamik importning sintaksisi quyidagi kabi bo'ladi:
 
       ```javascript
       import('./Module').then((Module) => Module.method());
@@ -5648,9 +5642,9 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 319.  ### Dinamik import uchun qanday holatlar mavjud
 
-      Below are some of the use cases of using dynamic imports over static imports,
+      Quyida statik importga nisbatan dinamik importdan foydalanishning ayrim holatlari keltirilgan.
 
-      1.  Import a module on-demand or conditionally. For example, if you want to load a polyfill on legacy browser
+      1.  Modulni talab bo'yicha yoki shartli ravishda import qiling. Misol uchun, agar siz eski brauzerga polyfillni yuklamoqchi bo'lsangiz
 
       ```javascript
       if (isLegacyBrowser()) {
@@ -5659,7 +5653,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      1.  Compute the module specifier at runtime. For example, you can use it for internationalization.
+      1.  Modul o'rniga oddiy skript ichidan modul import qiling.
 
       ```javascript
       import(`messages_${getLocale()}.js`).then(···);
@@ -5671,18 +5665,18 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 320.  ### Tiplangan massivlar(typed arrays) nima
 
-      Typed arrays are array-like objects from ECMAScript 6 API for handling binary data. JavaScript provides 8 Typed array types,
+      Yozilgan massivlar ikkilik ma'lumotlarni qayta ishlash uchun ECMAScript 6 API'dan massivga o'xshash ob'ektlardir. JavaScript 8 ta terilgan massiv turlarini taqdim etadi,
 
-      1.  Int8Array: An array of 8-bit signed integers
-      2.  Int16Array: An array of 16-bit signed integers
-      3.  Int32Array: An array of 32-bit signed integers
-      4.  Uint8Array: An array of 8-bit unsigned integers
-      5.  Uint16Array: An array of 16-bit unsigned integers
-      6.  Uint32Array: An array of 32-bit unsigned integers
+      1.  Int8Array: An array of 8-bit imzolangan butun sonlar massivi
+      2.  Int16Array: An array of 16-bit imzolangan butun sonlar massivi
+      3.  Int32Array: An array of 32-bit imzolangan butun sonlar massivi
+      4.  Uint8Array: An array of 8-bit imzolangan butun sonlar massivi
+      5.  Uint16Array: An array of 16-bit imzolangan butun sonlar massivi
+      6.  Uint32Array: An array of 32-bit imzolangan butun sonlar massivi
       7.  Float32Array: An array of 32-bit floating point numbers
       8.  Float64Array: An array of 64-bit floating point numbers
 
-      For example, you can create an array of 8-bit signed integers as below
+      Misol uchun, siz quyida ko'rsatilgandek 8 bitli imzolangan tamsayılar qatorini yaratishingiz mumkin
 
       ```javascript
       const a = new Int8Array();
@@ -5695,7 +5689,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 321.  ### Modul yuklagichlarining(modal loader) afzalliklari nimada
 
-      The module loaders provides the below features,
+      Modul yuklagichlari quyidagi xususiyatlarni taqdim etadi:
 
       1.  Dynamic loading
       2.  State isolation
@@ -5707,7 +5701,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 322.  ### Collation (harakatlash) nima
 
-      Collation is used for sorting a set of strings and searching within a set of strings. It is parameterized by locale and aware of Unicode. Let's take comparison and sorting features,
+      Harmanlama satrlar to'plamini saralash va qatorlar to'plami ichida qidirish uchun ishlatiladi. U mahalliy parametr bo'yicha parametrlangan va Unicode-dan xabardor. Keling, taqqoslash va saralash xususiyatlarini olaylik,
 
       1.  **Comparison:**
 
@@ -5733,7 +5727,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 323.  ### For .. of statmentni nima uchun ishlatiladi
 
-      The for...of statement creates a loop iterating over iterable objects or elements such as built-in String, Array, Array-like objects (like arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. The basic usage of for...of statement on arrays would be as below,
+      For...of iborasi takrorlanadigan ob'ektlar yoki o'rnatilgan String, Array, Massivga o'xshash ob'ektlar (masalan, argumentlar yoki NodeList), TypedArray, Map, Set va foydalanuvchi tomonidan aniqlangan takrorlanuvchilar kabi elementlar ustidan takrorlanuvchi tsikl yaratadi. Massivlarda for...of iborasining asosiy qo'llanilishi quyida keltirilgan bo'ladi:
 
       ```javascript
       let arrayIterable = [10, 20, 30, 40, 50];
@@ -5752,20 +5746,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       [...'John Resig'];
       ```
 
-      The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
-      **Explanation:** The string is an iterable type and the spread operator within an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
+      Massivning chiqishi ['J', 'o', 'h', 'n', '', 'R', 'e', ​​'s', 'i', 'g'] Izoh: Satr. bu takrorlanadigan tur va massiv ichidagi tarqalish operatori iteratsiya qilinadigan har bir belgini bitta element bilan taqqoslaydi. Demak, satrning har bir belgisi Massiv ichidagi elementga aylanadi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 325.  ### PostMessage xavfsizmi?]
 
-      Yes, postMessages can be considered very secure as long as the programmer/developer is careful about checking the origin and source of an arriving message. But if you try to send/receive a message without verifying its source will create cross-site scripting attacks.
+      Ha, agar dasturchi/ishlab chiquvchi kelgan xabarning kelib chiqishi va manbasini tekshirishda ehtiyot bo'lsa, postMessages juda xavfsiz deb hisoblanishi mumkin. Ammo agar siz xabarni manbasini tasdiqlamasdan yuborishga/qabul qilishga harakat qilsangiz, saytlararo skript hujumlarini keltirib chiqaradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 326.  ### Joyker belgisi sifatida postxabar maqsadli kelib chiqishi bilan bog'liq qanday muammolar mavjud]origin as wildcard
 
-      The second argument of postMessage method specifies which origin is allowed to receive the message. If you use the wildcard “\*” as an argument then any origin is allowed to receive the message. In this case, there is no way for the sender window to know if the target window is at the target origin when sending the message. If the target window has been navigated to another origin, the other origin would receive the data. Hence, this may lead to XSS vulnerabilities.
+      PostMessage usulining ikkinchi argumenti xabarni qaysi manbadan qabul qilishiga ruxsat berilganligini belgilaydi. Agar argument sifatida “\*” joker belgisidan foydalansangiz, xabarni har qanday manbaga qabul qilishga ruxsat beriladi. Bunday holda, jo'natuvchi oynasi xabarni jo'natishda maqsadli oyna maqsadli manbada ekanligini bilishning hech qanday usuli yo'q. Agar maqsadli oyna boshqa manbaga yo'naltirilgan bo'lsa, boshqa manba ma'lumotlarni oladi. Shunday qilib, bu XSS zaifliklariga olib kelishi mumkin.
 
       ```javascript
       targetWindow.postMessage(message, '*');
@@ -5775,7 +5768,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 327.  ### Qanday qilib tajovuzkorlardan postMessages olishdan qochasiz]attackers
 
-      Since the listener listens for any message, an attacker can trick the application by sending a message from the attacker’s origin, which gives an impression that the receiver received the message from the actual sender’s window. You can avoid this issue by validating the origin of the message on the receiver's end using the “message.origin” attribute. For examples, let's check the sender's origin [http://www.some-sender.com](http://www.some-sender.com) on receiver side [www.some-receiver.com](www.some-receiver.com),
+      Tinglovchi har qanday xabarni tinglaganligi sababli, tajovuzkor tajovuzkorning kelib chiqishidan xabar yuborish orqali dasturni aldashi mumkin, bu esa qabul qiluvchiga xabarni haqiqiy jo'natuvchining oynasidan olgandek taassurot qoldiradi. “message.origin” atributidan foydalanib, qabul qiluvchining oxiridagi xabarning kelib chiqishini tekshirish orqali bu muammodan qochishingiz mumkin. Misol uchun, jo'natuvchining kelib chiqishini tekshirib ko'raylik http://www.some-sender.com qabul qiluvchi tomonida www.some-receiver.com ,
 
       ```javascript
       //Listener on http://www.some-receiver.com/
@@ -5790,38 +5783,38 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 328.  ### PostMessages-dan butunlay qochishim mumkinmi?]
 
-      You cannot avoid using postMessages completely(or 100%). Even though your application doesn’t use postMessage considering the risks, a lot of third party scripts use postMessage to communicate with the third party service. So your application might be using postMessage without your knowledge.
+      Siz postMessages-dan butunlay (yoki 100%) foydalana olmaysiz. Ilovangiz xavflarni hisobga olgan holda postMessage-dan foydalanmasa ham, ko'plab uchinchi tomon skriptlari uchinchi tomon xizmati bilan bog'lanish uchun postMessage-dan foydalanadi. Demak, ilovangiz sizning xabaringizsiz postMessage dan foydalanayotgan bo‘lishi mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 329.  ### PostMessages sinxronlashganmi ?]
 
-      The postMessages are synchronous in IE8 browser but they are asynchronous in IE9 and all other modern browsers (i.e, IE9+, Firefox, Chrome, Safari).Due to this asynchronous behaviour, we use a callback mechanism when the postMessage is returned.
+      PostMessages IE8 brauzerida sinxrondir, lekin ular IE9 va boshqa barcha zamonaviy brauzerlarda (masalan, IE9+, Firefox, Chrome, Safari) asinxrondir. Ushbu asinxron xatti-harakat tufayli biz postMessage qaytarilganda callback mexanizmidan foydalanamiz.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 330.  ### Javascript qanday paradigma]
 
-      JavaScript is a multi-paradigm language, supporting imperative/procedural programming, Object-Oriented Programming and functional programming. JavaScript supports Object-Oriented Programming with prototypical inheritance.
+      JavaScript ko'p paradigmali til bo'lib, imperativ/protsessual dasturlashni, ob'ektga yo'naltirilgan dasturlashni va funktsional dasturlashni qo'llab-quvvatlaydi. JavaScript prototip merosga ega ob'ektga yo'naltirilgan dasturlashni qo'llab-quvvatlaydi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 331.  ### Ichki(Internal) va tashqi(external) javascript o'rtasidagi farq nima]external javascript
 
-      **Internal JavaScript:** It is the source code within the script tag.
-      **External JavaScript:** The source code is stored in an external file(stored with .js extension) and referred with in the tag.
+      **Internal JavaScript:** Bu skript tegidagi manba kodi.
+      **External JavaScript:** Manba kodi tashqi faylda saqlanadi (.js kengaytmasi bilan saqlanadi) va tegda havola qilinadi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 332.  ### JavaScript server tomonidagi skriptga qaraganda tezroqmi]
 
-      Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
+      Ha, JavaScript server tomonidagi skriptga qaraganda tezroq. JavaScript mijoz tomoni skripti bo'lgani uchun uni hisoblash yoki hisoblash uchun hech qanday veb-server yordamini talab qilmaydi. Shunday qilib, JavaScript har doim ASP, PHP va boshqalar kabi server tomonidagi skriptlardan tezroq.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 333.  ### Belgilash qutisi(checkbox) holatini(status) qanday olish mumkin]
 
-      You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
+      Siz checkedxususiyatni DOM-dagi tanlangan katakchaga qo'llashingiz mumkin. Agar qiymat bo'lsa True, belgilash katakchasi belgilanganligini bildiradi, aks holda belgilanmaydi. Misol uchun, quyidagi HTML belgilash katakchasi elementiga quyidagi kabi javascript yordamida kirish mumkin,
 
       ```html
       <input type="checkbox" name="checkboxname" value="Agree" /> Agree the
@@ -5836,19 +5829,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 334.  ### Double tilde operatorining maqsadi nima]
 
-      The double tilde operator(~~) is known as double NOT bitwise operator. This operator is going to be a quicker substitute for Math.floor().
+      Ikki tomonlama tilda operatori (~~) ikki tomonlama EMAS bitli operator sifatida tanilgan. Bu operator Math.floor() ni tezroq almashtiradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 335.  ### Belgilarni ASCII kodiga qanday o'zgartirasiz]
 
-      You can use the `String.prototype.charCodeAt()` method to convert string characters to ASCII numbers. For example, let's find ASCII code for the first letter of 'ABC' string,
+      Siz String.prototype.charCodeAt()satr belgilarini ASCII raqamlariga aylantirish uchun usuldan foydalanishingiz mumkin. Masalan, "ABC" qatorining birinchi harfi uchun ASCII kodini topamiz,
 
       ```javascript
       'ABC'.charCodeAt(0); // returns 65
       ```
 
-      Whereas `String.fromCharCode()` method converts numbers to equal ASCII characters.
+      Usul String.fromCharCode()raqamlarni teng ASCII belgilariga aylantiradi.
 
       ```javascript
       String.fromCharCode(65, 66, 67); // returns 'ABC'
@@ -5858,14 +5851,14 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 336.  ### ArrayBuffer nima]
 
-      An ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer. You can create it as below,
+      ArrayBuffer ob'ekti umumiy, qattiq uzunlikdagi xom ikkilik ma'lumotlar buferini ko'rsatish uchun ishlatiladi. Siz uni quyidagi tarzda yaratishingiz mumkin,
 
       ```javascript
       let buffer = new ArrayBuffer(16); // create a buffer of length 16
       alert(buffer.byteLength); // 16
       ```
 
-      To manipulate an ArrayBuffer, we need to use a “view” object.
+      ArrayBuffer-ni boshqarish uchun biz "view" ob'ektidan foydalanishimiz kerak.
 
       ```javascript
       //Create a DataView referring to the buffer
@@ -5880,20 +5873,20 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log('Welcome to JS world'[0]);
       ```
 
-      The output of the above expression is "W".
-      **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
+      Yuqoridagi ifodaning chiqishi "W" dir
+      **Explanation:** Satrdagi maxsus indeksli qavs belgisi ma'lum bir joyda belgini qaytaradi. Demak, u satrning "W" belgisini qaytaradi. Bu IE7 va undan past versiyalarda qo'llab-quvvatlanmaganligi sababli, kerakli natijaga erishish uchun .charAt() usulidan foydalanishingiz kerak bo'lishi mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 338.  ### Xato obyektining(error object) maqsadi nima]
 
-      The Error constructor creates an error object and the instances of error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. The syntax of error object would be as below,
+      Xato konstruktori xato ob'ektini yaratadi va xatolik ob'ektlarining misollari ish vaqti xatolari yuzaga kelganda tashlanadi. Xato obyekti foydalanuvchi tomonidan belgilangan istisnolar uchun asosiy obyekt sifatida ham foydalanish mumkin. Xato ob'ektining sintaksisi quyidagicha bo'ladi,
 
       ```javascript
       new Error([message[, fileName[, lineNumber]]])
       ```
 
-      You can throw user defined exceptions or errors using Error object in try...catch block as below,
+      Quyidagi kabi try...catch blokidagi Error obyekti yordamida foydalanuvchi tomonidan belgilangan istisnolar yoki xatolarni tashlashingiz mumkin,
 
       ```javascript
       try {
@@ -5908,13 +5901,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 339.  ### EvalError obyektining maqsadi nima]
 
-      The EvalError object indicates an error regarding the global `eval()` function. Even though this exception is not thrown by JavaScript anymore, the EvalError object remains for compatibility. The syntax of this expression would be as below,
+      EvalError obyekti global eval()funksiya bilan bog'liq xatoni bildiradi. Garchi bu istisno JavaScript tomonidan endi tashlanmasa ham, EvalError obyekti moslik uchun qoladi. Ushbu iboraning sintaksisi quyidagi kabi bo'ladi:
 
       ```javascript
       new EvalError([message[, fileName[, lineNumber]]])
       ```
 
-      You can throw EvalError with in try...catch block as below,
+      Quyidagi kabi try...catch blokida EvalError-ni tashlashingiz mumkin,
 
       ```javascript
       try {
@@ -5927,19 +5920,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 340.  ### Qattiy bo'lmagan rejimdan qat'iy rejimga o'tkazilgan xatolar ro'yxati qanday]non-strict mode to strict mode
 
-      When you apply 'use strict'; syntax, some of the below cases will throw a SyntaxError before executing the script
+      Qachon 'use strict'; Sintaksis bo'lsa, quyidagi holatlarning ba'zilari skriptni bajarishdan oldin SyntaxError beradi
 
-      1.  When you use Octal syntax
+      1.  Oktal sintaksisidan foydalanganda
 
       ```javascript
       var n = 022;
       ```
 
-      1.  Using `with` statement
-      2.  When you use delete operator on a variable name
-      3.  Using eval or arguments as variable or function argument name
-      4.  When you use newly reserved keywords
-      5.  When you declare a function in a block
+      1.  Statement `bilan` foydalanganda
+      2.  O'zgaruvchi nomida o'chirish operatoridan foydalanganda
+      3.  O'zgaruvchi yoki funktsiya argument nomi sifatida baholash yoki argumentlardan foydalanish
+      4.  Yangi zahiralangan kalit so'zlardan foydalanganda
+      5.  Blokdagi funktsiyani e'lon qilganingizda
 
       ```javascript
       if (someCondition) {
@@ -5947,19 +5940,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      Hence, the errors from above cases are helpful to avoid errors in development/production environments.
+      Shunday qilib, yuqoridagi holatlardagi xatolar ishlab chiqish/ishlab chiqarish muhitidagi xatolardan qochishga yordam beradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 341.  ### Barcha ob'ektlarning prototiplari bormi?]
 
-      No. All objects have prototypes except for the base object which is created by the user, or an object that is created using the new keyword.
+      Yo'q. Foydalanuvchi tomonidan yaratilgan asosiy ob'ekt yoki new kalit so'zi yordamida yaratilgan ob'ektdan tashqari barcha ob'ektlar prototiplariga ega.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 342.  ### Parametr va argument o'rtasidagi farq nima]argument
 
-      Parameter is the variable name of a function definition whereas an argument represents the value given to a function when it is invoked. Let's explain this with a simple function
+      Parametr funksiya taʼrifining oʻzgaruvchan nomi, argument esa funksiya chaqirilganda unga berilgan qiymatni ifodalaydi. Keling, buni oddiy funksiya bilan tushuntiramiz
 
       ```javascript
       function myFunction(parameter1, parameter2, parameter3) {
@@ -5974,7 +5967,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 343.  ### Massivlardagi some usulining maqsadi nima]
 
-      The some() method is used to test whether at least one element in the array passes the test implemented by the provided function. The method returns a boolean value. Let's take an example to test for any odd elements,
+      Some() usuli massivdagi kamida bitta element taqdim etilgan funksiya tomonidan amalga oshirilgan testdan o'tishini tekshirish uchun ishlatiladi. Usul mantiqiy qiymatni qaytaradi. Keling, har qanday g'alati elementlarni sinab ko'rish uchun misol keltiraylik,
 
       ```javascript
       var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -5988,13 +5981,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 344.  ### Ikki yoki undan ortiq massivni qanday birlashtirasiz]
 
-      The concat() method is used to join two or more arrays by returning a new array containing all the elements. The syntax would be as below,
+      Concat() usuli barcha elementlarni o'z ichiga olgan yangi massivni qaytarish orqali ikki yoki undan ortiq massivlarni birlashtirish uchun ishlatiladi. Sintaksis quyidagi kabi bo'ladi,
 
       ```javascript
       array1.concat(array2, array3, ..., arrayX)
       ```
 
-      Let's take an example of array's concatenation with veggies and fruits arrays,
+      Keling, massivning sabzavot va mevalar massivlari bilan bog'lanishiga misol keltiraylik,
 
       ```javascript
       var veggies = ['Tomato', 'Carrot', 'Cabbage'];
@@ -6007,10 +6000,10 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 345.  ### Sayoz(shallow) va chuqur(deep) nusxa o'rtasidagi farq nima]copy
 
-      There are two ways to copy an object,
+      Ob'ektni nusxalashning ikki yo'li mavjud:
 
       **Shallow Copy:**
-      Shallow copy is a bitwise copy of an object. A new object is created that has an exact copy of the values in the original object. If any of the fields of the object are references to other objects, just the reference addresses are copied i.e., only the memory address is copied.
+      ob'ektning bitli nusxasi. Asl ob'ektdagi qiymatlarning aniq nusxasiga ega bo'lgan yangi ob'ekt yaratiladi. Agar ob'ektning biron bir maydoni boshqa ob'ektlarga havolalar bo'lsa, faqat mos yozuvlar manzillari ko'chiriladi, ya'ni faqat xotira manzili ko'chiriladi.
 
       **Example**
 
@@ -6022,22 +6015,22 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       };
       ```
 
-      to create a duplicate
+      dublikat yaratish uchun
 
       ```javascript
       var empDetailsShallowCopy = empDetails; //Shallow copying!
       ```
 
-      if we change some property value in the duplicate one like this:
+      agar biz dublikatdagi ba'zi mulk qiymatini shunday o'zgartirsak:
 
       ```javascript
       empDetailsShallowCopy.name = 'Johnson';
       ```
 
-      The above statement will also change the name of `empDetails`, since we have a shallow copy. That means we're losing the original data as well.
+      Yuqoridagi bayonot ning nomini ham o'zgartiradi empDetails, chunki bizda sayoz nusxa mavjud. Bu shuni anglatadiki, biz asl ma'lumotlarni ham yo'qotamiz.
 
-      **Deep copy:**
-      A deep copy copies all fields, and makes copies of dynamically allocated memory pointed to by the fields. A deep copy occurs when an object is copied along with the objects to which it refers.
+      **Deep copy (chuuqur nusxalash):**
+      Chuqur nusxa barcha maydonlardan nusxa ko'chiradi va maydonlar tomonidan ko'rsatilgan dinamik ravishda ajratilgan xotira nusxalarini yaratadi. Chuqur nusxa ob'ekt unga tegishli bo'lgan ob'ektlar bilan birga nusxalanganda sodir bo'ladi.
 
       **Example**
 
@@ -6049,7 +6042,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       };
       ```
 
-      Create a deep copy by using the properties from the original object into new variable
+      Asl ob'ektdan yangi o'zgaruvchiga xususiyatlardan foydalanib, chuqur nusxasini yarating
 
       ```javascript
       var empDetailsDeepCopy = {
@@ -6059,14 +6052,14 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       };
       ```
 
-      Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
+      Endi agar siz o'zgartirsangiz empDetailsDeepCopy.name, u faqat ta'sir qiladi empDetailsDeepCopyva ta'sir qilmaydiempDetails
 
       **[⬆ Back to Top](#table-of-contents)**
 
 346.  ### Satrning ma'lum nusxalarini qanday yaratish mumkin]string
 
-      The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
-      Let's take an example of Hello string to repeat it 4 times,
+      Usul repeat()yangi satrni yaratish va qaytarish uchun ishlatiladi, unda u chaqirilgan qatorning birlashtirilgan nusxalarining belgilangan sonini o'z ichiga oladi. Ushbu usul ECMAScript 2015 spetsifikatsiyasiga qo'shilganligini unutmang.
+      Keling, uni 4 marta takrorlash uchun Hello stringiga misol keltiraylik,
 
       ```javascript
       'Hello'.repeat(4); // 'HelloHelloHelloHello'
@@ -6074,7 +6067,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 347.  ### Qanday qilib barcha mos keladigan satrlarni muntazam ifodaga qaytarasiz]regular expression
 
-      The `matchAll()` method can be used to return an iterator of all results matching a string against a regular expression. For example, the below example returns an array of matching string results against a regular expression,
+      Usul matchAll()muntazam ifodaga qarshi satrga mos keladigan barcha natijalarning iteratorini qaytarish uchun ishlatilishi mumkin. Misol uchun, quyidagi misol muntazam ifodaga nisbatan mos keladigan qator natijalarini qaytaradi,
 
       ```javascript
       let regexp = /Hello(\d?))/g;
@@ -6091,7 +6084,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 348.  ### Stringni boshida yoki oxirida qanday qilib kesish mumkin]ending
 
-      The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
+      String prototipi trimusuli satrning ikkala tomonini kesish uchun ishlatiladi. Ammo, ayniqsa, satrning boshida yoki oxirida kesishni istasangiz, unda siz trimStart/trimLeft va trimEnd/trimRight usullardan foydalanishingiz mumkin. Keling, salomlashishda ushbu usullarning namunasini ko'rib chiqaylik,
 
       ```javascript
       var greeting = '   Hello, Goodmorning!   ';
@@ -6108,23 +6101,23 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 349.  ### Unar operator bilan quyidagi konsol bayonotining chiqishi nima]with unary operator
 
-      Let's take console statement with unary operator as given below,
+      Quyida keltirilgan unary operator bilan konsol bayonotini olaylik,
 
       ```javascript
       console.log(+'Hello');
       ```
 
-      The output of the above console log statement returns NaN. Because the element is prefixed by the unary operator and the JavaScript interpreter will try to convert that element into a number type. Since the conversion fails, the value of the statement results in NaN value.
+      Yuqoridagi konsol jurnali bayonotining chiqishi NaNni qaytaradi. Chunki element unar operator tomonidan prefiksga ega va JavaScript tarjimoni ushbu elementni raqam turiga aylantirishga harakat qiladi. Konvertatsiya bajarilmagani uchun bayonotning qiymati NaN qiymatiga olib keladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 350.  ### Javascript mixins foydalanadimi?]
 
-      Mixin is a generic object-oriented programming term - is a class containing methods that can be used by other classes without a need to inherit from it. In JavaScript we can only inherit from a single object. ie. There can be only one `[[prototype]]` for an object.
+      Mixin umumiy ob'ektga yo'naltirilgan dasturlash atamasi bo'lib, u boshqa sinflar tomonidan meros qilib olinishi kerak bo'lmagan holda ishlatilishi mumkin bo'lgan usullarni o'z ichiga olgan sinfdir. JavaScript-da biz faqat bitta ob'ektdan meros olishimiz mumkin. ya'ni. [[prototype]] Ob'ekt uchun faqat bitta bo'lishi mumkin .
 
-      But sometimes we require to extend more than one, to overcome this we can use Mixin which helps to copy methods to the prototype of another class.
+      Ammo ba'zida biz bir nechtasini kengaytirishni talab qilamiz, buni bartaraf etish uchun biz Mixin-dan foydalanishimiz mumkin, bu usullarni boshqa sinf prototipiga nusxalashga yordam beradi.
 
-      Say for instance, we've two classes `User` and `CleanRoom`. Suppose we need to add `CleanRoom` functionality to `User`, so that user can clean the room at demand. Here's where concept called mixins comes into picture.
+      Masalan, bizda ikkita sinf bor Userva CleanRoom. Aytaylik , foydalanuvchi xonani talabiga ko'ra tozalashi uchun CleanRoom funksiyani ga qo'shishimiz kerak. UserBu erda miksinlar deb ataladigan tushuncha paydo bo'ladi.
 
       ```javascript
       // mixin
@@ -6155,7 +6148,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 351.  ### Thunk funktsiyasi nima]
 
-      A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
+      Thunk - bu qiymatni baholashni kechiktiradigan funksiya. Bu hech qanday argumentlarni talab qilmaydi, lekin har safar thunkni chaqirganingizda qiymat beradi. ya'ni, u hozir bajarilmaydi, lekin kelajakda bo'ladi. Keling, sinxron misolni olaylik,
 
       ```javascript
       const add = (x, y) => x + y;
@@ -6169,7 +6162,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 352.  ### Asinxron thunks nima]
 
-      The asynchronous thunks are useful to make network requests. Let's see an example of network requests,
+      Asinxron thunklar tarmoq so'rovlarini amalga oshirish uchun foydalidir. Keling, tarmoq so'rovlarining misolini ko'rib chiqaylik,
 
       ```javascript
       function fetchData(fn) {
@@ -6187,7 +6180,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       asyncThunk();
       ```
 
-      The `getData` function won't be called immediately but it will be invoked only when the data is available from API endpoint. The setTimeout function is also used to make our code asynchronous. The best real time example is redux state management library which uses the asynchronous thunks to delay the actions to dispatch.
+      Funktsiya getData darhol chaqirilmaydi, lekin u faqat API so'nggi nuqtasidan ma'lumotlar mavjud bo'lganda chaqiriladi. setTimeout funksiyasi bizning kodimizni asinxron qilish uchun ham ishlatiladi. Haqiqiy vaqtda eng yaxshi misol - jo'natish uchun harakatlarni kechiktirish uchun asinxron thunklardan foydalanadigan redux davlat boshqaruvi kutubxonasi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -6210,13 +6203,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
       **Output:**
 
-      The output is 40 and NaN. Remember that diameter is a regular function, whereas the value of perimeter is an arrow function. The `this` keyword of a regular function(i.e, diameter) refers to the surrounding scope which is a class(i.e, Shape object). Whereas this keyword of perimeter function refers to the surrounding scope which is a window object. Since there is no radius property on window objects it returns an undefined value and the multiple of number value returns NaN value.
+      The output 40 va NaN ni tashkil qiladi. Esda tutingki, diametr oddiy funktsiyadir, perimetr qiymati esa o'q funktsiyasidir. Muntazam thisfunktsiyaning kalit so'zi (ya'ni, diametr) sinf (ya'ni, Shakl ob'ekti) bo'lgan atrofdagi doiraga ishora qiladi. Perimetr funktsiyasining ushbu kalit so'zi oyna ob'ekti bo'lgan atrofdagi doiraga ishora qiladi. Oyna ob'ektlarida radius xususiyati yo'qligi sababli u aniqlanmagan qiymatni qaytaradi va son qiymatining ko'pligi NaN qiymatini qaytaradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 354.  ### Satrdagi barcha qator uzilishlarini qanday olib tashlash mumkin]
 
-      The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
+      Eng oson yondashuv - bu satrdagi yangi qatorlarni aniqlash va almashtirish uchun muntazam iboralardan foydalanish. Bunday holda biz almashtirish funktsiyasidan satr bilan birga foydalanamiz, bu bizning holatlarimizda bo'sh qatordir.
 
       ```javascript
       function remove_linebreaks( var message ) {
@@ -6224,19 +6217,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      In the above expression, g and m are for global and multiline flags.
+      Yuqoridagi ifodada g va m global va ko'p qatorli bayroqlar uchundir.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 355.  ### Qayta ishlash(reflow) va qayta bo'yash(repaint) o'rtasidagi farq nima]
 
-      A _repaint_ occurs when changes are made which affect the visibility of an element, but not its layout. Examples of this include outline, visibility, or background color. A _reflow_ involves changes that affect the layout of a portion of the page (or the whole page). Resizing the browser window, changing the font, content changing (such as user typing text), using JavaScript methods involving computed styles, adding or removing elements from the DOM, and changing an element's classes are a few of the things that can trigger reflow. Reflow of an element causes the subsequent reflow of all child and ancestor elements as well as any elements following it in the DOM.
+      Qayta bo'yash elementning ko'rinishiga ta'sir qiladigan o'zgarishlar kiritilganda sodir bo'ladi, lekin uning tartibiga emas. Bunga misollar kontur, ko'rinish yoki fon rangini o'z ichiga oladi. Qayta ishlash sahifaning bir qismining (yoki butun sahifaning) tartibiga ta'sir qiluvchi o'zgarishlarni o'z ichiga oladi. Brauzer oynasining o'lchamini o'zgartirish, shriftni o'zgartirish, tarkibni o'zgartirish (foydalanuvchi matni kabi), hisoblangan uslublarni o'z ichiga olgan JavaScript usullarini qo'llash, DOMga elementlarni qo'shish yoki o'chirish va element sinflarini o'zgartirish - bu qayta ishlashni boshlashi mumkin bo'lgan bir nechta narsalar. Elementni qayta o'tkazish DOMdagi barcha asosiy va ajdod elementlari hamda undan keyingi barcha elementlarning keyingi qayta oqimiga sabab bo'ladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 356.  ### Massivni inkor qilish bilan nima sodir bo'ladi]
 
-      Negating an array with `!` character will coerce the array into a boolean. Since Arrays are considered to be truthy So negating it will return `false`.
+      Belgili massivni inkor etish massivni mantiqiy qiymatga !majburlaydi. Massivlar to'g'ri deb hisoblanganligi sababli, inkor qilinsa, u qaytib keladi false.
 
       ```javascript
       console.log(![]); // false
@@ -6246,7 +6239,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 357.  ### Agar ikkita massiv qo'shsak nima bo'ladi]
 
-      If you add two arrays together, it will convert them both to strings and concatenate them. For example, the result of adding arrays would be as below,
+      Agar siz ikkita massivni birga qo'shsangiz, u ikkalasini ham satrlarga aylantiradi va ularni birlashtiradi. Masalan, massivlarni qo'shish natijasi quyidagicha bo'ladi,
 
       ```javascript
       console.log(['a'] + ['b']); // "ab"
@@ -6258,7 +6251,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 358.  ### Noto'g'ri qiymatlar bo'yicha yuqori qo'shimcha operatorning chiqishi qanday bo'ladi]on falsy values
 
-      If you prepend the additive(+) operator on falsy values(null, undefined, NaN, false, ""), the falsy value converts to a number value zero. Let's display them on browser console as below,
+      Agar siz qo'shimcha (+) operatorini noto'g'ri qiymatlar (null, undefined, NaN, false, "") ustiga qo'ysangiz, noto'g'ri qiymat nolga aylanadi. Keling, ularni brauzer konsolida quyidagi tarzda ko'rsatamiz,
 
       ```javascript
       console.log(+null); // 0
@@ -6272,19 +6265,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 359.  ### Maxsus belgilar yordamida o'z-o'zidan strigni qanday yaratasiz]characters
 
-      The self string can be formed with the combination of `[]()!+` characters. You need to remember the below conventions to achieve this pattern.
+      O'z-o'zidan qator []()!+belgilar kombinatsiyasi bilan tuzilishi mumkin. Ushbu naqshga erishish uchun quyidagi konventsiyalarni eslab qolishingiz kerak.
 
-      1.  Since Arrays are truthful values, negating the arrays will produce false: ![] === false
-      2.  As per JavaScript coercion rules, the addition of arrays together will toString them: [] + [] === ""
-      3.  Prepend an array with + operator will convert an array to false, the negation will make it true and finally converting the result will produce value '1': +(!(+[])) === 1
+      1.  Massivlar toʻgʻri qiymatlar boʻlgani uchun massivlarni inkor etish notoʻgʻri maʼnoni keltirib chiqaradi: ![] === false
+      2.  Massivlar toʻgʻri qiymatlar boʻlgani uchun massivlarni inkor etish notoʻgʻri maʼnoni keltirib chiqaradi: ![] === false
+      3.  Massiv oldiga + operatori qoʻyilsa, massiv “false”ga oʻzgaradi, inkor qilish uni rost qiladi va natijani oʻzgartirish “1” qiymatini hosil qiladi: +(!(+[])) === 1
 
-      By applying the above rules, we can derive below conditions
+      Yuqoridagi qoidalarni qo'llash orqali biz quyidagi shartlarni olishimiz mumkin
 
       ```javascript
       (![] + [] === 'false' + !+[]) === 1;
       ```
 
-      Now the character pattern would be created as below,
+      Endi belgilar namunasi quyidagi tarzda yaratiladi,
 
       ```javascript
             s               e               l               f
@@ -6304,7 +6297,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 360.  ### Massivdan noto'g'ri qiymatlarni qanday olib tashlash mumkin]
 
-      You can apply the filter method on the array by passing Boolean as a parameter. This way it removes all falsy values(0, undefined, null, false and "") from the array.
+      Parametr sifatida mantiqiy ni o'tkazish orqali massivda filtr usulini qo'llashingiz mumkin. Shunday qilib, u massivdan barcha noto'g'ri qiymatlarni (0, aniqlanmagan, null, noto'g'ri va "") olib tashlaydi.
 
       ```javascript
       const myArray = [false, null, 1, 5, undefined];
@@ -6315,7 +6308,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 361.  ### Massivning noyob qiymatlarini qanday olish mumkin
 
-      You can get unique values of an array with the combination of `Set` and rest expression/spread(...) syntax.
+      Set Siz va qolgan ifoda/spread(...) sintaksisining kombinatsiyasi bilan massivning noyob qiymatlarini olishingiz mumkin .
 
       ```javascript
       console.log([...new Set([1, 2, 4, 4, 3])]); // [1, 2, 4, 3]
@@ -6325,7 +6318,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 362.  ### Taxalluslarni buzish nima
 
-      Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
+      Ba'zan siz mulk nomidan boshqa nomga ega vayron qilingan o'zgaruvchiga ega bo'lishni xohlaysiz. Bunday holda, : newName o'zgaruvchining nomini belgilash uchun a dan foydalanasiz. Bu jarayon taxalluslarni buzish deb ataladi.
 
       ```javascript
       const obj = { x: 1 };
@@ -6337,7 +6330,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 363.  ### Map usulini ishlatmasdan massiv qiymatlarini qanday Map qilish mumkinmethod
 
-      You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
+      Massiv qiymatlarini mapfaqat Massiv usuli yordamida metoddan foydalanmasdan xaritalash mumkin from. Mamlakatlar massividan shahar nomlarini xaritaga keltiramiz,
 
       ```javascript
       const countries = [
@@ -6357,7 +6350,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 364.  ### Massivni qanday bo'shatish mumkin
 
-      You can empty an array quickly by setting the array length to zero.
+      Massiv uzunligini nolga o'rnatish orqali massivni tezda bo'shatish mumkin.
 
       ```javascript
       let cities = ['Singapore', 'Delhi', 'London'];
@@ -6368,7 +6361,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 365.  ### Qanday qilib raqamlarni ma'lum o'nli kasrlarga yaxlitlash mumkin
 
-      You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
+      toFixed Mahalliy JavaScript usulidan foydalanib, raqamlarni ma'lum miqdordagi o'nli kasrlarga yaxlitlashingiz mumkin .
 
       ```javascript
       let pie = 3.141592653;
@@ -6379,7 +6372,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 366.  ### Massivni ob'ektga aylantirishning eng oson yo'li qanday?object
 
-      You can convert an array to an object with the same data using spread(...) operator.
+      Spread(...) operatori yordamida massivni bir xil ma’lumotlarga ega ob’ektga aylantirishingiz mumkin.
 
       ```javascript
       var fruits = ['banana', 'apple', 'orange', 'watermelon'];
@@ -6391,7 +6384,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 367.  ### Ba'zi ma'lumotlar bilan massivni qanday yaratish mumkin
 
-      You can create an array with some data or an array with the same values using `fill` method.
+      fill Usul yordamida siz ba'zi ma'lumotlarga ega massiv yoki bir xil qiymatlarga ega massiv yaratishingiz mumkin .
 
       ```javascript
       var newArray = new Array(5).fill('0');
@@ -6402,11 +6395,12 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 368.  ### Konsol ob'ektidagi to'ldiruvchilar nima
 
-      Below are the list of placeholders available from console object,
+      Quyida konsol ob'ektida mavjud bo'lgan to'ldiruvchilar ro'yxati keltirilgan,
 
-      1.  %o — It takes an object,
-      2.  %s — It takes a string,
-      3.  %d — It is used for a decimal or integer
+      1.  %o — object oladi,
+      2.  %s — string oladi,
+      3.  %d — Oʻnlik yoki butun son uchun ishlatiladi.
+
           These placeholders can be represented in the console.log as below
 
       ```javascript
@@ -6422,7 +6416,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 369.  ### Konsol xabarlariga CSS qo'shish mumkinmi?
 
-      Yes, you can apply CSS styles to console messages similar to html text on the web page.
+      Ha, siz CSS uslublarini veb-sahifadagi html matniga o'xshash konsol xabarlariga qo'llashingiz mumkin.
 
       ```javascript
       console.log(
@@ -6434,34 +6428,34 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       The text will be displayed as below,
       ![Screenshot](images/console-css.png)
 
-      **Note:** All CSS styles can be applied to console messages.
+      **Note:** Barcha CSS uslublari konsol xabarlariga qo'llanilishi mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 370.  ### Konsol ob'ektining dir usulidan maqsad nimaobject
 
-      The `console.dir()` is used to display an interactive list of the properties of the specified JavaScript object as JSON.
+      Belgilangan console.dir() JavaScript obyekti xususiyatlarining interaktiv roʻyxatini JSON sifatida koʻrsatish uchun ishlatiladi.
 
       ```javascript
       const user = { name: 'John', id: 1, city: 'Delhi' };
       console.dir(user);
       ```
 
-      The user object displayed in JSON representation
+      SON ko'rinishida ko'rsatilgan foydalanuvchi ob'ekti
       ![Screenshot](images/console-dir.png)
 
       **[⬆ Back to Top](#table-of-contents)**
 
 371.  ### Konsolda HTML elementlarini disk raskadrovka qilish mumkinmi?
 
-      Yes, it is possible to get and debug HTML elements in the console just like inspecting elements.
+      Ha, xuddi elementlarni tekshirish kabi konsolda HTML elementlarini olish va disk raskadrovka qilish mumkin.
 
       ```javascript
       const element = document.getElementsByTagName('body')[0];
       console.log(element);
       ```
 
-      It prints the HTML element in the console,
+      U HTML elementini konsolda chop etadi,
 
       ![Screenshot](images/console-html.png)
 
@@ -6469,7 +6463,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 372.  ### Konsol ob'ekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkinconsole object
 
-      The `console.table()` is used to display data in the console in a tabular format to visualize complex arrays or objects.
+      console.table() Murakkab massivlar yoki ob'ektlarni ko'rish uchun konsoldagi ma'lumotlarni jadval ko'rinishida ko'rsatish uchun ishlatiladi .
 
       ```js
       const users = [
@@ -6480,16 +6474,16 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.table(users);
       ```
 
-      The data visualized in a table format,
+      Jadval formatida tasvirlangan ma'lumotlar,
 
       ![Screenshot](images/console-table.png)
-      **Not:** Remember that `console.table()` is not supported in IE.
+      **Not:** console.table() IE da qo'llab-quvvatlanmasligini unutmang .
 
       **[⬆ Back to Top](#table-of-contents)**
 
 373.  ### Argument son yoki son emasligini qanday tekshirish mumkinnot
 
-      The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
+      IsNaN va isFinite usullarining kombinatsiyasi argument son yoki yo'qligini tasdiqlash uchun ishlatiladi.
 
       ```javascript
       function isNumber(n) {
@@ -6501,7 +6495,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 374.  ### Buferga nusxa ko'chirish tugmasi qanday yaratiladi
 
-      You need to select the content(using .select() method) of the input element and execute the copy command with execCommand (i.e, execCommand('copy')). You can also execute other system commands like cut and paste.
+      Kirish elementining mazmunini (.select() usuli yordamida) tanlashingiz va execCommand (ya'ni, execCommand('copy')) bilan nusxa ko'chirish buyrug'ini bajarishingiz kerak. Kesish va joylashtirish kabi boshqa tizim buyruqlarini ham bajarishingiz mumkin.
 
       ```javascript
       document.querySelector('#copy-button').onclick = function () {
@@ -6516,7 +6510,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 375.  ### Timestamp uchun shortcut nima
 
-      You can use `new Date().getTime()` to get the current timestamp. There is an alternative shortcut to get the value.
+      new Date().getTime() Joriy vaqt tamg'asini olish uchun foydalanishingiz mumkin . Qiymatni olish uchun muqobil yorliq mavjud.
 
       ```javascript
       console.log(+new Date());
@@ -6527,14 +6521,14 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 376.  ### Ko'p o'lchovli massivlarni qanday tekislash mumkin
 
-      Flattening bi-dimensional arrays is trivial with Spread operator.
+      Ikki o'lchovli massivlarni tekislash Spread operatori bilan ahamiyatsiz.
 
       ```javascript
       const biDimensionalArr = [11, [22, 33], [44, 55], [66, 77], 88, 99];
       const flattenArr = [].concat(...biDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
       ```
 
-      But you can make it work with multi-dimensional arrays by recursive calls,
+      Lekin siz uni rekursiv qo'ng'iroqlar orqali ko'p o'lchovli massivlar bilan ishlashingiz mumkin,
 
       ```javascript
       function flattenMultiArray(arr) {
@@ -6555,7 +6549,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 377.  ### Ko'p holatni tekshirishning(multi condition checking) eng oson usuli
 
-      You can use `indexOf` to compare input with multiple values instead of checking each value as one condition.
+      indexOf Har bir qiymatni bitta shart sifatida tekshirish o'rniga, kirishni bir nechta qiymatlar bilan solishtirish uchun foydalanishingiz mumkin .
 
       ```javascript
       // Verbose approach
@@ -6577,7 +6571,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 378.  ### Brauzerning orqaga tugmachasini qanday suratga olasiz
 
-      The `window.onbeforeunload` method is used to capture browser back button events. This is helpful to warn users about losing the current data.
+      Usul window.onbeforeunload brauzerning orqaga tugmasi hodisalarini yozib olish uchun ishlatiladi. Bu foydalanuvchilarni joriy ma'lumotlarni yo'qotish haqida ogohlantirish uchun foydalidir.
 
       ```javascript
       window.onbeforeunload = function () {
@@ -6589,7 +6583,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 379.  ### Veb-sahifada sichqonchaning o'ng tugmachasini qanday o'chirib qo'yish mumkin
 
-      The right click on the page can be disabled by returning false from the `oncontextmenu` attribute on the body element.
+      oncontextmenu Body elementidagi atributdan false qiymatini qaytarish orqali sahifani o'ng tugmasini bosishni o'chirib qo'yish mumkin .
 
       ```html
       <body oncontextmenu="return false;"></body>
@@ -6599,7 +6593,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 380.  ### O'rash ob'ektlari(wrapper object) nima
 
-      Primitive Values like string,number and boolean don't have properties and methods but they are temporarily converted or coerced to an object(Wrapper object) when you try to perform actions on them. For example, if you apply toUpperCase() method on a primitive string value, it does not throw an error but returns uppercase of the string.
+      String, raqam va mantiqiy kabi ibtidoiy qiymatlar xossa va usullarga ega emas, lekin ular ustida amallarni bajarishga harakat qilganingizda ular vaqtincha ob'ektga (Wrapper ob'ekti) aylantiriladi yoki majburlanadi. Misol uchun, agar siz ibtidoiy satr qiymatida toUpperCase() usulini qo'llasangiz, u xatoga yo'l qo'ymaydi, lekin satrning bosh harfini qaytaradi.
 
       ```javascript
       let name = 'john';
@@ -6607,19 +6601,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(name.toUpperCase()); // Behind the scenes treated as console.log(new String(name).toUpperCase());
       ```
 
-      i.e, Every primitive except null and undefined have Wrapper Objects and the list of wrapper objects are String,Number,Boolean,Symbol and BigInt.
+      Ya'ni, null va undefineddan tashqari har bir ibtidoiy o'rash ob'ektlariga ega va o'rash ob'ektlari ro'yxati: String, Number, Boolean, Symbol va BigInt.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 381.  ### AJAX nima
 
-      AJAX stands for Asynchronous JavaScript and XML and it is a group of related technologies(HTML, CSS, JavaScript, XMLHttpRequest API etc) used to display data asynchronously. i.e. We can send data to the server and get data from the server without reloading the web page.
+      AJAX asinxron JavaScript va XML degan ma'noni anglatadi va u ma'lumotlarni asinxron tarzda ko'rsatish uchun ishlatiladigan tegishli texnologiyalar (HTML, CSS, JavaScript, XMLHttpRequest API va boshqalar) guruhidir. ya'ni veb-sahifani qayta yuklamasdan serverga ma'lumotlarni yuborishimiz va serverdan ma'lumotlarni olishimiz mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 382.  ### Asinxron kod bilan ishlashning turli usullari qandayAsynchronous Code
 
-      Below are the list of different ways to deal with Asynchronous code.
+      Quyida asenkron kod bilan ishlashning turli usullari ro'yxati keltirilgan.
 
       1.  Callbacks
       2.  Promises
@@ -6630,13 +6624,12 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 383.  ### Qanday qilib qabul qilishni bekor qilish mumkin
 
-      Until a few days back, One shortcoming of native promises is no direct way to cancel a fetch request. But the new `AbortController` from js specification allows you to use a signal to abort one or multiple fetch calls.
-      The basic flow of cancelling a fetch request would be as below,
+      Bir necha kun oldin, mahalliy va'dalarning bitta kamchiliklari olib kelish so'rovini bekor qilishning bevosita usuli emas. Ammo AbortControllerjs spetsifikatsiyasining yangisi bir yoki bir nechta chaqiruvlarni bekor qilish uchun signaldan foydalanishga imkon beradi. Yuklab olish so'rovini bekor qilishning asosiy oqimi quyidagicha bo'ladi:
 
-      1.  Create an `AbortController` instance
-      2.  Get the signal property of an instance and pass the signal as a fetch option for signal
-      3.  Call the AbortController's abort property to cancel all fetches that use that signal
-          For example, let's pass the same signal to multiple fetch calls will cancel all requests with that signal,
+      1.  AbortController Misol yarating
+      2.  Misolning signal xususiyatini oling va signalni signalni olish varianti sifatida uzating
+      3.  Ushbu signaldan foydalanadigan barcha chaqiruvlarni bekor qilish uchun AbortController-ning bekor qilish xususiyatiga chaqiradi
+          Masalan, bir xil signalni bir nechta chaqiruv qo'ng'iroqlariga o'tkazamiz, bu signal bilan barcha so'rovlarni bekor qiladi,
 
       ```javascript
       const controller = new AbortController();
@@ -6670,10 +6663,10 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 384.  ### Veb nutq API (web speech API) nima ?
 
-      Web speech API is used to enable modern browsers recognize and synthesize speech(i.e, voice data into web apps). This API has been introduced by W3C Community in the year 2012. It has two main parts,
+      Veb nutq API-si zamonaviy brauzerlarga nutqni (ya'ni, ovozli ma'lumotlarni veb-ilovalarda) tanib olish va sintez qilish imkonini berish uchun ishlatiladi. Ushbu API 2012 yilda W3C hamjamiyati tomonidan taqdim etilgan. U ikkita asosiy qismdan iborat:
 
-      1.  **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** It provides the ability to recognize voice context from an audio input and respond accordingly. This is accessed by the `SpeechRecognition` interface.
-          The below example shows on how to use this API to get text from speech,
+      1.  **SpeechRecognition (Asynchronous Speech Recognition or Speech-to-Text):** Bu audio kiritishdan ovozli kontekstni tanib olish va shunga mos ravishda javob berish imkoniyatini beradi. Bunga SpeechRecognition interfeys orqali kirish mumkin.
+          Quyidagi misol nutqdan matn olish uchun ushbu APIdan qanday foydalanishni ko'rsatadi,
 
       ```javascript
       window.SpeechRecognition =
@@ -6687,10 +6680,11 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       recognition.start();
       ```
 
-      In this API, browser is going to ask you for permission to use your microphone
+      Ushbu API-da brauzer sizdan mikrofoningizdan foydalanishga ruxsat so'raydi
 
-      1.  **SpeechSynthesis (Text-to-Speech):** It provides the ability to recognize voice context from an audio input and respond. This is accessed by the `SpeechSynthesis` interface.
-          For example, the below code is used to get voice/speech from text,
+      1.  **SpeechSynthesis (Text-to-Speech):** Bu audio kiritishdan ovozli kontekstni tanib olish va javob berish imkoniyatini beradi. Bunga SpeechSynthesisinterfeys orqali kirish mumkin.
+
+      Masalan, matndan ovoz/nutq olish uchun quyidagi kod ishlatiladi,
 
       ```javascript
       if ('speechSynthesis' in window) {
@@ -6700,18 +6694,16 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      The above examples can be tested on chrome(33+) browser's developer console.
-      **Note:** This API is still a working draft and only available in Chrome and Firefox browsers(ofcourse Chrome only implemented the specification)
+      Yuqoridagi misollarni chrome(33+) brauzerining dasturchi konsolida sinab ko'rish mumkin.
+      **Note:** Bu API hali ham ishlayotgan qoralama va faqat Chrome va Firefox brauzerlarida mavjud (albatta Chrome faqat spetsifikatsiyani amalga oshirgan)
 
       **[⬆ Back to Top](#table-of-contents)**
 
 385.  ### Minimal vaqt tugashini kamaytirish(minimum timeout) nima
 
-      Both browser and NodeJS javascript environments throttles with a minimum delay that is greater than 0ms. That means even though setting a delay of 0ms will not happen instantaneously.
-      **Browsers:** They have a minimum delay of 4ms. This throttle occurs when successive calls are triggered due to callback nesting(certain depth) or after a certain number of successive intervals.
-      Note: The older browsers have a minimum delay of 10ms.
-      **Nodejs:** They have a minimum delay of 1ms. This throttle happens when the delay is larger than 2147483647 or less than 1.
-      The best example to explain this timeout throttling behavior is the order of below code snippet.
+      Brauzer va NodeJS javascript muhitlari 0 ms dan ortiq minimal kechikish bilan siqiladi. Bu shuni anglatadiki, 0ms kechikish bir zumda sodir bo'lmaydi.
+      **Browsers:** Ularda kamida 4ms kechikish bor. callbacklarni joylashtirish (ma'lum bir chuqurlik) tufayli yoki ma'lum bir qator ketma-ket oraliqlardan keyin ketma-ket qo'ng'iroqlar ishga tushirilganda, bu regulyator sodir bo'ladi. Eslatma: Eski brauzerlarda kamida 10 ms kechikish mavjud.
+      **Nodejs:** Ularda kamida 1ms kechikish bor. Bu drossel kechikish 2147483647 dan kattaroq yoki 1 dan kamroq bo'lsa sodir bo'ladi. Bu vaqt tugashini qisqartirish xatti-harakatini tushuntirishga eng yaxshi misol quyida keltirilgan kod parchasi tartibidir.
 
       ```javascript
       function runMeFirst() {
@@ -6721,14 +6713,14 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log('Script loaded');
       ```
 
-      and the output would be in
+      va natija mana shunday boladi
 
       ```cmd
       Script loaded
       My script is initialized
       ```
 
-      If you don't use `setTimeout`, the order of logs will be sequential.
+      dan foydalanmasangiz `setTimeout`, jurnallar tartibi ketma-ket bo'ladi.
 
       ```javascript
       function runMeFirst() {
@@ -6749,27 +6741,26 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 386.  ### Zamonaviy brauzerlarda nol vaqt tugashini qanday amalga oshirasizbrowsers
 
-      You can't use setTimeout(fn, 0) to execute the code immediately due to minimum delay of greater than 0ms. But you can use window.postMessage() to achieve this behavior.
+      0ms dan ortiq minimal kechikish tufayli kodni darhol bajarish uchun setTimeout(fn, 0) dan foydalana olmaysiz. Ammo bu xatti-harakatga erishish uchun window.postMessage() dan foydalanishingiz mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 387.  ### Event loop qanday vazifalar mavjud
 
-      A task is any javascript code/program which is scheduled to be run by the standard mechanisms such as initially starting to run a program, run an event callback, or an interval or timeout being fired. All these tasks are scheduled on a task queue.
-      Below are the list of use cases to add tasks to the task queue,
+      Vazifa - bu dasturni ishga tushirishni boshlash, voqeani callbackni boshlash yoki ishdan bo'shatilgan interval yoki vaqt tugashi kabi standart mexanizmlar tomonidan ishga tushirilishi rejalashtirilgan har qanday JavaScript kodi/dasturidir. Bu vazifalarning barchasi vazifa navbatida rejalashtirilgan.
+      Quyida vazifalar navbatiga vazifalar qo'shish uchun foydalanish holatlari ro'yxati keltirilgan,
 
-      1.  When a new javascript program is executed directly from console or running by the `<script>` element, the task will be added to the task queue.
-      2.  When an event fires, the event callback added to task queue
-      3.  When a setTimeout or setInterval is reached, the corresponding callback added to task queue
+      1.  Yangi JavaScript dasturi to'g'ridan-to'g'ri konsoldan yoki `<script>` element tomonidan ishga tushirilganda, vazifa vazifalar qatoriga qo'shiladi.
+      2.  Voqea sodir bo'lganda, voqeani callback vazifa navbatiga qo'shiladi
+      3.  SetTimeout yoki setIntervalga erishilganda, tegishli callback vazifa navbatiga qo'shiladi
 
       **[⬆ Back to Top](#table-of-contents)**
 
 388.  ### Mikrovazifa(microtask) nima
 
-      Microtask is the javascript code which needs to be executed immediately after the currently executing task/microtask is completed. They are kind of blocking in nature. i.e, The main thread will be blocked until the microtask queue is empty.
-      The main sources of microtasks are Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers etc
+      Microtask bu hozir bajarilayotgan vazifa/mikrotask bajarilgandan so'ng darhol bajarilishi kerak bo'lgan javascript kodi. Ular tabiatan to'siq bo'ladi. ya'ni, mikrovazifalar navbati bo'sh bo'lgunga qadar asosiy mavzu bloklanadi. Mikrotopshiriqlarning asosiy manbalari Promise.resolve, Promise.reject, MutationObservers, IntersectionObservers va boshqalar.
 
-      **Note:** All of these microtasks are processed in the same turn of the event loop.
+      **Note:** Ushbu mikrovazifalarning barchasi voqea tsiklining bir xil aylanishida qayta ishlanadi.
       **[⬆ Back to Top](#table-of-contents)**
 
 389.  ### What are different event loops
@@ -6782,13 +6773,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 391.  ### Typescript faylida javascript kutubxonalaridan qanday foydalanasizfile
 
-      It is known that not all JavaScript libraries or frameworks have TypeScript declaration files. But if you still want to use libraries or frameworks in our TypeScript files without getting compilation errors, the only solution is `declare` keyword along with a variable declaration. For example, let's imagine you have a library called `customLibrary` that doesn’t have a TypeScript declaration and have a namespace called `customLibrary` in the global namespace. You can use this library in typescript code as below,
+      Ma'lumki, hamma JavaScript kutubxonalari yoki ramkalarida TypeScript deklaratsiya fayllari mavjud emas. Ammo agar siz hali ham TypeScript fayllarimizdagi kutubxonalar yoki ramkalardan kompilyatsiya xatosiga yo'l qo'ymasdan foydalanmoqchi bo'lsangiz, yagona yechim - declareo'zgaruvchan deklaratsiya bilan birga kalit so'z. Misol uchun, sizda customLibraryTypeScript deklaratsiyasiga ega bo'lmagan va customLibraryglobal nomlar maydonida nom maydoniga ega bo'lgan kutubxonangiz bor deb tasavvur qilaylik. Siz ushbu kutubxonadan quyidagi matn kodida foydalanishingiz mumkin,
 
       ```javascript
       declare var customLibrary;
       ```
 
-      In the runtime, typescript will provide the type to the `customLibrary` variable as `any` type. The another alternative without using declare keyword is below
+      Ishlash vaqtida typescript customLibraryo'zgaruvchiga tur sifatida anyturni beradi. Declare kalit so'zini ishlatmasdan boshqa alternativa quyida keltirilgan
 
       ```javascript
       var customLibrary: any;
@@ -6798,22 +6789,21 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 392.  ### Promises va kuzatilishi mumkin bo'lganlar o'rtasidagi farqlar qandayobservables
 
-      Some of the major difference in a tabular form
+      Jadval shaklidagi asosiy farqlardan ba'zilari
 
-      | Promises                                                           | Observables                                                                              |
-      | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-      | Emits only a single value at a time                                | Emits multiple values over a period of time(stream of values ranging from 0 to multiple) |
-      | Eager in nature; they are going to be called immediately           | Lazy in nature; they require subscription to be invoked                                  |
-      | Promise is always asynchronous even though it resolved immediately | Observable can be either synchronous or asynchronous                                     |
-      | Doesn't provide any operators                                      | Provides operators such as map, forEach, filter, reduce, retry, and retryWhen etc        |
-      | Cannot be canceled                                                 | Canceled by using unsubscribe() method                                                   |
+      | Promises                                                   | Observables                                                                                      |
+      | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+      | Bir vaqtning o'zida faqat bitta qiymat chiqaradi           | Muayyan vaqt davomida bir nechta qiymatlarni chiqaradi (0 dan bir nechta qiymatlar oqimi)        |
+      | Tabiatda ishtiyoqli; ular darhol chaqiriladi               | Tabiatan dangasa; ular obunani chaqirishni talab qiladi                                          |
+      | Va'da darhol hal qilingan bo'lsa ham, har doim asinxrondir | Kuzatiladigan sinxron yoki asinxron bo'lishi mumkin                                              |
+      | Hech qanday operatorni taqdim etmaydi                      | Map, forEach, filtrlash, kamaytirish, qayta urinish va retryWhen kabi operatorlarni taqdim etadi |
+      | Bekor qilish mumkin emas                                   | unsubscribe() usuli yordamida bekor qilindi                                                      |
 
       **[⬆ Back to Top](#table-of-contents)**
 
 393.  ### Heap nima
 
-      Heap(Or memory heap) is the memory location where objects are stored when we define variables. i.e, This is the place where all the memory allocations and de-allocation take place. Both heap and call-stack are two containers of JS runtime.
-      Whenever runtime comes across variables and function declarations in the code it stores them in the Heap.
+      Heap(Yoki xotira uyasi) - bu o'zgaruvchilarni aniqlaganimizda ob'ektlar saqlanadigan xotira joyi. Ya'ni, bu barcha xotira taqsimoti va ajratish joyi bo'lgan joy. Uyma va qo'ng'iroqlar to'plami ham JS ish vaqtining ikkita konteyneridir. Ish vaqti kodda o'zgaruvchilar va funksiya deklaratsiyasiga duch kelganda, ularni Uyumda saqlaydi.
 
       ![Screenshot](images/heap.png)
 
@@ -6821,8 +6811,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 394.  ### Voqealar jadvali(event table) nima
 
-      Event Table is a data structure that stores and keeps track of all the events which will be executed asynchronously like after some time interval or after the resolution of some API requests. i.e Whenever you call a setTimeout function or invoke async operation, it is added to the Event Table.
-      It doesn't not execute functions on it’s own. The main purpose of the event table is to keep track of events and send them to the Event Queue as shown in the below diagram.
+      Voqealar jadvali - bu ma'lum vaqt oralig'idan keyin yoki ba'zi API so'rovlari hal qilinganidan keyin asinxron tarzda bajariladigan barcha hodisalarni saqlaydigan va kuzatib boruvchi ma'lumotlar tuzilmasi. ya'ni setTimeout funksiyasini chaqirganingizda yoki asinxron operatsiyani chaqirganingizda, u Voqealar jadvaliga qo'shiladi. U o'z-o'zidan funktsiyalarni bajarmaydi. Voqealar jadvalining asosiy maqsadi voqealarni kuzatib borish va ularni quyidagi diagrammada ko'rsatilganidek, voqea navbatiga yuborishdir.
 
       ![Screenshot](images/event-table.png)
 
@@ -6830,22 +6819,19 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 395.  ### MicroTask navbati nima
 
-      Microtask Queue is the new queue where all the tasks initiated by promise objects get processed before the callback queue.
-      The microtasks queue are processed before the next rendering and painting jobs. But if these microtasks are running for a long time then it leads to visual degradation.
+      Microtask Queue - bu va'da qilingan ob'ektlar tomonidan boshlangan barcha vazifalar callback qilish navbatidan oldin qayta ishlanadigan yangi navbat. Mikrovazifalar navbati keyingi renderlash va bo'yash ishlaridan oldin qayta ishlanadi. Ammo agar bu mikrovazifalar uzoq vaqt davomida ishlayotgan bo'lsa, bu vizual buzilishlarga olib keladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 396.  ### Shim va polifill o'rtasidagi farq nima
 
-      A shim is a library that brings a new API to an older environment, using only the means of that environment. It isn't necessarily restricted to a web application. For example, es5-shim.js is used to emulate ES5 features on older browsers (mainly pre IE9).
-      Whereas polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively.
-      In a simple sentence, A polyfill is a shim for a browser API.
+      Shim bu faqat shu muhit vositalaridan foydalangan holda eski muhitga yangi API olib keladigan kutubxona. Bu veb-ilova bilan cheklanishi shart emas. Masalan, es5-shim.js eski brauzerlarda (asosan IE9-dan oldingi) ES5 xususiyatlarini taqlid qilish uchun ishlatiladi. Holbuki, polyfill bu kod (yoki plagin) boʻlagi boʻlib, u siz, ishlab chiquvchi, brauzer mahalliy sifatida taqdim etishini kutgan texnologiyani taʼminlaydi. Oddiy jumla bilan aytganda, polyfill brauzer API uchun shimdir.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 397.  ### Primitiv yoki primitiv bo'lmagan qiymat turini qanday aniqlash mumkinvalue type
 
-      In JavaScript, primitive types include boolean, string, number, BigInt, null, Symbol and undefined. Whereas non-primitive types include the Objects. But you can easily identify them with the below function,
+      JavaScript-da ibtidoiy turlarga boolean, string, number, BigInt, null, Symbol va undefined kiradi. Holbuki, ibtidoiy bo'lmagan turlarga Ob'ektlar kiradi. Lekin siz ularni quyidagi funksiya bilan osongina aniqlashingiz mumkin,
 
       ```javascript
       var myPrimitive = 30;
@@ -6858,43 +6844,43 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       isPrimitive(myNonPrimitive);
       ```
 
-      If the value is a primitive data type, the Object constructor creates a new wrapper object for the value. But If the value is a non-primitive data type (an object), the Object constructor will give the same object.
+      Agar qiymat ibtidoiy ma'lumotlar turi bo'lsa, Ob'ekt konstruktori qiymat uchun yangi o'rash ob'ektini yaratadi. Ammo agar qiymat ibtidoiy bo'lmagan ma'lumotlar turi (ob'ekt) bo'lsa, Ob'ekt konstruktori xuddi shu ob'ektni beradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 398.  ### Babel nima
 
-      Babel is a JavaScript transpiler to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Some of the main features are listed below,
+      Babel - bu ECMAScript 2015+ kodini joriy va eski brauzerlar yoki muhitlarda JavaScript-ning orqaga qarab mos keladigan versiyasiga aylantirish uchun JavaScript transpilyatoridir. Ba'zi asosiy xususiyatlar quyida keltirilgan,
 
       1.  Transform syntax
-      2.  Polyfill features that are missing in your target environment (using @babel/polyfill)
-      3.  Source code transformations (or codemods)
+      2.  Maqsadli muhitda etishmayotgan Polyfill xususiyatlari (@babel/polyfill yordamida)
+      3.  Manba kodini o'zgartirish (yoki kod modlari)
 
       **[⬆ Back to Top](#table-of-contents)**
 
 399.  ### Node.js butunlay bitta tishlimi (single threaded)
 
-      Node is a single thread, but some of the functions included in the Node.js standard library(e.g, fs module functions) are not single threaded. i.e, Their logic runs outside of the Node.js single thread to improve the speed and performance of a program.
+      Node bu bitta ip (single thread), lekin Node.js standart kutubxonasiga kiritilgan ba'zi funksiyalar (masalan, fs moduli funktsiyalari) bitta tishli emas. ya'ni, ularning mantig'i dasturning tezligi va ishlashini yaxshilash uchun Node.js bitta ish zarrachasidan tashqarida ishlaydi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 400.  ### Kuzatiladigan narsalardan qanday umumiy foydalanish holatlari mavjud
 
-      Some of the most common use cases of observables are web sockets with push notifications, user input changes, repeating intervals, etc
+      Kuzatiladigan qurilmalardan foydalanishning eng keng tarqalgan holatlaridan ba'zilari push-bildirishnomalari, foydalanuvchi kiritishidagi o'zgarishlar, takroriy intervallar va boshqalar bilan veb-rozetkalardir.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 401.  ### RxJS nima
 
-      RxJS (Reactive Extensions for JavaScript) is a library for implementing reactive programming using observables that makes it easier to compose asynchronous or callback-based code. It also provides utility functions for creating and working with observables.
+      RxJS (Reactive Extensions for JavaScript) bu asinxron yoki callbackqa asoslangan kodni yaratishni osonlashtiradigan kuzatiladiganlardan foydalangan holda reaktiv dasturlashni amalga oshirish uchun kutubxona. Shuningdek, u kuzatiladiganlarni yaratish va ular bilan ishlash uchun yordamchi funksiyalarni taqdim etadi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 402.  ### Funktsiya konstruktori va funksiya deklaratsiyasi o'rtasidagi farq nimaconstructor and function declaration
 
-      The functions which are created with `Function constructor` do not create closures to their creation contexts but they are always created in the global scope. i.e, the function can access its own local variables and global scope variables only. Whereas function declarations can access outer function variables(closures) too.
+      Bilan yaratilgan funksiyalar Function constructoro'zlarining yaratilish kontekstlariga chek qo'ymaydi, lekin ular doimo global miqyosda yaratiladi. ya'ni, funksiya faqat o'zining mahalliy o'zgaruvchilari va global qamrov o'zgaruvchilariga kirishi mumkin. Holbuki, funktsiya deklaratsiyasi tashqi funktsiya o'zgaruvchilariga (yopiqlar) ham kirishi mumkin.
 
-      Let's see this difference with an example,
+Keling, bu farqni misol bilan ko'rib chiqaylik,
 
       **Function Constructor:**
 
@@ -6924,7 +6910,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 403.  ### Qisqa tutashuv holati (Short circuit condition) nima
 
-      Short circuit conditions are meant for condensed way of writing simple if statements. Let's demonstrate the scenario using an example. If you would like to login to a portal with an authentication condition, the expression would be as below,
+      Qisqa tutashuv shartlari oddiy if iboralarini siqilgan tarzda yozish uchun mo'ljallangan. Keling, misol yordamida stsenariyni namoyish qilaylik. Agar siz autentifikatsiya sharti bilan portalga kirmoqchi boʻlsangiz, quyidagi ifoda boʻladi:
 
       ```javascript
       if (authenticate) {
@@ -6932,7 +6918,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      Since the javascript logical operators evaluated from left to right, the above expression can be simplified using && logical operator
+      Javascript mantiqiy operatorlari chapdan o'ngga qarab baholanganligi sababli, yuqoridagi ifodani && mantiqiy operatori yordamida soddalashtirish mumkin.
 
       ```javascript
       authenticate && loginToPorta();
@@ -6942,7 +6928,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 404.  ### Massiv hajmini o'zgartirishning eng oson yo'li qanday?
 
-      The length property of an array is useful to resize or empty an array quickly. Let's apply length property on number array to resize the number of elements from 5 to 2,
+      Massivning uzunlik xossasi massiv o‘lchamini o‘zgartirish yoki tezda bo‘shatish uchun foydalidir. Elementlar sonini 5 dan 2 gacha o'zgartirish uchun raqamlar massivida uzunlik xususiyatini qo'llaymiz,
 
       ```javascript
       var array = [1, 2, 3, 4, 5];
@@ -6953,7 +6939,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(array); // [1,2]
       ```
 
-      and the array can be emptied too
+      and the array can be emptied too va array ham boshatilishi mumkin
 
       ```javascript
       var array = [1, 2, 3, 4, 5];
@@ -6966,8 +6952,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 405.  ### Kuzatiladigan narsa nima
 
-      An Observable is basically a function that can return a stream of values either synchronously or asynchronously to an observer over time. The consumer can get the value by calling `subscribe()` method.
-      Let's look at a simple example of an Observable
+      Kuzatiladigan funksiya asosan qiymatlar oqimini kuzatuvchiga vaqt o‘tishi bilan sinxron yoki asinxron tarzda qaytarishi mumkin bo‘lgan funksiyadir. Iste'molchi qo'ng'iroq subscribe()qilish usuli orqali qiymatni olishi mumkin. Keling, kuzatilishi mumkin bo'lgan oddiy misolni ko'rib chiqaylik
 
       ```javascript
       import { Observable } from 'rxjs';
@@ -6983,13 +6968,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
       ![Screenshot](images/observables.png)
 
-      **Note:** Observables are not part of the JavaScript language yet but they are being proposed to be added to the language
+      **Note:** Kuzatiladiganlar hali JavaScript tilining bir qismi emas, lekin ularni tilga qo'shish taklif qilinmoqda
 
       **[⬆ Back to Top](#table-of-contents)**
 
-406.  ### Funktsiya va sinf deklaratsiyasi o'rtasidagi farq nimadeclarations
+406.  ### Funktsiya va sinf(class) deklaratsiyasi o'rtasidagi farq nimadeclarations
 
-      The main difference between function declarations and class declarations is `hoisting`. The function declarations are hoisted but not class declarations.
+      unktsiya deklaratsiyasi va class deklaratsiyasi o'rtasidagi asosiy farq shundaki `hoisting`. Funktsiya deklaratsiyasi ko'tariladi, lekin sinf deklaratsiyasi emas.
 
       **Classes:**
 
@@ -7011,9 +6996,9 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 407.  ### Asinx funksiya nima
 
-      An async function is a function declared with the `async` keyword which enables asynchronous, promise-based behavior to be written in a cleaner style by avoiding promise chains. These functions can contain zero or more `await` expressions.
+      Asinx funksiya asynckalit so'z bilan e'lon qilingan funksiya bo'lib, asinxron, va'daga asoslangan xatti-harakatlarni va'da zanjirlaridan qochib, toza uslubda yozish imkonini beradi. Bu funktsiyalar nol yoki undan ko'p awaitifodalarni o'z ichiga olishi mumkin.
 
-      Let's take a below async function example,
+      Keling, quyida async funktsiyasi misolini olaylik,
 
       ```javascript
       async function logger() {
@@ -7023,15 +7008,15 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       logger();
       ```
 
-      It is basically syntax sugar over ES2015 promises and generators.
+      Bu asosan ES2015 va'dalari va generatorlari bo'yicha sintaksis shakaridir.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 408.  ### Qanday qilib va'dalarni yutish(promise swallowing) xatolarining oldini olish mumkin
 
-      While using asynchronous code, JavaScript’s ES6 promises can make your life a lot easier without having callback pyramids and error handling on every second line. But Promises have some pitfalls and the biggest one is swallowing errors by default.
+      Asinxron koddan foydalanganda, JavaScript-ning ES6 va'dalari callback piramidalarisiz va har ikkinchi qatorda xatoliklarni bartaraf qilmasdan hayotingizni ancha osonlashtirishi mumkin. Ammo va'dalarning ba'zi tuzoqlari bor va eng kattasi sukut bo'yicha xatolarni yutishdir.
 
-      Let's say you expect to print an error to the console for all the below cases,
+      Aytaylik, siz quyidagi barcha holatlar uchun konsolda xatolikni chop etishni kutmoqdasiz,
 
       ```javascript
       Promise.resolve('promised value').then(function () {
@@ -7047,9 +7032,9 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       });
       ```
 
-      But there are many modern JavaScript environments that won't print any errors. You can fix this problem in different ways,
+      Biroq, hech qanday xatoliklarni chop etmaydigan ko'plab zamonaviy JavaScript muhitlari mavjud. Siz bu muammoni turli yo'llar bilan hal qilishingiz mumkin,
 
-      1.  **Add catch block at the end of each chain:** You can add catch block to the end of each of your promise chains
+      1.  Har bir zanjirning oxiriga ushlash blokini qo'shing: har bir va'da qilingan zanjirning oxiriga tutib olish blokini qo'shishingiz mumkin
 
           ```javascript
           Promise.resolve('promised value')
@@ -7061,9 +7046,9 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
             });
           ```
 
-          But it is quite difficult to type for each promise chain and verbose too.
+          Ammo har bir va'da zanjiri va batafsil ma'lumot uchun yozish juda qiyin.
 
-      2.  **Add done method:** You can replace first solution's then and catch blocks with done method
+      2.  Bajarilgan usulni qo'shish: Birinchi yechimni keyin o'zgartirishingiz va bloklarni bajarilgan usul bilan ushlashingiz mumkin
 
           ```javascript
           Promise.resolve('promised value').done(function () {
@@ -7071,7 +7056,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
           });
           ```
 
-          Let's say you want to fetch data using HTTP and later perform processing on the resulting data asynchronously. You can write `done` block as below,
+          Aytaylik, siz HTTP yordamida ma'lumotlarni olishni xohlaysiz va keyinchalik olingan ma'lumotlarga asinxron tarzda ishlov berishni xohlaysiz. `done` Blokni quyidagi tarzda yozishingiz mumkin ,
 
           ```javascript
           getDataFromHttp()
@@ -7083,7 +7068,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
             });
           ```
 
-          In future, if the processing library API changed to synchronous then you can remove `done` block as below,
+          Kelajakda, agar qayta ishlash kutubxonasi API sinxronlashtirilsa, siz `done` blokni quyidagi tarzda olib tashlashingiz mumkin,
 
           ```javascript
           getDataFromHttp().then(function (result) {
@@ -7091,10 +7076,10 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
           });
           ```
 
-          and then you forgot to add `done` block to `then` block leads to silent errors.
+          va keyin siz jim xatolarga olib keladigan blokirovka qilish uchun blok done qo'shishni unutdingiz.then
 
       3.  **Extend ES6 Promises by Bluebird:**
-          Bluebird extends the ES6 Promises API to avoid the issue in the second solution. This library has a “default” onRejection handler which will print all errors from rejected Promises to stderr. After installation, you can process unhandled rejections
+          Bluebird ikkinchi yechimdagi muammoning oldini olish uchun ES6 Promises API-ni kengaytiradi. Ushbu kutubxonada rad etilgan va'dalardan stderrgacha bo'lgan barcha xatolarni chop etadigan "standart" onRejection ishlov beruvchisi mavjud. O'rnatishdan so'ng, ishlov berilmagan rad etishlarni qayta ishlashingiz mumkin
 
           ```javascript
           Promise.onPossiblyUnhandledRejection(function (error) {
@@ -7102,7 +7087,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
           });
           ```
 
-          and discard a rejection, just handle it with an empty catch
+          va rad etishni rad eting, uni faqat bo'sh ushlash bilan bajaring
 
           ```javascript
           Promise.reject('error value').catch(function () {});
@@ -7112,15 +7097,15 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 409.  ### Deno nima
 
-      Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 JavaScript engine and the Rust programming language.
+      Deno - bu V8 JavaScript dvigateli va Rust dasturlash tilidan foydalanadigan JavaScript va TypeScript uchun oddiy, zamonaviy va xavfsiz ish vaqti.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 410.  ### Qanday qilib ob'ektni javascriptda takrorlanadigan qilish mumkin
 
-      By default, plain objects are not iterable. But you can make the object iterable by defining a `Symbol.iterator` property on it.
+      Odatiy bo'lib, oddiy ob'ektlar takrorlanmaydi. Lekin siz ob'ektga xossani belgilash orqali uni iterable qilishingiz mumkin `Symbol.iterator`.
 
-      Let's demonstrate this with an example,
+      Buni misol bilan ko'rsatamiz,
 
       ```javascript
       const collection = {
@@ -7149,7 +7134,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(iterator.next()); // → {value: undefined, done: true}
       ```
 
-      The above process can be simplified using a generator function,
+      Yuqoridagi jarayonni generator funktsiyasi yordamida soddalashtirish mumkin,
 
       ```javascript
       const collection = {
@@ -7173,9 +7158,9 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 411.  ### To'g'ri quyruq chaqiruvi ( Proper Tail Call ) nima
 
-      First, we should know about tail call before talking about "Proper Tail Call". A tail call is a subroutine or function call performed as the final action of a calling function. Whereas **Proper tail call(PTC)** is a technique where the program or code will not create additional stack frames for a recursion when the function call is a tail call.
+      Birinchidan, "Proper Tail Call" haqida gapirishdan oldin quyruq haqida bilishimiz kerak. Quyi qo'ng'iroq - chaqiruvchi funktsiyaning yakuniy harakati sifatida bajariladigan pastki dastur yoki funktsiya chaqiruvi. Holbuki , **Proper tail call(PTC)** - bu funktsiya chaqiruvi quyruq chaqiruvi bo'lganda, dastur yoki kod rekursiya uchun qo'shimcha stek ramkalarini yaratmaydigan usul.
 
-      For example, the below classic or head recursion of factorial function relies on stack for each step. Each step need to be processed upto `n * factorial(n - 1)`
+      Masalan, faktorial funktsiyaning quyidagi klassik yoki bosh rekursiyasi har bir qadam uchun stekga tayanadi. Har bir bosqichga qadar ishlov berish kerak `n * factorial(n - 1)`
 
       ```javascript
       function factorial(n) {
@@ -7187,7 +7172,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(factorial(5)); //120
       ```
 
-      But if you use Tail recursion functions, they keep passing all the necessary data it needs down the recursion without relying on the stack.
+      Ammo agar siz Tail rekursiya funksiyalaridan foydalansangiz, ular stekga tayanmasdan, kerakli barcha kerakli ma’lumotlarni rekursiyaga o‘tkazishda davom etadi.
 
       ```javascript
       function factorial(n, acc = 1) {
@@ -7199,13 +7184,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(factorial(5)); //120
       ```
 
-      The above pattern returns the same output as the first one. But the accumulator keeps track of total as an argument without using stack memory on recursive calls.
+      Yuqoridagi naqsh birinchisi bilan bir xil natijani qaytaradi. Ammo akkumulyator rekursiv qo'ng'iroqlarda stek xotirasidan foydalanmasdan jami argument sifatida hisobini yuritadi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 412.  ### Ob'ektni Promise(va’da) ekani yoki yoq ekanini qanday tekshirish mumkin
 
-      If you don't know if a value is a promise or not, wrapping the value as `Promise.resolve(value)` which returns a promise
+      Agar qiymat va'dami yoki yo'qligini bilmasangiz, va'dani `Promise.resolve(value)` qaytaradigan qiymat sifatida o'rash
 
       ```javascript
       function isPromise(object) {
@@ -7225,7 +7210,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(isPromise(promise)); // true
       ```
 
-      Another way is to check for `.then()` handler type
+      Yana bir usul - `.then()`ishlov beruvchi turini tekshirish
 
       ```javascript
       function isPromise(value) {
@@ -7244,10 +7229,10 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 413.  ### Funktsiya konstruktor sifatida chaqirilganligini qanday aniqlash mumkinconstructor
 
-      You can use `new.target` pseudo-property to detect whether a function was called as a constructor(using the new operator) or as a regular function call.
+      `new.target` Pseudo-xususiyatdan funktsiya konstruktor (yangi operator yordamida) yoki oddiy funksiya chaqiruvi sifatida chaqirilganligini aniqlash uchun foydalanishingiz mumkin .
 
-      1.  If a constructor or function invoked using the new operator, new.target returns a reference to the constructor or function.
-      2.  For function calls, new.target is undefined.
+      1.  Agar konstruktor yoki funksiya new operatori yordamida chaqirilsa, new.target konstruktor yoki funksiyaga havolani qaytaradi.
+      2.  Funktsiya chaqiruvlari uchun new.target aniqlanmagan.
 
       ```javascript
       function Myfunc() {
@@ -7267,23 +7252,23 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 414.  ### Argumentlar ob'ekti va Rest parametri o'rtasidagi farqlar qandayand rest parameter
 
-      There are three main differences between arguments object and rest parameters
+      Argumentlar ob'ekti va dam olish parametrlari o'rtasida uchta asosiy farq mavjud
 
-      1.  The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
-      2.  The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
-      3.  The rest parameters are only the ones that haven’t been given a separate name, while the arguments object contains all arguments passed to the function
+      1.  Argumentlar ob'ekti massivga o'xshaydi, lekin massiv emas. Qolgan parametrlar esa massiv misollaridir.
+      2.  Argumentlar obyekti tartiblash, xaritalash, forEach yoki pop kabi usullarni qo‘llab-quvvatlamaydi. Holbuki, bu usullar dam olish parametrlarida ishlatilishi mumkin.
+      3.  Qolgan parametrlar faqat alohida nom berilmagan parametrlardir, argumentlar obyekti esa funksiyaga oʻtkazilgan barcha argumentlarni oʻz ichiga oladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 415.  ### Spred operatori va Rest parametri o'rtasidagi farqlar qandayand rest parameter
 
-      Rest parameter collects all remaining elements into an array. Whereas Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. i.e, Rest parameter is opposite to the spread operator.
+      Rest parametri qolgan barcha elementlarni massivga to'playdi. Holbuki, Spread operatori takrorlanuvchilarni (massivlar / ob'ektlar / satrlar) bitta argumentlar / elementlarga kengaytirilishiga imkon beradi. ya'ni, Rest parametri tarqalish operatoriga qarama-qarshidir.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 416.  ### Har xil turdagi generatorlar qanday
 
-      There are five kinds of generators,
+      Besh turdagi generatorlar mavjud,
 
       1.  **Generator function declaration:**
 
@@ -7352,25 +7337,25 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 417.  ### O'rnatilgan iterativlar(built-in) nima
 
-      Below are the list of built-in iterables in javascript,
+      Quyida JavaScript-da o'rnatilgan iterativlar ro'yxati keltirilgan,
 
       1.  Arrays and TypedArrays
-      2.  Strings: Iterate over each character or Unicode code-points
-      3.  Maps: iterate over its key-value pairs
-      4.  Sets: iterates over their elements
-      5.  arguments: An array-like special variable in functions
-      6.  DOM collection such as NodeList
+      2.  Strings: Har bir belgi yoki Unicode kod nuqtalari ustida takrorlang
+      3.  Maps: ikalit-qiymat juftliklarini takrorlash
+      4.  Sets: kalit-qiymat juftliklarini takrorlash
+      5.  arguments: Funktsiyalarda massivga o'xshash maxsus o'zgaruvchi
+      6.  NodeList kabi DOM to'plami
 
       **[⬆ Back to Top](#table-of-contents)**
 
 418.  ### for...of va for... o'rtasida qanday farq bor
 
-      Both for...in and for...of statements iterate over js data structures. The only difference is over what they iterate:
+      Js maʼlumotlar tuzilmalari boʻyicha ham for...in, ham for...of iboralari takrorlanadi. Yagona farq ular takrorlagan narsada:
 
-      1.  for..in iterates over all enumerable property keys of an object
-      2.  for..of iterates over the values of an iterable object.
+      1.  for..in ob'ektning barcha sanab o'tiladigan xususiyat kalitlari bo'ylab takrorlanadi
+      2.  for..of iteratsiya qilinadigan ob'ektning qiymatlari ustidan takrorlanadi.
 
-      Let's explain this difference with an example,
+      Keling, bu farqni misol bilan tushuntiramiz,
 
       ```javascript
       let arr = ['a', 'b', 'c'];
@@ -7388,13 +7373,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over the array object. The for..of loop iterates over the values of a arr data structure and logs a, b, c in the console.
+      For..in tsikli ob'ekt tugmalari ustida takrorlanganligi sababli, birinchi sikl massiv ob'ekti bo'ylab takrorlanayotganda 0, 1, 2 va newProp ni qayd qiladi. For..of sikli arr maʼlumotlar strukturasi qiymatlari ustidan takrorlanadi va konsolda a, b, c jurnallarini qayd qiladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 419.  ### Namuna(instance) va namuna bo'lmagan(non-instance) xususiyatlarni qanday aniqlaysiz
 
-      The Instance properties must be defined inside of class methods. For example, name and age properties defined insider constructor as below,
+      Instance xususiyatlari sinf usullari ichida aniqlanishi kerak. Masalan, ism va yosh xususiyatlari insayder konstruktorni quyidagi tarzda aniqlaydi,
 
       ```javascript
       class Person {
@@ -7405,7 +7390,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       }
       ```
 
-      But Static(class) and prototype data properties must be defined outside of the ClassBody declaration. Let's assign the age value for Person class as below,
+      Statik (sinf) va prototip ma'lumotlar xususiyatlari ClassBody deklaratsiyasidan tashqarida aniqlanishi kerak. Keling, Person sinfi uchun yosh qiymatini quyida belgilaymiz,
 
       ```javascript
       Person.staticAge = 30;
@@ -7416,10 +7401,10 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 420.  ### isNaN va Number.isNaN o'rtasidagi farq nima
 
-      1.  **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
-      2.  **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
+      1.  **isNaN**: Global funktsiya `isNaN` argumentni Raqamga aylantiradi va natijada olingan qiymat NaN bo'lsa, true qiymatini qaytaradi.
+      2.  **Number.isNaN**: Bu usul argumentni aylantirmaydi. Lekin u Raqam turi va NaN qiymati bo'lsa, u haqiqatni qaytaradi.
 
-      Let's see the difference with an example,
+      Keling, farqni misol bilan ko'rib chiqaylik,
 
       ```javascript
       isNaN(‘hello’);   // true
@@ -7430,7 +7415,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 421.  ### IIFE-ni qo'shimcha qavslarsiz qanday chaqirish mumkin
 
-      Immediately Invoked Function Expressions(IIFE) requires a pair of parenthesis to wrap the function which contains set of statements.
+      Darhol chaqiriladigan funktsiya ifodalari (IIFE) bayonotlar to'plamini o'z ichiga olgan funktsiyani o'rash uchun bir juft qavsni talab qiladi.
 
       ```js
       (function (dt) {
@@ -7438,7 +7423,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       })(new Date());
       ```
 
-      Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
+      Ikkala IIFE ham, void operatori ham ifoda natijasini bekor `void operator` qilganligi sababli, quyidagi kabi IIFE uchun qo'shimcha qavslardan qochishingiz mumkin,
 
       ```js
       void (function (dt) {
@@ -7450,7 +7435,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 422.  ### Buni almashtirish holatlarida(switch case) ifodalardan(expression) foydalanish mumkinmi?cases?
 
-      You might have seen expressions used in switch condition but it is also possible to use for switch cases by assigning true value for the switch condition. Let's see the weather condition based on temparature as an example,
+      Siz almashtirish holatida ishlatiladigan iboralarni ko'rgan bo'lishingiz mumkin, lekin almashtirish holati uchun haqiqiy qiymatni belgilash orqali almashtirish holatlari uchun ham foydalanish mumkin. Misol tariqasida haroratga asoslangan ob-havo sharoitini ko'rib chiqaylik,
 
       ```js
       const weather = (function getWeather(temp) {
@@ -7471,7 +7456,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 423.  ### Promise errorlariga etibor (ignore) bermaslikning eng oson yo'li qanday?
 
-      The easiest and safest way to ignore promise errors is void that error. This approach is ESLint friendly too.
+      Va'da qilingan xatolarga e'tibor bermaslikning eng oson va xavfsiz usuli bu xatoni bekor qilishdir. Ushbu yondashuv ESLint-ga ham mos keladi.
 
       ```js
       await promise.catch((e) => void e);
@@ -7481,13 +7466,13 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 424.  ### CSS yordamida konsol dagi natijani qanday qilib stil berish mumkin?
 
-      You can add CSS styling to the console output using the CSS format content specifier %c. The console string message can be appended after the specifier and CSS style in another argument. Let's print the red the color text using console.log and CSS specifier as below,
+      Konsol chiqishiga CSS formati kontent spetsifikatsiyasi %c yordamida CSS uslubini qo'shishingiz mumkin. Konsol satri xabari boshqa argumentda spetsifikatsiya va CSS uslubidan keyin qo'shilishi mumkin. Quyidagi kabi console.log va CSS spetsifikatsiyasi yordamida qizil rangli matnni chop qilaylik,
 
       ```js
       console.log('%cThis is a red text', 'color:red');
       ```
 
-      It is also possible to add more styles for the content. For example, the font-size can be modified for the above text
+      Bundan tashqari, tarkibga ko'proq uslublar qo'shish mumkin. Masalan, yuqoridagi matn uchun shrift o'lchamini o'zgartirish mumkin
 
       ```js
       console.log(
@@ -7500,7 +7485,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 425.  ### Nullish coalescing operator(??) nima
 
-      It is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand. This can be contrasted with the logical OR (||) operator, which returns the right-hand side operand if the left operand is any falsy value, not only null or undefined.
+      Bu mantiqiy operator bo'lib, agar chap tomondagi operand nol yoki aniqlanmagan bo'lsa, o'zining o'ng tomoni operandini qaytaradi, aks holda chap tomon operandini qaytaradi. Buni mantiqiy OR (||) operatori bilan taqqoslash mumkin, agar chap operand faqat null yoki aniqlanmagan bo'lsa, o'ng tomondagi operandni qaytaradi.
 
       ```js
       console.log(null ?? true); // true
@@ -7512,9 +7497,9 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 426.  ### Konsol chiqishini qanday guruhlash va joylashtirish mumkin?]
 
-      The `console.group()` can be used to group related log messages to be able to easily read the logs and use console.groupEnd()to close the group. Along with this, you can also nest groups which allows to output message in hierarchical manner.
+      Jurnallarni `console.group()` osongina o'qish va guruhni yopish uchun console.groupEnd() dan foydalanish uchun tegishli jurnal xabarlarini guruhlash uchun foydalanish mumkin. Shu bilan birga, siz xabarlarni ierarxik tarzda chiqarish imkonini beruvchi guruhlarni joylashtirishingiz mumkin.
 
-      For example, if you’re logging a user’s details:
+      Misol uchun, agar siz foydalanuvchi ma'lumotlarini qayd qilsangiz:
 
       ```js
       console.group('User Details');
@@ -7530,15 +7515,15 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.groupEnd();
       ```
 
-      You can also use `console.groupCollapsed()` instead of `console.group()` if you want the groups to be collapsed by default.
+      Agar siz guruhlar sukut bo'yicha yopilishini xohlasangiz, `console.groupCollapsed()` o'rniga foydalanishingiz mumkin `.console.group()`
 
       **[⬆ Back to Top](#table-of-contents)**
 
 427.  ### Zich(dense) va siyrak(sparse) massivlar o'rtasidagi farq nima?]arrays?
 
-      An array contians items at each index starting from first(0) to last(array.length - 1) is called as Dense array. Whereas if at least one item is missing at any index, the array is called as sparse.
+      Birinchi(0) dan oxirgi (array.length - 1) gacha bo'lgan har bir indeksdagi elementlarni o'z ichiga olgan massiv zich massiv deb ataladi. Har qanday indeksda kamida bitta element yo'q bo'lsa, massiv siyrak deb nomlanadi.
 
-      Let's see the below two kind of arrays,
+      Keling, quyidagi ikki turdagi massivlarni ko'rib chiqaylik,
 
       ```js
       const avengers = ['Ironman', 'Hulk', 'CaptainAmerica'];
@@ -7559,39 +7544,40 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 428.  ### Siyrak(dense) massivlarni yaratishning turli usullari qanday?]arrays?
 
-      There are 4 different ways to create sparse arrays in JavaScript
+      JavaScript-da siyrak massivlarni yaratishning 4 xil usuli mavjud
 
-      1.  **Array literal:** Omit a value when using the array literal
+      1.  **Array literal:** massiv literalidan foydalanganda qiymatni o'tkazib yuboring
           ```js
           const justiceLeague = ['Superman', 'Aquaman', , 'Batman'];
           console.log(justiceLeague); // ['Superman', 'Aquaman', empty ,'Batman']
           ```
-      2.  **Array() constructor:** Invoking Array(length) or new Array(length)
+      2.  **Array() constructor:** Massivni (uzunlik) yoki yangi massivni (uzunlik) chaqirish
           ```js
           const array = Array(3);
           console.log(array); // [empty, empty ,empty]
           ```
-      3.  **Delete operator:** Using delete array[index] operator on the array
-          ```js
+      3.  **Delete operator:** massivda o'chirish[index] operatoridan foydalanish
           const justiceLeague = ['Superman', 'Aquaman', 'Batman'];
           delete justiceLeague[1];
           console.log(justiceLeague); // ['Superman', empty, ,'Batman']
           ```
-      4.  **Increase length property:** Increasing length property of an array
+
+          ```
+      4.  **Increase length property:** massivning uzunlik xususiyatini oshirish
           `js const justiceLeague = ['Superman', 'Aquaman', 'Batman']; justiceLeague.length = 5; console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty] `
           **[⬆ Back to Top](#table-of-contents)**
 
 429.  ### setTimeout, setImmediate va process.nextTick o'rtasidagi farq nima]setImmediate and process.nextTick?
 
-      1.  **Set Timeout:** setTimeout() is to schedule execution of a one-time callback after delay milliseconds.
-      2.  **Set Immediate:** The setImmediate function is used to execute a function right after the current event loop finishes.
-      3.  **Process NextTick:** If process.nextTick() is called in a given phase, all the callbacks passed to process.nextTick() will be resolved before the event loop continues. This will block the event loop and create I/O Starvation if process.nextTick() is called recursively.
+      1.  **Set Timeout:** setTimeout() millisekundlar kechikishidan keyin bir martalik callbackning bajarilishini rejalashtirishdir.
+      2.  **Set Immediate:** setImmediate funksiyasi joriy voqea tsikli tugagandan so'ng darhol funktsiyani bajarish uchun ishlatiladi.
+      3.  **Process NextTick:** Agar ma'lum bir bosqichda process.nextTick() chaqirilsa, process.nextTick() ga o'tkazilgan barcha callbacklar voqea tsikli davom etgunga qadar hal qilinadi. Agar process.nextTick() rekursiv chaqirilsa, bu hodisa siklini bloklaydi va I/U ochligini yaratadi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 430.  ### Asl massivni(original array) o'zgartirmasdan massivni qanday o'zgartirish mumkin?]original array?
 
-      The `reverse()` method reverses the order of the elements in an array but it mutates the original array. Let's take a simple example to demonistrate this case,
+      Usul `reverse()` massivdagi elementlarning tartibini o'zgartiradi, lekin asl massivni o'zgartiradi. Bu holatni isbotlash uchun oddiy misol keltiraylik,
 
       ```javascript
       const originalArray = [1, 2, 3, 4, 5];
@@ -7601,10 +7587,10 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
       console.log(originalArray); // [ 5, 4, 3, 2, 1]
       ```
 
-      There are few solutions that won't mutate the original array. Let's take a look.
+      Asl massivni o'zgartirmaydigan bir nechta echimlar mavjud. Keling, bir ko'rib chiqaylik.
 
       1.  **Using slice and reverse methods:**
-          In this case, just invoke the `slice()` method on the array to create a shallow copy followed by `reverse()` method call on the copy.
+          Bunday holda, `slice()` sayoz nusxa yaratish uchun massivdagi usuldan so'ng nusxadagi usulni chaqirish kifoya `reverse()`.
 
           ```javascript
           const originalArray = [1, 2, 3, 4, 5];
@@ -7615,7 +7601,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
           ```
 
       2.  **Using spread and reverse methods:**
-          In this case, let's use the spread syntax (...) to create a copy of the array followed by `reverse()` method call on the copy.
+          Bu holda, massivning nusxasini yaratish uchun tarqalish sintaksisidan (...) foydalanamiz va undan so'ng `reverse()`nusxada usul chaqiramiz.
 
           ```javascript
           const originalArray = [1, 2, 3, 4, 5];
@@ -7626,7 +7612,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
           ```
 
       3.  **Using reduce and spread methods:**
-          Here execute a reducer function on an array elements and append the accumulated array on right side using spread syntax
+          Bu yerda massiv elementlarida reduktor funksiyasini bajaring va tarqalish sintaksisi yordamida to‘plangan massivni o‘ng tomonga qo‘shing.
 
           ```javascript
           const originalArray = [1, 2, 3, 4, 5];
@@ -7639,7 +7625,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
           ```
 
       4.  **Using reduceRight and spread methods:**
-          Here execute a right reducer function(i.e. opposite direction of reduce method) on an array elements and append the accumulated array on left side using spread syntax
+          Bu yerda massiv elementlarida o‘ng reduktor funksiyasini (ya’ni kamaytirish usulining teskari yo‘nalishini) bajaring va tarqalish sintaksisi yordamida to‘plangan massivni chap tomonga qo‘shing.
 
           ```javascript
           const originalArray = [1, 2, 3, 4, 5];
@@ -7652,7 +7638,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
           ```
 
       5.  **Using reduceRight and push methods:**
-          Here execute a right reducer function(i.e. opposite direction of reduce method) on an array elements and push the iterated value to the accumulator
+          Bu yerda massiv elementlarida o‘ng reduktor funksiyasini (ya’ni kamaytirish usulining qarama-qarshi yo‘nalishini) bajaring va takrorlangan qiymatni akkumulyatorga suring.
 
           ```javascript
           const originalArray = [1, 2, 3, 4, 5];
@@ -7669,7 +7655,7 @@ Voqealar davri - bu qayta qo'ng'iroq qilish funktsiyalari navbati. Asinx funksiy
 
 ### Coding Exercise
 
-#### 1. What is the output of below code
+#### 1. Quyidagi kodning natijasi nima
 
 ```javascript
 var car = new Vehicle('Honda', 'white', '2010', 'UK');
@@ -7693,7 +7679,7 @@ function Vehicle(model, color, year, country) {
 
 ##### Answer: 4
 
-The function declarations are hoisted similar to any variables. So the placement for `Vehicle` function declaration doesn't make any difference.
+Funktsiya deklaratsiyasi har qanday o'zgaruvchilarga o'xshash tarzda ko'tariladi. Shunday qilib, `Vehicle` funktsiya deklaratsiyasini joylashtirish hech qanday farq qilmaydi.
 
 </p>
 </details>
@@ -7702,7 +7688,7 @@ The function declarations are hoisted similar to any variables. So the placement
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 2. What is the output of below code
+#### 2. Quyidagi kodning natijasi nima
 
 ```javascript
 function foo() {
@@ -7725,7 +7711,7 @@ console.log(foo(), typeof x, typeof y);
 
 ##### Answer: 3
 
-Of course the return value of `foo()` is 1 due to the increment operator. But the statement `let x = y = 0` declares a local variable x. Whereas y declared as a global variable accidentally. This statement is equivalent to,
+Albatta ning qaytish qiymati foo()o'sish operatori tufayli 1 ga teng. Lekin bayonot let x = y = 0mahalliy x o'zgaruvchini e'lon qiladi. Holbuki y tasodifan global o'zgaruvchi sifatida e'lon qilingan. Bu bayonot tengdir,
 
 ```javascript
 let x;
@@ -7733,7 +7719,7 @@ window.y = 0;
 x = window.y;
 ```
 
-Since the block scoped variable x is undefined outside of the function, the type will be undefined too. Whereas the global variable `y` is available outside the function, the value is 0 and type is number.
+Blok doirasidagi x o'zgaruvchisi funksiyadan tashqarida aniqlanmaganligi sababli, tur ham aniqlanmagan bo'ladi. Global o'zgaruvchi yfunktsiyadan tashqarida mavjud bo'lsa, qiymat 0 va turi raqam.
 
 </p>
 </details>
@@ -7742,7 +7728,7 @@ Since the block scoped variable x is undefined outside of the function, the type
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 3. What is the output of below code
+#### 3. Quyidagi kodning natijasi nima
 
 ```javascript
 function main() {
@@ -7765,16 +7751,16 @@ main();
 
 ##### Answer: 4
 
-The statements order is based on the event loop mechanism. The order of statements follows the below order,
+Bayonotlar tartibi voqealar tsikli mexanizmiga asoslanadi. Bayonotlar tartibi quyidagi tartibda bo'ladi,
 
-1. At first, the main function is pushed to the stack.
-2. Then the browser pushes the fist statement of the main function( i.e, A's console.log) to the stack, executing and popping out immediately.
-3. But `setTimeout` statement moved to Browser API to apply the delay for callback.
-4. In the meantime, C's console.log added to stack, executed and popped out.
-5. The callback of `setTimeout` moved from Browser API to message queue.
-6. The `main` function popped out from stack because there are no statements to execute
-7. The callback moved from message queue to the stack since the stack is empty.
-8. The console.log for B is added to the stack and display on the console.
+1. Dastlab, asosiy funktsiya stekga suriladi.
+2. Keyin brauzer asosiy funktsiyaning birinchi bayonotini (ya'ni, A ning console.log) stekga surib, darhol ishga tushadi va chiqadi.
+3. Ammo setTimeout callback uchun kechikishni qo'llash uchun bayonot Brauzer API-ga ko'chirildi.
+4. Bu orada, C ning console.log stekga qo'shildi, bajarildi va chiqdi.
+5. Callback setTimeoutBrauzer API-dan xabarlar navbatiga ko'chirildi.
+6. Funktsiya mainstekdan chiqib ketdi, chunki bajariladigan bayonotlar yo'q
+7. Callback xabarlar navbatdan stekga ko'chirildi, chunki stek bo'sh.
+8. B uchun console.log stekga qo'shiladi va konsolda ko'rsatiladi.
 
 </p>
 </details>
@@ -7797,8 +7783,7 @@ console.log(0.1 + 0.2 === 0.3);
 
 ##### Answer: 1
 
-This is due to the float point math problem. Since the floating point numbers are encoded in binary format, the addition operations on them lead to rounding errors. Hence, the comparison of floating points doesn't give expected results.
-You can find more details about the explanation here [0.30000000000000004.com/](https://0.30000000000000004.com/)
+Bu float nuqta matematik muammosiga bog'liq. Suzuvchi nuqta raqamlari ikkilik formatda kodlanganligi sababli, ulardagi qo'shish operatsiyalari yaxlitlash xatolariga olib keladi. Demak, suzuvchi nuqtalarni taqqoslash kutilgan natijani bermaydi. Tushuntirish haqida batafsil ma'lumotni bu yerda topishingiz mumkin 0.30000000000000004.com/
 
 </p>
 </details>
@@ -7807,7 +7792,7 @@ You can find more details about the explanation here [0.30000000000000004.com/](
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 5. What is the output of below code
+#### 5. Quyidagi kodning natijasi nima
 
 ```javascript
 var y = 1;
@@ -7827,12 +7812,12 @@ console.log(y);
 
 ##### Answer: 4
 
-The main points in the above code snippets are,
+Yuqoridagi kod parchalaridagi asosiy fikrlar quyidagilardir:
 
-1. You can see function expression instead function declaration inside if statement. So it always returns true.
-2. Since it is not declared(or assigned) anywhere, f is undefined and typeof f is undefined too.
+1. If iborasi ichida funktsiya deklaratsiyasi o'rniga funktsiya ifodasini ko'rishingiz mumkin. Shunday qilib, u har doim haqiqatga qaytadi.
+2. U hech qanday joyda e'lon qilinmagan (yoki tayinlanmagan) uchun f aniqlanmagan va f turi ham aniqlanmagan.
 
-In other words, it is same as
+Boshqacha qilib aytganda, xuddi shunday
 
 ```javascript
 var y = 1;
@@ -7842,7 +7827,7 @@ if ('foo') {
 console.log(y);
 ```
 
-**Note:** It returns 1object for MS Edge browser
+**Note:** MS Edge brauzeri uchun 1 ob'ektni qaytaradi
 
 </p>
 </details>
@@ -7851,7 +7836,7 @@ console.log(y);
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 6. What is the output of below code
+#### 6. Quyidagi kodning natijasi nima
 
 ```javascript
 function foo() {
@@ -7873,9 +7858,9 @@ console.log(foo());
 
 ##### Answer: 3
 
-This is a semicolon issue. Normally semicolons are optional in JavaScript. So if there are any statements(in this case, return) missing semicolon, it is automatically inserted immediately. Hence, the function returned as undefined.
+Bu nuqta-vergul muammosi. Odatda JavaScript-da nuqta-vergul ixtiyoriy. Shunday qilib, agar biron bir ibora (bu holda, qaytish) mavjud bo'lsa, nuqta-vergul yo'q bo'lsa, u darhol avtomatik ravishda kiritiladi. Shunday qilib, funktsiya aniqlanmagan sifatida qaytarildi.
 
-Whereas if the opening curly brace is along with the return keyword then the function is going to be returned as expected.
+Agar ochiladigan jingalak qavs return kalit so'zi bilan birga bo'lsa, funktsiya kutilganidek qaytariladi.
 
 ```javascript
 function foo() {
@@ -7893,7 +7878,7 @@ console.log(foo()); // {message: "Hello World"}
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 7. What is the output of below code
+#### 7. Quyidagi kodning natijasi nima
 
 ```javascript
 var myChars = ['a', 'b', 'c', 'd'];
@@ -7913,8 +7898,7 @@ console.log(myChars.length);
 
 ##### Answer: 3
 
-The `delete` operator will delete the object property but it will not reindex the array or change its length. So the number or elements or length of the array won't be changed.
-If you try to print myChars then you can observe that it doesn't set an undefined value, rather the property is removed from the array. The newer versions of Chrome use `empty` instead of `undefined` to make the difference a bit clearer.
+Operator deleteob'ekt xususiyatini o'chiradi, lekin u massivni qayta indekslamaydi yoki uning uzunligini o'zgartirmaydi. Shunday qilib, massivning soni yoki elementlari yoki uzunligi o'zgarmaydi. Agar siz myChars-ni chop qilmoqchi bo'lsangiz, u noaniq qiymat o'rnatmasligini, aksincha xususiyat massivdan o'chirilganligini kuzatishingiz mumkin. Chrome-ning yangi versiyalari farqni biroz aniqroq qilish emptyo'rniga foydalanadi.undefined
 
 </p>
 </details>
@@ -7923,7 +7907,7 @@ If you try to print myChars then you can observe that it doesn't set an undefine
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 8. What is the output of below code in latest Chrome
+#### 8. Quyidagi kodning natijasi nima in latest Chrome
 
 ```javascript
 var array1 = new Array(3);
@@ -7947,8 +7931,7 @@ console.log(array3);
 
 ##### Answer: 2
 
-The latest chrome versions display `sparse array`(they are filled with holes) using this empty x n notation. Whereas the older versions have undefined x n notation.
-**Note:** The latest version of FF displays `n empty slots` notation.
+Eng so'nggi Chrome versiyalari sparse arrayushbu bo'sh xn belgisi yordamida ko'rsatiladi (ular teshiklar bilan to'ldirilgan). Holbuki eski versiyalarda aniqlanmagan xn yozuvlari mavjud. Eslatma: FF ning so'nggi versiyasi n empty slotsnotatsiyani ko'rsatadi.
 
 </p>
 </details>
@@ -7957,7 +7940,7 @@ The latest chrome versions display `sparse array`(they are filled with holes) us
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 9. What is the output of below code
+#### 9. Quyidagi kodning natijasi nima
 
 ```javascript
 const obj = {
@@ -7987,7 +7970,7 @@ console.log(obj.prop3());
 
 ##### Answer: 1
 
-ES6 provides method definitions and property shorthands for objects. So both prop2 and prop3 are treated as regular function values.
+ES6 ob'ektlar uchun usul ta'riflari va xususiyat qisqartmalarini taqdim etadi. Shunday qilib, prop2 va prop3 ham muntazam funktsiya qiymatlari sifatida ko'rib chiqiladi.
 
 </p>
 </details>
@@ -7996,7 +7979,7 @@ ES6 provides method definitions and property shorthands for objects. So both pro
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 10. What is the output of below code
+#### 10. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log(1 < 2 < 3);
@@ -8013,19 +7996,18 @@ console.log(3 > 2 > 1);
 
 ##### Answer: 2
 
-The important point is that if the statement contains the same operators(e.g, < or >) then it can be evaluated from left to right.
-The first statement follows the below order,
+Muhim nuqta shundaki, agar bayonot bir xil operatorlarni o'z ichiga olgan bo'lsa (masalan, < yoki >), uni chapdan o'ngga qarab baholash mumkin. Birinchi bayonot quyidagi tartibda bo'ladi,
 
 1. console.log(1 < 2 < 3);
 2. console.log(true < 3);
-3. console.log(1 < 3); // True converted as `1` during comparison
+3. console.log(1 < 3); // Taqqoslash paytidagidek true aylantirildi
 4. True
 
-Whereas the second statement follows the below order,
+Ikkinchi bayonot quyidagi tartibda bo'lsa,
 
 1. console.log(3 > 2 > 1);
 2. console.log(true > 1);
-3. console.log(1 > 1); // False converted as `0` during comparison
+3. console.log(1 > 1); // Taqqoslash paytidagidek false aylantirildi
 4. False
 
 </p>
@@ -8035,7 +8017,7 @@ Whereas the second statement follows the below order,
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 11. What is the output of below code in non-strict mode
+#### 11. Quyidagi kodning natijasi nima in non-strict mode
 
 ```javascript
 function printNumbers(first, second, first) {
@@ -8054,10 +8036,9 @@ printNumbers(1, 2, 3);
 
 ##### Answer: 2
 
-In non-strict mode, the regular JavaScript functions allow duplicate named parameters. The above code snippet has duplicate parameters on 1st and 3rd parameters.
-The value of the first parameter is mapped to the third argument which is passed to the function. Hence, the 3rd argument overrides the first parameter.
+Qattiq bo'lmagan rejimda odatiy JavaScript funktsiyalari nomli parametrlarni takrorlash imkonini beradi. Yuqoridagi kod parchasi 1 va 3 parametrlarda takroriy parametrlarga ega. Birinchi parametrning qiymati funksiyaga uzatiladigan uchinchi argumentga moslashtiriladi. Demak, 3-argument birinchi parametrni bekor qiladi.
 
-**Note:** In strict mode, duplicate parameters will throw a Syntax Error.
+Eslatma: Qattiq rejimda takroriy parametrlar Sintaksis xatosini keltirib chiqaradi.
 
 </p>
 </details>
@@ -8066,7 +8047,7 @@ The value of the first parameter is mapped to the third argument which is passed
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 12. What is the output of below code
+#### 12. Quyidagi kodning natijasi nima
 
 ```javascript
 const printNumbersArrow = (first, second, first) => {
@@ -8085,7 +8066,7 @@ printNumbersArrow(1, 2, 3);
 
 ##### Answer: 3
 
-Unlike regular functions, the arrow functions doesn't not allow duplicate parameters in either strict or non-strict mode. So you can see `SyntaxError` in the console.
+Oddiy funktsiyalardan farqli o'laroq, o'q funktsiyalari qat'iy yoki qat'iy bo'lmagan rejimda takroriy parametrlarga ruxsat bermaydi. SyntaxErrorShunday qilib, siz konsolda ko'rishingiz mumkin .
 
 </p>
 </details>
@@ -8094,7 +8075,7 @@ Unlike regular functions, the arrow functions doesn't not allow duplicate parame
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 13. What is the output of below code
+#### 13. Quyidagi kodning natijasi nima
 
 ```javascript
 const arrowFunc = () => arguments.length;
@@ -8111,9 +8092,9 @@ console.log(arrowFunc(1, 2, 3));
 
 ##### Answer: 1
 
-Arrow functions do not have an `arguments, super, this, or new.target` bindings. So any reference to `arguments` variable tries to resolve to a binding in a lexically enclosing environment. In this case, the arguments variable is not defined outside of the arrow function. Hence, you will receive a reference error.
+O'q funktsiyalarida arguments, super, this, or new.targetbog'lanish mavjud emas. Shunday qilib, o'zgaruvchiga har qanday havola argumentsleksik jihatdan o'ralgan muhitda bog'lanishni hal qilishga harakat qiladi. Bunday holda, argumentlar o'zgaruvchisi o'q funktsiyasidan tashqarida aniqlanmaydi. Shunday qilib, siz mos yozuvlar xatosini olasiz.
 
-Where as the normal function provides the number of arguments passed to the function
+Oddiy funktsiya funksiyaga uzatiladigan argumentlar sonini ta'minlaydi
 
 ```javascript
 const func = function () {
@@ -8122,7 +8103,7 @@ const func = function () {
 console.log(func(1, 2, 3));
 ```
 
-But If you still want to use an arrow function then rest operator on arguments provides the expected arguments
+Ammo agar siz hali ham o'q funksiyasidan foydalanmoqchi bo'lsangiz, argumentlar bo'yicha rest operatori kutilgan argumentlarni taqdim etadi
 
 ```javascript
 const arrowFunc = (...args) => args.length;
@@ -8136,7 +8117,7 @@ console.log(arrowFunc(1, 2, 3));
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 14. What is the output of below code
+#### 14. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log(String.prototype.trimLeft.name === 'trimLeft');
@@ -8151,7 +8132,7 @@ console.log(String.prototype.trimLeft.name === 'trimStart');
 
 ##### Answer: 2
 
-In order to be consistent with functions like `String.prototype.padStart`, the standard method name for trimming the whitespaces is considered as `trimStart`. Due to web web compatibility reasons, the old method name 'trimLeft' still acts as an alias for 'trimStart'. Hence, the prototype for 'trimLeft' is always 'trimStart'
+kabi funktsiyalarga mos kelishi String.prototype.padStartuchun bo'shliqlarni kesish uchun standart usul nomi sifatida qabul qilinadi trimStart. Veb-veb-moslashuv sabablari tufayli, eski usul nomi "trimLeft" hali ham "trimStart" uchun taxallus sifatida ishlaydi. Shunday qilib, "trimLeft" prototipi har doim "trimStart" dir.
 
 </p>
 </details>
@@ -8160,7 +8141,7 @@ In order to be consistent with functions like `String.prototype.padStart`, the s
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 15. What is the output of below code
+#### 15. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log(Math.max());
@@ -8176,8 +8157,7 @@ console.log(Math.max());
 
 ##### Answer: 4
 
--Infinity is the initial comparant because almost every other value is bigger. So when no arguments are provided, -Infinity is going to be returned.
-**Note:** Zero number of arguments is a valid case.
+-Infinity boshlang'ich taqqoslanuvchi hisoblanadi, chunki deyarli barcha boshqa qiymatlar kattaroqdir. Shunday qilib, hech qanday dalillar keltirilmaganda, -Infinity qaytariladi. Eslatma: Argumentlarning nol soni haqiqiy holat hisoblanadi.
 
 </p>
 </details>
@@ -8186,7 +8166,7 @@ console.log(Math.max());
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 16. What is the output of below code
+#### 16. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log(10 == [10]);
@@ -8203,13 +8183,13 @@ console.log(10 == [[[[[[[10]]]]]]]);
 
 ##### Answer: 1
 
-As per the comparison algorithm in the ECMAScript specification(ECMA-262), the above expression converted into JS as below
+ECMAScript spetsifikatsiyasidagi (ECMA-262) taqqoslash algoritmiga ko'ra, yuqoridagi ifoda quyidagi tarzda JS ga aylantirildi
 
 ```javascript
 10 === Number([10].valueOf().toString()); // 10
 ```
 
-So it doesn't matter about number brackets([]) around the number, it is always converted to a number in the expression.
+Demak, raqam atrofidagi raqamli qavslar ([]) muhim emas, u har doim ifodadagi raqamga aylantiriladi.
 
 </p>
 </details>
@@ -8218,7 +8198,7 @@ So it doesn't matter about number brackets([]) around the number, it is always c
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 17. What is the output of below code
+#### 17. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log(10 + '10');
@@ -8235,7 +8215,7 @@ console.log(10 - '10');
 
 ##### Answer: 2
 
-The concatenation operator(+) is applicable for both number and string types. So if any operand is string type then both operands concatenated as strings. Whereas subtract(-) operator tries to convert the operands as number type.
+Birlashtirish operatori (+) ham son, ham qator turlari uchun qo'llaniladi. Shunday qilib, agar biron bir operand satr turi bo'lsa, ikkala operand ham satrlar sifatida birlashtiriladi. Ayirma (-) operatori operandlarni raqam turiga aylantirishga harakat qiladi.
 
 </p>
 </details>
@@ -8244,7 +8224,7 @@ The concatenation operator(+) is applicable for both number and string types. So
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 18. What is the output of below code
+#### 18. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log([0] == false);
@@ -8265,12 +8245,12 @@ if ([0]) {
 
 ##### Answer: 1
 
-In comparison operators, the expression `[0]` converted to Number([0].valueOf().toString()) which is resolved to false. Whereas `[0]` just becomes a truthy value without any conversion because there is no comparison operator.
+Taqqoslash operatorlarida ifoda [0]Number([0].valueOf().toString()) ga aylantirildi, u noto'g'ri deb hal qilinadi. Holbuki [0], taqqoslash operatori yo'qligi sababli hech qanday konvertatsiya qilmasdan haqiqiy qiymatga aylanadi.
 
 </p>
 </details>
 
-#### 19. What is the output of below code
+#### 19. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log([1, 2] + [3, 4]);
@@ -8286,7 +8266,7 @@ console.log([1, 2] + [3, 4]);
 
 ##### Answer: 4
 
-The + operator is not meant or defined for arrays. So it converts arrays into strings and concatenates them.
+- operatori massivlar uchun mo'ljallanmagan yoki aniqlanmagan. Shunday qilib, u massivlarni satrlarga aylantiradi va ularni birlashtiradi.
 
 </p>
 </details>
@@ -8295,7 +8275,7 @@ The + operator is not meant or defined for arrays. So it converts arrays into st
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 20. What is the output of below code
+#### 20. Quyidagi kodning natijasi nima
 
 ```javascript
 const numbers = new Set([1, 1, 2, 3, 4]);
@@ -8315,7 +8295,7 @@ console.log(browser);
 
 ##### Answer: 1
 
-Since `Set` object is a collection of unique values, it won't allow duplicate values in the collection. At the same time, it is case sensitive data structure.
+`Set` Ob'ekt noyob qiymatlar to'plami bo'lgani uchun u to'plamdagi takroriy qiymatlarga ruxsat bermaydi . Shu bilan birga, bu katta-kichik harflarga sezgir ma'lumotlar tuzilmasi.
 
 </p>
 </details>
@@ -8324,7 +8304,7 @@ Since `Set` object is a collection of unique values, it won't allow duplicate va
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 21. What is the output of below code
+#### 21. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log(NaN === NaN);
@@ -8338,7 +8318,7 @@ console.log(NaN === NaN);
 
 ##### Answer: 2
 
-JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equal for floating-point numbers.
+JavaScript IEEE 754 spetsifikatsiya standartlariga amal qiladi. Ushbu spetsifikatsiyaga ko'ra, NaN'lar suzuvchi nuqtali raqamlar uchun hech qachon teng bo'lmaydi.
 
 </p>
 </details>
@@ -8347,7 +8327,7 @@ JavaScript follows IEEE 754 spec standards. As per this spec, NaNs are never equ
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 22. What is the output of below code
+#### 22. Quyidagi kodning natijasi nima
 
 ```javascript
 let numbers = [1, 2, 3, 4, NaN];
@@ -8364,8 +8344,7 @@ console.log(numbers.indexOf(NaN));
 
 ##### Answer: 4
 
-The `indexOf` uses strict equality operator(===) internally and `NaN === NaN` evaluates to false. Since indexOf won't be able to find NaN inside an array, it returns -1 always.
-But you can use `Array.prototype.findIndex` method to find out the index of NaN in an array or You can use `Array.prototype.includes` to check if NaN is present in an array or not.
+Ichkarida indexOf qat'iy tenglik operatoridan (===) foydalanadi va NaN === NaNnoto'g'ri deb baholaydi. indexOf massiv ichida NaN ni topa olmagani uchun u har doim -1 ni qaytaradi. Ammo siz Array.prototype.findIndexmassiv dagi NaN indeksini aniqlash uchun usuldan foydalanishingiz mumkin yoki NaN massivda bor yoki Array.prototype.includesyo'qligini tekshirish uchun foydalanishingiz mumkin.
 
 ```javascript
 let numbers = [1, 2, 3, 4, NaN];
@@ -8381,7 +8360,7 @@ console.log(numbers.includes(NaN)); // true
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 23. What is the output of below code
+#### 23. Quyidagi kodning natijasi nima
 
 ```javascript
 let [a, ...b] = [1, 2, 3, 4, 5];
@@ -8398,8 +8377,7 @@ console.log(a, b);
 
 ##### Answer: 3
 
-When using rest parameters, trailing commas are not allowed and will throw a SyntaxError.
-If you remove the trailing comma then it displays 1st answer
+Dam olish parametrlaridan foydalanganda, keyingi vergullarga ruxsat berilmaydi va SyntaxError paydo bo'ladi. Agar siz keyingi vergulni olib tashlasangiz, u 1-javobni ko'rsatadi
 
 ```javascript
 let [a, ...b] = [1, 2, 3, 4, 5];
@@ -8413,7 +8391,7 @@ console.log(a, b); // 1, [2, 3, 4, 5]
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 25. What is the output of below code
+#### 25. Quyidagi kodning natijasi nima
 
 ```javascript
 async function func() {
@@ -8432,7 +8410,7 @@ console.log(func());
 
 ##### Answer: 1
 
-Async functions always return a promise. But even if the return value of an async function is not explicitly a promise, it will be implicitly wrapped in a promise. The above async function is equivalent to below expression,
+Async funktsiyalari har doim va'da beradi. Biroq, asinxronizatsiya funktsiyasining qaytish qiymati aniq va'da bo'lmasa ham, u va'da bilan o'ralgan bo'ladi. Yuqoridagi asinxron funksiyasi quyidagi ifodaga teng,
 
 ```javascript
 function func() {
@@ -8447,7 +8425,7 @@ function func() {
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 26. What is the output of below code
+#### 26. Quyidagi kodning natijasi nima
 
 ```javascript
 async function func() {
@@ -8466,7 +8444,9 @@ console.log(func());
 
 ##### Answer: 4
 
-The await expression returns value 10 with promise resolution and the code after each await expression can be treated as existing in a `.then` callback. In this case, there is no return expression at the end of the function. Hence, the default return value of `undefined` is returned as the resolution of the promise. The above async function is equivalent to below expression,
+Kutish ifodasi va'da qilingan aniqlik bilan 10 qiymatini qaytaradi va har bir kutish ifodasidan keyingi kod .thenqayta qo'ng'iroqda mavjud sifatida ko'rib chiqilishi mumkin. Bunday holda, funktsiya oxirida hech qanday qaytarish ifodasi mavjud emas. Shunday qilib, standart qaytish qiymati undefinedva'daning qarori sifatida qaytariladi. Yuqoridagi asinxron funksiyasi quyidagi ifodaga teng,
+
+func func ( ) {
 
 ```javascript
 function func() {
@@ -8481,7 +8461,7 @@ function func() {
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 27. What is the output of below code
+#### 27. Quyidagi kodning natijasi nima
 
 ```javascript
 function delay() {
@@ -8512,7 +8492,7 @@ processArray([1, 2, 3, 4]);
 
 ##### Answer: 1
 
-Even though “processArray” is an async function, the anonymous function that we use for `forEach` is synchronous. If you use await inside a synchronous function then it throws a syntax error.
+Garchi "processArray" asinxron funksiya bo'lsa ham, biz foydalanadigan anonim funksiya sinxrondir forEach. Sinxron funksiya ichida await dan foydalansangiz, u sintaksis xatosini keltirib chiqaradi.
 
 </p>
 
@@ -8522,7 +8502,7 @@ Even though “processArray” is an async function, the anonymous function that
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 28. What is the output of below code
+#### 28. Quyidagi kodning natijasi nima
 
 ```javascript
 function delay() {
@@ -8553,9 +8533,9 @@ process([1, 2, 3, 5]);
 
 ##### Answer: 4
 
-The forEach method will not wait until all items are finished but it just runs the tasks and goes next. Hence, the last statement is displayed first followed by a sequence of promise resolutions.
+ForEach usuli barcha elementlar tugashini kutmaydi, lekin u faqat vazifalarni bajaradi va keyingi bosqichga o'tadi. Shunday qilib, oxirgi bayonot birinchi navbatda va'da qilingan qarorlar ketma-ketligi bilan ko'rsatiladi.
 
-But you control the array sequence using for..of loop,
+Lekin siz massivlar ketma-ketligini for..of loop yordamida boshqarasiz,
 
 ```javascript
 async function processArray(array) {
@@ -8573,7 +8553,7 @@ async function processArray(array) {
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 29. What is the output of below code
+#### 29. Quyidagi kodning natijasi nima
 
 ```javascript
 var set = new Set();
@@ -8591,10 +8571,10 @@ console.log(set);
 
 ##### Answer: 1
 
-Set has few exceptions from equality check,
+To'plamda tenglikni tekshirishdan istisnolar mavjud,
 
-1. All NaN values are equal
-2. Both +0 and -0 considered as different values
+1. Barcha NaN qiymatlari teng
+2. Har ikkala +0 va -0 turli qiymatlar sifatida qabul qilinadi
 
 </p>
 </details>
@@ -8603,7 +8583,7 @@ Set has few exceptions from equality check,
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 30. What is the output of below code
+#### 30. Quyidagi kodning natijasi nima
 
 ```javascript
 const sym1 = Symbol('one');
@@ -8625,12 +8605,12 @@ cnsooe.log(sym1 === sym2, sym3 === sym4);
 
 ##### Answer: 3
 
-Symbol follows below conventions,
+Belgisi quyidagi konventsiyalardan keyin,
 
-1. Every symbol value returned from Symbol() is unique irrespective of the optional string.
-2. `Symbol.for()` function creates a symbol in a global symbol registry list. But it doesn't necessarily create a new symbol on every call, it checks first if a symbol with the given key is already present in the registry and returns the symbol if it is found. Otherwise a new symbol created in the registry.
+1. Symbol() dan qaytarilgan har bir belgi qiymati ixtiyoriy qatordan qat'iy nazar noyobdir.
+2. `Symbol.for()` funktsiya global belgilar ro'yxati ro'yxatida belgi yaratadi. Lekin u har bir qo‘ng‘iroqda yangi belgi yaratishi shart emas, u avval berilgan kalitga ega bo‘lgan belgi reestrda mavjudligini tekshiradi va agar topilsa, belgini qaytaradi. Aks holda, ro'yxatga olish kitobida yangi belgi yaratiladi.
 
-**Note:** The symbol description is just useful for debugging purposes.
+**Note:** Belgi tavsifi faqat disk raskadrovka maqsadlarida foydalidir.
 
 </p>
 
@@ -8640,7 +8620,7 @@ Symbol follows below conventions,
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 31. What is the output of below code
+#### 31. Quyidagi kodning natijasi nima
 
 ```javascript
 const sym1 = new Symbol('one');
@@ -8657,7 +8637,7 @@ console.log(sym1);
 
 ##### Answer: 1
 
-`Symbol` is a just a standard function and not an object constructor(unlike other primitives new Boolean, new String and new Number). So if you try to call it with the new operator will result in a TypeError
+`Symbol` bu ob'ekt konstruktori emas, shunchaki standart funksiyadir (boshqa ibtidoiylardan farqli o'laroq, yangi Boolean, yangi String va yangi raqam). Shunday qilib, agar siz yangi operator bilan qo'ng'iroq qilmoqchi bo'lsangiz, TypeError paydo bo'ladi
 
 </p>
 
@@ -8667,7 +8647,7 @@ console.log(sym1);
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 32. What is the output of below code
+#### 32. Quyidagi kodning natijasi nima
 
 ```javascript
 let myNumber = 100;
@@ -8696,7 +8676,7 @@ if (!typeof myString === 'number') {
 
 ##### Answer: 4
 
-The return value of `typeof myNumber (OR) typeof myString` is always the truthy value (either "number" or "string"). Since ! operator converts the value to a boolean value, the value of both `!typeof myNumber or !typeof myString` is always false. Hence the if condition fails and control goes to else block.
+Qaytish qiymati typeof myNumber (OR) typeof myStringhar doim haqiqiy qiymatdir ("raqam" yoki "string"). beri! operator qiymatni mantiqiy qiymatga o'zgartiradi, ikkalasining qiymati !typeof myNumber or !typeof myStringhar doim noto'g'ri. Shuning uchun if sharti bajarilmaydi va boshqaruv else blokiga o'tadi.
 
 </p>
 
@@ -8706,7 +8686,7 @@ The return value of `typeof myNumber (OR) typeof myString` is always the truthy 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 33. What is the output of below code
+#### 33. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log(
@@ -8740,7 +8720,7 @@ The symbols has below constraints,
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 34. What is the output of below code
+#### 34. Quyidagi kodning natijasi nima
 
 ```javascript
 class A {
@@ -8777,7 +8757,7 @@ Using constructors, `new.target` refers to the constructor (points to the class 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 35. What is the output of below code
+#### 35. Quyidagi kodning natijasi nima
 
 ```javascript
 const [x, ...y] = [1, 2, 3, 4];
@@ -8804,7 +8784,7 @@ It throws a syntax error because the rest element should not have a trailing com
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 36. What is the output of below code
+#### 36. Quyidagi kodning natijasi nima
 
 ```javascript
 const { a: x = 10, b: y = 20 } = { a: 30 };
@@ -8836,7 +8816,7 @@ The object property follows below rules,
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 37. What is the output of below code
+#### 37. Quyidagi kodning natijasi nima
 
 ```javascript
 function area({ length = 10, width = 20 }) {
@@ -8888,7 +8868,7 @@ area();
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 38. What is the output of below code
+#### 38. Quyidagi kodning natijasi nima
 
 ```javascript
 const props = [
@@ -8921,7 +8901,7 @@ It is possible to combine Array and Object destructuring. In this case, the thir
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 39. What is the output of below code
+#### 39. Quyidagi kodning natijasi nima
 
 ```javascript
 function checkType(num = 1) {
@@ -8959,7 +8939,7 @@ Hence, the result of function calls categorized as below,
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 40. What is the output of below code
+#### 40. Quyidagi kodning natijasi nima
 
 ```javascript
 function add(item, items = []) {
@@ -8989,7 +8969,7 @@ Since the default argument is evaluated at call time, a new object is created ea
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 41. What is the output of below code
+#### 41. Quyidagi kodning natijasi nima
 
 ```javascript
 function greet(greeting, name, message = greeting + ' ' + name) {
@@ -9018,7 +8998,7 @@ Since parameters defined earlier are available to later default parameters, this
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 42. What is the output of below code
+#### 42. Quyidagi kodning natijasi nima
 
 ```javascript
 function outer(f = inner()) {
@@ -9047,7 +9027,7 @@ The functions and variables declared in the function body cannot be referred fro
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 43. What is the output of below code
+#### 43. Quyidagi kodning natijasi nima
 
 ```javascript
 function myFun(x, y, ...manyMoreArgs) {
@@ -9078,7 +9058,7 @@ The rest parameter is used to hold the remaining parameters of a function and it
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 44. What is the output of below code
+#### 44. Quyidagi kodning natijasi nima
 
 ```javascript
 const obj = { key: 'value' };
@@ -9106,7 +9086,7 @@ Spread syntax can be applied only to iterable objects. By default, Objects are n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 45. What is the output of below code
+#### 45. Quyidagi kodning natijasi nima
 
 ```javascript
 function* myGenFunc() {
@@ -9138,7 +9118,7 @@ Generators are not constructible type. But if you still proceed to do, there wil
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 46. What is the output of below code
+#### 46. Quyidagi kodning natijasi nima
 
 ```javascript
 function* yieldAndReturn() {
@@ -9173,7 +9153,7 @@ A return statement in a generator function will make the generator finish. If a 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 47. What is the output of below code
+#### 47. Quyidagi kodning natijasi nima
 
 ```javascript
 const myGenerator = (function* () {
@@ -9211,7 +9191,7 @@ The generator should not be re-used once the iterator is closed. i.e, Upon exiti
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 48. What is the output of below code
+#### 48. Quyidagi kodning natijasi nima
 
 ```javascript
 const num = 0o38;
@@ -9236,7 +9216,7 @@ If you use an invalid number(outside of 0-7 range) in the octal literal, JavaScr
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 49. What is the output of below code
+#### 49. Quyidagi kodning natijasi nima
 
 ```javascript
 const squareObj = new Square(10);
@@ -9277,7 +9257,7 @@ Unlike function declarations, class declarations are not hoisted. i.e, First You
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 50. What is the output of below code
+#### 50. Quyidagi kodning natijasi nima
 
 ```javascript
 function Person() {}
@@ -9318,7 +9298,7 @@ When a regular or prototype method is called without a value for **this**, the m
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 51. What is the output of below code
+#### 51. Quyidagi kodning natijasi nima
 
 ```javascript
 class Vehicle {
@@ -9362,7 +9342,7 @@ The super keyword is used to call methods of a superclass. Unlike other language
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 52. What is the output of below code
+#### 52. Quyidagi kodning natijasi nima
 
 ```javascript
 const USER = { age: 30 };
@@ -9390,7 +9370,7 @@ Even though we used constant variables, the content of it is an object and the o
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 53. What is the output of below code
+#### 53. Quyidagi kodning natijasi nima
 
 ```javascript
 console.log('🙂' === '🙂');
@@ -9414,7 +9394,7 @@ Emojis are unicodes and the unicode for smile symbol is "U+1F642". The unicode c
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 54. What is the output of below code?
+#### 54. Quyidagi kodning natijasi nima?
 
 ```javascript
 console.log(typeof typeof typeof true);
@@ -9440,7 +9420,7 @@ The typeof operator on any primitive returns a string value. So even if you appl
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 55. What is the output of below code?
+#### 55. Quyidagi kodning natijasi nima?
 
 ```javascript
 let zero = new Number(0);
@@ -9475,7 +9455,7 @@ Hence the above code block always goes to if section.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 55. What is the output of below code in non strict mode?
+#### 55. Quyidagi kodning natijasi nima in non strict mode?
 
 ```javascript
 let msg = 'Good morning!!';
@@ -9505,7 +9485,7 @@ It returns undefined for non-strict mode and returns Error for strict mode. In n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 56. What is the output of below code?
+#### 56. Quyidagi kodning natijasi nima?
 
 ```javascript
 let count = 10;
@@ -9540,7 +9520,7 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### 57. What is the output of below code ?
+#### 57. Quyidagi kodning natijasi nima ?
 
 - 1: console.log(true && 'hi');
 - 2: console.log(true && 'hi' && 1);
@@ -9567,7 +9547,7 @@ Whereas the second console.log logs 10 by capturing the count variable from oute
 
 ---
 
-#### 58. What is the output of below code ?
+#### 58. Quyidagi kodning natijasi nima ?
 
 ```javascript
 let arr = [1, 2, 3];
