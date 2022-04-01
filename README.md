@@ -42,15 +42,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
 | No. | Questions                                                                                                                                                                              |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [JavaScript-da ob'ektlarni yaratishning qanday usullari mavjud ](#what-are-the-possible-ways-to-create-objects-in-javascript)                                                          |
-| 2   | [Prototype chain nima ](#what-is-a-prototype-chain)                                                                                                                                    |
-| 3   | [Call, Apply and Bind o'rtasidagi farq nima ](#what-is-the-difference-between-call-apply-and-bind)                                                                                     |
-| 4   | [JSON nima va uning umumiy operatsiyalari ](#what-is-json-and-its-common-operations)                                                                                                   |
-| 5   | [Array slice method maqsad nima ](#what-is-the-purpose-of-the-array-slice-method)                                                                                                      |
-| 6   | [Array splice method maqsad nima ](#what-is-the-purpose-of-the-array-splice-method)                                                                                                    |
-| 7   | [Slice and splice o'rtasidagi farq nima ](#what-is-the-difference-between-slice-and-splice)                                                                                            |
-| 8   | [Object and Map qanday solishtirasiz ](#how-do-you-compare-object-and-map)                                                                                                             |
-| 9   | [== va === operatorlar o'rtasidagi farq nima ](#what-is-the-difference-between--and--operators)                                                                                        |
+| 1   | [JavaScriptda objectlarni yaratishning qanday usullari mavjud](#javaScriptda-objectlarni-yaratishning-qanday-usullari-mavjud)                                                          |
+| 2   | [Prototype chain nima ](#Prototype-is-a-prototype-chain)                                                                                                                               |
+| 3   | [Call, Apply and Bind o'rtasidagi farq nima ](#Call-is-the-difference-between-call-apply-and-bind)                                                                                     |
+| 4   | [JSON nima va uning umumiy operatsiyalari ](#JSON-is-json-and-its-common-operations)                                                                                                   |
+| 5   | [Array slice method maqsad nima ](#Array-is-the-purpose-of-the-array-slice-method)                                                                                                     |
+| 6   | [Array splice method maqsad nima ](#Array-is-the-purpose-of-the-array-splice-method)                                                                                                   |
+| 7   | [Slice and splice o'rtasidagi farq nima ](#Slice-is-the-difference-between-slice-and-splice)                                                                                           |
+| 8   | [Object and Map qanday solishtirasiz ](#Object-do-you-compare-object-and-map)                                                                                                          |
+| 9   | [ == va === operatorlar o'rtasidagi farq nima ](#what-is-the-difference-between--and--operators)                                                                                       |
 | 10  | [Lambda yoki arrow functionlar nima ](#what-are-lambda-or-arrow-functions)                                                                                                             |
 | 11  | [Birinchi class function nima ](#what-is-a-first-class-function)                                                                                                                       |
 | 12  | [Birinchi tartibli (first order) function nima ](#what-is-a-first-order-function)                                                                                                      |
@@ -64,7 +64,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 20  | [Qanday qilib o'zgaruvchilarni almashtirish blokida xatosiz qayta e'lon qilasiz ](#how-do-you-redeclare-variables-in-switch-block-without-an-error)                                    |
 | 21  | [Vaqtinchalik o'lik zona nima ? (Temporal Dead Zone) ](#what-is-the-temporal-dead-zone)                                                                                                |
 | 22  | [IIFE (darhol chaqiriladigan funksiya ifodasi) nima? ](#what-is-iifeimmediately-invoked-function-expression)                                                                           |
-| 23  | [JavaScript-da URL-manzilni qanday dekodlash yoki enkodlash mumkin ](#how-do-you-decode-or-encode-a-url-in-javascript)                                                                 |
+| 23  | [JavaScriptda URL-manzilni qanday dekodlash yoki enkodlash mumkin ](#how-do-you-decode-or-encode-a-url-in-javascript)                                                                  |
 | 24  | [Memoization nima ](#what-is-memoization)                                                                                                                                              |
 | 25  | [Hoisting nima ](#what-is-hoisting)                                                                                                                                                    |
 | 26  | [ES6 da qanday sinflar(class) mavjud ](#what-are-classes-in-es6)                                                                                                                       |
@@ -166,14 +166,14 @@ You can download the PDF and Epub version of this repository from the latest run
 | 122 | [Joriy urlni javascript bilan qanday olish mumkin](#how-do-you-get-the-current-url-with-javascript)                                                                                    |
 | 123 | [Joylashuv obyektining turli url xususiyatlari qanday](#what-are-the-various-url-properties-of-location-object)                                                                        |
 | 124 | [Javascriptda so'rovlar qatori qiymatlarini qanday olish mumkin](#how-do-get-query-string-values-in-javascript)                                                                        |
-| 125 | [Ob'ektda kalit(key) mavjudligini qanday tekshirish mumkin](#how-do-you-check-if-a-key-exists-in-an-object)                                                                            |
-| 126 | [Javascript ob'ektini qanday aylantirasiz(loop) yoki sanab o'tasiz](#how-do-you-loop-through-or-enumerate-javascript-object)                                                           |
-| 127 | [Bo'sh ob'ektni qanday sinab ko'rasiz ](#how-do-you-test-for-an-empty-object)                                                                                                          |
+| 125 | [objektda kalit(key) mavjudligini qanday tekshirish mumkin](#how-do-you-check-if-a-key-exists-in-an-object)                                                                            |
+| 126 | [Javascript objektini qanday aylantirasiz(loop) yoki sanab o'tasiz](#how-do-you-loop-through-or-enumerate-javascript-object)                                                           |
+| 127 | [Bo'sh objektni qanday sinab ko'rasiz ](#how-do-you-test-for-an-empty-object)                                                                                                          |
 | 128 | [Argumentlar obyekti nima ](#what-is-an-arguments-object)                                                                                                                              |
 | 129 | [Qanday qilib satrning birinchi harfini katta harf bilan yozish mumkin ](#how-do-you-make-first-letter-of-the-string-in-an-uppercase)                                                  |
 | 130 | [For loopning qanday ijobiy va salbiy tomonlari bor](#what-are-the-pros-and-cons-of-for-loop)                                                                                          |
 | 131 | [Joriy sanani javascriptda qanday ko'rsatasiz](#how-do-you-display-the-current-date-in-javascript)                                                                                     |
-| 132 | [Ikki sana ob'ektini qanday solishtirasiz](#how-do-you-compare-two-date-objects)                                                                                                       |
+| 132 | [Ikki sana objektini qanday solishtirasiz](#how-do-you-compare-two-date-objects)                                                                                                       |
 | 133 | [Satrning boshqa satr bilan boshlanishini qanday tekshirish mumkin](#how-do-you-check-if-a-string-starts-with-another-string)                                                          |
 | 134 | [Javascriptda satrni(string) qanday kesish mumkin](#how-do-you-trim-a-string-in-javascript)                                                                                            |
 | 135 | [Javascriptda kalit , qiymat juftligini qanday qo'shasiz](#how-do-you-add-a-key-value-pair-in-javascript)                                                                              |
@@ -188,7 +188,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 144 | [Js yorliqlari(js label) nima ?](#what-are-js-labels)                                                                                                                                  |
 | 145 | [Deklaratsiyalarni yuqorida saqlashning qanday afzalliklari bor](#what-are-the-benefits-of-keeping-declarations-at-the-top)                                                            |
 | 146 | [O'zgaruvchilarni ishga tushirishning(initialize) qanday afzalliklari bor](#what-are-the-benefits-of-initializing-variables)                                                           |
-| 147 | [Yangi ob'ekt yaratish uchun qanday tavsiyalar mavjud](#what-are-the-recommendations-to-create-new-object)                                                                             |
+| 147 | [Yangi objekt yaratish uchun qanday tavsiyalar mavjud](#what-are-the-recommendations-to-create-new-object)                                                                             |
 | 148 | [JSON massivlarini qanday aniqlaysiz](#how-do-you-define-json-arrays)                                                                                                                  |
 | 149 | [Tasodifiy butun sonlarni qanday yaratasiz](#how-do-you-generate-random-integers)                                                                                                      |
 | 150 | [Butun sonlarni malum miqdor orasida chop etish uchun tasodifiy butun sonlar funksiyasini yoza olasizmi?](#can-you-write-a-random-integers-function-to-print-integers-with-in-a-range) |
@@ -230,20 +230,20 @@ You can download the PDF and Epub version of this repository from the latest run
 | 186 | [Agar oxirgi argument sifatida Rest parametridan foydalanmasangiz nima bo'ladi](#what-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)                                     |
 | 187 | [Javascriptda qanday bitli operatorlar mavjud](#what-are-the-bitwise-operators-available-in-javascript)                                                                                |
 | 188 | [Spread operatori nima](#what-is-a-spread-operator)                                                                                                                                    |
-| 189 | [Ob'ektning muzlatilgan yoki muzlatilmaganligini qanday aniqlash mumkin](#how-do-you-determine-whether-object-is-frozen-or-not)                                                        |
-| 190 | [Bir xil yoki ob'ektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
-| 191 | [Ob'ektni ishlatishdan maqsad - bu usul](#what-is-the-purpose-of-using-object-is-method)                                                                                               |
-| 192 | [Xususiyatlarni bir ob'ektdan ikkinchisiga qanday nusxalash mumkin](#how-do-you-copy-properties-from-one-object-to-other)                                                              |
+| 189 | [objektning muzlatilgan yoki muzlatilmaganligini qanday aniqlash mumkin](#how-do-you-determine-whether-object-is-frozen-or-not)                                                        |
+| 190 | [Bir xil yoki objektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin](#how-do-you-determine-two-values-same-or-not-using-object)                                            |
+| 191 | [objektni ishlatishdan maqsad - bu usul](#what-is-the-purpose-of-using-object-is-method)                                                                                               |
+| 192 | [Xususiyatlarni bir objektdan ikkinchisiga qanday nusxalash mumkin](#how-do-you-copy-properties-from-one-object-to-other)                                                              |
 | 193 | [Tayinlash usuli qanday qo'llaniladi](#what-are-the-applications-of-assign-method)                                                                                                     |
 | 194 | [Proksi-server nima ?](#what-is-a-proxy-object)                                                                                                                                        |
 | 195 | [Seal usulining maqsadi nima](#what-is-the-purpose-of-seal-method)                                                                                                                     |
 | 196 | [Seal usuli qanday qo'llaniladi](#what-are-the-applications-of-seal-method)                                                                                                            |
 | 197 | [Freeze va Seal usullari o'rtasidagi farqlar qanday](#what-are-the-differences-between-freeze-and-seal-methods)                                                                        |
-| 198 | [Ob'ektning muhrlangan yoki yo'qligini qanday aniqlash mumkin](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                                    |
+| 198 | [objektning muhrlangan yoki yo'qligini qanday aniqlash mumkin](#how-do-you-determine-if-an-object-is-sealed-or-not)                                                                    |
 | 199 | [Qanday qilib sanab boladigan (enumerable) kalit va qiymat juftlarini olasiz](#how-do-you-get-enumerable-key-and-value-pairs)                                                          |
 | 200 | [Object.values ​​va Object.entries usuli o'rtasidagi asosiy farq nima](#what-is-the-main-difference-between-object.values-and-object.entries-method)                                   |
-| 201 | [Har qanday ob'ektning kalitlari ro'yxatini qanday olishingiz mumkin](#how-can-you-get-the-list-of-keys-of-any-object)                                                                 |
-| 202 | [Prototip bilan ob'ektni qanday yaratasiz](#how-do-you-create-an-object-with-prototype)                                                                                                |
+| 201 | [Har qanday objektning kalitlari ro'yxatini qanday olishingiz mumkin](#how-can-you-get-the-list-of-keys-of-any-object)                                                                 |
+| 202 | [Prototip bilan objektni qanday yaratasiz](#how-do-you-create-an-object-with-prototype)                                                                                                |
 | 203 | [Weakset nima](#what-is-a-weakset)                                                                                                                                                     |
 | 204 | [WeakSet va Set o'rtasidagi farqlar qanday](#what-are-the-differences-between-weakset-and-set)                                                                                         |
 | 205 | [WeakSet-da mavjud usullar to'plamini sanab o'ting](#list-down-the-collection-of-methods-available-on-weakset)                                                                         |
@@ -258,14 +258,14 @@ You can download the PDF and Epub version of this repository from the latest run
 | 214 | [Anonim(anonymous) funksiya nima](#what-is-an-anonymous-function)                                                                                                                      |
 | 215 | [Mahalliy va global o'zgaruvchilar o'rtasidagi ustuvorlik tartibi qanday](#what-is-the-precedence-order-between-local-and-global-variables)                                            |
 | 216 | [JavaScript kirish elementlari nima ?](#what-are-javascript-accessors)                                                                                                                 |
-| 217 | [Ob'ekt konstruktorida xususiyatni qanday aniqlash mumkin](#how-do-you-define-property-on-object-constructor)                                                                          |
+| 217 | [Objekt konstruktorida xususiyatni qanday aniqlash mumkin](#how-do-you-define-property-on-object-constructor)                                                                          |
 | 218 | [Get va defineProperty o'rtasidagi farq nima ?](#what-is-the-difference-between-get-and-defineproperty)                                                                                |
 | 219 | [Getters va Settersning afzalliklari nimada](#what-are-the-advantages-of-getters-and-setters)                                                                                          |
 | 220 | [DefineProperty usuli yordamida qabul qiluvchilar(getter) va sozlagichlarni(setter) qo'shishim mumkinmi](#can-i-add-getters-and-setters-using-defineproperty-method)                   |
 | 221 | [Switch-case ni ishlatishdan maqsad nima](#what-is-the-purpose-of-switch-case)                                                                                                         |
 | 222 | [Switch casedan foydalanishda qanday qoidalarga rioya qilish kerak](#what-are-the-conventions-to-be-followed-for-the-usage-of-swtich-case)                                             |
 | 223 | [Primitiv ma'lumotlar turlari nima ?](#what-are-primitive-data-types)                                                                                                                  |
-| 224 | [Ob'ekt xususiyatlariga kirishning turli usullari qanday](#what-are-the-different-ways-to-access-object-properties)                                                                    |
+| 224 | [Objekt xususiyatlariga kirishning turli usullari qanday](#what-are-the-different-ways-to-access-object-properties)                                                                    |
 | 225 | [Funksiya parametrlari qoidalari qanday](#what-are-the-function-parameter-rules)                                                                                                       |
 | 226 | [Xato obyekti(error object) nima](#what-is-an-error-object)                                                                                                                            |
 | 227 | [Sintaksis xatosiga duch kelganingizda](#when-you-get-a-syntax-error)                                                                                                                  |
@@ -273,7 +273,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 229 | [Xatolarni hal qilishda qanday turli bayonotlar mavjud](#what-are-the-various-statements-in-error-handling)                                                                            |
 | 230 | [Javascriptda ikki turdagi looplar qanday?](#what-are-the-two-types-of-loops-in-javascript)                                                                                            |
 | 231 | [nodejs nima](#what-is-nodejs)                                                                                                                                                         |
-| 232 | [Intl ob'ekti nima](#what-is-an-intl-object)                                                                                                                                           |
+| 232 | [Intl objekti nima](#what-is-an-intl-object)                                                                                                                                           |
 | 233 | [Tilga xos sana va vaqtni formatlashni qanday amalga oshirasiz](#how-do-you-perform-language-specific-date-and-time-formatting)                                                        |
 | 234 | [Iterator nima](#what-is-an-iterator)                                                                                                                                                  |
 | 235 | [Sinxron iteratsiya qanday ishlaydi](#how-does-synchronous-iteration-works)                                                                                                            |
@@ -295,17 +295,17 @@ You can download the PDF and Epub version of this repository from the latest run
 | 251 | [Typesciprt nima ?](#what-is-typescript)                                                                                                                                               |
 | 252 | [Javascript va typescript o'rtasidagi farqlar qanday](#what-are-the-differences-between-javascript-and-typescript)                                                                     |
 | 253 | [Typescriptning javascriptdan qanday afzalliklari bor](#what-are-the-advantages-of-typescript-over-javascript)                                                                         |
-| 254 | [Ob'ektni ishga tushirish (obj initialize) nima](#what-is-an-object-initializer)                                                                                                       |
+| 254 | [objektni ishga tushirish (obj initialize) nima](#what-is-an-object-initializer)                                                                                                       |
 | 255 | [Konstruktor usuli nima](#what-is-a-constructor-method)                                                                                                                                |
 | 256 | [Agar classda bir necha marta konstruktor yozsangiz nima bo'ladi](#what-happens-if-you-write-constructor-more-than-once-in-a-class)                                                    |
 | 257 | [Parent classning konstruktorini qanday chaqirish mumkin?](#how-do-you-call-the-constructor-of-a-parent-class)                                                                         |
-| 258 | [Ob'ektning prototipini qanday olish mumkin](#how-do-you-get-the-prototype-of-an-object)                                                                                               |
+| 258 | [objektning prototipini qanday olish mumkin](#how-do-you-get-the-prototype-of-an-object)                                                                                               |
 | 259 | [Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi](#what-happens-if-i-pass-string-type-for-getprototype-method)                                                      |
-| 260 | [Bir ob'ektning prototipini boshqasiga qanday o'rnatish mumkin](#how-do-you-set-prototype-of-one-object-to-another)                                                                    |
-| 261 | [Ob'ektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin](#how-do-you-check-whether-an-object-can-be-extendable-or-not)                                      |
-| 262 | [Ob'ektni kengaytirishni qanday oldini olish mumkin](#how-do-you-prevent-an-object-to-extend)                                                                                          |
-| 263 | [Ob'ektni kengaytirilmaydigan qilishning turli usullari qanday](#what-are-the-different-ways-to-make-an-object-non-extensible)                                                         |
-| 264 | [Ob'ektda bir nechta xususiyatlarni qanday aniqlash mumkin](#how-do-you-define-multiple-properties-on-an-object)                                                                       |
+| 260 | [Bir objektning prototipini boshqasiga qanday o'rnatish mumkin](#how-do-you-set-prototype-of-one-object-to-another)                                                                    |
+| 261 | [objektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin](#how-do-you-check-whether-an-object-can-be-extendable-or-not)                                      |
+| 262 | [objektni kengaytirishni qanday oldini olish mumkin](#how-do-you-prevent-an-object-to-extend)                                                                                          |
+| 263 | [objektni kengaytirilmaydigan qilishning turli usullari qanday](#what-are-the-different-ways-to-make-an-object-non-extensible)                                                         |
+| 264 | [objektda bir nechta xususiyatlarni qanday aniqlash mumkin](#how-do-you-define-multiple-properties-on-an-object)                                                                       |
 | 265 | [Javascriptda MEAN nima](#what-is-mean-in-javascript)                                                                                                                                  |
 | 266 | [Javascriptda xiralashish(Obfuscation ) nima](#what-is-obfuscation-in-javascript)                                                                                                      |
 | 267 | [Nima uchun sizga obfuscation kerak ?](#why-do-you-need-obfuscation)                                                                                                                   |
@@ -321,7 +321,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 277 | [rangeOverflow xususiyatidan foydalanishga misol keltiring](#give-an-example-usage-of-rangeoverflow-property)                                                                          |
 | 278 | [Enums xususiyati javascriptda mavjudmi?](#is-enums-feature-available-in-javascript)                                                                                                   |
 | 279 | [Enum nima](#What-is-an-enum)                                                                                                                                                          |
-| 280 | [Ob'ektning barcha xususiyatlarini qanday ro'yxatga olasiz](#how-do-you-list-all-properties-of-an-object)                                                                              |
+| 280 | [objektning barcha xususiyatlarini qanday ro'yxatga olasiz](#how-do-you-list-all-properties-of-an-object)                                                                              |
 | 281 | [How do you get property descriptors of an object](#how-do-you-get-property-descriptors-of-an-object)                                                                                  |
 | 282 | [Xususiyat deskriptori tomonidan taqdim etilgan atributlar qanday](#what-are-the-attributes-provided-by-a-property-descriptor)                                                         |
 | 283 | [Classlarni qanday uzaytirasiz(extends)](#how-do-you-extend-classes)                                                                                                                   |
@@ -358,7 +358,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 314 | [Destructuring assignment (strukturani buzish) nima ?](#what-is-destructuring-assignment)                                                                                              |
 | 315 | [Topshiriqni buzishda standart qiymatlar qanday](#what-are-default-values-in-destructuring-assignment)                                                                                 |
 | 316 | [Topshiriqni buzishda o'zgaruvchilarni qanday almashtirasiz](#how-do-you-swap-variables-in-destructuring-assignment)                                                                   |
-| 317 | [Kengaytirilgan ob'ekt harflari nima](#what-are-enhanced-object-literals)                                                                                                              |
+| 317 | [Kengaytirilgan objekt harflari nima](#what-are-enhanced-object-literals)                                                                                                              |
 | 318 | [Dinamik import nima](#what-are-dynamic-imports)                                                                                                                                       |
 | 319 | [Dinamik import uchun qanday holatlar mavjud](#what-are-the-use-cases-for-dynamic-imports)                                                                                             |
 | 320 | [Tiplangan massivlar(typed arrays) nima](#what-are-typed-arrays)                                                                                                                       |
@@ -382,7 +382,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 338 | [Xato obyektining(error object) maqsadi nima](#what-is-the-purpose-of-error-object)                                                                                                    |
 | 339 | [EvalError obyektining maqsadi nima](#what-is-the-purpose-of-evalerror-object)                                                                                                         |
 | 340 | [Qattiy bo'lmagan rejimdan qat'iy rejimga o'tkazilgan xatolar ro'yxati qanday](#what-are-the-list-of-cases-error-thrown-from-non-strict-mode-to-strict-mode)                           |
-| 341 | [Barcha ob'ektlarning prototiplari bormi?](#do-all-objects-have-prototypes)                                                                                                            |
+| 341 | [Barcha objektlarning prototiplari bormi?](#do-all-objects-have-prototypes)                                                                                                            |
 | 342 | [Parametr va argument o'rtasidagi farq nima](#what-is-the-difference-between-a-parameter-and-an-argument)                                                                              |
 | 343 | [Massivlardagi some usulining maqsadi nima](#what-is-the-purpose-of-some-method-in-arrays)                                                                                             |
 | 344 | [Ikki yoki undan ortiq massivni qanday birlashtirasiz](#how-do-you-combine-two-or-more-arrays)                                                                                         |
@@ -407,13 +407,13 @@ You can download the PDF and Epub version of this repository from the latest run
 | 363 | [Map usulini ishlatmasdan massiv qiymatlarini qanday Map qilish mumkin](#how-do-you-map-the-array-values-without-using-map-method)                                                     |
 | 364 | [Massivni qanday bo'shatish mumkin](#how-do-you-empty-an-array)                                                                                                                        |
 | 365 | [Qanday qilib raqamlarni ma'lum o'nli kasrlarga yaxlitlash mumkin](#how-do-you-rounding-numbers-to-certain-decimals)                                                                   |
-| 366 | [Massivni ob'ektga aylantirishning eng oson yo'li qanday?](#what-is-the-easiest-way-to-convert-an-array-to-an-object)                                                                  |
+| 366 | [Massivni objektga aylantirishning eng oson yo'li qanday?](#what-is-the-easiest-way-to-convert-an-array-to-an-object)                                                                  |
 | 367 | [Ba'zi ma'lumotlar bilan massivni qanday yaratish mumkin](#how-do-you-create-an-array-with-some-data)                                                                                  |
-| 368 | [Konsol ob'ektidagi to'ldiruvchilar nima](#what-are-the-placeholders-from-console-object)                                                                                              |
+| 368 | [Konsol objektidagi to'ldiruvchilar nima](#what-are-the-placeholders-from-console-object)                                                                                              |
 | 369 | [Konsol xabarlariga CSS qo'shish mumkinmi?](#is-it-possible-to-add-css-to-console-messages)                                                                                            |
-| 370 | [Konsol ob'ektining dir usulidan maqsad nima](#what-is-the-purpose-of-dir-method-of-console-object)                                                                                    |
+| 370 | [Konsol objektining dir usulidan maqsad nima](#what-is-the-purpose-of-dir-method-of-console-object)                                                                                    |
 | 371 | [Konsolda HTML elementlarini disk raskadrovka qilish mumkinmi?](#is-it-possible-to-debug-html-elements-in-console)                                                                     |
-| 372 | [Konsol ob'ekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkin](#how-do-you-display-data-in-a-tabular-format-using-console-object)                                  |
+| 372 | [Konsol objekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkin](#how-do-you-display-data-in-a-tabular-format-using-console-object)                                  |
 | 373 | [Argument son yoki son emasligini qanday tekshirish mumkin](#how-do-you-verify-that-an-argument-is-a-number-or-not)                                                                    |
 | 374 | [Buferga nusxa ko'chirish tugmasi qanday yaratiladi](#how-do-you-create-copy-to-clipboard-button)                                                                                      |
 | 375 | [Timestamp uchun shortcut nima](#what-is-the-shortcut-to-get-timestamp)                                                                                                                |
@@ -421,7 +421,7 @@ You can download the PDF and Epub version of this repository from the latest run
 | 377 | [Ko'p holatni tekshirishning(multi condition checking) eng oson usuli](#what-is-the-easiest-multi-condition-checking)                                                                  |
 | 378 | [Brauzerning orqaga tugmachasini qanday suratga olasiz](#how-do-you-capture-browser-back-button)                                                                                       |
 | 379 | [Veb-sahifada sichqonchaning o'ng tugmachasini qanday o'chirib qo'yish mumkin](#how-do-you-disable-right-click-in-the-web-page)                                                        |
-| 380 | [O'rash ob'ektlari(wrapper object) nima](#what-are-wrapper-objects)                                                                                                                    |
+| 380 | [O'rash objektlari(wrapper object) nima](#what-are-wrapper-objects)                                                                                                                    |
 | 381 | [AJAX nima](#what-is-ajax)                                                                                                                                                             |
 | 382 | [Asinxron kod bilan ishlashning turli usullari qanday](#what-are-the-different-ways-to-deal-with-asynchronous-code)                                                                    |
 | 383 | [Qanday qilib qabul qilishni bekor qilish mumkin](#how-to-cancel-a-fetch-request)                                                                                                      |
@@ -451,11 +451,11 @@ You can download the PDF and Epub version of this repository from the latest run
 | 407 | [Asinx funksiya nima](#what-is-an-async-function)                                                                                                                                      |
 | 408 | [Qanday qilib va'dalarni yutish(promise swallowing) xatolarining oldini olish mumkin](#how-do-you-prevent-promises-swallowing-errors)                                                  |
 | 409 | [Deno nima](#what-is-deno)                                                                                                                                                             |
-| 410 | [Qanday qilib ob'ektni javascriptda takrorlanadigan qilish mumkin](#how-do-you-make-an-object-iterable-in-javascript)                                                                  |
+| 410 | [Qanday qilib objektni javascriptda takrorlanadigan qilish mumkin](#how-do-you-make-an-object-iterable-in-javascript)                                                                  |
 | 411 | [To'g'ri quyruq chaqiruvi ( Proper Tail Call ) nima](#what-is-a-proper-tail-call)                                                                                                      |
-| 412 | [Ob'ektni Promise(va’da) ekani yoki yoq ekanini qanday tekshirish mumkin](#how-do-you-check-an-object-is-a-promise-or-not)                                                             |
+| 412 | [objektni Promise(va’da) ekani yoki yoq ekanini qanday tekshirish mumkin](#how-do-you-check-an-object-is-a-promise-or-not)                                                             |
 | 413 | [Funktsiya konstruktor sifatida chaqirilganligini qanday aniqlash mumkin](#how-to-detect-if-a-function-is-called-as-constructor)                                                       |
-| 414 | [Argumentlar ob'ekti va Rest parametri o'rtasidagi farqlar qanday](#what-are-the-differences-between-arguments-object-and-rest-parameter)                                              |
+| 414 | [Argumentlar objekti va Rest parametri o'rtasidagi farqlar qanday](#what-are-the-differences-between-arguments-object-and-rest-parameter)                                              |
 | 415 | [Spred operatori va Rest parametri o'rtasidagi farqlar qanday](#what-are-the-differences-between-spread-operator-and-rest-parameter)                                                   |
 | 416 | [Har xil turdagi generatorlar qanday](#what-are-the-different-kinds-of-generators)                                                                                                     |
 | 417 | [O'rnatilgan iterativlar(built-in) nima](#what-are-the-built-in-iterables)                                                                                                             |
@@ -473,13 +473,13 @@ You can download the PDF and Epub version of this repository from the latest run
 | 429 | [setTimeout, setImmediate va process.nextTick o'rtasidagi farq nima](#what-is-the-difference-between-set-timeout-,-set-immediate-and-processnext-tick)                                 |
 | 430 | [Asl massivni(original array) o'zgartirmasdan massivni qanday o'zgartirish mumkin?](#how-do-you-reverse-an-array-without-modifying-original-array)                                     |
 
-1. ### JavaScript-da ob'ektlarni yaratishning qanday usullari mavjud
+1. ### JavaScriptda objectlarni yaratishning qanday usullari mavjud
 
-   Quyidagi kabi javascriptda ob'ektlar yaratishning ko'plab usullari mavjud
+   Quyidagi kabi javascriptda objektlar yaratishning ko'plab usullari mavjud
 
    1. **Object constructor:**
 
-      Bo'sh ob'ektni yaratishning eng oddiy usuli Ob'ekt konstruktoridan foydalanishdir. Hozirgi vaqtda bunday yondashuv tavsiya etilmaydi.
+      Bo'sh objektni yaratishning eng oddiy usuli objekt konstruktoridan foydalanishdir. Hozirgi vaqtda bunday yondashuv tavsiya etilmaydi.
 
       ```javascript
       var object = new Object();
@@ -487,7 +487,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    2. **Object's create method:**
 
-      Object ning yaratish usuli prototip ob'ektini parametr sifatida o'tkazish orqali yangi ob'ektni yaratadi
+      Object ning yaratish usuli prototip objektini parametr sifatida o'tkazish orqali yangi objektni yaratadi
 
       ```javascript
       var object = Object.create(null);
@@ -495,7 +495,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    3. **Object literal syntax:**
 
-      Ob'ektning so'zma-so'z sintaksisi (yoki ob'ektni ishga tushiruvchisi) jingalak qavslarga o'ralgan nom-qiymat juftlarining vergul bilan ajratilgan to'plamidir.
+      objektning so'zma-so'z sintaksisi (yoki objektni ishga tushiruvchisi) jingalak qavslarga o'ralgan nom-qiymat juftlarining vergul bilan ajratilgan to'plamidir.
 
       ```javascript
       var object = {
@@ -503,15 +503,15 @@ You can download the PDF and Epub version of this repository from the latest run
            age: 34
       };
 
-      Ob'ektning so'zma-so'z xossasi qiymatlari har qanday ma'lumot turiga, jumladan massiv, funksiya va ichki o'rnatilgan ob'ekt bo'lishi mumkin.
+      objektning so'zma-so'z xossasi qiymatlari har qanday ma'lumot turiga, jumladan massiv, funksiya va ichki o'rnatilgan objekt bo'lishi mumkin.
 
       ```
 
-      **Note:** Bu ob'ektni yaratishning eng oson usuli
+      **Note:** Bu objektni yaratishning eng oson usuli
 
    4. **Function constructor:**
 
-      Har qanday funktsiyani yarating va ob'ekt misollarini yaratish uchun yangi operatorni qo'llang
+      Har qanday funktsiyani yarating va objekt misollarini yaratish uchun yangi operatorni qo'llang
 
       ```javascript
       function Person(name) {
@@ -531,7 +531,7 @@ You can download the PDF and Epub version of this repository from the latest run
       var object = new Person();
       ```
 
-      Bu funksiya prototipi bilan ob'ekt yaratish usuli bilan yaratilgan misolga teng va keyin ushbu funktsiyani misol va parametrlar bilan argument sifatida chaqirish.
+      Bu funksiya prototipi bilan objekt yaratish usuli bilan yaratilgan misolga teng va keyin ushbu funktsiyani misol va parametrlar bilan argument sifatida chaqirish.
 
       ```javascript
       function func {};
@@ -554,7 +554,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    6. **ES6 Class syntax:**
 
-      ES6 ob'ektlarni yaratish uchun sinf xususiyatini taqdim etadi
+      ES6 objektlarni yaratish uchun sinf xususiyatini taqdim etadi
 
       ```javascript
       class Person {
@@ -568,7 +568,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    7. **Singleton pattern:**
 
-      Singleton - bu faqat bir marta yaratilishi mumkin bo'lgan ob'ekt. Uning konstruktoriga takroriy qo'ng'iroqlar bir xil misolni qaytaradi va shu bilan ular tasodifan bir nechta misollarni yaratmasligiga ishonch hosil qilish mumkin.
+      Singleton - bu faqat bir marta yaratilishi mumkin bo'lgan objekt. Uning konstruktoriga takroriy qo'ng'iroqlar bir xil misolni qaytaradi va shu bilan ular tasodifan bir nechta misollarni yaratmasligiga ishonch hosil qilish mumkin.
 
       ```javascript
       var object = new (function () {
@@ -580,9 +580,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
 2. ### Prototip zanjiri nima
 
-   **Prototype chaining** mavjud ob'ektlar asosida yangi turdagi ob'ektlarni qurish uchun ishlatiladi. Bu sinfga asoslangan tilda merosga o'xshaydi.
+   **Prototype chaining** mavjud objektlar asosida yangi turdagi objektlarni qurish uchun ishlatiladi. Bu sinfga asoslangan tilda merosga o'xshaydi.
 
-Ob'ekt namunasidagi prototip **Object.getPrototypeOf(object)** yoki \***\*proto\*\*** xususiyati orqali, konstruktorlar funksiyasidagi prototip esa **Object.prototype**. orqali mavjud .
+Objekt namunasidagi prototip **Object.getPrototypeOf(object)** yoki \***\*proto\*\*** xususiyati orqali, konstruktorlar funksiyasidagi prototip esa **Object.prototype**. orqali mavjud .
 
 ![Screenshot](images/prototype_chain.png)
 
@@ -652,13 +652,13 @@ Ob'ekt namunasidagi prototip **Object.getPrototypeOf(object)** yoki \***\*proto\
 
    **JSON** bu JavaScript ob'yekt sintaksisiga asoslangan matnga asoslangan ma'lumotlar formati bo'lib, u tomonidan ommalashgan `Douglas Crockford`. Bu tarmoq boʻylab maʼlumotlarni uzatmoqchi boʻlganingizda foydali boʻladi va u asosan .json kengaytmali matn fayli va MIME turi ilova/json boʻlsa.
 
-   **Parsing:** satrni mahalliy ob'ektga aylantirish
+   **Parsing:** satrni mahalliy objektga aylantirish
 
    ```javascript
    JSON.parse(text);
    ```
 
-   **Stringification:** mahalliy ob'ektni tarmoq bo'ylab uzatilishi uchun stringa aylantirish
+   **Stringification:** mahalliy objektni tarmoq bo'ylab uzatilishi uchun stringa aylantirish
 
    ```javascript
    JSON.stringify(object);
@@ -715,15 +715,15 @@ Slice va splice o'rtasidagi farq nima
 
 **[⬆ Back to Top](#table-of-contents)**
 
-8. ### Ob'ekt va mapni qanday solishtirasiz
+8. ### Objekt va mapni qanday solishtirasiz
 
-   Ob'ektlar Maplarga o'xshaydi , chunki ikkalasi ham kalitlarni qiymatlarga o'rnatish, ushbu qiymatlarni olish, kalitlarni o'chirish va kalitda biror narsa saqlanganligini aniqlash imkonini beradi. Shu sababli, ob'ektlar tarixan Maplar sifatida ishlatilgan. Lekin muhim farqlar borki, ular ma'lum holatlarda Mapdan foydalanishni afzal ko'radi.
+   objektlar Maplarga o'xshaydi , chunki ikkalasi ham kalitlarni qiymatlarga o'rnatish, ushbu qiymatlarni olish, kalitlarni o'chirish va kalitda biror narsa saqlanganligini aniqlash imkonini beradi. Shu sababli, objektlar tarixan Maplar sifatida ishlatilgan. Lekin muhim farqlar borki, ular ma'lum holatlarda Mapdan foydalanishni afzal ko'radi.
 
-   1. Ob'ektning kalitlari qatorlar va belgilar bo'lib, ular Map uchun har qanday qiymat, jumladan funktsiyalar, ob'ektlar va har qanday ibtidoiy bo'lishi mumkin.
-   2. Mapdagi kalitlar tartiblangan, Ob'ektga qo'shilgan kalitlar esa yo'q. Shunday qilib, uni takrorlashda Map ob'ekti kalitlarni kiritish tartibida qaytaradi.
-   3. Siz Map hajmini siz o'lcham xususiyati bilan osongina olishingiz mumkin, shu bilan birga Ob'ektdagi xususiyatlar soni qo'lda aniqlanishi kerak.
-   4. Map takrorlanadigan va shuning uchun to'g'ridan-to'g'ri takrorlanishi mumkin, holbuki Ob'ektni takrorlash uchun uning kalitlarini qandaydir tarzda olish va ularni takrorlash kerak.
-   5. Ob'ektning prototipi bor, shuning uchun Mapda ehtiyot bo'lmasangiz, kalitlaringiz bilan to'qnashishi mumkin bo'lgan standart kalitlar mavjud. ES5 dan boshlab map = Object.create(null) yordamida buni chetlab o'tish mumkin, lekin bu kamdan-kam hollarda amalga oshiriladi.
+   1. objektning kalitlari qatorlar va belgilar bo'lib, ular Map uchun har qanday qiymat, jumladan funktsiyalar, objektlar va har qanday ibtidoiy bo'lishi mumkin.
+   2. Mapdagi kalitlar tartiblangan, objektga qo'shilgan kalitlar esa yo'q. Shunday qilib, uni takrorlashda Map objekti kalitlarni kiritish tartibida qaytaradi.
+   3. Siz Map hajmini siz o'lcham xususiyati bilan osongina olishingiz mumkin, shu bilan birga objektdagi xususiyatlar soni qo'lda aniqlanishi kerak.
+   4. Map takrorlanadigan va shuning uchun to'g'ridan-to'g'ri takrorlanishi mumkin, holbuki objektni takrorlash uchun uning kalitlarini qandaydir tarzda olish va ularni takrorlash kerak.
+   5. objektning prototipi bor, shuning uchun Mapda ehtiyot bo'lmasangiz, kalitlaringiz bilan to'qnashishi mumkin bo'lgan standart kalitlar mavjud. ES5 dan boshlab map = Object.create(null) yordamida buni chetlab o'tish mumkin, lekin bu kamdan-kam hollarda amalga oshiriladi.
    6. Map kalit juftlarini tez-tez qo'shish va olib tashlashni o'z ichiga olgan stsenariylarda yaxshiroq ishlashi mumkin.
 
    **[⬆ Back to Top](#table-of-contents)**
@@ -738,7 +738,7 @@ Slice va splice o'rtasidagi farq nima
       1. NaN hech narsaga teng emas, shu jumladan NaN.
       2. Ijobiy va manfiy nollar bir-biriga teng.
    3. Ikki mantiqiy operand, agar ikkalasi ham to'g'ri yoki ikkalasi ham yolg'on bo'lsa, qat'iy teng bo'ladi.
-   4. Ikki ob'ekt bir xil ob'ektga tegishli bo'lsa, ular mutlaqo tengdir.
+   4. Ikki objekt bir xil objektga tegishli bo'lsa, ular mutlaqo tengdir.
    5. Null va Undefined turlari === ga teng emas, lekin == ga teng. ya'ni, null===aniqlanmagan --> noto'g'ri, lekin null==aniqlanmagan --> rost
 
    Yuqoridagi holatlarni qamrab oluvchi ba'zi misollar,
@@ -766,7 +766,7 @@ Arrow funksiyasi funksiya ifodasi uchun qisqaroq sintaksis bo‘lib, o‘ziga xo
 
 11. ### Birinchi sinf funktsiyasi(first class) nima
 
-    Javascriptda funksiyalar birinchi darajali ob'ektlardir. Birinchi darajali funktsiyalar bu tildagi funktsiyalar boshqa o'zgaruvchilar kabi ko'rib chiqilishini anglatadi.
+    Javascriptda funksiyalar birinchi darajali objektlardir. Birinchi darajali funktsiyalar bu tildagi funktsiyalar boshqa o'zgaruvchilar kabi ko'rib chiqilishini anglatadi.
 
     Masalan, bunday tilda funksiya boshqa funksiyalarga argument sifatida uzatilishi, boshqa funksiya tomonidan qaytarilishi va o‘zgaruvchiga qiymat sifatida berilishi mumkin. Misol uchun, quyidagi misolda tinglovchiga tayinlangan ishlov beruvchi funktsiyalari
 
@@ -947,7 +947,7 @@ Foydalanishni ko'rsatish uchun misol keltiraylik,
 
 21. ### Temporal Dead Zone (Vaqtinchalik o'lik zona) nima
 
-    Vaqtinchalik o'lik zona - bu JavaScript-da o'zgaruvchini let va const kalit so'zlari bilan e'lon qilishda yuzaga keladigan xatti-harakatlar, lekin var bilan emas. ECMAScript 6 da letyoki consto'zgaruvchiga uning e'lon qilinishidan oldin (uning doirasi doirasida) kirish ReferenceErrorga olib keladi. Bu sodir bo'ladigan vaqt oralig'i, o'zgaruvchining bog'lanishi yaratilishi va uning e'lon qilinishi o'rtasidagi vaqt oralig'i vaqtinchalik o'lik zona deb ataladi.
+    Vaqtinchalik o'lik zona - bu JavaScriptda o'zgaruvchini let va const kalit so'zlari bilan e'lon qilishda yuzaga keladigan xatti-harakatlar, lekin var bilan emas. ECMAScript 6 da letyoki consto'zgaruvchiga uning e'lon qilinishidan oldin (uning doirasi doirasida) kirish ReferenceErrorga olib keladi. Bu sodir bo'ladigan vaqt oralig'i, o'zgaruvchining bog'lanishi yaratilishi va uning e'lon qilinishi o'rtasidagi vaqt oralig'i vaqtinchalik o'lik zona deb ataladi.
 
     Keling, bu xatti-harakatni misol bilan ko'rib chiqaylik,
 
@@ -984,7 +984,7 @@ Foydalanishni ko'rsatish uchun misol keltiraylik,
 
     **[⬆ Back to Top](#table-of-contents)**
 
-23. ### JavaScript-da URL-manzilni qanday dekodlash yoki enkodlash mumkin?
+23. ### JavaScriptda URL-manzilni qanday dekodlash yoki enkodlash mumkin?
 
     encodeURI()funksiyasi URL manzilini kodlash uchun ishlatiladi. Bu funksiya parametr sifatida URL satrini talab qiladi va kodlangan qatorni qaytaradi. decodeURI()funksiya URL manzilini ochish uchun ishlatiladi. Bu funksiya parametr sifatida kodlangan URL satrini talab qiladi va bu dekodlangan qatorni qaytaradi.
 
@@ -1078,7 +1078,7 @@ Foydalanishni ko'rsatish uchun misol keltiraylik,
 
 27. ### Closures nima
 
-    Yopish - bu funktsiya va ushbu funktsiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funktsiyadir. Yopish uchta ko'lamli zanjirga ega
+    Closure bu - funktsiya va ushbu funktsiya e'lon qilingan leksik muhitning kombinatsiyasi. ya'ni, bu tashqi yoki qo'shuvchi funksiya o'zgaruvchilariga kirish huquqiga ega bo'lgan ichki funktsiyadir. Yopish uchta ko'lamli zanjirga ega
 
     1. O'zgaruvchilar uning jingalak qavslar orasida aniqlangan o'z doirasi
     2. Tashqi funktsiya o'zgaruvchilari
@@ -1104,7 +1104,7 @@ Foydalanishni ko'rsatish uchun misol keltiraylik,
 
 28. ### Modullar nima
 
-    Modullar mustaqil, qayta foydalanish mumkin bo'lgan kodning kichik birliklariga ishora qiladi va ko'plab JavaScript dizayn naqshlarining asosi bo'lib xizmat qiladi. Ko'pgina JavaScript modullari ob'ektni, funktsiyani yoki konstruktorni eksport qiladi
+    Modullar mustaqil, qayta foydalanish mumkin bo'lgan kodning kichik birliklariga ishora qiladi va ko'plab JavaScript dizayn naqshlarining asosi bo'lib xizmat qiladi. Ko'pgina JavaScript modullari objektni, funktsiyani yoki konstruktorni eksport qiladi
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -1120,7 +1120,7 @@ Foydalanishni ko'rsatish uchun misol keltiraylik,
 
 30. ### Javascriptda qamrov(scope) nima
 
-Amal qilish doirasi - bu ish vaqtida kodingizning ma'lum bir qismidagi o'zgaruvchilar, funktsiyalar va ob'ektlarga kirish imkoniyati. Boshqacha qilib aytganda, qamrov sizning kodingiz sohalarida o'zgaruvchilar va boshqa resurslarning ko'rinishini aniqlaydi.
+Amal qilish doirasi - bu ish vaqtida kodingizning ma'lum bir qismidagi o'zgaruvchilar, funktsiyalar va objektlarga kirish imkoniyati. Boshqacha qilib aytganda, qamrov sizning kodingiz sohalarida o'zgaruvchilar va boshqa resurslarning ko'rinishini aniqlaydi.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -1159,7 +1159,7 @@ Veb-xotira - bu brauzerlar kalit/qiymat juftlarini foydalanuvchi brauzerida maha
 
 36. ### Post xabari(post message) nima
 
-    Xabarni yuborish - bu Oyna ob'ektlari (ya'ni, sahifa va u ochilgan qalqib chiquvchi oyna o'rtasida yoki sahifa va uning ichiga o'rnatilgan iframe o'rtasida) o'zaro bog'lanishni ta'minlaydigan usul. Odatda, turli sahifalardagi skriptlarga bir-biriga kirishga ruxsat beriladi, agar sahifalar bir xil manba siyosatiga (yaʼni, sahifalar bir xil protokol, port raqami va xostga ega boʻlsa) amal qilgan taqdirdagina.
+    Xabarni yuborish - bu Oyna objektlari (ya'ni, sahifa va u ochilgan qalqib chiquvchi oyna o'rtasida yoki sahifa va uning ichiga o'rnatilgan iframe o'rtasida) o'zaro bog'lanishni ta'minlaydigan usul. Odatda, turli sahifalardagi skriptlarga bir-biriga kirishga ruxsat beriladi, agar sahifalar bir xil manba siyosatiga (yaʼni, sahifalar bir xil protokol, port raqami va xostga ega boʻlsa) amal qilgan taqdirdagina.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -1236,7 +1236,7 @@ Cookie-fayllar foydalanuvchi profili (masalan, foydalanuvchi nomi) haqidagi ma'l
 
 43. ### Veb-xotiraga(web storage) qanday kirish mumkin
 
-    Window obyekti mos ravishda (window.localStorage) va (window.sessionStorage) xossalariga ega bo'lgan WindowLocalStorageva WindowSessionStorageob'ektlarini amalga oshiradi. Ushbu xususiyatlar Saqlash ob'ektining namunasini yaratadi, bu orqali ma'lum domen va saqlash turi (sessiya yoki mahalliy) uchun ma'lumotlar elementlarini o'rnatish, olish va o'chirish mumkin. Masalan, siz mahalliy saqlash ob'ektlarida quyida ko'rsatilganidek o'qishingiz va yozishingiz mumkinlocalStoragesessionStorage
+    Window obyekti mos ravishda (window.localStorage) va (window.sessionStorage) xossalariga ega bo'lgan WindowLocalStorageva WindowSessionStorageobjektlarini amalga oshiradi. Ushbu xususiyatlar Saqlash objektining namunasini yaratadi, bu orqali ma'lum domen va saqlash turi (sessiya yoki mahalliy) uchun ma'lumotlar elementlarini o'rnatish, olish va o'chirish mumkin. Masalan, siz mahalliy saqlash objektlarida quyida ko'rsatilganidek o'qishingiz va yozishingiz mumkinlocalStoragesessionStorage
 
     ```javascript
     localStorage.setItem('logo', document.getElementById('logo').value);
@@ -1247,7 +1247,7 @@ Cookie-fayllar foydalanuvchi profili (masalan, foydalanuvchi nomi) haqidagi ma'l
 
 44. ### Session storageda qanday usullar mavjud
 
-    Window obyekti mos ravishda (window.localStorage) va (window.sessionStorage) xossalariga ega bo'lgan WindowLocalStorageva WindowSessionStorageob'ektlarini amalga oshiradi. Ushbu xususiyatlar Saqlash ob'ektining namunasini yaratadi, bu orqali ma'lum domen va saqlash turi (sessiya yoki mahalliy) uchun ma'lumotlar elementlarini o'rnatish, olish va o'chirish mumkin. Masalan, siz mahalliy saqlash ob'ektlarida quyida ko'rsatilganidek o'qishingiz va yozishingiz mumkinlocalStoragesessionStorage
+    Window obyekti mos ravishda (window.localStorage) va (window.sessionStorage) xossalariga ega bo'lgan WindowLocalStorageva WindowSessionStorageobjektlarini amalga oshiradi. Ushbu xususiyatlar Saqlash objektining namunasini yaratadi, bu orqali ma'lum domen va saqlash turi (sessiya yoki mahalliy) uchun ma'lumotlar elementlarini o'rnatish, olish va o'chirish mumkin. Masalan, siz mahalliy saqlash objektlarida quyida ko'rsatilganidek o'qishingiz va yozishingiz mumkinlocalStoragesessionStorage
 
     ```javascript
     // Save data to sessionStorage
@@ -1345,7 +1345,7 @@ Veb-xotiradan foydalanishdan oldin brauzerning localStorage va sessionStorage uc
 
     Bu yerda postMessage() usuli xabarni HTML sahifasiga qaytarish uchun ishlatiladi
 
-    1. Veb ishchi ob'ektini yaratish: Brauzer qo'llab-quvvatlashini tekshirish orqali veb-ishchi ob'ektini yaratishingiz mumkin. Keling, bu faylni web_worker_example.js deb nomlaymiz
+    1. Veb ishchi objektini yaratish: Brauzer qo'llab-quvvatlashini tekshirish orqali veb-ishchi objektini yaratishingiz mumkin. Keling, bu faylni web_worker_example.js deb nomlaymiz
 
     ```javascript
     if (typeof w == 'undefined') {
@@ -1387,7 +1387,7 @@ WebWorkers quyida joylashgan JavaScript obyektlariga kirish huquqiga ega emas, c
 
 51. ### Promise(vada) nima
 
-    Va'da - bu hal qilingan qiymat yoki hal qilinmagan sabab (masalan, tarmoq xatosi) bilan kelajakda bir muncha vaqt bitta qiymat ishlab chiqarishi mumkin bo'lgan ob'ekt. U 3 ta mumkin bo'lgan holatdan birida bo'ladi: bajarilgan, rad etilgan yoki kutilayotgan.
+    Va'da - bu hal qilingan qiymat yoki hal qilinmagan sabab (masalan, tarmoq xatosi) bilan kelajakda bir muncha vaqt bitta qiymat ishlab chiqarishi mumkin bo'lgan objekt. U 3 ta mumkin bo'lgan holatdan birida bo'ladi: bajarilgan, rad etilgan yoki kutilayotgan.
 
 Promise yaratish sintaksisi quyidagi kabi ko'rinadi:
 
@@ -1547,7 +1547,7 @@ Server tomonidan yuborilgan voqealar (SSE) - bu serverni surish texnologiyasi bo
 
 Va'da muayyan qoidalar to'plamiga amal qilishi kerak,
 
-    1. `.then()` Va'da - bu standartga mos keladigan usulni ta'minlovchi ob'ekt
+    1. `.then()` Va'da - bu standartga mos keladigan usulni ta'minlovchi objekt
     2. Kutilayotgan va'da bajarilgan yoki rad etilgan holatga o'tishi mumkin
     3. Bajarilgan yoki rad etilgan va'da hal qilinadi va u boshqa hech qanday holatga o'tmasligi kerak.
     4. Va'da bajarilgandan so'ng, qiymat o'zgarmasligi kerak.
@@ -1645,7 +1645,7 @@ Va'da muayyan qoidalar to'plamiga amal qilishi kerak,
 
 67. ### Nima uchun sizga qattiq rejim kerak
 
-    Qattiq rejim haqiqiy xatolarga "yomon sintaksis" haqida xabar berib, "xavfsiz" JavaScript yozish uchun foydalidir. Masalan, xatolik yo'li bilan tasodifan global o'zgaruvchini yaratishni bartaraf qiladi va yozilmaydigan xususiyatga, faqat qabul qiluvchi xususiyatga, mavjud bo'lmagan xususiyatga, mavjud bo'lmagan o'zgaruvchiga yoki bo'lmagan xususiyatga tayinlash uchun xatolik chiqaradi. mavjud ob'ekt.
+    Qattiq rejim haqiqiy xatolarga "yomon sintaksis" haqida xabar berib, "xavfsiz" JavaScript yozish uchun foydalidir. Masalan, xatolik yo'li bilan tasodifan global o'zgaruvchini yaratishni bartaraf qiladi va yozilmaydigan xususiyatga, faqat qabul qiluvchi xususiyatga, mavjud bo'lmagan xususiyatga, mavjud bo'lmagan o'zgaruvchiga yoki bo'lmagan xususiyatga tayinlash uchun xatolik chiqaradi. mavjud objekt.
     **[⬆ Back to Top](#table-of-contents)**
 
 68. ### Qattiq rejimni qanday e'lon qilasiz
@@ -1734,7 +1734,7 @@ Va'da muayyan qoidalar to'plamiga amal qilishi kerak,
 
 73. ### Null qiymat nima
 
-    Null qiymati har qanday ob'ekt qiymatining ataylab yo'qligini ifodalaydi. Bu JavaScript-ning ibtidoiy qiymatlaridan biridir. Null qiymat turi ob'ekt hisoblanadi. Qiymatni null ga o'rnatish orqali o'zgaruvchini bo'shatish mumkin.
+    Null qiymati har qanday objekt qiymatining ataylab yo'qligini ifodalaydi. Bu JavaScript-ning ibtidoiy qiymatlaridan biridir. Null qiymat turi objekt hisoblanadi. Qiymatni null ga o'rnatish orqali o'zgaruvchini bo'shatish mumkin.
 
     ```javascript
     var user = null;
@@ -1749,7 +1749,7 @@ Va'da muayyan qoidalar to'plamiga amal qilishi kerak,
 
     | Null                                                                                         | Undefined                                                                                |
     | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-    | Bu o'zgaruvchining hech qanday ob'ektga ishora qilmasligini ko'rsatadigan tayinlash qiymati. | Bu o'zgaruvchi e'lon qilingan, lekin hali qiymat tayinlanmagan tayinlash qiymati emas.   |
+    | Bu o'zgaruvchining hech qanday objektga ishora qilmasligini ko'rsatadigan tayinlash qiymati. | Bu o'zgaruvchi e'lon qilingan, lekin hali qiymat tayinlanmagan tayinlash qiymati emas.   |
     | Type of null is object                                                                       | Type of undefined is undefined                                                           |
     | Null qiymat nol, bo'sh yoki mavjud bo'lmagan havolani ifodalovchi ibtidoiy qiymatdir.        | Aniqlanmagan qiymat o'zgaruvchiga qiymat berilmaganda ishlatiladigan ibtidoiy qiymatdir. |
     | O'zgaruvchi uchun qiymat yo'qligini ko'rsatadi                                               | O'zgaruvchining o'zi yo'qligini ko'rsatadiitself                                         |
@@ -1773,8 +1773,8 @@ Va'da muayyan qoidalar to'plamiga amal qilishi kerak,
 
     | Window                                                                             | Document                                                                                       |
     | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-    | Bu har qanday veb-sahifadagi ildiz darajasining elementidir                        | Bu oyna ob'ektining bevosita bolasi. Bu Document Object Model (DOM) sifatida ham tanilgan.     |
-    | Odatiy bo'lib oyna ob'ekti bevosita sahifada mavjud                                | Siz unga window.document yoki hujjat orqali kirishingiz mumkin.                                |
+    | Bu har qanday veb-sahifadagi ildiz darajasining elementidir                        | Bu oyna objektining bevosita bolasi. Bu Document Object Model (DOM) sifatida ham tanilgan.     |
+    | Odatiy bo'lib oyna objekti bevosita sahifada mavjud                                | Siz unga window.document yoki hujjat orqali kirishingiz mumkin.                                |
     | Unda alert(), confirm() kabi usullar va hujjat, joylashuv kabi xususiyatlar mavjud | U getElementById, getElementsByTagName, createElement va boshqalar kabi usullarni taqdim etadi |
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -1920,7 +1920,7 @@ isFinite() funksiyasi sonning cheklangan, qonuniy son ekanligini aniqlash uchun 
 
 89. ### Operatsion tizim tafsilotlari(operating system details) ni qanday topish mumkin
 
-    window.navigator ob'ekti tashrif buyuruvchining brauzeri OS tafsilotlari haqidagi ma'lumotlarni o'z ichiga oladi. Ba'zi OS xususiyatlari platforma mulki ostida mavjud,
+    window.navigator objekti tashrif buyuruvchining brauzeri OS tafsilotlari haqidagi ma'lumotlarni o'z ichiga oladi. Ba'zi OS xususiyatlari platforma mulki ostida mavjud,
 
     ```javascript
     console.log(navigator.platform);
@@ -1936,7 +1936,7 @@ isFinite() funksiyasi sonning cheklangan, qonuniy son ekanligini aniqlash uchun 
 
 91. ### What is the difference between native, host and user objectsobjects
 
-    Native objectsECMAScript spetsifikatsiyasi bilan belgilangan JavaScript tilining bir qismi bo'lgan ob'ektlardir. Masalan, ECMAScript spetsifikatsiyasida belgilangan String, Math, RegExp, Object, Function va hokazo asosiy ob'ektlar. Host objectsbrauzer yoki ish vaqti muhiti (tugun) tomonidan taqdim etilgan ob'ektlardir. Masalan, window, XmlHttpRequest, DOM tugunlari va boshqalar xost ob'ektlari sifatida qabul qilinadi. User objectsjavascript kodida belgilangan ob'ektlardir. Masalan, profil ma'lumotlari uchun yaratilgan Foydalanuvchi ob'ektlari.
+    Native objectsECMAScript spetsifikatsiyasi bilan belgilangan JavaScript tilining bir qismi bo'lgan objektlardir. Masalan, ECMAScript spetsifikatsiyasida belgilangan String, Math, RegExp, Object, Function va hokazo asosiy objektlar. Host objectsbrauzer yoki ish vaqti muhiti (tugun) tomonidan taqdim etilgan objektlardir. Masalan, window, XmlHttpRequest, DOM tugunlari va boshqalar xost objektlari sifatida qabul qilinadi. User objectsjavascript kodida belgilangan objektlardir. Masalan, profil ma'lumotlari uchun yaratilgan Foydalanuvchi objektlari.
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -2019,12 +2019,12 @@ Void(0) sahifani yangilanishini oldini olish uchun ishlatiladi. Bu kiruvchi nojo
 
 98. ### Js case-sensitive (katta va kichik hariflarni farqalydigan ) tilmi
 
-    Ha, JavaScript katta-kichik harflarga sezgir tildir. Til kalit so'zlari, o'zgaruvchilar, funksiya va ob'ekt nomlari va boshqa identifikatorlar har doim harflarning izchil bosh harflari bilan kiritilishi kerak.
+    Ha, JavaScript katta-kichik harflarga sezgir tildir. Til kalit so'zlari, o'zgaruvchilar, funksiya va objekt nomlari va boshqa identifikatorlar har doim harflarning izchil bosh harflari bilan kiritilishi kerak.
     **[⬆ Back to Top](#table-of-contents)**
 
 99. ### Java va JavaScript o'rtasida bog'liqlik bormi
 
-    Yo'q, ular butunlay ikki xil dasturlash tillari va bir-biriga hech qanday aloqasi yo'q. Ammo ularning ikkalasi ham ob'ektga yo'naltirilgan dasturlash tillari va boshqa ko'plab tillar singari, ular asosiy funktsiyalar uchun o'xshash sintaksisga amal qiladilar (agar, boshqacha, uchun, o'tish, buzish, davom ettirish va hokazo).
+    Yo'q, ular butunlay ikki xil dasturlash tillari va bir-biriga hech qanday aloqasi yo'q. Ammo ularning ikkalasi ham objektga yo'naltirilgan dasturlash tillari va boshqa ko'plab tillar singari, ular asosiy funktsiyalar uchun o'xshash sintaksisga amal qiladilar (agar, boshqacha, uchun, o'tish, buzish, davom ettirish va hokazo).
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -2114,7 +2114,7 @@ Void(0) sahifani yangilanishini oldini olish uchun ishlatiladi. Bu kiruvchi nojo
 
 105.  ### BOM nima
 
-      Brauzer obyekti modeli (BOM) JavaScript-ga brauzer bilan “suhbatlashish” imkonini beradi. U navigator, tarix, ekran, joylashuv va oynaning bolalari bo'lgan hujjatdan iborat. Brauzer ob'ekt modeli standartlashtirilmagan va turli brauzerlar asosida o'zgarishi mumkin.
+      Brauzer obyekti modeli (BOM) JavaScript-ga brauzer bilan “suhbatlashish” imkonini beradi. U navigator, tarix, ekran, joylashuv va oynaning bolalari bo'lgan hujjatdan iborat. Brauzer objekt modeli standartlashtirilmagan va turli brauzerlar asosida o'zgarishi mumkin.
 
       ![Screenshot](images/bom.png)
 
@@ -2180,7 +2180,7 @@ Void(0) sahifani yangilanishini oldini olish uchun ishlatiladi. Bu kiruvchi nojo
 
 111.  ### JSON nima
 
-      JSON (JavaScript Object Notation) - bu ma'lumotlarni almashish uchun ishlatiladigan engil format. U JavaScript-da ob'ektlarni qurish usulida JavaScript tilining kichik to'plamiga asoslangan.
+      JSON (JavaScript Object Notation) - bu ma'lumotlarni almashish uchun ishlatiladigan engil format. U JavaScriptda objektlarni qurish usulida JavaScript tilining kichik to'plamiga asoslangan.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -2283,7 +2283,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 119.  ### Javascriptda yangi sahifani qanday yo’naltirish mumkin
 
-      locationVanilla JavaScript-da siz oyna ob'ektining xususiyatidan foydalanib, yangi sahifaga yo'naltirishingiz mumkin . Sintaksis quyidagicha bo'ladi:
+      locationVanilla JavaScriptda siz oyna objektining xususiyatidan foydalanib, yangi sahifaga yo'naltirishingiz mumkin . Sintaksis quyidagicha bo'ladi:
 
       ```javascript
       function redirect() {
@@ -2325,7 +2325,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 121.  ### Javascriptda elektron pochtani qanday tekshirish mumkin
 
-      Oddiy iboralar yordamida JavaScript-da elektron pochta xabarini tasdiqlashingiz mumkin. Tasdiqlashlarni mijoz tomoni o'rniga server tomonida qilish tavsiya etiladi. Chunki javascript mijoz tomonida o'chirib qo'yilishi mumkin.
+      Oddiy iboralar yordamida JavaScriptda elektron pochta xabarini tasdiqlashingiz mumkin. Tasdiqlashlarni mijoz tomoni o'rniga server tomonida qilish tavsiya etiladi. Chunki javascript mijoz tomonida o'chirib qo'yilishi mumkin.
 
       ```javascript
       function validateEmail(email) {
@@ -2353,7 +2353,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       Quyidagi Locationobyekt xususiyatlari sahifaning URL komponentlariga kirish uchun ishlatilishi mumkin,
 
-      1.                    href - butun URL
+      1.                                   href - butun URL
       2.  protokol - URL manzilining protokoli
       3.  xost - URL manzilining xost nomi va porti
       4.  hostname - URL manzilining xost nomi
@@ -2375,11 +2375,11 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-125.  ### Ob'ektda kalit(key) mavjudligini qanday tekshirish mumkin
+125.  ### objektda kalit(key) mavjudligini qanday tekshirish mumkin
 
-      Ob'ektda kalit mavjudligi yoki yo'qligini uchta yondashuv yordamida tekshirishingiz mumkin,
+      objektda kalit mavjudligi yoki yo'qligini uchta yondashuv yordamida tekshirishingiz mumkin,
 
-      1.  **Using in operator:** ob'ektda kalit mavjudmi yoki yo'qmi, in operatoridan foydalanishingiz mumkin
+      1.  **Using in operator:** objektda kalit mavjudmi yoki yo'qmi, in operatoridan foydalanishingiz mumkin
 
       ```javascript
       'key' in obj;
@@ -2391,13 +2391,13 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
       !('key' in obj);
       ```
 
-      1.  **Using hasOwnProperty method:** Siz hasOwnPropertyob'ekt namunasining xususiyatlarini (va meros qilib olingan xususiyatlarni emas) ayniqsa sinab ko'rish uchun foydalanishingiz mumkin.
+      1.  **Using hasOwnProperty method:** Siz hasOwnPropertyobjekt namunasining xususiyatlarini (va meros qilib olingan xususiyatlarni emas) ayniqsa sinab ko'rish uchun foydalanishingiz mumkin.
 
       ```javascript
       obj.hasOwnProperty('key'); // true
       ```
 
-      1.  **Using undefined comparison:** Agar ob'ektdan mavjud bo'lmagan xususiyatga kirsangiz, natija aniqlanmagan. Mulkning mavjudligini aniqlash uchun xususiyatlarni undefined bilan solishtiramiz.
+      1.  **Using undefined comparison:** Agar objektdan mavjud bo'lmagan xususiyatga kirsangiz, natija aniqlanmagan. Mulkning mavjudligini aniqlash uchun xususiyatlarni undefined bilan solishtiramiz.
 
       ```javascript
       const user = {
@@ -2410,9 +2410,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-126.  ### Javascript ob'ektini qanday aylantirasiz(loop) yoki sanab o'tasiz
+126.  ### Javascript objektini qanday aylantirasiz(loop) yoki sanab o'tasiz
 
-      for-inJavascript ob'ekti bo'ylab aylanish uchun tsikldan foydalanishingiz mumkin . Shuningdek, siz olgan kalit ob'ektning haqiqiy mulki ekanligiga va prototipdan foydalanish hasOwnPropertyusulidan kelib chiqmasligiga ishonch hosil qilishingiz mumkin.
+      for-inJavascript objekti bo'ylab aylanish uchun tsikldan foydalanishingiz mumkin . Shuningdek, siz olgan kalit objektning haqiqiy mulki ekanligiga va prototipdan foydalanish hasOwnPropertyusulidan kelib chiqmasligiga ishonch hosil qilishingiz mumkin.
 
       ```javascript
       var object = {
@@ -2430,17 +2430,17 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-127.  ### Bo'sh ob'ektni qanday sinab ko'rasiz
+127.  ### Bo'sh objektni qanday sinab ko'rasiz
 
       ECMAScript versiyalariga asoslangan turli xil echimlar mavjud
 
-      1.  **Using Object entries(ECMA 7+):** Siz konstruktor turi bilan birga ob'ekt yozuvlari uzunligidan foydalanishingiz mumkin.
+      1.  **Using Object entries(ECMA 7+):** Siz konstruktor turi bilan birga objekt yozuvlari uzunligidan foydalanishingiz mumkin.
 
       ```javascript
       Object.entries(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
       ```
 
-      1.  **Using Object keys(ECMA 5+):** Konstruktor turi bilan birga ob'ekt tugmachalari uzunligidan ham foydalanishingiz mumkin.
+      1.  **Using Object keys(ECMA 5+):** Konstruktor turi bilan birga objekt tugmachalari uzunligidan ham foydalanishingiz mumkin.
 
       ```javascript
       Object.keys(obj).length === 0 && obj.constructor === Object; // Since date object length is 0, you need to check constructor check as well
@@ -2464,7 +2464,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 128.  ### Argumentlar obyekti nima
 
-      Argumentlar obyekti funksiyalar ichida foydalanish mumkin boʻlgan massivga oʻxshash obyekt boʻlib, u funksiyaga uzatilgan argumentlar qiymatlarini oʻz ichiga oladi. Masalan, sum funktsiyasi ichida argumentlar ob'ektidan qanday foydalanishni ko'rib chiqamiz,
+      Argumentlar obyekti funksiyalar ichida foydalanish mumkin boʻlgan massivga oʻxshash obyekt boʻlib, u funksiyaga uzatilgan argumentlar qiymatlarini oʻz ichiga oladi. Masalan, sum funktsiyasi ichida argumentlar objektidan qanday foydalanishni ko'rib chiqamiz,
 
       ```javascript
       function sum() {
@@ -2517,7 +2517,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 131.  ### Joriy sanani javascriptda qanday ko'rsatasiz
 
-      new Date()Joriy sana va vaqtni o'z ichiga olgan yangi Sana ob'ektini yaratish uchun foydalanishingiz mumkin . Masalan, joriy sanani mm/dd/yyyy da ko'rsatamiz
+      new Date()Joriy sana va vaqtni o'z ichiga olgan yangi Sana objektini yaratish uchun foydalanishingiz mumkin . Masalan, joriy sanani mm/dd/yyyy da ko'rsatamiz
 
       ```javascript
       var today = new Date();
@@ -2531,7 +2531,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-132.  ### Ikki sana ob'ektini qanday solishtirasiz
+132.  ### Ikki sana objektini qanday solishtirasiz
 
       Taqqoslash operatorlari (==, !=, === va !== operatorlari) oʻrniga sana qiymatlarini solishtirish uchun date.getTime() usulidan foydalanishingiz kerak.
 
@@ -2581,7 +2581,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 135.  ### Javascriptda kalit , qiymat juftligini qanday qo'shasiz
 
-      Ob'ektga yangi xususiyatlar qo'shishning ikkita mumkin bo'lgan echimi mavjud. Ushbu yechimlarni tushuntirish uchun oddiy ob'ektni olaylik.
+      objektga yangi xususiyatlar qo'shishning ikkita mumkin bo'lgan echimi mavjud. Ushbu yechimlarni tushuntirish uchun oddiy objektni olaylik.
 
       ```javascript
       var object = {
@@ -2650,7 +2650,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 140.  ### Funktsiyalar uchun xususiyatlarni aniqlay olamizmi
 
-      Ha, biz funktsiyalar uchun xususiyatlarni belgilashimiz mumkin, chunki funktsiyalar ham ob'ektlardir.
+      Ha, biz funktsiyalar uchun xususiyatlarni belgilashimiz mumkin, chunki funktsiyalar ham objektlardir.
 
       ```javascript
       fn = function (x) {
@@ -2713,7 +2713,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 144.  ### Js yorliqlari(js label) nima ?
 
-      Yorliq bayonoti bizga JavaScript-da tsikllar va bloklarni nomlash imkonini beradi. Keyin biz ushbu teglardan kodga keyinroq murojaat qilish uchun foydalanishimiz mumkin. Masalan, yorliqli quyidagi kod raqamlar bir xil bo'lganda chop etishdan saqlaydi,
+      Yorliq bayonoti bizga JavaScriptda tsikllar va bloklarni nomlash imkonini beradi. Keyin biz ushbu teglardan kodga keyinroq murojaat qilish uchun foydalanishimiz mumkin. Masalan, yorliqli quyidagi kod raqamlar bir xil bo'lganda chop etishdan saqlaydi,
 
       ```javascript
       var i, j;
@@ -2756,9 +2756,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-147.  ### Yangi ob'ekt yaratish uchun qanday tavsiyalar mavjud
+147.  ### Yangi objekt yaratish uchun qanday tavsiyalar mavjud
 
-      dan foydalangan holda yangi ob'ektlar yaratishdan qochish tavsiya etiladi new Object(). Buning o'rniga ob'ektlarni yaratish uchun uning turiga qarab qiymatlarni ishga tushirishingiz mumkin.
+      dan foydalangan holda yangi objektlar yaratishdan qochish tavsiya etiladi new Object(). Buning o'rniga objektlarni yaratish uchun uning turiga qarab qiymatlarni ishga tushirishingiz mumkin.
 
       1.  Yangi Object() oʻrniga {} ni belgilang
       2.  new String() o'rniga "" belgilang
@@ -2784,7 +2784,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 148.  ### JSON massivlarini qanday aniqlaysiz
 
-      JSON massivlari kvadrat qavslar ichida yoziladi va massivlar javascript ob'ektlarini o'z ichiga oladi. Masalan, foydalanuvchilarning JSON massivi quyidagi kabi bo'ladi
+      JSON massivlari kvadrat qavslar ichida yoziladi va massivlar javascript objektlarini o'z ichiga oladi. Masalan, foydalanuvchilarning JSON massivi quyidagi kabi bo'ladi
 
       ```javascript
       "users":[
@@ -2916,7 +2916,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 158.  ### RegExp obyekti nima
 
-      RegExp ob'ekti oldindan belgilangan xususiyatlar va usullarga ega muntazam ifoda ob'ektidir. Keling, RegExp ob'ektidan oddiy foydalanishni ko'rib chiqaylik,
+      RegExp objekti oldindan belgilangan xususiyatlar va usullarga ega muntazam ifoda objektidir. Keling, RegExp objektidan oddiy foydalanishni ko'rib chiqaylik,
 
       ```javascript
       var regexp = new RegExp('\\w+');
@@ -2994,7 +2994,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 165.  ### Identifikator sifatida ajratilgan so'zlardan foydalansam bo'ladimi?
 
-      Yo'q, siz ajratilgan so'zlarni o'zgaruvchilar, teglar, ob'ektlar yoki funktsiyalar nomi sifatida ishlata olmaysiz. Keling, bitta oddiy misolni ko'rib chiqaylik,
+      Yo'q, siz ajratilgan so'zlarni o'zgaruvchilar, teglar, objektlar yoki funktsiyalar nomi sifatida ishlata olmaysiz. Keling, bitta oddiy misolni ko'rib chiqaylik,
 
       ```javascript
       var else = "hello"; // Uncaught SyntaxError: Unexpected token else
@@ -3066,7 +3066,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 169.  ### Sinxron HTTP so'rovini qanday qilasiz
 
-      Brauzerlar JavaScript-dan sinxron HTTP so'rovlarini amalga oshirish uchun ishlatilishi mumkin bo'lgan XMLHttpRequest obyektini taqdim etadi.
+      Brauzerlar JavaScriptdan sinxron HTTP so'rovlarini amalga oshirish uchun ishlatilishi mumkin bo'lgan XMLHttpRequest obyektini taqdim etadi.
 
       ```javascript
       function httpGet(theUrl) {
@@ -3081,7 +3081,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 170.  ### Asinxron HTTP so'rovini qanday qilasiz
 
-      Brauzerlar XMLHttpRequest ob'ektini taqdim etadi, undan JavaScript-dan 3-parametrni rost deb o'tkazish orqali asinxron HTTP so'rovlarini amalga oshirish uchun foydalanish mumkin.
+      Brauzerlar XMLHttpRequest objektini taqdim etadi, undan JavaScriptdan 3-parametrni rost deb o'tkazish orqali asinxron HTTP so'rovlarini amalga oshirish uchun foydalanish mumkin.
 
       ```javascript
       function httpGetAsync(theUrl, callback) {
@@ -3196,7 +3196,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 176.  ### Proto va prototip o'rtasidagi farq nima
 
-      Ob'ekt - bu `__proto__` qidirish zanjirida usullarni va hokazolarni hal qilish uchun ishlatiladigan haqiqiy ob'ekt. Holbuki , yangi ob'ekt bilan ob'ekt yaratishda prototypequrish uchun foydalaniladigan ob'ekt. `__proto__`
+      Objekt - bu `__proto__` qidirish zanjirida usullarni va hokazolarni hal qilish uchun ishlatiladigan haqiqiy objekt. Holbuki , yangi objekt bilan objekt yaratishda prototypequrish uchun foydalaniladigan objekt. `__proto__`
 
       ```javascript
       new Employee().__proto__ === Employee.prototype;
@@ -3207,7 +3207,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 177.  ### Sizga nuqtali vergul kerak bo'lgan misol keltiring
 
-      JavaScript-dagi har bir bayonotdan keyin nuqta-vergul qo'yish tavsiya etiladi. Misol uchun, quyidagi holatda nuqtali vergul yo'qligi sababli ish vaqtida ".. bu funktsiya emas" xatosini chiqaradi.
+      JavaScriptdagi har bir bayonotdan keyin nuqta-vergul qo'yish tavsiya etiladi. Misol uchun, quyidagi holatda nuqtali vergul yo'qligi sababli ish vaqtida ".. bu funktsiya emas" xatosini chiqaradi.
 
       ```javascript
       // define a function
@@ -3239,7 +3239,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 178.  ### Freeze usuli nima
 
-      Ob'ektni muzlatish uchun freeze() usuli qo'llaniladi. Ob'ektni muzlatish ob'ektga yangi xususiyatlar qo'shishga imkon bermaydi, mavjud xususiyatlarning sanab o'tishini, sozlanishini yoki yozilishini o'chirishni va o'zgartirishni oldini oladi. ya'ni, u o'tgan ob'ektni qaytaradi va muzlatilgan nusxani yaratmaydi.
+      objektni muzlatish uchun freeze() usuli qo'llaniladi. objektni muzlatish objektga yangi xususiyatlar qo'shishga imkon bermaydi, mavjud xususiyatlarning sanab o'tishini, sozlanishini yoki yozilishini o'chirishni va o'zgartirishni oldini oladi. ya'ni, u o'tgan objektni qaytaradi va muzlatilgan nusxani yaratmaydi.
 
       ```javascript
       const obj = {
@@ -3252,7 +3252,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
       console.log(obj.prop); //100
       ```
 
-      **Note:** Agar o'tkazilgan argument ob'ekt bo'lmasa, u TypeErrorni keltirib chiqaradi.
+      **Note:** Agar o'tkazilgan argument objekt bo'lmasa, u TypeErrorni keltirib chiqaradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -3260,20 +3260,20 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       Quyida muzlatish usulidan foydalanishning asosiy afzalliklari keltirilgan,
 
-      1.  U ob'ektlar va massivlarni muzlatish uchun ishlatiladi.
-      2.  U ob'ektni o'zgarmas qilish uchun ishlatiladi.
+      1.  U objektlar va massivlarni muzlatish uchun ishlatiladi.
+      2.  U objektni o'zgarmas qilish uchun ishlatiladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 180.  ### Nima uchun muzlatish usulidan foydalanishim kerak
 
-      Ob'ektga yo'naltirilgan paradigmada mavjud API mavjud kontekstdan tashqari kengaytirilishi, o'zgartirilishi yoki qayta ishlatilishi mo'ljallanmagan ayrim elementlarni o'z ichiga oladi. Shuning uchun u finalturli tillarda ishlatiladigan kalit so'z sifatida ishlaydi.
+      objektga yo'naltirilgan paradigmada mavjud API mavjud kontekstdan tashqari kengaytirilishi, o'zgartirilishi yoki qayta ishlatilishi mo'ljallanmagan ayrim elementlarni o'z ichiga oladi. Shuning uchun u finalturli tillarda ishlatiladigan kalit so'z sifatida ishlaydi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 181.  ### Brauzer tilini afzal ko'rishni qanday aniqlash mumkin
 
-      Quyidagi kabi brauzer tilini afzal ko'rish uchun navigator ob'ektidan foydalanishingiz mumkin,
+      Quyidagi kabi brauzer tilini afzal ko'rish uchun navigator objektidan foydalanishingiz mumkin,
 
       ```javascript
       var language =
@@ -3303,7 +3303,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 183.  ### Sahifada o'chirilgan(disabled) javascript sahifani qanday aniqlash mumkin
 
-      <noscript> JavaScript o'chirilgan yoki o'chirilganligini aniqlash uchun tegdan foydalanishingiz mumkin . Ichki kod bloki <noscript> JavaScript o'chirilganida bajariladi va odatda sahifa JavaScript-da yaratilganda muqobil tarkibni ko'rsatish uchun ishlatiladi.
+      <noscript> JavaScript o'chirilgan yoki o'chirilganligini aniqlash uchun tegdan foydalanishingiz mumkin . Ichki kod bloki <noscript> JavaScript o'chirilganida bajariladi va odatda sahifa JavaScriptda yaratilganda muqobil tarkibni ko'rsatish uchun ishlatiladi.
 
       ```javascript
       <script type="javascript">
@@ -3361,7 +3361,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 186.  ### Agar oxirgi argument sifatida Rest parametridan foydalanmasangiz nima bo'ladiargument
 
-      Quyida JavaScript-da ishlatiladigan bitli mantiqiy operatorlar ro'yxati keltirilgan
+      Quyida JavaScriptda ishlatiladigan bitli mantiqiy operatorlar ro'yxati keltirilgan
 
       ```javascript
       function someFunc(a,…b,c){
@@ -3388,7 +3388,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 188.  ### Spread operatori nima
 
-      Spread operatori takrorlanuvchilarni (massivlar / ob'ektlar / satrlar) bitta argumentlar / elementlarga kengaytirilishiga imkon beradi. Keling, bu xatti-harakatni ko'rish uchun misol keltiraylik,
+      Spread operatori takrorlanuvchilarni (massivlar / objektlar / satrlar) bitta argumentlar / elementlarga kengaytirilishiga imkon beradi. Keling, bu xatti-harakatni ko'rish uchun misol keltiraylik,
 
       ```javascript
       function calculateSum(x, y, z) {
@@ -3402,9 +3402,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-189.  ### Ob'ektning muzlatilgan yoki muzlatilmaganligini qanday aniqlash mumkin
+189.  ### objektning muzlatilgan yoki muzlatilmaganligini qanday aniqlash mumkin
 
-      Object.isFrozen() usuli ob'ektning muzlatilgan yoki muzlatilmaganligini aniqlash uchun ishlatiladi. Agar quyidagi shartlarning barchasi to'g'ri bo'lsa, ob'ekt muzlatilgan hisoblanadi,
+      Object.isFrozen() usuli objektning muzlatilgan yoki muzlatilmaganligini aniqlash uchun ishlatiladi. Agar quyidagi shartlarning barchasi to'g'ri bo'lsa, objekt muzlatilgan hisoblanadi,
 
       1.  Agar u kengaytirilmaydigan bolsa (not extandable).
       2.  Agar uning barcha xususiyatlari konfiguratsiya qilinmasa.
@@ -3420,7 +3420,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-190.  ### Bir xil yoki ob'ektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin
+190.  ### Bir xil yoki objektdan foydalanmayotgan ikkita qiymatni qanday aniqlash mumkin
 
       Object.is() usuli ikkita qiymat bir xil qiymat ekanligini aniqlaydi. Misol uchun, har xil turdagi qiymatlar bilan foydalanish,
 
@@ -3445,9 +3445,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-191.  ### Ob'ektni ishlatishdan maqsad - bu usul
+191.  ### objektni ishlatishdan maqsad - bu usul
 
-      Ob'ekt isusulining ba'zi ilovalari quyidagilardir:
+      Objekt isusulining ba'zi ilovalari quyidagilardir:
 
       1.  It is used for comparison of two strings.
       2.  It is used for comparison of two numbers.
@@ -3456,15 +3456,15 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-192.  ### Xususiyatlarni bir ob'ektdan ikkinchisiga qanday nusxalash mumkin
+192.  ### Xususiyatlarni bir objektdan ikkinchisiga qanday nusxalash mumkin
 
-      Bir yoki bir nechta manba ob'ektlaridan maqsadli ob'ektga qiymatlar va xususiyatlarni nusxalash uchun ishlatiladigan Object.assign() usulidan foydalanishingiz mumkin. U maqsadli ob'ektdan ko'chirilgan xususiyatlar va qiymatlarga ega bo'lgan maqsadli ob'ektni qaytaradi. Sintaksis quyidagi kabi bo'ladi,
+      Bir yoki bir nechta manba objektlaridan maqsadli objektga qiymatlar va xususiyatlarni nusxalash uchun ishlatiladigan Object.assign() usulidan foydalanishingiz mumkin. U maqsadli objektdan ko'chirilgan xususiyatlar va qiymatlarga ega bo'lgan maqsadli objektni qaytaradi. Sintaksis quyidagi kabi bo'ladi,
 
       ```javascript
       Object.assign(target, ...sources);
       ```
 
-      Keling, bitta manba va bitta maqsadli ob'ekt bilan misol qilaylik,
+      Keling, bitta manba va bitta maqsadli objekt bilan misol qilaylik,
 
       ```javascript
       const target = { a: 1, b: 2 };
@@ -3485,14 +3485,14 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       Quyida Object.assign() usulining asosiy ilovalari keltirilgan.
 
-      1.  U ob'ektni klonlash uchun ishlatiladi.
-      2.  U bir xil xususiyatlarga ega ob'ektlarni birlashtirish uchun ishlatiladi.
+      1.  U objektni klonlash uchun ishlatiladi.
+      2.  U bir xil xususiyatlarga ega objektlarni birlashtirish uchun ishlatiladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 194.  ### Proksi-server nima ?
 
-      Proksi-server ob'ekti mulkni qidirish, tayinlash, ro'yxatga olish, funktsiyani chaqirish va hokazo kabi asosiy operatsiyalar uchun maxsus xatti-harakatni aniqlash uchun ishlatiladi. Sintaksis quyidagicha bo'ladi:
+      Proksi-server objekti mulkni qidirish, tayinlash, ro'yxatga olish, funktsiyani chaqirish va hokazo kabi asosiy operatsiyalar uchun maxsus xatti-harakatni aniqlash uchun ishlatiladi. Sintaksis quyidagicha bo'ladi:
 
       ```javascript
       var p = new Proxy(target, handler);
@@ -3521,7 +3521,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 195.  ### Seal usulining maqsadi nima
 
-      Object.seal () usuli ob'ektga yangi xususiyatlar qo'shilishining oldini olish va barcha mavjud xususiyatlarni sozlanmaydigan qilib belgilash orqali uni muhrlash uchun ishlatiladi. Ammo mavjud xususiyatlarning qiymatlari yozilishi mumkin ekan, o'zgartirilishi mumkin. Seal() usuli haqida ko'proq tushunish uchun quyidagi misolni ko'rib chiqaylik
+      Object.seal () usuli objektga yangi xususiyatlar qo'shilishining oldini olish va barcha mavjud xususiyatlarni sozlanmaydigan qilib belgilash orqali uni muhrlash uchun ishlatiladi. Ammo mavjud xususiyatlarning qiymatlari yozilishi mumkin ekan, o'zgartirilishi mumkin. Seal() usuli haqida ko'proq tushunish uchun quyidagi misolni ko'rib chiqaylik
 
       ```javascript
       const object = {
@@ -3540,20 +3540,20 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       Quyida Object.seal() usulining asosiy ilovalari keltirilgan,
 
-      1.  U ob'ektlar va massivlarni muhrlash uchun ishlatiladi.
-      2.  U ob'ektni o'zgarmas qilish uchun ishlatiladi.
+      1.  U objektlar va massivlarni muhrlash uchun ishlatiladi.
+      2.  U objektni o'zgarmas qilish uchun ishlatiladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 197.  ### Freeze va Seal usullari o'rtasidagi farqlar qanday
 
-      Agar ob'ekt Object.freeze() usuli yordamida muzlatilgan bo'lsa, uning xususiyatlari o'zgarmas bo'lib qoladi va ularda hech qanday o'zgartirishlar kiritilmaydi, ob'ekt Object.seal() usuli yordamida muhrlangan bo'lsa, o'zgarishlar mavjud xususiyatlarda amalga oshirilishi mumkin. ob'ektning.
+      Agar objekt Object.freeze() usuli yordamida muzlatilgan bo'lsa, uning xususiyatlari o'zgarmas bo'lib qoladi va ularda hech qanday o'zgartirishlar kiritilmaydi, objekt Object.seal() usuli yordamida muhrlangan bo'lsa, o'zgarishlar mavjud xususiyatlarda amalga oshirilishi mumkin. objektning.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-198.  ### Ob'ektning muhrlangan yoki yo'qligini qanday aniqlash mumkin
+198.  ### objektning muhrlangan yoki yo'qligini qanday aniqlash mumkin
 
-      Ob'ekt muhrlangan yoki muhrlanmaganligini aniqlash uchun Object.isSealed() usuli qo'llaniladi. Agar quyidagi shartlarning barchasi to'g'ri bo'lsa, ob'ekt muhrlangan hisoblanadi
+      Objekt muhrlangan yoki muhrlanmaganligini aniqlash uchun Object.isSealed() usuli qo'llaniladi. Agar quyidagi shartlarning barchasi to'g'ri bo'lsa, objekt muhrlangan hisoblanadi
 
       1.  If it is not extensible.
       2.  If all of its properties are non-configurable.
@@ -3574,7 +3574,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 199.  ### Qanday qilib sanab boladigan (enumerable) kalit va qiymat juftlarini olasiz
 
-      Object.entries() usuli ma'lum bir ob'ektning o'z sanab bo'ladigan qatorli kalitli [kalit, qiymat] juftliklari massivini for...in siklida taqdim etilgan tartibda qaytarish uchun ishlatiladi. Misolda object.entries() usulining funksionalligini ko'rib chiqamiz,
+      Object.entries() usuli ma'lum bir objektning o'z sanab bo'ladigan qatorli kalitli [kalit, qiymat] juftliklari massivini for...in siklida taqdim etilgan tartibda qaytarish uchun ishlatiladi. Misolda object.entries() usulining funksionalligini ko'rib chiqamiz,
 
       ```javascript
       const object = {
@@ -3610,9 +3610,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-201.  ### Har qanday ob'ektning kalitlari ro'yxatini qanday olishingiz mumkin
+201.  ### Har qanday objektning kalitlari ro'yxatini qanday olishingiz mumkin
 
-      Siz Object.keys()ma'lum bir ob'ektning o'z mulk nomlari massivini qaytarish uchun ishlatiladigan usuldan, biz odatdagi tsikl bilan bir xil tartibda foydalanishingiz mumkin. Masalan, siz foydalanuvchi ob'ektining kalitlarini olishingiz mumkin,
+      Siz Object.keys()ma'lum bir objektning o'z mulk nomlari massivini qaytarish uchun ishlatiladigan usuldan, biz odatdagi tsikl bilan bir xil tartibda foydalanishingiz mumkin. Masalan, siz foydalanuvchi objektining kalitlarini olishingiz mumkin,
 
       ```javascript
       const user = {
@@ -3626,9 +3626,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-202.  ### Prototip bilan ob'ektni qanday yaratasiz
+202.  ### Prototip bilan objektni qanday yaratasiz
 
-      Object.create() usuli ko'rsatilgan prototip ob'ekti va xususiyatlariga ega yangi ob'ektni yaratish uchun ishlatiladi. Ya'ni, yangi yaratilgan ob'ektning prototipi sifatida mavjud ob'ektdan foydalanadi. Belgilangan prototip ob'ekti va xususiyatlari bilan yangi ob'ektni qaytaradi.
+      Object.create() usuli ko'rsatilgan prototip objekti va xususiyatlariga ega yangi objektni yaratish uchun ishlatiladi. Ya'ni, yangi yaratilgan objektning prototipi sifatida mavjud objektdan foydalanadi. Belgilangan prototip objekti va xususiyatlari bilan yangi objektni qaytaradi.
 
       ```javascript
       const user = {
@@ -3649,7 +3649,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 203.  ### Weakset nima
 
-      WeakSet zaif (zaif havolalar) saqlanadigan ob'ektlar to'plamini saqlash uchun ishlatiladi. Sintaksis quyidagicha bo'ladi:
+      WeakSet zaif (zaif havolalar) saqlanadigan objektlar to'plamini saqlash uchun ishlatiladi. Sintaksis quyidagicha bo'ladi:
 
       ```javascript
       new WeakSet([iterable]);
@@ -3670,9 +3670,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 204.  ### WeakSet va Set o'rtasidagi farqlar qanday
 
-      Asosiy farq shundaki, Set-dagi ob'ektlarga havolalar kuchli, WeakSet-dagi ob'ektlarga havolalar zaif. Ya'ni, WeakSet-dagi ob'ektga boshqa havola bo'lmasa, axlat yig'ilishi mumkin. Boshqa farqlar,
+      Asosiy farq shundaki, Set-dagi objektlarga havolalar kuchli, WeakSet-dagi objektlarga havolalar zaif. Ya'ni, WeakSet-dagi objektga boshqa havola bo'lmasa, axlat yig'ilishi mumkin. Boshqa farqlar,
 
-      1.  To'plamlar har qanday qiymatni saqlashi mumkin, WeakSets esa faqat ob'ektlar to'plamini saqlashi mumkin
+      1.  To'plamlar har qanday qiymatni saqlashi mumkin, WeakSets esa faqat objektlar to'plamini saqlashi mumkin
       2.  WeakSet Setdan farqli o'laroq o'lcham xususiyatiga ega emas
       3.  WeakSet-da aniq, kalitlar, qiymatlar, yozuvlar, forEach kabi usullar mavjud emas.
       4.  WeakSet takrorlanmaydi.
@@ -3704,7 +3704,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 206.  ### WeakMap nima
 
-      WeakMap ob'ekti - bu kalitlarga zaif havola qilingan kalit/qiymat juftliklari to'plami. Bunday holda, kalitlar ob'ektlar bo'lishi kerak va qiymatlar ixtiyoriy qiymatlar bo'lishi mumkin. Sintaksis quyidagi kabi ko'rinadi,
+      WeakMap objekti - bu kalitlarga zaif havola qilingan kalit/qiymat juftliklari to'plami. Bunday holda, kalitlar objektlar bo'lishi kerak va qiymatlar ixtiyoriy qiymatlar bo'lishi mumkin. Sintaksis quyidagi kabi ko'rinadi,
 
       ```javascript
       new WeakMap([iterable]);
@@ -3725,9 +3725,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 207.  ### WeakMap va Map o'rtasidagi farqlar qanday
 
-      Asosiy farq shundaki, Map-dagi asosiy ob'ektlarga havolalar kuchli, WeakMap-dagi asosiy ob'ektlarga havolalar zaif. Ya'ni, WeakMap'dagi asosiy ob'ekt, agar unga boshqa havola bo'lmasa, axlat yig'ilishi mumkin. Boshqa farqlar,
+      Asosiy farq shundaki, Map-dagi asosiy objektlarga havolalar kuchli, WeakMap-dagi asosiy objektlarga havolalar zaif. Ya'ni, WeakMap'dagi asosiy objekt, agar unga boshqa havola bo'lmasa, axlat yig'ilishi mumkin. Boshqa farqlar,
 
-      1.  Xaritalar har qanday kalit turini saqlashi mumkin, WeakMaps esa faqat asosiy ob'ektlar to'plamini saqlashi mumkin
+      1.  Xaritalar har qanday kalit turini saqlashi mumkin, WeakMaps esa faqat asosiy objektlar to'plamini saqlashi mumkin
       2.  WeakMap xaritadan farqli o'laroq o'lcham xususiyatiga ega emas
       3.  WeakMap-da aniq, kalitlar, qiymatlar, yozuvlar, forEach kabi usullar mavjud emas.
       4.  WWeakMap takrorlanmaydi.
@@ -3760,7 +3760,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 209.  ### Unevaldan maqsad nima
 
-      uneval() o'rnatilgan funksiya bo'lib, u ob'ekt manba kodining satrli tasvirini yaratish uchun ishlatiladi. Bu yuqori darajadagi funksiya va hech qanday ob'ekt bilan bog'lanmagan. Uning funksionalligi haqida ko'proq bilish uchun quyidagi misolni ko'rib chiqaylik,
+      uneval() o'rnatilgan funksiya bo'lib, u objekt manba kodining satrli tasvirini yaratish uchun ishlatiladi. Bu yuqori darajadagi funksiya va hech qanday objekt bilan bog'lanmagan. Uning funksionalligi haqida ko'proq bilish uchun quyidagi misolni ko'rib chiqaylik,
 
       ```javascript
       var a = 1;
@@ -3814,7 +3814,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 213.  ### Uneval va eval o'rtasidagi farq nima
 
-      Funktsiya unevalberilgan ob'ektning manbasini qaytaradi; Holbuki, evalfunktsiya bu manba kodini boshqa xotira sohasida baholash orqali aksincha qiladi. Farqni aniqlashtirish uchun misolni ko'rib chiqaylik,
+      Funktsiya unevalberilgan objektning manbasini qaytaradi; Holbuki, evalfunktsiya bu manba kodini boshqa xotira sohasida baholash orqali aksincha qiladi. Farqni aniqlashtirish uchun misolni ko'rib chiqaylik,
 
       ```javascript
       var msg = uneval(function greeting() {
@@ -3873,7 +3873,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 216.  ### JavaScript kirish elementlari nima ?
 
-      ECMAScript 5 getter va setterlar orqali javascript ob'ektiga kirish yoki hisoblangan xususiyatlarni taqdim etdi. Getters getkalit so'zdan foydalanadi, Setters esa kalit so'zdan foydalanadi set.
+      ECMAScript 5 getter va setterlar orqali javascript objektiga kirish yoki hisoblangan xususiyatlarni taqdim etdi. Getters getkalit so'zdan foydalanadi, Setters esa kalit so'zdan foydalanadi set.
 
       ```javascript
       var user = {
@@ -3894,9 +3894,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-217.  ### Ob'ekt konstruktorida xususiyatni qanday aniqlash mumkin
+217.  ### Objekt konstruktorida xususiyatni qanday aniqlash mumkin
 
-      Object.defineProperty() statik usuli to'g'ridan-to'g'ri ob'ektda yangi xususiyatni aniqlash yoki ob'ektdagi mavjud xususiyatni o'zgartirish uchun ishlatiladi va ob'ektni qaytaradi. Mulkni qanday aniqlashni bilish uchun misolni ko'rib chiqaylik,
+      Object.defineProperty() statik usuli to'g'ridan-to'g'ri objektda yangi xususiyatni aniqlash yoki objektdagi mavjud xususiyatni o'zgartirish uchun ishlatiladi va objektni qaytaradi. Mulkni qanday aniqlashni bilish uchun misolni ko'rib chiqaylik,
 
       ```javascript
       const newObject = {};
@@ -3915,7 +3915,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 218.  ### Get va defineProperty o'rtasidagi farq nima ?
 
-      Classlardan foydalanmaguningizcha ikkalasi ham xuddi shunday natijalarga ega. Agar siz foydalansangiz get, xususiyat ob'ektning prototipida aniqlanadi, Object.defineProperty()xususiyatdan foydalanish esa u qo'llaniladigan misolda aniqlanadi.
+      Classlardan foydalanmaguningizcha ikkalasi ham xuddi shunday natijalarga ega. Agar siz foydalansangiz get, xususiyat objektning prototipida aniqlanadi, Object.defineProperty()xususiyatdan foydalanish esa u qo'llaniladigan misolda aniqlanadi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -3933,7 +3933,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 220.  ### DefineProperty usuli yordamida qabul qiluvchilar(getter) va sozlagichlarni(setter) qo'shishim mumkinmi
 
-      Ha, siz Object.defineProperty()Getters va Setters qo'shish uchun usuldan foydalanishingiz mumkin. Masalan, quyidagi hisoblagich ob'ekti oshirish, kamaytirish, qo'shish va ayirish xususiyatlaridan foydalanadi,
+      Ha, siz Object.defineProperty()Getters va Setters qo'shish uchun usuldan foydalanishingiz mumkin. Masalan, quyidagi hisoblagich objekti oshirish, kamaytirish, qo'shish va ayirish xususiyatlaridan foydalanadi,
 
       ```javascript
       var obj = { counter: 0 };
@@ -3972,7 +3972,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 221.  ### Switch-case ni ishlatishdan maqsad nima
 
-      JavaScript-dagi switch case bayonoti qaror qabul qilish uchun ishlatiladi. Ba'zi hollarda switch case bayonotidan foydalanish if-else iboralariga qaraganda qulayroq bo'ladi. Sintaksis quyidagi kabi bo'ladi,
+      JavaScriptdagi switch case bayonoti qaror qabul qilish uchun ishlatiladi. Ba'zi hollarda switch case bayonotidan foydalanish if-else iboralariga qaraganda qulayroq bo'ladi. Sintaksis quyidagi kabi bo'ladi,
 
       ```javascript
       switch (expression)
@@ -4024,9 +4024,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-224.  ### Ob'ekt xususiyatlariga kirishning turli usullari qanday
+224.  ### Objekt xususiyatlariga kirishning turli usullari qanday
 
-      Ob'ekt xususiyatiga kirishning 3 ta mumkin bo'lgan usuli mavjud.
+      Objekt xususiyatiga kirishning 3 ta mumkin bo'lgan usuli mavjud.
 
       1.  **Dot notation:** Xususiyatlarga kirish uchun nuqtadan foydalanadi
 
@@ -4067,7 +4067,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 226.  ### Xato obyekti(error object) nima
 
-      Xato ob'ekti xatolik yuzaga kelganda xato haqida ma'lumot beruvchi o'rnatilgan xato ob'ektidir. U ikkita xususiyatga ega: ism va xabar. Masalan, quyidagi funksiya xato tafsilotlarini qayd qiladi,
+      Xato objekti xatolik yuzaga kelganda xato haqida ma'lumot beruvchi o'rnatilgan xato objektidir. U ikkita xususiyatga ega: ism va xabar. Masalan, quyidagi funksiya xato tafsilotlarini qayd qiladi,
 
       ```javascript
       try {
@@ -4131,15 +4131,15 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       **[⬆ Back to Top](#table-of-contents)**
 
-232.  ### Intl ob'ekti nima
+232.  ### Intl objekti nima
 
-      Intl ob'ekti ECMAScript Internationalization API uchun nom maydoni bo'lib, u tilga sezgir qatorlarni taqqoslashni, raqamlarni formatlashni va sana va vaqtni formatlashni ta'minlaydi. U bir nechta konstruktorlar va tilga sezgir funktsiyalarga kirishni ta'minlaydi.
+      Intl objekti ECMAScript Internationalization API uchun nom maydoni bo'lib, u tilga sezgir qatorlarni taqqoslashni, raqamlarni formatlashni va sana va vaqtni formatlashni ta'minlaydi. U bir nechta konstruktorlar va tilga sezgir funktsiyalarga kirishni ta'minlaydi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
 233.  ### Tilga xos sana va vaqtni formatlashni qanday amalga oshirasiz
 
-      Intl.DateTimeFormatTilga sezgir sana va vaqtni formatlashni ta'minlaydigan ob'ektlar uchun konstruktor bo'lgan ob'ektdan foydalanishingiz mumkin . Keling, bu xatti-harakatni misol bilan ko'rib chiqaylik,
+      Intl.DateTimeFormatTilga sezgir sana va vaqtni formatlashni ta'minlaydigan objektlar uchun konstruktor bo'lgan objektdan foydalanishingiz mumkin . Keling, bu xatti-harakatni misol bilan ko'rib chiqaylik,
 
       ```javascript
       var date = new Date(Date.UTC(2019, 07, 07, 3, 0, 0));
@@ -4151,7 +4151,7 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
 234.  ### Iterator nima
 
-      Iterator - bu ketma-ketlikni va uning tugashi bilan qaytariladigan qiymatni belgilaydigan ob'ekt. U Iterator protokolini next()ikkita xususiyatga ega ob'ektni qaytaradigan usul bilan amalga oshiradi: value(ketma-ketlikdagi keyingi qiymat) va done(agar ketma-ketlikdagi oxirgi qiymat iste'mol qilingan bo'lsa, bu to'g'ri bo'ladi).
+      Iterator - bu ketma-ketlikni va uning tugashi bilan qaytariladigan qiymatni belgilaydigan objekt. U Iterator protokolini next()ikkita xususiyatga ega objektni qaytaradigan usul bilan amalga oshiradi: value(ketma-ketlikdagi keyingi qiymat) va done(agar ketma-ketlikdagi oxirgi qiymat iste'mol qilingan bo'lsa, bu to'g'ri bo'ladi).
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -4159,9 +4159,9 @@ Masalan, har 3 soniyada xabarni ko'rsatish uchun quyidagi setInterval usuli qo'l
 
       Sinxron iteratsiya ES6 da joriy qilingan va u quyidagi komponentlar to'plami bilan ishlaydi,
 
-      **Iterable:** Bu kaliti Symbol.iterator bo'lgan usul orqali takrorlanishi mumkin bo'lgan ob'ekt.
-      **Iterator:** Bu takrorlanadigan chaqiruv orqali qaytariladigan ob'ekt [Symbol.iterator](). Ushbu iterator ob'ekti har bir takrorlangan elementni ob'ektga o'rab oladi va uni next()usul orqali birma-bir qaytaradi.
-      **IteratorResult:** Bu usul bilan qaytarilgan ob'ekt next(). Ob'ekt ikkita xususiyatni o'z ichiga oladi; valuexususiyat takrorlangan elementni o'z ichiga oladi va xususiyat doneelement oxirgi element yoki yo'qligini aniqlaydi.
+      **Iterable:** Bu kaliti Symbol.iterator bo'lgan usul orqali takrorlanishi mumkin bo'lgan objekt.
+      **Iterator:** Bu takrorlanadigan chaqiruv orqali qaytariladigan objekt [Symbol.iterator](). Ushbu iterator objekti har bir takrorlangan elementni objektga o'rab oladi va uni next()usul orqali birma-bir qaytaradi.
+      **IteratorResult:** Bu usul bilan qaytarilgan objekt next(). objekt ikkita xususiyatni o'z ichiga oladi; valuexususiyat takrorlangan elementni o'z ichiga oladi va xususiyat doneelement oxirgi element yoki yo'qligini aniqlaydi.
 
       Keling, quyidagi kabi massiv bilan sinxron iteratsiyani namoyish qilaylik,
 
@@ -4220,7 +4220,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 239.  ### Dekorator nima
 
-      Dekorator - bu funktsiyani baholovchi va maqsad, nom va dekorator deskriptorini argument sifatida qabul qiluvchi ifoda. Bundan tashqari, u ixtiyoriy ravishda maqsadli ob'ektga o'rnatish uchun dekorativ identifikatorni qaytaradi. Dizayn vaqtida foydalanuvchi sinfi uchun administrator dekoratorini aniqlaymiz,
+      Dekorator - bu funktsiyani baholovchi va maqsad, nom va dekorator deskriptorini argument sifatida qabul qiluvchi ifoda. Bundan tashqari, u ixtiyoriy ravishda maqsadli objektga o'rnatish uchun dekorativ identifikatorni qaytaradi. Dizayn vaqtida foydalanuvchi sinfi uchun administrator dekoratorini aniqlaymiz,
 
       ```javascript
       function admin(isAdmin) {
@@ -4244,14 +4244,14 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 240.  ### Intl obyektining xossalari(Intl object prop) qanday
 
-      Quyida Intl ob'ektida mavjud xususiyatlar ro'yxati keltirilgan,
+      Quyida Intl objektida mavjud xususiyatlar ro'yxati keltirilgan,
 
-      1.  **Collator:** Bular tilga sezgir satrlarni taqqoslash imkonini beruvchi ob'ektlardir.
-      2.  **DateTimeFormat:** Bular tilga sezgir sana va vaqtni formatlashni ta'minlaydigan ob'ektlardir.
+      1.  **Collator:** Bular tilga sezgir satrlarni taqqoslash imkonini beruvchi objektlardir.
+      2.  **DateTimeFormat:** Bular tilga sezgir sana va vaqtni formatlashni ta'minlaydigan objektlardir.
       3.  **ListFormat:** Bular tilga sezgir roʻyxat formatlash imkonini beruvchi obʼyektlardir.
-      4.  **NumberFormat:** tilga sezgir raqamlarni formatlashni ta'minlaydigan ob'ektlar.
-      5.  **PluralRules:** ko'plikka sezgir formatlash va ko'plik uchun tilga xos qoidalarni faollashtiradigan ob'ektlar.
-      6.  **RelativeTimeFormat:** Tilga sezgir nisbiy vaqt formatlash imkonini beruvchi ob'ektlar.
+      4.  **NumberFormat:** tilga sezgir raqamlarni formatlashni ta'minlaydigan objektlar.
+      5.  **PluralRules:** ko'plikka sezgir formatlash va ko'plik uchun tilga xos qoidalarni faollashtiradigan objektlar.
+      6.  **RelativeTimeFormat:** Tilga sezgir nisbiy vaqt formatlash imkonini beruvchi objektlar.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -4374,7 +4374,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 248.  ### Modulning metama'lumotlarini qanday olish mumkin
 
-      Siz import.metaJavaScript moduliga kontekstga xos meta-ma'lumotlarni ochib beruvchi meta-xususiyat bo'lgan ob'ektdan foydalanishingiz mumkin. U modulning URL manzili kabi joriy modul haqidagi ma'lumotlarni o'z ichiga oladi. Brauzerlarda siz NodeJS-dan farqli meta-ma'lumotlarni olishingiz mumkin.
+      Siz import.metaJavaScript moduliga kontekstga xos meta-ma'lumotlarni ochib beruvchi meta-xususiyat bo'lgan objektdan foydalanishingiz mumkin. U modulning URL manzili kabi joriy modul haqidagi ma'lumotlarni o'z ichiga oladi. Brauzerlarda siz NodeJS-dan farqli meta-ma'lumotlarni olishingiz mumkin.
 
       ```javascript
       <script type='module' src='welcome-module.js'></script>;
@@ -4385,7 +4385,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 249.  ### Vergul operatori nima
 
-      Vergul operatori uning har bir operandini chapdan o'ngga baholash uchun ishlatiladi va oxirgi operandning qiymatini qaytaradi. Bu massivlar, ob'ektlar va funksiya argumentlari va parametrlarida verguldan foydalanishdan butunlay farq qiladi. Masalan, raqamli iboralar uchun foydalanish quyidagicha bo'ladi:
+      Vergul operatori uning har bir operandini chapdan o'ngga baholash uchun ishlatiladi va oxirgi operandning qiymatini qaytaradi. Bu massivlar, objektlar va funksiya argumentlari va parametrlarida verguldan foydalanishdan butunlay farq qiladi. Masalan, raqamli iboralar uchun foydalanish quyidagicha bo'ladi:
 
       ```javascript
       var x = 1;
@@ -4445,7 +4445,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       | feature             | typescript                                               | javascript                                                       |
       | ------------------- | -------------------------------------------------------- | ---------------------------------------------------------------- |
-      | Language paradigm   | Ob'ektga yo'naltirilgan dasturlash tili                  | Scripting language                                               |
+      | Language paradigm   | objektga yo'naltirilgan dasturlash tili                  | Scripting language                                               |
       | Typing support      | Statik yozishni qo'llab-quvvatlaydi                      | U dinamik yozishga ega                                           |
       | Modules             | Qo'llab-quvvatlanadi                                     | Qo'llab-quvvatlanmaydi                                           |
       | Interface           | U interfeys tushunchasiga ega                            | nterfeyslarni qo'llab-quvvatlamaydi                              |
@@ -4463,9 +4463,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-254.  ### Ob'ektni ishga tushirish (obj initialize) nima
+254.  ### objektni ishga tushirish (obj initialize) nima
 
-      Ob'ektni ishga tushirish - bu ob'ektni ishga tushirishni tavsiflovchi ifoda. Ushbu iboraning sintaksisi jingalak qavslar ({}) ichiga olingan nol yoki undan koʻp xususiyat nomlari va obʼyektning bogʻlangan qiymatlarining vergul bilan ajratilgan roʻyxati sifatida ifodalanadi. Bu literal notation sifatida ham tanilgan. Bu ob'ektni yaratish usullaridan biridir.
+      objektni ishga tushirish - bu objektni ishga tushirishni tavsiflovchi ifoda. Ushbu iboraning sintaksisi jingalak qavslar ({}) ichiga olingan nol yoki undan koʻp xususiyat nomlari va obʼyektning bogʻlangan qiymatlarining vergul bilan ajratilgan roʻyxati sifatida ifodalanadi. Bu literal notation sifatida ham tanilgan. Bu objektni yaratish usullaridan biridir.
 
       ```javascript
       var initObject = { a: 'John', b: 50, c: {} };
@@ -4477,7 +4477,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 255.  ### Konstruktor usuli nima
 
-      Konstruktor usuli - bu sinf ichida yaratilgan ob'ektni yaratish va ishga tushirish uchun maxsus usul. Agar siz konstruktor usulini ko'rsatmasangiz, standart konstruktor ishlatiladi. Konstruktordan foydalanish misoli quyidagicha bo'ladi,
+      Konstruktor usuli - bu sinf ichida yaratilgan objektni yaratish va ishga tushirish uchun maxsus usul. Agar siz konstruktor usulini ko'rsatmasangiz, standart konstruktor ishlatiladi. Konstruktordan foydalanish misoli quyidagicha bo'ladi,
 
       ```javascript
       class Employee {
@@ -4537,9 +4537,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-258.  ### Ob'ektning prototipini qanday olish mumkin
+258.  ### objektning prototipini qanday olish mumkin
 
-      Object.getPrototypeOf(obj)Belgilangan ob'ektning prototipini qaytarish uchun usuldan foydalanishingiz mumkin . ya'ni ichki prototypemulkning qiymati. Agar meros qilib olingan xususiyatlar bo'lmasa null, qiymat qaytariladi.
+      Object.getPrototypeOf(obj)Belgilangan objektning prototipini qaytarish uchun usuldan foydalanishingiz mumkin . ya'ni ichki prototypemulkning qiymati. Agar meros qilib olingan xususiyatlar bo'lmasa null, qiymat qaytariladi.
 
       ```javascript
       const newPrototype = {};
@@ -4552,7 +4552,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 259.  ### Agar getPrototype usuli uchun string turini o'tkazsam nima bo'ladi
 
-      ES5 da, agar obj parametri ob'ekt bo'lmasa, u TypeError istisnosini chiqaradi. Holbuki ES2015 da parametr .ga majburlanadi Object.
+      ES5 da, agar obj parametri objekt bo'lmasa, u TypeError istisnosini chiqaradi. Holbuki ES2015 da parametr .ga majburlanadi Object.
 
       ```javascript
       // ES5
@@ -4563,9 +4563,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-260.  ### Bir ob'ektning prototipini boshqasiga qanday o'rnatish mumkin
+260.  ### Bir objektning prototipini boshqasiga qanday o'rnatish mumkin
 
-      Object.setPrototypeOf()Belgilangan ob'ektning prototipini (ya'ni, ichki Prototypexususiyatni) boshqa ob'ektga yoki nullga o'rnatadigan usuldan foydalanishingiz mumkin . Misol uchun, agar siz kvadrat ob'ektning prototipini to'rtburchak ob'ektga o'rnatmoqchi bo'lsangiz, quyidagicha bo'ladi:
+      Object.setPrototypeOf()Belgilangan objektning prototipini (ya'ni, ichki Prototypexususiyatni) boshqa objektga yoki nullga o'rnatadigan usuldan foydalanishingiz mumkin . Misol uchun, agar siz kvadrat objektning prototipini to'rtburchak objektga o'rnatmoqchi bo'lsangiz, quyidagicha bo'ladi:
 
       ```javascript
       Object.setPrototypeOf(Square.prototype, Rectangle.prototype);
@@ -4574,22 +4574,22 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-261.  ### Ob'ektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin
+261.  ### objektni kengaytirish(extendable) mumkin yoki yo'qligini qanday tekshirish mumkin
 
-      Usul Object.isExtensible()ob'ektning kengaytirilishi mumkin yoki yo'qligini aniqlash uchun ishlatiladi. ya'ni, unga yangi xususiyatlar qo'shilishi mumkinmi yoki yo'qmi.
+      Usul Object.isExtensible()objektning kengaytirilishi mumkin yoki yo'qligini aniqlash uchun ishlatiladi. ya'ni, unga yangi xususiyatlar qo'shilishi mumkinmi yoki yo'qmi.
 
       ```javascript
       const newObject = {};
       console.log(Object.isExtensible(newObject)); //true
       ```
 
-      **Note:** Odatiy bo'lib, barcha ob'ektlar kengaytirilishi mumkin. ya'ni, yangi xususiyatlar qo'shilishi yoki o'zgartirilishi mumkin.
+      **Note:** Odatiy bo'lib, barcha objektlar kengaytirilishi mumkin. ya'ni, yangi xususiyatlar qo'shilishi yoki o'zgartirilishi mumkin.
 
       **[⬆ Back to Top](#table-of-contents)**
 
-262.  ### Ob'ektni kengaytirishni qanday oldini olish mumkin
+262.  ### objektni kengaytirishni qanday oldini olish mumkin
 
-      Usul Object.preventExtensions()ob'ektga yangi xususiyatlar qo'shilishining oldini olish uchun ishlatiladi. Boshqacha qilib aytganda, u ob'ektga kelajakdagi kengaytmalarni oldini oladi. Keling, ushbu mulkdan foydalanishni ko'rib chiqaylik,
+      Usul Object.preventExtensions()objektga yangi xususiyatlar qo'shilishining oldini olish uchun ishlatiladi. Boshqacha qilib aytganda, u objektga kelajakdagi kengaytmalarni oldini oladi. Keling, ushbu mulkdan foydalanishni ko'rib chiqaylik,
 
       ```javascript
       const newObject = {};
@@ -4607,9 +4607,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-263.  ### Ob'ektni kengaytirilmaydigan qilishning turli usullari qanday
+263.  ### objektni kengaytirilmaydigan qilishning turli usullari qanday
 
-      Siz kengaytirilmaydigan ob'ektni 3 usulda belgilashingiz mumkin,
+      Siz kengaytirilmaydigan objektni 3 usulda belgilashingiz mumkin,
 
       1.  Object.preventExtensions
       2.  Object.seal
@@ -4630,9 +4630,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-264.  ### Ob'ektda bir nechta xususiyatlarni qanday aniqlash mumkin
+264.  ### objektda bir nechta xususiyatlarni qanday aniqlash mumkin
 
-      Usul Object.defineProperties()to'g'ridan-to'g'ri ob'ektda yangi xususiyatlarni aniqlash yoki mavjud xususiyatlarni o'zgartirish va ob'ektni qaytarish uchun ishlatiladi. Bo'sh ob'ektda bir nechta xususiyatni aniqlaymiz,
+      Usul Object.defineProperties()to'g'ridan-to'g'ri objektda yangi xususiyatlarni aniqlash yoki mavjud xususiyatlarni o'zgartirish va objektni qaytarish uchun ishlatiladi. Bo'sh objektda bir nechta xususiyatni aniqlaymiz,
 
       ```javascript
       const newObject = {};
@@ -4650,7 +4650,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 265.  ### Javascriptda MEAN nima
 
-      MEAN (MongoDB, Express, AngularJS va Node.js) stek - bu dinamik veb-ilovalarni yaratish uchun mavjud bo'lgan eng mashhur ochiq manbali JavaScript dasturiy ta'minot stekidir, bunda siz veb-loyihaning server tomoni va mijoz tomonini yozishingiz mumkin. butunlay JavaScript-da.
+      MEAN (MongoDB, Express, AngularJS va Node.js) stek - bu dinamik veb-ilovalarni yaratish uchun mavjud bo'lgan eng mashhur ochiq manbali JavaScript dasturiy ta'minot stekidir, bunda siz veb-loyihaning server tomoni va mijoz tomonini yozishingiz mumkin. butunlay JavaScriptda.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -4782,7 +4782,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 273.  ### Shaklni(form) tekshirishni javascriptsiz qanday amalga oshirasiz
 
-      HTML formasini tekshirishni JavaScript-dan foydalanmasdan avtomatik ravishda amalga oshirishingiz mumkin. requiredKirish boʻsh boʻlganida shaklni yuborishni oldini olish uchun atributni qoʻllash orqali tekshirish yoqilgan .
+      HTML formasini tekshirishni JavaScriptdan foydalanmasdan avtomatik ravishda amalga oshirishingiz mumkin. requiredKirish boʻsh boʻlganida shaklni yuborishni oldini olish uchun atributni qoʻllash orqali tekshirish yoqilgan .
 
       ```html
       <form method="post">
@@ -4864,7 +4864,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 278.  ### Enums xususiyati javascriptda mavjudmi?
 
-      Yo'q, JavaScript enumlarni qo'llab-quvvatlamaydi. Ammo ularni simulyatsiya qilish uchun turli xil echimlar mavjud, garchi ular aniq ekvivalentlarni taqdim etmasa ham. Masalan, siz ob'ektda muzlatish yoki muhrni ishlatishingiz mumkin,
+      Yo'q, JavaScript enumlarni qo'llab-quvvatlamaydi. Ammo ularni simulyatsiya qilish uchun turli xil echimlar mavjud, garchi ular aniq ekvivalentlarni taqdim etmasa ham. Masalan, siz objektda muzlatish yoki muhrni ishlatishingiz mumkin,
 
       ```javascript
       var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
@@ -4874,7 +4874,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 279.  ### Enum nima
 
-      Enum - bu o'zgaruvchilarni oldindan belgilangan doimiylar to'plamidan bitta qiymat bilan cheklovchi tur. JavaScript-da raqamlar yo'q, lekin typescript o'rnatilgan enum yordamini ta'minlaydi.
+      Enum - bu o'zgaruvchilarni oldindan belgilangan doimiylar to'plamidan bitta qiymat bilan cheklovchi tur. JavaScriptda raqamlar yo'q, lekin typescript o'rnatilgan enum yordamini ta'minlaydi.
 
       ```javascript
       enum Color {
@@ -4884,9 +4884,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-280.  ### Ob'ektning barcha xususiyatlarini qanday ro'yxatga olasiz
+280.  ### objektning barcha xususiyatlarini qanday ro'yxatga olasiz
 
-      Object.getOwnPropertyNames()To'g'ridan-to'g'ri berilgan ob'ektda topilgan barcha xususiyatlar qatorini qaytaradigan usuldan foydalanishingiz mumkin . Keling, uni misolda ishlatishni ko'rib chiqaylik,
+      Object.getOwnPropertyNames()To'g'ridan-to'g'ri berilgan objektda topilgan barcha xususiyatlar qatorini qaytaradigan usuldan foydalanishingiz mumkin . Keling, uni misolda ishlatishni ko'rib chiqaylik,
 
       ```javascript
       const newObject = {
@@ -4903,7 +4903,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 281.  ### How do you get property descriptors of an object
 
-      Siz Object.getOwnPropertyDescriptors()berilgan ob'ektning barcha o'ziga xos xususiyat identifikatorlarini qaytaradigan usuldan foydalanishingiz mumkin. Ushbu usuldan foydalanish misoli quyida keltirilgan,
+      Siz Object.getOwnPropertyDescriptors()berilgan objektning barcha o'ziga xos xususiyat identifikatorlarini qaytaradigan usuldan foydalanishingiz mumkin. Ushbu usuldan foydalanish misoli quyida keltirilgan,
 
       ```javascript
       const newObject = {
@@ -4926,8 +4926,8 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       1.  value: mulk bilan bog'liq qiymat
       2.  writable: Mulk bilan bog'liq qiymatni o'zgartirish mumkinmi yoki yo'qligini aniqlaydi
-      3.  configurable: Agar ushbu xususiyat identifikatorining turini o'zgartirish mumkin bo'lsa va xususiyat mos keladigan ob'ektdan o'chirilishi mumkin bo'lsa, true qiymatini qaytaradi.
-      4.  enumerable: Xususiyat tegishli ob'ektdagi xususiyatlarni sanab o'tishda paydo bo'ladimi yoki yo'qligini aniqlaydi.
+      3.  configurable: Agar ushbu xususiyat identifikatorining turini o'zgartirish mumkin bo'lsa va xususiyat mos keladigan objektdan o'chirilishi mumkin bo'lsa, true qiymatini qaytaradi.
+      4.  enumerable: Xususiyat tegishli objektdagi xususiyatlarni sanab o'tishda paydo bo'ladimi yoki yo'qligini aniqlaydi.
       5.  set: Xususiyat uchun o'rnatuvchi sifatida xizmat qiluvchi funktsiya
       6.  get: Mulk uchun oluvchi sifatida xizmat qiluvchi funktsiya
 
@@ -4935,7 +4935,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 283.  ### Classlarni qanday uzaytirasiz(extends)
 
-      extendsKalit so'z sinf deklaratsiyasida/iboralarida boshqa sinfning farzandi bo'lgan sinf yaratish uchun ishlatiladi . Undan maxsus sinflarni, shuningdek, o'rnatilgan ob'ektlarni pastki sinflarga ajratish uchun foydalanish mumkin. Sintaksis quyidagi kabi bo'ladi,
+      extendsKalit so'z sinf deklaratsiyasida/iboralarida boshqa sinfning farzandi bo'lgan sinf yaratish uchun ishlatiladi . Undan maxsus sinflarni, shuningdek, o'rnatilgan objektlarni pastki sinflarga ajratish uchun foydalanish mumkin. Sintaksis quyidagi kabi bo'ladi,
 
       ```javascript
       class ChildClass extends ParentClass { ... }
@@ -5016,7 +5016,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 287.  ### Get parametrlaridan qiymatni qanday olish mumkin
 
-      new URL()Ob'ekt url qatorini qabul qiladi va bu searchParamsobyektning xususiyati get parametrlariga kirish uchun ishlatilishi mumkin. window.locationEsda tutingki , eski brauzerlarda (jumladan, IE) URL-manzilga kirish uchun polyfill-dan foydalanish kerak bo'lishi mumkin .
+      new URL()objekt url qatorini qabul qiladi va bu searchParamsobyektning xususiyati get parametrlariga kirish uchun ishlatilishi mumkin. window.locationEsda tutingki , eski brauzerlarda (jumladan, IE) URL-manzilga kirish uchun polyfill-dan foydalanish kerak bo'lishi mumkin .
 
       ```javascript
       let urlString = 'http://www.some-domain.com/about.html?x=1&y=2&z=3'; //window.location.href
@@ -5048,7 +5048,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
       | Feature     | Java                               | JavaScript                                                                    |
       | ----------- | ---------------------------------- | ----------------------------------------------------------------------------- |
       | Typed       | Bu kuchli terilgan til             | Bu dinamik terilgan til                                                       |
-      | Paradigm    | Ob'ektga yo'naltirilgan dasturlash | Prototipga asoslangan dasturlash                                              |
+      | Paradigm    | objektga yo'naltirilgan dasturlash | Prototipga asoslangan dasturlash                                              |
       | Scoping     | Block scoped                       | Function-scoped                                                               |
       | Concurrency | Mavzuga asoslangan                 | voqeaga asoslangan                                                            |
       | Memory      | Ko'proq xotiradan foydalanadi      | Kamroq xotiradan foydalanadi. Shuning uchun u veb-sahifalar uchun ishlatiladi |
@@ -5057,7 +5057,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 290.  ### JavaScript namespace qo'llab-quvvatlaydimi?
 
-      JavaScript sukut bo'yicha nom maydonini qo'llab-quvvatlamaydi. Shunday qilib, agar siz biron bir element (funktsiya, usul, ob'ekt, o'zgaruvchi) yaratsangiz, u global bo'lib, global nomlar maydonini ifloslantiradi. Hech qanday nom maydonisiz ikkita funktsiyani aniqlashga misol keltiraylik,
+      JavaScript sukut bo'yicha nom maydonini qo'llab-quvvatlamaydi. Shunday qilib, agar siz biron bir element (funktsiya, usul, objekt, o'zgaruvchi) yaratsangiz, u global bo'lib, global nomlar maydonini ifloslantiradi. Hech qanday nom maydonisiz ikkita funktsiyani aniqlashga misol keltiraylik,
 
       ```javascript
       function func1() {
@@ -5075,9 +5075,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 291.  ### Namescpace qanday e'lon qilasiz
 
-      JavaScript-da nom bo'shliqlari bo'lmasa ham, nomlar bo'shliqlarini yaratish uchun Objects, IIFE dan foydalanishimiz mumkin.
+      JavaScriptda nom bo'shliqlari bo'lmasa ham, nomlar bo'shliqlarini yaratish uchun Objects, IIFE dan foydalanishimiz mumkin.
 
-      1.  **Using Object Literal Notation:** O'zgaruvchilar va funktsiyalarni nom maydoni vazifasini bajaradigan Ob'ekt literaliga o'tkazamiz. Shundan so'ng siz ularga ob'ekt belgilaridan foydalanib kirishingiz mumkin
+      1.  **Using Object Literal Notation:** O'zgaruvchilar va funktsiyalarni nom maydoni vazifasini bajaradigan objekt literaliga o'tkazamiz. Shundan so'ng siz ularga objekt belgilaridan foydalanib kirishingiz mumkin
 
       ```javascript
       var namespaceOne = {
@@ -5183,7 +5183,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 295.  ### DOM-da HTML elementlarini topishning turli usullari qanday?
 
-      Agar siz HTML sahifasining istalgan elementiga kirishni istasangiz, hujjat ob'ektiga kirishdan boshlashingiz kerak. Keyinchalik HTML elementini topish uchun quyidagi usullardan birini qo'llashingiz mumkin,
+      Agar siz HTML sahifasining istalgan elementiga kirishni istasangiz, hujjat objektiga kirishdan boshlashingiz kerak. Keyinchalik HTML elementini topish uchun quyidagi usullardan birini qo'llashingiz mumkin,
 
       1.  document.getElementById(id): Id boʻyicha elementni topadi
       2.  document.getElementsByTagName(name): Teg nomi boʻyicha elementni topadi
@@ -5214,7 +5214,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 298.  ### Nima uchun biz javascriptni dinamik til deb ataymiz
 
-      JavaScript erkin terilgan yoki dinamik tildir, chunki JavaScript-dagi o'zgaruvchilar biron bir qiymat turi bilan bevosita bog'lanmagan va har qanday o'zgaruvchi barcha turdagi qiymatlar bilan tayinlanishi/qayta tayinlanishi mumkin.
+      JavaScript erkin terilgan yoki dinamik tildir, chunki JavaScriptdagi o'zgaruvchilar biron bir qiymat turi bilan bevosita bog'lanmagan va har qanday o'zgaruvchi barcha turdagi qiymatlar bilan tayinlanishi/qayta tayinlanishi mumkin.
 
       ```javascript
       let age = 50; // age is a number now
@@ -5247,7 +5247,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 300.  ### Kursorni kutish(wait) uchun qanday sozlash kerak
 
-      Kursor "kursor" xususiyatidan foydalanib, JavaScript-da kutishga o'rnatilishi mumkin. Quyidagi funksiyadan foydalanib, sahifa yuklashda ushbu xatti-harakatni bajaramiz.
+      Kursor "kursor" xususiyatidan foydalanib, JavaScriptda kutishga o'rnatilishi mumkin. Quyidagi funksiyadan foydalanib, sahifa yuklashda ushbu xatti-harakatni bajaramiz.
 
       ```javascript
       function myFunction() {
@@ -5276,7 +5276,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 302.  ### Nima uchun bayonot bilan avoid kerak
 
-      JavaScript-ning with bayonoti ob'ektlarga takroriy kirishlarni yozish uchun stenografiyani ta'minlash uchun mo'ljallangan. Shunday qilib, u uzoq ob'ekt havolasini ishlash jazosisiz takrorlash zaruratini kamaytirish orqali fayl hajmini kamaytirishga yordam beradi. Ob'ektga bir necha marta kirishda ortiqchalikni oldini olish uchun ishlatiladigan misolni olaylik.
+      JavaScript-ning with bayonoti objektlarga takroriy kirishlarni yozish uchun stenografiyani ta'minlash uchun mo'ljallangan. Shunday qilib, u uzoq objekt havolasini ishlash jazosisiz takrorlash zaruratini kamaytirish orqali fayl hajmini kamaytirishga yordam beradi. objektga bir necha marta kirishda ortiqchalikni oldini olish uchun ishlatiladigan misolni olaylik.
 
       ```javascript
       a.b.c.greeting = 'welcome';
@@ -5330,7 +5330,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
       6.  Shablon harflari
       7.  Ko'p qatorli satrlar
       8.  Topshiriqni buzish
-      9.  Kengaytirilgan ob'ekt harflari
+      9.  Kengaytirilgan objekt harflari
       10. Va'dalar
       11. Sinflar
       12. Modullar
@@ -5548,7 +5548,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 314.  ### Destructuring assignment (strukturani buzish) nima ?
 
-      Strukturani buzish topshirig'i - bu massivlardagi qiymatlarni yoki ob'ektlardan xususiyatlarni alohida o'zgaruvchilarga ochish imkonini beruvchi JavaScript ifodasi. Keling, massivdan oy qiymatlarini tuzilmani buzish topshirig'idan foydalanib olamiz
+      Strukturani buzish topshirig'i - bu massivlardagi qiymatlarni yoki objektlardan xususiyatlarni alohida o'zgaruvchilarga ochish imkonini beruvchi JavaScript ifodasi. Keling, massivdan oy qiymatlarini tuzilmani buzish topshirig'idan foydalanib olamiz
 
       ```javascript
       var [one, two, three] = ['JAN', 'FEB', 'MARCH'];
@@ -5558,7 +5558,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
       console.log(three); // "MARCH"
       ```
 
-      va siz tuzilmani buzish topshirig'i yordamida ob'ektning foydalanuvchi xususiyatlarini olishingiz mumkin,
+      va siz tuzilmani buzish topshirig'i yordamida objektning foydalanuvchi xususiyatlarini olishingiz mumkin,
 
       ```javascript
       var { name, age } = { name: 'John', age: 32 };
@@ -5571,7 +5571,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 315.  ### Topshiriqni buzishda standart qiymatlar qanday
 
-      O'zgaruvchiga massiv yoki ob'ektdan ajratilgan qiymat tuzilmani buzish paytida aniqlanmagan bo'lsa, standart qiymat tayinlanishi mumkin. Bu har bir topshiriq uchun standart qiymatlarni alohida o'rnatishdan qochishga yordam beradi. Keling, massivlar va ob'ektlardan foydalanish holatlariga misol keltiraylik,
+      O'zgaruvchiga massiv yoki objektdan ajratilgan qiymat tuzilmani buzish paytida aniqlanmagan bo'lsa, standart qiymat tayinlanishi mumkin. Bu har bir topshiriq uchun standart qiymatlarni alohida o'rnatishdan qochishga yordam beradi. Keling, massivlar va objektlardan foydalanish holatlariga misol keltiraylik,
 
       **Arrays destructuring:**
 
@@ -5611,9 +5611,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-317.  ### Kengaytirilgan ob'ekt harflari nima
+317.  ### Kengaytirilgan objekt harflari nima
 
-      Ob'ekt harflari jingalak qavslar ichida xossalarga ega ob'ektlarni tezda yaratishni osonlashtiradi. Misol uchun, u quyidagi kabi umumiy ob'ekt xususiyatini aniqlash uchun qisqaroq sintaksisni taqdim etadi.
+      objekt harflari jingalak qavslar ichida xossalarga ega objektlarni tezda yaratishni osonlashtiradi. Misol uchun, u quyidagi kabi umumiy objekt xususiyatini aniqlash uchun qisqaroq sintaksisni taqdim etadi.
 
       ```javascript
       //ES6
@@ -5665,7 +5665,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 320.  ### Tiplangan massivlar(typed arrays) nima
 
-      Yozilgan massivlar ikkilik ma'lumotlarni qayta ishlash uchun ECMAScript 6 API'dan massivga o'xshash ob'ektlardir. JavaScript 8 ta terilgan massiv turlarini taqdim etadi,
+      Yozilgan massivlar ikkilik ma'lumotlarni qayta ishlash uchun ECMAScript 6 API'dan massivga o'xshash objektlardir. JavaScript 8 ta terilgan massiv turlarini taqdim etadi,
 
       1.  Int8Array: An array of 8-bit imzolangan butun sonlar massivi
       2.  Int16Array: An array of 16-bit imzolangan butun sonlar massivi
@@ -5727,7 +5727,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 323.  ### For .. of statmentni nima uchun ishlatiladi
 
-      For...of iborasi takrorlanadigan ob'ektlar yoki o'rnatilgan String, Array, Massivga o'xshash ob'ektlar (masalan, argumentlar yoki NodeList), TypedArray, Map, Set va foydalanuvchi tomonidan aniqlangan takrorlanuvchilar kabi elementlar ustidan takrorlanuvchi tsikl yaratadi. Massivlarda for...of iborasining asosiy qo'llanilishi quyida keltirilgan bo'ladi:
+      For...of iborasi takrorlanadigan objektlar yoki o'rnatilgan String, Array, Massivga o'xshash objektlar (masalan, argumentlar yoki NodeList), TypedArray, Map, Set va foydalanuvchi tomonidan aniqlangan takrorlanuvchilar kabi elementlar ustidan takrorlanuvchi tsikl yaratadi. Massivlarda for...of iborasining asosiy qo'llanilishi quyida keltirilgan bo'ladi:
 
       ```javascript
       let arrayIterable = [10, 20, 30, 40, 50];
@@ -5795,7 +5795,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 330.  ### Javascript qanday paradigma]
 
-      JavaScript ko'p paradigmali til bo'lib, imperativ/protsessual dasturlashni, ob'ektga yo'naltirilgan dasturlashni va funktsional dasturlashni qo'llab-quvvatlaydi. JavaScript prototip merosga ega ob'ektga yo'naltirilgan dasturlashni qo'llab-quvvatlaydi.
+      JavaScript ko'p paradigmali til bo'lib, imperativ/protsessual dasturlashni, objektga yo'naltirilgan dasturlashni va funktsional dasturlashni qo'llab-quvvatlaydi. JavaScript prototip merosga ega objektga yo'naltirilgan dasturlashni qo'llab-quvvatlaydi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -5851,14 +5851,14 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 336.  ### ArrayBuffer nima]
 
-      ArrayBuffer ob'ekti umumiy, qattiq uzunlikdagi xom ikkilik ma'lumotlar buferini ko'rsatish uchun ishlatiladi. Siz uni quyidagi tarzda yaratishingiz mumkin,
+      ArrayBuffer objekti umumiy, qattiq uzunlikdagi xom ikkilik ma'lumotlar buferini ko'rsatish uchun ishlatiladi. Siz uni quyidagi tarzda yaratishingiz mumkin,
 
       ```javascript
       let buffer = new ArrayBuffer(16); // create a buffer of length 16
       alert(buffer.byteLength); // 16
       ```
 
-      ArrayBuffer-ni boshqarish uchun biz "view" ob'ektidan foydalanishimiz kerak.
+      ArrayBuffer-ni boshqarish uchun biz "view" objektidan foydalanishimiz kerak.
 
       ```javascript
       //Create a DataView referring to the buffer
@@ -5880,7 +5880,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 338.  ### Xato obyektining(error object) maqsadi nima]
 
-      Xato konstruktori xato ob'ektini yaratadi va xatolik ob'ektlarining misollari ish vaqti xatolari yuzaga kelganda tashlanadi. Xato obyekti foydalanuvchi tomonidan belgilangan istisnolar uchun asosiy obyekt sifatida ham foydalanish mumkin. Xato ob'ektining sintaksisi quyidagicha bo'ladi,
+      Xato konstruktori xato objektini yaratadi va xatolik objektlarining misollari ish vaqti xatolari yuzaga kelganda tashlanadi. Xato obyekti foydalanuvchi tomonidan belgilangan istisnolar uchun asosiy obyekt sifatida ham foydalanish mumkin. Xato objektining sintaksisi quyidagicha bo'ladi,
 
       ```javascript
       new Error([message[, fileName[, lineNumber]]])
@@ -5944,9 +5944,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-341.  ### Barcha ob'ektlarning prototiplari bormi?]
+341.  ### Barcha objektlarning prototiplari bormi?]
 
-      Yo'q. Foydalanuvchi tomonidan yaratilgan asosiy ob'ekt yoki new kalit so'zi yordamida yaratilgan ob'ektdan tashqari barcha ob'ektlar prototiplariga ega.
+      Yo'q. Foydalanuvchi tomonidan yaratilgan asosiy objekt yoki new kalit so'zi yordamida yaratilgan objektdan tashqari barcha objektlar prototiplariga ega.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -6000,10 +6000,10 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 345.  ### Sayoz(shallow) va chuqur(deep) nusxa o'rtasidagi farq nima]copy
 
-      Ob'ektni nusxalashning ikki yo'li mavjud:
+      objektni nusxalashning ikki yo'li mavjud:
 
       **Shallow Copy:**
-      ob'ektning bitli nusxasi. Asl ob'ektdagi qiymatlarning aniq nusxasiga ega bo'lgan yangi ob'ekt yaratiladi. Agar ob'ektning biron bir maydoni boshqa ob'ektlarga havolalar bo'lsa, faqat mos yozuvlar manzillari ko'chiriladi, ya'ni faqat xotira manzili ko'chiriladi.
+      objektning bitli nusxasi. Asl objektdagi qiymatlarning aniq nusxasiga ega bo'lgan yangi objekt yaratiladi. Agar objektning biron bir maydoni boshqa objektlarga havolalar bo'lsa, faqat mos yozuvlar manzillari ko'chiriladi, ya'ni faqat xotira manzili ko'chiriladi.
 
       **Example**
 
@@ -6030,7 +6030,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
       Yuqoridagi bayonot ning nomini ham o'zgartiradi empDetails, chunki bizda sayoz nusxa mavjud. Bu shuni anglatadiki, biz asl ma'lumotlarni ham yo'qotamiz.
 
       **Deep copy (chuuqur nusxalash):**
-      Chuqur nusxa barcha maydonlardan nusxa ko'chiradi va maydonlar tomonidan ko'rsatilgan dinamik ravishda ajratilgan xotira nusxalarini yaratadi. Chuqur nusxa ob'ekt unga tegishli bo'lgan ob'ektlar bilan birga nusxalanganda sodir bo'ladi.
+      Chuqur nusxa barcha maydonlardan nusxa ko'chiradi va maydonlar tomonidan ko'rsatilgan dinamik ravishda ajratilgan xotira nusxalarini yaratadi. Chuqur nusxa objekt unga tegishli bo'lgan objektlar bilan birga nusxalanganda sodir bo'ladi.
 
       **Example**
 
@@ -6042,7 +6042,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
       };
       ```
 
-      Asl ob'ektdan yangi o'zgaruvchiga xususiyatlardan foydalanib, chuqur nusxasini yarating
+      Asl objektdan yangi o'zgaruvchiga xususiyatlardan foydalanib, chuqur nusxasini yarating
 
       ```javascript
       var empDetailsDeepCopy = {
@@ -6113,7 +6113,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 350.  ### Javascript mixins foydalanadimi?]
 
-      Mixin umumiy ob'ektga yo'naltirilgan dasturlash atamasi bo'lib, u boshqa sinflar tomonidan meros qilib olinishi kerak bo'lmagan holda ishlatilishi mumkin bo'lgan usullarni o'z ichiga olgan sinfdir. JavaScript-da biz faqat bitta ob'ektdan meros olishimiz mumkin. ya'ni. [[prototype]] Ob'ekt uchun faqat bitta bo'lishi mumkin .
+      Mixin umumiy objektga yo'naltirilgan dasturlash atamasi bo'lib, u boshqa sinflar tomonidan meros qilib olinishi kerak bo'lmagan holda ishlatilishi mumkin bo'lgan usullarni o'z ichiga olgan sinfdir. JavaScriptda biz faqat bitta objektdan meros olishimiz mumkin. ya'ni. [[prototype]] objekt uchun faqat bitta bo'lishi mumkin .
 
       Ammo ba'zida biz bir nechtasini kengaytirishni talab qilamiz, buni bartaraf etish uchun biz Mixin-dan foydalanishimiz mumkin, bu usullarni boshqa sinf prototipiga nusxalashga yordam beradi.
 
@@ -6203,7 +6203,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **Output:**
 
-      The output 40 va NaN ni tashkil qiladi. Esda tutingki, diametr oddiy funktsiyadir, perimetr qiymati esa o'q funktsiyasidir. Muntazam thisfunktsiyaning kalit so'zi (ya'ni, diametr) sinf (ya'ni, Shakl ob'ekti) bo'lgan atrofdagi doiraga ishora qiladi. Perimetr funktsiyasining ushbu kalit so'zi oyna ob'ekti bo'lgan atrofdagi doiraga ishora qiladi. Oyna ob'ektlarida radius xususiyati yo'qligi sababli u aniqlanmagan qiymatni qaytaradi va son qiymatining ko'pligi NaN qiymatini qaytaradi.
+      The output 40 va NaN ni tashkil qiladi. Esda tutingki, diametr oddiy funktsiyadir, perimetr qiymati esa o'q funktsiyasidir. Muntazam thisfunktsiyaning kalit so'zi (ya'ni, diametr) sinf (ya'ni, Shakl objekti) bo'lgan atrofdagi doiraga ishora qiladi. Perimetr funktsiyasining ushbu kalit so'zi oyna objekti bo'lgan atrofdagi doiraga ishora qiladi. Oyna objektlarida radius xususiyati yo'qligi sababli u aniqlanmagan qiymatni qaytaradi va son qiymatining ko'pligi NaN qiymatini qaytaradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -6370,7 +6370,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-366.  ### Massivni ob'ektga aylantirishning eng oson yo'li qanday?object
+366.  ### Massivni objektga aylantirishning eng oson yo'li qanday?object
 
       Spread(...) operatori yordamida massivni bir xil ma’lumotlarga ega ob’ektga aylantirishingiz mumkin.
 
@@ -6393,9 +6393,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-368.  ### Konsol ob'ektidagi to'ldiruvchilar nima
+368.  ### Konsol objektidagi to'ldiruvchilar nima
 
-      Quyida konsol ob'ektida mavjud bo'lgan to'ldiruvchilar ro'yxati keltirilgan,
+      Quyida konsol objektida mavjud bo'lgan to'ldiruvchilar ro'yxati keltirilgan,
 
       1.  %o — object oladi,
       2.  %s — string oladi,
@@ -6432,7 +6432,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-370.  ### Konsol ob'ektining dir usulidan maqsad nimaobject
+370.  ### Konsol objektining dir usulidan maqsad nimaobject
 
       Belgilangan console.dir() JavaScript obyekti xususiyatlarining interaktiv roʻyxatini JSON sifatida koʻrsatish uchun ishlatiladi.
 
@@ -6441,7 +6441,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
       console.dir(user);
       ```
 
-      SON ko'rinishida ko'rsatilgan foydalanuvchi ob'ekti
+      SON ko'rinishida ko'rsatilgan foydalanuvchi objekti
       ![Screenshot](images/console-dir.png)
 
       **[⬆ Back to Top](#table-of-contents)**
@@ -6461,9 +6461,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-372.  ### Konsol ob'ekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkinconsole object
+372.  ### Konsol objekti yordamida ma'lumotlarni jadval formatida qanday ko'rsatish mumkinconsole object
 
-      console.table() Murakkab massivlar yoki ob'ektlarni ko'rish uchun konsoldagi ma'lumotlarni jadval ko'rinishida ko'rsatish uchun ishlatiladi .
+      console.table() Murakkab massivlar yoki objektlarni ko'rish uchun konsoldagi ma'lumotlarni jadval ko'rinishida ko'rsatish uchun ishlatiladi .
 
       ```js
       const users = [
@@ -6591,9 +6591,9 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
       **[⬆ Back to Top](#table-of-contents)**
 
-380.  ### O'rash ob'ektlari(wrapper object) nima
+380.  ### O'rash objektlari(wrapper object) nima
 
-      String, raqam va mantiqiy kabi ibtidoiy qiymatlar xossa va usullarga ega emas, lekin ular ustida amallarni bajarishga harakat qilganingizda ular vaqtincha ob'ektga (Wrapper ob'ekti) aylantiriladi yoki majburlanadi. Misol uchun, agar siz ibtidoiy satr qiymatida toUpperCase() usulini qo'llasangiz, u xatoga yo'l qo'ymaydi, lekin satrning bosh harfini qaytaradi.
+      String, raqam va mantiqiy kabi ibtidoiy qiymatlar xossa va usullarga ega emas, lekin ular ustida amallarni bajarishga harakat qilganingizda ular vaqtincha objektga (Wrapper objekti) aylantiriladi yoki majburlanadi. Misol uchun, agar siz ibtidoiy satr qiymatida toUpperCase() usulini qo'llasangiz, u xatoga yo'l qo'ymaydi, lekin satrning bosh harfini qaytaradi.
 
       ```javascript
       let name = 'john';
@@ -6601,7 +6601,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
       console.log(name.toUpperCase()); // Behind the scenes treated as console.log(new String(name).toUpperCase());
       ```
 
-      Ya'ni, null va undefineddan tashqari har bir ibtidoiy o'rash ob'ektlariga ega va o'rash ob'ektlari ro'yxati: String, Number, Boolean, Symbol va BigInt.
+      Ya'ni, null va undefineddan tashqari har bir ibtidoiy o'rash objektlariga ega va o'rash objektlari ro'yxati: String, Number, Boolean, Symbol va BigInt.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -6803,7 +6803,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 393.  ### Heap nima
 
-      Heap(Yoki xotira uyasi) - bu o'zgaruvchilarni aniqlaganimizda ob'ektlar saqlanadigan xotira joyi. Ya'ni, bu barcha xotira taqsimoti va ajratish joyi bo'lgan joy. Uyma va qo'ng'iroqlar to'plami ham JS ish vaqtining ikkita konteyneridir. Ish vaqti kodda o'zgaruvchilar va funksiya deklaratsiyasiga duch kelganda, ularni Uyumda saqlaydi.
+      Heap(Yoki xotira uyasi) - bu o'zgaruvchilarni aniqlaganimizda objektlar saqlanadigan xotira joyi. Ya'ni, bu barcha xotira taqsimoti va ajratish joyi bo'lgan joy. Uyma va qo'ng'iroqlar to'plami ham JS ish vaqtining ikkita konteyneridir. Ish vaqti kodda o'zgaruvchilar va funksiya deklaratsiyasiga duch kelganda, ularni Uyumda saqlaydi.
 
       ![Screenshot](images/heap.png)
 
@@ -6819,7 +6819,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 395.  ### MicroTask navbati nima
 
-      Microtask Queue - bu va'da qilingan ob'ektlar tomonidan boshlangan barcha vazifalar callback qilish navbatidan oldin qayta ishlanadigan yangi navbat. Mikrovazifalar navbati keyingi renderlash va bo'yash ishlaridan oldin qayta ishlanadi. Ammo agar bu mikrovazifalar uzoq vaqt davomida ishlayotgan bo'lsa, bu vizual buzilishlarga olib keladi.
+      Microtask Queue - bu va'da qilingan objektlar tomonidan boshlangan barcha vazifalar callback qilish navbatidan oldin qayta ishlanadigan yangi navbat. Mikrovazifalar navbati keyingi renderlash va bo'yash ishlaridan oldin qayta ishlanadi. Ammo agar bu mikrovazifalar uzoq vaqt davomida ishlayotgan bo'lsa, bu vizual buzilishlarga olib keladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -6831,7 +6831,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
 
 397.  ### Primitiv yoki primitiv bo'lmagan qiymat turini qanday aniqlash mumkinvalue type
 
-      JavaScript-da ibtidoiy turlarga boolean, string, number, BigInt, null, Symbol va undefined kiradi. Holbuki, ibtidoiy bo'lmagan turlarga Ob'ektlar kiradi. Lekin siz ularni quyidagi funksiya bilan osongina aniqlashingiz mumkin,
+      JavaScriptda ibtidoiy turlarga boolean, string, number, BigInt, null, Symbol va undefined kiradi. Holbuki, ibtidoiy bo'lmagan turlarga objektlar kiradi. Lekin siz ularni quyidagi funksiya bilan osongina aniqlashingiz mumkin,
 
       ```javascript
       var myPrimitive = 30;
@@ -6844,7 +6844,7 @@ Voqealar davri - bu callback funktsiyalari navbati. Asinx funksiyasi bajarilgand
       isPrimitive(myNonPrimitive);
       ```
 
-      Agar qiymat ibtidoiy ma'lumotlar turi bo'lsa, Ob'ekt konstruktori qiymat uchun yangi o'rash ob'ektini yaratadi. Ammo agar qiymat ibtidoiy bo'lmagan ma'lumotlar turi (ob'ekt) bo'lsa, Ob'ekt konstruktori xuddi shu ob'ektni beradi.
+      Agar qiymat ibtidoiy ma'lumotlar turi bo'lsa, objekt konstruktori qiymat uchun yangi o'rash objektini yaratadi. Ammo agar qiymat ibtidoiy bo'lmagan ma'lumotlar turi (objekt) bo'lsa, objekt konstruktori xuddi shu objektni beradi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -7101,9 +7101,9 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
 
       **[⬆ Back to Top](#table-of-contents)**
 
-410.  ### Qanday qilib ob'ektni javascriptda takrorlanadigan qilish mumkin
+410.  ### Qanday qilib objektni javascriptda takrorlanadigan qilish mumkin
 
-      Odatiy bo'lib, oddiy ob'ektlar takrorlanmaydi. Lekin siz ob'ektga xossani belgilash orqali uni iterable qilishingiz mumkin `Symbol.iterator`.
+      Odatiy bo'lib, oddiy objektlar takrorlanmaydi. Lekin siz objektga xossani belgilash orqali uni iterable qilishingiz mumkin `Symbol.iterator`.
 
       Buni misol bilan ko'rsatamiz,
 
@@ -7188,7 +7188,7 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
 
       **[⬆ Back to Top](#table-of-contents)**
 
-412.  ### Ob'ektni Promise(va’da) ekani yoki yoq ekanini qanday tekshirish mumkin
+412.  ### objektni Promise(va’da) ekani yoki yoq ekanini qanday tekshirish mumkin
 
       Agar qiymat va'dami yoki yo'qligini bilmasangiz, va'dani `Promise.resolve(value)` qaytaradigan qiymat sifatida o'rash
 
@@ -7250,11 +7250,11 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
 
       **[⬆ Back to Top](#table-of-contents)**
 
-414.  ### Argumentlar ob'ekti va Rest parametri o'rtasidagi farqlar qandayand rest parameter
+414.  ### Argumentlar objekti va Rest parametri o'rtasidagi farqlar qandayand rest parameter
 
-      Argumentlar ob'ekti va dam olish parametrlari o'rtasida uchta asosiy farq mavjud
+      Argumentlar objekti va dam olish parametrlari o'rtasida uchta asosiy farq mavjud
 
-      1.  Argumentlar ob'ekti massivga o'xshaydi, lekin massiv emas. Qolgan parametrlar esa massiv misollaridir.
+      1.  Argumentlar objekti massivga o'xshaydi, lekin massiv emas. Qolgan parametrlar esa massiv misollaridir.
       2.  Argumentlar obyekti tartiblash, xaritalash, forEach yoki pop kabi usullarni qo‘llab-quvvatlamaydi. Holbuki, bu usullar dam olish parametrlarida ishlatilishi mumkin.
       3.  Qolgan parametrlar faqat alohida nom berilmagan parametrlardir, argumentlar obyekti esa funksiyaga oʻtkazilgan barcha argumentlarni oʻz ichiga oladi.
 
@@ -7262,7 +7262,7 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
 
 415.  ### Spred operatori va Rest parametri o'rtasidagi farqlar qandayand rest parameter
 
-      Rest parametri qolgan barcha elementlarni massivga to'playdi. Holbuki, Spread operatori takrorlanuvchilarni (massivlar / ob'ektlar / satrlar) bitta argumentlar / elementlarga kengaytirilishiga imkon beradi. ya'ni, Rest parametri tarqalish operatoriga qarama-qarshidir.
+      Rest parametri qolgan barcha elementlarni massivga to'playdi. Holbuki, Spread operatori takrorlanuvchilarni (massivlar / objektlar / satrlar) bitta argumentlar / elementlarga kengaytirilishiga imkon beradi. ya'ni, Rest parametri tarqalish operatoriga qarama-qarshidir.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -7337,7 +7337,7 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
 
 417.  ### O'rnatilgan iterativlar(built-in) nima
 
-      Quyida JavaScript-da o'rnatilgan iterativlar ro'yxati keltirilgan,
+      Quyida JavaScriptda o'rnatilgan iterativlar ro'yxati keltirilgan,
 
       1.  Arrays and TypedArrays
       2.  Strings: Har bir belgi yoki Unicode kod nuqtalari ustida takrorlang
@@ -7352,8 +7352,8 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
 
       Js maʼlumotlar tuzilmalari boʻyicha ham for...in, ham for...of iboralari takrorlanadi. Yagona farq ular takrorlagan narsada:
 
-      1.  for..in ob'ektning barcha sanab o'tiladigan xususiyat kalitlari bo'ylab takrorlanadi
-      2.  for..of iteratsiya qilinadigan ob'ektning qiymatlari ustidan takrorlanadi.
+      1.  for..in objektning barcha sanab o'tiladigan xususiyat kalitlari bo'ylab takrorlanadi
+      2.  for..of iteratsiya qilinadigan objektning qiymatlari ustidan takrorlanadi.
 
       Keling, bu farqni misol bilan tushuntiramiz,
 
@@ -7373,7 +7373,7 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
       }
       ```
 
-      For..in tsikli ob'ekt tugmalari ustida takrorlanganligi sababli, birinchi sikl massiv ob'ekti bo'ylab takrorlanayotganda 0, 1, 2 va newProp ni qayd qiladi. For..of sikli arr maʼlumotlar strukturasi qiymatlari ustidan takrorlanadi va konsolda a, b, c jurnallarini qayd qiladi.
+      For..in tsikli objekt tugmalari ustida takrorlanganligi sababli, birinchi sikl massiv objekti bo'ylab takrorlanayotganda 0, 1, 2 va newProp ni qayd qiladi. For..of sikli arr maʼlumotlar strukturasi qiymatlari ustidan takrorlanadi va konsolda a, b, c jurnallarini qayd qiladi.
 
       **[⬆ Back to Top](#table-of-contents)**
 
@@ -7544,7 +7544,7 @@ Keling, bu farqni misol bilan ko'rib chiqaylik,
 
 428.  ### Siyrak(dense) massivlarni yaratishning turli usullari qanday?]arrays?
 
-      JavaScript-da siyrak massivlarni yaratishning 4 xil usuli mavjud
+      JavaScriptda siyrak massivlarni yaratishning 4 xil usuli mavjud
 
       1.  **Array literal:** massiv literalidan foydalanganda qiymatni o'tkazib yuboring
           ```js
@@ -7829,7 +7829,7 @@ if ('foo') {
 console.log(y);
 ```
 
-**Note:** MS Edge brauzeri uchun 1 ob'ektni qaytaradi
+**Note:** MS Edge brauzeri uchun 1 objektni qaytaradi
 
 </p>
 </details>
@@ -7860,7 +7860,7 @@ console.log(foo());
 
 ##### Answer: 3
 
-Bu nuqta-vergul muammosi. Odatda JavaScript-da nuqta-vergul ixtiyoriy. Shunday qilib, agar biron bir ibora (bu holda, qaytish) mavjud bo'lsa, nuqta-vergul yo'q bo'lsa, u darhol avtomatik ravishda kiritiladi. Shunday qilib, funktsiya aniqlanmagan sifatida qaytarildi.
+Bu nuqta-vergul muammosi. Odatda JavaScriptda nuqta-vergul ixtiyoriy. Shunday qilib, agar biron bir ibora (bu holda, qaytish) mavjud bo'lsa, nuqta-vergul yo'q bo'lsa, u darhol avtomatik ravishda kiritiladi. Shunday qilib, funktsiya aniqlanmagan sifatida qaytarildi.
 
 Agar ochiladigan jingalak qavs return kalit so'zi bilan birga bo'lsa, funktsiya kutilganidek qaytariladi.
 
@@ -7900,7 +7900,7 @@ console.log(myChars.length);
 
 ##### Answer: 3
 
-Operator deleteob'ekt xususiyatini o'chiradi, lekin u massivni qayta indekslamaydi yoki uning uzunligini o'zgartirmaydi. Shunday qilib, massivning soni yoki elementlari yoki uzunligi o'zgarmaydi. Agar siz myChars-ni chop qilmoqchi bo'lsangiz, u noaniq qiymat o'rnatmasligini, aksincha xususiyat massivdan o'chirilganligini kuzatishingiz mumkin. Chrome-ning yangi versiyalari farqni biroz aniqroq qilish emptyo'rniga foydalanadi.undefined
+Operator deleteobjekt xususiyatini o'chiradi, lekin u massivni qayta indekslamaydi yoki uning uzunligini o'zgartirmaydi. Shunday qilib, massivning soni yoki elementlari yoki uzunligi o'zgarmaydi. Agar siz myChars-ni chop qilmoqchi bo'lsangiz, u noaniq qiymat o'rnatmasligini, aksincha xususiyat massivdan o'chirilganligini kuzatishingiz mumkin. Chrome-ning yangi versiyalari farqni biroz aniqroq qilish emptyo'rniga foydalanadi.undefined
 
 </p>
 </details>
@@ -7972,7 +7972,7 @@ console.log(obj.prop3());
 
 ##### Answer: 1
 
-ES6 ob'ektlar uchun usul ta'riflari va xususiyat qisqartmalarini taqdim etadi. Shunday qilib, prop2 va prop3 ham muntazam funktsiya qiymatlari sifatida ko'rib chiqiladi.
+ES6 objektlar uchun usul ta'riflari va xususiyat qisqartmalarini taqdim etadi. Shunday qilib, prop2 va prop3 ham muntazam funktsiya qiymatlari sifatida ko'rib chiqiladi.
 
 </p>
 </details>
@@ -8297,7 +8297,7 @@ console.log(browser);
 
 ##### Answer: 1
 
-`Set` Ob'ekt noyob qiymatlar to'plami bo'lgani uchun u to'plamdagi takroriy qiymatlarga ruxsat bermaydi . Shu bilan birga, bu katta-kichik harflarga sezgir ma'lumotlar tuzilmasi.
+`Set` objekt noyob qiymatlar to'plami bo'lgani uchun u to'plamdagi takroriy qiymatlarga ruxsat bermaydi . Shu bilan birga, bu katta-kichik harflarga sezgir ma'lumotlar tuzilmasi.
 
 </p>
 </details>
@@ -8639,7 +8639,7 @@ console.log(sym1);
 
 ##### Answer: 1
 
-`Symbol` bu ob'ekt konstruktori emas, shunchaki standart funksiyadir (boshqa ibtidoiylardan farqli o'laroq, yangi Boolean, yangi String va yangi raqam). Shunday qilib, agar siz yangi operator bilan qo'ng'iroq qilmoqchi bo'lsangiz, TypeError paydo bo'ladi
+`Symbol` bu objekt konstruktori emas, shunchaki standart funksiyadir (boshqa ibtidoiylardan farqli o'laroq, yangi Boolean, yangi String va yangi raqam). Shunday qilib, agar siz yangi operator bilan qo'ng'iroq qilmoqchi bo'lsangiz, TypeError paydo bo'ladi
 
 </p>
 
